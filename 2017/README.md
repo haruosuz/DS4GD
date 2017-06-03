@@ -23,8 +23,8 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
 - 2017-05-30 第8回 [中間発表](#中間発表)
   - [タンパク質のアミノ酸組成](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#amino-acid-usage)
 - 2017-06-06 第9回 ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
-- 2017-06-13 第10回 クラスター分析 [Cluster Analysis]()
-- 2017-06-20 第11回 ヒートマップ [Heat Map]()
+- 2017-06-13 第10回 [クラスター分析 Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
+- 2017-06-20 第11回 [ヒートマップ Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2017-06-27 第12回 
 - 2017-07-04 第13回 
 - 2017-07-11 第14回 [最終発表](#最終発表)
@@ -37,10 +37,10 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
 フランス国立科学研究センター [CNRS](https://ja.wikipedia.org/wiki/フランス国立科学研究センター)
 
 - 2017年5月13日 (土) 3限(13:00～14:30)
-[Annotation of promoter sequences](https://github.com/haruosuz/DS4GD/blob/master/2017/Annotation_of_promoter_sequences.pdf) | 
+[Annotation of promoter sequences](https://github.com/haruosuz/DS4GD/blob/master/2017/hrichard/Annotation_of_promoter_sequences.pdf) | 
 [プロモーター配列のアノテーション](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#annotation-of-promoter-sequences) 
 - 2017年5月20日 (土) 3限(13:00～14:30)
-[Annotation of Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2017/Annotation_of_Coding_sequences.pdf) | 
+[Annotation of Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2017/hrichard/Annotation_of_Coding_sequences.pdf) | 
 [タンパク質コード配列のアノテーション](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#annotation-of-coding-sequences) 
 
 ----------
