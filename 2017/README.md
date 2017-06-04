@@ -22,7 +22,7 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
 - 2017-05-23 第7回 [休講](http://ngs5.org/)
 - 2017-05-30 第8回 [中間発表](#中間発表)
   - [タンパク質のアミノ酸組成](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#amino-acid-usage)
-- 2017-06-06 第9回 ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
+- 2017-06-06 第9回 ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2017-06-13 第10回 [クラスター分析 Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2017-06-20 第11回 [ヒートマップ Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2017-06-27 第12回 
