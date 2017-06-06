@@ -26,7 +26,6 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
 - 2017-07-04 第13回 
 - 2017-07-11 第14回 [最終発表](#最終発表)
 - 2017-07-18 [レポート](#レポート)提出期限
-
 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md)
   - ゲノムDNA配列解析 [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#ncbi-assembly-summary)
   - タンパク質配列解析 [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
