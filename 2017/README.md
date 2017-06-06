@@ -8,9 +8,6 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
   - [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://a-little-book-of-r-for-bioinformatics.readthedocs.org/en/latest/)
 
 ## 講義日程と資料
-- ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md)
-  - タンパク質配列解析 [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
-  - ゲノムDNA配列解析 [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#ncbi-assembly-summary)
 - 2017-04-11 第1回 [イントロダクション](#イントロダクション)
 - 2017-04-18 第2回 生物学的データ [Biological data](https://github.com/haruosuz/books/tree/master/bbs#chapter-1-introduction)
 - 2017-04-25 第3回 R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#how-to-install-r-and-a-brief-introduction-to-r)
@@ -21,7 +18,6 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
 - 2017-05-20 (土) 3限(13:00～14:30) [補講](#補講)
 - 2017-05-23 第7回 [休講](http://ngs5.org/)
 - 2017-05-30 第8回 [中間発表](#中間発表)
-  - [タンパク質のアミノ酸組成](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#amino-acid-usage)
 - 2017-06-06 第9回 ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
   - [Biostrings](#biostrings)パッケージ
 - 2017-06-13 第10回 [クラスター分析 Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
@@ -30,6 +26,12 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
 - 2017-07-04 第13回 
 - 2017-07-11 第14回 [最終発表](#最終発表)
 - 2017-07-18 [レポート](#レポート)提出期限
+
+- ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md)
+  - ゲノムDNA配列解析 [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#ncbi-assembly-summary)
+  - タンパク質配列解析 [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
+    - アミノ酸組成 [Amino acid usage](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#amino-acid-usage)
+    - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#pairwise-sequence-alignment)
 
 ----------
 ## Biostrings
