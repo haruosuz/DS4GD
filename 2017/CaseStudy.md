@@ -296,11 +296,11 @@ Unixコマンド
 
 複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
 
-    # relative frequencies
-    X <- sapply(lx, function(x) summary(x)$composition )
-
     # absolute frequencies
     X <- sapply(lx, function(x) AAstat(x, plot=FALSE)$Compo )
+
+    # relative frequencies
+    X <- sapply(lx, function(x) summary(x)$composition )
 
 データをカンマ区切りファイルとして出力する:  
 
