@@ -1,7 +1,9 @@
 SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
 
 # [生命動態のデータサイエンス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2017_41550&ks=44020)
-- 科目概要：この授業では、コンピュータ実習を通して、生命情報解析（バイオインフォマティクス）の手法を習得する。Mac OS Xを用いて、参考文献の例題を実行し、プロジェクトをすすめる。
+
+- 科目概要：
+生物のゲノム配列は進化によりダイナミックに変化している。この授業では、コンピュータ実習を通して、生命情報解析（バイオインフォマティクス）の手法を習得する。Mac OS Xを用いて、参考文献の例題を実行し、プロジェクトをすすめる。
 - 成績評価：提出課題と最終発表とレポート
 - 参考文献：
   - [Conrad Bessant; Darren Oakley; Ian Shadforth - Building Bioinformatics Solutions 2nd edition, Oxford University Press, 2014, 368p.](https://github.com/haruosuz/books/tree/master/bbs) 
@@ -41,7 +43,11 @@ Bioconductorパッケージ[`Biostrings`](http://bioconductor.org/packages/relea
     source("https://bioconductor.org/biocLite.R")
     biocLite("Biostrings")
 
-`Biostrings`パッケージの呼び出し:  
+パッケージのバージョンの確認:  
+
+    packageVersion("Biostrings")
+
+パッケージの呼び出し:  
 
     library(Biostrings)
 
