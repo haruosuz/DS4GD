@@ -21,7 +21,6 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
 - 2017-05-23 第7回 [休講](http://ngs5.org/)
 - 2017-05-30 第8回 [中間発表](#中間発表)
 - 2017-06-06 第9回 ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
-  - [Biostrings](#biostrings)パッケージ
 - 2017-06-13 第10回 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
 - 2017-06-20 第11回 クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2017-06-27 第12回 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
@@ -33,23 +32,6 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
   - タンパク質配列解析 [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
     - アミノ酸組成 [Amino acid usage](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#amino-acid-usage)
     - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#pairwise-sequence-alignment)
-
-----------
-## Biostrings
-[パッケージ | RのパッケージをCRANからインストールする方法と利用方法](http://stat.biopapyrus.net/r/package-function.html)
-
-Bioconductorパッケージ[`Biostrings`](http://bioconductor.org/packages/release/bioc/html/Biostrings.html)のインストール:  
-
-    source("https://bioconductor.org/biocLite.R")
-    biocLite("Biostrings")
-
-パッケージのバージョンの確認:  
-
-    packageVersion("Biostrings")
-
-パッケージの呼び出し:  
-
-    library(Biostrings)
 
 ----------
 ## 補講
@@ -134,7 +116,7 @@ Bioconductorパッケージ[`Biostrings`](http://bioconductor.org/packages/relea
 ## 準備
 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)のiMac Retina 5k 27inch
 
-### Unixコマンド
+### Unix
 ![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
 
 [ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
@@ -155,7 +137,7 @@ Bioconductorパッケージ[`Biostrings`](http://bioconductor.org/packages/relea
 
 	wget https://github.com/haruosuz/DS4GD/raw/master/2017/examples_2016.tar.gz
 
-### R言語
+### R
 [R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
 
 ![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
@@ -173,9 +155,42 @@ Rを終了:
 
 	quit()
 
-### 学習サイト
-- ドットインストール - 3分動画でマスターする初心者向けプログラミング学習サイト
-  - [UNIXコマンド入門 (一般ユーザー編) (全16回)](http://dotinstall.com/lessons/basic_unix)
-  - [R言語入門 (全13回)](http://dotinstall.com/lessons/basic_r)
+### R packages
+
+[パッケージ | RのパッケージをCRANからインストールする方法と利用方法](http://stat.biopapyrus.net/r/package-function.html)
+
+パッケージ [`seqinr`](https://cran.r-project.org/web/packages/seqinr/index.html), [`ape`](https://cran.r-project.org/web/packages/ape/index.html) のインストール:  
+
+    install.packages("seqinr")
+    install.packages("ape")
+
+Bioconductor パッケージ [`Biostrings`](http://bioconductor.org/packages/release/bioc/html/Biostrings.html), [`msa`](https://bioconductor.org/packages/release/bioc/html/msa.html) のインストール:  
+
+    source("https://bioconductor.org/biocLite.R")
+    biocLite("Biostrings")
+    biocLite("msa")
+
+パッケージの呼び出し:  
+
+    # Loading Packages
+    library(seqinr)
+    library(ape)
+    library(Biostrings)
+    library(msa)
+
+バージョン情報の表示:  
+
+    # Print version information
+    > sessionInfo()
+
+    R version 3.3.3 (2017-03-06)
+    Platform: x86_64-apple-darwin13.4.0 (64-bit)
+    Running under: OS X Mavericks 10.9.5
+
+    other attached packages:
+    msa_1.6.0
+    Biostrings_2.42.1
+    ape_4.1
+    seqinr_3.3-6       
 
 ----------
