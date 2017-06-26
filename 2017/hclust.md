@@ -14,8 +14,10 @@
 
 [データ・クラスタリング](https://ja.wikipedia.org/wiki/データ・クラスタリング)は、データ解析手法（特に多変量解析手法）の一種。教師なしデータ分類手法、つまり与えられたデータを外的基準なしに自動的に分類する手法。
 
+![http://www.albert2005.co.jp/technology/mining/method3_2.html](http://www.albert2005.co.jp/technology/images/tech_mining_img77.jpg)  
+
 ### 変数が2個の場合のクラスター分析
-簡単な例として、5個の個体について2個の変数（AT含量とGC含量）の値が観測されている場合を例にとり、 クラスター分析を行なう。
+簡単な例として、5個の個体について2個􏰁の変数（増殖期と定常期􏰁の遺伝子発現量）の値が観測されている場合を例にとり、 クラスター分析􏰁を行なう。
 
 	# 5個体について2変数(x1,x2)の値が格納された行列データを作成
 	x1 <- c(5,4,1,5,5)
@@ -29,14 +31,14 @@
 
 	# クラスターの結合方法
 	# dist()関数で個体間の非類似度（距離）を測定
-	d <- dist(x) # ユークリッド距離（2点間の差の2乗和の平方根）
+	d <- dist(x, method="euclidean") # ユークリッド距離（2点間の差の2乗和の平方根）
 	d <- dist(x, method="manhattan") # マンハッタン距離（2点間の差の絶対値の総和）
 
 	# hclust()関数で階層的クラスター分析
 	hclust(d)
-	hc <- hclust(d, method="single")	# 最短距離法
-	hc <- hclust(d, method="complete")	# 
-	hc <- hclust(d, method="average")	# UPGMA
+	hc <- hclust(d, method="single")   # 最短距離法
+	hc <- hclust(d, method="complete") # 最長距離法
+	hc <- hclust(d, method="average")  # 群平均法 (UPGMA)
 
 	# グループの形成方法
 
@@ -45,16 +47,23 @@
 
 	# 階層的クラスターの周りに四角形を描画
 	plot(hc, hang = -1)
-	rect.hclust(hc, h = 3.5)	# 切断する距離を指定
-	rect.hclust(hc, k = 3)	# グループの数を指定
+	rect.hclust(hc, h = 3.5) # 切断する距離を指定
+	rect.hclust(hc, k = 3)   # グループの数を指定
 
 	# 樹形図を切断してグループを形成
-	cutree(hc, h = 3.5)	# 切断する距離を指定
-	cutree(hc, k = 3)	# グループの数を指定
+	cutree(hc, h = 3.5) # 切断する距離を指定
+	cutree(hc, k = 3)   # グループの数を指定
 
 	# 行列データとクラスタリング結果を結合し、ファイル出力
 	g23 <- cutree(hc, k = c(2,3))
 	write.csv(cbind(x,g23), file="table.csv")
+
+	# 多次元尺度構成法 Multidimensional Scaling
+	# 主座標分析 Principal Coordinate Analysis (PCoA)
+	d <- dist(x)
+	loc <- cmdscale(d)
+	plot(loc[, 1], loc[, 2], type="n")
+	text(loc[, 1], loc[, 2], labels=rownames(x))
 
 ### 変数がp個の場合のクラスター分析
 3本のタンパク質配列について3個の変数（アミノ酸 Ala, Val, Cysの含量）の値が観測されている。
@@ -78,27 +87,19 @@
 	plot(hclust(dist(t(X))))
 
 ### 参考文献
+- 分析力をコアとするデータソリューションカンパニー・株式会社ALBERT（アルベルト）
+  - [クラスター分析の手法1（概要）](http://www.albert2005.co.jp/technology/mining/cluster1.html)
+  - [クラスター分析の手法2（階層クラスター分析）](http://www.albert2005.co.jp/technology/mining/cluster2.html)
+- 三中信宏（農環研・計測情報）
   - [分類学と系統学：ある蜜月の終焉](http://www.e-jsps.com/2007hp/topic/Datesoudo84/mitsu.html)
   - [クラスター分析の光と闇](http://cse.naro.affrc.go.jp/minaka/R/R-cluster.html) | [pdf](http://cse.naro.affrc.go.jp/minaka/R/clustering-04.pdf)
-  - [Rとクラスター分析(1)](https://www1.doshisha.ac.jp/~mjin/R/28/28.html)
-  - [Rとクラスター分析(2)](https://www1.doshisha.ac.jp/~mjin/R/29/29.html)
-  - [Rによる階層的クラスタリング](http://bio-info.biz/tips/r_hclust.html)
-
-----------
-
-# Multidimensional Scaling
-[多次元尺度構成法](https://ja.wikipedia.org/wiki/多次元尺度構成法)
-
-	# 多次元尺度構成法
-	loc <- cmdscale(d)
-	plot(loc[, 1], loc[, 2], type="n")
-	text(loc[, 1], loc[, 2], labels=rownames(x))
-
-### 参考文献
-- [Rと多次元尺度法](https://www1.doshisha.ac.jp/~mjin/R/27/27.html)
-- [主座標分析について簡単に紹介するよ！ - ほくそ笑む](http://d.hatena.ne.jp/hoxo_m/20120313/p1)
-
-主座標分析(Principal Coordinate Analysis; PCoA)
+- [Rによる階層的クラスタリング](http://bio-info.biz/tips/r_hclust.html)
+- [JIN'S PAGE](http://www1.doshisha.ac.jp/~mjin/R/)
+  - [Rとクラスター分析(1)](http://www1.doshisha.ac.jp/~mjin/R/Chap_28/28.html)
+  - [Rとクラスター分析(2)](http://www1.doshisha.ac.jp/~mjin/R/Chap_29/29.html)
+  - [Rと多次元尺度法](http://www1.doshisha.ac.jp/~mjin/R/Chap_27/27.html)
+- [多次元尺度構成法](https://ja.wikipedia.org/wiki/多次元尺度構成法)
+  - [主座標分析について簡単に紹介するよ！ - ほくそ笑む](http://d.hatena.ne.jp/hoxo_m/20120313/p1)
 
 ----------
 
