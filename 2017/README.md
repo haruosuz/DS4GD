@@ -26,7 +26,7 @@ SFC 2017年度 春学期 火曜日３時限 [λ18](http://classroom.sfc.keio.ac.
 - 2017-06-20 第11回 ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md)
   - ゲノムDNA配列解析 [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#ncbi-assembly-summary)
   - タンパク質配列解析 [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
-    - [Working with Data in R](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#working-with-data-in-r)
+    - Rでデータ解析 [Working with Data in R](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#working-with-data-in-r)
     - アミノ酸組成 [Amino acid usage](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#amino-acid-usage)
     - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#pairwise-sequence-alignment)
     - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#multiple-alignment-and-phylogenetic-trees)
