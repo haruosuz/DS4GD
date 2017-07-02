@@ -263,17 +263,13 @@ Unixコマンド
     sapply(lx, length)
 
 #### Amino acid usage
-タンパク質の[アミノ酸組成](https://kotobank.jp/word/アミノ酸組成-761227)
+**タンパク質の[アミノ酸組成](https://kotobank.jp/word/アミノ酸組成-761227)**
 
 [アミノ酸の物性](https://www.thermofisher.com/jp/ja/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/amino-acid-physical-properties.html)
 
 ![http://www.jalview.org/help/html/misc/aaproperties.html](http://www.jalview.org/help/html/misc/properties.gif)
 
 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html) 平成22年度、清水謙多郎
-
-[アミノ酸組成と転写量の相関](https://www.nig.ac.jp/labs/EvoGen/research/yeast.html)
-
-![https://www.nig.ac.jp/labs/EvoGen/research/yeast.html](https://www.nig.ac.jp/labs/EvoGen/img/aa_usage_90c.jpg)
 
 `summary()`関数でデータの要約:  
 
