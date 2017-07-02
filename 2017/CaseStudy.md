@@ -318,12 +318,12 @@ Unixコマンド
     legend("topleft", legend=colnames(X), col=rainbow(12), lty=1:6)
     # lty: 0=blank, 1=solid (default), 2=dashed, 3=dotted, 4=dotdash, 5=longdash, 6=twodash
 
-クラスター分析
+[クラスター分析](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
 
     # Hierarchical cluster analysis
     plot(hclust(dist(t(X))))
 
-ヒートマップ
+[ヒートマップ](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
     # Heatmap for amino acid usage profiles
     heatmap(t(X))
@@ -410,8 +410,9 @@ Unixコマンド
 
 [SeaView](http://doua.prabi.fr/software/seaview)でnewick形式ファイルの系統樹を表示する。
 
-[ロドプシン (Rhodopsin)](https://ja.wikipedia.org/wiki/ロドプシン) のタンパク質配列の多重配列アライメントに基づく有根系統樹を構築する。
-外群として ゼブラフィッシュ (Danio rerio、略して"DANRE") を選択し、系統樹に根をつける。系統樹より、
+[ロドプシン (Rhodopsin)](https://ja.wikipedia.org/wiki/ロドプシン) のタンパク質配列の多重配列アライメントに基づく系統樹を構築する。
+外群として ゼブラフィッシュ (Danio rerio、略して"DANRE") を選択し、系統樹に根をつける。
+有根系統樹より、
 最初にアフリカツメガエル (Xenopus laevis、略して"XENLA") と他の集団が分岐し、
 次にウシ (Bos taurus、"BOVIN") と他の集団が分岐し、
 最後にヒト ("HUMAN") とネズミ ("RAT"と"MOUSE") が分岐したと推定される。
