@@ -229,12 +229,12 @@ Unixコマンド
     myAnnotation <- getAnnot(ld)
 
 `grep(pattern, x)`は、`pattern`にマッチするベクトル`x`の全要素の番号を返す。
-文字列（"harakiri"など）のパターンにマッチする要素番号を取得する:  
+文字列（"harakiri", "Shiga.* toxin", "Rhodopsin OS=(生物名)" 等）のパターンにマッチする要素番号を取得する:  
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
+    pattern <- "harakiri"
+    pattern <- "Shiga.* toxin"
     pattern <- "Rhodopsin OS=(Bos taurus|Danio rerio|Homo|Mus|Rattus|Xenopus laevis)"
-    #pattern <- "harakiri"
-    #pattern <- "Shiga.* toxin"
     i <- grep(pattern = pattern, x = myAnnotation, ignore.case = TRUE)
     length(i)
     unlist(getAnnot(ld[i]))
