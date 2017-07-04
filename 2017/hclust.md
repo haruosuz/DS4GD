@@ -103,6 +103,25 @@
 
 ----------
 
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/60.html
+60. 確率分布と乱数
+
+http://cse.naro.affrc.go.jp/minaka/R/R-normal.html
+正規分布に関連する関数
+
+	x <- seq(0, 100, 5)
+	plot(x,dnorm(x, mean=70, sd=10), type="n")
+	# Math
+	curve(dnorm(x, mean=60, sd=20), type="l", add=TRUE)
+	abline(v = 80, lty=2)
+	(80 - 60) / 20
+	# Japanese
+	curve(dnorm(x, mean=70, sd=10), type="l", add=TRUE, col=2)
+	abline(v = 85, lty=2, col=2)
+	(85 - 70) / 10
+
+----------
+
 # Heat Map
 ヒートマップ
 
