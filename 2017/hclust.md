@@ -118,11 +118,10 @@
 	abline(v = 85, lty=2, col=2)
 	(85 - 70) / 10
 
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/60.html
-60. 確率分布と乱数
-
 http://cse.naro.affrc.go.jp/minaka/R/R-normal.html
 正規分布に関連する関数
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/60.html
+60. 確率分布と乱数
 
 ----------
 
