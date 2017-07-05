@@ -198,7 +198,7 @@ Unixコマンド
 
 ![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
 
-[パッケージ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/08.html)`seqinr`を呼び出す:  
+[パッケージ](https://stats.biopapyrus.jp/r/basic/package.html)`seqinr`を呼び出す:  
 
     library(seqinr)
 
@@ -256,12 +256,6 @@ Unixコマンド
     lx <- read.fasta(file = "mySequences.fasta", seqtype = c("AA"), strip.desc = TRUE) # Reading sequence data
     unlist(getAnnot(lx))                                                               # get sequence annotations
 
-`sapply()`は、リストの各要素に関数を適用する。タンパク質配列の長さ（アミノ酸残基数）を求める:  
-
-    # get the length of sequences
-    # Apply a Function over a List
-    sapply(lx, length)
-
 #### Amino acid usage
 **タンパク質の[アミノ酸組成](https://kotobank.jp/word/アミノ酸組成-761227)**
 
@@ -270,6 +264,12 @@ Unixコマンド
 ![http://www.jalview.org/help/html/misc/aaproperties.html](http://www.jalview.org/help/html/misc/properties.gif)
 
 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html) 平成22年度、清水謙多郎
+
+`sapply()`は、リストの各要素に関数を適用する。タンパク質配列の長さ（アミノ酸残基数）を求める:  
+
+    # get the length of sequences
+    # Apply a Function over a List
+    sapply(lx, length)
 
 `summary()`関数でデータの要約:  
 
