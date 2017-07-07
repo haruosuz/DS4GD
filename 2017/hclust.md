@@ -191,7 +191,7 @@ l1とl2との間の距離が最小(5.65)なので、この2つの遺伝子を結
 ### Understand scaling
 
 `heatmap`関数はデフォルトではデータを行で正規化する`(scale = "row")`、各行の平均が0、標準偏差が1となるように変換する。  
-正規化しない`(scale = "none")`で**[ユークリッド距離](https://ja.wikipedia.org/wiki/ユークリッド距離)**でクラスタリングしたヒートマップを作成:  
+正規化しない`(scale = "none")`で[**ユークリッド距離**](https://ja.wikipedia.org/wiki/ユークリッド距離)でクラスタリングしたヒートマップを作成:  
 
 	heatmap(mat, Colv=NA, col=greenred(10), scale="none")
     # scale = c("row", "column", "none")
