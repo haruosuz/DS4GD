@@ -126,7 +126,7 @@ http://cse.naro.affrc.go.jp/takezawa/r-tips/r/60.html
 ----------
 
 # Heat Map
-ヒートマップ
+[ヒートマップ](https://ja.wikipedia.org/wiki/ヒートマップ)
 
     example(heatmap)
 
