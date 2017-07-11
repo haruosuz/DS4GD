@@ -14,7 +14,7 @@
 
 [データ・クラスタリング](https://ja.wikipedia.org/wiki/データ・クラスタリング)は、データ解析手法（特に多変量解析手法）の一種。教師なしデータ分類手法、つまり与えられたデータを外的基準なしに自動的に分類する手法。
 
-![http://www.albert2005.co.jp/technology/mining/method3_2.html](http://www.albert2005.co.jp/technology/images/tech_mining_img77.jpg)  
+![https://www.albert2005.co.jp/knowledge/data_mining/cluster/hierarchical_clustering](https://www.albert2005.co.jp/knowledge/images/tech_mining_img77.jpg)  
 
 ### 変数が2個の場合のクラスター分析
 簡単な例として、5個の個体について2個􏰁の変数（増殖期と定常期􏰁の遺伝子発現量）の値が観測されている場合を例にとり、 クラスター分析􏰁を行なう。
