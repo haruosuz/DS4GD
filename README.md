@@ -1,7 +1,7 @@
 ----------
 
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2017-04-01
+Last Update: 2017-09-24
 
 ----------
 
@@ -9,6 +9,7 @@ Last Update: 2017-04-01
 DATA SCIENCE FOR GENOME DYNAMICS [DS2]  
 GENOME INFORMATICS
 
+- [2017 Fall](https://github.com/haruosuz/DS4GD/tree/master/2017giga)
 - [2017 Spring](https://github.com/haruosuz/DS4GD/tree/master/2017)
 - [2016 Spring](https://github.com/haruosuz/DS4GD/tree/master/2016)
 
