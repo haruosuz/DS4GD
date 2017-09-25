@@ -1,10 +1,10 @@
-SFC 2017年度 秋学期 火曜日３時限  
+[λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
 Keio SFC 2017 Fall Tuesday 3rd Period
-[λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
+SFC 2017年度 秋学期 火曜日３時限  
 
 # DS4GD
-生命動態のデータサイエンス/生命情報解析(GIGA) [シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2017_25381&ks=B3206)  
 DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2017_25381&ks=B3206&key=15dca30252717a3a92bfaf7cc0fc596c&lang=en)  
+生命動態のデータサイエンス/生命情報解析(GIGA) [シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2017_25381&ks=B3206)  
 
 ## References
 参考文献
@@ -39,7 +39,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 
 ![http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about](http://blog.thegrandlocus.com/img/bioinformatic_word_cloud.png)
 
-## Bioinformatician
+### [Bioinformatician](http://blog.fejes.ca/?p=2418)
 
 ![http://blog.fejes.ca/?p=2418](http://blog.fejes.ca/wp-content/uploads/2014/01/bioinformatics_chart1.png)
 
@@ -47,19 +47,28 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 
 ![http://www.metabolomics.bbsrc.ac.uk/background.htm](http://www.metabolomics.bbsrc.ac.uk/background_files/image038.gif)
 
+[Living in a microbial world](http://www.nature.com/nbt/journal/v35/n5/full/nbt.3868.html)
+
+![https://twitter.com/NatureBiotech/status/864838380353449984](https://pbs.twimg.com/media/DACCRIFWAAAtijL.jpg)
+
+- [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](http://metasub.org/?page_id=55)
+- [MetaSUB Introductory Video on Vimeo](https://vimeo.com/171773795)
+- [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes)
+- [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
 ![http://www.quizbiology.com/2013/05/bioinformatics-mcq-quiz.html](http://lh5.ggpht.com/-RVDAcMLXpPQ/UaLVfpoguLI/AAAAAAAAGdw/n8DEk4aPAIg/Bioinformatics%252520Resources%25255B11%25255D.png)
 
 #### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
-[塩基](http://www.ddbj.nig.ac.jp/sub/code-j.html#nucleotide)
+DNA[塩基](http://www.ddbj.nig.ac.jp/sub/code-j.html#nucleotide)配列
 
 [SILVA rRNA database](https://www.arb-silva.de)
 
 ![http://www.arb-silva.de/documentation/sina-tutorial/](http://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/aligner_basic01.png)
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
-[アミノ酸](http://www.ddbj.nig.ac.jp/sub/code-j.html#amino)配列
+タンパク質の[アミノ酸](http://www.ddbj.nig.ac.jp/sub/code-j.html#amino)配列
 
 [UniProt](https://ja.wikipedia.org/wiki/Swiss-Prot)
 
@@ -77,7 +86,7 @@ iMac Retina 5k 27inch
 	wget https://github.com/haruosuz/DS4GD/raw/master/2017/examples_2016.tar.gz
 
 ### R
-[Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#how-to-install-r-and-a-brief-introduction-to-r)
+R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#how-to-install-r-and-a-brief-introduction-to-r)
 
 ![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
 
@@ -98,14 +107,14 @@ Install Bioconductor packages [`Biostrings`](http://bioconductor.org/packages/re
     biocLite("Biostrings")
     biocLite("msa")
 
-Loading Packages
+Loading Packages:
 
     library(seqinr)
     library(ape)
     library(Biostrings)
     library(msa)
 
-Print version information
+Print version information:
 
     > sessionInfo()
 
