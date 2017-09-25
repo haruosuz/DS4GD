@@ -1,5 +1,5 @@
 Keio SFC 2017 Fall Tuesday 3rd Period
-[λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
+[λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
 SFC 2017年度 秋学期 火曜日３時限
 
 # DS4GD
@@ -52,7 +52,9 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 ![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springer.com/springer-cms/rest/v1/content/6629006/data/v1)
 
 - [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub) 都市環境の生物群集
-- [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+- TED Talk
+ - [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+  - [Jessica Green: We're covered in germs. Let's design for that.](https://www.ted.com/talks/jessica_green_good_germs_make_healthy_buildings) | [ジェシカ・グリーン: 私たちを取り巻く細菌と住環境のデザイン](http://www.ted.com/talks/jessica_green_good_germs_make_healthy_buildings?language=ja)
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
