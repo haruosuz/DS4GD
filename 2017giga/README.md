@@ -63,6 +63,8 @@ DNA[塩基](http://www.ddbj.nig.ac.jp/sub/code-j.html#nucleotide)配列
 
 [UniProt](https://ja.wikipedia.org/wiki/Swiss-Prot)
 
+![http://www.uniprot.org/help/about](http://www.uniprot.org/images/overview.png)
+
 ----------
 
 ## [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](http://metasub.org/?page_id=55)
