@@ -1,6 +1,6 @@
-[λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
 Keio SFC 2017 Fall Tuesday 3rd Period
-SFC 2017年度 秋学期 火曜日３時限  
+[λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
+SFC 2017年度 秋学期 火曜日３時限
 
 # DS4GD
 DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2017_25381&ks=B3206&key=15dca30252717a3a92bfaf7cc0fc596c&lang=en)  
@@ -59,15 +59,11 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 ![http://www.quizbiology.com/2013/05/bioinformatics-mcq-quiz.html](http://lh5.ggpht.com/-RVDAcMLXpPQ/UaLVfpoguLI/AAAAAAAAGdw/n8DEk4aPAIg/Bioinformatics%252520Resources%25255B11%25255D.png)
 
 #### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
-DNA[塩基](http://www.ddbj.nig.ac.jp/sub/code-j.html#nucleotide)配列
-
 [SILVA rRNA database](https://www.arb-silva.de)
 
 ![http://www.arb-silva.de/documentation/sina-tutorial/](http://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/aligner_basic01.png)
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
-タンパク質の[アミノ酸](http://www.ddbj.nig.ac.jp/sub/code-j.html#amino)配列
-
 [UniProt](https://ja.wikipedia.org/wiki/Swiss-Prot)
 
 ![http://www.uniprot.org/help/about](http://www.uniprot.org/images/overview.png)
