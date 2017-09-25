@@ -47,15 +47,6 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 
 ![http://www.metabolomics.bbsrc.ac.uk/background.htm](http://www.metabolomics.bbsrc.ac.uk/background_files/image038.gif)
 
-[Living in a microbial world](http://www.nature.com/nbt/journal/v35/n5/full/nbt.3868.html)
-
-![https://twitter.com/NatureBiotech/status/864838380353449984](https://pbs.twimg.com/media/DACCRIFWAAAtijL.jpg)
-
-- [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](http://metasub.org/?page_id=55)
-- [MetaSUB Introductory Video on Vimeo](https://vimeo.com/171773795)
-- [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes)
-- [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
 ![http://www.quizbiology.com/2013/05/bioinformatics-mcq-quiz.html](http://lh5.ggpht.com/-RVDAcMLXpPQ/UaLVfpoguLI/AAAAAAAAGdw/n8DEk4aPAIg/Bioinformatics%252520Resources%25255B11%25255D.png)
@@ -71,6 +62,13 @@ DNA[塩基](http://www.ddbj.nig.ac.jp/sub/code-j.html#nucleotide)配列
 タンパク質の[アミノ酸](http://www.ddbj.nig.ac.jp/sub/code-j.html#amino)配列
 
 [UniProt](https://ja.wikipedia.org/wiki/Swiss-Prot)
+
+----------
+
+## [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](http://metasub.org/?page_id=55)
+- [MetaSUB Introductory Video on Vimeo](https://vimeo.com/171773795)
+- [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes)
+- [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
 
 ----------
 
