@@ -47,6 +47,14 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 
 ![http://www.metabolomics.bbsrc.ac.uk/background.htm](http://www.metabolomics.bbsrc.ac.uk/background_files/image038.gif)
 
+**Microbiome of the Built Environment (MoBE)**
+
+![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springer.com/springer-cms/rest/v1/content/6629006/data/v1)
+
+- [MetaSUB](https://github.com/haruosuz/metasub)
+- [MetaSUB Introductory Video on Vimeo](https://vimeo.com/171773795)
+- [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
 ![http://www.quizbiology.com/2013/05/bioinformatics-mcq-quiz.html](http://lh5.ggpht.com/-RVDAcMLXpPQ/UaLVfpoguLI/AAAAAAAAGdw/n8DEk4aPAIg/Bioinformatics%252520Resources%25255B11%25255D.png)
@@ -64,18 +72,6 @@ DNA[塩基](http://www.ddbj.nig.ac.jp/sub/code-j.html#nucleotide)配列
 [UniProt](https://ja.wikipedia.org/wiki/Swiss-Prot)
 
 ![http://www.uniprot.org/help/about](http://www.uniprot.org/images/overview.png)
-
-----------
-
-## MoBE
-Microbiome of the Built Environment
-
-![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springer.com/springer-cms/rest/v1/content/6629006/data/v1)
-
-- [MetaSUB](http://metasub.org/?page_id=55)
-- [MetaSUB Introductory Video on Vimeo](https://vimeo.com/171773795)
-- [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes)
-- [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
 
 ----------
 
