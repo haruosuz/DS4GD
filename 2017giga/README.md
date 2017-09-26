@@ -35,8 +35,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 ## Introduction
 
 ### [Bioinformatics](https://github.com/haruosuz/books/tree/master/bbs#11-from-data-to-knowledge-the-aim-of-bioinformatics)
-[bioinformatics | バイオインフォマティクス | 生物情報科学](http://bi.biopapyrus.net)  
-
+ 
 ![http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about](http://blog.thegrandlocus.com/img/bioinformatic_word_cloud.png)
 
 ### [Bioinformatician](http://blog.fejes.ca/?p=2418)
@@ -52,9 +51,9 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 ![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springer.com/springer-cms/rest/v1/content/6629006/data/v1)
 
 - [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub) 都市環境の生物群集
-- TED Talk
- - [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-  - [Jessica Green: We're covered in germs. Let's design for that.](https://www.ted.com/talks/jessica_green_good_germs_make_healthy_buildings) | [ジェシカ・グリーン: 私たちを取り巻く細菌と住環境のデザイン](http://www.ted.com/talks/jessica_green_good_germs_make_healthy_buildings?language=ja)
+- [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+- [Jessica Green: We're covered in germs. Let's design for that.](https://www.ted.com/talks/jessica_green_good_germs_make_healthy_buildings) | [ジェシカ・グリーン: 私たちを取り巻く細菌と住環境のデザイン](http://www.ted.com/talks/jessica_green_good_germs_make_healthy_buildings?language=ja)
+- [Richard Resnick: Welcome to the genomic revolution](https://www.ted.com/talks/richard_resnick_welcome_to_the_genomic_revolution) | [リチャード・レズニック「ゲノム革命の時代へようこそ」](https://www.ted.com/talks/richard_resnick_welcome_to_the_genomic_revolution?language=ja)
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
