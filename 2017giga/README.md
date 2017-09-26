@@ -126,3 +126,20 @@ Print version information:
     seqinr_3.3-6       
 
 ----------
+
+### Assignments
+Download protein sequence data, Document the origin of data (record the website’s URL), Document when you downloaded data.
+
+タンパク質配列データを取得し、データの入手元(ウェブサイトのURL)、データをダウンロードした日付を記録する。ターミナルを開き、以下のコマンドを実行する:  
+
+	mkdir -p ~/projects/uniprot_sprot/data
+	cd ~/projects/uniprot_sprot/data/
+	curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
+	gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
+
+[References]
+https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database
+
+----------
+
+
