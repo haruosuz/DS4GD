@@ -48,11 +48,13 @@ https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#viewing-the-un
 [Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース
 
 ### Website
-Go the UniProt website (http://www.uniprot.org), and then click the link "Download latest release".
-
-[UniProt](http://www.uniprot.org)の[Download latest release](http://www.uniprot.org/downloads)を開く。
-<ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。
+[UniProt](http://www.uniprot.org)の[Download latest release](http://www.uniprot.org/downloads)を開く。  
+<ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。  
 *uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+Go the UniProt website (http://www.uniprot.org), and then click the link "Download latest release".  
+Open the URL <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> with your browser (Firefox or Chrome).  
+Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
 
 ### Download data
 
@@ -136,6 +138,7 @@ Pipe the standard output to the next command with the pipe character (|).
 
 **"harakiri"検索結果**
 
+    # Search Results for "harakiri". There are 3 entries for in the FASTA file.
     >sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens GN=HRK PE=1 SV=1
     >sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus GN=Hrk PE=3 SV=1
     >sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus GN=Hrk PE=3 SV=1
@@ -147,6 +150,7 @@ Pipe the standard output to the next command with the pipe character (|).
 
 **"Shugoshin"検索結果**
 
+    # Search Results for "Shugoshin". There are 19 entries for in the FASTA file.
     >sp|Q0WTB8|SGO2_ARATH SHUGOSHIN 2 OS=Arabidopsis thaliana GN=SGO2 PE=2 SV=1
     >sp|Q562F6|SGO2_HUMAN Shugoshin 2 OS=Homo sapiens GN=SGO2 PE=1 SV=2
     >sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus GN=Sgo2 PE=1 SV=1
