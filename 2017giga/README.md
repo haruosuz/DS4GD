@@ -27,8 +27,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 - 2017-11-28 No. 9 - ペアワイズ配列アラインメント[ Pairwise Sequence Alignment ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2017-12-05 No. 10 - 多重配列アライメント[ Multiple Sequence Alignment ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
 - 2017-12-12 No. 11 - 系統解析[ Phylogenetic Analysis ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
-- 2017-12-19 No. 12 - クラスター分析[ Cluster Analysis ](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
-- 2017-12-26 No. 13 - ヒートマップ[ Heat Map ](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+- 2017-12-19 No. 12 - TBA
+- 2017-12-26 No. 13 - TBA
 - 2018-01-16 No. 14 - 最終発表[ Oral presentation ]
 
 ----------
