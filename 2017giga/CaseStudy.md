@@ -58,7 +58,7 @@ Q3. Write a function to calculate the AT content of a DNA sequence (ie. the frac
 
 Q4. Write a function to draw a sliding window plot of AT content. Use it to make a sliding window plot of AT content along the genome, using a windowsize of 20000 nucleotides. Do you notice any relationship between the sliding window plot of GC content along the genome, and the sliding window plot of AT content?
 
-Q5. Is the 3-nucleotide word GAC GC over-represented or under-represented in the genome sequence?
+Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the genome sequence?
 
 ----------
 ## Assignment 4
