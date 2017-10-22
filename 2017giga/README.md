@@ -17,47 +17,21 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 - 2017-09-26 No. 1 - イントロダクション [Introduction](#Introduction)
 - 2017-10-03 No. 2 - 生物学的データ [Biological data](https://github.com/haruosuz/books/tree/master/bbs#chapter-1-introduction)
   - タンパク質配列データベース [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
-- 2017-10-10 No. 3 - R言語入門[ Introduction to R ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#how-to-install-r-and-a-brief-introduction-to-r)
+- 2017-10-10 No. 3 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#how-to-install-r-and-a-brief-introduction-to-r)
 - 2017-10-17 No. 4 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
-  - [設問4](#2017-10-23)
+  - [Assignment #4](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#assignment-4)
 - 2017-10-24 No. 5 - DNA配列解析2[ DNA Sequence Statistics (2) ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+  - [Assignment #5](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#assignment-5)
 - 2017-10-31 No. 6 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md)
-- 2017-11-07 No. 7 - 中間発表[ interim report ]
-- 2017-11-14 No. 8 - タンパク質配列解析[ Protein sequence analysis ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
+- 2017-11-07 No. 7 - 中間発表 interim report
+- 2017-11-14 No. 8 - TBA
 - 2017-11-21 (前半科目試験日)
-- 2017-11-28 No. 9 - ペアワイズ配列アラインメント[ Pairwise Sequence Alignment ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
-- 2017-12-05 No. 10 - 多重配列アライメント[ Multiple Sequence Alignment ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
-- 2017-12-12 No. 11 - 系統解析[ Phylogenetic Analysis ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
+- 2017-11-28 No. 9 - TBA
+- 2017-12-05 No. 10 - TBA
+- 2017-12-12 No. 11 - TBA
 - 2017-12-19 No. 12 - TBA
 - 2017-12-26 No. 13 - TBA
-- 2018-01-16 No. 14 - 最終発表[ Oral presentation ]
-
-----------
-## 2017-10-23
-
-設問4：DNA Sequence Statistics (1)
-
-Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-
-Q1. What are the last twenty nucleotides of the genome sequence?
-
-Q2. What is the length in nucleotides of the genome sequence?
-
-Q3. How many of each of the four nucleotides A, C, T and G, and any other symbols, are there in the genome sequence?
-
-Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucleotides are included, (ii) non-A/C/T/G nucleotides are discarded?
-
-Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
-
-Q6. How many occurrences of the DNA words CC, CG and GC occur in the genome sequence?
-
-Q7. How many occurrences of the DNA words CC, CG and GC occur in the (i) first 1000 and (ii) last 1000 nucleotides of the genome sequence?
-How can you check that the subsequence that you have looked at is 1000 nucleotides long?
-
-[References]
-- https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1
-- http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises
-- http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-1
+- 2018-01-16 No. 14 - 最終発表 Oral presentation
 
 ----------
 
@@ -155,8 +129,3 @@ Print version information:
     seqinr_3.3-6       
 
 ----------
-
-
-
-
-
