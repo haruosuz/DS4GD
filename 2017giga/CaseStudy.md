@@ -94,7 +94,6 @@ Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucl
 
 Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
 
-相補鎖
 ![http://revertra.webcrow.jp/DNA/index.php](http://revertra.webcrow.jp/DNA/dnaseq.png)
 
 	help.search("complement")
