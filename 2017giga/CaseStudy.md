@@ -68,7 +68,7 @@ Download the DNA sequence of your genome of interest.
 
     library("seqinr")
     ACCESSION <- "NC_001477" # Dengue virus 1
-    ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
     ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
     d <- ld[[1]]
 
