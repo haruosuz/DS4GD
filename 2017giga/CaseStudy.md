@@ -45,10 +45,6 @@ Retrieving a list of DNA sequences from NCBI
     write.fasta(sequences=seqs, names=sapply(seqs, getAnnot), file.out="sequence.fna")
 
 ----------
-## Assignment 5
-[Exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises)
-
-Download the DNA sequence of your genome of interest. 
 
 	# read the sequence into R using the SeqinR package:
     library("seqinr")
@@ -57,9 +53,12 @@ Download the DNA sequence of your genome of interest.
     ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
     d <- ld[[1]]
 
-Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+## Assignment 5
+[Exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises)
 
 [Answers to the exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-2)
+
+Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 
 Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
 
@@ -137,15 +136,9 @@ REST Web Service for Genome Analysis
 ## Assignment 4
 [Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
 
-Download the DNA sequence of your genome of interest. 
+[Answers to the exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-1)
 
-    library("seqinr")
-    ACCESSION <- "NC_001477" # Dengue virus 1
-    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
-    d <- ld[[1]]
-
-Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 
 Q1. What are the last twenty nucleotides of the genome sequence?
 
@@ -469,12 +462,12 @@ Pipe the standard output to the next command with the pipe character (|).
     legend("topleft", legend=colnames(X), col=rainbow(12), lty=1:6)
     # lty: 0=blank, 1=solid (default), 2=dashed, 3=dotted, 4=dotdash, 5=longdash, 6=twodash
 
-[クラスター分析](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
 
     # Hierarchical cluster analysis
     plot(hclust(dist(t(X))))
 
-[ヒートマップ](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
     # Heatmap for amino acid usage profiles
     heatmap(t(X))
