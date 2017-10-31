@@ -48,17 +48,83 @@ Retrieving a list of DNA sequences from NCBI
 ## Assignment 5
 [Exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises)
 
-Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+Download the DNA sequence of your genome of interest. 
+
+	# read the sequence into R using the SeqinR package:
+    library("seqinr")
+    ACCESSION <- "NC_001477" # Dengue virus 1
+    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
+    d <- ld[[1]]
+
+Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+[Answers to the exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-2)
 
 Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
 
+	# write a function to make a sliding window plot:
+    slidingwindowplotGC <- function(windowsize, inputseq)
+    {
+      require("zoo") # this function requires the 'zoo' R package # install.packages('zoo')
+      x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
+      y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = GC)
+      plot(x, y, type="b", xlab="Position (bp)", ylab="GC content")
+    }
+
+	# make a sliding window plot with a window size of 200 nucleotides:
+    slidingwindowplotGC(200, d)
+
+	# make a sliding window plot of GC content using a window size of 2000 nucleotides:
+    slidingwindowplotGC(2000, d)
+
 Q2. Draw a sliding window plot of GC content in the genome sequence using a window size of 20000 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
+
+	# make a sliding window plot with a window size of 20000 nucleotides:
+    slidingwindowplotGC(20000, d)
 
 Q3. Write a function to calculate the AT content of a DNA sequence (ie. the fraction of the nucleotides in the sequence that are As or Ts). What is the AT content of the genome?
 
-Q4. Write a function to draw a sliding window plot of AT content. Use it to make a sliding window plot of AT content along the genome, using a windowsize of 20000 nucleotides. Do you notice any relationship between the sliding window plot of GC content along the genome, and the sliding window plot of AT content?
+	# Here is a function to calculate the AT content of a genome sequence:
+    AT <- function(x){ library("seqinr"); 1 - GC(x) }
+
+    # use the function to calculate the AT content of the genome:
+    AT(d)
+
+    # Create tests
+    x <- s2c("atgc"); AT(x)
+
+Q4. Write a function to draw a sliding window plot of AT content. Use it to make a sliding window plot of AT content along the genome. Do you notice any relationship between the sliding window plot of GC content along the genome, and the sliding window plot of AT content?
+
+	# write a function to make a sliding window plot:
+    slidingwindowplotAT <- function(windowsize, inputseq)
+    {
+      require("zoo")
+      x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
+      AT <- function(x){ library("seqinr"); 1 - GC(x) }
+      y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = AT)
+      plot(x, y, type="b", xlab="Position (bp)", ylab="AT content")
+    }
+
+	# make a sliding window plot of AT/GC content with a window size of 2000 nucleotides:
+    par(mfrow=c(2,1))
+    slidingwindowplotAT(2000, d)
+    slidingwindowplotGC(2000, d)
 
 Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the genome sequence?
+
+	# search for a function to calculate rho by typing:
+	help.search("rho")
+
+	# calculate Rho for words of length 3 in the genome
+	rho(d, wordsize=3)
+
+- http://www.g-language.org/wiki/restgenomeanalysisjapanese
+- http://www.g-language.org/wiki/restgenomeanalysisenglish
+- http://rest.g-language.org/NC_001477 shows genome information for Dengue virus 1 ('NC_001477')
+- http://rest.g-language.org/NC_001477/gcwin calculates G+C content along the genome.
+- http://rest.g-language.org/help/gcwin shows a documentation for 'gcwin' function.
+- http://rest.g-language.org/NC_001477/gcwin/window=2000 uses 2,000-bp window size instead of the default 10,000-bp window size.
 
 ----------
 ## Assignment 4
@@ -139,6 +205,7 @@ or
 - go the UniProt website (http://www.uniprot.org). At the top of the UniProt website, you will see a search box, and you can type keywords (e.g. "antibiotic resistance Clostridium difficile") that you are looking for in this search box, and then click on the “Search” button to search for it.
 http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#viewing-the-uniprot-webpage-for-a-protein-sequence
 
+----------
 ----------
 
 ## UniProtKB Swiss-Prot protein sequence database
@@ -333,8 +400,8 @@ Pipe the standard output to the next command with the pipe character (|).
 
 `sapply()`は、リストの各要素に関数を適用する。タンパク質配列の長さ（アミノ酸残基数）を求める:  
 
-    # get the length of sequences
     # Apply a Function over a List
+    # get the length of sequences
     sapply(lx, length)
 
 `summary()`関数でデータの要約:
@@ -347,6 +414,8 @@ Pipe the standard output to the next command with the pipe character (|).
 [`AAstat()`](https://www.rdocumentation.org/packages/seqinr/versions/3.3-3/topics/AAstat)
 関数を用いて、タンパク質の配列情報（アミノ酸残基数、物理化学的クラスの割合、等電点の理論値）を求める:  
 
+    ?AAstat
+
     # Get protein statistics
     AAstat(lx[[1]])
 
@@ -354,14 +423,20 @@ Pipe the standard output to the next command with the pipe character (|).
 
 アミノ酸の個数を出力:  
 
+    # Get amino acid counts
     AAstat(lx[[1]], plot = FALSE)$Compo
 
-物理化学的クラス (Tiny, Small, Aliphatic, Aromatic, Non-polar, Polar, Charged, Positive, Negative) のうち、[芳香族アミノ酸](https://ja.wikipedia.org/wiki/芳香族アミノ酸) Aromatic の割合を出力:  
+物理化学的クラス (Tiny, Small, Aliphatic, Aromatic, Non-polar, Polar, Charged, Positive, Negative) の割合を出力:
+
+    # Get the percentage of each physico-chemical classes
+    AAstat(lx[[1]], plot = FALSE)$Prop
 
     AAstat(lx[[1]], plot = FALSE)$Prop$Aromatic
 
 `sapply()`関数は、リストの各要素に関数を適用する。複数タンパク質配列の物理化学的クラスの割合を求める:  
 
+    # Apply a Function over a List
+    # get the percentage of each physico-chemical classes
     sapply(lx, function(x) AAstat(x, plot=FALSE)$Prop )
 
 複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
@@ -400,14 +475,16 @@ Pipe the standard output to the next command with the pipe character (|).
 #### [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 ペアワイズ配列アラインメント
 
+ドットプロットで2つの配列を比較:  
+
     # Comparing two sequences using a dotplot
-    # ドットプロットで2つの配列を比較
     s1 <- lx[[1]]
     s2 <- lx[[3]]
     dotPlot(s1, s2)
     nmbr <- 3; dotPlot(s1, s2, wsize = nmbr, wstep = nmbr, nmatch = nmbr, xlab = getName(s1), ylab = getName(s2))
 
-    # for文でループ処理を行う。複数のドットプロットをファイル出力する:  
+for文でループ処理を行う。複数のドットプロットをファイル出力する:  
+ 
     pdf("Rplot.pdf") # create a PDF device called "Rplot.pdf"
     for (n1 in 1:length(lx)) {
       for (n2 in n1:length(lx)) {
@@ -418,8 +495,9 @@ Pipe the standard output to the next command with the pipe character (|).
     }
     dev.off(which = dev.cur()) # close the device
 
+2つのタンパク質配列間の大域的/局所的アライメント:  
+
     # Pairwise global/local alignment of protein sequences
-    # 2つのタンパク質配列間の大域的/局所的アライメント
     library(Biostrings)
     data(BLOSUM50)
     type <- "global" # Pairwise global alignment
@@ -455,20 +533,24 @@ Pipe the standard output to the next command with the pipe character (|).
 
 ![](http://blog.amelieff.jp/images/weblogo2.png)
 
-    # Reading a multiple alignment file into R # 多重アライメント
+    # 多重アライメント
+    # Reading a multiple alignment file into R
     library(seqinr)
     myAln <- read.alignment(file = "myAlignment.fasta", format = "fasta")
 
-    # Calculating genetic distances between protein sequences # 距離
+    # 距離
+    # Calculating genetic distances between protein sequences
     mydist <- dist.alignment(myAln)
 
-    # Building an unrooted phylogenetic tree # 無根系統樹
+    # 無根系統樹
+    # Building an unrooted phylogenetic tree
     #install.packages("ape")
     library(ape)
     mytree <- nj(mydist)
     plot.phylo(mytree, type = "unrooted") # type = "phylogram", "cladogram", "fan", "unrooted", "radial"
 
-    # Building a rooted phylogenetic tree # 有根系統樹
+    # 有根系統樹
+    # Building a rooted phylogenetic tree
     #library(phangorn); mytree <- midpoint(mytree) # midpoint rooting
     outgroup <- "DANRE"
     mytree <- root(mytree, outgroup = grep(pattern = outgroup, x = mytree$tip.label), resolve.root = TRUE)
@@ -535,7 +617,6 @@ Pipe the standard output to the next command with the pipe character (|).
 - [Extracting data from BLAST databases with blastdbcmd](http://www.ncbi.nlm.nih.gov/books/NBK279689/)
 - [自家製BLAST用DBから必要な配列エントリ取得 | ぼうのブログ](http://bonohu.jp/blog/2014/08/08/yetanother-blastdbcmd/)
 - [Blasted Bioinformatics!?: My IDs not good enough for NCBI BLAST+](http://blastedbio.blogspot.com/2012/10/my-ids-not-good-enough-for-ncbi-blast.html)
-
 
 ----------
 ----------
