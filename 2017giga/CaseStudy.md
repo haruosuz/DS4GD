@@ -94,7 +94,7 @@ Q3. Write a function to calculate the AT content of a DNA sequence (ie. the frac
     # Create tests
     x <- s2c("atgc"); AT(x)
 
-Q4. Write a function to draw a sliding window plot of AT content. Use it to make a sliding window plot of AT content along the genome, using a windowsize of 2000 nucleotides. 
+Q4. Write a function to draw a sliding window plot of AT content.
 
 	# write a function to make a sliding window plot:
     slidingwindowplotAT <- function(windowsize, inputseq)
@@ -106,7 +106,7 @@ Q4. Write a function to draw a sliding window plot of AT content. Use it to make
       plot(x, y, type="b", xlab="Position (bp)", ylab="AT content")
     }
 
-Do you notice any relationship between the sliding window plot of GC content along the Mycobacterium leprae genome, and the sliding window plot of AT content?
+Use it to make a sliding window plot of AT content along the genome, using a windowsize of 2000 nucleotides. 
 
     par(mfrow=c(2,1))
 	# make a sliding window plot of AT content:
