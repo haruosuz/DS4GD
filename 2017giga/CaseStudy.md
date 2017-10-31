@@ -122,12 +122,16 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 	# calculate Rho for words of length 3 in the genome
 	rho(d, wordsize=3)
 
-- http://www.g-language.org/wiki/restgenomeanalysisjapanese
-- http://www.g-language.org/wiki/restgenomeanalysisenglish
+### G-language
+REST Web Service for Genome Analysis
+[English](http://www.g-language.org/wiki/restgenomeanalysisenglish)
+[日本語](http://www.g-language.org/wiki/restgenomeanalysisjapanese)
+
 - http://rest.g-language.org/NC_001477 shows genome information for Dengue virus 1 ('NC_001477')
-- http://rest.g-language.org/NC_001477/gcwin calculates G+C content along the genome.
 - http://rest.g-language.org/help/gcwin shows a documentation for 'gcwin' function.
+- http://rest.g-language.org/NC_001477/gcwin calculates GC content along the genome.
 - http://rest.g-language.org/NC_001477/gcwin/window=2000 uses 2,000-bp window size instead of the default 10,000-bp window size.
+- http://rest.g-language.org/NC_001477/gcwin/window=2000/at=1 calculates AT content instead of GC content
 
 ----------
 ## Assignment 4
