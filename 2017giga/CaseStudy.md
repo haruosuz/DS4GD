@@ -94,7 +94,7 @@ Q3. Write a function to calculate the AT content of a DNA sequence (ie. the frac
     # Create tests
     x <- s2c("atgc"); AT(x)
 
-Q4. Write a function to draw a sliding window plot of AT content. Use it to make a sliding window plot of AT content along the genome. Do you notice any relationship between the sliding window plot of GC content along the genome, and the sliding window plot of AT content?
+Q4. Write a function to draw a sliding window plot of AT content. Use it to make a sliding window plot of AT content along the genome, using a windowsize of 2000 nucleotides. 
 
 	# write a function to make a sliding window plot:
     slidingwindowplotAT <- function(windowsize, inputseq)
@@ -106,9 +106,12 @@ Q4. Write a function to draw a sliding window plot of AT content. Use it to make
       plot(x, y, type="b", xlab="Position (bp)", ylab="AT content")
     }
 
-	# make a sliding window plot of AT/GC content with a window size of 2000 nucleotides:
+Do you notice any relationship between the sliding window plot of GC content along the Mycobacterium leprae genome, and the sliding window plot of AT content?
+
     par(mfrow=c(2,1))
+	# make a sliding window plot of AT content:
     slidingwindowplotAT(2000, d)
+	# This is the mirror image of the plot of GC content (because AT equals 1 minus GC):
     slidingwindowplotGC(2000, d)
 
 Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the genome sequence?
