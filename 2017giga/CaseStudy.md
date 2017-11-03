@@ -630,14 +630,9 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
 	assembly_summary_genbank.txt            - current GenBank genome assemblies
 	assembly_summary_refseq.txt             - current RefSeq genome assemblies
 
-https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1
-What is the difference between RefSeq and GenBank?
-
-
+- [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
 - [RefSeq - JI 井上 潤](http://www.geocities.jp/ancientfishtree/RefSeq.html)
 - [RefSeq | 重複のない生物の遺伝子データベース（ゲノムデータベース）](http://bi.biopapyrus.net/biodb/refseq.html)
-
-
 
 ### Website
 NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
@@ -708,7 +703,7 @@ Also see the [Downloading Genomic Data Factsheet](ftp://ftp.ncbi.nlm.nih.gov/pub
 
 [腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](http://integbio.jp/dbcatalog/record/nbdc00058) の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
-    # List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli O157:H7 Sakai" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli O157:H7 Sakai" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
 
     NAME="O157.*Sakai"
     ftpdirpaths=(`awk -F "\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' $FILE`)
@@ -779,10 +774,9 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
 #### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
 
-`read.fasta()`関数で配列データを読み込む:  
-
 [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#reading-sequence-data-into-r)
 
+    # `read.fasta()`関数で配列データを読み込む:  
     ld <- read.fasta(file = "GCF_000008865.1_ASM886v1_genomic.fna.gz", seqtype = c("DNA"), strip.desc = TRUE)
 
 配列の数をカウントする:  
