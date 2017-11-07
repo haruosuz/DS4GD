@@ -697,10 +697,6 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する:
     # Using grep, cut, sort, uniq to summarize columns of data
     grep -v "^#" $FILE | cut -f12 | sort | uniq -c
 
-[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
-
-Also see the [Downloading Genomic Data Factsheet](ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf).
-
 [腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](http://integbio.jp/dbcatalog/record/nbdc00058) の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli O157:H7 Sakai" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
@@ -719,8 +715,6 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
     echo ${#ftpdirpaths[@]}
     echo ${!ftpdirpaths[@]}
 
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> with your browser (Firefox or Chrome).  
-
 抽出されたURL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> をブラウザFirefox/Chromeで開く。
 
     ファイル名と内容
@@ -728,12 +722,14 @@ Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_0000088
     *.fna.gz: FASTA Nucleic Acids - ゲノム塩基配列
     *.faa.gz: FASTA Amino Acids - 各タンパク質のアミノ酸配列
 
-ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> with your browser (Firefox or Chrome).  
 
     File formats and content
     *_genomic.gbff.gz: GenBank flat file format of the genomic sequence(s).
     *_genomic.fna.gz: FASTA format of the genomic sequence(s).
     *_protein.faa.gz: FASTA format of the protein sequence(s).
+
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
 *README.txt*ファイル、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）、[GenaBank](http://bi.biopapyrus.net/biodb/genbank.html)形式と[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式の圧縮ファイル（*.gz*）を`wget`でダウンロードする:  
 
@@ -751,6 +747,14 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     # compare MD5 checksum values with those in *md5checksums.txt*
     md5 *.gz
     cat md5checksums.txt
+
+[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
+Also see the [Downloading Genomic Data Factsheet](ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf).
+
+    NAME="O157.*Sakai"
+    awk -F "\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' $FILE > ftpdirpaths
+	awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gbff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
+    wget -i ftpfilepaths
 
 ### Working with Data in R
 
