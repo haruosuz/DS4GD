@@ -14,6 +14,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 ## Class Schedule & Materials
 講義日程と資料
 
+- ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md)
 - 2017-09-26 No. 1 - イントロダクション [Introduction](#Introduction)
 - 2017-10-03 No. 2 - 生物学的データ [Biological data](https://github.com/haruosuz/books/tree/master/bbs#chapter-1-introduction)
   - タンパク質配列データベース [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
@@ -22,13 +23,13 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
   - [Assignment #4](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#assignment-4)
 - 2017-10-24 No. 5 - DNA配列解析2[ DNA Sequence Statistics (2) ](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
   - [Assignment #5](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#assignment-5)
-- 2017-10-31 No. 6 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md)
+- 2017-10-31 No. 6 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#working-with-data-in-r)
 - 2017-11-07 No. 7 - 中間発表 interim report
 - 2017-11-14 No. 8 - TBA
 - 2017-11-21 (前半科目試験日)
 - 2017-11-28 No. 9 - TBA
-- 2017-12-05 No. 10 - TBA
-- 2017-12-12 No. 11 - TBA
+- 2017-12-05 No. 10 - TBA (Guest Speaker)
+- 2017-12-12 No. 11 - TBA (Guest Speaker)
 - 2017-12-19 No. 12 - TBA
 - 2017-12-26 No. 13 - TBA
 - 2018-01-16 No. 14 - 最終発表 Oral presentation
