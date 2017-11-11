@@ -689,7 +689,10 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する:
     # use grep to extract header lines (those that begin with #)
     grep "^#" $FILE
 
-    grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | less # -N --LINE-NUMBERS
+http://apprize.info/data/bioinformatics/7.html
+
+    # pipe output to `less`, and then press / and enter -N (--LINE-NUMBERS)
+    grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | less
 
 アセンブリの状況（assembly_level: Contig, Scaffold, Chromosome, Complete Genome）を確認する:  
 
@@ -749,11 +752,12 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     cat md5checksums.txt
 
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
-Also see the [Downloading Genomic Data Factsheet](ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf).
+Also see the Downloading Genomic Data Factsheet.
+ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
-    NAME="O157.*Sakai"
-    awk -F "\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' $FILE > ftpdirpaths
-	awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gbff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
+    NAME="Ensifer|Sinorhizobium"
+    awk -F "\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ && $5 ~ /representative/ {print $20}' $FILE > ftpdirpaths
+    awk 'BEGIN{FS=OFS="/";filesuffix="genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
     wget -i ftpfilepaths
 
 ### Working with Data in R
