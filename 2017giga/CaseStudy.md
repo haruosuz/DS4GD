@@ -37,19 +37,19 @@ Download the lastest version [last-912.zip](http://last.cbrc.jp/last-912.zip) us
 
 [Installation](http://last.cbrc.jp/doc/last.html)
 
+	# Setup
 	unzip last-912.zip
-	cd last-912
-	(time make &) >& log.make.$(date +%F)
+	cd last-912/
+	make
 
-	PATH_TO_LAST=/path/to/last-912
+	# Install (optional)
+	PATH_TO_LAST=/path/to/your/last-912
 	make install prefix=$PATH_TO_LAST
 
-Export last path (either add to .bashrc or type as is in the terminal):
-
+	# Export LAST path (either add to .bashrc or type as is in the terminal):
 	export PATH=$PATH:$PATH_TO_LAST/bin
 
 Usage
-
 [LAST Tutorial](http://last.cbrc.jp/doc/last-tutorial.html)
 
 	cd $PATH_TO_LAST/examples
