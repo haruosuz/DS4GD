@@ -50,6 +50,7 @@ Download the lastest version [last-912.zip](http://last.cbrc.jp/last-912.zip) us
 	export PATH=$PATH:$PATH_TO_LAST/bin
 
 Usage
+
 [LAST Tutorial](http://last.cbrc.jp/doc/last-tutorial.html)
 
 	cd $PATH_TO_LAST/examples
