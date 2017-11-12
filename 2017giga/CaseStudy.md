@@ -9,7 +9,7 @@
 Table of Contents
 - [2017-12-12](#2017-12-12)
 - [2017-12-05](#2017-12-05)
-- [last](#last)
+- [LAST: Genome-Scale Sequence Comparison](#last)
 - [Assignment 5](#assignment-5)
 - [Assignment 4](#assignment-4)
 - [ASSIGNMENT](#assignment)
