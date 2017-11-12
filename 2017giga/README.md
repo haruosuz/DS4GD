@@ -40,6 +40,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 
 - [2017-12-12](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#2017-12-12)
 - [2017-12-05](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#2017-12-05)
+- [LAST: Genome-Scale Sequence Comparison](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#last)
 
 ----------
 
