@@ -26,14 +26,25 @@ Table of Contents
 ### LAST
 [LAST: Genome-Scale Sequence Comparison](http://last.cbrc.jp)
 
+http://kazumaxneo.hatenablog.com/?page=1497582787
+2017-06-15
+ゲノムの相同性の高い領域の網羅的な検索 LAST
+2017-06-15
+Oxford Nanoporeリードのマッピング
+http://kazumaxneo.hatenablog.com/archive/2017/06/15
+
 Check compiler version using:
 
 	gcc --version
 	g++ --version
 
+最新版のダウンロード
+
 Download the lastest version [last-912.zip](http://last.cbrc.jp/last-912.zip) using:
 
 	wget http://last.cbrc.jp/last-912.zip
+
+インストール
 
 [Installation](http://last.cbrc.jp/doc/last.html)
 
@@ -49,11 +60,15 @@ Download the lastest version [last-912.zip](http://last.cbrc.jp/last-912.zip) us
 	# Export LAST path (either add to .bashrc or type as is in the terminal):
 	export PATH=$PATH:$PATH_TO_LAST/bin
 
+使用法
+
 Usage
 
 [LAST Tutorial](http://last.cbrc.jp/doc/last-tutorial.html)
 
 	cd $PATH_TO_LAST/examples
+
+例1: ヒトとフグのミトコンドリアのゲノムを比較する
 
 Example 1: Compare the human and fugu mitochondrial genomes
 
@@ -61,6 +76,15 @@ Example 1: Compare the human and fugu mitochondrial genomes
 	lastal humdb fuguMito.fa > myalns.maf
 
 Understanding the output
+
+	less -S myalns.maf
+
+例2: 脊椎動物と無脊椎動物のタンパク質を比較する
+
+Example 2: Compare vertebrate proteins to invertebrate proteins
+
+	lastdb -p -cR01 invdb invertebrate.fa
+	lastal invdb vertebrate.fa
 
 ----------
 
