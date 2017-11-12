@@ -24,9 +24,9 @@ Table of Contents
 ## 2017-12-05
 
 ### LAST
-**ゲノムスケール配列比較**
-
 **[LAST: Genome-Scale Sequence Comparison](http://last.cbrc.jp)**
+
+ゲノムスケール配列比較
 
 - 2017-06-15 [ゲノムの相同性の高い領域の網羅的な検索 LAST](http://kazumaxneo.hatenablog.com/?page=1497582787)
 - 2017-06-15 [Oxford Nanoporeリードのマッピング](http://kazumaxneo.hatenablog.com/archive/2017/06/15)
@@ -36,13 +36,11 @@ Check compiler version using:
 	gcc --version
 	g++ --version
 
-最新版のダウンロード
+最新版のダウンロードとインストール
 
 Download the lastest version [last-912.zip](http://last.cbrc.jp/last-912.zip) using:
 
 	wget http://last.cbrc.jp/last-912.zip
-
-インストール
 
 [Installation](http://last.cbrc.jp/doc/last.html)
 
