@@ -7,12 +7,71 @@
 **ケーススタディ**
 
 Table of Contents
+- [2017-12-12](#2017-12-12)
+- [2017-12-05](#2017-12-05)
+- [last](#last)
 - [Assignment 5](#assignment-5)
 - [Assignment 4](#assignment-4)
 - [ASSIGNMENT](#assignment)
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
 - [NCBI assembly summary](#ncbi-assembly-summary)
 - [Silva rRNA database](#silva-rrna-database)
+
+----------
+## 2017-12-12
+
+----------
+## 2017-12-05
+
+### LAST
+[LAST: Genome-Scale Sequence Comparison](http://last.cbrc.jp)
+
+Check compiler version using:
+
+	gcc --version
+	g++ --version
+
+Download the lastest version [last-912.zip](http://last.cbrc.jp/last-912.zip) using:
+
+	wget http://last.cbrc.jp/last-912.zip
+
+[Installation](http://last.cbrc.jp/doc/last.html)
+
+Setup
+
+	unzip last-912.zip
+	cd last-912
+	(time make &) >& log.make.$(date +%F)
+
+Install (optional)
+
+	PATH_TO_LAST=/path/to/last-912
+	make install prefix=$PATH_TO_LAST
+
+Usage
+
+Export last path (either add to .bashrc or type as is in the terminal):
+
+	export PATH=$PATH:$PATH_TO_LAST/bin
+
+[LAST Tutorial](http://last.cbrc.jp/doc/last-tutorial.html)
+
+	cd $PATH_TO_LAST/examples
+
+Example 1: Compare the human and fugu mitochondrial genomes
+
+	lastdb -cR01 humdb humanMito.fa
+	lastal humdb fuguMito.fa > myalns.maf
+
+Understanding the output
+
+http://apprize.info/data/bioinformatics/3.html
+
+see the newest files at the bottom
+
+	ls -lrt
+
+----------
 
 ----------
 
