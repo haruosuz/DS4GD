@@ -24,14 +24,12 @@ Table of Contents
 ## 2017-12-05
 
 ### LAST
-[LAST: Genome-Scale Sequence Comparison](http://last.cbrc.jp)
+**ゲノムスケール配列比較**
 
-http://kazumaxneo.hatenablog.com/?page=1497582787
-2017-06-15
-ゲノムの相同性の高い領域の網羅的な検索 LAST
-2017-06-15
-Oxford Nanoporeリードのマッピング
-http://kazumaxneo.hatenablog.com/archive/2017/06/15
+**[LAST: Genome-Scale Sequence Comparison](http://last.cbrc.jp)**
+
+- 2017-06-15 [ゲノムの相同性の高い領域の網羅的な検索 LAST](http://kazumaxneo.hatenablog.com/?page=1497582787)
+- 2017-06-15 [Oxford Nanoporeリードのマッピング](http://kazumaxneo.hatenablog.com/archive/2017/06/15)
 
 Check compiler version using:
 
