@@ -40,29 +40,28 @@ Check compiler version using:
 
 Download the lastest version [last-912.zip](http://last.cbrc.jp/last-912.zip) using:
 
-	wget http://last.cbrc.jp/last-912.zip
+    wget http://last.cbrc.jp/last-912.zip
 
 [Installation](http://last.cbrc.jp/doc/last.html)
 
 	# Setup
-	unzip last-912.zip
-	cd last-912/
+    unzip last-912.zip
+    cd last-912/
 	make
 
 	# Install (optional)
-	PATH_TO_LAST=/path/to/your/last-912
-	make install prefix=$PATH_TO_LAST
-
-	# Export LAST path (either add to .bashrc or type as is in the terminal):
-	export PATH=$PATH:$PATH_TO_LAST/bin
+    PATH_TO_LAST=/path/to/your/last-912
+    make install prefix=$PATH_TO_LAST
 
 使用法
-
 Usage
+
+    # Export LAST path (either add to .bashrc or type as is in the terminal):
+    export PATH=$PATH:$PATH_TO_LAST/bin
 
 [LAST Tutorial](http://last.cbrc.jp/doc/last-tutorial.html)
 
-	cd $PATH_TO_LAST/examples
+    cd $PATH_TO_LAST/examples
 
 例1: ヒトとフグのミトコンドリアのゲノムを比較する
 
@@ -71,6 +70,8 @@ Example 1: Compare the human and fugu mitochondrial genomes
 	lastdb -cR01 humdb humanMito.fa
 	lastal humdb fuguMito.fa > myalns.maf
 
+[`lastdb`](http://last.cbrc.jp/doc/lastdb.html) creates files `humdb.bck  humdb.des  humdb.prj  humdb.sds  humdb.ssp  humdb.suf  humdb.tis`
+
 Understanding the output
 
 	less -S myalns.maf
@@ -78,9 +79,6 @@ Understanding the output
 例2: 脊椎動物と無脊椎動物のタンパク質を比較する
 
 Example 2: Compare vertebrate proteins to invertebrate proteins
-
-	lastdb -p -cR01 invdb invertebrate.fa
-	lastal invdb vertebrate.fa
 
 ----------
 
