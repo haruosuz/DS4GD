@@ -963,8 +963,6 @@ https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
 
 Chapter 9 “Analyzing Sequences” in the book "Applied statistics for bioinformatics using R" by Krijnen (https://cran.r-project.org/doc/contrib/Krijnen-IntroBioInfStatistics.pdf)
 
-9. Plot of codon usage.
-
     ?uco
 
 	Codon usage indices
