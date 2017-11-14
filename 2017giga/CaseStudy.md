@@ -26,8 +26,6 @@ Table of Contents
 	library(pvclust)
 	example(pvclust)
 
-![](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/fig/boston.png)
-
 http://langstat.hatenablog.com/entry/20140822/1408633200
 クラスター分析におけるp値を計算する - langstat blog
 
