@@ -22,6 +22,8 @@ Table of Contents
 ### pvclust
 **[pvclust: An R package for hierarchical clustering with p-values](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/)**
 
+![](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/fig/boston.png)
+
 	#install.packages("pvclust")
 	library(pvclust)
 	example(pvclust)
