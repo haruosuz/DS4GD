@@ -70,7 +70,7 @@ Example 1: Compare the human and fugu mitochondrial genomes
 	lastdb -cR01 humdb humanMito.fa
 	lastal humdb fuguMito.fa > myalns.maf
 
-[`lastdb`](http://last.cbrc.jp/doc/lastdb.html) creates files `humdb.bck  humdb.des  humdb.prj  humdb.sds  humdb.ssp  humdb.suf  humdb.tis`
+[`lastdb`](http://last.cbrc.jp/doc/lastdb.html) creates 7 `humdb.*` files.
 
 Understanding the output
 
@@ -736,7 +736,7 @@ Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.tx
 
 [How can I find the sequence and annotation of my genome of interest?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind)
 
-[assembly summary report files](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#asmsumfiles)
+Using the [assembly summary report files](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#asmsumfiles)
 
 GenBankとRefSeqのゲノム配列のメタデータを記載したファイルを`wget`でダウンロードする:  
 
@@ -774,6 +774,13 @@ http://apprize.info/data/bioinformatics/7.html
     # Using grep, cut, sort, uniq to summarize columns of data
     grep -v "^#" $FILE | cut -f12 | sort | uniq -c
 
+[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
+
+    NAME="Ensifer|Sinorhizobium"
+    awk -F "\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ && $5 ~ /representative/ {print $20}' $FILE > ftpdirpaths
+    awk 'BEGIN{FS=OFS="/";filesuffix="genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
+    wget -i ftpfilepaths
+
 [腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](http://integbio.jp/dbcatalog/record/nbdc00058) の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli O157:H7 Sakai" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
@@ -796,8 +803,8 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
 
     ファイル名と内容
     *_genomic.gbff.gz: GenBank flat file format - GenBank形式ファイル
-    *.fna.gz: FASTA Nucleic Acids - ゲノム塩基配列
-    *.faa.gz: FASTA Amino Acids - 各タンパク質のアミノ酸配列
+    *_genomic.fna.gz: FASTA Nucleic Acids - ゲノム塩基配列
+    *_protein.faa.gz: FASTA Amino Acids - 各タンパク質のアミノ酸配列
 
 Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> with your browser (Firefox or Chrome).  
 
@@ -824,15 +831,6 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     # compare MD5 checksum values with those in *md5checksums.txt*
     md5 *.gz
     cat md5checksums.txt
-
-[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
-Also see the Downloading Genomic Data Factsheet.
-ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
-
-    NAME="Ensifer|Sinorhizobium"
-    awk -F "\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ && $5 ~ /representative/ {print $20}' $FILE > ftpdirpaths
-    awk 'BEGIN{FS=OFS="/";filesuffix="genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
-    wget -i ftpfilepaths
 
 ### Working with Data in R
 
