@@ -858,7 +858,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
     # compare MD5 checksum values with those in *md5checksums.txt*
     md5 *.gz
-    cat md5checksums.txt
+    grep ".gz" md5checksums.txt
 
 ### Working with Data in R
 
@@ -932,7 +932,6 @@ DNA配列の長さ(length)、塩基組成(composition)、GC含量(GC)が出力�
     # 2連続塩基含量
     count(dna, 2)
 
-
 #### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
 
 [A sliding window plot of GC content](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#a-sliding-window-plot-of-gc-content)
@@ -975,6 +974,48 @@ DNA配列の長さ(length)、塩基組成(composition)、GC含量(GC)が出力�
 
     heatmap(X, margins=c(15,5))
 
+#### Codon usage
+
+Chapter 9 “Analyzing Sequences” in the book "Applied statistics for bioinformatics using R" by Krijnen (https://cran.r-project.org/doc/contrib/Krijnen-IntroBioInfStatistics.pdf)
+
+999 coding DNA sequences (CDSs) from E. coli
+	data(ec999)
+
+	# Codon usage indices
+    cds <- ec999[[1]]
+    uco(seq = cds, index="eff") # the codon counts
+    uco(seq = cds, index="freq") # the relative frequencies 
+    uco(seq = cds, index="rscu") # the Relative Synonymous Codon Usage
+
+	# Plot of codon usage
+    # Apply a Function over a List
+    ec999.uco <- sapply(ec999, uco, index="eff")
+    total <- rowSums(ec999.uco)    dotchart.uco(total, main = "Codon usage in 999 coding sequences from E. coli")
+
+CDSs from E. coli O157:H7 Sakai
+
+    # SetWorking Directory
+    setwd("~/projects/ncbi_assembly_summary/data/")
+    dir()
+
+    # Load the SeqinR package
+    library(seqinr)
+
+    # Reading sequence data
+    ld <- read.fasta(file = "./GCF_000008865.1_ASM886v1_cds_from_genomic.fna.gz", seqtype = c("DNA"), strip.desc = TRUE)
+
+    # get the number of elements
+    length(ld)
+
+    # Relative Synonymous Codon Usage (RSCU)
+    X <- sapply(ld, uco, index="rscu")
+
+    # Export data as a CSV file to be read by spreadsheets:
+    write.csv(t(X), file="table.csv")
+
+    # open current working directory
+    system("open .")
+
 ### References
 
 https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
@@ -988,13 +1029,6 @@ http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind
 
 https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
 15. How can I download RefSeq data for all complete bacterial genomes?
-
-Chapter 9 “Analyzing Sequences” in the book "Applied statistics for bioinformatics using R" by Krijnen (https://cran.r-project.org/doc/contrib/Krijnen-IntroBioInfStatistics.pdf)
-
-    ?uco
-
-	Codon usage indices
-	uco calculates some codon usage indices: the codon counts eff, the relative frequencies freq or the Relative Synonymous Codon Usage rscu.
 
 ----------
 ----------
