@@ -86,6 +86,12 @@ Usage
     # Export LAST path (either add to .bashrc or type as is in the terminal):
     export PATH=$PATH:$PATH_TO_LAST/bin
 
+    # show all options and their default settings
+    lastdb -h
+
+    # show version information
+    lastdb -V
+
 [LAST Tutorial](http://last.cbrc.jp/doc/last-tutorial.html)
 
     cd $PATH_TO_LAST/examples
@@ -975,8 +981,9 @@ DNA配列の長さ(length)、塩基組成(composition)、GC含量(GC)が出力�
     heatmap(X, margins=c(15,5))
 
 #### Codon usage
+コドン使用
 
-Chapter 9 “Analyzing Sequences” in the book "Applied statistics for bioinformatics using R" by Krijnen (https://cran.r-project.org/doc/contrib/Krijnen-IntroBioInfStatistics.pdf)
+[Chapter 9 “Analyzing Sequences” in the book "Applied statistics for bioinformatics using R" by Krijnen](https://github.com/haruosuz/r4bioinfo/tree/master/R_Wim_Krijnen)
 
 999 coding DNA sequences (CDSs) from E. coli
 	data(ec999)
