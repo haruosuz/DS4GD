@@ -26,7 +26,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 - 2017-11-07 No. 7 - 中間発表 interim report
 - 2017-11-14 No. 8 - Case Study [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#ncbi-assembly-summary)
 - 2017-11-21 (前半科目試験日)
-- 2017-11-28 No. 9 - TBA
+- 2017-11-28 No. 9 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md)
+  - コドン使用 [Codon usage](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#codon-usage)
 - 2017-12-05 No. 10 - TBA [Guest Speaker](#guest-speaker)
 - 2017-12-12 No. 11 - TBA [Guest Speaker](#guest-speaker)
 - 2017-12-19 No. 12 - TBA
