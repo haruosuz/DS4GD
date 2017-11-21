@@ -26,22 +26,22 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 - 2017-11-07 No. 7 - 中間発表 interim report
 - 2017-11-14 No. 8 - Case Study [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#ncbi-assembly-summary)
 - 2017-11-21 (前半科目試験日)
-- 2017-11-28 No. 9 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md)
-　- [LAST: Genome-Scale Sequence Comparison](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#last)
+- 2017-11-28 No. 9 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md)
+  - [LAST: Genome-Scale Sequence Comparison](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#last)
   - コドン使用 [Codon usage](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#codon-usage)
-  - 階層型クラスタリングの信頼性評価 [pvclust](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#pvclust)
+  - 階層型クラスタリングの*p*値 [pvclust](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#pvclust)
   - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
   - 配列データベース [Sequence Databases](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#sequence-databases)
-  - [Applied Statistics for Bioinformatics using R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Wim_Krijnen)
-- 2017-12-05 No. 10 - TBA [Guest Speaker](#guest-speaker)
-- 2017-12-12 No. 11 - TBA [Guest Speaker](#guest-speaker)
+  - [Wim P. Krijnen (2009) Applied Statistics for Bioinformatics using R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Wim_Krijnen)
+- 2017-12-05 No. 10 - Sequence Alignment (1) [Guest Speaker](#guest-speaker)
+- 2017-12-12 No. 11 - Sequence Alignment (2) [Guest Speaker](#guest-speaker)
 - 2017-12-19 No. 12 - TBA
 - 2017-12-26 No. 13 - TBA
 - 2018-01-16 No. 14 - 最終発表 Oral presentation
 
 ----------
 ## Guest speaker
-[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)
+[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)  
 講師: [Dr. Anish Man Singh Shrestha](http://asailab.cb.k.u-tokyo.ac.jp/anish/)
 
 - [2017-12-12](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#2017-12-12)
