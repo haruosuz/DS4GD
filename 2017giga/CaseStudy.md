@@ -19,12 +19,34 @@ Table of Contents
 - [Silva rRNA database](#silva-rrna-database)
 
 ----------
-### pvclust
+## pvclust
 **[pvclust: An R package for hierarchical clustering with p-values](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/)**
 
+![](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/fig/boston.png)
+
+	# Installation
 	#install.packages("pvclust")
+
+	# Basic usage and examples
 	library(pvclust)
 	example(pvclust)
+	help(pvclust)
+	#example(lung)
+	#help(lung)
+	#help(parPvclust)
+
+	# Online Instruction
+	data(lung)
+	lung[1:3,1:5]
+    result <- pvclust(lung, method.dist="cor", method.hclust="average", nboot=10)
+	plot(result)
+	pvrect(result, alpha=0.95)
+	seplot(result)
+	seplot(result, identify=TRUE)
+	print(result, which=c(21, 31))
+
+
+### References
 
 http://langstat.hatenablog.com/entry/20140822/1408633200
 クラスター分析におけるp値を計算する - langstat blog
@@ -41,8 +63,6 @@ http://www.cis.doshisha.ac.jp/mjin/R/44/44.html
 Ｒとブートストラップ
 > ###### 5．クラスター分析とブートストラップ
 
-![](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/fig/boston.png)
-
 ----------
 ## 2017-12-12
 
@@ -52,16 +72,10 @@ http://www.cis.doshisha.ac.jp/mjin/R/44/44.html
 ----------
 ## LAST
 **[LAST: Genome-Scale Sequence Comparison](http://last.cbrc.jp)**
-
 ゲノムスケール配列比較
 
 - 2017-06-15 [ゲノムの相同性の高い領域の網羅的な検索 LAST](http://kazumaxneo.hatenablog.com/?page=1497582787)
 - 2017-06-15 [Oxford Nanoporeリードのマッピング](http://kazumaxneo.hatenablog.com/archive/2017/06/15)
-
-Check compiler version using:
-
-	gcc --version
-	g++ --version
 
 最新版のダウンロードとインストール
 
