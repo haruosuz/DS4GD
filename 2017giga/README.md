@@ -35,10 +35,11 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 ----------
 
 ## Guest speaker
-特別講演 
-講師: シュレスタ・アニシュ博士 [Dr. Anish MS Shrestha](http://asailab.cb.k.u-tokyo.ac.jp/anish/)
-- 2017-12-05 LAST による様々な配列解析 [Sequence analysis using LAST (1)](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec5-2017.pdf) | username: bioinfo | password: bioinfo
-- 2017-12-12 LAST による様々な配列解析 Sequence analysis using LAST (2)
+特別講演  
+- 講師: アニシュ・シュレスタ博士 [Dr. Anish MS Shrestha](http://asailab.cb.k.u-tokyo.ac.jp/anish/)
+- 演題: LAST による様々な配列解析 Sequence analysis using LAST 
+  - [2017-12-05](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec5-2017.pdf) | username: bioinfo | password: bioinfo
+  - 2017-12-12
 
 **[LAST: Genome-Scale Sequence Comparison](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#last)**  
 **ゲノムスケール配列比較**
