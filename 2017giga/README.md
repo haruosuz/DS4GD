@@ -18,19 +18,13 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 - 2017-09-26 No. 1 - イントロダクション [Introduction](#Introduction)
 - 2017-10-03 No. 2 - 生物学的データ [Biological data](https://github.com/haruosuz/books/tree/master/bbs#chapter-1-introduction)
 - 2017-10-10 No. 3 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#how-to-install-r-and-a-brief-introduction-to-r)
-- 2017-10-17 No. 4 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
-  - [Assignment #4](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#assignment-4)
-- 2017-10-24 No. 5 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
-  - [Assignment #5](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#assignment-5)
+- 2017-10-17 No. 4 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1) | [Assignment #4](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#assignment-4)
+- 2017-10-24 No. 5 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2) | [Assignment #5](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#assignment-5)
 - 2017-10-31 No. 6 - Case Study [UniProt Swiss-Prot](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
 - 2017-11-07 No. 7 - 中間発表 interim report
 - 2017-11-14 No. 8 - Case Study [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#ncbi-assembly-summary)
 - 2017-11-21 (前半科目試験日)
-- 2017-11-28 No. 9 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md)
-  - [LAST: Genome-Scale Sequence Comparison](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#last)
-  - [SeqinR](https://github.com/haruosuz/r4bioinfo/tree/master/R_seqinR)
-  - コドン使用 [Codon usage](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#codon-usage)
-  - クラスタリングの*p*値 [pvclust](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#pvclust)
+- 2017-11-28 No. 9 - [SeqinR](https://github.com/haruosuz/r4bioinfo/tree/master/R_seqinR) | コドン使用 [Codon usage](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#codon-usage) | クラスタリングの*p*値 [pvclust](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#pvclust)
 - 2017-12-05 No. 10 - [Guest Speaker](#guest-speaker)
 - 2017-12-12 No. 11 - [Guest Speaker](#guest-speaker)
 - 2017-12-19 No. 12 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
@@ -41,10 +35,10 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 ----------
 
 ## Guest speaker
-[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)  
+特別講演 
 講師: シュレスタ・アニシュ博士 [Dr. Anish MS Shrestha](http://asailab.cb.k.u-tokyo.ac.jp/anish/)
-- [2017-12-05](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#2017-12-05) LASTによる様々な配列解析 -- I
-- [2017-12-12](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#2017-12-12) LASTによる様々な配列解析 -- II
+- 2017-12-05 LAST による様々な配列解析 [Sequence analysis using LAST (1)](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec5-2017.pdf) | username: bioinfo | password: bioinfo
+- 2017-12-12 LAST による様々な配列解析 Sequence analysis using LAST (2)
 
 **[LAST: Genome-Scale Sequence Comparison](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#last)**  
 **ゲノムスケール配列比較**
