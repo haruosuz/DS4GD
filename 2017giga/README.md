@@ -43,6 +43,10 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 講師: シュレスタ・アニシュ博士 [Dr. Anish MS Shrestha](http://asailab.cb.k.u-tokyo.ac.jp/anish/)
 - [2017-12-05](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#2017-12-05) LASTによる様々な配列解析 -- I
 - [2017-12-12](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#2017-12-12) LASTによる様々な配列解析 -- II
+- [LAST: Genome-Scale Sequence Comparison](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#last)
+
+![](http://last.cbrc.jp/lastcrop.png)
+![](http://last.cbrc.jp/lastwebfig.png)
 
 ----------
 
