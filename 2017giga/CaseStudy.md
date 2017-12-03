@@ -7,61 +7,16 @@
 **ケーススタディ**
 
 Table of Contents
-- [pvclust: An R package for hierarchical clustering with p-values](#pvclust)
 - [2017-12-12](#2017-12-12)
 - [2017-12-05](#2017-12-05)
 - [LAST: Genome-Scale Sequence Comparison](#last)
+- [pvclust: An R package for hierarchical clustering with p-values](#pvclust)
 - [Assignment 5](#assignment-5)
 - [Assignment 4](#assignment-4)
 - [ASSIGNMENT](#assignment)
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
 - [NCBI assembly summary](#ncbi-assembly-summary)
 - [Silva rRNA database](#silva-rrna-database)
-
-----------
-## pvclust
-**[pvclust: An R package for hierarchical clustering with p-values](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/)**
-
-![](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/fig/boston.png)
-
-	# Installation
-	#install.packages("pvclust")
-
-	# Basic usage and examples
-	library(pvclust)
-	example(pvclust)
-	help(pvclust)
-	#example(lung)
-	#help(lung)
-	#help(parPvclust)
-
-	# Online Instruction
-	data(lung)
-	lung[1:3,1:5]
-    result <- pvclust(lung, method.dist="cor", method.hclust="average", nboot=10)
-	plot(result)
-	pvrect(result, alpha=0.95)
-	seplot(result)
-	seplot(result, identify=TRUE)
-	print(result, which=c(21, 31))
-
-
-### References
-
-http://langstat.hatenablog.com/entry/20140822/1408633200
-クラスター分析におけるp値を計算する - langstat blog
-
-2007.10.19
-http://www.iu.a.u-tokyo.ac.jp/~kadota/yano_ws/array_ws.html
-Rでお手軽にアレイ解析
-
-2007.9.3
-http://www.ef-prime.com/news/070903/BusinessDataAnalysis_070903.pdf
-pvclust: 階層型クラスタリングの信頼性評価- 階層型クラスター分析の結果を統計的に評価するパッケージです。- 下平英寿先生(東工大)が開発された「マルチスケールブートストラップ法」を実装し、 クラスターが存在するかどうかの確率値(p-value)を計算することができます。
-
-http://www.cis.doshisha.ac.jp/mjin/R/44/44.html
-Ｒとブートストラップ
-> ###### 5．クラスター分析とブートストラップ
 
 ----------
 ## 2017-12-12
@@ -99,6 +54,7 @@ Download the lastest version [last-912.zip](http://last.cbrc.jp/last-912.zip) us
     make install prefix=$PATH_TO_LAST
 
 使用法
+
 Usage
 
     # Export LAST path (either add to .bashrc or type as is in the terminal):
@@ -134,10 +90,55 @@ Example 2: Compare vertebrate proteins to invertebrate proteins
 ----------
 
 http://apprize.info/data/bioinformatics/3.html
+Remedial Unix Shell - Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project - Bioinformatics Data Skills (2015)
 
 see the newest files at the bottom
 
 	ls -lrt
+
+----------
+## pvclust
+**[pvclust: An R package for hierarchical clustering with p-values](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/)**
+
+![](http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/fig/boston.png)
+
+	# Installation
+	#install.packages("pvclust")
+
+	# Basic usage and examples
+	library(pvclust)
+	example(pvclust)
+	help(pvclust)
+	#example(lung)
+	#help(lung)
+	#help(parPvclust)
+
+	# Online Instruction
+	data(lung)
+	lung[1:3,1:5]
+    result <- pvclust(lung, method.dist="cor", method.hclust="average", nboot=10)
+	plot(result)
+	pvrect(result, alpha=0.95)
+	seplot(result)
+	seplot(result, identify=TRUE)
+	print(result, which=c(21, 31))
+
+### References
+
+http://langstat.hatenablog.com/entry/20140822/1408633200
+クラスター分析におけるp値を計算する - langstat blog
+
+2007.10.19
+http://www.iu.a.u-tokyo.ac.jp/~kadota/yano_ws/array_ws.html
+Rでお手軽にアレイ解析
+
+2007.9.3
+http://www.ef-prime.com/news/070903/BusinessDataAnalysis_070903.pdf
+pvclust: 階層型クラスタリングの信頼性評価- 階層型クラスター分析の結果を統計的に評価するパッケージです。- 下平英寿先生(東工大)が開発された「マルチスケールブートストラップ法」を実装し、 クラスターが存在するかどうかの確率値(p-value)を計算することができます。
+
+http://www.cis.doshisha.ac.jp/mjin/R/44/44.html
+Ｒとブートストラップ
+> ###### 5．クラスター分析とブートストラップ
 
 ----------
 
