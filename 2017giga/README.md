@@ -38,6 +38,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 - 2018-01-16 No. 14 - 最終発表 Oral presentation
 
 ----------
+----------
+
 ## Guest speaker
 [特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)  
 講師: シュレスタ・アニシュ博士 [Dr. Anish MS Shrestha](http://asailab.cb.k.u-tokyo.ac.jp/anish/)
@@ -51,6 +53,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 
 ![](http://last.cbrc.jp/lastwebfig.png)
 
+----------
 ----------
 
 ## Introduction
