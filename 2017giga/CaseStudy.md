@@ -71,10 +71,11 @@ http://www.cis.doshisha.ac.jp/mjin/R/44/44.html
 
 ----------
 ## LAST
-**[LAST: Genome-Scale Sequence Comparison](http://last.cbrc.jp)**
-ゲノムスケール配列比較
+**[LAST: Genome-Scale Sequence Comparison](http://last.cbrc.jp)**  
+**ゲノムスケール配列比較**
 
 ![](http://last.cbrc.jp/lastcrop.png)
+
 ![](http://last.cbrc.jp/lastwebfig.png)
 
 - 2017-06-15 [ゲノムの相同性の高い領域の網羅的な検索 LAST](http://kazumaxneo.hatenablog.com/?page=1497582787)
