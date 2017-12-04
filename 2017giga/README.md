@@ -24,7 +24,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 - 2017-11-07 No. 7 - 中間発表 interim report
 - 2017-11-14 No. 8 - Case Study [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#ncbi-assembly-summary)
 - 2017-11-21 (前半科目試験日)
-- 2017-11-28 No. 9 - [SeqinR](https://github.com/haruosuz/r4bioinfo/tree/master/R_seqinR) | コドン使用 [Codon usage](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#codon-usage) | クラスタリングの*p*値 [pvclust](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#pvclust)
+- 2017-11-28 No. 9 - [SeqinR](https://github.com/haruosuz/r4bioinfo/tree/master/R_seqinR) | [Codon usage](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#codon-usage) | [pvclust](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#pvclust)
 - 2017-12-05 No. 10 - [Guest Speaker](#guest-speaker)
 - 2017-12-12 No. 11 - [Guest Speaker](#guest-speaker)
 - 2017-12-19 No. 12 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
