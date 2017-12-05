@@ -23,6 +23,10 @@ Table of Contents
 
 ----------
 ## 2017-12-05
+Download human-mito.fasta and uni-mito.fasta from http://last.cbrc.jp/tutorial/webfiles/
+
+        wget http://last.cbrc.jp/tutorial/webfiles/human-mito.fasta
+        wget http://last.cbrc.jp/tutorial/webfiles/uni-mito.fasta
 
 ----------
 ## LAST
