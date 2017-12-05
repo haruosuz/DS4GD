@@ -39,6 +39,12 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 - 講師: アニシュ・シュレスタ博士 [Dr. Anish MS Shrestha](http://asailab.cb.k.u-tokyo.ac.jp/anish/)
 - 演題: LAST による様々な配列解析 Sequence analysis using LAST 
   - [2017-12-05 講義スライド lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec5-2017.pdf) | username & password: bioinfo
+
+Download human-mito.fasta and uni-mito.fasta from http://last.cbrc.jp/tutorial/webfiles/
+
+        wget http://last.cbrc.jp/tutorial/webfiles/human-mito.fasta
+        wget http://last.cbrc.jp/tutorial/webfiles/uni-mito.fasta
+
   - 2017-12-12
 
 **[LAST: Genome-Scale Sequence Comparison](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#last)**  
@@ -47,6 +53,9 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 ![](http://last.cbrc.jp/lastcrop.png)
 
 ![](http://last.cbrc.jp/lastwebfig.png)
+
+
+
 
 ----------
 ----------
