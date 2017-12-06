@@ -11,6 +11,7 @@ Table of Contents
 - [2017-12-05](#2017-12-05)
 - [2017-12-12](#2017-12-12)
 - [pvclust: An R package for hierarchical clustering with p-values](#pvclust)
+- [NCBI sequence database](#ncbi-sequence-database)
 - [Assignment 5](#assignment-5)
 - [Assignment 4](#assignment-4)
 - [ASSIGNMENT](#assignment)
@@ -159,6 +160,9 @@ http://www.cis.doshisha.ac.jp/mjin/R/44/44.html
 > ###### 5．クラスター分析とブートストラップ
 
 ----------
+## NCBI sequence database
+
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#the-ncbi-sequence-database
 
 Retrieving a DNA sequence from NCBI
 
@@ -167,8 +171,6 @@ Retrieving a DNA sequence from NCBI
     ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
     d <- ld[[1]]
     write.fasta(sequences=d, names=sapply(seqs, getAnnot), file.out=paste0(ACCESSION,".fna"))
-
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#the-ncbi-sequence-database
 
 Retrieving a list of DNA sequences from NCBI
 
