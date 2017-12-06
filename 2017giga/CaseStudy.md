@@ -85,16 +85,14 @@ Example 2: Compare vertebrate proteins to invertebrate proteins
 ----------
 ## 2017-12-05
 
-[講義スライド lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec5-2017.pdf)  
-username: bioinfo  
-password: bioinfo  
+[講義スライド lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec5-2017.pdf) | username: bioinfo | password: bioinfo  
 
 1. はじめてのLAST
-Let’s try running LAST on a simple example:
 Download human-mito.fasta and uni-mito.fasta from http://last.cbrc.jp/tutorial/webfiles/
 
-        wget http://last.cbrc.jp/tutorial/webfiles/human-mito.fasta
-        wget http://last.cbrc.jp/tutorial/webfiles/uni-mito.fasta
+	wget http://last.cbrc.jp/tutorial/webfiles/human-mito.fasta
+	wget http://last.cbrc.jp/tutorial/webfiles/uni-mito.fasta
+Let’s try running LAST on a simple example:
 
 	lastdb my-index human-mito.fasta
 	lastal my-index uni-mito.fasta > out.maf
