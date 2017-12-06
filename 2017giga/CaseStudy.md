@@ -11,12 +11,12 @@ Table of Contents
 - [2017-12-05](#2017-12-05)
 - [2017-12-12](#2017-12-12)
 - [pvclust: An R package for hierarchical clustering with p-values](#pvclust)
+- [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
+- [NCBI assembly summary](#ncbi-assembly-summary)
 - [NCBI sequence database](#ncbi-sequence-database)
 - [Assignment 5](#assignment-5)
 - [Assignment 4](#assignment-4)
 - [ASSIGNMENT](#assignment)
-- [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
-- [NCBI assembly summary](#ncbi-assembly-summary)
 - [Silva rRNA database](#silva-rrna-database)
 
 ----------
@@ -159,200 +159,11 @@ http://www.cis.doshisha.ac.jp/mjin/R/44/44.html
 Ｒとブートストラップ
 > ###### 5．クラスター分析とブートストラップ
 
-----------
-## NCBI sequence database
 
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#the-ncbi-sequence-database
-
-Retrieving a DNA sequence from NCBI
-
-    library("seqinr")
-    ACCESSION <- "NC_001477"
-    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
-    d <- ld[[1]]
-    write.fasta(sequences=d, names=sapply(seqs, getAnnot), file.out=paste0(ACCESSION,".fna"))
-
-Retrieving a list of DNA sequences from NCBI
-
-    library("seqinr")
-    # create a function to retrieve several nucleotide sequences from NCBI
-    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
-    
-    seqnames <- c("NC_001477", "NC_001474", "NC_001475", "NC_002640") # Make a vector containing the names of the sequences
-    seqs <- lapply(seqnames,  retrieve_ncbi_fna) # Retrieve the sequences and store them in list variable "seqs"
-	length(seqs)      # Print out the number of sequences retrieved
-	seq1 <- seqs[[1]] # Get the 1st sequence
-	seq1[1:20]        # Print out the first 20 letters of the 1st sequence
-	seq2 <- seqs[[2]] # Get the 2nd sequence
-	seq2[1:20]        # Print out the first 20 letters of the 2nd sequence
-
-	# write the sequences to a FASTA-format file
-    #write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
-    write.fasta(sequences=seqs, names=sapply(seqs, getAnnot), file.out="sequence.fna")
-
-----------
-
-	# read the sequence into R using the SeqinR package:
-    library("seqinr")
-    ACCESSION <- "NC_001477" # Dengue virus 1
-    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
-    d <- ld[[1]]
-
-## Assignment 5
-[Exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises)
-
-[Answers to the exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-2)
-
-Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-
-Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
-
-	# write a function to make a sliding window plot:
-    slidingwindowplotGC <- function(windowsize, inputseq)
-    {
-      require("zoo") # this function requires the 'zoo' R package # install.packages('zoo')
-      x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
-      y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = GC)
-      plot(x, y, type="b", xlab="Position (bp)", ylab="GC content")
-    }
-
-	# make a sliding window plot with a window size of 200 nucleotides:
-    slidingwindowplotGC(200, d)
-
-	# make a sliding window plot of GC content using a window size of 2000 nucleotides:
-    slidingwindowplotGC(2000, d)
-
-Q2. Draw a sliding window plot of GC content in the genome sequence using a window size of 20000 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
-
-	# make a sliding window plot with a window size of 20000 nucleotides:
-    slidingwindowplotGC(20000, d)
-
-Q3. Write a function to calculate the AT content of a DNA sequence (ie. the fraction of the nucleotides in the sequence that are As or Ts). What is the AT content of the genome?
-
-	# Here is a function to calculate the AT content of a genome sequence:
-    AT <- function(x){ library("seqinr"); 1 - GC(x) }
-
-    # use the function to calculate the AT content of the genome:
-    AT(d)
-
-    # Create tests
-    x <- s2c("atgc"); AT(x)
-
-Q4. Write a function to draw a sliding window plot of AT content.
-
-	# write a function to make a sliding window plot:
-    slidingwindowplotAT <- function(windowsize, inputseq)
-    {
-      require("zoo")
-      x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
-      AT <- function(x){ library("seqinr"); 1 - GC(x) }
-      y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = AT)
-      plot(x, y, type="b", xlab="Position (bp)", ylab="AT content")
-    }
-
-Use it to make a sliding window plot of AT content along the genome, using a windowsize of 2000 nucleotides. 
-
-    par(mfrow=c(2,1))
-	# make a sliding window plot of AT content:
-    slidingwindowplotAT(2000, d)
-	# This is the mirror image of the plot of GC content (because AT equals 1 minus GC):
-    slidingwindowplotGC(2000, d)
-
-Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the genome sequence?
-
-	# search for a function to calculate rho by typing:
-	help.search("rho")
-
-	# calculate Rho for words of length 3 in the genome
-	rho(d, wordsize=3)
-
-### G-language
-REST Web Service for Genome Analysis
-[English](http://www.g-language.org/wiki/restgenomeanalysisenglish)
-[日本語](http://www.g-language.org/wiki/restgenomeanalysisjapanese)
-
-- http://rest.g-language.org/NC_000908 shows genome information for Dengue virus 1 (Accession: NC_000908)
-- http://rest.g-language.org/help/gcwin shows a documentation for the 'gcwin' function.
-- http://rest.g-language.org/NC_000908/gcwin calculates GC content along the genome.
-- http://rest.g-language.org/NC_000908/gcwin/window=2000 uses 2,000-bp window size instead of the default 10,000-bp window size.
-- http://rest.g-language.org/NC_000908/gcwin/window=2000/at=1 calculates AT content instead of GC content.
-
-----------
-## Assignment 4
-[Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
-
-[Answers to the exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-1)
-
-Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-
-Q1. What are the last twenty nucleotides of the genome sequence?
-
-    d[(length(d)-20+1):length(d)]
-
-Q2. What is the length in nucleotides of the genome sequence?
-
-    length(d)
-
-Q3. How many of each of the four nucleotides A, C, T and G, and any other symbols, are there in the genome sequence?
-
-    table(d)
-
-Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucleotides are included, (ii) non-A/C/T/G nucleotides are discarded?
-
-	help("GC")
-    GC(d)
-    GC(d, exact=FALSE)
-
-Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
-
-![http://revertra.webcrow.jp/DNA/index.php](http://revertra.webcrow.jp/DNA/dnaseq.png)
-
-	help.search("complement")
-	help("comp")
-    table(comp(d))
-
-Q6. How many occurrences of the DNA words CC, CG and GC occur in the genome sequence?
-
-    count(seq=d, wordsize=2)
-
-Q7. How many occurrences of the DNA words CC, CG and GC occur in the (i) first 1000 and (ii) last 1000 nucleotides of the genome sequence?
-How can you check that the subsequence that you have looked at is 1000 nucleotides long?
-
-    count(seq=d[1:1000], wordsize=2)
-    count(seq=d[(length(d)-1000+1):length(d)], wordsize=2)
-
-----------
-## ASSIGNMENT
-【課題内容】
-本授業で解析したいDNAまたはタンパク質の配列を300文字以内で述べてください。課題のタイトルと参考文献も明記してください。
-
-DNAまたはタンパク質の配列を検索するには、
-
-- NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"Candidatus Midichloria mitochondrii"）を入力して、"Search"ボタンを押す
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#retrieving-genome-sequence-data-via-the-ncbi-website
-
-または
-
-- UniProtウェブサイト (http://www.uniprot.org) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"antibiotic resistance Clostridium difficile"）を入力して、"Search"ボタンを押す
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#viewing-the-uniprot-webpage-for-a-protein-sequence
-
----
-
-Please describe DNA or protein sequences you're interested in. Please also state your project title and references.
-
-To find DNA or protein sequences,
-
-- go to the NCBI website (https://www.ncbi.nlm.nih.gov), type keywords (e.g. "Candidatus Midichloria mitochondrii") in the Search box at the top of the webpage, and press the “Search” button beside the Search box.
-http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#retrieving-genome-sequence-data-via-the-ncbi-website
-
-or
-
-- go the UniProt website (http://www.uniprot.org). At the top of the UniProt website, you will see a search box, and you can type keywords (e.g. "antibiotic resistance Clostridium difficile") that you are looking for in this search box, and then click on the “Search” button to search for it.
-http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#viewing-the-uniprot-webpage-for-a-protein-sequence
 
 ----------
 ----------
+
 
 ## UniProtKB Swiss-Prot protein sequence database
 [Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース
@@ -1075,6 +886,203 @@ http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind
 
 https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
 15. How can I download RefSeq data for all complete bacterial genomes?
+
+----------
+----------
+
+----------
+## NCBI sequence database
+
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#the-ncbi-sequence-database
+
+Retrieving a DNA sequence from NCBI
+
+    library("seqinr")
+    ACCESSION <- "NC_001477"
+    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
+    d <- ld[[1]]
+    write.fasta(sequences=d, names=sapply(seqs, getAnnot), file.out=paste0(ACCESSION,".fna"))
+
+Retrieving a list of DNA sequences from NCBI
+
+    library("seqinr")
+    # create a function to retrieve several nucleotide sequences from NCBI
+    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
+    
+    seqnames <- c("NC_001477", "NC_001474", "NC_001475", "NC_002640") # Make a vector containing the names of the sequences
+    seqs <- lapply(seqnames,  retrieve_ncbi_fna) # Retrieve the sequences and store them in list variable "seqs"
+	length(seqs)      # Print out the number of sequences retrieved
+	seq1 <- seqs[[1]] # Get the 1st sequence
+	seq1[1:20]        # Print out the first 20 letters of the 1st sequence
+	seq2 <- seqs[[2]] # Get the 2nd sequence
+	seq2[1:20]        # Print out the first 20 letters of the 2nd sequence
+
+	# write the sequences to a FASTA-format file
+    #write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
+    write.fasta(sequences=seqs, names=sapply(seqs, getAnnot), file.out="sequence.fna")
+
+----------
+
+	# read the sequence into R using the SeqinR package:
+    library("seqinr")
+    ACCESSION <- "NC_001477" # Dengue virus 1
+    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
+    d <- ld[[1]]
+
+## Assignment 5
+[Exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises)
+
+[Answers to the exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-2)
+
+Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
+
+	# write a function to make a sliding window plot:
+    slidingwindowplotGC <- function(windowsize, inputseq)
+    {
+      require("zoo") # this function requires the 'zoo' R package # install.packages('zoo')
+      x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
+      y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = GC)
+      plot(x, y, type="b", xlab="Position (bp)", ylab="GC content")
+    }
+
+	# make a sliding window plot with a window size of 200 nucleotides:
+    slidingwindowplotGC(200, d)
+
+	# make a sliding window plot of GC content using a window size of 2000 nucleotides:
+    slidingwindowplotGC(2000, d)
+
+Q2. Draw a sliding window plot of GC content in the genome sequence using a window size of 20000 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
+
+	# make a sliding window plot with a window size of 20000 nucleotides:
+    slidingwindowplotGC(20000, d)
+
+Q3. Write a function to calculate the AT content of a DNA sequence (ie. the fraction of the nucleotides in the sequence that are As or Ts). What is the AT content of the genome?
+
+	# Here is a function to calculate the AT content of a genome sequence:
+    AT <- function(x){ library("seqinr"); 1 - GC(x) }
+
+    # use the function to calculate the AT content of the genome:
+    AT(d)
+
+    # Create tests
+    x <- s2c("atgc"); AT(x)
+
+Q4. Write a function to draw a sliding window plot of AT content.
+
+	# write a function to make a sliding window plot:
+    slidingwindowplotAT <- function(windowsize, inputseq)
+    {
+      require("zoo")
+      x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
+      AT <- function(x){ library("seqinr"); 1 - GC(x) }
+      y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = AT)
+      plot(x, y, type="b", xlab="Position (bp)", ylab="AT content")
+    }
+
+Use it to make a sliding window plot of AT content along the genome, using a windowsize of 2000 nucleotides. 
+
+    par(mfrow=c(2,1))
+	# make a sliding window plot of AT content:
+    slidingwindowplotAT(2000, d)
+	# This is the mirror image of the plot of GC content (because AT equals 1 minus GC):
+    slidingwindowplotGC(2000, d)
+
+Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the genome sequence?
+
+	# search for a function to calculate rho by typing:
+	help.search("rho")
+
+	# calculate Rho for words of length 3 in the genome
+	rho(d, wordsize=3)
+
+### G-language
+REST Web Service for Genome Analysis
+[English](http://www.g-language.org/wiki/restgenomeanalysisenglish)
+[日本語](http://www.g-language.org/wiki/restgenomeanalysisjapanese)
+
+- http://rest.g-language.org/NC_000908 shows genome information for Dengue virus 1 (Accession: NC_000908)
+- http://rest.g-language.org/help/gcwin shows a documentation for the 'gcwin' function.
+- http://rest.g-language.org/NC_000908/gcwin calculates GC content along the genome.
+- http://rest.g-language.org/NC_000908/gcwin/window=2000 uses 2,000-bp window size instead of the default 10,000-bp window size.
+- http://rest.g-language.org/NC_000908/gcwin/window=2000/at=1 calculates AT content instead of GC content.
+
+----------
+## Assignment 4
+[Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
+
+[Answers to the exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-1)
+
+Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+Q1. What are the last twenty nucleotides of the genome sequence?
+
+    d[(length(d)-20+1):length(d)]
+
+Q2. What is the length in nucleotides of the genome sequence?
+
+    length(d)
+
+Q3. How many of each of the four nucleotides A, C, T and G, and any other symbols, are there in the genome sequence?
+
+    table(d)
+
+Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucleotides are included, (ii) non-A/C/T/G nucleotides are discarded?
+
+	help("GC")
+    GC(d)
+    GC(d, exact=FALSE)
+
+Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
+
+![http://revertra.webcrow.jp/DNA/index.php](http://revertra.webcrow.jp/DNA/dnaseq.png)
+
+	help.search("complement")
+	help("comp")
+    table(comp(d))
+
+Q6. How many occurrences of the DNA words CC, CG and GC occur in the genome sequence?
+
+    count(seq=d, wordsize=2)
+
+Q7. How many occurrences of the DNA words CC, CG and GC occur in the (i) first 1000 and (ii) last 1000 nucleotides of the genome sequence?
+How can you check that the subsequence that you have looked at is 1000 nucleotides long?
+
+    count(seq=d[1:1000], wordsize=2)
+    count(seq=d[(length(d)-1000+1):length(d)], wordsize=2)
+
+----------
+## ASSIGNMENT
+【課題内容】
+本授業で解析したいDNAまたはタンパク質の配列を300文字以内で述べてください。課題のタイトルと参考文献も明記してください。
+
+DNAまたはタンパク質の配列を検索するには、
+
+- NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"Candidatus Midichloria mitochondrii"）を入力して、"Search"ボタンを押す
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#retrieving-genome-sequence-data-via-the-ncbi-website
+
+または
+
+- UniProtウェブサイト (http://www.uniprot.org) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"antibiotic resistance Clostridium difficile"）を入力して、"Search"ボタンを押す
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#viewing-the-uniprot-webpage-for-a-protein-sequence
+
+---
+
+Please describe DNA or protein sequences you're interested in. Please also state your project title and references.
+
+To find DNA or protein sequences,
+
+- go to the NCBI website (https://www.ncbi.nlm.nih.gov), type keywords (e.g. "Candidatus Midichloria mitochondrii") in the Search box at the top of the webpage, and press the “Search” button beside the Search box.
+http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#retrieving-genome-sequence-data-via-the-ncbi-website
+
+or
+
+- go the UniProt website (http://www.uniprot.org). At the top of the UniProt website, you will see a search box, and you can type keywords (e.g. "antibiotic resistance Clostridium difficile") that you are looking for in this search box, and then click on the “Search” button to search for it.
+http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#viewing-the-uniprot-webpage-for-a-protein-sequence
+
+
 
 ----------
 ----------
