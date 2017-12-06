@@ -7,9 +7,9 @@
 **ケーススタディ**
 
 Table of Contents
-- [2017-12-12](#2017-12-12)
-- [2017-12-05](#2017-12-05)
 - [LAST: Genome-Scale Sequence Comparison](#last)
+- [2017-12-05](#2017-12-05)
+- [2017-12-12](#2017-12-12)
 - [pvclust: An R package for hierarchical clustering with p-values](#pvclust)
 - [Assignment 5](#assignment-5)
 - [Assignment 4](#assignment-4)
@@ -17,16 +17,6 @@ Table of Contents
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
 - [NCBI assembly summary](#ncbi-assembly-summary)
 - [Silva rRNA database](#silva-rrna-database)
-
-----------
-## 2017-12-12
-
-----------
-## 2017-12-05
-Download human-mito.fasta and uni-mito.fasta from http://last.cbrc.jp/tutorial/webfiles/
-
-        wget http://last.cbrc.jp/tutorial/webfiles/human-mito.fasta
-        wget http://last.cbrc.jp/tutorial/webfiles/uni-mito.fasta
 
 ----------
 ## LAST
@@ -62,6 +52,7 @@ Download the lastest version [last-912.zip](http://last.cbrc.jp/last-912.zip) us
 Usage
 
     # Export LAST path (either add to .bashrc or type as is in the terminal):
+    PATH_TO_LAST=/path/to/your/last-912
     export PATH=$PATH:$PATH_TO_LAST/bin
 
     # show all options and their default settings
@@ -90,6 +81,31 @@ Understanding the output
 例2: 脊椎動物と無脊椎動物のタンパク質を比較する
 
 Example 2: Compare vertebrate proteins to invertebrate proteins
+
+----------
+## 2017-12-05
+
+[講義スライド lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec5-2017.pdf)  
+username: bioinfo  
+password: bioinfo  
+
+1. はじめてのLAST
+Let’s try running LAST on a simple example:
+Download human-mito.fasta and uni-mito.fasta from http://last.cbrc.jp/tutorial/webfiles/
+
+        wget http://last.cbrc.jp/tutorial/webfiles/human-mito.fasta
+        wget http://last.cbrc.jp/tutorial/webfiles/uni-mito.fasta
+
+	lastdb my-index human-mito.fasta
+	lastal my-index uni-mito.fasta > out.maf
+	less -S out.maf
+
+maf フォーマット
+Homework: http://last.cbrc.jp/doc/last-evalues.html
+
+----------
+## 2017-12-12
+
 
 ----------
 
