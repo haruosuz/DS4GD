@@ -7,9 +7,9 @@
 **ケーススタディ**
 
 Table of Contents
-- [LAST: Genome-Scale Sequence Comparison](#last)
-- [2017-12-05](#2017-12-05)
 - [2017-12-12](#2017-12-12)
+- [2017-12-05](#2017-12-05)
+- [LAST: Genome-Scale Sequence Comparison](#last)
 - [pvclust: An R package for hierarchical clustering with p-values](#pvclust)
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
 - [NCBI assembly summary](#ncbi-assembly-summary)
@@ -18,6 +18,30 @@ Table of Contents
 - [Assignment 4](#assignment-4)
 - [ASSIGNMENT](#assignment)
 - [Silva rRNA database](#silva-rrna-database)
+
+----------
+## 2017-12-12
+
+講義スライド [lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec12-2017.pdf) | username: bioinfo | password: bioinfo  
+
+----------
+## 2017-12-05
+
+講義スライド [lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec5-2017.pdf) | username: bioinfo | password: bioinfo  
+
+1. はじめてのLAST
+Download human-mito.fasta and uni-mito.fasta from http://last.cbrc.jp/tutorial/webfiles/
+
+	wget http://last.cbrc.jp/tutorial/webfiles/human-mito.fasta
+	wget http://last.cbrc.jp/tutorial/webfiles/uni-mito.fasta
+Let’s try running LAST on a simple example:
+
+	lastdb my-index human-mito.fasta
+	lastal my-index uni-mito.fasta > out.maf
+	less -S out.maf
+
+maf フォーマット
+Homework: http://last.cbrc.jp/doc/last-evalues.html
 
 ----------
 ## LAST
@@ -82,29 +106,6 @@ Understanding the output
 例2: 脊椎動物と無脊椎動物のタンパク質を比較する
 
 Example 2: Compare vertebrate proteins to invertebrate proteins
-
-----------
-## 2017-12-05
-
-[講義スライド lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec5-2017.pdf) | username: bioinfo | password: bioinfo  
-
-1. はじめてのLAST
-Download human-mito.fasta and uni-mito.fasta from http://last.cbrc.jp/tutorial/webfiles/
-
-	wget http://last.cbrc.jp/tutorial/webfiles/human-mito.fasta
-	wget http://last.cbrc.jp/tutorial/webfiles/uni-mito.fasta
-Let’s try running LAST on a simple example:
-
-	lastdb my-index human-mito.fasta
-	lastal my-index uni-mito.fasta > out.maf
-	less -S out.maf
-
-maf フォーマット
-Homework: http://last.cbrc.jp/doc/last-evalues.html
-
-----------
-## 2017-12-12
-
 
 ----------
 
