@@ -61,6 +61,8 @@ NEAR
 
 **4. DNA対タンパク質アラインメント**
 
+LAST can perform DNA-protein alignments allowing for such frame-shifts.
+
 Datasets (http://last.cbrc.jp/tutorial/files/)	wget http://last.cbrc.jp/tutorial/files/sp50.fasta.gz
 	wget http://last.cbrc.jp/tutorial/files/soil.fasta
     gunzip sp50.fasta.gz
@@ -69,7 +71,6 @@ Datasets (http://last.cbrc.jp/tutorial/files/)	wget http://last.cbrc.jp/tutori
 maf file header:
 
 	less -S s.maf
-
 
 ----------
 ## 2017-12-05
