@@ -37,6 +37,13 @@ Fastq format
 
 	less -S plague.fastq
 
+- [Fastq - Wikipedia](https://ja.wikipedia.org/wiki/Fastq)
+- [FASTQ format - Wikipedia](https://en.wikipedia.org/wiki/FASTQ_format)
+
+sam フォーマット
+
+- [SAMフォーマット | SAM ファイルの取り扱い方](https://bi.biopapyrus.jp/rnaseq/mapping/sam.html)
+
 3. メラノーマのエクソーム解析
 
 Datasets (http://last.cbrc.jp/tutorial/files/)
