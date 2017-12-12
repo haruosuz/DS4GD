@@ -24,6 +24,15 @@ Table of Contents
 
 講義スライド [lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec12-2017.pdf) | username: bioinfo | password: bioinfo  
 
+Datasets (http://last.cbrc.jp/tutorial/files/)
+
+	wget http://last.cbrc.jp/tutorial/files/y-pestis.fasta
+	wget http://last.cbrc.jp/tutorial/files/plague.fastq
+LAST commands:	lastdb -m1111110 yp y-pestis.fasta	lastal -Q1 -e120 yp plague.fastq | last-split > hit.maf
+	maf-convert sam hit.maf > hit.sam
+
+
+
 ----------
 ## 2017-12-05
 
