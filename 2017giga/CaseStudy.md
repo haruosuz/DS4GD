@@ -24,12 +24,31 @@ Table of Contents
 
 講義スライド [lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec12-2017.pdf) | username: bioinfo | password: bioinfo  
 
+2. ペストDNA対リファレンスゲノム
+
 Datasets (http://last.cbrc.jp/tutorial/files/)
 
 	wget http://last.cbrc.jp/tutorial/files/y-pestis.fasta
 	wget http://last.cbrc.jp/tutorial/files/plague.fastq
 LAST commands:	lastdb -m1111110 yp y-pestis.fasta	lastal -Q1 -e120 yp plague.fastq | last-split > hit.maf
 	maf-convert sam hit.maf > hit.sam
+
+Fastq format
+
+	less -S plague.fastq
+
+3. メラノーマのエクソーム解析
+
+Datasets (http://last.cbrc.jp/tutorial/files/)
+
+	wget http://last.cbrc.jp/tutorial/files/chr19.fasta.gz
+	wget http://last.cbrc.jp/tutorial/files/melanoma.fastq.gz
+
+    gunzip chr19.fasta.gz
+    gunzip melanoma.fastq.gz  
+LAST commands:	lastdb -u NEAR chr19 chr19.fasta	lastal -Q1 -e120 chr19 melanoma.fastq | last-split > m.maf
+
+
 
 
 
