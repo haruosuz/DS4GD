@@ -24,7 +24,7 @@ Table of Contents
 
 講義スライド [lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec12-2017.pdf) | username: bioinfo | password: bioinfo  
 
-2. ペストDNA対リファレンスゲノム
+**2. ペストDNA対リファレンスゲノム**
 
 Datasets (http://last.cbrc.jp/tutorial/files/)
 
@@ -44,7 +44,7 @@ sam フォーマット
 
 - [SAMフォーマット | SAM ファイルの取り扱い方](https://bi.biopapyrus.jp/rnaseq/mapping/sam.html)
 
-3. メラノーマのエクソーム解析
+**3. メラノーマのエクソーム解析**
 
 Datasets (http://last.cbrc.jp/tutorial/files/)
 
@@ -55,10 +55,16 @@ Datasets (http://last.cbrc.jp/tutorial/files/)
     gunzip melanoma.fastq.gz  
 LAST commands:	lastdb -u NEAR chr19 chr19.fasta	lastal -Q1 -e120 chr19 melanoma.fastq | last-split > m.maf
 
-
 http://last.cbrc.jp/doc/last-seeds.html
 NEAR
-	# To find the alignments of a specific query sequence. E.g. SRR636568.100127	grep -A2 -B2 SRR636568.100127 m.maf | less -S
+	# To find the alignments of a specific query sequence. E.g. SRR636568.100127	grep -A2 -B2 "SRR636568.100127" m.maf | less -S
+
+**4. DNA対タンパク質アラインメント**
+
+Datasets (http://last.cbrc.jp/tutorial/files/)	wget http://last.cbrc.jp/tutorial/files/sp50.fasta.gz
+	wget http://last.cbrc.jp/tutorial/files/soil.fasta
+    gunzip sp50.fasta.gz
+LAST commands:	lastdb -p -c sp50 sp50.fasta	lastal -F 15 sp50 soil.fasta > s.maf
 
 
 
