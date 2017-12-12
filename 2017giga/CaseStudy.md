@@ -56,6 +56,9 @@ Datasets (http://last.cbrc.jp/tutorial/files/)
 LAST commands:	lastdb -u NEAR chr19 chr19.fasta	lastal -Q1 -e120 chr19 melanoma.fastq | last-split > m.maf
 
 
+http://last.cbrc.jp/doc/last-seeds.html
+NEAR
+	# To find the alignments of a specific query sequence. E.g. SRR636568.100127	grep -A2 -B2 SRR636568.100127 m.maf | less -S
 
 
 
