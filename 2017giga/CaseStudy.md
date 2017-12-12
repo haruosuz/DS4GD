@@ -66,6 +66,9 @@ Datasets (http://last.cbrc.jp/tutorial/files/)	wget http://last.cbrc.jp/tutori
     gunzip sp50.fasta.gz
 LAST commands:	lastdb -p -c sp50 sp50.fasta	lastal -F 15 sp50 soil.fasta > s.maf
 
+maf file header:
+
+	less -S s.maf
 
 
 ----------
