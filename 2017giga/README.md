@@ -28,6 +28,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA) [Syllabus](https://
 - 2017-12-05 No. 10 - [Guest Speaker](#guest-speaker)
 - 2017-12-12 No. 11 - [Guest Speaker](#guest-speaker)
 - 2017-12-19 No. 12 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
+  - [R packages](#r-packages)
 - 2017-12-26 No. 13 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2018-01-16 No. 14 - 最終発表 Oral presentation
 - 2018-01-23 レポート提出期限 Deadline for final report
@@ -144,5 +145,34 @@ Print version information:
     Biostrings_2.42.1
     ape_4.1
     seqinr_3.3-6       
+
+----------
+
+On Jun 4, 2016, at 18:14, CNS-STAFF <cns-staff@sfc.keio.ac.jp wrote:
+
+湘南藤沢ITCの高橋と申します。
+
+今まで通り Biostrings_2.38.4 は利用可能です。
+ホームディレクトリにBiostringsをインストールされていない方は
+以下の手順でインストールしていただければお使いいただけます。
+
+1) R.app を起動する
+2) Biostrings をホームディレクトリにインストールする
+
+	source("http://bioconductor.org/biocLite.R")
+	biocLite("Biostrings")
+
+ ※ インストール時に Old packages をアップデートするか
+    聞かれますが n を選択してください。
+
+      Update all/some/none? [a/s/n]: < n を入力する。
+
+3) Biostrings をロードする
+
+ library("Biostrings")
+
+なお、既にインストール済みの方はそのままお使いいただけます。
+
+以上、よろしくお願いいたします。
 
 ----------
