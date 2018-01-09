@@ -20,6 +20,33 @@ Table of Contents
 - [Silva rRNA database](#silva-rrna-database)
 
 ----------
+## 2018-01
+
+[NCBI assembly summary](#ncbi-assembly-summary)
+
+http://apprize.info/data/bioinformatics/7.html
+Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
+
+    cd ~/projects/ncbi_assembly_summary/data/
+
+    # create a variable and assign it a value
+    FILE="assembly_summary_genbank.txt"
+    FILE="assembly_summary_refseq.txt"
+
+    # use grep to extract header lines (those that begin with #)
+    grep "^#" $FILE
+
+    grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | nl
+
+     1	# assembly_accession
+     8	organism_name
+     9	infraspecific_name
+    20	ftp_path
+
+    NAME="Bifidobacterium.longum"
+    cat $FILE | grep -v "phage" | awk -F "\t" -v OFS="\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $1,$8,$9,$20}'
+
+----------
 ## 2017-12-12
 
 講義スライド [lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec12-2017.pdf) | username: bioinfo | password: bioinfo  
@@ -695,18 +722,15 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する:
     # use grep to extract header lines (those that begin with #)
     grep "^#" $FILE
 
-http://apprize.info/data/bioinformatics/7.html
-Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
+列番号を付けて出力する:
 
     grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | nl
 
-     1	# assembly_accession
+     5	refseq_category
      8	organism_name
-     9	infraspecific_name
+    11	version_status
+    12	assembly_level
     20	ftp_path
-
-    NAME="Bifidobacterium.longum"
-    cat $FILE | grep -v "phage" | awk -F "\t" -v OFS="\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $1,$8,$9,$20}'
 
 アセンブリの状況（assembly_level: Contig, Scaffold, Chromosome, Complete Genome）を確認する:  
 
@@ -717,7 +741,7 @@ Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Ski
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 
     NAME="Ensifer|Sinorhizobium"
-    awk -F "\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ && $5 ~ /representative/ {print $20}' $FILE > ftpdirpaths
+    awk -F "\t" '$5 ~ /representative/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $20}' $FILE > ftpdirpaths
     awk 'BEGIN{FS=OFS="/";filesuffix="genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
     wget -i ftpfilepaths
 
