@@ -19,9 +19,6 @@ Table of Contents
 - [ASSIGNMENT](#assignment)
 - [Silva rRNA database](#silva-rrna-database)
 
-http://apprize.info/data/bioinformatics/7.html
-Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
-
 ----------
 ## 2018-01
 
@@ -31,6 +28,7 @@ Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Ski
     FILE="assembly_summary_genbank.txt"
     FILE="assembly_summary_refseq.txt"
     NAME="Bifidobacterium.longum"
+    #NAME="Ensifer|Sinorhizobium"
     grep "^#" $FILE | tail -n 1 | cut -f1,8,9,20
     cat $FILE | grep -v "phage" | awk -F "\t" -v OFS="\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $1,$8,$9,$20}'
 
@@ -41,6 +39,12 @@ Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Ski
      8	organism_name
      9	infraspecific_name
     20	ftp_path
+
+
+http://apprize.info/data/bioinformatics/7.html
+Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
+
+https://github.com/haruosuz/microbe
 
 ----------
 ## 2017-12-12
