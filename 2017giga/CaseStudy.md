@@ -20,33 +20,6 @@ Table of Contents
 - [Silva rRNA database](#silva-rrna-database)
 
 ----------
-## 2018-01
-
-[NCBI assembly summary](#ncbi-assembly-summary)
-
-    cd ~/projects/ncbi_assembly_summary/data/
-    FILE="assembly_summary_genbank.txt"
-    FILE="assembly_summary_refseq.txt"
-    NAME="Bifidobacterium.longum"
-    #NAME="Ensifer|Sinorhizobium"
-    grep "^#" $FILE | tail -n 1 | cut -f1,8,9,20
-    cat $FILE | grep -v "phage" | awk -F "\t" -v OFS="\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $1,$8,$9,$20}'
-
-
-    grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | nl
-
-     1	# assembly_accession
-     8	organism_name
-     9	infraspecific_name
-    20	ftp_path
-
-
-http://apprize.info/data/bioinformatics/7.html
-Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
-
-https://github.com/haruosuz/microbe
-
-----------
 ## 2017-12-12
 
 講義スライド [lecture slides](http://asailab.cb.k.u-tokyo.ac.jp/anish/slides-keio/keio-dec12-2017.pdf) | username: bioinfo | password: bioinfo  
@@ -181,15 +154,6 @@ Understanding the output
 例2: 脊椎動物と無脊椎動物のタンパク質を比較する
 
 Example 2: Compare vertebrate proteins to invertebrate proteins
-
-----------
-
-http://apprize.info/data/bioinformatics/3.html
-Remedial Unix Shell - Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project - Bioinformatics Data Skills (2015)
-
-see the newest files at the bottom
-
-	ls -lrt
 
 ----------
 ## pvclust
@@ -1302,20 +1266,4 @@ Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、データ�
 - [blastn for silva database (SE)](http://cell-innovation.nig.ac.jp/wiki2/tiki-index.php?page=P000001306)
 
 ----------
-----------
-
-http://apprize.info/data/bioinformatics/3.html
-Remedial Unix Shell - Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project - Bioinformatics Data Skills (2015)
-
-http://apprize.info/data/bioinformatics/6.html
-Bioinformatics Data - Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project - Bioinformatics Data Skills (2015)
-
-http://apprize.info/data/bioinformatics/7.html
-Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
-
-http://apprize.info/data/bioinformatics/12.html
-Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
-
-
-
 
