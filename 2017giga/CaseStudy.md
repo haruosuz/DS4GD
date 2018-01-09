@@ -696,10 +696,17 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する:
     grep "^#" $FILE
 
 http://apprize.info/data/bioinformatics/7.html
+Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
 
     grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | nl
-    # pipe output to `less`, and then press / and enter -N (--LINE-NUMBERS)
-    grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | less
+
+     1	# assembly_accession
+     8	organism_name
+     9	infraspecific_name
+    20	ftp_path
+
+    NAME="Bifidobacterium.longum"
+    cat $FILE | grep -v "phage" | awk -F "\t" -v OFS="\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $1,$8,$9,$20}'
 
 アセンブリの状況（assembly_level: Contig, Scaffold, Chromosome, Complete Genome）を確認する:  
 
