@@ -19,22 +19,21 @@ Table of Contents
 - [ASSIGNMENT](#assignment)
 - [Silva rRNA database](#silva-rrna-database)
 
+http://apprize.info/data/bioinformatics/7.html
+Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
+
 ----------
 ## 2018-01
 
 [NCBI assembly summary](#ncbi-assembly-summary)
 
-http://apprize.info/data/bioinformatics/7.html
-Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Skills (2015)
-
     cd ~/projects/ncbi_assembly_summary/data/
-
-    # create a variable and assign it a value
     FILE="assembly_summary_genbank.txt"
     FILE="assembly_summary_refseq.txt"
+    NAME="Bifidobacterium.longum"
+    grep "^#" $FILE | tail -n 1 | cut -f1,8,9,20
+    cat $FILE | grep -v "phage" | awk -F "\t" -v OFS="\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $1,$8,$9,$20}'
 
-    # use grep to extract header lines (those that begin with #)
-    grep "^#" $FILE
 
     grep "^#" $FILE | tail -n 1 | tr "\t" "\n" | nl
 
@@ -42,9 +41,6 @@ Unix Data Tools - Practice: Bioinformatics Data Skills - Bioinformatics Data Ski
      8	organism_name
      9	infraspecific_name
     20	ftp_path
-
-    NAME="Bifidobacterium.longum"
-    cat $FILE | grep -v "phage" | awk -F "\t" -v OFS="\t" '$8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $1,$8,$9,$20}'
 
 ----------
 ## 2017-12-12
