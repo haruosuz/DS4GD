@@ -704,7 +704,8 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する:
 
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 
-Also see the [Downloading Genomic Data Factsheet](ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf).
+Also see the Downloading Genomic Data Factsheet
+ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
     NAME="Ensifer|Sinorhizobium"
     awk -F "\t" '$5 ~ /representative/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $20}' $FILE > ftpdirpaths
