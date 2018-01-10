@@ -702,15 +702,18 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する:
     # Using grep, cut, sort, uniq to summarize columns of data
     grep -v "^#" $FILE | cut -f12 | sort | uniq -c
 
-[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
+15. [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
+
+    # refseq_category (column 5) is "na", "reference genome" or "representative genome"
+    grep -v "^#" $FILE | cut -f5 | sort | uniq -c
+
+    NAME="Ensifer|Sinorhizobium"
+    awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $20}' $FILE > ftpdirpaths
+    awk 'BEGIN{FS=OFS="/";filesuffix="genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
+    wget -i ftpfilepaths
 
 Also see the Downloading Genomic Data Factsheet
 ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
-
-    NAME="Ensifer|Sinorhizobium"
-    awk -F "\t" '$5 ~ /representative/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $20}' $FILE > ftpdirpaths
-    awk 'BEGIN{FS=OFS="/";filesuffix="genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
-    wget -i ftpfilepaths
 
 [腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](http://integbio.jp/dbcatalog/record/nbdc00058) の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
