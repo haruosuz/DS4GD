@@ -9,7 +9,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS [Syllabus](https://vu.sfc.
 ## References
 参考文献
 - [Conrad Bessant; Darren Oakley; Ian Shadforth - Building Bioinformatics Solutions 2nd edition, Oxford University Press, 2014, 368p.](https://github.com/haruosuz/books/tree/master/bbs) 
-- [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://a-little-book-of-r-for-bioinformatics.readthedocs.org/en/latest/)
+- [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
+- [Wim P. Krijnen (2009) "Applied Statistics for Bioinformatics using R"](https://github.com/haruosuz/r4bioinfo/tree/master/R_Wim_Krijnen)
 
 ## Class Schedule & Materials
 講義日程と資料
@@ -52,9 +53,6 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS [Syllabus](https://vu.sfc.
 ![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springer.com/springer-cms/rest/v1/content/6629006/data/v1)
 
 - [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub) 都市環境の生物群集
-- [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-- [Jessica Green: We're covered in germs. Let's design for that.](https://www.ted.com/talks/jessica_green_good_germs_make_healthy_buildings) | [ジェシカ・グリーン: 私たちを取り巻く細菌と住環境のデザイン](http://www.ted.com/talks/jessica_green_good_germs_make_healthy_buildings?language=ja)
-- [Richard Resnick: Welcome to the genomic revolution](https://www.ted.com/talks/richard_resnick_welcome_to_the_genomic_revolution) | [リチャード・レズニック「ゲノム革命の時代へようこそ」](https://www.ted.com/talks/richard_resnick_welcome_to_the_genomic_revolution?language=ja)
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
