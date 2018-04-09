@@ -68,6 +68,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS [Syllabus](https://vu.sfc.
 
 ![https://ja.wikipedia.org/wiki/シーケンスアラインメント](https://upload.wikimedia.org/wikipedia/commons/8/86/Zinc-finger-seq-alignment2.png)
 
+2つのヒトジンクフィンガータンパク質の[シーケンスアラインメント](https://ja.wikipedia.org/wiki/シーケンスアラインメント)
+
 ----------
 
 ## Step
