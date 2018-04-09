@@ -48,13 +48,12 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS [Syllabus](https://vu.sfc.
 
 ![http://www.metabolomics.bbsrc.ac.uk/background.htm](http://www.metabolomics.bbsrc.ac.uk/background_files/image038.gif)
 
-**Microbiome of the Built Environment (MoBE)**
+**[Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)**
 
 ![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springer.com/springer-cms/rest/v1/content/6629006/data/v1)
 
 - [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-
-[Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
+- [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
 
 ![](https://media.nature.com/m685/nature-assets/ismej/journal/v6/n8/images/ismej2011211f2.jpg)
 
