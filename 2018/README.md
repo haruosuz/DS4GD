@@ -95,6 +95,9 @@ R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/mas
 
 	quit()
 
+[R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
+
+
 ### R packages
 
 Install packages [`seqinr`](https://cran.r-project.org/web/packages/seqinr/index.html), [`ape`](https://cran.r-project.org/web/packages/ape/index.html):  
