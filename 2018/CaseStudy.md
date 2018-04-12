@@ -1,5 +1,4 @@
-**[DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS (GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2018)**  
-**生命動態のデータサイエンス**
+**[生命動態のデータサイエンス/生命情報解析](https://github.com/haruosuz/DS4GD/tree/master/2018)**  
 
 ----------
 
@@ -7,12 +6,63 @@
 **ケーススタディ**
 
 Table of Contents
-- [2018-04-10](#2018-04-10)
+- [2018-04-17](#2018-04-17)
+- [assignment 2](#assignment-2)
 - [assignment 1](#assignment-1)
 - [ASSIGNMENT](#assignment)
 
 ----------
-## 2018-04-09
+## 2018-04-17
+
+----------
+## assignment 2
+
+Installing seqinr & Biostrings
+
+RパッケージseqinrとBioconductorパッケージBiostringsをインストールする。
+
+パッケージseqinrのインストール:
+Install the "seqinr" package:
+
+    install.packages("seqinr")
+
+BioconductorパッケージBiostringsのインストール:
+Install the Bioconductor package called "Biostrings":
+
+    source("https://bioconductor.org/biocLite.R")
+    biocLite("Biostrings")
+
+パッケージの呼び出し:
+Load the packages into R:
+
+    library("seqinr")
+    library("Biostrings")
+
+Rのバージョンを確認:
+Print the version of R running:
+
+    R.version.string
+
+Rパッケージのバージョンを確認:
+Print the versions of these packages:
+
+    packageVersion("seqinr")
+    packageVersion("Biostrings")
+
+Record the version of R and R packages by the sessionInfo() function.
+
+[回答例]
+[Example answer]
+
+> R.version.string
+[1] "R version 3.3.3 (2017-03-06)"
+> packageVersion("seqinr")
+[1] ‘3.4.5’
+> packageVersion("Biostrings")
+[1] ‘2.42.1’
+
+[References]
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#installing-r-packages
 
 ----------
 ## assignment 1
