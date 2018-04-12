@@ -1,4 +1,5 @@
-**[生命動態のデータサイエンス/生命情報解析](https://github.com/haruosuz/DS4GD/tree/master/2018)**  
+**[生命情報解析 / 生命動態のデータサイエンス [DS2]](https://github.com/haruosuz/DS4GD/tree/master/2018)**  
+https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ----------
 
@@ -16,65 +17,78 @@ Table of Contents
 
 ----------
 ## assignment 2
-
-Installing seqinr & Biostrings
+課題No.2 「Installing seqinr & Biostrings」
 
 RパッケージseqinrとBioconductorパッケージBiostringsをインストールする。
 
-パッケージseqinrのインストール:
-Install the "seqinr" package:
+パッケージseqinrのインストール:  
 
+    # Install the "seqinr" package:
     install.packages("seqinr")
 
-BioconductorパッケージBiostringsのインストール:
-Install the Bioconductor package called "Biostrings":
+BioconductorパッケージBiostringsのインストール:  
 
+    # Install the Bioconductor package called "Biostrings":
     source("https://bioconductor.org/biocLite.R")
     biocLite("Biostrings")
 
-パッケージの呼び出し:
-Load the packages into R:
+パッケージの呼び出し:  
 
+    # Load the packages into R:
     library("seqinr")
     library("Biostrings")
 
-Rのバージョンを確認:
-Print the version of R running:
+Rパッケージのバージョンを確認:  
 
-    R.version.string
-
-Rパッケージのバージョンを確認:
-Print the versions of these packages:
-
+    # Print the versions of these packages:
     packageVersion("seqinr")
     packageVersion("Biostrings")
 
-Record the version of R and R packages by the sessionInfo() function.
+Rのバージョンを確認:  
 
-[回答例]
-[Example answer]
+    # Print the version of R running:
+    R.version.string
 
-> R.version.string
-[1] "R version 3.3.3 (2017-03-06)"
-> packageVersion("seqinr")
-[1] ‘3.4.5’
-> packageVersion("Biostrings")
-[1] ‘2.42.1’
+Record the version of R and R packages by the `sessionInfo()` function.
+
+回答例:  
+
+    # Example answer:  
+
+    > packageVersion("seqinr")
+    [1] ‘3.4.5’
+
+    > packageVersion("Biostrings")
+    [1] ‘2.42.1’
+
+    > R.version.string
+    [1] "R version 3.3.3 (2017-03-06)"
+
+    > sessionInfo()
+    R version 3.3.3 (2017-03-06)
+    Platform: x86_64-apple-darwin13.4.0 (64-bit)
+    Running under: OS X Mavericks 10.9.5
 
 [References]
 https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#installing-r-packages
 
 ----------
 ## assignment 1
-
-R言語入門
+課題No.1 「R言語入門」
+〆切：2018-04-16 23:59:00
 
 次の動画レッスンを見て、疑問点を報告する。[R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)【回答例】動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
 - 因子ベクトルというものがよくわからなかった。
 - 行列とデータフレームとリストの違いが理解できなかった。
 
+
+
+
+
 ----------
 ## ASSIGNMENT
+選抜課題
+
 【課題内容】
 本授業で解析したいDNAまたはタンパク質の配列を300文字以内で述べてください。課題のタイトルと参考文献も明記してください。
 
