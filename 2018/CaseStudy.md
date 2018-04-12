@@ -8,16 +8,16 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 Table of Contents
 - [2018-04-17](#2018-04-17)
-- [assignment 2](#assignment-2)
-- [assignment 1](#assignment-1)
-- [ASSIGNMENT](#assignment)
+- [assignment 2](#assignment-2) 課題No.2 
+- [assignment 1](#assignment-1) 課題No.1
+- [ASSIGNMENT](#assignment) 選抜課題
 
 ----------
 ## 2018-04-17
 
 ----------
 ## assignment 2
-課題No.2 「Installing seqinr & Biostrings」
+**課題No.2 「Installing R packages seqinr & Biostrings」**    
 
 RパッケージseqinrとBioconductorパッケージBiostringsをインストールする。
 
@@ -74,16 +74,12 @@ https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#installing-r-p
 
 ----------
 ## assignment 1
-課題No.1 「R言語入門」
+**課題No.1 「R言語入門」**    
 〆切：2018-04-16 23:59:00
 
 次の動画レッスンを見て、疑問点を報告する。[R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)【回答例】動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
 - 因子ベクトルというものがよくわからなかった。
 - 行列とデータフレームとリストの違いが理解できなかった。
-
-
-
-
 
 ----------
 ## ASSIGNMENT
