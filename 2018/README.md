@@ -17,9 +17,9 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS [Syllabus](https://vu.sfc.
 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
 - 2018-04-10 No. 1 - イントロダクション [Introduction](#Introduction)
   - [Building Bioinformatics Solutions](https://github.com/haruosuz/books/tree/master/bbs#chapter-1-introduction)
-- 2018-04-17 No. 2 - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#neglected-tropical-diseases)
+- 2018-04-17 No. 2
   - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#how-to-install-r-and-a-brief-introduction-to-r)
-  - 続・R言語入門 [A little more introduction to R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#a-little-more-introduction-to-r)
+  - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#neglected-tropical-diseases)
 - 2018-04-24 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
 - 2018-05-01 木曜代替日
 - 2018-05-08 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
