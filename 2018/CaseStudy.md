@@ -53,7 +53,7 @@ NCBIから複数のDNA配列を取得:
     seqs <- lapply(seqnames,  retrieve_ncbi_fna) # Retrieve the sequences and store them in list variable "seqs"
 
 	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=sapply(seqs, getAnnot), file.out="sequence.fna")
+    write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fna")
 
 ----------
 ## assignment 3
