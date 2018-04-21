@@ -7,8 +7,9 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 Table of Contents
-- [2018-04-17](#2018-04-17)
-- [assignment 2](#assignment-2) 課題No.2 
+- [NCBI sequence database](#ncbi-sequence-database)
+- [assignment 3](#assignment-3) 課題No.3
+- [assignment 2](#assignment-2) 課題No.2
 - [assignment 1](#assignment-1) 課題No.1
 - [ASSIGNMENT](#assignment) 選抜課題
 - [dotplot](#dotplot)
@@ -16,18 +17,102 @@ Table of Contents
 - [NCBI assembly summary](#ncbi-assembly-summary)
 
 ----------
-## 2018-04-17
+----------
+## NCBI sequence database
+
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#the-ncbi-sequence-database
+
+NCBIからDNA配列を取得:  
+
+    # Retrieving a DNA sequence from NCBI
+    library("seqinr")
+    ACCESSION <- "NC_001477"
+    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
+    d <- ld[[1]]
+    write.fasta(sequences=d, names=sapply(seqs, getAnnot), file.out=paste0(ACCESSION,".fna"))
+
+NCBIから複数のDNA配列を取得:  
+
+    # Retrieving a list of DNA sequences from NCBI
+    library("seqinr")
+    # create a function to retrieve several nucleotide sequences from NCBI
+    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
+    
+    seqnames <- c("NC_001477", "NC_001474", "NC_001475", "NC_002640") # Make a vector containing the names of the sequences
+    seqs <- lapply(seqnames,  retrieve_ncbi_fna) # Retrieve the sequences and store them in list variable "seqs"
+	length(seqs)      # Print out the number of sequences retrieved
+	seq1 <- seqs[[1]] # Get the 1st sequence
+	seq1[1:20]        # Print out the first 20 letters of the 1st sequence
+	seq2 <- seqs[[2]] # Get the 2nd sequence
+	seq2[1:20]        # Print out the first 20 letters of the 2nd sequence
+
+	# write the sequences to a FASTA-format file
+    #write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
+    write.fasta(sequences=seqs, names=sapply(seqs, getAnnot), file.out="sequence.fna")
 
 ----------
-## References
+## assignment 3
+[Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
 
-2018/04/14(Sat)
-https://connpass.com/event/75699/
-Dr. Bonoの生命科学データ解析-読書会 @大阪
+[Answers to the exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-1)
 
-2017/12/16(Sat)
-https://connpass.com/event/69633/
-Dr. Bonoの生命科学データ解析-読書会
+Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
+[Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
+
+- 全生物 [overview.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt)
+- 真核生物 [eukaryotes.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt)
+- 原核生物 [prokaryotes.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt)
+- 原核生物の参照ゲノム [prok_reference_genomes.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_reference_genomes.txt)
+- 原核生物の代表ゲノム [prok_representative_genomes.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_representative_genomes.txt)
+- ウイルス [viruses](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt)
+- プラスミド [plasmids](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt)
+
+SeqinRパッケージを用いて、配列データをRに読み込む:  
+
+	# read the sequence into R using the SeqinR package:
+    library("seqinr")
+    ACCESSION <- "NC_001477" # Dengue virus 1
+    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
+    d <- ld[[1]]
+
+Q1. What are the last twenty nucleotides of the genome sequence?
+
+    d[(length(d)-20+1):length(d)]
+
+Q2. What is the length in nucleotides of the genome sequence?
+
+    length(d)
+
+Q3. How many of each of the four nucleotides A, C, T and G, and any other symbols, are there in the genome sequence?
+
+    table(d)
+
+Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucleotides are included, (ii) non-A/C/T/G nucleotides are discarded?
+
+	help("GC")
+    GC(d)
+    GC(d, exact=FALSE)
+
+Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
+
+![http://revertra.webcrow.jp/DNA/index.php](http://revertra.webcrow.jp/DNA/dnaseq.png)
+
+	help.search("complement")
+	help("comp")
+    table(comp(d))
+
+Q6. How many occurrences of the DNA words CC, CG and GC occur in the genome sequence?
+
+    count(seq=d, wordsize=2)
+
+Q7. How many occurrences of the DNA words CC, CG and GC occur in the (i) first 1000 and (ii) last 1000 nucleotides of the genome sequence?
+How can you check that the subsequence that you have looked at is 1000 nucleotides long?
+
+    count(seq=d[1:1000], wordsize=2)
+    count(seq=d[(length(d)-1000+1):length(d)], wordsize=2)
 
 ----------
 ## assignment 2
@@ -881,46 +966,16 @@ https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
 ----------
 
 ----------
-## NCBI sequence database
+## References
 
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#the-ncbi-sequence-database
+2018/04/14(Sat)
+https://connpass.com/event/75699/
+Dr. Bonoの生命科学データ解析-読書会 @大阪
 
-Retrieving a DNA sequence from NCBI
+2017/12/16(Sat)
+https://connpass.com/event/69633/
+Dr. Bonoの生命科学データ解析-読書会
 
-    library("seqinr")
-    ACCESSION <- "NC_001477"
-    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
-    d <- ld[[1]]
-    write.fasta(sequences=d, names=sapply(seqs, getAnnot), file.out=paste0(ACCESSION,".fna"))
-
-Retrieving a list of DNA sequences from NCBI
-
-    library("seqinr")
-    # create a function to retrieve several nucleotide sequences from NCBI
-    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
-    
-    seqnames <- c("NC_001477", "NC_001474", "NC_001475", "NC_002640") # Make a vector containing the names of the sequences
-    seqs <- lapply(seqnames,  retrieve_ncbi_fna) # Retrieve the sequences and store them in list variable "seqs"
-	length(seqs)      # Print out the number of sequences retrieved
-	seq1 <- seqs[[1]] # Get the 1st sequence
-	seq1[1:20]        # Print out the first 20 letters of the 1st sequence
-	seq2 <- seqs[[2]] # Get the 2nd sequence
-	seq2[1:20]        # Print out the first 20 letters of the 2nd sequence
-
-	# write the sequences to a FASTA-format file
-    #write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
-    write.fasta(sequences=seqs, names=sapply(seqs, getAnnot), file.out="sequence.fna")
-
-----------
-
-	# read the sequence into R using the SeqinR package:
-    library("seqinr")
-    ACCESSION <- "NC_001477" # Dengue virus 1
-    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
-    d <- ld[[1]]
-
-## Assignment 5
 
 
 
