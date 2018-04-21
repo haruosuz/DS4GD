@@ -20,6 +20,17 @@ Table of Contents
 ----------
 ## NCBI sequence database
 
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
+[Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
+
+- 全生物 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt
+- 真核生物 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt)
+- 原核生物 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt
+- 原核生物の参照ゲノム ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_reference_genomes.txt
+- 原核生物の代表ゲノム ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_representative_genomes.txt
+- ウイルス ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt
+- プラスミド ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
+
 https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#the-ncbi-sequence-database
 
 NCBIからDNA配列を取得:  
@@ -40,34 +51,13 @@ NCBIから複数のDNA配列を取得:
     
     seqnames <- c("NC_001477", "NC_001474", "NC_001475", "NC_002640") # Make a vector containing the names of the sequences
     seqs <- lapply(seqnames,  retrieve_ncbi_fna) # Retrieve the sequences and store them in list variable "seqs"
-	length(seqs)      # Print out the number of sequences retrieved
-	seq1 <- seqs[[1]] # Get the 1st sequence
-	seq1[1:20]        # Print out the first 20 letters of the 1st sequence
-	seq2 <- seqs[[2]] # Get the 2nd sequence
-	seq2[1:20]        # Print out the first 20 letters of the 2nd sequence
 
 	# write the sequences to a FASTA-format file
-    #write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
     write.fasta(sequences=seqs, names=sapply(seqs, getAnnot), file.out="sequence.fna")
 
 ----------
 ## assignment 3
 [Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
-
-[Answers to the exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-1)
-
-Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-
-[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
-[Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
-
-- 全生物 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt
-- 真核生物 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt)
-- 原核生物 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt
-- 原核生物の参照ゲノム ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_reference_genomes.txt
-- 原核生物の代表ゲノム ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_representative_genomes.txt
-- ウイルス ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt
-- プラスミド ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
 
 SeqinRパッケージを用いて、配列データをRに読み込む:  
 
@@ -77,6 +67,8 @@ SeqinRパッケージを用いて、配列データをRに読み込む:
     #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
     ld <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
     d <- ld[[1]]
+
+Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 
 Q1. What are the last twenty nucleotides of the genome sequence?
 
