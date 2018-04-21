@@ -61,13 +61,13 @@ Download the DNA sequence of your genome of interest. Answer the following quest
 [NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
 [Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
 
-- 全生物 [overview.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt)
-- 真核生物 [eukaryotes.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt)
-- 原核生物 [prokaryotes.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt)
-- 原核生物の参照ゲノム [prok_reference_genomes.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_reference_genomes.txt)
-- 原核生物の代表ゲノム [prok_representative_genomes.txt](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_representative_genomes.txt)
-- ウイルス [viruses](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt)
-- プラスミド [plasmids](ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt)
+- 全生物 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt
+- 真核生物 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt)
+- 原核生物 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt
+- 原核生物の参照ゲノム ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_reference_genomes.txt
+- 原核生物の代表ゲノム ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_representative_genomes.txt
+- ウイルス ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt
+- プラスミド ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
 
 SeqinRパッケージを用いて、配列データをRに読み込む:  
 
