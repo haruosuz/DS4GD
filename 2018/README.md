@@ -1,5 +1,5 @@
 Keio SFC 2018 Spring Tuesday 3rd Period  
-SFC 2018年度 春学期 火曜日3時限  
+SFC 2018年度 春学期 火曜日3時限
 教室 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
 
 # DS4GD
