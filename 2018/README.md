@@ -1,10 +1,12 @@
-Keio SFC 2018 Spring Tuesday 3rd Period
-[λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
-SFC 2018年度 春学期 火曜日３時限
+Keio SFC 2018 Spring Tuesday 3rd Period  
+SFC 2018年度 春学期 火曜日3時限  
+教室 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
 
 # DS4GD
-DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_41550&ks=B3206&key=6b3c5f655e3d9919cab8bb18e8ee7eea&lang=en)  
-生命動態のデータサイエンス/生命情報解析 [シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_41550&ks=B3206)  
+DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
+[Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_41550&ks=B3206&key=6b3c5f655e3d9919cab8bb18e8ee7eea&lang=en)  
+生命動態のデータサイエンス/生命情報解析
+[シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_41550&ks=B3206)  
 
 ## References
 参考文献
@@ -30,7 +32,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS [Syllabus](https://vu.sfc.
 - 2018-06-19 No. 10 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2018-06-26 No. 11 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2017-07-03 No. 12 - [Guest Speaker](#guest-speaker)
-- 2017-07-10 No. 13 - rRNA遺伝子配列に基づく生物多様性解析
+- 2017-07-10 No. 13 - リボソームDNA配列解析
 - 2017-07-17 No. 14 - 最終発表 Oral presentation
 - 2017-07-24 レポート提出期限 Deadline for final report
 
