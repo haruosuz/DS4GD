@@ -8,6 +8,9 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 生命動態のデータサイエンス/生命情報解析
 [シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_41550&ks=B3206)  
 
+- 科目概要：この授業では、コンピュータ実習を通して、バイオインフォマティクスの実践的な技術（DNAやタンパク質の配列解析）を習得する。
+- 成績評価：提出課題と最終発表とレポート
+
 ## References
 参考文献
 - [Conrad Bessant; Darren Oakley; Ian Shadforth - Building Bioinformatics Solutions 2nd edition, Oxford University Press, 2014, 368p.](https://github.com/haruosuz/books/tree/master/bbs) 
