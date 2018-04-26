@@ -25,14 +25,14 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2018-05-01 木曜代替日
 - 2018-05-08 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
 - 2018-05-15 No. 5 - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
-- 2018-05-22 No. 6 - Case Study [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly-summary)
+- 2018-05-22 No. 6 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
 - 2018-05-29 No. 7 - 中間発表 interim report
 - 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 - 2018-06-12 No. 9 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
 - 2018-06-19 No. 10 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2018-06-26 No. 11 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
-- 2017-07-03 No. 12 - [Guest Speaker](#guest-speaker)
-- 2017-07-10 No. 13 - リボソームDNA配列解析
+- 2017-07-03 No. 12 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
+- 2017-07-10 No. 13 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
 - 2017-07-17 No. 14 - 最終発表 Oral presentation
 - 2017-07-24 レポート提出期限 Deadline for final report
 
