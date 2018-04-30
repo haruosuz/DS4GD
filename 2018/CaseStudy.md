@@ -230,7 +230,8 @@ NCBIから複数のDNA配列を取得:
 - [Entrez Programming Utilities - Books - NCBI](http://www.ncbi.nlm.nih.gov/books/NBK25501/?term=Entrez%20Programming%20Utilities)
  - [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
   - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
-   - [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
+
+[Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
 
 | Record Type | &rettype | &retmode |
 |:------:|:----:|:----:|:--------------:|
@@ -305,6 +306,7 @@ NCBIから複数のDNA配列を取得:
 NCBIからDNA配列を取得:  
 
     # Retrieving a list of DNA sequences from NCBI
+
     # create a function to retrieve several nucleotide sequences from NCBI
     retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
 
