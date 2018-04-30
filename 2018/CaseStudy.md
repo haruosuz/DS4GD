@@ -234,7 +234,7 @@ NCBIから複数のDNA配列を取得:
 [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
 
 | Record Type | &rettype | &retmode |
-|:------:|:----:|:----:|:--------------:|
+|:-----------:|:--------:|:--------:|
 | Additional option for db = nuccore |
 | db = nuccore, nucest, nucgss, protein or popset |
 | FASTA | fasta | text |
