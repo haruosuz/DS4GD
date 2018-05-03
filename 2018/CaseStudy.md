@@ -192,19 +192,14 @@ http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapte
 
 ![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
 
-年月日を確認:  
-
-    # Get Current Date and Time
-    Sys.Date()
-
 NCBIからDNA配列を取得:  
 
     # Retrieving a DNA sequence from NCBI
     library("seqinr")
-    ACCESSION <- "NC_001477"
+    ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
     seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
     seq1 <- seqs[[1]]
-    write.fasta(sequences=seq1, names=sapply(seq1, getAnnot), file.out=paste0(ACCESSION,".fna"))
+    write.fasta(sequences=seq1, names=getAnnot(seq1), file.out=paste0(ACCESSION,".fna"))
 
 NCBIから複数のDNA配列を取得:  
 
@@ -214,12 +209,19 @@ NCBIから複数のDNA配列を取得:
     # create a function to retrieve several nucleotide sequences from NCBI
     retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
 
-    seqnames <- c("NC_001477", "NC_001474", "NC_001475", "NC_002640") # Make a vector containing the names of the sequences
-    seqs <- lapply(seqnames,  retrieve_ncbi_fna) # Retrieve the sequences and store them in list variable "seqs"
+	# Make a vector containing the names of the sequences
+    seqnames <- c("NC_001318", "NC_001856") # Borrelia burgdorferi B31 chromosome (NC_001318) plasmid lp38 (NC_001856)
+
+	# Retrieve the sequences and store them in list variable "seqs"
+    seqs <- lapply(seqnames,  retrieve_ncbi_fna)
 
 	# write the sequences to a FASTA-format file
     write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
 
+年月日を確認:  
+
+    # Get Current Date and Time
+    Sys.Date()
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
@@ -253,7 +255,8 @@ NCBIから複数のDNA配列を取得:
 [文字列の処理](http://stat.biopapyrus.net/r/string.html)  
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
-    pattern <- "Escherichia coli.*K-12|Haemophilus influenzae|Helicobacter pylori|Neisseria|Rickettsia prowazekii|Borrelia burgdorferi"
+    #pattern <- "Escherichia coli.*K-12|Haemophilus influenzae|Helicobacter pylori|Neisseria|Rickettsia prowazekii|Borrelia burgdorferi"
+    pattern <- "Escherichia coli.*K-12|Haemophilus influenzae|Neisseria|Rickettsia prowazekii|Borrelia burgdorferi"
     i <- grep(pattern = pattern, x = d$`Organism name`, ignore.case = TRUE)
     length(i)
     d[i,1]
@@ -589,8 +592,6 @@ Strength of Selected Codon Usage
 | CDS protein FASTA | fasta_cds_aa | text |
 | db = sequences |
 | FASTA | fasta | text |
-
-
 
 ----------
 
