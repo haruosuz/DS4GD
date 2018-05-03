@@ -188,16 +188,10 @@ http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapte
 [NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
 - FTPサイト ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
 - ゲノムブラウザ http://www.ncbi.nlm.nih.gov/genome/browse/
-
-[ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である*Borrelia burgdorferi*を検索するには、ゲノムブラウザ上部の検索ボックスに [ Borrelia burgdorferi ] を入力して、"Search"ボタンを押す。
-"Prokaryotes"をクリックする。  
-https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi  
+[ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である[*Borrelia burgdorferi*](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi)を検索する。  
 列**Organism Name**で[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。  
-**Replicon Info**下の表の列**RefSeq**と列**INSDC**にアクセッションが示されている。
-- **Type** Chr 染色体
-[NC_001318.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_001318.1)
-[AE000783.1](https://www.ncbi.nlm.nih.gov/nuccore/AE000783.1)
-- **Type** Plsm プラスミド
+**Replicon Info**下の表の列**RefSeq**と列**INSDC**に識別子（アクセッション *accession*）が示されている。
+列**Type**のChrは染色体、Plsmはプラスミド。
 
 ![https://ja.wikipedia.org/wiki/プラスミド](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/300px-Plasmid_%28english%29.svg.png)
 
