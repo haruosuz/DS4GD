@@ -190,18 +190,16 @@ http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapte
 - ゲノムブラウザ http://www.ncbi.nlm.nih.gov/genome/browse/
 
 [ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である*Borrelia burgdorferi*を検索するには、ゲノムブラウザ上部の検索ボックスに [ Borrelia burgdorferi ] を入力して、"Search"ボタンを押す。
-"Prokaryotes"をクリックする。
-
-https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi
-
-列**Organism Name**で[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。
+"Prokaryotes"をクリックする。  
+https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi  
+列**Organism Name**で[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。  
 **Replicon Info**下の表の列**RefSeq**と列**INSDC**にアクセッションが示されている。
+- **Type** Chr 染色体
+[NC_001318.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_001318.1)
+[AE000783.1](https://www.ncbi.nlm.nih.gov/nuccore/AE000783.1)
+- **Type** Plsm プラスミド
 
-*Type* Chr 染色体 (Chromosome)
-RefSeq accession [NC_001318.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_001318.1)
-GenBank accession [AE000783.1](https://www.ncbi.nlm.nih.gov/nuccore/AE000783.1)
-
-*Type* Plsm プラスミド (Plasmid)
+![https://ja.wikipedia.org/wiki/プラスミド](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/300px-Plasmid_%28english%29.svg.png)
 
 - [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
 - [RefSeq - JI 井上 潤](http://www.geocities.jp/ancientfishtree/RefSeq.html)
