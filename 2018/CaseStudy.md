@@ -11,8 +11,8 @@ Table of Contents
 - [assignment 2](#assignment-2) 課題No.2
 - [assignment 1](#assignment-1) 課題No.1
 - [ASSIGNMENT](#assignment) 選抜課題
-- [NCBI assembly summary](#ncbi-assembly-summary)
 - [NCBI sequence database](#ncbi-sequence-database)
+- [NCBI assembly summary](#ncbi-assembly-summary)
 - [dotplot](#dotplot)
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
 
