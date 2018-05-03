@@ -186,17 +186,29 @@ http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapte
 
 ### Genome List
 [NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
-[Genome List](http://www.ncbi.nlm.nih.gov/genome/browse/)  
+- FTPサイト ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
+- ゲノムブラウザ http://www.ncbi.nlm.nih.gov/genome/browse/
 
-- 全生物 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/overview.txt>
-- 真核生物 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt>
-- 原核生物 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt>
-- 原核生物の参照ゲノム <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_reference_genomes.txt>
-- 原核生物の代表ゲノム <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_representative_genomes.txt>
-- ウイルス <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt>
-- プラスミド <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt>
+[ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である*Borrelia burgdorferi*を検索するには、ゲノムブラウザ上部の検索ボックスに [ Borrelia burgdorferi ] を入力して、"Search"ボタンを押す。
+"Prokaryotes"をクリックする。
+https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi
+列**Organism Name**で[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。
+**Replicon Info**下の表の列**RefSeq**と列**INSDC**にアクセッション（染色体は [NC_001318.1](https://www.ncbi.nlm.nih.gov/nuccore/NC_001318.1) [AE000783.1](https://www.ncbi.nlm.nih.gov/nuccore/AE000783.1) ）が示されている。
 
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#the-ncbi-sequence-database
+- [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+- [RefSeq - JI 井上 潤](http://www.geocities.jp/ancientfishtree/RefSeq.html)
+- [RefSeq | 重複のない生物の遺伝子データベース（ゲノムデータベース）](http://bi.biopapyrus.net/biodb/refseq.html)
+
+### Working with Data in R
+
+[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
+
+![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
+
+年月日を確認:  
+
+    # Get Current Date and Time
+    Sys.Date()
 
 NCBIからDNA配列を取得:  
 
@@ -213,47 +225,18 @@ NCBIから複数のDNA配列を取得:
     library("seqinr")
     # create a function to retrieve several nucleotide sequences from NCBI
     retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
-
     seqnames <- c("NC_001477", "NC_001474", "NC_001475", "NC_002640") # Make a vector containing the names of the sequences
     seqs <- lapply(seqnames,  retrieve_ncbi_fna) # Retrieve the sequences and store them in list variable "seqs"
-
 	length(seqs)      # Print out the number of sequences retrieved
 	seq1 <- seqs[[1]] # Get the 1st sequence
 	seq1[1:20]        # Print out the first 20 letters of the 1st sequence
 	seq2 <- seqs[[2]] # Get the 2nd sequence
 	seq2[1:20]        # Print out the first 20 letters of the 2nd sequence
-
 	# write the sequences to a FASTA-format file
     write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
 
-### E-utilities
-- [Entrez Programming Utilities - Books - NCBI](http://www.ncbi.nlm.nih.gov/books/NBK25501/?term=Entrez%20Programming%20Utilities)
- - [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
-  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
 
-[Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
 
-| Record Type | &rettype | &retmode |
-|:-----------:|:--------:|:--------:|
-| Additional option for db = nuccore |
-| db = nuccore, nucest, nucgss, protein or popset |
-| FASTA | fasta | text |
-| GenBank flat file with full sequence (contigs) | gbwithparts | text |
-| CDS nucleotide FASTA | fasta_cds_na | text |
-| CDS protein FASTA | fasta_cds_aa | text |
-| db = sequences |
-| FASTA | fasta | text |
-
-### Working with Data in R
-
-[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
-
-![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
-
-年月日を確認:  
-
-    # Get Current Date and Time
-    Sys.Date()
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
@@ -283,10 +266,6 @@ NCBIから複数のDNA配列を取得:
     dim(d)
     head(d, n = 1)
     colnames(d)
-
-- [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
-- [RefSeq - JI 井上 潤](http://www.geocities.jp/ancientfishtree/RefSeq.html)
-- [RefSeq | 重複のない生物の遺伝子データベース（ゲノムデータベース）](http://bi.biopapyrus.net/biodb/refseq.html)
 
 [文字列の処理](http://stat.biopapyrus.net/r/string.html)  
 
@@ -343,8 +322,6 @@ DNA配列の塩基組成:
 
     # Base composition of a DNA sequence
     table(seq1)
-
-[GC Content of DNA](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#gc-content-of-dna)
 
 DNA配列のGC含量:  
 
@@ -610,4 +587,28 @@ Dr. Bonoの生命科学データ解析-読書会
 https://www.bioconductor.org/packages/release/bioc/html/sscu.html
 Bioconductor - sscu
 Strength of Selected Codon Usage
+
+
+### E-utilities
+- [Entrez Programming Utilities - Books - NCBI](http://www.ncbi.nlm.nih.gov/books/NBK25501/?term=Entrez%20Programming%20Utilities)
+ - [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
+  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
+
+[Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
+
+| Record Type | &rettype | &retmode |
+|:-----------:|:--------:|:--------:|
+| Additional option for db = nuccore |
+| db = nuccore, nucest, nucgss, protein or popset |
+| FASTA | fasta | text |
+| GenBank flat file with full sequence (contigs) | gbwithparts | text |
+| CDS nucleotide FASTA | fasta_cds_na | text |
+| CDS protein FASTA | fasta_cds_aa | text |
+| db = sequences |
+| FASTA | fasta | text |
+
+
+
+
+----------
 
