@@ -7,14 +7,56 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 Table of Contents
+- [NCBI sequence database](#ncbi-sequence-database)
 - [assignment 3](#assignment-3) 課題No.3
 - [assignment 2](#assignment-2) 課題No.2
 - [assignment 1](#assignment-1) 課題No.1
 - [ASSIGNMENT](#assignment) 選抜課題
-- [NCBI sequence database](#ncbi-sequence-database)
-- [NCBI assembly summary](#ncbi-assembly-summary)
-- [dotplot](#dotplot)
-- [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
+
+----------
+## NCBI sequence database
+
+### Genome List
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
+- FTPサイト ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
+- ゲノムブラウザ http://www.ncbi.nlm.nih.gov/genome/browse/
+
+ゲノムブラウザ上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、"Search"ボタンを押す。
+例えば、[ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である[*Borrelia burgdorferi*](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Borrelia%20burgdorferi)を検索し、"Prokaryotes"をクリックすると、[*Borrelia burgdorferi* Strain](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi)一覧が表示されるので、列**Organism Name**の[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。
+**Replicon Info**下の表の列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
+列**Type**のChrは染色体、Plsmはプラスミドを指す。
+
+### Working with Data in R
+
+[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
+
+![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
+
+NCBIからDNA配列を取得する:  
+
+    # Retrieving a DNA sequence from NCBI
+    library("seqinr")
+    ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
+    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+    seq1 <- seqs[[1]]
+    write.fasta(sequences=seq1, names=getAnnot(seq1), file.out=paste0(ACCESSION,".fna"))
+
+NCBIから複数のDNA配列を取得する:  
+
+    # Retrieving a list of DNA sequences from NCBI
+    library("seqinr")
+
+    # create a function to retrieve several nucleotide sequences from NCBI
+    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
+
+	# Make a vector containing the names of the sequences
+    seqnames <- c("NC_001318", "NC_001856") # Borrelia burgdorferi B31 chromosome (NC_001318) plasmid lp38 (NC_001856)
+
+	# Retrieve the sequences and store them in list variable "seqs"
+    seqs <- lapply(seqnames,  retrieve_ncbi_fna)
+
+	# write the sequences to a FASTA-format file
+    write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
 
 ----------
 ## assignment 3
@@ -168,447 +210,3 @@ or
 http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#viewing-the-uniprot-webpage-for-a-protein-sequence
 
 ----------
-## NCBI sequence database
-
-### Genome List
-[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
-- FTPサイト ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
-- ゲノムブラウザ http://www.ncbi.nlm.nih.gov/genome/browse/
-
-ゲノムブラウザ上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、"Search"ボタンを押す。
-例えば、[ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である[*Borrelia burgdorferi*](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Borrelia%20burgdorferi)を検索し、"Prokaryotes"をクリックすると、[*Borrelia burgdorferi* Strain](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi)一覧が表示されるので、列**Organism Name**の[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。
-**Replicon Info**下の表の列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
-列**Type**のChrは染色体、Plsmはプラスミドを指す。
-
-![https://ja.wikipedia.org/wiki/プラスミド](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/300px-Plasmid_%28english%29.svg.png)
-
-- [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
-- [RefSeq - JI 井上 潤](http://www.geocities.jp/ancientfishtree/RefSeq.html)
-- [RefSeq | 重複のない生物の遺伝子データベース（ゲノムデータベース）](http://bi.biopapyrus.net/biodb/refseq.html)
-
-### Working with Data in R
-
-[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
-
-![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
-
-NCBIからDNA配列を取得:  
-
-    # Retrieving a DNA sequence from NCBI
-    library("seqinr")
-    ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
-    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
-    seq1 <- seqs[[1]]
-    write.fasta(sequences=seq1, names=getAnnot(seq1), file.out=paste0(ACCESSION,".fna"))
-
-NCBIから複数のDNA配列を取得:  
-
-    # Retrieving a list of DNA sequences from NCBI
-    library("seqinr")
-
-    # create a function to retrieve several nucleotide sequences from NCBI
-    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
-
-	# Make a vector containing the names of the sequences
-    seqnames <- c("NC_001318", "NC_001856") # Borrelia burgdorferi B31 chromosome (NC_001318) plasmid lp38 (NC_001856)
-
-	# Retrieve the sequences and store them in list variable "seqs"
-    seqs <- lapply(seqnames,  retrieve_ncbi_fna)
-
-	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
-
-年月日を確認:  
-
-    # Get Current Date and Time
-    Sys.Date()
-
-[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
-
-    Directory <- paste0("~/projects/",Sys.Date())
-
-    # Invoke a System Command
-    system( paste0("mkdir -p ",Directory) )
-
-    # Set and Get Working Directory
-    setwd(Directory)
-    getwd()
-
-    # List the Files in a Directory
-    dir()
-
-[Ｒ言語のデータの入出力と編集](https://www1.doshisha.ac.jp/~mjin/R/02.html)
-
-データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
-
-    # Loading Data into R
-    filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prok_reference_genomes.txt"
-    d <- read.delim(file = filename, stringsAsFactors=FALSE, check.names=FALSE)
-
-[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
-
-    # Exploring and Transforming Dataframes
-    dim(d)
-    head(d, n = 1)
-    colnames(d)
-
-[文字列の処理](http://stat.biopapyrus.net/r/string.html)  
-
-    # grep(pattern, x) returns the positions of all elements in x that match pattern
-    #pattern <- "Escherichia coli.*K-12|Haemophilus influenzae|Helicobacter pylori|Neisseria|Rickettsia prowazekii|Borrelia burgdorferi"
-    pattern <- "Escherichia coli.*K-12|Haemophilus influenzae|Neisseria|Rickettsia prowazekii|Borrelia burgdorferi"
-    i <- grep(pattern = pattern, x = d$`Organism name`, ignore.case = TRUE)
-    length(i)
-    d[i,1]
-    d$`Chromosome RefSeq`[i]
-
-[パッケージ](https://stats.biopapyrus.jp/r/basic/package.html)`seqinr`を呼び出す:  
-
-    # Load the SeqinR package
-    library(seqinr)
-
-NCBIからDNA配列を取得:  
-
-    # Retrieving a list of DNA sequences from NCBI
-
-    # create a function to retrieve several nucleotide sequences from NCBI
-    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
-
-    ACCESSIONs <- d$`Chromosome RefSeq`[i] # Make a vector containing RefSeq accessions of Chromosome sequences
-    seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna) # Retrieve the sequences and store them in list variable "seqs"
-
-	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=sapply(seqs, getAnnot), file.out="sequence.fna")
-
-配列の数をカウントする:  
-
-    # get the number of elements
-    length(seqs)
-
-[`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
-関数を用いて、配列のアノテーションを取得する:  
-
-    # get sequence annotations
-    getAnnot(seqs)
-
-リスト`seqs`の1番目の要素を変数`seq1`に代入する:  
-
-    # store the first element of the list object `seqs` in a variable `seq1`
-    seq1 <- seqs[[1]]
-
-#### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
-
-DNA配列の長さ:  
-
-    # Length of a DNA sequence
-    length(seq1)
-
-DNA配列の塩基組成:  
-
-    # Base composition of a DNA sequence
-    table(seq1)
-
-DNA配列のGC含量:  
-
-    # GC Content of DNA
-    GC(seq1)
-
-`summary()`関数でデータの要約:  
-
-    # Object Summaries
-    summary(seq1)
-
-DNA配列の長さ(length)、塩基組成(composition)、GC含量(GC)が出力される。
-
-DNA配列の2連続塩基含量:  
-
-    # DNA words
-    count(seq1, 2)
-
-#### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
-
-Sliding windowでゲノムの局所的な塩基組成（GC content, GC skew）を解析する:  
-
-	# Local variation in GC content
-	# A sliding window analysis of GC content
-	# A sliding window plot of GC content
-    library(zoo)
-    pdf(file="Rplot.pdf") # create a PDF device called "Rplot.pdf"
-    par(mfcol=c(1,1), cex=1.5, mai = c(1.2, 1.2, 0.1, 0.1)) # c(bottom, left, top, right)
-
-    # x-axis: Position
-    windowsize <- 10000
-    x <- seq(from = 1, to = length(seq1)-windowsize, by = windowsize) / 10^6
-    xlab <- "Position (Mbp)"
-
-    # y-axis: GC content
-    y <- rollapply(data = seq1, width = windowsize, by = windowsize, FUN = GC)
-    plot(x, y, type="l", xlab=xlab, ylab="GC content")
-
-    # y-axis: GC skew
-    GCskew <- function(x){ y <- table(x); (y["c"] - y["g"]) / (y["c"] + y["g"]) }
-    y <- rollapply(data = seq1, width = windowsize, by = windowsize, FUN = GCskew)
-    plot(x, y, type="l", xlab=xlab, ylab="GC skew"); abline(h = 0)
-
-    # y-axis: Cumulative GC skew
-    plot(x, cumsum(y), type="l", xlab=xlab, ylab="Cumulative GC skew")
-
-    dev.off() # close the device
-
-    # open current working directory
-    system("open .")
-
-- [Hiromi Nishida "ゲノム比較解析"](https://sites.google.com/site/microbioinformatics/genomu-bi-jiao-jie-xi)
-- [小池、木ノ内 (2010) "バクテリアの塩基配列における文字の含量を用いた解析"](http://www.topic.ad.jp/ipsj-tohoku/archive/2010/report/report14/10-6-A5-1.pdf)
-- [Arakawa K, Tomita M. (2007)](https://www.ncbi.nlm.nih.gov/pubmed/19461976/) ["バクテリアゲノムの複製による選択度合いを定量化"](http://www.iab.keio.ac.jp/research/highlight/papers/200904130118.html)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2684130/bin/EBO-03-159-g002.jpg)
-
-DNA配列の2連続塩基組成（観測値/期待値）:  
-
-    # Over-represented and under-represented DNA words
-    rho(seq1, wordsize = 2)
-    
-    par(cex=0.7)
-    barplot(sort(rho(seq1, wordsize = 2)))
-    abline(h=1)
-
-DNA配列間の2連続塩基組成プロファイルを比較する。
-全ての配列について、2連続塩基組成を求める。
-`sapply()`関数は、リストの各要素に関数を適用する:  
-
-    # Apply a Function over a List
-    X <- sapply(seqs, rho)
-
-    colnames(X) <- getName(seqs)
-    colnames(X) <- substr(unlist(getAnnot(seqs)), 1, 15)
-
-`matplot()`関数でプロットする:  
-
-    matplot(X, type="l", col=1:ncol(X), lty=1:ncol(X))
-    legend("topleft", legend=colnames(X), col=1:ncol(X), lty=1:ncol(X))
-
-クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
-
-    # Hierarchical cluster analysis
-    plot(hclust(dist(t(X))))
-
-ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
-
-    heatmap(X, margins=c(15,5))
-
-[Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
-
-----------
-
-## NCBI assembly summary
-[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列のメタデータが記載されている。
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
-
-	The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
-	assembly_summary_genbank.txt            - current GenBank genome assemblies
-	assembly_summary_refseq.txt             - current RefSeq genome assemblies
-
-- [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
-- [RefSeq - JI 井上 潤](http://www.geocities.jp/ancientfishtree/RefSeq.html)
-- [RefSeq | 重複のない生物の遺伝子データベース（ゲノムデータベース）](http://bi.biopapyrus.net/biodb/refseq.html)
-
-### Website
-NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
-*assembly_summary_genbank.txt*, *assembly_summary_refseq.txt*を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
-Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.txt*, and select "Copy Link Address".
-
-### Working with Data in R
-
-データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
-
-    filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt"
-    filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt"
-    d <- read.delim(file = filename, stringsAsFactors=FALSE, skip = 1, check.names=FALSE) 
-
-[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
-
-    # Exploring and Transforming Dataframes
-    dim(d)
-    head(d, n = 1)
-    colnames(d)
-
-    table(d$assembly_level)
-
-    table(d$version_status)
-
-[45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)
-
-    write.table(d, file=basename(filename), sep="\t", quote=FALSE, row.names=FALSE)
-
-[腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](http://integbio.jp/dbcatalog/record/nbdc00058) の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
-
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli O157:H7 Sakai" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
-
-    pattern <- "O157.*Sakai"
-    TF <- regexpr(pattern = pattern, text = d$organism_name) > 0 & d$assembly_level == "Complete Genome" & d$version_status == "latest"
-    sum(TF)
-    d[TF,]
-    d$ftp_path[TF]
-
-抽出されたURL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> をブラウザFirefox/Chromeで開く。
-
-    ファイル名と内容
-    *_genomic.gbff.gz: GenBank flat file format - GenBank形式ファイル
-    *_genomic.fna.gz: FASTA Nucleic Acids - ゲノム塩基配列
-    *_protein.faa.gz: FASTA Amino Acids - 各タンパク質のアミノ酸配列
-
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> with your browser (Firefox or Chrome).  
-
-    File formats and content
-    *_genomic.gbff.gz: GenBank flat file format of the genomic sequence(s).
-    *_genomic.fna.gz: FASTA format of the genomic sequence(s).
-    *_protein.faa.gz: FASTA format of the protein sequence(s).
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
-
-*GCF_000008865.1_ASM886v1_cds_from_genomic.fna.gz*を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Right click the link *GCF_000008865.1_ASM886v1_cds_from_genomic.fna.gz*, and select "Copy Link Address".
-
-[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式の圧縮ファイル（*.gz*）をダウンロードする:  
-
-SeqinRパッケージを用いて、配列データをRに読み込む:  
-
-	# read the sequence into R using the SeqinR package:
-    library("seqinr")
-    filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1/GCF_000008865.1_ASM886v1_rna_from_genomic.fna.gz"
-    filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1/GCF_000008865.1_ASM886v1_protein.faa.gz"
-    filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1/GCF_000008865.1_ASM886v1_cds_from_genomic.fna.gz"
-    seqs <- read.fasta(file = gzcon(url(filename))) # Retrieve the sequences and store them in list variable "seqs"
-    head(unlist(getAnnot(seqs)))
-
-    seqs <- seqs[sapply(seqs, length) > 100]
-
-配列の数をカウントする:  
-
-    # get the number of elements
-    length(seqs)
-
-[`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
-関数を用いて、配列のアノテーションを取得する:  
-
-    # get sequence annotations
-    getAnnot(seqs)
-
-    # grep(pattern, x) returns the positions of all elements in x that match pattern
-    pattern <- "ribosomal protein"
-    i <- grep(pattern = pattern, x = getAnnot(seqs), ignore.case = TRUE)
-    length(i)
-    cds <- seqs[i]
-
-Examples for `dotchart.uco` at https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
-
-    cds <- seqs[i]
-    # Compute codon usage    cds.uco <- sapply(cds, uco, index="eff")    # Compute absolute frequencies    af <- rowSums(cds.uco)
-    # Compute relative frequencies
-    cu.High <- af / sum(af)
-    # Cleveland plot for codon usage tables    dotchart.uco(af, main = "Codon usage")
-
-    cds <- seqs
-    # Compute codon usage    cds.uco <- sapply(cds, uco, index="eff")    # Compute absolute frequencies    af <- rowSums(cds.uco)
-    # Compute relative frequencies
-    cu.All <- af / sum(af)
-    cds.uco.freq <- sapply(cds, uco, index="freq")
-
-cu.each <- t(cds.uco.freq)
-D.All <- dist(rbind(cu.All,cu.each))[1:nrow(cu.each)]
-D.High <- dist(rbind(cu.High,cu.each))[1:nrow(cu.each)]
-plot(D.High, D.All, type="n")
-points(D.High[-i], D.All[-i], pch="+", col=1)
-points(D.High[i], D.All[i], pch=19, col=2)
-abline(0,1)
-
-http://www.cmbl.uga.edu/software/ASeqH.htm
-PHX/PA user guide
-
-[Karlin S, Mrázek J.(2000) "Predicted highly expressed genes of diverse prokaryotic genomes."](https://www.ncbi.nlm.nih.gov/pubmed/10960111)
-
-[Karlin S, Mrázek J, Campbell A, Kaiser D. (2001) "Characterizations of highly expressed genes of four fast-growing bacteria."](https://www.ncbi.nlm.nih.gov/pubmed/11489855)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/bin/jb1710100001.jpg)
-
-#### Codon usage
-コドン使用
-
-[Chapter 9 “Analyzing Sequences” in the book "Applied statistics for bioinformatics using R" by Krijnen](https://github.com/haruosuz/r4bioinfo/tree/master/R_Wim_Krijnen)
-
-https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
-
-	# Codon usage indices
-    cds <- seq1
-    uco(seq = cds, index="eff") # Get codon counts
-    uco(seq = cds, index="freq") # Get codon relative frequencies
-    uco(seq = cds, index="rscu") # Get Relative Synonymous Codon Usage (RSCU)    uco(seq = cds, as.data.frame = TRUE) # all indices are returned into a data frame.
-
-	# Plot of codon usage
-    # Apply a Function over a List
-    cds.uco <- sapply(cds, uco, index="eff")
-    cds.uco.sum <- rowSums(cds.uco)    dotchart.uco(seqs.uco.sum, main = "Codon usage in all coding sequences from a genome")
-
-----------
-## References
-
-2018/04/14(Sat)
-https://connpass.com/event/75699/
-Dr. Bonoの生命科学データ解析-読書会 @大阪
-
-2017/12/16(Sat)
-https://connpass.com/event/69633/
-Dr. Bonoの生命科学データ解析-読書会
-
-
-https://www.bioconductor.org/packages/release/bioc/html/sscu.html
-Bioconductor - sscu
-Strength of Selected Codon Usage
-
-
-### E-utilities
-- [Entrez Programming Utilities - Books - NCBI](http://www.ncbi.nlm.nih.gov/books/NBK25501/?term=Entrez%20Programming%20Utilities)
- - [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
-  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
-
-[Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
-
-| Record Type | &rettype | &retmode |
-|:-----------:|:--------:|:--------:|
-| Additional option for db = nuccore |
-| db = nuccore, nucest, nucgss, protein or popset |
-| FASTA | fasta | text |
-| GenBank flat file with full sequence (contigs) | gbwithparts | text |
-| CDS nucleotide FASTA | fasta_cds_na | text |
-| CDS protein FASTA | fasta_cds_aa | text |
-| db = sequences |
-| FASTA | fasta | text |
-
-----------
-
-## dotplot
-
-ヒトの[血小板由来成長因子](https://ja.wikipedia.org/wiki/血小板由来成長因子) (Platelet-Derived Growth Factor, PDGF) と [サル肉腫ウイルスの癌遺伝子 v-sis](https://www.wikigenes.org/e/mesh/e/21827.html) のアミノ酸配列は類似性が高い。([Doolittle RF et al., 1983](https://www.ncbi.nlm.nih.gov/pubmed/6304883))
-
-    # "sp|P01127|PDGFB_HUMAN Platelet-derived growth factor subunit B OS=Homo sapiens GN=PDGFB PE=1 SV=1"          
-    # "sp|P01128|TSIS_WMSV PDGF-related-transforming protein sis OS=Woolly monkey sarcoma virus GN=V-SIS PE=3 SV=1"
-
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/P01127.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/P01128.fasta")[[1]]
-
-    # Comparing two sequences using a dotplot
-    dotPlot(seq1, seq2)
-
-
-----------
-
