@@ -16,7 +16,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
   - [Wim P. Krijnen (2009) "Applied Statistics for Bioinformatics using R"](https://github.com/haruosuz/r4bioinfo/tree/master/R_Wim_Krijnen)
 
 ## Class Schedule & Materials
-講義日程と資料
+**講義日程と資料**
 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
 - 2018-04-10 No. 1 - イントロダクション [Introduction](#Introduction)
   - [Building Bioinformatics Solutions](https://github.com/haruosuz/books/tree/master/bbs#chapter-1-introduction)
@@ -25,10 +25,10 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2018-04-24 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
 - 2018-05-01 木曜代替日
 - 2018-05-08 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+- 2018-05-15 No. 5 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
   - NCBI配列データベース [NCBI sequence database](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-sequence-database)
   - 課題No.3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#assignment-3)
-- 2018-05-15 No. 5 - タンパク質遺伝子配列解析 [Coding sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
-- 2018-05-22 No. 6 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
+- 2018-05-22 No. 6 - タンパク質遺伝子配列解析 [Coding sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 - 2018-05-29 No. 7 - 中間発表 interim report
 - 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 - 2018-06-12 No. 9 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
