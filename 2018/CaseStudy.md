@@ -6,110 +6,53 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 # Case Study
 **ケーススタディ**
 
-Table of Contents
+## Table of Contents
+- [assignment 0](#assignment-0) 選抜課題
+- [assignment 1](#assignment-1) 課題No.1 「R言語入門」
+- [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
 - [NCBI sequence database](#ncbi-sequence-database)
-- [assignment 3](#assignment-3) 課題No.3
-- [assignment 2](#assignment-2) 課題No.2
-- [assignment 1](#assignment-1) 課題No.1
-- [ASSIGNMENT](#assignment) 選抜課題
+- [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
+- [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
+- [NCBI assembly summary](#ncbi-assembly-summary)
 
 ----------
-## NCBI sequence database
+## assignment 0
+**選抜課題**
 
-### Genome List
-[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
-- FTPサイト ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
-- ゲノムブラウザ http://www.ncbi.nlm.nih.gov/genome/browse/
+【課題内容】
+本授業で解析したいDNAまたはタンパク質の配列を300文字以内で述べてください。課題のタイトルと参考文献も明記してください。
 
-ゲノムブラウザ上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、"Search"ボタンを押す。
-例えば、[ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である[*Borrelia burgdorferi*](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Borrelia%20burgdorferi)を検索し、"Prokaryotes"をクリックすると、[*Borrelia burgdorferi* Strain](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi)一覧が表示されるので、列**Organism Name**の[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。
-**Replicon Info**下の表の列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
-列**Type**のChrは染色体、Plsmはプラスミドを指す。
+DNAまたはタンパク質の配列を検索するには、
 
-### Working with Data in R
+- NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"Candidatus Midichloria mitochondrii"）を入力して、"Search"ボタンを押す
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#retrieving-genome-sequence-data-via-the-ncbi-website
 
-[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
+または
 
-![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
+- UniProtウェブサイト (http://www.uniprot.org) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"antibiotic resistance Clostridium difficile"）を入力して、"Search"ボタンを押す
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#viewing-the-uniprot-webpage-for-a-protein-sequence
 
-NCBIからDNA配列を取得する:  
+---
 
-    # Retrieving a DNA sequence from NCBI
-    library("seqinr")
-    ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
-    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
-    seq1 <- seqs[[1]]
-    write.fasta(sequences=seq1, names=getAnnot(seq1), file.out=paste0(ACCESSION,".fna"))
+Please describe DNA or protein sequences you're interested in. Please also state your project title and references.
 
-NCBIから複数のDNA配列を取得する:  
+To find DNA or protein sequences,
 
-    # Retrieving a list of DNA sequences from NCBI
-    library("seqinr")
+- go to the NCBI website (https://www.ncbi.nlm.nih.gov), type keywords (e.g. "Candidatus Midichloria mitochondrii") in the Search box at the top of the webpage, and press the “Search” button beside the Search box.
+http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#retrieving-genome-sequence-data-via-the-ncbi-website
 
-    # create a function to retrieve several nucleotide sequences from NCBI
-    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
+or
 
-	# Make a vector containing the names of the sequences
-    seqnames <- c("NC_001318", "NC_001856") # Borrelia burgdorferi B31 chromosome (NC_001318) plasmid lp38 (NC_001856)
-
-	# Retrieve the sequences and store them in list variable "seqs"
-    seqs <- lapply(seqnames,  retrieve_ncbi_fna)
-
-	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
+- go the UniProt website (http://www.uniprot.org). At the top of the UniProt website, you will see a search box, and you can type keywords (e.g. "antibiotic resistance Clostridium difficile") that you are looking for in this search box, and then click on the “Search” button to search for it.
+http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#viewing-the-uniprot-webpage-for-a-protein-sequence
 
 ----------
-## assignment 3
-**課題No.3 「DNA Sequence Statistics (1)」**    
+## assignment 1
+**課題No.1 「R言語入門」**    
 
-[Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
-
-SeqinRパッケージを用いて、配列データをRに読み込む:  
-
-	# read the sequence into R using the SeqinR package:
-    library("seqinr")
-    ACCESSION <- "NC_001477" # Dengue virus 1
-    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
-    seq1 <- seqs[[1]]
-
-Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-
-Q1. What are the last twenty nucleotides of the genome sequence?
-
-    seq1[(length(seq1)-20+1):length(seq1)]
-
-Q2. What is the length in nucleotides of the genome sequence?
-
-    length(seq1)
-
-Q3. How many of each of the four nucleotides A, C, T and G, and any other symbols, are there in the genome sequence?
-
-    table(seq1)
-
-Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucleotides are included, (ii) non-A/C/T/G nucleotides are discarded?
-
-	help("GC")
-    GC(seq1)
-    GC(seq1, exact=FALSE)
-
-Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
-
-![http://revertra.webcrow.jp/DNA/index.php](http://revertra.webcrow.jp/DNA/dnaseq.png)
-
-	help.search("complement")
-	help("comp")
-    table(comp(seq1))
-
-Q6. How many occurrences of the DNA words CC, CG and GC occur in the genome sequence?
-
-    count(seq=seq1, wordsize=2)
-
-Q7. How many occurrences of the DNA words CC, CG and GC occur in the (i) first 1000 and (ii) last 1000 nucleotides of the genome sequence?
-How can you check that the subsequence that you have looked at is 1000 nucleotides long?
-
-    count(seq=seq1[1:1000], wordsize=2)
-    count(seq=seq1[(length(seq1)-1000+1):length(seq1)], wordsize=2)
+次の動画レッスンを見て、疑問点を報告する。[R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)【回答例】動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
+- 因子ベクトルというものがよくわからなかった。
+- 行列とデータフレームとリストの違いが理解できなかった。
 
 ----------
 ## assignment 2
@@ -169,44 +112,432 @@ References:
 
 https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages
 
-----------
-## assignment 1
-**課題No.1 「R言語入門」**    
-〆切：2018-04-16 23:59:00
 
-次の動画レッスンを見て、疑問点を報告する。[R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)【回答例】動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
-- 因子ベクトルというものがよくわからなかった。
-- 行列とデータフレームとリストの違いが理解できなかった。
+
 
 ----------
-## ASSIGNMENT
-選抜課題
+## NCBI sequence database
 
-【課題内容】
-本授業で解析したいDNAまたはタンパク質の配列を300文字以内で述べてください。課題のタイトルと参考文献も明記してください。
+### Genome List
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
+- FTPサイト ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
+- ゲノムブラウザ http://www.ncbi.nlm.nih.gov/genome/browse/
 
-DNAまたはタンパク質の配列を検索するには、
+ゲノムブラウザ上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、"Search"ボタンを押す。
+例えば、[ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である[*Borrelia burgdorferi*](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Borrelia%20burgdorferi)を検索し、"Prokaryotes"をクリックすると、[*Borrelia burgdorferi* Strain](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi)一覧が表示されるので、列**Organism Name**の[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。
+**Replicon Info**下の表の列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
+列**Type**のChrは染色体、Plsmはプラスミドを指す。
 
-- NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"Candidatus Midichloria mitochondrii"）を入力して、"Search"ボタンを押す
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#retrieving-genome-sequence-data-via-the-ncbi-website
+### Working with Data in R
 
-または
+[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
 
-- UniProtウェブサイト (http://www.uniprot.org) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"antibiotic resistance Clostridium difficile"）を入力して、"Search"ボタンを押す
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#viewing-the-uniprot-webpage-for-a-protein-sequence
+![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
 
----
+NCBIからDNA配列を取得する:  
 
-Please describe DNA or protein sequences you're interested in. Please also state your project title and references.
+    # Retrieving a DNA sequence from NCBI
+    library("seqinr")
+    ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
+    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+    seq1 <- seqs[[1]]
+    write.fasta(sequences=seq1, names=getAnnot(seq1), file.out=paste0(ACCESSION,".fna"))
 
-To find DNA or protein sequences,
+NCBIから複数のDNA配列を取得する:  
 
-- go to the NCBI website (https://www.ncbi.nlm.nih.gov), type keywords (e.g. "Candidatus Midichloria mitochondrii") in the Search box at the top of the webpage, and press the “Search” button beside the Search box.
-http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#retrieving-genome-sequence-data-via-the-ncbi-website
+    # Retrieving a list of DNA sequences from NCBI
+    library("seqinr")
 
-or
+    # create a function to retrieve several nucleotide sequences from NCBI
+    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
 
-- go the UniProt website (http://www.uniprot.org). At the top of the UniProt website, you will see a search box, and you can type keywords (e.g. "antibiotic resistance Clostridium difficile") that you are looking for in this search box, and then click on the “Search” button to search for it.
-http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#viewing-the-uniprot-webpage-for-a-protein-sequence
+	# Make a vector containing the names of the sequences
+    seqnames <- c("NC_001318", "NC_001856") # Borrelia burgdorferi B31 chromosome (NC_001318) plasmid lp38 (NC_001856)
+
+	# Retrieve the sequences and store them in list variable "seqs"
+    seqs <- lapply(seqnames,  retrieve_ncbi_fna)
+
+	# write the sequences to a FASTA-format file
+    write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
 
 ----------
+## assignment 3
+**課題No.3 「DNA Sequence Statistics (1)」**    
+
+[Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
+
+Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+Q1. What are the last twenty nucleotides of the genome sequence?
+
+    seq1[(length(seq1)-20+1):length(seq1)]
+
+Q2. What is the length in nucleotides of the genome sequence?
+
+    length(seq1)
+
+Q3. How many of each of the four nucleotides A, C, T and G, and any other symbols, are there in the genome sequence?
+
+    table(seq1)
+
+Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucleotides are included, (ii) non-A/C/T/G nucleotides are discarded?
+
+	help("GC")
+    GC(seq1)
+    GC(seq1, exact=FALSE)
+
+Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
+
+![http://revertra.webcrow.jp/DNA/index.php](http://revertra.webcrow.jp/DNA/dnaseq.png)
+
+	help.search("complement")
+	help("comp")
+    table(comp(seq1))
+
+Q6. How many occurrences of the DNA words CC, CG and GC occur in the genome sequence?
+
+    count(seq=seq1, wordsize=2)
+
+Q7. How many occurrences of the DNA words CC, CG and GC occur in the (i) first 1000 and (ii) last 1000 nucleotides of the genome sequence?
+How can you check that the subsequence that you have looked at is 1000 nucleotides long?
+
+    count(seq=seq1[1:1000], wordsize=2)
+    count(seq=seq1[(length(seq1)-1000+1):length(seq1)], wordsize=2)
+
+
+SeqinRパッケージを用いて、配列データをRに読み込む:  
+
+	# read the sequence into R using the SeqinR package:
+    library("seqinr")
+    ACCESSION <- "NC_001477" # Dengue virus 1
+    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
+    seq1 <- seqs[[1]]
+
+----------
+## assignment 4
+**課題No.4 「DNA Sequence Statistics (2)」**
+
+http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises 
+
+Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
+
+	# write a function to make a sliding window plot:
+    slidingwindowplotGC <- function(windowsize, inputseq)
+    {
+      require("zoo") # this function requires the 'zoo' R package # install.packages('zoo')
+      x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
+      y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = GC)
+      plot(x, y, type="b", xlab="Position (bp)", ylab="GC content")
+    }
+
+	# make a sliding window plot with a window size of 200 nucleotides:
+    slidingwindowplotGC(200, seq1)
+
+	# make a sliding window plot of GC content using a window size of 2000 nucleotides:
+    slidingwindowplotGC(2000, seq1)
+
+Q2. Draw a sliding window plot of GC content in the genome sequence using a window size of 20000 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
+
+	# make a sliding window plot with a window size of 20000 nucleotides:
+    slidingwindowplotGC(20000, seq1)
+
+Q3. Write a function to calculate the AT content of a DNA sequence (ie. the fraction of the nucleotides in the sequence that are As or Ts). What is the AT content of the genome?
+
+	# Here is a function to calculate the AT content of a genome sequence:
+    AT <- function(x){ library("seqinr"); 1 - GC(x) }
+
+    # use the function to calculate the AT content of the genome:
+    AT(seq1)
+
+    # Create tests
+    x <- s2c("atgc"); AT(x)
+
+Q4. Write a function to draw a sliding window plot of AT content.
+
+	# write a function to make a sliding window plot:
+    slidingwindowplotAT <- function(windowsize, inputseq)
+    {
+      require("zoo")
+      x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
+      AT <- function(x){ library("seqinr"); 1 - GC(x) }
+      y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = AT)
+      plot(x, y, type="b", xlab="Position (bp)", ylab="AT content")
+    }
+
+Use it to make a sliding window plot of AT content along the genome, using a windowsize of 2000 nucleotides. 
+
+    par(mfrow=c(2,1))
+	# make a sliding window plot of AT content:
+    slidingwindowplotAT(2000, seq1)
+	# This is the mirror image of the plot of GC content (because AT equals 1 minus GC):
+    slidingwindowplotGC(2000, seq1)
+
+Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the genome sequence?
+
+	# search for a function to calculate rho by typing:
+	help.search("rho")
+
+	# calculate Rho for words of length 3 in the genome
+	rho(seq1, wordsize=3)
+
+----------
+
+## NCBI assembly summary
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列のメタデータが記載されている。
+
+ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
+
+	The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
+	assembly_summary_genbank.txt            - current GenBank genome assemblies
+	assembly_summary_refseq.txt             - current RefSeq genome assemblies
+
+- [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+- [RefSeq | 重複のない生物の遺伝子データベース（ゲノムデータベース）](http://bi.biopapyrus.net/biodb/refseq.html)
+- 井上 潤 [RefSeq - JI](http://www.geocities.jp/ancientfishtree/RefSeq.html)
+
+NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
+*assembly_summary_genbank.txt*, *assembly_summary_refseq.txt*を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
+Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.txt*, and select "Copy Link Address".
+
+### Working with Data in R
+
+[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
+
+![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
+
+年月日を確認:  
+
+    # Get Current Date and Time
+    Sys.Date()
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    WorkingDirectory <- "~/projects/ncbi_assembly_summary/data"
+
+    # Invoke a System Command
+    system( paste0("mkdir -p ",WorkingDirectory) )
+
+    # Set and Get Working Directory
+    setwd(WorkingDirectory)
+    getwd()
+
+    # List the Files in a Directory
+    dir()
+
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
+
+    # Download File from the Internet
+    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt"
+    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt"
+    cdestfile <- paste0(WorkingDirectory,"/",basename(curl))
+    download.file(url = curl, destfile = cdestfile)
+
+[Ｒ言語のデータの入出力と編集](https://www1.doshisha.ac.jp/~mjin/R/02.html)
+
+データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
+
+    d <- read.delim(file = cdestfile, stringsAsFactors = FALSE, skip = 1, check.names = FALSE) 
+
+[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
+
+    # Exploring and Transforming Dataframes
+    dim(d)
+    head(d, n = 1)
+    colnames(d)
+
+    table(d$assembly_level)
+    table(d$version_status)
+
+[腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](http://integbio.jp/dbcatalog/record/nbdc00058) の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
+
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli O157:H7 Sakai" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    # grepl returns a logical vector (match or not for each element of x).
+    pattern <- "O157.*Sakai"
+    TF <- grepl(pattern = pattern, x = d$organism_name) & d$assembly_level == "Complete Genome" & d$version_status == "latest"
+    sum(TF)
+    d[TF,]
+    d$ftp_path[TF]
+
+抽出されたURL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> をブラウザFirefox/Chromeで開く。
+
+    ファイル名と内容
+    *_genomic.gbff.gz: GenBank flat file format - GenBank形式ファイル
+    *_genomic.fna.gz: FASTA Nucleic Acids - ゲノム塩基配列
+    *_protein.faa.gz: FASTA Amino Acids - 各タンパク質のアミノ酸配列
+
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> with your browser (Firefox or Chrome).  
+
+    File formats and content
+    *_genomic.gbff.gz: GenBank flat file format of the genomic sequence(s).
+    *_genomic.fna.gz: FASTA format of the genomic sequence(s).
+    *_protein.faa.gz: FASTA format of the protein sequence(s).
+
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+
+*GCF_000008865.1_ASM886v1_genomic.fna.gz*を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+Right click the link *GCF_000008865.1_ASM886v1_genomic.fna.gz*, and select "Copy Link Address".
+
+[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式の圧縮ファイル（*.gz*）をダウンロードする:  
+
+
+
+
+
+
+SeqinRパッケージを用いて、ゲノム配列データを取得:  
+
+	# Retrieving genome sequence data using SeqinR
+    library("seqinr") # Load the SeqinR package
+    filename <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1/GCF_000008865.1_ASM886v1_genomic.fna.gz"
+    seqs <- read.fasta(file = gzcon(url(filename)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
+
+配列の数をカウントする:  
+
+    # get the number of elements
+    length(seqs)
+
+[`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
+関数を用いて、配列のアノテーションを取得する:  
+
+    # get sequence annotations
+    getAnnot(seqs)
+
+配列データをFASTA形式ファイルとして書き出す:  
+
+	# Writing sequence data out as a FASTA file
+    write.fasta(sequences = seqs, names = getAnnot(seqs), file.out="mySequences.fasta", nbchar = 80)
+
+作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+
+    setwd("~/projects/ncbi_assembly_summary/data")						# Set Working Directory
+    library(seqinr)										# Load the SeqinR package
+    seqs <- read.fasta(file = "mySequences.fasta", seqtype = c("DNA"), strip.desc = TRUE)	# Reading sequence data
+    unlist(getAnnot(seqs))									# get sequence annotations
+
+リスト`seqs`の1番目の要素を変数`seq1`に代入する:  
+
+    # store the first element of the list object `seqs` in a variable `seq1`
+    seq1 <- seqs[[1]]
+
+#### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
+
+DNA配列の長さ:  
+
+    # Length of a DNA sequence
+    length(seq1)
+
+DNA配列の塩基組成:  
+
+    # Base composition of a DNA sequence
+    table(seq1)
+
+DNA配列のGC含量:  
+
+    # GC Content of DNA
+    GC(seq1)
+
+`summary()`関数でデータの要約:  
+
+    # Object Summaries
+    summary(seq1)
+
+DNA配列の長さ(length)、塩基組成(composition)、GC含量(GC)が出力される。
+
+DNA配列の2連続塩基含量:  
+
+    # DNA words
+    count(seq1, 2)
+
+#### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+
+Sliding windowでゲノムの局所的な塩基組成（GC content, GC skew）を解析する:  
+
+	# Local variation in GC content
+	# A sliding window analysis of GC content
+	# A sliding window plot of GC content
+    library(zoo)
+    pdf(file="Rplot.pdf") # create a PDF device called "Rplot.pdf"
+    par(mfcol=c(1,1), cex=1.5, mai = c(1.2, 1.2, 0.1, 0.1)) # c(bottom, left, top, right)
+
+    # x-axis: Position
+    windowsize <- 10000
+    x <- seq(from = 1, to = length(seq1)-windowsize, by = windowsize) / 10^6
+    xlab <- "Position (Mbp)"
+
+    # y-axis: GC content
+    y <- rollapply(data = seq1, width = windowsize, by = windowsize, FUN = GC)
+    plot(x, y, type="l", xlab=xlab, ylab="GC content")
+
+    # y-axis: GC skew
+    GCskew <- function(x){ y <- table(x); (y["c"] - y["g"]) / (y["c"] + y["g"]) }
+    y <- rollapply(data = seq1, width = windowsize, by = windowsize, FUN = GCskew)
+    plot(x, y, type="l", xlab=xlab, ylab="GC skew"); abline(h = 0)
+
+    # y-axis: Cumulative GC skew
+    plot(x, cumsum(y), type="l", xlab=xlab, ylab="Cumulative GC skew")
+
+    dev.off() # close the device
+
+    # open current working directory
+    system("open .")
+
+- [Hiromi Nishida "ゲノム比較解析"](https://sites.google.com/site/microbioinformatics/genomu-bi-jiao-jie-xi)
+- [小池、木ノ内 (2010) "バクテリアの塩基配列における文字の含量を用いた解析"](http://www.topic.ad.jp/ipsj-tohoku/archive/2010/report/report14/10-6-A5-1.pdf)
+- [Arakawa K, Tomita M. (2007)](https://www.ncbi.nlm.nih.gov/pubmed/19461976/) ["バクテリアゲノムの複製による選択度合いを定量化"](http://www.iab.keio.ac.jp/research/highlight/papers/200904130118.html)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2684130/bin/EBO-03-159-g002.jpg)
+
+DNA配列の2連続塩基組成（観測値/期待値）:  
+
+    # Over-represented and under-represented DNA words
+    rho(seq1, wordsize = 2)
+    
+    par(cex=0.7)
+    barplot(sort(rho(seq1, wordsize = 2)))
+    abline(h=1)
+
+DNA配列間の2連続塩基組成プロファイルを比較する。
+全ての配列について、2連続塩基組成を求める。
+`sapply()`関数は、リストの各要素に関数を適用する:  
+
+    # Apply a Function over a List
+    X <- sapply(seqs, rho)
+
+    colnames(X) <- getName(seqs)
+    colnames(X) <- substr(unlist(getAnnot(seqs)), 1, 15)
+
+`matplot()`関数でプロットする:  
+
+    matplot(X, type="l", col=1:ncol(X), lty=1:ncol(X))
+    legend("topleft", legend=colnames(X), col=1:ncol(X), lty=1:ncol(X))
+
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+
+    # Hierarchical cluster analysis
+    plot(hclust(dist(t(X))))
+
+ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+
+    heatmap(X, margins=c(15,5))
+
+[Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
+
+----------
+
+
+
+----------
+
+
