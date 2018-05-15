@@ -28,21 +28,28 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2018-05-15 No. 5 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
   - NCBI配列データベース [NCBI sequence database](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-sequence-database)
   - 課題No.3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#assignment-3)
+  - 課題No.4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#assignment-4)
 - 2018-05-22 No. 6 - タンパク質遺伝子配列解析 [Coding sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 - 2018-05-29 No. 7 - 中間発表 interim report
 - 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 - 2018-06-12 No. 9 - [Guest Speaker](#guest-speaker)
-- 2018-06-19 No. 10 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
-- 2018-06-26 No. 11 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
-- 2017-07-03 No. 12 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
-- 2017-07-10 No. 13 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
+- 2018-06-19 No. 10 - [Guest Speaker](#guest-speaker)
+- 2018-06-26 No. 11  - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
+- 2017-07-03 No. 12 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
+- 2017-07-10 No. 13 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2017-07-17 No. 14 - 最終発表 Oral presentation
 - 2017-07-24 レポート提出期限 Deadline for final report
 
 ----------
 ## Guest speaker
-特別講演  
+**特別講演**
+
+### 2018-06-12
 - 講師: 小野 浩雅 氏 [Dr. Ono Hiromasa](https://sites.google.com/dbcls.rois.ac.jp/hono/)
+- 演題: 今日から使える便利な生命科学系公共データベース・ウェブツール
+
+### 2018-06-19
+- 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872)
 - 演題: TBA
 
 ----------
