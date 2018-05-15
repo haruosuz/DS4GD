@@ -336,7 +336,7 @@ Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.tx
     # Download File from the Internet
     curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt"
     curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt"
-    cdestfile <- paste0(WorkingDirectory,"/",basename(curl))
+    cdestfile <- basename(curl)
     download.file(url = curl, destfile = cdestfile)
 
 [Ｒ言語のデータの入出力と編集](https://www1.doshisha.ac.jp/~mjin/R/02.html)
@@ -369,30 +369,20 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
 
 抽出されたURL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> をブラウザFirefox/Chromeで開く。
 
-    ファイル名と内容
-    *_genomic.gbff.gz: GenBank flat file format - GenBank形式ファイル
-    *_genomic.fna.gz: FASTA Nucleic Acids - ゲノム塩基配列
-    *_protein.faa.gz: FASTA Amino Acids - 各タンパク質のアミノ酸配列
-
 Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/008/865/GCF_000008865.1_ASM886v1> with your browser (Firefox or Chrome).  
 
-    File formats and content
-    *_genomic.gbff.gz: GenBank flat file format of the genomic sequence(s).
-    *_genomic.fna.gz: FASTA format of the genomic sequence(s).
-    *_protein.faa.gz: FASTA format of the protein sequence(s).
-
 ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+
+[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
+
+    *_genomic.fna.gz: FASTA format of the genomic sequence(s) in the assembly. 
+    *_cds_from_genomic.fna.gz: FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
+    *_protein.faa.gz: FASTA format of the accessioned protein products annotated on the genome assembly.
+    *_genomic.gbff.gz: GenBank flat file format of the genomic sequence(s) in the assembly. 
 
 *GCF_000008865.1_ASM886v1_genomic.fna.gz*を右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
 Right click the link *GCF_000008865.1_ASM886v1_genomic.fna.gz*, and select "Copy Link Address".
-
-[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式の圧縮ファイル（*.gz*）をダウンロードする:  
-
-
-
-
-
 
 SeqinRパッケージを用いて、ゲノム配列データを取得:  
 
@@ -537,6 +527,58 @@ DNA配列間の2連続塩基組成プロファイルを比較する。
 ----------
 
 
+
+
+
+
+[パッケージ](https://stats.biopapyrus.jp/r/basic/package.html)`seqinr`を呼び出す:  
+
+    # Load the SeqinR package
+    library(seqinr)
+
+
+
+    seqs <- read.fasta(file = "GCF_000008865.1_ASM886v1_genomic.fna.gz", seqtype = c("DNA"), strip.desc = TRUE)
+
+
+	# Writing sequence data out as a FASTA file
+    write.fasta(sequences=seqs, names=sapply(seqs, getAnnot), file.out="sequence.fna")
+
+### References
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
+Genomes Download FAQ
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#protocols
+2. What is the best protocol to use to download large data sets?
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files
+11. What is the file content within each specific assembly directory?
+
+*_cds_from_genomic.fna.gz
+FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
+
+*_genomic.fna.gz
+FASTA format of the genomic sequence(s) in the assembly. 
+
+*_genomic.gbff.gz
+GenBank flat file format of the genomic sequence(s) in the assembly. 
+
+*_protein.faa.gz
+FASTA format of the accessioned protein products annotated on the genome assembly.
+
+http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind
+12. How can I find the sequence and annotation of my genome of interest?
+
+Using the assembly summary report files
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#current
+14. How can I download only the current version of each assembly?
+
+Use either of the two master assembly summary files, or the assembly_summary.txt file for the species or taxonomic group of interest (see above), select those assemblies that are marked as "latest" in the version_status column (11), and then use the FTP path indicated in column 20 to download the data.
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
+15. How can I download RefSeq data for all complete bacterial genomes?
 
 ----------
 
