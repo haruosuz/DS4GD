@@ -28,7 +28,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2018-05-15 No. 5 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
   - [NCBI sequence database](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-sequence-database)
   - [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly-summary)
-- 2018-05-22 No. 6 - タンパク質遺伝子配列解析 [Coding sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
+- 2018-05-22 No. 6 - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 - 2018-05-29 No. 7 - 中間発表 interim report
 - 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 - 2018-06-12 No. 9 - [Guest Speaker](#guest-speaker)
@@ -49,7 +49,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 
 ### 2018-06-19
 - 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872)
-- 演題: TBA
+- 演題: ネットワーク分析とグラフデータベース／データ分析プラットフォーム
 
 ----------
 
