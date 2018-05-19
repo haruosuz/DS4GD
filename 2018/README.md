@@ -29,7 +29,6 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
   - [NCBI sequence database](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-sequence-database)
   - [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly-summary)
 - 2018-05-22 No. 6 - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
-  - Case Study [UniProt Swiss-Prot](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
 - 2018-05-29 No. 7 - 中間発表 [interim report](#interim-report)
 - 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 - 2018-06-12 No. 9 - [Guest Speaker](#guest-speaker)
