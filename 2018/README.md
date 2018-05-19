@@ -29,6 +29,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
   - [NCBI sequence database](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-sequence-database)
   - [NCBI assembly summary](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly-summary)
 - 2018-05-22 No. 6 - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
+  - Case Study [UniProt Swiss-Prot](https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
 - 2018-05-29 No. 7 - 中間発表 interim report
 - 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
 - 2018-06-12 No. 9 - [Guest Speaker](#guest-speaker)
@@ -38,6 +39,13 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2017-07-10 No. 13 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2017-07-17 No. 14 - 最終発表 Oral presentation
 - 2017-07-24 レポート提出期限 Deadline for final report
+
+----------
+## interim report
+**中間発表**
+
+スライド1枚以上を用いてプロジェクト（解析対象の生物や遺伝子）について説明する。
+発表時間：1人あたり最大5分（質疑応答を含む）
 
 ----------
 ## Guest speaker
