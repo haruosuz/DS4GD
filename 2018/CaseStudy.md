@@ -14,7 +14,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI assembly summary](#ncbi-assembly-summary)
-- [NCBI GENOME_REPORTS](#ncbi_genome_reports)
+- [NCBI GENOME_REPORTS](#ncbi-genome_reports)
 
 ----------
 ## Working with Data in R
@@ -410,6 +410,7 @@ Right click the link *GCF_000008865.1_ASM886v1_genomic.fna.gz*, and select "Copy
 
 ----------
 ## NCBI GENOME_REPORTS
+
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
 *README*をクリックして開く。
 
@@ -453,12 +454,12 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README
     dim(d)
     head(d, n = 1)
     colnames(d)
+    colnames(d)[1] <- "species_genus"
 
 [文字列の処理](http://stat.biopapyrus.net/r/string.html)  
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
-    #pattern <- "Escherichia coli.*K-12|Haemophilus influenzae|Helicobacter pylori|Neisseria|Rickettsia prowazekii|Borrelia burgdorferi"
-    pattern <- "Escherichia coli.*K-12|Haemophilus influenzae|Neisseria"
+    pattern <- "Escherichia coli.*K-12|Haemophilus influenzae|Neisseria|Borrelia burgdorferi"
     i <- grep(pattern = pattern, x = d$`Organism name`, ignore.case = TRUE)
     length(i)
     d[i,1]
@@ -521,7 +522,7 @@ DNA配列のGC含量:
     # Object Summaries
     summary(seq1)
 
-DNA配列の長さ(length)、塩基組成(composition)、GC含量(GC)が出力される。
+DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力される。
 
 DNA配列の2連続塩基含量:  
 
@@ -577,11 +578,13 @@ DNA配列の2連続塩基組成（観測値/期待値）:
     barplot(sort(rho(seq1, wordsize = 2)))
     abline(h=1)
 
-DNA配列間の2連続塩基組成プロファイルを比較する。
-全ての配列について、2連続塩基組成を求める。
+複数のDNA配列の特徴（サイズ、GC含量、2連続塩基組成）を計算し比較する。
+
 `sapply()`関数は、リストの各要素に関数を適用する:  
 
     # Apply a Function over a List
+    sapply(seqs, length)
+    sapply(seqs, GC)
     X <- sapply(seqs, rho)
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
