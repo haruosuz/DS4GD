@@ -584,6 +584,11 @@ DNA配列間の2連続塩基組成プロファイルを比較する。
     # Apply a Function over a List
     X <- sapply(seqs, rho)
 
+[26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
+
+    # Exploring and Transforming Dataframes
+    dim(X)
+    colnames(X)
     colnames(X) <- getName(seqs)
     colnames(X) <- substr(unlist(getAnnot(seqs)), 1, 15)
     colnames(X) <- sapply(unlist(getAnnot(seqs)), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") )
@@ -607,7 +612,7 @@ DNA配列間の2連続塩基組成プロファイルを比較する。
 
     heatmap(X, margins=c(15,5))
 
-[Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
+- [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
 
