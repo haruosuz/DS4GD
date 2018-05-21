@@ -581,13 +581,10 @@ DNA配列の2連続塩基組成（観測値/期待値）:
     barplot(sort(rho(seq1, wordsize = 2)))
     abline(h=1)
 
-複数のDNA配列の特徴（サイズ、GC含量、2連続塩基組成）を計算し比較する。
-
+複数のDNA配列を比較する。
 `sapply()`関数は、リストの各要素に関数を適用する:  
 
     # Apply a Function over a List
-    sapply(seqs, length)
-    sapply(seqs, GC)
     X <- sapply(seqs, rho)
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
@@ -595,7 +592,6 @@ DNA配列の2連続塩基組成（観測値/期待値）:
     # Exploring and Transforming Dataframes
     dim(X)
     colnames(X)
-    colnames(X) <- getName(seqs)
     colnames(X) <- getAnnot(seqs)
     colnames(X) <- substr(unlist(getAnnot(seqs)), 1, 15)
     colnames(X) <- sapply(unlist(getAnnot(seqs)), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") )
