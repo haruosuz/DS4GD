@@ -417,7 +417,7 @@ Right click the link *GCF_000008865.1_ASM886v1_genomic.fna.gz*, and select "Copy
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README
 
 	prok_reference_genomes.txt: List of reference genome: small curated subset of 
-	                            really good and scientifically important prokaryotic genomes
+	                             really good and scientifically important prokaryotic genomes
 
 ### Working with Data in R
 
@@ -593,6 +593,7 @@ DNA配列の2連続塩基組成（観測値/期待値）:
     dim(X)
     colnames(X)
     colnames(X) <- getName(seqs)
+    colnames(X) <- getAnnot(seqs)
     colnames(X) <- substr(unlist(getAnnot(seqs)), 1, 15)
     colnames(X) <- sapply(unlist(getAnnot(seqs)), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") )
 
