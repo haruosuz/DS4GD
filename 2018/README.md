@@ -32,7 +32,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
   - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-genome_reports)
 - 2018-05-29 No. 7 - 中間発表 [interim report](#interim-report)
   - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
-- 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
+- 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2018-06-12 No. 9 - [Guest Speaker](#guest-speaker)
 - 2018-06-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2018-06-26 No. 11  - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
