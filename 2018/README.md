@@ -127,19 +127,31 @@ R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/mas
 
 
 ### R packages
+**Rパッケージ**
 
+パッケージ`seqinr`と`ape`のインストール:  
 Install packages [`seqinr`](https://cran.r-project.org/web/packages/seqinr/index.html), [`ape`](https://cran.r-project.org/web/packages/ape/index.html):  
 
     install.packages("seqinr")
     install.packages("ape")
 
+Bioconductorパッケージ`Biostrings`と`msa`のインストール:  
 Install Bioconductor packages [`Biostrings`](http://bioconductor.org/packages/release/bioc/html/Biostrings.html), [`msa`](https://bioconductor.org/packages/release/bioc/html/msa.html):  
 
     source("https://bioconductor.org/biocLite.R")
     biocLite("Biostrings")
     biocLite("msa")
 
-Loading Packages:
+パッケージのバージョンを確認:  
+Print the versions of these packages:  
+
+    packageVersion("seqinr")
+    packageVersion("ape")
+    packageVersion("Biostrings")
+    packageVersion("msa")
+
+パッケージの呼び出し:  
+Load the packages into R:  
 
     library(seqinr)
     library(ape)
