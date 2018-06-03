@@ -15,6 +15,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
+- [assignment 6](#assignment-6) 課題No.6 「dotplot」
+- [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
 
 ----------
 ## Working with Data in R
@@ -150,7 +152,7 @@ NCBIからDNA配列を取得する:
     ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
     seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
     seq1 <- seqs[[1]]
-    write.fasta(sequences=seq1, names=getAnnot(seq1), file.out=paste0(ACCESSION,".fna"))
+    write.fasta(sequences=seq1, names=getAnnot(seq1), file.out=paste0(ACCESSION,".fasta"))
 
 NCBIから複数のDNA配列を取得する:  
 
@@ -167,18 +169,7 @@ NCBIから複数のDNA配列を取得する:
     seqs <- lapply(seqnames,  retrieve_ncbi_fna)
 
 	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=seqnames, file.out="sequence.fasta")
-
-----------
-
-SeqinRパッケージを用いて、配列データをRに読み込む:  
-
-	# read the sequence into R using the SeqinR package:
-    library("seqinr")
-    ACCESSION <- "NC_001477" # Dengue virus 1
-    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
-    seq1 <- seqs[[1]]
+    write.fasta(sequences=seqs, names=seqnames, file.out="mySequences.fasta")
 
 ----------
 ## assignment 3
@@ -187,6 +178,15 @@ SeqinRパッケージを用いて、配列データをRに読み込む:
 [Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
 
 Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+NCBIからDNA配列を取得する:  
+
+    # Retrieving a DNA sequence from NCBI
+    library("seqinr")
+    ACCESSION <- "NC_001477" # Dengue virus 1
+    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
+    seq1 <- seqs[[1]]
 
 Q1. What are the last twenty nucleotides of the genome sequence?
 
@@ -357,9 +357,6 @@ Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.tx
     head(d, n = 1)
     colnames(d)
     colnames(d)[1] <- "assembly_accession"
-
-    table(d$assembly_level)
-    table(d$version_status)
 
 [腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](http://integbio.jp/dbcatalog/record/nbdc00058) の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
@@ -661,6 +658,83 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 	awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gbff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
 
 ----------
+## assignment 6
+**課題No.6 「dotplot」**
+
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot
+
+Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+Q1. Download FASTA-format files of two protein sequences from UniProt.
+
+    # CySp1 - Cylindrical silk protein 1 - Nephila clavata (Joro spider)
+    library("seqinr")
+    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S3.fasta")[[1]]
+    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S4.fasta")[[1]]
+
+    length(seq1) # 757
+    length(seq2) # 1259
+
+Q2. Create a dotplot for two sequences.
+
+    dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
+
+Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
+
+    dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
+    dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
+
+[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
+「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
+[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
+
+	# 配列取得方法
+	## togowsの利用 http://togotv.dbcls.jp/20110425.html
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
+
+	# dottup
+	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
+
+	# needle, water
+	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
+
+----------
+## assignment 7
+**課題No.7 「Pairwise Sequence Alignment」**
+
+http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises
+
+Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+
+Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
+
+    library("seqinr")
+    seq1 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_009193.fasta")[[1]]
+    seq2 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta")[[1]]
+
+    seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
+    seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
+
+Q2. What is the alignment score for the optimal *global* alignment between the two proteins, when you use the BLOSUM62 scoring matrix?
+
+	library("Biostrings")		# load the Biostrings package
+	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
+    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
+    gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign
+
+Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
+
+    writePairwiseAlignments(myglobalAlign)
+
+Q4. What is the alignment score for the optimal *local* alignment between the two proteins?
+
+    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
+	gapOpening = -9.5, gapExtension = -0.5, type="local")
+	mylocalAlign
+
+----------
 
 On May 15, 2018, at 11:27, CNS-STAFF <cns-staff@sfc.keio.ac.jp> wrote:
 
@@ -679,5 +753,3 @@ On May 15, 2018, at 11:27, CNS-STAFF <cns-staff@sfc.keio.ac.jp> wrote:
 	plot(1:10, xlab="a title for the x axis", family="mono")
 
 ----------
-
-
