@@ -716,21 +716,28 @@ Q1. Download FASTA-format files of two protein sequences of interest from UniPro
     seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
     seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
 
-Q2. What is the alignment score for the optimal *global* alignment between the two proteins, when you use the BLOSUM62 scoring matrix?
+Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix, a gap opening penalty of -10 and a gap extension penalty of -0.5?
 
 	library("Biostrings")		# load the Biostrings package
-	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
-    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
-    gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
+    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
 	myglobalAlign
 
 Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
 
     writePairwiseAlignments(myglobalAlign)
 
-Q4. What is the alignment score for the optimal *local* alignment between the two proteins?
+Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
 
-    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
+	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
+    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign2
+
+Q5. What is the alignment score for the optimal local alignment between the two proteins?
+
+    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
 	gapOpening = -9.5, gapExtension = -0.5, type="local")
 	mylocalAlign
 
