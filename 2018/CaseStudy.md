@@ -727,6 +727,8 @@ Q1. Download FASTA-format files of two protein sequences of interest from UniPro
 
 Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix, a gap opening penalty of -10 and a gap extension penalty of -0.5?
 
+Note: to specify a gap opening penalty of -10 and a gap extension penalty of -0.5, set the “gapOpening” argument to -9.5, and the “gapExtension” penalty to -0.5 in the pairwiseAlignment() function.
+
 	library("Biostrings")		# load the Biostrings package
 	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
     myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
