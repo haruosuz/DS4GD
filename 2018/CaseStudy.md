@@ -675,6 +675,8 @@ Q1. Download FASTA-format files of two protein sequences from UniProt.
     length(seq1) # 757
     length(seq2) # 1259
 
+	par(family="mono")
+
 Q2. Create a dotplot for two sequences.
 
     dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
