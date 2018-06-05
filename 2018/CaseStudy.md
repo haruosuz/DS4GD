@@ -684,6 +684,13 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
     dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
     dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
 
+![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+
+[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+
+    # change shell to bash
+    bash
+
 [(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
 「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
 [講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
