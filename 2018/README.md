@@ -172,4 +172,26 @@ Print version information:
     ape_4.1
     seqinr_3.3-6       
 
+
+### Warning messages
+
+Warning messages:「no font could be found for family 'Arial'」が出力
+
+On May 15, 2018, at 11:27, CNS-STAFF <cns-staff@sfc.keio.ac.jp> wrote:
+
+検証用アカウント2つで同様のコマンドを試してみましたが、
+同様のエラーは出力されなかったため、個人環境の可能性もありますが、
+以前のように Font を指定してお試しいただけないでしょうか。
+
+	# フォントファミリーを表示する(serif,sans,monoの3つのファミリーがある)
+	quartzFonts()
+
+	# フォントファミリーを指定する
+	par(family="mono")
+	plot(1:10, xlab="a title for the x axis")
+
+	# もしくはコマンド実行時にフォントファミリーを指定することでも対応できます
+	plot(1:10, xlab="a title for the x axis", family="mono")
+
 ----------
+
