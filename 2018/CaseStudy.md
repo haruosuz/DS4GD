@@ -398,8 +398,8 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     seqs <- read.fasta(file = basename(curl), seqtype = c("DNA"), strip.desc = TRUE)
     #seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
   
-   length(seqs) # get the number of elements
-   unlist(getAnnot(seqs)) # get sequence annotations  
+    length(seqs) # get the number of elements
+    unlist(getAnnot(seqs)) # get sequence annotations  
 
 ----------
 ## NCBI GENOME_REPORTS
@@ -725,9 +725,8 @@ Q1. Download FASTA-format files of two protein sequences of interest from UniPro
     seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
     seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
 
-Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix, a gap opening penalty of -10 and a gap extension penalty of -0.5?
-
-Note: to specify a gap opening penalty of -10 and a gap extension penalty of -0.5, set the “gapOpening” argument to -9.5, and the “gapExtension” penalty to -0.5 in the pairwiseAlignment() function.
+Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
+(set gapOpening = -9.5 and gapExtension = -0.5)
 
 	library("Biostrings")		# load the Biostrings package
 	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
