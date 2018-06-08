@@ -54,7 +54,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 
 ### 2018-06-12
 - 講師: 小野 浩雅 氏 [Dr. Ono Hiromasa](https://twitter.com/h_ono) (DBCLS)
-- 演題: 今日から使える便利な生命科学系公共データベース・ウェブツール
+- 演題: [今日から使える便利な生命科学系公共データベース・ウェブツール](https://github.com/hiromasaono/training/tree/master/180612_KeioSFC)
 
 ### 2018-06-19
 - 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872) (Oracle)
