@@ -401,6 +401,24 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     length(seqs) # get the number of elements
     unlist(getAnnot(seqs)) # get sequence annotations  
 
+- [24. apply() ファミリー](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/24.html)
+
+`sapply()`関数は、リストの各要素に関数を適用する。
+複数のDNA配列を解析する:  
+
+    # Apply a Function over a List
+    sapply(seqs, length)
+    sapply(seqs, GC)
+
+- [23. リスト](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html)
+
+`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
+複数のDNA配列の結合データを解析する:  
+
+    # Flatten Lists
+    length(unlist(seqs))
+    GC(unlist(seqs))
+
 ----------
 ## NCBI GENOME_REPORTS
 
@@ -575,8 +593,8 @@ DNA配列の2連続塩基組成（観測値/期待値）:
     barplot(sort(rho(seq1, wordsize = 2)))
     abline(h=1)
 
-複数のDNA配列を解析する。
-`sapply()`関数は、リストの各要素に関数を適用する:  
+`sapply()`関数は、リストの各要素に関数を適用する。
+複数のDNA配列を解析する:  
 
     # Apply a Function over a List
     X <- sapply(seqs, rho)
