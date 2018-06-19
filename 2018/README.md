@@ -62,7 +62,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 
 hero-network.csvをRに読み込むコマンド:
 
-	a <- as.matrix(read.csv("https://www.dropbox.com/s/yfcqpobisdpz7th/hero-network.csv?dl=0", h=FALSE))
+	a <- as.matrix(read.csv("https://dl.dropboxusercontent.com/s/yfcqpobisdpz7th/hero-network.csv", h=FALSE))
 
 ----------
 
