@@ -60,7 +60,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872) (Oracle)
 - 演題: [ネットワーク分析とグラフデータベース／データ分析プラットフォーム](https://dl.dropboxusercontent.com/s/u20ej6bq7c7uwzr/Yamanaka_20180619_01.pptx)
 
-Case Study [2018-06-19](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#2018-06-19)
+- Case Study [2018-06-19](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#2018-06-19)
+- 2018/06/20(Wed) 17:30 〜 19:45 [PGX ユーザー勉強会 #8 - connpass](https://pgx.connpass.com/event/84918/)
 
 hero-network.csvをRに読み込むコマンド:
 
