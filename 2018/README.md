@@ -58,7 +58,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 
 ### 2018-06-19
 - 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872) (Oracle)
-- 演題: ネットワーク分析とグラフデータベース／データ分析プラットフォーム
+- 演題: [ネットワーク分析とグラフデータベース／データ分析プラットフォーム](https://www.dropbox.com/s/u20ej6bq7c7uwzr/Yamanaka_20180619_01.pptx?dl=0)
 
 ----------
 
