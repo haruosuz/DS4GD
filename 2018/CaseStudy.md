@@ -7,6 +7,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 ## Table of Contents
+- [2018-06-19](#2018-06-19)
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「R言語入門」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
@@ -29,6 +30,75 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 
     # Get Current Date and Time
     Sys.Date()
+
+----------
+## 2018-06-19
+
+- 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872) (Oracle)
+- 演題: [ネットワーク分析とグラフデータベース／データ分析プラットフォーム](https://dl.dropboxusercontent.com/s/u20ej6bq7c7uwzr/Yamanaka_20180619_01.pptx)
+
+	# igraph のセットアップ
+	install.packages("igraph")
+	library(igraph)
+	
+	# グラフの読み込み
+	edge <- c(1,2, 1,4, 2,3, 2,3, 2,4, 3,1, 4,4)
+	g <- graph(edge)
+	V(g)
+	E(g)
+	plot(g)
+
+	# グラフのロード
+	## グラフをロードします
+	a <- as.matrix(read.csv("https://dl.dropboxusercontent.com/s/yfcqpobisdpz7th/hero-network.csv", h=FALSE))
+	g <- graph.edgelist(a, directed=FALSE)
+
+	## キャラクター（ノード）の数を表示します
+	print(V(g))
+	## 一緒に登場するキャラクターの組（エッジ）の数を表示します
+	print(E(g))
+	
+	##ロードしたグラフに前処理を施します
+	g <- simplify(g, remove.multiple=T, remove.loops=T)
+
+	## 再度、エッジの数を表示します
+	print(E(g))
+
+	# 重要なヒーローの特定
+	## まず、各ノードの次数中心性を求めます
+	d <- degree(g)
+	## 計算結果を参照します
+	head(sort(d, decreasing=T), 10)
+	
+	## 次に、各ノードのページランクを求めます
+	p <- page.rank(g)
+	## 計算結果を参照します
+	head(sort(p$vector, decreasing=T), 10)
+
+	## 同様に、各ノードの媒介中心性も求めてみます
+	b <- betweenness(g)
+	## 計算結果を参照します
+	head(sort(b, decreasing=T), 10)
+
+	# コミュニティの抽出
+	## 各ノードの連結成分を求めてみます
+	c <- clusters(g)
+	## 各クラスターのサイズを確認します
+	print(c$csize)
+
+	## マイナーなクラスタのメンバーを確認します。
+	groups(c)[2:4]
+	
+	## グラフ中のコミュニティを貪欲法を使って抽出します。	## これは計算コストの低いコミュニティ抽出のアルゴリズムです。
+	c <- fastgreedy.community(g)
+	## 抽出されたコミュニティの数を出力します
+	print(c)
+	
+	# スケールフリー・ネットワーク
+	## まず、ノードが 10個のとき、30個のときのネットワークをそれぞれ描画してみます。
+	g <- barabasi.game(10, m=2, directed=FALSE)
+	plot(g)
+	## 
 
 ----------
 ## assignment 0
