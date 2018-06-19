@@ -60,6 +60,10 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872) (Oracle)
 - 演題: [ネットワーク分析とグラフデータベース／データ分析プラットフォーム](https://www.dropbox.com/s/u20ej6bq7c7uwzr/Yamanaka_20180619_01.pptx?dl=0)
 
+hero-network.csvをRに読み込むコマンド:
+
+	a <- as.matrix(read.csv("https://www.dropbox.com/s/yfcqpobisdpz7th/hero-network.csv?dl=0", h=FALSE))
+
 ----------
 
 ## Introduction
