@@ -93,12 +93,22 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 	c <- fastgreedy.community(g)
 	## 抽出されたコミュニティの数を出力します
 	print(c)
-	
+
 	# スケールフリー・ネットワーク
 	## まず、ノードが 10個のとき、30個のときのネットワークをそれぞれ描画してみます。
 	g <- barabasi.game(10, m=2, directed=FALSE)
 	plot(g)
-	## 
+	
+	g <- barabasi.game(30, m=2, directed=FALSE)
+	plot(g)
+
+	## ノードが 10,000個になると描画してもよくわからないので、	## 次数（つながっているノードの数）ごとにどれくらいの割合のノードが	## 分布しているか（次数分布）をグラフにしてみます。
+	g <- barabasi.game(10000, m=2, directed=FALSE)
+	dd <- degree.distribution(g)
+	plot(dd[-1], log="x", xlab="degree", ylab="proportion")
+
+	## さらに、ノード間の平均距離を調べてみます。
+	average.path.length(g)
 
 ----------
 ## assignment 0
