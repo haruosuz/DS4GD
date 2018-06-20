@@ -7,7 +7,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 ## Table of Contents
-- [2018-06-19](#2018-06-19)
+- [2018-06-19](#2018-06-19) network
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「R言語入門」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
@@ -37,8 +37,10 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872) (Oracle)
 - 演題: [ネットワーク分析とグラフデータベース／データ分析プラットフォーム](https://dl.dropboxusercontent.com/s/u20ej6bq7c7uwzr/Yamanaka_20180619_01.pptx)
 
+Rコード
+
 	# igraph のセットアップ
-	install.packages("igraph")
+	#install.packages("igraph")
 	library(igraph)
 	
 	# グラフの読み込み
@@ -109,6 +111,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 	## さらに、ノード間の平均距離を調べてみます。
 	average.path.length(g)
+
+- [Pellegrini M et al. (1999) "Assigning protein functions by comparative genome analysis: protein phylogenetic profiles."](https://www.ncbi.nlm.nih.gov/pubmed/10200254)
 
 ----------
 ## assignment 0
