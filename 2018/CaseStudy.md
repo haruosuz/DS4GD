@@ -941,7 +941,7 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
     library(microseq)
     msa <- readFasta(in.file = "myaln.fasta")
     print(nchar(msa$Sequence))
-    msa.trimmed <- msaTrim(msa = msa, gap.end = 0.3, gap.mid = 0.3)
+    msa.trimmed <- msaTrim(msa = msa, gap.end = 0.5, gap.mid = 0.9)
     print(nchar(msa.trimmed$Sequence))
     writeFasta(fdta = msa.trimmed, out.file = "msa.trimmed.fasta", width = 80)
 
