@@ -7,7 +7,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 ## Table of Contents
-- [2018-06-19](#2018-06-19) network
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「R言語入門」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
@@ -18,6 +17,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
 - [assignment 6](#assignment-6) 課題No.6 「dotplot」
 - [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
+- [2018-06-19](#2018-06-19) network
+- [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 
 ----------
 ## Working with Data in R
@@ -854,4 +855,104 @@ Q5. What is the alignment score for the optimal local alignment between the two 
 	mylocalAlign
 
 ----------
+## assignment 10
+**課題No.10 「Multiple Alignment and Phylogenetic Trees」**
 
+http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises
+
+Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+
+Q1. Calculate the genetic distances between four protein sequences of interest. Which are the most closely related proteins, and which are the least closely related, based on the genetic distances?
+
+    library("seqinr")
+    # create a function to retrieve several sequences from UniProt
+    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file = paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype = c("AA"), strip.desc = TRUE)[[1]]
+
+    seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5") # Make a vector containing the names of the sequences
+    seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
+
+    # write out the sequences to a FASTA file
+    write.fasta(seqs, seqnames, file="myseq.fasta")
+
+    # Read an XStringSet object from a file
+    library(Biostrings)
+    mySequences <- readAAStringSet(file = "myseq.fasta")
+
+    # Multiple Sequence Alignment using ClustalW
+    library(msa)
+    myAlignment <- msa(mySequences, "ClustalW")
+
+    # write an XStringSet object to a file
+    writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
+
+    # read the FASTA-format alignment into R, and calculate the genetic distances between the protein sequences:
+    myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
+    mydist <- dist.alignment(myaln)
+    mydist
+
+Q2. Build an unrooted phylogenetic tree of the four proteins, using the neighbour-joining algorithm. Which are the most closely related proteins, based on the tree?
+
+    par(family="mono")
+
+    library(ape)
+    mytree <- nj(mydist)
+    plot.phylo(mytree, type="unrooted")
+
+Q3. Build an unrooted phylogenetic tree of the four proteins, based on a trimmed alignment of the four proteins. Does this differ from the tree based on the untrimmed alignment (in Q2)? Can you explain why?
+
+    # Trimming a multiple sequence alignment by discarding columns with too many gaps.
+    library(microseq)
+    msa <- readFasta(in.file = "myaln.fasta")
+    print(nchar(msa$Sequence))
+    msa.trimmed <- msaTrim(msa = msa, gap.end = 0.3, gap.mid = 0.3)
+    print(nchar(msa.trimmed$Sequence))
+    writeFasta(fdta = msa.trimmed, out.file = "msa.trimmed.fasta", width = 80)
+
+    # read the FASTA-format alignment into R, and calculate the genetic distances between the protein sequences:
+    myaln <- read.alignment(file = "msa.trimmed.fasta", format = "fasta")
+    mydist <- dist.alignment(myaln)
+    mydist
+
+    # construct a phylogenetic tree
+    mytree <- nj(mydist)
+    plot.phylo(mytree, type="unrooted")
+
+Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed alignment, using an outgroup. Which are the most closely related proteins, based on the tree? What extra information does this tree tell you, compared to the unrooted tree in Q2?
+
+    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file = paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype = c("AA"), strip.desc = TRUE)[[1]]
+    seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5", "Q32ZE1") # Make a vector containing the names of the sequences
+    seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
+
+    # write out the sequences to a FASTA file
+    write.fasta(seqs, seqnames, file="myseq.fasta")
+
+    # Read an XStringSet object from a file
+    library(Biostrings)
+    mySequences <- readAAStringSet(file = "myseq.fasta")
+
+    # Multiple Sequence Alignment using ClustalW
+    library(msa)
+    myAlignment <- msa(mySequences, "ClustalW")
+
+    # write an XStringSet object to a file
+    writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
+
+    # Trimming a multiple sequence alignment by discarding columns with too many gaps.
+    library(microseq)
+    msa <- readFasta(in.file = "myaln.fasta")
+    print(nchar(msa$Sequence))
+    msa.trimmed <- msaTrim(msa = msa, gap.end = 0.3, gap.mid = 0.3)
+    print(nchar(msa.trimmed$Sequence))
+    writeFasta(fdta = msa.trimmed, out.file = "msa.trimmed.fasta", width = 80)
+
+    # read the FASTA-format alignment into R, and calculate the genetic distances between the protein sequences:
+    myaln <- read.alignment(file = "msa.trimmed.fasta", format = "fasta")
+    mydist <- dist.alignment(myaln)
+    mydist
+
+    # construct a phylogenetic tree
+    mytree <- nj(mydist)
+    mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
+    plot.phylo(mytree, main = "Phylogenetic Tree")
+
+----------
