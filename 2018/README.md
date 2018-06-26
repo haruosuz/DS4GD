@@ -20,22 +20,22 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 
 - 2018-04-10 No. 1 - イントロダクション [Introduction](#Introduction)
   - [Building Bioinformatics Solutions](https://github.com/haruosuz/books/tree/master/bbs#chapter-1-introduction)
-- 2018-04-17 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#how-to-install-r-and-a-brief-introduction-to-r)
-  - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#neglected-tropical-diseases)
-- 2018-04-24 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
+- 2018-04-17 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
+  - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
+- 2018-04-24 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2018-05-01 木曜代替日
-- 2018-05-08 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+- 2018-05-08 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2018-05-15 No. 5 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
   - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-genome-list)
   - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly_reports)
 - 2018-05-22 No. 6 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
   - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-genome_reports)
 - 2018-05-29 No. 7 - 中間発表 [interim report](#interim-report)
-  - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment)
-- 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
+  - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+- 2018-06-05 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2018-06-12 No. 9 - [Guest Speaker](#guest-speaker)
 - 2018-06-19 No. 10 - [Guest Speaker](#guest-speaker)
-- 2018-06-26 No. 11  - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
+- 2018-06-26 No. 11  - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2017-07-03 No. 12 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2017-07-10 No. 13 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2017-07-17 No. 14 - 最終発表 Oral presentation
@@ -119,7 +119,7 @@ iMac Retina 5k 27inch
 	wget https://github.com/haruosuz/DS4GD/raw/master/2017/examples_2016.tar.gz
 
 ### R
-R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#how-to-install-r-and-a-brief-introduction-to-r)
+R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 
 ![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
 
