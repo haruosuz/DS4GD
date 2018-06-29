@@ -702,13 +702,12 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する:
     # Using grep, cut, sort, uniq to summarize columns of data
     grep -v "^#" $FILE | cut -f12 | sort | uniq -c
 
-15. [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
+[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 
     # refseq_category (column 5) is "na", "reference genome" or "representative genome"
     grep -v "^#" $FILE | cut -f5 | sort | uniq -c
 
-    NAME="Ensifer|Sinorhizobium"
-    awk -F "\t" '$5 ~ /reference genome/ && $8 ~ /'"$NAME"'/ && $11=="latest" && $12 ~ /Complete/ {print $20}' $FILE > ftpdirpaths
+    awk -F "\t" '$5 ~ /reference genome/ && $11=="latest" && $12 ~ /Complete/ {print $20}' $FILE > ftpdirpaths
     awk 'BEGIN{FS=OFS="/";filesuffix="genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
     wget -i ftpfilepaths
 
