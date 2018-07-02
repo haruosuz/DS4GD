@@ -19,7 +19,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
 - [2018-06-19](#2018-06-19) network
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
-- [codon usage](#codon usage) コドン使用
+- [codon usage](#codon-usage) コドン使用
 
 ----------
 ## Working with Data in R
@@ -978,10 +978,16 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
 ## codon usage
 **コドン使用**
 
-    # Load the SeqinR package
-    library(seqinr)
+![https://biowiki.edu-wiki.org/コドン表](https://biowiki.edu-wiki.org/_media/geneticcode01.jpg)
+
+- [コドン表 [BioWiki]](https://biowiki.edu-wiki.org/コドン表)
+- [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
+- [コドン | 酵母とシステムバイオロジー](http://tenure5.vbl.okayama-u.ac.jp/HM_blog/?s=コドン)
 
 https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
+
+    # Load the SeqinR package
+    library(seqinr)
 
 uco Codon usage indices
     ## Show all possible codons:    words()
