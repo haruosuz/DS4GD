@@ -19,6 +19,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
 - [2018-06-19](#2018-06-19) network
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
+- [codon usage](#codon usage) コドン使用
 
 ----------
 ## Working with Data in R
@@ -31,89 +32,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 
     # Get Current Date and Time
     Sys.Date()
-
-----------
-## 2018-06-19
-
-- 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872) (Oracle)
-- 演題: [ネットワーク分析とグラフデータベース／データ分析プラットフォーム](https://dl.dropboxusercontent.com/s/u20ej6bq7c7uwzr/Yamanaka_20180619_01.pptx)
-
-Rコード
-
-	# igraph のセットアップ
-	#install.packages("igraph")
-	library(igraph)
-	
-	# グラフの読み込み
-	edge <- c(1,2, 1,4, 2,3, 2,3, 2,4, 3,1, 4,4)
-	g <- graph(edge)
-	V(g)
-	E(g)
-	plot(g)
-
-	# グラフのロード
-	## グラフをロードします
-	a <- as.matrix(read.csv("https://dl.dropboxusercontent.com/s/yfcqpobisdpz7th/hero-network.csv", h=FALSE))
-	g <- graph.edgelist(a, directed=FALSE)
-
-	## キャラクター（ノード）の数を表示します
-	print(V(g))
-	## 一緒に登場するキャラクターの組（エッジ）の数を表示します
-	print(E(g))
-	
-	##ロードしたグラフに前処理を施します
-	g <- simplify(g, remove.multiple=T, remove.loops=T)
-
-	## 再度、エッジの数を表示します
-	print(E(g))
-
-	# 重要なヒーローの特定
-	## まず、各ノードの次数中心性を求めます
-	d <- degree(g)
-	## 計算結果を参照します
-	head(sort(d, decreasing=T), 10)
-	
-	## 次に、各ノードのページランクを求めます
-	p <- page.rank(g)
-	## 計算結果を参照します
-	head(sort(p$vector, decreasing=T), 10)
-
-	## 同様に、各ノードの媒介中心性も求めてみます
-	b <- betweenness(g)
-	## 計算結果を参照します
-	head(sort(b, decreasing=T), 10)
-
-	# コミュニティの抽出
-	## 各ノードの連結成分を求めてみます
-	c <- clusters(g)
-	## 各クラスターのサイズを確認します
-	print(c$csize)
-
-	## マイナーなクラスタのメンバーを確認します。
-	groups(c)[2:4]
-	
-	## グラフ中のコミュニティを貪欲法を使って抽出します。	## これは計算コストの低いコミュニティ抽出のアルゴリズムです。
-	c <- fastgreedy.community(g)
-	## 抽出されたコミュニティの数を出力します
-	print(c)
-
-	# スケールフリー・ネットワーク
-	## まず、ノードが 10個のとき、30個のときのネットワークをそれぞれ描画してみます。
-	g <- barabasi.game(10, m=2, directed=FALSE)
-	plot(g)
-	
-	g <- barabasi.game(30, m=2, directed=FALSE)
-	plot(g)
-
-	## ノードが 10,000個になると描画してもよくわからないので、	## 次数（つながっているノードの数）ごとにどれくらいの割合のノードが	## 分布しているか（次数分布）をグラフにしてみます。
-	g <- barabasi.game(10000, m=2, directed=FALSE)
-	dd <- degree.distribution(g)
-	plot(dd[-1], log="x", xlab="degree", ylab="proportion")
-
-	## さらに、ノード間の平均距離を調べてみます。
-	average.path.length(g)
-
-- [Pellegrini M et al. (1999) "Assigning protein functions by comparative genome analysis: protein phylogenetic profiles."](https://www.ncbi.nlm.nih.gov/pubmed/10200254)
 
 ----------
 ## assignment 0
@@ -443,16 +361,23 @@ Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.tx
     colnames(d)
     colnames(d)[1] <- "assembly_accession"
 
-[腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](http://integbio.jp/dbcatalog/record/nbdc00058) の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
+    table(d$refseq_category)
+    table(d$assembly_level)
 
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli O157:H7 Sakai" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+[大腸菌](https://www.sbj.or.jp/wp-content/uploads/file/sbj/9010/9010_yomoyama-1.pdf)
+[Escherichia coli K-12](https://en.wikipedia.org/wiki/Escherichia_coli_in_molecular_biology#K-12)
+の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
+
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Escherichia coli K-12" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x).
-    pattern <- "O157.*Sakai"
-    #pattern <- "Borrelia burgdorferi B31"
-    #pattern <- "Aureimonas sp. AU20"
-    TF <- grepl(pattern = pattern, x = d$organism_name) & d$assembly_level == "Complete Genome" & d$version_status == "latest"
+    pattern <- "Escherichia coli.*K-12"
+    #pattern <- "Borrelia burgdorferi"
+    #pattern <- "Sinorhizobium meliloti"
+    #pattern <- "Escherichia.coli"
+    TF <- grepl(pattern = pattern, x = d$organism_name) & grepl(pattern = "reference|representative", x = d$refseq_category) & d$assembly_level == "Complete Genome" & d$version_status == "latest"
+    d[TF,]
     d$ftp_path[TF]
 
 抽出されたURLをブラウザFirefox/Chromeで開く。*.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
@@ -503,6 +428,16 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     # Flatten Lists
     length(unlist(seqs))
     GC(unlist(seqs))
+
+複数のDNA配列の2連続塩基組成（観測値/期待値）を解析する:  
+
+    # Apply a Function over a List
+    X <- sapply(seqs, rho)
+
+    # Hierarchical Clustering
+    plot(hclust(dist(t(X))))
+
+- [Wong K et al. (2002) "Dinucleotide compositional analysis of Sinorhizobium meliloti using the genome signature: distinguishing chromosomes and plasmids."](https://www.ncbi.nlm.nih.gov/pubmed/12444420)
 
 ----------
 ## NCBI GENOME_REPORTS
@@ -705,11 +640,12 @@ DNA配列の2連続塩基組成（観測値/期待値）:
 
 クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
 
-    # Hierarchical cluster analysis
+    # Hierarchical Clustering
     plot(hclust(dist(t(X))))
 
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
+    # Draw a Heat Map
     heatmap(X, margins=c(10,5), cexCol=1.0)
 
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
@@ -855,6 +791,89 @@ Q5. What is the alignment score for the optimal local alignment between the two 
 	mylocalAlign
 
 ----------
+## 2018-06-19
+
+- 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872) (Oracle)
+- 演題: [ネットワーク分析とグラフデータベース／データ分析プラットフォーム](https://dl.dropboxusercontent.com/s/u20ej6bq7c7uwzr/Yamanaka_20180619_01.pptx)
+
+Rコード
+
+	# igraph のセットアップ
+	#install.packages("igraph")
+	library(igraph)
+	
+	# グラフの読み込み
+	edge <- c(1,2, 1,4, 2,3, 2,3, 2,4, 3,1, 4,4)
+	g <- graph(edge)
+	V(g)
+	E(g)
+	plot(g)
+
+	# グラフのロード
+	## グラフをロードします
+	a <- as.matrix(read.csv("https://dl.dropboxusercontent.com/s/yfcqpobisdpz7th/hero-network.csv", h=FALSE))
+	g <- graph.edgelist(a, directed=FALSE)
+
+	## キャラクター（ノード）の数を表示します
+	print(V(g))
+	## 一緒に登場するキャラクターの組（エッジ）の数を表示します
+	print(E(g))
+	
+	##ロードしたグラフに前処理を施します
+	g <- simplify(g, remove.multiple=T, remove.loops=T)
+
+	## 再度、エッジの数を表示します
+	print(E(g))
+
+	# 重要なヒーローの特定
+	## まず、各ノードの次数中心性を求めます
+	d <- degree(g)
+	## 計算結果を参照します
+	head(sort(d, decreasing=T), 10)
+	
+	## 次に、各ノードのページランクを求めます
+	p <- page.rank(g)
+	## 計算結果を参照します
+	head(sort(p$vector, decreasing=T), 10)
+
+	## 同様に、各ノードの媒介中心性も求めてみます
+	b <- betweenness(g)
+	## 計算結果を参照します
+	head(sort(b, decreasing=T), 10)
+
+	# コミュニティの抽出
+	## 各ノードの連結成分を求めてみます
+	c <- clusters(g)
+	## 各クラスターのサイズを確認します
+	print(c$csize)
+
+	## マイナーなクラスタのメンバーを確認します。
+	groups(c)[2:4]
+	
+	## グラフ中のコミュニティを貪欲法を使って抽出します。	## これは計算コストの低いコミュニティ抽出のアルゴリズムです。
+	c <- fastgreedy.community(g)
+	## 抽出されたコミュニティの数を出力します
+	print(c)
+
+	# スケールフリー・ネットワーク
+	## まず、ノードが 10個のとき、30個のときのネットワークをそれぞれ描画してみます。
+	g <- barabasi.game(10, m=2, directed=FALSE)
+	plot(g)
+	
+	g <- barabasi.game(30, m=2, directed=FALSE)
+	plot(g)
+
+	## ノードが 10,000個になると描画してもよくわからないので、	## 次数（つながっているノードの数）ごとにどれくらいの割合のノードが	## 分布しているか（次数分布）をグラフにしてみます。
+	g <- barabasi.game(10000, m=2, directed=FALSE)
+	dd <- degree.distribution(g)
+	plot(dd[-1], log="x", xlab="degree", ylab="proportion")
+
+	## さらに、ノード間の平均距離を調べてみます。
+	average.path.length(g)
+
+- [Pellegrini M et al. (1999) "Assigning protein functions by comparative genome analysis: protein phylogenetic profiles."](https://www.ncbi.nlm.nih.gov/pubmed/10200254)
+
+----------
 ## assignment 10
 **課題No.10 「Multiple Alignment and Phylogenetic Trees」**
 
@@ -956,3 +975,107 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
     plot.phylo(mytree, main = "Phylogenetic Tree")
 
 ----------
+## codon usage
+**コドン使用**
+
+    # Load the SeqinR package
+    library(seqinr)
+
+https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
+
+uco Codon usage indices
+    ## Show all possible codons:    words()
+    ## Make a coding sequence from this:    (cds <- s2c(paste(words(), collapse = "")))
+    ## Get codon counts:    uco(cds, index = "eff")
+    ## Get codon relative frequencies:    uco(cds, index = "freq")
+    ## Get RSCU values:    uco(cds, index = "rscu")
+    ## Show what happens with ambiguous bases:    uco(s2c("aaannnttt"))
+    ## Use a real coding sequence:
+
+[NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
+
+    # Retrieving sequence data
+    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2"
+    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_cds_from_genomic.fna.gz" )
+    seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
+    length(seqs) # Print out the number of sequences retrieved
+
+`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
+複数のDNA配列の結合データを解析する:  
+
+    # Flatten Lists
+    GC1(unlist(seqs)) # G+C in the 1st position of the codon bases
+    GC2(unlist(seqs)) # G+C in the 2nd position of the codon bases
+    GC3(unlist(seqs)) # G+C in the 3rd position of the codon bases
+
+uco Codon usage indices
+
+    seq1 <- seqs[[1]]    uco(seq1, index = "eff")  # Absolute frequencies
+    uco(seq1, index = "freq") # Relative frequencies    uco(seq1, index = "rscu") # Relative Synonymous Codon Usage    df <- uco(seq1, as.data.frame = TRUE) # all indices are returned into a data frame
+
+Relative Synonymous Codon Usage (RSCU)
+
+    # RSCU for the collection of all genes
+    cu.all <- uco(unlist(seqs), index="rscu")
+
+Highly expressed genes encoding ribosomal proteins
+
+    # get sequence annotations
+    myAnnotation <- getAnnot(seqs)
+
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    # grepl returns a logical vector (match or not for each element of x).
+    TF <- grepl(pattern = "ribosomal protein", x = myAnnotation, ignore.case = TRUE) 
+    #TF <- grepl(pattern = "ribosomal", x = myAnnotation, ignore.case = TRUE) & !grepl(pattern = "transferase|hydroxylase|modification", x = myAnnotation, ignore.case = TRUE)
+    sum(TF)
+
+    # RSCU for the collection of ribosomal protein genes
+    cu.rp <- uco(unlist(seqs[TF]), index="rscu")
+
+Individual genes (>100 codons in length)
+
+    # >300 bp
+    seqs <- seqs[sapply(seqs, length) > 300]
+
+    # RSCU for individual genes    cu.seqs <- t(sapply(seqs, uco, index="rscu"))
+
+Codon usage difference between genes
+
+    # Distances between a single genes and the collection of all genes (average gene)
+    D_all <- dist(rbind(cu.all, cu.seqs))[1:nrow(cu.seqs)]
+
+    # Distances between a single genes and the collection of ribosomal protein genes (highly expressed genes)
+    D_rp <- dist(rbind(cu.rp, cu.seqs))[1:nrow(cu.seqs)]
+
+    # Plot
+    plot(D_rp, D_all, type="n")
+    points(D_rp[!TF], D_all[!TF], pch="+", col=1)
+    points(D_rp[TF], D_all[TF], pch=19, col=2)
+    abline(0,1)
+
+    # Predicted gene expression levels
+    E_g <- D_all / D_rp
+
+    # Predicted highly expressed (PHX) 
+    PHX <- E_g > 1.05
+
+    # Put indicies in a dataframe
+    len <- sapply(seqs, length)
+    Description <- sub(pattern="(.+)gene=(.+)](.+)locus_tag=([^]]+)](.+)protein=([^]]+)](.+)", replacement="\\4;\\2;\\6", x=myAnnotation)
+    d.f <- data.frame(len, D_rp, D_all, E_g, PHX, Description)
+    d.f <- d.f[order(d.f$E_g, decreasing=TRUE),]
+
+[45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)
+
+    write.csv(d.f, file="table.csv", quote=TRUE, row.names=TRUE)
+    write.table(d.f, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
+
+- [PHX/PA user guide](http://www.cmbl.uga.edu/software/ASeqH.htm)
+- [Karlin S, Mrázek J.(2000) "Predicted highly expressed genes of diverse prokaryotic genomes."](https://www.ncbi.nlm.nih.gov/pubmed/10960111)
+- [Karlin S, Mrázek J, Campbell A, Kaiser D. (2001) "Characterizations of highly expressed genes of four fast-growing bacteria."](https://www.ncbi.nlm.nih.gov/pubmed/11489855)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/bin/jb1710100001.jpg)
+
+----------
+
+
