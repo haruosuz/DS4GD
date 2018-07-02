@@ -649,9 +649,6 @@ DNA配列の2連続塩基組成（観測値/期待値）:
     heatmap(X, margins=c(10,5), cexCol=1.0)
 
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
-
 - [塩基組成に基づいたプラスミドの宿主域の予測](http://www.sigmbi.jp/?m=201601)
 
 ----------
@@ -980,6 +977,7 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
 
 - [コドン表 [BioWiki]](https://biowiki.edu-wiki.org/コドン表)
 - [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
+- g-language Tutorials | [Codon usage analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#codon_usage_analysis) [コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
 - [PHX/PA user guide](http://www.cmbl.uga.edu/software/PHX-PA-guide.htm)
   - [Karlin S, Mrázek J. (2000) "Predicted highly expressed genes of diverse prokaryotic genomes."](https://www.ncbi.nlm.nih.gov/pubmed/10960111)
   - [Karlin S, Mrázek J, Campbell A, Kaiser D. (2001) "Characterizations of highly expressed genes of four fast-growing bacteria."](https://www.ncbi.nlm.nih.gov/pubmed/11489855)
