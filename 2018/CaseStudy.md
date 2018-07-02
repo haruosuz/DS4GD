@@ -1017,14 +1017,16 @@ uco Codon usage indices
 uco Codon usage indices
 
     seq1 <- seqs[[1]]    uco(seq1, index = "eff")  # Absolute frequencies
-    uco(seq1, index = "freq") # Relative frequencies    uco(seq1, index = "rscu") # Relative Synonymous Codon Usage    df <- uco(seq1, as.data.frame = TRUE) # all indices are returned into a data frame
+    uco(seq1, index = "freq") # Relative frequencies    uco(seq1, index = "rscu") # Relative Synonymous Codon Usage (RSCU)    df <- uco(seq1, as.data.frame = TRUE) # all indices are returned into a data frame
 
-Relative Synonymous Codon Usage (RSCU)
+Predicting gene expression levels based on codon usage differences among certain gene groups: the collection of all genes (average gene), and of highly expressed ribosomal protein genes. A gene is predicted highly expressed (PHX) if its codon frequencies are close to those of the ribosomal proteins but strongly deviant from the average gene codon frequencies.
+
+Codon usage for the collection of all genes
 
     # RSCU for the collection of all genes
     cu.all <- uco(unlist(seqs), index="rscu")
 
-Highly expressed genes encoding ribosomal proteins
+Codon usage for the collection of ribosomal protein genes
 
     # get sequence annotations
     myAnnotation <- getAnnot(seqs)
@@ -1038,7 +1040,7 @@ Highly expressed genes encoding ribosomal proteins
     # RSCU for the collection of ribosomal protein genes
     cu.rp <- uco(unlist(seqs[TF]), index="rscu")
 
-Individual genes (>100 codons in length)
+Codon usage for all individual genes (>100 codons in length)
 
     # >300 bp
     seqs <- seqs[sapply(seqs, length) > 300]
@@ -1047,10 +1049,10 @@ Individual genes (>100 codons in length)
 
 Codon usage difference between genes
 
-    # Distances between a single genes and the collection of all genes (average gene)
+    # Distance between a single gene and the collection of all genes
     D_all <- dist(rbind(cu.all, cu.seqs))[1:nrow(cu.seqs)]
 
-    # Distances between a single genes and the collection of ribosomal protein genes (highly expressed genes)
+    # Distance between a single gene and the collection of ribosomal protein genes
     D_rp <- dist(rbind(cu.rp, cu.seqs))[1:nrow(cu.seqs)]
 
     # Plot
@@ -1077,5 +1079,4 @@ Codon usage difference between genes
     write.table(d.f, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
 
 ----------
-
 
