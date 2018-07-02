@@ -978,11 +978,11 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
 ## codon usage
 **コドン使用**
 
-![https://biowiki.edu-wiki.org/コドン表](https://biowiki.edu-wiki.org/_media/geneticcode01.jpg)
-
 - [コドン表 [BioWiki]](https://biowiki.edu-wiki.org/コドン表)
 - [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
-- [コドン | 酵母とシステムバイオロジー](http://tenure5.vbl.okayama-u.ac.jp/HM_blog/?s=コドン)
+- [PHX/PA user guide](http://www.cmbl.uga.edu/software/ASeqH.htm)
+- [Karlin S, Mrázek J, Campbell A, Kaiser D. (2001) "Characterizations of highly expressed genes of four fast-growing bacteria."](https://www.ncbi.nlm.nih.gov/pubmed/11489855)
+- [Henry I, Sharp PM. (2007) "Predicting gene expression level from codon usage bias."](https://www.ncbi.nlm.nih.gov/pubmed/17038449)
 
 https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
 
@@ -1075,12 +1075,6 @@ Codon usage difference between genes
 
     write.csv(d.f, file="table.csv", quote=TRUE, row.names=TRUE)
     write.table(d.f, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
-
-- [PHX/PA user guide](http://www.cmbl.uga.edu/software/ASeqH.htm)
-- [Karlin S, Mrázek J.(2000) "Predicted highly expressed genes of diverse prokaryotic genomes."](https://www.ncbi.nlm.nih.gov/pubmed/10960111)
-- [Karlin S, Mrázek J, Campbell A, Kaiser D. (2001) "Characterizations of highly expressed genes of four fast-growing bacteria."](https://www.ncbi.nlm.nih.gov/pubmed/11489855)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/bin/jb1710100001.jpg)
 
 ----------
 
