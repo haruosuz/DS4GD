@@ -36,8 +36,10 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2018-06-12 No. 9 - [Guest Speaker](#guest-speaker)
 - 2018-06-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2018-06-26 No. 11  - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2017-07-03 No. 12 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
-- 2017-07-10 No. 13 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+- 2017-07-03 No. 12 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
+  - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly_reports)
+  - コドン使用 [codon usage](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage)
+- 2017-07-10 No. 13 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md) | ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2017-07-17 No. 14 - 最終発表 Oral presentation
 - 2017-07-24 レポート提出期限 Deadline for final report
 
