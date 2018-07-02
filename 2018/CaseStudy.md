@@ -975,14 +975,13 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
 ## codon usage
 **コドン使用**
 
-- [コドン表 [BioWiki]](https://biowiki.edu-wiki.org/コドン表)
-- [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
 - g-language Tutorials | [Codon usage analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#codon_usage_analysis) [コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
+  - http://rest.g-language.org/help/phx
+  - http://www.g-language.org/data/g-language/lib/G/Seq/Codon.pm
 - [PHX/PA user guide](http://www.cmbl.uga.edu/software/PHX-PA-guide.htm)
   - [Karlin S, Mrázek J. (2000) "Predicted highly expressed genes of diverse prokaryotic genomes."](https://www.ncbi.nlm.nih.gov/pubmed/10960111)
   - [Karlin S, Mrázek J, Campbell A, Kaiser D. (2001) "Characterizations of highly expressed genes of four fast-growing bacteria."](https://www.ncbi.nlm.nih.gov/pubmed/11489855)
   - [Karlin S, Mrázek J, Ma J, Brocchieri L. (2005) "Predicted highly expressed genes in archaeal genomes."](https://www.ncbi.nlm.nih.gov/pubmed/15883368)
-- [Henry I, Sharp PM. (2007) "Predicting gene expression level from codon usage bias."](https://www.ncbi.nlm.nih.gov/pubmed/17038449)
 
 https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
 
@@ -1003,6 +1002,7 @@ uco Codon usage indices
     # Retrieving sequence data
     ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2"
     curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_cds_from_genomic.fna.gz" )
+    library(seqinr)
     seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
     length(seqs) # Print out the number of sequences retrieved
 
@@ -1019,7 +1019,9 @@ uco Codon usage indices
     seq1 <- seqs[[1]]    uco(seq1, index = "eff")  # Absolute frequencies
     uco(seq1, index = "freq") # Relative frequencies    uco(seq1, index = "rscu") # Relative Synonymous Codon Usage (RSCU)    df <- uco(seq1, as.data.frame = TRUE) # all indices are returned into a data frame
 
-Predicting gene expression levels based on codon usage differences among certain gene groups: the collection of all genes (average gene), and of highly expressed ribosomal protein genes. A gene is predicted highly expressed (PHX) if its codon frequencies are close to those of the ribosomal proteins but strongly deviant from the average gene codon frequencies.
+Calculates codon usage differences between gene classes for identifying Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes.
+
+遺伝子グループ間のコドン使用の差に基づいて、高発現遺伝子（PHX）と外来遺伝子（PA）を予測する。
 
 Codon usage for the collection of all genes
 
@@ -1034,7 +1036,7 @@ Codon usage for the collection of ribosomal protein genes
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x).
     TF <- grepl(pattern = "ribosomal protein", x = myAnnotation, ignore.case = TRUE) 
-    #TF <- grepl(pattern = "ribosomal", x = myAnnotation, ignore.case = TRUE) & !grepl(pattern = "transferase|hydroxylase|modification", x = myAnnotation, ignore.case = TRUE)
+    TF <- grepl(pattern = "ribosomal", x = myAnnotation, ignore.case = TRUE) & !grepl(pattern = "transferase|hydroxylase|modification", x = myAnnotation, ignore.case = TRUE)
     sum(TF)
 
     # RSCU for the collection of ribosomal protein genes
@@ -1067,14 +1069,17 @@ Codon usage difference between genes
     # Predicted highly expressed (PHX) 
     PHX <- E_g > 1.05
 
+    # Putative Alien (PA)
+    T_g <- median(D_all) + 0.1
+    PA <- D_all > T_g & D_rp > T_g
+
     # Put indicies in a dataframe
-    len <- sapply(seqs, length)
-    Description <- sub(pattern="(.+)gene=(.+)](.+)locus_tag=([^]]+)](.+)protein=([^]]+)](.+)", replacement="\\4;\\2;\\6", x=myAnnotation)
-    d.f <- data.frame(len, D_rp, D_all, E_g, PHX, Description)
+    Ncodon <- sapply(seqs, length) / 3
+    Description <- sub(pattern="(.+)gene=(.+)](.+)locus_tag=([^]]+)](.+)protein=([^]]+)](.+)", replacement="\\4;\\2;\\6", x=getAnnot(seqs))
+    d.f <- data.frame(D_rp, D_all, E_g, PHX, PA, Ncodon, Description)
     d.f <- d.f[order(d.f$E_g, decreasing=TRUE),]
 
-[45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)
-
+    # Export data as a CSV file to be read by spreadsheets:
     write.csv(d.f, file="table.csv", quote=TRUE, row.names=TRUE)
     write.table(d.f, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
 
