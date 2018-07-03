@@ -375,7 +375,6 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
     pattern <- "Escherichia coli.*K-12"
     #pattern <- "Borrelia burgdorferi"
     #pattern <- "Sinorhizobium meliloti"
-    #pattern <- "Escherichia.coli"
     TF <- grepl(pattern = pattern, x = d$organism_name) & grepl(pattern = "reference|representative", x = d$refseq_category) & d$assembly_level == "Complete Genome" & d$version_status == "latest"
     d[TF,]
     d$ftp_path[TF]
@@ -975,13 +974,13 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
 ## codon usage
 **コドン使用**
 
-- g-language Tutorials | [Codon usage analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#codon_usage_analysis) [コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
-  - http://rest.g-language.org/help/phx
-  - http://www.g-language.org/data/g-language/lib/G/Seq/Codon.pm
-- [PHX/PA user guide](http://www.cmbl.uga.edu/software/PHX-PA-guide.htm)
+- [コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
+- [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
+- コドン使用に基づく高発現・外来性遺伝子予測 Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes
+  - [PHX/PA user guide](http://www.cmbl.uga.edu/software/PHX-PA-guide.htm)
   - [Karlin S, Mrázek J. (2000) "Predicted highly expressed genes of diverse prokaryotic genomes."](https://www.ncbi.nlm.nih.gov/pubmed/10960111)
   - [Karlin S, Mrázek J, Campbell A, Kaiser D. (2001) "Characterizations of highly expressed genes of four fast-growing bacteria."](https://www.ncbi.nlm.nih.gov/pubmed/11489855)
-  - [Karlin S, Mrázek J, Ma J, Brocchieri L. (2005) "Predicted highly expressed genes in archaeal genomes."](https://www.ncbi.nlm.nih.gov/pubmed/15883368)
+  - [Karlin S, Mrazek J. (2001) "Predicted highly expressed and putative alien genes of Deinococcus radiodurans and implications for resistance to ionizing radiation damage." ](https://www.ncbi.nlm.nih.gov/pubmed/11296249)
 
 https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
 
@@ -1000,83 +999,59 @@ uco Codon usage indices
 [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 
     # Retrieving sequence data
-    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2"
+    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2" # Escherichia coli str. K-12 substr. MG1655
     curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_cds_from_genomic.fna.gz" )
     library(seqinr)
     seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
     length(seqs) # Print out the number of sequences retrieved
-
-`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
-複数のDNA配列の結合データを解析する:  
-
-    # Flatten Lists
-    GC1(unlist(seqs)) # G+C in the 1st position of the codon bases
-    GC2(unlist(seqs)) # G+C in the 2nd position of the codon bases
-    GC3(unlist(seqs)) # G+C in the 3rd position of the codon bases
-
-uco Codon usage indices
-
-    seq1 <- seqs[[1]]    uco(seq1, index = "eff")  # Absolute frequencies
+    seq1 <- seqs[[1]]
+    uco(seq1, index = "eff")  # Absolute frequencies
     uco(seq1, index = "freq") # Relative frequencies    uco(seq1, index = "rscu") # Relative Synonymous Codon Usage (RSCU)    df <- uco(seq1, as.data.frame = TRUE) # all indices are returned into a data frame
+    df[order(df$AA),]
 
-Calculates codon usage differences between gene classes for identifying Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes.
+Compute codon usage differences between gene classes for identifying Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes.
 
-遺伝子グループ間のコドン使用の差に基づいて、高発現遺伝子（PHX）と外来遺伝子（PA）を予測する。
+PHX解析では、全遺伝子群のコドン使用からの差 (BgC) が大きく、高発現遺伝子群のコドン使用からの差 (BgH) が小さく、発現量予測値 (E_g = BgC/BgH) が1.0より大きい遺伝子を高発現と予測する。また、コドン使用が全遺伝子群と高発現遺伝子群の何れとも異なる遺伝子を外来性 (Putative Alien; PA) と予測する。
 
-Codon usage for the collection of all genes
-
-    # RSCU for the collection of all genes
+    # 全遺伝子群のコドン使用
+    # Codon usage for the collection of all genes (average gene)
     cu.all <- uco(unlist(seqs), index="rscu")
 
-Codon usage for the collection of ribosomal protein genes
+    # 高発現遺伝子群のコドン使用
+    # Codon usage for the collection of highly expressed genes encoding translation elongation factors and ribosomal proteins
+    TF <- grepl(pattern = "ribosomal subunit protein", x = getAnnot(seqs), ignore.case = TRUE)
+    sum(TF) # unlist(getAnnot(seqs[TF]))
+    cu.high <- uco(unlist(seqs[TF]), index="rscu")
 
-    # get sequence annotations
-    myAnnotation <- getAnnot(seqs)
+    # 各遺伝子のコドン使用
+    # Codon usage for all individual genes (>100 codons in length)
+    seqs <- seqs[sapply(seqs, length) > 300]    cu.seqs <- t(sapply(seqs, uco, index="rscu"))
 
-    # grep(pattern, x) returns the positions of all elements in x that match pattern
-    # grepl returns a logical vector (match or not for each element of x).
-    TF <- grepl(pattern = "ribosomal protein", x = myAnnotation, ignore.case = TRUE) 
-    TF <- grepl(pattern = "ribosomal", x = myAnnotation, ignore.case = TRUE) & !grepl(pattern = "transferase|hydroxylase|modification", x = myAnnotation, ignore.case = TRUE)
-    sum(TF)
-
-    # RSCU for the collection of ribosomal protein genes
-    cu.rp <- uco(unlist(seqs[TF]), index="rscu")
-
-Codon usage for all individual genes (>100 codons in length)
-
-    # >300 bp
-    seqs <- seqs[sapply(seqs, length) > 300]
-
-    # RSCU for individual genes    cu.seqs <- t(sapply(seqs, uco, index="rscu"))
-
-Codon usage difference between genes
+    # 遺伝子グループ間のコドン使用の差（距離）
+    # Codon usage difference between genes
 
     # Distance between a single gene and the collection of all genes
-    D_all <- dist(rbind(cu.all, cu.seqs))[1:nrow(cu.seqs)]
+    BgC <- dist(rbind(cu.all, cu.seqs))[1:nrow(cu.seqs)]
 
     # Distance between a single gene and the collection of ribosomal protein genes
-    D_rp <- dist(rbind(cu.rp, cu.seqs))[1:nrow(cu.seqs)]
+    BgH <- dist(rbind(cu.high, cu.seqs))[1:nrow(cu.seqs)]
 
     # Plot
-    plot(D_rp, D_all, type="n")
-    points(D_rp[!TF], D_all[!TF], pch="+", col=1)
-    points(D_rp[TF], D_all[TF], pch=19, col=2)
+    plot(BgH, BgC, type="n")
+    points(BgH[!TF], BgC[!TF], pch="+", col=1)
+    points(BgH[TF], BgC[TF], pch=19, col=2)
     abline(0,1)
 
+    # 遺伝子発現量予測値
     # Predicted gene expression levels
-    E_g <- D_all / D_rp
+    E_g <- BgC / BgH
 
     # Predicted highly expressed (PHX) 
-    PHX <- E_g > 1.05
+    PHX <- E_g > 1.5
 
-    # Putative Alien (PA)
-    T_g <- median(D_all) + 0.1
-    PA <- D_all > T_g & D_rp > T_g
-
-    # Put indicies in a dataframe
-    Ncodon <- sapply(seqs, length) / 3
+    # Put values in a dataframe
     Description <- sub(pattern="(.+)gene=(.+)](.+)locus_tag=([^]]+)](.+)protein=([^]]+)](.+)", replacement="\\4;\\2;\\6", x=getAnnot(seqs))
-    d.f <- data.frame(D_rp, D_all, E_g, PHX, PA, Ncodon, Description)
+    d.f <- data.frame(BgH, BgC, E_g, PHX, Description)
     d.f <- d.f[order(d.f$E_g, decreasing=TRUE),]
 
     # Export data as a CSV file to be read by spreadsheets:
