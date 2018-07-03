@@ -1063,6 +1063,9 @@ PHX解析では、
     write.csv(d.f, file="table.csv", quote=TRUE, row.names=TRUE)
     write.table(d.f, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
 
+    # open current working directory
+    system("open .")
+
 ----------
 
 - [Suzuki H, Morton BR. (2016) "Codon Adaptation of Plastid Genes."](http://www.ncbi.nlm.nih.gov/pubmed/27196606)
