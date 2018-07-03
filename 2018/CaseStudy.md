@@ -1041,6 +1041,7 @@ PHX解析では、
     BgH <- dist(rbind(cu.high, cu.seqs))[1:nrow(cu.seqs)]
 
     # Plot
+	par(family="mono")
     plot(BgH, BgC, type="n")
     points(BgH[!TF], BgC[!TF], pch="+", col=1)
     points(BgH[TF], BgC[TF], pch=19, col=2)
