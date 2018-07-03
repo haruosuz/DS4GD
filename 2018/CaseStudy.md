@@ -1011,7 +1011,11 @@ uco Codon usage indices
 
 Compute codon usage differences between gene classes for identifying Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes.
 
-PHX解析では、全遺伝子群のコドン使用からの差 (BgC) が大きく、高発現遺伝子群のコドン使用からの差 (BgH) が小さく、発現量予測値 (E_g = BgC/BgH) が1.0より大きい遺伝子を高発現と予測する。また、コドン使用が全遺伝子群と高発現遺伝子群の何れとも異なる遺伝子を外来性 (Putative Alien; PA) と予測する。
+PHX解析では、
+全遺伝子群のコドン使用からの差 (BgC) が大きく、
+高発現遺伝子群のコドン使用からの差 (BgH) が小さく、
+発現量予測値 (E_g = BgC/BgH) が1.0より大きい遺伝子を高発現と予測する。
+また、コドン使用が全遺伝子群と高発現遺伝子群の何れとも異なる遺伝子を外来性 (Putative Alien; PA) と予測する。
 
     # 全遺伝子群のコドン使用
     # Codon usage for the collection of all genes (average gene)
