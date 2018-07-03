@@ -1017,6 +1017,10 @@ PHX解析では、
 発現量予測値 (E_g = BgC/BgH) が1.0より大きい遺伝子を高発現と予測する。
 また、コドン使用が全遺伝子群と高発現遺伝子群の何れとも異なる遺伝子を外来性 (Putative Alien; PA) と予測する。
 
+    # 各遺伝子のコドン使用
+    # Codon usage for all individual genes (>100 codons in length)
+    seqs <- seqs[sapply(seqs, length) > 300]    cu.seqs <- t(sapply(seqs, uco, index="rscu"))
+
     # 全遺伝子群のコドン使用
     # Codon usage for the collection of all genes (average gene)
     cu.all <- uco(unlist(seqs), index="rscu")
@@ -1026,10 +1030,6 @@ PHX解析では、
     TF <- grepl(pattern = "ribosomal subunit protein", x = getAnnot(seqs), ignore.case = TRUE)
     sum(TF) # unlist(getAnnot(seqs[TF]))
     cu.high <- uco(unlist(seqs[TF]), index="rscu")
-
-    # 各遺伝子のコドン使用
-    # Codon usage for all individual genes (>100 codons in length)
-    seqs <- seqs[sapply(seqs, length) > 300]    cu.seqs <- t(sapply(seqs, uco, index="rscu"))
 
     # 遺伝子グループ間のコドン使用の差（距離）
     # Codon usage difference between genes
