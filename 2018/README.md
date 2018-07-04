@@ -8,12 +8,11 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 生命動態のデータサイエンス/生命情報解析
 [シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_41550&ks=B3206)  
 
-- 科目概要：この授業では、コンピュータ実習を通して、バイオインフォマティクスの実践的な技術（DNAやタンパク質の配列解析）を習得する。
-- 成績評価：提出課題と最終発表とレポート
-- 参考文献
-  - [Conrad Bessant; Darren Oakley; Ian Shadforth - Building Bioinformatics Solutions 2nd edition, Oxford University Press, 2014, 368p.](https://github.com/haruosuz/books/tree/master/bbs) 
-  - [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
-  - [Wim P. Krijnen (2009) "Applied Statistics for Bioinformatics using R"](https://github.com/haruosuz/r4bioinfo/tree/master/R_Wim_Krijnen)
+## References
+**参考文献**
+- [Conrad Bessant; Darren Oakley; Ian Shadforth - Building Bioinformatics Solutions 2nd edition, Oxford University Press, 2014, 368p.](https://github.com/haruosuz/books/tree/master/bbs) 
+- [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
+- [Wim P. Krijnen (2009) "Applied Statistics for Bioinformatics using R"](https://github.com/haruosuz/r4bioinfo/tree/master/R_Wim_Krijnen)
 
 ## Class Schedule & Materials
 **講義日程と資料**
@@ -40,14 +39,15 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
   - [SeqinR](https://github.com/haruosuz/r4bioinfo/blob/master/R_seqinR/README.md)
   - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly_reports)
 - 2017-07-10 No. 13 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md) | ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
-- 2017-07-17 No. 14 - 最終発表 Oral presentation
+- 2017-07-17 No. 14 - 最終発表 final presentation
 - 2017-07-24 レポート提出期限 Deadline for final report
 
 ----------
-## interim report
-**中間発表**
+## final presentation
+**最終発表**
 
-スライド1枚以上を用いてプロジェクト（解析対象の生物や遺伝子）について説明する。  
+5 minutes will be allocated for each presentation, including presentation and discussion.
+
 発表時間：1人あたり最大5分（質疑応答を含む）
 
 ----------
@@ -62,6 +62,15 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 講師: 山中 遼太 氏 [Dr. Ryota Yamanaka](http://www.genome.rcast.u-tokyo.ac.jp/872) (Oracle)
 - 演題: [ネットワーク分析とグラフデータベース／データ分析プラットフォーム](https://dl.dropboxusercontent.com/s/u20ej6bq7c7uwzr/Yamanaka_20180619_01.pptx)
   - Case Study [2018-06-19](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#2018-06-19) にRコードを記載しました。
+
+----------
+## interim report
+**中間発表**
+
+5 minutes will be allocated for each presentation, including presentation and discussion.
+
+スライド1枚以上を用いてプロジェクト（解析対象の生物や遺伝子）について説明する。  
+発表時間：1人あたり最大5分（質疑応答を含む）
 
 ----------
 
