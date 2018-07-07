@@ -20,7 +20,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2018-06-19](#2018-06-19) network
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 - [codon usage](#codon-usage) コドン使用
-- [Sequence Similarity Search](#sequence-similarity-search) 配列類似性検索
+- [Sequence Similarity Search](#sequence-database-search) 配列データベース検索
 
 ----------
 
@@ -1088,8 +1088,8 @@ PHX解析では、
 psbA gene
 
 ----------
-## Sequence Similarity Search
-**配列類似性検索**
+## Sequence database search
+**配列データベース検索**
 
 [(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
 「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
