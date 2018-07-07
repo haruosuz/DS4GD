@@ -1197,12 +1197,12 @@ BLASTの実行:
 
     # Running BLAST
     blastp -db $DB -query query_prot.fasta
-    blastp -db $DB -query query_prot.fasta -evalue 1e-10 -num_threads 4 -outfmt 7 -out blastp-out.txt
+    blastp -db $DB -query query_prot.fasta -outfmt 7 -out blastp-out.txt -evalue 1e-10 -num_threads 4
 
 `blastdbcmd`コマンドで、ヒットした配列をBLAST用DBから取得:  
 
     # Inspecting and Manipulating BLAST output
-    grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | head -n 6 | blastdbcmd -db $DB -entry_batch - > subject.fasta
+    grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | blastdbcmd -db $DB -entry_batch - > subject.fasta
 
 ### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
 多重配列アライメントと系統樹
@@ -1312,7 +1312,7 @@ BLASTの実行:
 BLASTの実行:  
 
     # Running BLAST
-    blastp -db $DB -query query_prot.fasta -evalue 1e-10 -num_threads 4 -max_target_seqs 1 -max_hsps 1 -outfmt 7 -out blastp-out.txt
+    blastp -db $DB -query query_prot.fasta -outfmt 7 -out blastp-out.txt -evalue 1e-10 -num_threads 4 -max_target_seqs 1
 
 `blastdbcmd`コマンドで、ヒットした配列をBLAST用DBから取得:  
 
