@@ -20,10 +20,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2018-06-19](#2018-06-19) network
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 - [codon usage](#codon-usage) コドン使用
-- [uniprot_sprot](#uniprot_sprot)
-
-
-
+- [uniprot_sprot](#uniprot_sprot) Swiss-Protタンパク質配列データベース
 
 ----------
 ## Working with Data in R
@@ -397,6 +394,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     # Download File from the Internet
     curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], "_genomic.fna.gz" )
     #curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], "_cds_from_genomic.fna.gz" )
+    #curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], "_protein.faa.gz" )
     download.file(url = curl, destfile = basename(curl))
 
 `read.fasta()`関数で配列データを読み込む:  
@@ -406,9 +404,9 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     basename(curl)
     seqs <- read.fasta(file = basename(curl), seqtype = c("DNA"), strip.desc = TRUE)
     #seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
-  
+
     length(seqs) # get the number of elements
-    unlist(getAnnot(seqs)) # get sequence annotations  
+    unlist(getAnnot(seqs)) # get sequence annotations
 
 - [24. apply() ファミリー](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/24.html)
 
@@ -1002,10 +1000,18 @@ uco Codon usage indices
 
 [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 
+配列データを取得
+
     # Retrieving sequence data
-    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2" # Escherichia coli str. K-12 substr. MG1655
-    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_cds_from_genomic.fna.gz" )
+
+    # Load the SeqinR package
     library(seqinr)
+
+    # the path to the FTP directory containing the data
+    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2" # Escherichia coli str. K-12 substr. MG1655
+
+    # "_cds_from_genomic.fna.gz"
+    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_cds_from_genomic.fna.gz" )
     seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
     length(seqs) # Print out the number of sequences retrieved
     seq1 <- seqs[[1]]
@@ -1189,7 +1195,7 @@ BLASTの実行:
 
     # Running BLAST
     blastp -db $DB -query query_prot.fasta
-    blastp -db $DB -query query_prot.fasta -evalue 1e-10 -outfmt 7 -out blastp-out.txt
+    blastp -db $DB -query query_prot.fasta -evalue 1e-10 -num_threads 4 -outfmt 7 -out blastp-out.txt
 
 `blastdbcmd`コマンドで、ヒットした配列をBLAST用DBから取得:  
 
@@ -1207,10 +1213,6 @@ BLASTの実行:
 
     # Usage: mafft [arguments] input > output
     mafft unaligned.mfa > aligned.mfa
-
-[Jalviewを使って配列解析・系統樹作成をする 2013](http://doi.org/10.7875/togotv.2013.049)
-
-[MEGA7を使って配列のアラインメント・系統解析を行う](http://doi.org/10.7875/togotv.2017.106)
 
 [SeaView](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/seaview2.html)でアライメントを表示する。
 
@@ -1238,14 +1240,14 @@ BLASTの実行:
 
     # 無根系統樹の構築
     # Building an unrooted phylogenetic tree
-    #install.packages("ape")
     library(ape)
     mytree <- nj(mydist)
     plot.phylo(mytree, type = "unrooted") # type = "phylogram", "cladogram", "fan", "unrooted", "radial"
 
     # 有根系統樹の構築
     # Building a rooted phylogenetic tree
-    #library(phangorn)
+    #install.packages("phangorn")
+    library(phangorn)
     mytree <- midpoint(mytree) # midpoint rooting
     plot.phylo(ladderize(mytree, right = FALSE), main = "Phylogenetic Tree")
 
@@ -1254,5 +1256,63 @@ BLASTの実行:
     write.tree(mytree, file="mytree.newick")
 
 [SeaView](http://doua.prabi.fr/software/seaview)でnewick形式ファイルの系統樹を表示する。
+
+----------
+
+[NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
+
+配列データを取得
+
+    # Retrieving sequence data
+
+    # Load the SeqinR package
+    library(seqinr)
+
+    # the path to the FTP directory containing the data
+    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2" # Escherichia coli str. K-12 substr. MG1655
+
+    # "_cds_from_genomic.fna.gz"
+    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_cds_from_genomic.fna.gz" )
+    seqs.cds <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
+    length(seqs.cds) # Print out the number of sequences retrieved
+    seqs.cds.trans <- getTrans(seqs.cds)
+
+    # "_protein.faa.gz"
+    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_protein.faa.gz" )
+    seqs.faa <- read.fasta(file = gzcon(url(curl)), seqtype = c("AA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
+    length(seqs.faa) # Print out the number of sequences retrieved
+
+    seqs.cds.trans[[1]]
+    seqs.faa[[1]]
+
+[`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
+関数を用いて、配列のアノテーションを取得する:  
+
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    # grepl returns a logical vector (match or not for each element of x).
+    pattern <- "translation elongation factor EF-Tu"
+    TF <- grepl(pattern = pattern, x = getAnnot(seqs.faa), ignore.case = TRUE)
+    sum(TF)
+    getAnnot(seqs.faa[TF])
+
+`write.fasta()`関数を用いて、配列データをFASTA形式ファイルとして書き出す:  
+
+    # Writing sequence data out as a FASTA file
+    write.fasta(sequences = seqs.faa[TF], names = getAnnot(seqs.faa[TF]), file.out = "query_prot.fasta")
+
+![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+
+    # create a variable and assign it a value
+    DB="uniprot_sprot.fasta"
+
+BLASTの実行:  
+
+    # Running BLAST
+    blastp -db $DB -query query_prot.fasta -evalue 1e-10 -num_threads 4 -max_target_seqs 1 -max_hsps 1 -outfmt 7 -out blastp-out.txt
+
+`blastdbcmd`コマンドで、ヒットした配列をBLAST用DBから取得:  
+
+    # Inspecting and Manipulating BLAST output
+    grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | blastdbcmd -db $DB -entry_batch - > subject.fasta
 
 ----------
