@@ -1201,7 +1201,7 @@ BLASTの実行:
 
 `blastdbcmd`コマンドで、ヒットした配列をBLAST用DBから取得:  
 
-    # Inspecting and Manipulating BLAST output
+    # Extracting data from BLAST databases with blastdbcmd
     grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | blastdbcmd -db $DB -entry_batch - > subject.fasta
 
 ### Multiple Alignment and Phylogenetic trees
@@ -1209,11 +1209,12 @@ BLASTの実行:
 
 [ファイルのシンボリックリンクを作成する](http://www.atmarkit.co.jp/ait/articles/1605/30/news022.html):  
 
+    # create soft/symbolic link
     ln -s subject.fasta unaligned.mfa
 
 [MAFFTを使ってマルチプルアラインメントを行う](http://doi.org/10.7875/togotv.2015.035)
 
-    # Usage: mafft [arguments] input > output
+    # Multiple Sequence Alignment using MAFFT
     mafft unaligned.mfa > aligned.mfa
 
 [SeaView](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/seaview2.html)でアライメントを表示する。
@@ -1278,13 +1279,12 @@ BLASTの実行:
     seqs.cds <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
     length(seqs.cds) # Print out the number of sequences retrieved
     seqs.cds.trans <- getTrans(seqs.cds)
+    seqs.cds.trans[[1]]
 
     # "_protein.faa.gz"
     curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_protein.faa.gz" )
     seqs.faa <- read.fasta(file = gzcon(url(curl)), seqtype = c("AA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
     length(seqs.faa) # Print out the number of sequences retrieved
-
-    seqs.cds.trans[[1]]
     seqs.faa[[1]]
 
 [`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
@@ -1314,8 +1314,9 @@ BLASTの実行:
 
 `blastdbcmd`コマンドで、ヒットした配列をBLAST用DBから取得:  
 
-    # Inspecting and Manipulating BLAST output
+    # Extracting data from BLAST databases with blastdbcmd
     grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | blastdbcmd -db $DB -entry_batch - > subject.fasta
 
 ----------
+
 
