@@ -867,7 +867,11 @@ Rコード
 	## さらに、ノード間の平均距離を調べてみます。
 	average.path.length(g)
 
-- [Pellegrini M et al. (1999) "Assigning protein functions by comparative genome analysis: protein phylogenetic profiles."](https://www.ncbi.nlm.nih.gov/pubmed/10200254)
+- 系統プロファイル [Pellegrini M et al. (1999) "Assigning protein functions by comparative genome analysis: protein phylogenetic profiles."](https://www.ncbi.nlm.nih.gov/pubmed/10200254)
+- 遺伝子共有ネットワーク [gene-sharing networks](https://github.com/haruosuz/plasmids#gene-sharing)
+- [Halary S et al. (2010) "Network analyses structure genetic diversity in independent genetic worlds."](https://www.ncbi.nlm.nih.gov/pubmed/20007769)
+
+![https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2806761/figure/fig01/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2806761/bin/pnas.0908978107fig01.jpg)
 
 ----------
 ## assignment 10
@@ -1108,7 +1112,7 @@ Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
 圧縮ファイル（*uniprot_sprot.fasta.gz*）を`wget`または`curl`でダウンロードする:  
 
     # download data with wget and curl
-   #wget -b ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
+      #wget ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
     curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
 
 `gunzip`コマンドでファイルを展開する:  
@@ -1154,47 +1158,16 @@ Pipe the standard output to the next command with the pipe character (|).
     # wc -l outputs the number of lines
     grep "^>" uniprot_sprot.fasta | wc -l
 
-日本語にちなんで命名されたタンパク質遺伝子 [harakiri, Izumo, Musashi, Shugoshin, Tonsoku](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#.E9.96.A2.E9.80.A3.E9.A0.85.E7.9B.AE) を検索する。
-
-    # use grep to find a gene "harakiri"
-    grep "^>" uniprot_sprot.fasta | grep "harakiri"
-
-    # use grep to count (the -c option stands for count) the number of lines matching the pattern
-    grep "^>" uniprot_sprot.fasta | grep -c "Shugoshin"
-
-    # add the option -i to grep to be case insensitive.
-    grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
-
-`grep`コマンドは、`-c`オプションでパターンにマッチした行数を表示し、`-i`オプションで大文字小文字を区別しない（ignore case）。
-
-**"harakiri"検索結果**
-
-    # Search Results for "harakiri". There are 3 entries for in the FASTA file.
-    >sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens GN=HRK PE=1 SV=1
-    >sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus GN=Hrk PE=3 SV=1
-    >sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus GN=Hrk PE=3 SV=1
-
-"harakiri"遺伝子は3件登録されていた。
-タンパク質名(`ProteinName`)は`Activator of apoptosis harakiri`。
-生物名(`OS=OrganismName`)より、ヒト(`Homo sapiens`)、ハツカネズミ(`Mus musculus`)、ドブネズミ(`Rattus norvegicus`)の3種に由来する配列であることがわかる。
-遺伝子名(`GN=GeneName`)に大文字と小文字（`GN=HRK`と`GN=Hrk`）が存在した。
-
-**"Shugoshin"検索結果**
-
-    # Search Results for "Shugoshin". There are 19 entries for in the FASTA file.
-    >sp|Q0WTB8|SGO2_ARATH SHUGOSHIN 2 OS=Arabidopsis thaliana GN=SGO2 PE=2 SV=1
-    >sp|Q562F6|SGO2_HUMAN Shugoshin 2 OS=Homo sapiens GN=SGO2 PE=1 SV=2
-    >sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus GN=Sgo2 PE=1 SV=1
-    >sp|O13734|SGO2_SCHPO Shugoshin-2 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) GN=sgo2 PE=1 SV=1
-
-"Shugoshin"にマッチする遺伝子は20件登録されていた。
-タンパク質名(`SHUGOSHIN 2, Shugoshin 2, Shugoshin-2`)と遺伝子名(`SGO2, Sgo2, sgo2`)に表記揺れ（用語の不統一、大文字と小文字）が認められた。
-
 ### [BLAST](https://github.com/haruosuz/bioinfo/blob/master/README.md#blast)
+
+[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
+「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
+[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
+
 [__BLAST(Basic Local Alignment Search Tool)__ はNCBIで開発された配列類似性検索のためのツール。
 BLASTのquery配列はFASTA形式、コマンドラインツールを利用する際のDBとして はmulti-FASTA形式の塩基 OR アミノ酸配列である必要がある。](https://github.com/dogrunjp/presentation/blob/master/20171216_drbonobon_4/PITCHME.md)
 
-変数に値（ファイル名）を割り当てる:  
+[変数に値を設定する](https://shellscript.sunone.me/variable.html#変数に値を設定する):  
 
     # create a variable and assign it a value
     DB="uniprot_sprot.fasta"
@@ -1224,9 +1197,9 @@ BLASTの実行:
 ### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
 多重配列アライメントと系統樹
 
-    ln -s subject.fasta unaligned.mfa
+[ファイルのシンボリックリンクを作成する](http://www.atmarkit.co.jp/ait/articles/1605/30/news022.html):  
 
-https://mafft.cbrc.jp/alignment/software/
+    ln -s subject.fasta unaligned.mfa
 
 [MAFFTを使ってマルチプルアラインメントを行う](http://doi.org/10.7875/togotv.2015.035)
 
