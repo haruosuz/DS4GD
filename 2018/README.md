@@ -38,8 +38,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2017-07-03 No. 12 - コドン使用 [codon usage](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage)
   - [SeqinR](https://github.com/haruosuz/r4bioinfo/blob/master/R_seqinR/README.md)
   - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly_reports)
-- 2017-07-10 No. 13 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md)
-  - Swiss-Protタンパク質配列データベース [uniprot_sprot](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#uniprot_sprot)
+- 2017-07-10 No. 13 - Swiss-Protタンパク質配列データベース [uniprot_sprot](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#uniprot_sprot)
 - 2017-07-17 No. 14 - 最終発表 final presentation
 - 2017-07-24 レポート提出期限 Deadline for final report
 
@@ -105,7 +104,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 #### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
 [SILVA rRNA database](https://www.arb-silva.de)
 
-![http://www.arb-silva.de/documentation/sina-tutorial/](http://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/aligner_basic01.png)
+![http://www.arb-silva.de/documentation/sina-tutorial/](https://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/01_input_dataset.png)
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 [UniProt](https://ja.wikipedia.org/wiki/Swiss-Prot)
