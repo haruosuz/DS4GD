@@ -982,6 +982,7 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
 
 - g-language Tutorials [Codon usage analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#codon_usage_analysis) [コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
 - [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
+- 葉緑体遺伝子のコドン使用 [Suzuki H, Morton BR. (2016) "Codon Adaptation of Plastid Genes."](http://www.ncbi.nlm.nih.gov/pubmed/27196606) psbA gene
 - コドン使用に基づく高発現・外来性遺伝子予測 Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes
   - [PHX/PA user guide](http://www.cmbl.uga.edu/software/PHX-PA-guide.htm)
   - [Karlin S, Mrázek J. (2000) "Predicted highly expressed genes of diverse prokaryotic genomes."](https://www.ncbi.nlm.nih.gov/pubmed/10960111)
@@ -1025,11 +1026,11 @@ uco Codon usage indices
 
 Compute codon usage differences between gene classes for identifying Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes.
 
-PHX解析では、
+ここでは、
 全遺伝子群のコドン使用からの差 (BgC) が大きく、
 高発現遺伝子群のコドン使用からの差 (BgH) が小さく、
-発現量予測値 (E_g = BgC/BgH) が1.0より大きい遺伝子を高発現と予測する。
-また、コドン使用が全遺伝子群と高発現遺伝子群の何れとも異なる遺伝子を外来性 (Putative Alien; PA) と予測する。
+発現量予測値 (E_g = BgC/BgH) が1.0より大きい遺伝子を高発現と予測する Predicted Highly eXpressed (PHX)。
+また、コドン使用が全遺伝子群と高発現遺伝子群の何れとも異なる遺伝子を外来性と予測する Putative Alien (PA)。
 
     # 各遺伝子のコドン使用
     # Codon usage for all individual genes (>100 codons in length)
@@ -1083,9 +1084,6 @@ PHX解析では、
 
     # open current working directory
     system("open .")
-
-- [Suzuki H, Morton BR. (2016) "Codon Adaptation of Plastid Genes."](http://www.ncbi.nlm.nih.gov/pubmed/27196606)
-psbA gene
 
 ----------
 ## Sequence database search
@@ -1241,6 +1239,8 @@ BLASTの実行:
     # タンパク質配列間の遺伝的距離を計算する
     # Calculating genetic distances between protein sequences
     mydist <- dist.alignment(myaln)
+
+	par(family="mono")
 
     # 無根系統樹の構築
     # Building an unrooted phylogenetic tree
