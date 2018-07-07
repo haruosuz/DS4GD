@@ -23,6 +23,12 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [uniprot_sprot](#uniprot_sprot) Swiss-Protタンパク質配列データベース
 
 ----------
+
+[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+
+    # change shell to bash
+    bash
+
 ## Working with Data in R
 
 [R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
@@ -719,9 +725,7 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
     dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
     dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
 
-![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
-
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
 
     # change shell to bash
     bash
@@ -1100,9 +1104,7 @@ Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
 ### Downloading data
 データのダウンロード
 
-![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
-
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
 
     # change shell to bash
     bash
@@ -1300,7 +1302,7 @@ BLASTの実行:
     # Writing sequence data out as a FASTA file
     write.fasta(sequences = seqs.faa[TF], names = getAnnot(seqs.faa[TF]), file.out = "query_prot.fasta")
 
-![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
 
     # create a variable and assign it a value
     DB="uniprot_sprot.fasta"
