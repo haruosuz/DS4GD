@@ -20,7 +20,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2018-06-19](#2018-06-19) network
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 - [codon usage](#codon-usage) コドン使用
-- [uniprot_sprot](#uniprot_sprot) Swiss-Protタンパク質配列データベース
+- [Sequence Similarity Search](#sequence-similarity-search) 配列類似性検索
 
 ----------
 
@@ -1088,8 +1088,15 @@ PHX解析では、
 psbA gene
 
 ----------
-## uniprot_sprot
-**UniProtKB Swiss-Prot protein sequence database**
+## Sequence Similarity Search
+**配列類似性検索**
+
+[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
+「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
+[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
+
+### Downloading data
+データのダウンロード
 
 [Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース
 
@@ -1100,9 +1107,6 @@ psbA gene
 Go the UniProt website (http://www.uniprot.org), and then click the link "Download latest release".  
 Open the URL <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> with your browser (Firefox or Chrome).  
 Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
-
-### Downloading data
-データのダウンロード
 
 ![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
 
@@ -1170,10 +1174,6 @@ Pipe the standard output to the next command with the pipe character (|).
 
 ### [BLAST](https://github.com/haruosuz/bioinfo/blob/master/README.md#blast)
 
-[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
-「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
-[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
-
 [__BLAST(Basic Local Alignment Search Tool)__ はNCBIで開発された配列類似性検索のためのツール。
 BLASTのquery配列はFASTA形式、コマンドラインツールを利用する際のDBとして はmulti-FASTA形式の塩基 OR アミノ酸配列である必要がある。](https://github.com/dogrunjp/presentation/blob/master/20171216_drbonobon_4/PITCHME.md)
 
@@ -1218,8 +1218,6 @@ BLASTの実行:
 
 [SeaView](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/seaview2.html)でアライメントを表示する。
 
-### Working with Data in R
-
 ![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
@@ -1261,9 +1259,7 @@ BLASTの実行:
 
 [SeaView](http://doua.prabi.fr/software/seaview)でnewick形式ファイルの系統樹を表示する。
 
-----------
-
-[NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
+### [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 
 配列データを取得
 
@@ -1294,7 +1290,7 @@ BLASTの実行:
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x).
-    pattern <- "translation elongation factor EF-Tu"
+    pattern <- "translation elongation factor"
     TF <- grepl(pattern = pattern, x = getAnnot(seqs.faa), ignore.case = TRUE)
     sum(TF)
     getAnnot(seqs.faa[TF])
