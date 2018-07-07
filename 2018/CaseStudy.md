@@ -1220,6 +1220,8 @@ BLASTの実行:
 
 ### Working with Data in R
 
+![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
+
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
     WorkingDirectory <- "~/projects/uniprot_sprot/data"
