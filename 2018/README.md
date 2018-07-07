@@ -38,7 +38,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2017-07-03 No. 12 - コドン使用 [codon usage](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage)
   - [SeqinR](https://github.com/haruosuz/r4bioinfo/blob/master/R_seqinR/README.md)
   - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly_reports)
-- 2017-07-10 No. 13 - Swiss-Protタンパク質配列データベース [uniprot_sprot](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#uniprot_sprot)
+- 2017-07-10 No. 13 - 配列データベース検索 [Sequence database search](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#sequence-database-search)
 - 2017-07-17 No. 14 - 最終発表 final presentation
 - 2017-07-24 レポート提出期限 Deadline for final report
 
