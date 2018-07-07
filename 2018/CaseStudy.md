@@ -20,6 +20,10 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2018-06-19](#2018-06-19) network
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 - [codon usage](#codon-usage) コドン使用
+- [uniprot_sprot](#uniprot_sprot)
+
+
+
 
 ----------
 ## Working with Data in R
@@ -143,10 +147,6 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 列**Type**のChrは染色体、Plsmはプラスミドを指す。
 
 ### Working with Data in R
-
-[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
-
-![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
 
 NCBIからDNA配列を取得する:  
 
@@ -1078,7 +1078,9 @@ PHX解析では、
 psbA gene
 
 ----------
-## UniProtKB Swiss-Prot protein sequence database
+## uniprot_sprot
+**UniProtKB Swiss-Prot protein sequence database**
+
 [Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース
 
 [UniProt](http://www.uniprot.org)の[Download latest release](http://www.uniprot.org/downloads)を開く。  
@@ -1208,6 +1210,49 @@ BLASTの実行:
 
 [Jalviewを使って配列解析・系統樹作成をする 2013](http://doi.org/10.7875/togotv.2013.049)
 
+[MEGA7を使って配列のアラインメント・系統解析を行う](http://doi.org/10.7875/togotv.2017.106)
 
+[SeaView](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/seaview2.html)でアライメントを表示する。
+
+### Working with Data in R
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    WorkingDirectory <- "~/projects/uniprot_sprot/data"
+
+    # Set and Get Working Directory
+    setwd(WorkingDirectory)
+    getwd()
+
+    # List the Files in a Directory
+    dir()
+
+    # 多重アライメントのファイルをRに読み込む
+    # Reading a multiple alignment file into R
+    library(seqinr)
+    myaln <- read.alignment(file = "aligned.mfa", format = "fasta")
+
+    # タンパク質配列間の遺伝的距離を計算する
+    # Calculating genetic distances between protein sequences
+    mydist <- dist.alignment(myaln)
+
+    # 無根系統樹の構築
+    # Building an unrooted phylogenetic tree
+    #install.packages("ape")
+    library(ape)
+    mytree <- nj(mydist)
+    plot.phylo(mytree, type = "unrooted") # type = "phylogram", "cladogram", "fan", "unrooted", "radial"
+
+    # 有根系統樹の構築
+    # Building a rooted phylogenetic tree
+    #library(phangorn)
+    mytree <- midpoint(mytree) # midpoint rooting
+    plot.phylo(ladderize(mytree, right = FALSE), main = "Phylogenetic Tree")
+
+    # 系統樹をNewick形式ファイルとして保存する
+    # Saving a phylogenetic tree as a Newick-format tree file
+    write.tree(mytree, file="mytree.newick")
+
+[SeaView](http://doua.prabi.fr/software/seaview)でnewick形式ファイルの系統樹を表示する。
 
 ----------
