@@ -20,7 +20,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2018-06-19](#2018-06-19) network
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 - [codon usage](#codon-usage) コドン使用
-- [Sequence Similarity Search](#sequence-database-search) 配列データベース検索
+- [Sequence database search](#sequence-database-search) 配列データベース検索
 
 ----------
 
