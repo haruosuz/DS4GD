@@ -35,20 +35,20 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2018-06-12 No. 9 - [Guest Speaker](#guest-speaker)
 - 2018-06-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2018-06-26 No. 11 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2017-07-03 No. 12 - コドン使用 [codon usage](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage)
+- 2018-07-03 No. 12 - コドン使用 [codon usage](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage)
   - [SeqinR](https://github.com/haruosuz/r4bioinfo/blob/master/R_seqinR/README.md)
   - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly_reports)
-- 2017-07-10 No. 13 - 配列データベース検索 [Sequence database search](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#sequence-database-search)
-- 2017-07-17 No. 14 - 最終発表 final presentation
-- 2017-07-24 レポート提出期限 Deadline for final report
+- 2018-07-10 No. 13 - 配列データベース検索 [Sequence database search](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#sequence-database-search)
+- 2018-07-17 No. 14 - 最終発表 [final presentation](#final-presentation)
+- 2018-07-24 レポート提出期限 Deadline for final report
 
 ----------
 ## final presentation
 **最終発表**
 
-5 minutes will be allocated for each presentation, including presentation and discussion.
+Five minutes will be allocated for each presentation.
 
-発表時間：1人あたり最大5分（質疑応答を含む）
+発表時間：1人あたり最大5分
 
 ----------
 ## Guest speaker
