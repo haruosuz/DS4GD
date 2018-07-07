@@ -1034,24 +1034,28 @@ PHX解析では、
     # 遺伝子グループ間のコドン使用の差（距離）
     # Codon usage difference between genes
 
+    # 各遺伝子と全遺伝子群の距離 (BgC)
     # Distance between a single gene and the collection of all genes
     BgC <- dist(rbind(cu.all, cu.seqs))[1:nrow(cu.seqs)]
 
+    # 各遺伝子と高発現遺伝子群の距離 (BgH)
     # Distance between a single gene and the collection of ribosomal protein genes
     BgH <- dist(rbind(cu.high, cu.seqs))[1:nrow(cu.seqs)]
 
-    # Plot
+    # 散布図
+    # scatter plot
 	par(family="mono")
     plot(BgH, BgC, type="n")
     points(BgH[!TF], BgC[!TF], pch="+", col=1)
     points(BgH[TF], BgC[TF], pch=19, col=2)
     abline(0,1)
 
-    # 遺伝子発現量予測値
+    # 遺伝子発現量予測値 (E_g)
     # Predicted gene expression levels
     E_g <- BgC / BgH
 
-    # Predicted highly expressed (PHX) 
+    # 高発現か否か (PHX: TRUE/FALSE)
+    # Predicted highly expressed (PHX)
     PHX <- E_g > 1.5
 
     # Put values in a dataframe
@@ -1066,7 +1070,171 @@ PHX解析では、
     # open current working directory
     system("open .")
 
-----------
-
 - [Suzuki H, Morton BR. (2016) "Codon Adaptation of Plastid Genes."](http://www.ncbi.nlm.nih.gov/pubmed/27196606)
 psbA gene
+
+----------
+## UniProtKB Swiss-Prot protein sequence database
+[Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース
+
+[UniProt](http://www.uniprot.org)の[Download latest release](http://www.uniprot.org/downloads)を開く。  
+<ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。  
+*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+Go the UniProt website (http://www.uniprot.org), and then click the link "Download latest release".  
+Open the URL <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> with your browser (Firefox or Chrome).  
+Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
+
+### Downloading data
+データのダウンロード
+
+![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
+
+[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+
+    # change shell to bash
+    bash
+
+ディレクトリを作成する:  
+
+    # make directories
+    mkdir -p ~/projects/uniprot_sprot/data
+
+ディレクトリを移動する:  
+
+    # change directories
+    cd ~/projects/uniprot_sprot/data/
+
+圧縮ファイル（*uniprot_sprot.fasta.gz*）を`wget`または`curl`でダウンロードする:  
+
+    # download data with wget and curl
+   #wget -b ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
+    curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
+
+`gunzip`コマンドでファイルを展開する:  
+
+    # decompress files with the command gunzip
+    gunzip -c uniprot_sprot.fasta.gz > uniprot_sprot.fasta
+
+### Inspecting data
+データの検査 
+
+`ls -lh`でファイルサイズを確認する:  
+
+    # ls -lh reports human-readable file sizes
+    ls -lh
+
+[`cat`](https://ja.wikipedia.org/wiki/Cat_%28UNIX%29)でファイルを標準出力する（Control-Cで動作中のプロセスを停止）:  
+
+    # print a file's contents to standard out (use Control-C to stop)
+    cat uniprot_sprot.fasta
+
+[`head`](http://codezine.jp/unixdic/w/head)で先頭部分を表示する:  
+[`tail`](http://codezine.jp/unixdic/w/tail)で末尾部分を表示する:  
+
+    # inspect data with Head and Tail
+    head -n 3 uniprot_sprot.fasta
+    tail -n 3 uniprot_sprot.fasta
+
+Extract [FASTA headers](http://www.uniprot.org/help/fasta-headers):
+
+    >db|UniqueIdentifier|EntryName ProteinName OS=OrganismName[ GN=GeneName]PE=ProteinExistence SV=SequenceVersion
+
+`grep`で、[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式ファイルのヘッダ（`>`で始まる行）にマッチする行を抽出する:  
+
+    # use grep to extract lines matching the pattern "^>"
+    grep "^>" uniprot_sprot.fasta
+
+Pipe the standard output to the next command with the pipe character (|).
+
+[パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)でプログラムの入出力をつなぐ。
+
+配列の数をカウントする:  
+
+    # wc -l outputs the number of lines
+    grep "^>" uniprot_sprot.fasta | wc -l
+
+日本語にちなんで命名されたタンパク質遺伝子 [harakiri, Izumo, Musashi, Shugoshin, Tonsoku](https://ja.wikipedia.org/wiki/Izumo_%28タンパク質%29#.E9.96.A2.E9.80.A3.E9.A0.85.E7.9B.AE) を検索する。
+
+    # use grep to find a gene "harakiri"
+    grep "^>" uniprot_sprot.fasta | grep "harakiri"
+
+    # use grep to count (the -c option stands for count) the number of lines matching the pattern
+    grep "^>" uniprot_sprot.fasta | grep -c "Shugoshin"
+
+    # add the option -i to grep to be case insensitive.
+    grep "^>" uniprot_sprot.fasta | grep -ci "Shugoshin"
+
+`grep`コマンドは、`-c`オプションでパターンにマッチした行数を表示し、`-i`オプションで大文字小文字を区別しない（ignore case）。
+
+**"harakiri"検索結果**
+
+    # Search Results for "harakiri". There are 3 entries for in the FASTA file.
+    >sp|O00198|HRK_HUMAN Activator of apoptosis harakiri OS=Homo sapiens GN=HRK PE=1 SV=1
+    >sp|P62816|HRK_MOUSE Activator of apoptosis harakiri OS=Mus musculus GN=Hrk PE=3 SV=1
+    >sp|P62817|HRK_RAT Activator of apoptosis harakiri OS=Rattus norvegicus GN=Hrk PE=3 SV=1
+
+"harakiri"遺伝子は3件登録されていた。
+タンパク質名(`ProteinName`)は`Activator of apoptosis harakiri`。
+生物名(`OS=OrganismName`)より、ヒト(`Homo sapiens`)、ハツカネズミ(`Mus musculus`)、ドブネズミ(`Rattus norvegicus`)の3種に由来する配列であることがわかる。
+遺伝子名(`GN=GeneName`)に大文字と小文字（`GN=HRK`と`GN=Hrk`）が存在した。
+
+**"Shugoshin"検索結果**
+
+    # Search Results for "Shugoshin". There are 19 entries for in the FASTA file.
+    >sp|Q0WTB8|SGO2_ARATH SHUGOSHIN 2 OS=Arabidopsis thaliana GN=SGO2 PE=2 SV=1
+    >sp|Q562F6|SGO2_HUMAN Shugoshin 2 OS=Homo sapiens GN=SGO2 PE=1 SV=2
+    >sp|Q7TSY8|SGO2_MOUSE Shugoshin 2 OS=Mus musculus GN=Sgo2 PE=1 SV=1
+    >sp|O13734|SGO2_SCHPO Shugoshin-2 OS=Schizosaccharomyces pombe (strain 972 / ATCC 24843) GN=sgo2 PE=1 SV=1
+
+"Shugoshin"にマッチする遺伝子は20件登録されていた。
+タンパク質名(`SHUGOSHIN 2, Shugoshin 2, Shugoshin-2`)と遺伝子名(`SGO2, Sgo2, sgo2`)に表記揺れ（用語の不統一、大文字と小文字）が認められた。
+
+### [BLAST](https://github.com/haruosuz/bioinfo/blob/master/README.md#blast)
+[__BLAST(Basic Local Alignment Search Tool)__ はNCBIで開発された配列類似性検索のためのツール。
+BLASTのquery配列はFASTA形式、コマンドラインツールを利用する際のDBとして はmulti-FASTA形式の塩基 OR アミノ酸配列である必要がある。](https://github.com/dogrunjp/presentation/blob/master/20171216_drbonobon_4/PITCHME.md)
+
+変数に値（ファイル名）を割り当てる:  
+
+    # create a variable and assign it a value
+    DB="uniprot_sprot.fasta"
+
+`makeblastdb`コマンドで、BLAST用に DB の index を作成する:  
+
+    # Building a BLAST database http://www.ncbi.nlm.nih.gov/books/NBK279688/
+    makeblastdb -in $DB -dbtype prot -hash_index -parse_seqids
+
+`blastdbcmd`コマンドで、[自家製BLAST用DBから必要な配列エントリ取得](https://bonohu.wordpress.com/2014/08/08/yetanother-blastdbcmd/):  
+
+    # Extracting data from BLAST databases with blastdbcmd https://www.ncbi.nlm.nih.gov/books/NBK279689/
+    # >sp|P05833|REPA_ECOLX Protein RepA OS=Escherichia coli OX=562 GN=repA PE=3 SV=1
+    blastdbcmd -db $DB -entry all -outfmt "%i %t" | awk '/P05833|REPA_ECOLX/ {print $1}' | blastdbcmd -db $DB -entry_batch - > query_prot.fasta
+
+BLASTの実行:  
+
+    # Running BLAST
+    blastp -db $DB -query query_prot.fasta
+    blastp -db $DB -query query_prot.fasta -evalue 1e-10 -outfmt 7 -out blastp-out.txt
+
+`blastdbcmd`コマンドで、ヒットした配列をBLAST用DBから取得:  
+
+    # Inspecting and Manipulating BLAST output
+    grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | head -n 6 | blastdbcmd -db $DB -entry_batch - > subject.fasta
+
+### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
+多重配列アライメントと系統樹
+
+    ln -s subject.fasta unaligned.mfa
+
+https://mafft.cbrc.jp/alignment/software/
+
+[MAFFTを使ってマルチプルアラインメントを行う](http://doi.org/10.7875/togotv.2015.035)
+
+    # Usage: mafft [arguments] input > output
+    mafft unaligned.mfa > aligned.mfa
+
+[Jalviewを使って配列解析・系統樹作成をする 2013](http://doi.org/10.7875/togotv.2013.049)
+
+
+
+----------
