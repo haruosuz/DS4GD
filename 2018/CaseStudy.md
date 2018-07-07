@@ -1204,7 +1204,7 @@ BLASTの実行:
     # Inspecting and Manipulating BLAST output
     grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | blastdbcmd -db $DB -entry_batch - > subject.fasta
 
-### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#multiple-alignment-and-phylogenetic-trees)
+### Multiple Alignment and Phylogenetic trees
 多重配列アライメントと系統樹
 
 [ファイルのシンボリックリンクを作成する](http://www.atmarkit.co.jp/ait/articles/1605/30/news022.html):  
@@ -1217,6 +1217,8 @@ BLASTの実行:
     mafft unaligned.mfa > aligned.mfa
 
 [SeaView](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/seaview2.html)でアライメントを表示する。
+
+[SeaView](http://doua.prabi.fr/software/seaview) is a multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny.
 
 ![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
 
@@ -1256,8 +1258,6 @@ BLASTの実行:
     # 系統樹をNewick形式ファイルとして保存する
     # Saving a phylogenetic tree as a Newick-format tree file
     write.tree(mytree, file="mytree.newick")
-
-[SeaView](http://doua.prabi.fr/software/seaview)でnewick形式ファイルの系統樹を表示する。
 
 ### [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 
@@ -1314,50 +1314,6 @@ BLASTの実行:
 
     # Inspecting and Manipulating BLAST output
     grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | blastdbcmd -db $DB -entry_batch - > subject.fasta
-
-----------
-
-- [バックナンバー2006年 | 宮田 隆の進化の話 | これまでのラボ・研究 | 研究 | JT生命誌研究館](https://www.brh.co.jp/research/formerlab/miyata/2006/)
-
-#### [ポリペプチド伸長因子で推定された系統樹](https://www.brh.co.jp/research/formerlab/miyata/2006/post_000001.html)
-
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/16_zu02.gif)
-
-#### [脊椎動物オプシン族の分子系統樹](https://www.brh.co.jp/research/formerlab/miyata/2006/post_000004.html)
-
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/19-zu01.gif)
-
-#### [重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
-
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
-
-#### [血小板由来成長因子レセプター（PDGFR）サブファミリーの系統樹](https://www.brh.co.jp/research/formerlab/miyata/2006/post_000002.html)
-
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/17_zu04.gif)
-
-#### [Gタンパク質族の分子系統樹](https://www.brh.co.jp/seimeishi/journal/029/ss_3.html)
-
-![](https://www.brh.co.jp/seimeishi/journal/029/img/03-3_1.gif)
-
-![](https://www.brh.co.jp/seimeishi/journal/029/img/03-3_2.gif)
-
-#### [四足動物の起源](https://www.brh.co.jp/seimeishi/journal/059/from_brh.html)
-
-![](https://www.brh.co.jp/seimeishi/journal/059/img/from_brh/zu01b.gif)
-
-#### [アクチン遺伝子による分子系統樹](http://park.itc.u-tokyo.ac.jp/pls/research_1.html#1_2)
-
-![](http://park.itc.u-tokyo.ac.jp/pls/image/research_fig01_02.jpg)
-
-#### [ヒトのゲノムにＲＮＡウイルス遺伝子を発見](http://www.jst.go.jp/pr/announce/20100107/)
-
-![](http://www.jst.go.jp/pr/announce/20100107/icons/zu1.gif)
-
-図１　ボルナウイルスのＮ遺伝子とヒトＥＢＬＮとのアミノ酸配列の比較
-
-![](http://www.jst.go.jp/pr/announce/20100107/icons/zu2.gif)
-
-図２　哺乳類ＥＢＬＮと外来性ボルナウイルスのＮ遺伝子領域を用いた系統樹解析
 
 ----------
 
