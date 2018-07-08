@@ -1204,7 +1204,7 @@ BLASTの実行:
     # Extracting data from BLAST databases with blastdbcmd
     grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | head -n 10 | blastdbcmd -db $DB -entry_batch - > mysubject.fasta
 
-### Multiple Alignment and Phylogenetic trees
+### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 多重配列アライメントと系統樹
 
 [MAFFTを使ってマルチプルアラインメントを行う](http://doi.org/10.7875/togotv.2015.035)
@@ -1244,10 +1244,6 @@ BLASTの実行:
     mytree <- nj(mydist)
 	par(family="mono")
     plot.phylo(mytree, type = "unrooted")
-
-    # 系統樹をNewick形式ファイルとして保存する
-    # Saving a phylogenetic tree as a Newick-format tree file
-    write.tree(mytree, file="mytree.newick")
 
 ### [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 
