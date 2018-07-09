@@ -1140,17 +1140,10 @@ Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
     # ls -lh reports human-readable file sizes
     ls -lh
 
-[`cat`](https://ja.wikipedia.org/wiki/Cat_%28UNIX%29)でファイルを標準出力する（Control-Cで動作中のプロセスを停止）:  
-
-    # print a file's contents to standard out (use Control-C to stop)
-    cat uniprot_sprot.fasta
-
 [`head`](http://codezine.jp/unixdic/w/head)で先頭部分を表示する:  
-[`tail`](http://codezine.jp/unixdic/w/tail)で末尾部分を表示する:  
 
-    # inspect data with Head and Tail
+    # inspect data with Head
     head -n 3 uniprot_sprot.fasta
-    tail -n 3 uniprot_sprot.fasta
 
 Extract [FASTA headers](http://www.uniprot.org/help/fasta-headers):
 
