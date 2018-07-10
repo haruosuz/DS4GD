@@ -20,9 +20,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2018-06-19](#2018-06-19) network
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 - [Codon usage](#codon-usage) コドン使用
-- [Sequence database search](#sequence-database-search) 配列データベース検索
+- [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
-- [Silva rRNA database](#silva-rrna-database)
 - [Biological sequence analyses](#biological-sequence-analyses) 生物配列解析
 
 ----------
@@ -1096,8 +1095,8 @@ Compute codon usage differences between gene classes for identifying Predicted H
     system("open .")
 
 ----------
-## Sequence database search
-**配列データベース検索**
+## Sequence similarity search
+**配列類似性検索**
 
 [(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
 「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
@@ -1109,8 +1108,6 @@ Compute codon usage differences between gene classes for identifying Predicted H
 
 ### Downloading data
 データのダウンロード
-
-[Swiss-Prot](https://ja.wikipedia.org/wiki/Swiss-Prot)タンパク質配列データベース
 
 [UniProt](http://www.uniprot.org)の[Download latest release](http://www.uniprot.org/downloads)を開く。  
 <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。  
