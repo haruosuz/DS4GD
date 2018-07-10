@@ -869,6 +869,14 @@ Rコード
 	## さらに、ノード間の平均距離を調べてみます。
 	average.path.length(g)
 
+参考資料
+- Barabasi
+  - Network biology: understanding the cell's functional organization (2004) https://www.nature.com/articles/nrg1272
+  - Network medicine: a network-based approach to human disease (2010) https://www.nature.com/articles/nrg2918
+  - Do your proteins have their own social network? (TED) https://www.tedmed.com/talks/show?id=7282
+  - 書籍「新ネットワーク思考」(2001)
+
+References
 - 系統プロファイル [Pellegrini M et al. (1999) "Assigning protein functions by comparative genome analysis: protein phylogenetic profiles."](https://www.ncbi.nlm.nih.gov/pubmed/10200254)
 - 遺伝子共有ネットワーク [gene-sharing networks](https://github.com/haruosuz/plasmids#gene-sharing)
 - [Halary S et al. (2010) "Network analyses structure genetic diversity in independent genetic worlds."](https://www.ncbi.nlm.nih.gov/pubmed/20007769)
