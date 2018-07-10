@@ -1051,8 +1051,8 @@ Compute codon usage differences between gene classes for identifying Predicted H
 
     # 高発現遺伝子群のコドン使用
     # Codon usage for the collection of highly expressed genes encoding ribosomal proteins
-    pattern <- "translation elongation factor"
     pattern <- "ribosomal subunit protein"
+    #pattern <- "ribosomal"
     TF <- grepl(pattern = pattern, x = getAnnot(seqs), ignore.case = TRUE)
     sum(TF) # unlist(getAnnot(seqs[TF]))
     cu.high <- uco(unlist(seqs[TF]), index="rscu")
