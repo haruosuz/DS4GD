@@ -19,8 +19,9 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
 - [2018-06-19](#2018-06-19) network
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
-- [codon usage](#codon-usage) コドン使用
+- [Codon usage](#codon-usage) コドン使用
 - [Sequence database search](#sequence-database-search) 配列データベース検索
+- [Biological sequence analyses](#biological-sequence-analyses) 生物配列解析
 
 ----------
 
@@ -977,7 +978,7 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
     plot.phylo(mytree, main = "Phylogenetic Tree")
 
 ----------
-## codon usage
+## Codon usage
 **コドン使用**
 
 - g-language Tutorials [Codon usage analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#codon_usage_analysis) [コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
@@ -1278,6 +1279,9 @@ BLASTの実行:
 
 ![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
 
+    # change directories
+    cd ~/projects/uniprot_sprot/data/
+
     # create a variable and assign it a value
     DB="uniprot_sprot.fasta"
 
@@ -1290,5 +1294,48 @@ BLASTの実行:
 
     # Extracting data from BLAST databases with blastdbcmd
     grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | blastdbcmd -db $DB -entry_batch - > mysubject.fasta
+
+----------
+
+## Biological sequence analyses
+**生物配列解析**
+
+微生物のライフスタイルとゲノムの特徴
+
+Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
+
+[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い
+
+[](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/)
+
+Figure 1 [Grouping of halophiles and non-halophiles according to their standardized amino acid usage.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/figure/F1/)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/bin/gb-2008-9-4-r70-1.jpg)
+
+原核生物（細菌と古細菌）のゲノムサイズとGC含量との関係
+
+[Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg)
+
+ウィルスの宿主への適応：コドン使用とアミノ酸使用の解析
+
+[Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/)
+
+[Amino acid distribution and codon usage in viruses infecting taxonomy-unified hosts. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f3/)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f3.jpg)
+
+[Similarity in GC content and codon usage between pairs of viruses and hosts.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f6/)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f6.jpg)
+
+コドン使用に基づく高発現・外来性遺伝子予測
+
+[Characterizations of Highly Expressed Genes of Four Fast-Growing Bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/)
+
+[Genes of ≥100 codons in the four fast-growing bacteria. Each gene is represented by a single point. Its position is determined by its bias relative to all genes B(g|C) and by its bias relative to the RP genes B(g|RP).](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/figure/F1/)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/bin/jb1710100001.jpg)
 
 ----------
