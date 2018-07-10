@@ -1300,11 +1300,21 @@ BLASTの実行:
 ## Biological sequence analyses
 **生物配列解析**
 
-微生物のライフスタイルとゲノムの特徴
+**微生物のライフスタイルとゲノムの特徴**
 
 Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
 
-[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い
+**原核生物のゲノムサイズとGC含量との関係**
+
+Figure 1 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg)
+
+**[好熱菌](https://ja.wikipedia.org/wiki/好熱菌)と常温菌のコドン使用の違い**
+
+[Synonymous codon usage is subject to selection in thermophilic bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/)
+
+**[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
 
 [](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/)
 
@@ -1312,30 +1322,32 @@ Figure 1 [Grouping of halophiles and non-halophiles according to their standardi
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/bin/gb-2008-9-4-r70-1.jpg)
 
-原核生物（細菌と古細菌）のゲノムサイズとGC含量との関係
-
-[Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg)
-
-ウィルスの宿主への適応：コドン使用とアミノ酸使用の解析
+**ウィルスの宿主への適応：コドン使用とアミノ酸使用の解析**
 
 [Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/)
 
-[Amino acid distribution and codon usage in viruses infecting taxonomy-unified hosts. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f3/)
+Figure 3 [Amino acid distribution and codon usage in viruses infecting taxonomy-unified hosts. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f3/)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f3.jpg)
 
-[Similarity in GC content and codon usage between pairs of viruses and hosts.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f6/)
+Figure 6 [Similarity in GC content and codon usage between pairs of viruses and hosts.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f6/)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f6.jpg)
 
-コドン使用に基づく高発現・外来性遺伝子予測
+**コドン使用に基づく高発現遺伝子予測**
 
 [Characterizations of Highly Expressed Genes of Four Fast-Growing Bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/)
 
-[Genes of ≥100 codons in the four fast-growing bacteria. Each gene is represented by a single point. Its position is determined by its bias relative to all genes B(g|C) and by its bias relative to the RP genes B(g|RP).](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/figure/F1/)
+FIG. 1 [Genes of ≥100 codons in the four fast-growing bacteria. Each gene is represented by a single point. Its position is determined by its bias relative to all genes B(g|C) and by its bias relative to the RP genes B(g|RP).](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/figure/F1/)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/bin/jb1710100001.jpg)
+
+**GC含量、連続塩基組成、コドン使用に基づく外来性遺伝子クラスターの検出**
+
+[Karlin S. (2001) "Detecting anomalous gene clusters and pathogenicity islands in diverse bacterial genomes."](https://www.ncbi.nlm.nih.gov/pubmed/11435108)
+
+![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr1.jpg)
+
+![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr2.jpg)
 
 ----------
