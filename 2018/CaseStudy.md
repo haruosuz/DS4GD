@@ -1342,12 +1342,12 @@ FIG. 1 [Genes of ≥100 codons in the four fast-growing bacteria. Each gene is r
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/bin/jb1710100001.jpg)
 
-**GC含量、連続塩基組成、コドン使用に基づく外来性遺伝子クラスターの検出**
+**GC含量、連続塩基組成、アミノ酸・コドン使用に基づく外来性遺伝子クラスターの検出**
 
 [Karlin S. (2001) "Detecting anomalous gene clusters and pathogenicity islands in diverse bacterial genomes."](https://www.ncbi.nlm.nih.gov/pubmed/11435108)
 
-![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr1.jpg)
+Fig. 1. [The contrasts are displayed for 20 and 50 kb sliding window plots of G+C content, genomic signature profiles, codon usage biases and amino acid anomalies for eight different bacterial species.](https://www.sciencedirect.com/science/article/pii/S0966842X01020790#FIG1)
 
-![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr2.jpg)
+![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr1.jpg)
 
 ----------
