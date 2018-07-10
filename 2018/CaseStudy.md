@@ -1038,7 +1038,7 @@ Compute codon usage differences between gene classes for identifying Predicted H
 ここでは、
 全遺伝子群のコドン使用からの差 (BgC) が大きく、
 高発現遺伝子群のコドン使用からの差 (BgH) が小さく、
-発現量予測値 (E_g = BgC/BgH) が1.0より大きい遺伝子を高発現と予測する Predicted Highly eXpressed (PHX)。
+発現量予測値 (E_g = BgC/BgH) が1.5より大きい遺伝子を高発現と予測する Predicted Highly eXpressed (PHX)。
 また、コドン使用が全遺伝子群と高発現遺伝子群の何れとも異なる遺伝子を外来性と予測する Putative Alien (PA)。
 
     # 各遺伝子のコドン使用
@@ -1050,8 +1050,10 @@ Compute codon usage differences between gene classes for identifying Predicted H
     cu.all <- uco(unlist(seqs), index="rscu")
 
     # 高発現遺伝子群のコドン使用
-    # Codon usage for the collection of highly expressed genes encoding translation elongation factors and ribosomal proteins
-    TF <- grepl(pattern = "ribosomal subunit protein", x = getAnnot(seqs), ignore.case = TRUE)
+    # Codon usage for the collection of highly expressed genes encoding ribosomal proteins
+    pattern <- "translation elongation factor"
+    pattern <- "ribosomal subunit protein"
+    TF <- grepl(pattern = pattern, x = getAnnot(seqs), ignore.case = TRUE)
     sum(TF) # unlist(getAnnot(seqs[TF]))
     cu.high <- uco(unlist(seqs[TF]), index="rscu")
 
