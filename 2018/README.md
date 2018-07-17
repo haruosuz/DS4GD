@@ -42,11 +42,13 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
   - [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
   - 生物配列解析 [Biological sequence analyses](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#biological-sequence-analyses)
 - 2018-07-17 No. 14 - 最終発表 [final presentation](#final-presentation)
-- 2018-07-24 レポート提出期限 Deadline for final report
+- 2018-07-24 レポート提出期限 Deadline for [final report](#final-report)
 
 ----------
 ## final report
 **レポート**
+
+Submit your final report in PDF format.
 
 - 提出期限：2018年7月24日(火)  
 - 提出先：SFC-SFSの課題にレポートのファイルを登録する。  
