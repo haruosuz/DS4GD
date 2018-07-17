@@ -45,6 +45,14 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2018-07-24 レポート提出期限 Deadline for final report
 
 ----------
+## final report
+**レポート**
+
+- 提出期限：2018年7月24日(火)  
+- 提出先：SFC-SFSの課題にレポートのファイルを登録する。  
+- 書式：A4で5枚以内。本文以降に付録(appendix)を付けることができる。ファイル容量に注意する。
+
+----------
 ## final presentation
 **最終発表**
 
