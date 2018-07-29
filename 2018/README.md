@@ -39,8 +39,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
   - [SeqinR](https://github.com/haruosuz/r4bioinfo/blob/master/R_seqinR/README.md)
   - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#ncbi-assembly_reports)
 - 2018-07-10 No. 13  - 配列類似性検索 [Sequence similarity search](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#sequence-similarity-search)
-  - [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
-  - 生物配列解析 [Biological sequence analyses](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#biological-sequence-analyses)
+  - タンパク質配列データベース [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
+  - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
 - 2018-07-17 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2018-07-24 レポート提出期限 Deadline for [final report](#final-report)
 
