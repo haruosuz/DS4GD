@@ -21,8 +21,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 - [Codon usage](#codon-usage) コドン使用
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
-- [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database)
-- [Biological sequence analyses](#biological-sequence-analyses) 生物配列解析
+- [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
+- [Genome signature](#genome-signature) ゲノムの特徴
 
 ----------
 
@@ -1316,14 +1316,16 @@ BLASTの実行:
 
 ----------
 
-## Biological sequence analyses
-**生物配列解析**
+## Genome signature
+**ゲノムの特徴**
 
-**微生物のライフスタイルとゲノムの特徴**
+**[微生物の生態とゲノムの特徴](http://meeting-jsme2018.com/symposium.html)**
 
 [Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
 
 [西田洋巳 (2012) ゲノム塩基配列の偏りと生物機能](http://www.iu.a.u-tokyo.ac.jp/~hnishida/tokuron4.htm)
+
+2012-05-23 [ゲノムサインとその生物学的な意味の解明](http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明)
 
 **原核生物のゲノムサイズとGC含量との関係**
 
@@ -1337,7 +1339,7 @@ Figure 1 [Relationship between genome size and GC content for sequenced Bacteria
 
 **[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
 
-[](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/)
+[Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/)
 
 Figure 1 [Grouping of halophiles and non-halophiles according to their standardized amino acid usage.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/figure/F1/)
 
