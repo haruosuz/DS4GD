@@ -4,11 +4,9 @@ Keio SFC
 教室 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
 
 # DS4GD
-GENOME INFORMATICS(GIGA)
-DATA SCIENCE FOR GENOME DYNAMICS[DS2](GIGA/GG/GI) 
+DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_25381&ks=44020&key=9784582d9d1626fe1d3cf9c717c2d120&lang=en)  
-生命情報解析(GIGA)
-生命動態のデータサイエンス[DS2](GIGA/GG/GI) 
+生命動態のデータサイエンス / 生命情報解析(GIGA)
 [シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_25381&ks=44020&key=9784582d9d1626fe1d3cf9c717c2d120&lang=ja)  
 
 ## References
@@ -43,13 +41,11 @@ DATA SCIENCE FOR GENOME DYNAMICS[DS2](GIGA/GG/GI)
 - 2018-12-11 No. 10 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2018-12-18 No. 11 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2018-12-25 No. 12 - [Guest Speaker](#guest-speaker)
-- 2019-01-08 No. 13 - TBA
-- 2019-01-15 No. 14 - 最終発表 [final presentation](#final-presentation)
-- 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
-
- - コドン使用 [Codon usage](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)
+- 2019-01-08 No. 13 - コドン使用 [Codon usage](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)
   - [SeqinR](https://github.com/haruosuz/r4bioinfo/blob/master/R_seqinR/README.md)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#genome-signature)
+- 2019-01-15 No. 14 - 最終発表 [final presentation](#final-presentation)
+- 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
 
 ----------
 ## final report
