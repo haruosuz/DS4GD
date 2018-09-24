@@ -18,65 +18,23 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 ## Class Schedule & Materials
 **講義日程と資料**
 
-[2018年度秋学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/18f_calendar_171211_j.pdf)
-
 - 2018-09-25 No. 1 - イントロダクション [Introduction](#Introduction)
-  - [Building Bioinformatics Solutions](https://github.com/haruosuz/books/tree/master/bbs#chapter-1-introduction)
 - 2018-10-02 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
-  - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 - 2018-10-09 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2018-10-16 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2018-10-23 No. 5 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md)
-  - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#ncbi-genome-list)
-  - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#ncbi-assembly_reports)
-- 2018-10-30 No. 6 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md)
-  - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#ncbi-genome_reports)
+- 2018-10-30 No. 6 - TBA
 - 2018-11-06 No. 7 - 中間発表 [interim report](#interim-report)
-  - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
 - 2018-11-13 前半科目試験日
 - 2018-11-20 午前：前半科目追試 | 午後：三田祭準備
 - 2018-11-27 No. 8 - 配列類似性検索 [Sequence similarity search](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#sequence-similarity-search)
-  - タンパク質配列データベース [UniProtKB Swiss-Prot protein sequence database](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#uniprotkb-swiss-prot-protein-sequence-database)
 - 2018-12-04 No. 9 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2018-12-11 No. 10 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2018-12-18 No. 11 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2018-12-25 No. 12 - [Guest Speaker](#guest-speaker)
-- 2019-01-08 No. 13 - コドン使用 [Codon usage](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)
-  - [SeqinR](https://github.com/haruosuz/r4bioinfo/blob/master/R_seqinR/README.md)
-  - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#genome-signature)
+- 2019-01-08 No. 13 - TBA
 - 2019-01-15 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
-
-----------
-## final report
-**レポート**
-
-Submit your final report in PDF format.
-
-- 提出期限：2018年7月24日(火)  
-- 提出先：SFC-SFSの課題にレポートのファイルを登録する。  
-- 書式：A4で5枚以内。本文以降に付録(appendix)を付けることができる。ファイル容量に注意する。
-
-----------
-## final presentation
-**最終発表**
-
-Five minutes will be allocated for each presentation.
-
-発表時間：1人あたり最大5分
-
-----------
-## Guest speaker
-**特別講演**
-
-----------
-## interim report
-**中間発表**
-
-5 minutes will be allocated for each presentation, including presentation and discussion.
-
-スライド1枚以上を用いてプロジェクト（解析対象の生物や遺伝子）について説明する。  
-発表時間：1人あたり最大5分（質疑応答を含む）
 
 ----------
 
@@ -96,9 +54,9 @@ Five minutes will be allocated for each presentation.
 
 **[Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)**
 
-![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springer.com/springer-cms/rest/v1/content/6629006/data/v1)
+![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springernature.com/springer-cms/rest/v1/content/6629006/data/v1)
 
-- [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+- [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja) | [Jessica Green: Are we filtering the wrong microbes? | TED Talk](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes)
 - [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
 
 ![](https://media.nature.com/m685/nature-assets/ismej/journal/v6/n8/images/ismej2011211f2.jpg)
@@ -125,26 +83,16 @@ Five minutes will be allocated for each presentation.
 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
 iMac Retina 5k 27inch
 
-### Unix
-![http://techacademy.jp/magazine/5155](http://static.techacademy.jp/magazine/wp-content/uploads/2015/01/ss-1-620x375.jpg)
-
-	bash
-
-	wget https://github.com/haruosuz/DS4GD/raw/master/2017/examples_2016.tar.gz
-
 ### R
-R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
+[R: The R Project for Statistical Computing](https://www.r-project.org/)  
+[RStudio](https://www.rstudio.com/products/RStudio/)  
 
-![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
+Take a tour of RStudio’s IDE
 
-	demo(graphics)
-
-	quit()
-
-[R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
+![http://www.sthda.com/english/wiki/running-rstudio-and-setting-up-your-working-directory-easy-r-programming](http://www.sthda.com/sthda/RDoc/images/rstudio.png)
 
 
-### R packages
+#### R packages
 **Rパッケージ**
 
 パッケージ`seqinr`と`ape`のインストール:  
@@ -190,8 +138,7 @@ Print version information:
     ape_4.1
     seqinr_3.3-6       
 
-
-### Warning messages
+#### Warning messages
 
 Warning messages:「no font could be found for family 'Arial'」が出力
 
