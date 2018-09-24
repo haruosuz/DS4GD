@@ -11,14 +11,14 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 
 ## References
 **参考文献**
-- [Conrad Bessant; Darren Oakley; Ian Shadforth - Building Bioinformatics Solutions 2nd edition, Oxford University Press, 2014, 368p.](https://github.com/haruosuz/books/tree/master/bbs) 
+
 - [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
-- [Wim P. Krijnen (2009) "Applied Statistics for Bioinformatics using R"](https://github.com/haruosuz/r4bioinfo/tree/master/R_Wim_Krijnen)
 
 ## Class Schedule & Materials
 **講義日程と資料**
 
 - 2018-09-25 No. 1 - イントロダクション [Introduction](#Introduction)
+
 - 2018-10-02 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2018-10-09 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2018-10-16 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
@@ -71,11 +71,9 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 ![http://www.arb-silva.de/documentation/sina-tutorial/](https://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/01_input_dataset.png)
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
-[UniProt](https://ja.wikipedia.org/wiki/Swiss-Prot)
+[UniProt](https://www.uniprot.org/)
 
-![https://ja.wikipedia.org/wiki/シーケンスアラインメント](https://upload.wikimedia.org/wikipedia/commons/8/86/Zinc-finger-seq-alignment2.png)
-
-2つのヒトジンクフィンガータンパク質の[シーケンスアラインメント](https://ja.wikipedia.org/wiki/シーケンスアラインメント)
+[http://etetoolkit.org/docs/2.3/tutorial/tutorial_phylogeny.html](http://etetoolkit.org/docs/2.3/_images/phylotree.png)
 
 ----------
 
@@ -90,73 +88,6 @@ iMac Retina 5k 27inch
 Take a tour of RStudio’s IDE
 
 ![http://www.sthda.com/english/wiki/running-rstudio-and-setting-up-your-working-directory-easy-r-programming](http://www.sthda.com/sthda/RDoc/images/rstudio.png)
-
-
-#### R packages
-**Rパッケージ**
-
-パッケージ`seqinr`と`ape`のインストール:  
-Install packages [`seqinr`](https://cran.r-project.org/web/packages/seqinr/index.html), [`ape`](https://cran.r-project.org/web/packages/ape/index.html):  
-
-    install.packages("seqinr")
-    install.packages("ape")
-
-Bioconductorパッケージ`Biostrings`と`msa`のインストール:  
-Install Bioconductor packages [`Biostrings`](http://bioconductor.org/packages/release/bioc/html/Biostrings.html), [`msa`](https://bioconductor.org/packages/release/bioc/html/msa.html):  
-
-    source("https://bioconductor.org/biocLite.R")
-    biocLite("Biostrings")
-    biocLite("msa")
-
-パッケージのバージョンを確認:  
-Print the versions of these packages:  
-
-    packageVersion("seqinr")
-    packageVersion("ape")
-    packageVersion("Biostrings")
-    packageVersion("msa")
-
-パッケージの呼び出し:  
-Load the packages into R:  
-
-    library(seqinr)
-    library(ape)
-    library(Biostrings)
-    library(msa)
-
-Print version information:
-
-    > sessionInfo()
-
-    R version 3.3.3 (2017-03-06)
-    Platform: x86_64-apple-darwin13.4.0 (64-bit)
-    Running under: OS X Mavericks 10.9.5
-
-    other attached packages:
-    msa_1.6.0
-    Biostrings_2.42.1
-    ape_4.1
-    seqinr_3.3-6       
-
-#### Warning messages
-
-Warning messages:「no font could be found for family 'Arial'」が出力
-
-On May 15, 2018, at 11:27, CNS-STAFF <cns-staff@sfc.keio.ac.jp> wrote:
-
-検証用アカウント2つで同様のコマンドを試してみましたが、
-同様のエラーは出力されなかったため、個人環境の可能性もありますが、
-以前のように Font を指定してお試しいただけないでしょうか。
-
-	# フォントファミリーを表示する(serif,sans,monoの3つのファミリーがある)
-	quartzFonts()
-
-	# フォントファミリーを指定する
-	par(family="mono")
-	plot(1:10, xlab="a title for the x axis")
-
-	# もしくはコマンド実行時にフォントファミリーを指定することでも対応できます
-	plot(1:10, xlab="a title for the x axis", family="mono")
 
 ----------
 
