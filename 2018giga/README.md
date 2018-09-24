@@ -18,6 +18,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 **講義日程と資料**
 
 - 2018-09-25 No. 1 - イントロダクション [Introduction](#Introduction)
+  - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#genome-signature)
+  - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 - 2018-10-02 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2018-10-09 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2018-10-16 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
@@ -75,10 +77,6 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 ![http://etetoolkit.org/docs/2.3/tutorial/tutorial_phylogeny.html](http://etetoolkit.org/docs/2.3/_images/phylotree.png)
 
 ----------
-
-## Step
-[λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)
-iMac Retina 5k 27inch
 
 ### R
 [R: The R Project for Statistical Computing](https://www.r-project.org/)  
