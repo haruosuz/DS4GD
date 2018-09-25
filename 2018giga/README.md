@@ -17,7 +17,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- 2018-09-25 No. 1 - イントロダクション [Introduction](#Introduction)
+- 2018-09-25 No. 1 - イントロダクション [Introduction](#introduction)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#genome-signature)
   - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 - 2018-10-02 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
