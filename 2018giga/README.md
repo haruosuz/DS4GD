@@ -74,16 +74,16 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 
 ![http://abacus.bates.edu/bioinformatics1/sequencesearch3.html](http://abacus.bates.edu/bioinformatics1/screenshots/NCBI-5-FASTA.jpg)
 
-#### [Multiple Sequence Alignments and Phylogenetic Trees](http://etetoolkit.org/docs/2.3/tutorial/tutorial_phylogeny.html)
+#### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 
-![http://etetoolkit.org/docs/2.3/tutorial/tutorial_phylogeny.html](http://etetoolkit.org/docs/2.3/_images/phylotree.png)
+![https://bioinf.comav.upv.es/courses/biotech3/theory/phylogeny.html](https://bioinf.comav.upv.es/courses/biotech3/static/phylogeny/phylo_msa.png)
 
 ----------
 
-### R
-[R: The R Project for Statistical Computing](https://www.r-project.org/)  
-[RStudio](https://www.rstudio.com/products/RStudio/)  
+### [R: The R Project for Statistical Computing](https://www.r-project.org/)
+R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)  
 
+[RStudio](https://www.rstudio.com/products/RStudio/)
 Take a tour of RStudio’s IDE
 
 ![http://www.sthda.com/english/wiki/running-rstudio-and-setting-up-your-working-directory-easy-r-programming](http://www.sthda.com/sthda/RDoc/images/rstudio.png)
