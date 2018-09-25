@@ -67,12 +67,14 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 ![http://www.quizbiology.com/2013/05/bioinformatics-mcq-quiz.html](http://lh5.ggpht.com/-RVDAcMLXpPQ/UaLVfpoguLI/AAAAAAAAGdw/n8DEk4aPAIg/Bioinformatics%252520Resources%25255B11%25255D.png)
 
 #### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
-[SILVA rRNA database](https://www.arb-silva.de)
 
 ![http://www.arb-silva.de/documentation/sina-tutorial/](https://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/01_input_dataset.png)
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
-[UniProt](https://www.uniprot.org/)
+
+![http://abacus.bates.edu/bioinformatics1/sequencesearch3.html](http://abacus.bates.edu/bioinformatics1/screenshots/NCBI-5-FASTA.jpg)
+
+#### [Multiple Sequence Alignments and Phylogenetic Trees](http://etetoolkit.org/docs/2.3/tutorial/tutorial_phylogeny.html)
 
 ![http://etetoolkit.org/docs/2.3/tutorial/tutorial_phylogeny.html](http://etetoolkit.org/docs/2.3/_images/phylotree.png)
 
