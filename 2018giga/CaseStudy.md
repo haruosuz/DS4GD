@@ -10,7 +10,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
-- [NCBI Genome List](#ncbi-genome-list)
+- [NCBI](#ncbi)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -151,48 +151,21 @@ References:
 https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages
 
 ----------
-## NCBI sequence database
-## NCBI Genome List
-[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列決定プロジェクト一覧
-- FTPサイト ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/
-- ゲノムブラウザ http://www.ncbi.nlm.nih.gov/genome/browse/
+## NCBI
+[国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
 
-ゲノムブラウザ上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、"Search"ボタンを押す。
+[ゲノムブラウザ](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、"Search"ボタンを押す。
 例えば、[ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である[*Borrelia burgdorferi*](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Borrelia%20burgdorferi)を検索し、"Prokaryotes"をクリックすると、[*Borrelia burgdorferi* Strain](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi)一覧が表示されるので、列**Organism Name**の[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。
 **Replicon Info**下の表の列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
 列**Type**のChrは染色体、Plsmはプラスミドを指す。
 
-### Working with Data in R
+[GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
 
-NCBIからDNA配列を取得する:  
-
-    # Retrieving a DNA sequence from NCBI
-    library("seqinr")
-    ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
-    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
-    seq1 <- seqs[[1]]
-    write.fasta(sequences=seq1, names=getAnnot(seq1), file.out=paste0(ACCESSION,".fasta"))
-
-NCBIから複数のDNA配列を取得する:  
-
-    # Retrieving a list of DNA sequences from NCBI
-    library("seqinr")
-
-    # create a function to retrieve several nucleotide sequences from NCBI
-    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
-
-	# Make a vector containing the names of the sequences
-    seqnames <- c("NC_001318", "NC_001856") # Borrelia burgdorferi B31 chromosome (NC_001318) plasmid lp38 (NC_001856)
-
-	# Retrieve the sequences and store them in list variable "seqs"
-    seqs <- lapply(seqnames,  retrieve_ncbi_fna)
-
-	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=seqnames, file.out="mySequences.fasta")
+![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
 
 ----------
 ## assignment 3
-**課題No.3 「DNA Sequence Statistics (1)」**    
+**課題No.3 「DNA Sequence Statistics (1)」**
 
 [Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
 
@@ -204,7 +177,9 @@ NCBIからDNA配列を取得する:
     library("seqinr")
     ACCESSION <- "NC_001477" # Dengue virus 1
     #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"))
+    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
+    filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
+    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
     seq1 <- seqs[[1]]
 
 Q1. What are the last twenty nucleotides of the genome sequence?
