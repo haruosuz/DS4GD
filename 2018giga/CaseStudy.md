@@ -8,7 +8,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ## Table of Contents
 - [assignment 0](#assignment-0) 選抜課題
-- [assignment 1](#assignment-1) 課題No.1 「R言語入門」
+- [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
@@ -76,11 +76,21 @@ http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapte
 
 ----------
 ## assignment 1
-**課題No.1 「R言語入門」**    
+**課題No.1 「Introduction to R」**    
 
-次の動画レッスンを見て、疑問点を報告する。[R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)【回答例】動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
-- 因子ベクトルというものがよくわからなかった。
-- 行列とデータフレームとリストの違いが理解できなかった。
+以下の何れかの動画レッスンを見て、疑問点を報告する。
+Watch one of the following videos and write your comments or questions.- [R言語入門 (全13回)](http://dotinstall.com/lessons/basic_r)
+- [Introduction to R](https://www.youtube.com/watch?v=WiO44CiSPF0&list=PL8eNk_zTBST_KL2gnciUv1oor0ECw8Hqg)
+
+[回答例]
+[Example answer]
+
+[R言語入門 (全13回)](http://dotinstall.com/lessons/basic_r)の動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
+1. 行列とデータフレームとリストの違いが理解できなかった。
+2. 因子ベクトルというものがよくわからなかった。
+
+I watched the videos #3 to #13 of [Introduction to R](https://www.youtube.com/watch?v=WiO44CiSPF0&list=PL8eNk_zTBST_KL2gnciUv1oor0ECw8Hqg). My questions are as follows:
+1. What is difference between dataframe and list in R? 
 
 ----------
 ## assignment 2
