@@ -3,7 +3,7 @@ Keio SFC
 2018年度秋学期 火曜日２時限
 教室 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
 
-# DS4GD
+# 2018
 DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_25381&ks=44020&key=9784582d9d1626fe1d3cf9c717c2d120&lang=en)  
 生命動態のデータサイエンス / 生命情報解析(GIGA)
