@@ -7,6 +7,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 **ケーススタディ**
 
 ## Table of Contents
+- [2018-10-18](#2018-10-18) GIGA
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
@@ -22,6 +23,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
 - [Genome signature](#genome-signature) ゲノムの特徴
+
 
 ----------
 
@@ -42,6 +44,37 @@ R [統合TV | 生命科学系DB・ツール使い倒し系チャンネル](http:
 
     # Get Current Date and Time
     Sys.Date()
+
+----------
+## 2018-10-18
+**Microbial Bioinformatics (Haruo Suzuki)**
+
+http://vu.sfc.keio.ac.jp/course_u/data/2018/title.html
+
+ENVIRONMENT AND INFORMATION STUDIES [1st half of semester](GIGA/GG/GI)【１４】
+[Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_38387&ks=B1002&lang=en)
+
+## References
+- [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
+- [Conrad Bessant; Darren Oakley; Ian Shadforth - Building Bioinformatics Solutions 2nd edition, Oxford University Press, 2014, 368p.](https://github.com/haruosuz/books/tree/master/bbs) 
+
+
+[Building bioinformatics solutions | Chapter 1](http://fdslive.oup.com/www.oup.com/academic/pdf/13/9780199658558_chapter1.pdf)
+
+恐竜のDNA? [Putative dinosaur genomic DNA, partial sequence](https://www.ncbi.nlm.nih.gov/nuccore/U41319.1)  
+"Analyze this sequence" -> "Run BLAST"
+
+[ワイアードが初公開：合成ゲノムに隠された暗号を解読｜WIRED.jp](https://wired.jp/2008/01/29/ワイアードが初公開：合成ゲノムに隠された暗号/)
+[Wired Science Reveals Secret Codes in Craig Venter’s Artificial Genome | WIRED](https://www.wired.com/2008/01/venter-institut/)
+VENTERINSTITVTE
+CRAIGVENTER
+HAMSMITH
+CINDIANDCLYDE
+GLASSANDCLYDE
+
+### [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins)
+
+
 
 ----------
 ## assignment 0
@@ -94,7 +127,7 @@ I watched the videos #3 to #13 of [Introduction to R](https://www.youtube.com/wa
 
 ----------
 ## assignment 2
-**課題No.2 「Installing R packages seqinr & Biostrings」**    
+**課題No.2 「Installing R packages seqinr & Biostrings」**
 
 RパッケージseqinrとBioconductorパッケージBiostringsをインストールする。
 
