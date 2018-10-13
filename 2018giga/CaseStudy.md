@@ -51,7 +51,7 @@ R [統合TV | 生命科学系DB・ツール使い倒し系チャンネル](http:
 
 http://vu.sfc.keio.ac.jp/course_u/data/2018/title.html
 
-ENVIRONMENT AND INFORMATION STUDIES [1st half of semester](GIGA/GG/GI)【１４】
+ENVIRONMENT AND INFORMATION STUDIES (GIGA)
 [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_38387&ks=B1002&lang=en)
 
 ## References
@@ -255,9 +255,20 @@ How can you check that the subsequence that you have looked at is 1000 nucleotid
 ## assignment 4
 **課題No.4 「DNA Sequence Statistics (2)」**
 
-http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises 
+[Exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises)
 
 Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+NCBIからDNA配列を取得する:  
+
+    # Retrieving a DNA sequence from NCBI
+    library("seqinr")
+    ACCESSION <- "NC_001477" # Dengue virus 1
+    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
+    filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
+    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
+    seq1 <- seqs[[1]]
 
 Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
 
