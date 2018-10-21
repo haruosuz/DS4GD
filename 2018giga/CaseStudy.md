@@ -378,9 +378,10 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 [インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
     # Download File from the Internet
-    curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], "_genomic.fna.gz" )
-    #curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], "_cds_from_genomic.fna.gz" )
-    #curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], "_protein.faa.gz" )
+    filesuffix <- "_genomic.fna.gz"
+    #filesuffix <- "_cds_from_genomic.fna.gz"
+    #filesuffix <- "_protein.faa.gz"
+    curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], filesuffix )
     download.file(url = curl, destfile = basename(curl))
 
 `read.fasta()`関数で配列データを読み込む:  
