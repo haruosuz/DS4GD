@@ -285,7 +285,6 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 
 ----------
 
-## NCBI assembly summary
 ## NCBI ASSEMBLY_REPORTS
 [NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列のメタデータが記載されている。
 
