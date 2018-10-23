@@ -885,13 +885,13 @@ https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage
 
 https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
 
-    # Load the SeqinR package
-    library(seqinr)
-
 dotchart.uco Cleveland plot for codon usage tables
 
 uco Codon usage indices
 
+    # Load the SeqinR package
+    library(seqinr)
+    
     ## Show all possible codons:
     words()
     
@@ -929,6 +929,9 @@ uco Codon usage indices
 配列データを取得する:  
 
     # Retrieving sequence data
+
+    # Load the SeqinR package
+    library(seqinr)
 
     # the path to the FTP directory containing the data
     ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2" # Escherichia coli str. K-12 substr. MG1655
