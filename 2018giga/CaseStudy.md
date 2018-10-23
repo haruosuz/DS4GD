@@ -310,7 +310,7 @@ Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.tx
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
-    WorkingDirectory <- "~/projects/ncbi/assembly_reports"
+    WorkingDirectory <- "~/projects/data/ncbi/assembly_reports/"
 
     # Invoke a System Command
     system( paste0("mkdir -p ",WorkingDirectory) )
@@ -439,7 +439,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
-    WorkingDirectory <- "~/projects/ncbi/genome_reports"
+    WorkingDirectory <- "~/projects/data/ncbi/genome_reports"
 
     # Invoke a System Command
     system( paste0("mkdir -p ",WorkingDirectory) )
@@ -500,7 +500,7 @@ NCBIから複数のDNA配列を取得する:
 
 作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
 
-    setwd("~/projects/ncbi/genome_reports")						# Set Working Directory
+    setwd("~/projects/data/ncbi/genome_reports")					# Set Working Directory
     library(seqinr)									# Load the SeqinR package
     seqs <- read.fasta(file = "mySequences.fna", seqtype = c("DNA"), strip.desc = TRUE)	# Reading sequence data
     unlist(getAnnot(seqs))								# get sequence annotations
