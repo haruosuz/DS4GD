@@ -877,69 +877,81 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
 ## Codon usage
 **コドン使用**
 
-- g-language Tutorials [Codon usage analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#codon_usage_analysis) [コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
+https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage
+
 - [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
-- 葉緑体遺伝子のコドン使用 [Suzuki H, Morton BR. (2016) "Codon Adaptation of Plastid Genes."](http://www.ncbi.nlm.nih.gov/pubmed/27196606) psbA gene
-- コドン使用に基づく高発現・外来性遺伝子予測 Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes
-  - [PHX/PA user guide](http://www.cmbl.uga.edu/software/PHX-PA-guide.htm)
-  - [Karlin S, Mrázek J. (2000) "Predicted highly expressed genes of diverse prokaryotic genomes."](https://www.ncbi.nlm.nih.gov/pubmed/10960111)
-  - [Karlin S, Mrázek J, Campbell A, Kaiser D. (2001) "Characterizations of highly expressed genes of four fast-growing bacteria."](https://www.ncbi.nlm.nih.gov/pubmed/11489855)
-  - [Karlin S, Mrazek J. (2001) "Predicted highly expressed and putative alien genes of Deinococcus radiodurans and implications for resistance to ionizing radiation damage." ](https://www.ncbi.nlm.nih.gov/pubmed/11296249)
+- [遺伝子発現量予測](http://bioinfo.ie.niigata-u.ac.jp/?遺伝子発現量予測)
+- [コドン組成に基づくBLSOM解析](http://bioinfo.ie.niigata-u.ac.jp/?コドン組成に基づくBLSOM解析)
 
 https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
 
     # Load the SeqinR package
     library(seqinr)
 
+dotchart.uco Cleveland plot for codon usage tables
+
 uco Codon usage indices
-    ## Show all possible codons:    words()
-    ## Make a coding sequence from this:    (cds <- s2c(paste(words(), collapse = "")))
-    ## Get codon counts:    uco(cds, index = "eff")
-    ## Get codon relative frequencies:    uco(cds, index = "freq")
-    ## Get RSCU values:    uco(cds, index = "rscu")
-    ## Show what happens with ambiguous bases:    uco(s2c("aaannnttt"))
-    ## Use a real coding sequence:
 
-```
+    ## Show all possible codons:
+    words()
+    
+    ## Make a coding sequence from this:
+    (cds <- s2c(paste(words(), collapse = "")))
+    
+    ## Get codon counts:
+    uco(cds, index = "eff")
+    
+    ## Get codon relative frequencies:
+    uco(cds, index = "freq")
+    
+    ## Get RSCU values:
+    uco(cds, index = "rscu")
+    
+    ## Show what happens with ambiguous bases:
+    uco(s2c("aaannnttt"))
+    
+    ## Use a real coding sequence:
+    rcds <- read.fasta(file = system.file("sequences/malM.fasta", package = "seqinr"))[[1]]
+    uco( rcds, index = "freq")
+    uco( rcds, index = "eff")
+    uco( rcds, index = "rscu")
+    uco( rcds, as.data.frame = TRUE)
+    
+    ## Show what happens with RSCU when an amino-acid is missing:
+    ecolicgpe5 <- read.fasta(file = system.file("sequences/ecolicgpe5.fasta",package="seqinr"))[[1]]
+    uco(ecolicgpe5, index = "rscu")
 
-## Show what happens with ambiguous bases:
-uco(s2c("aaannnttt"))
-
-## Use a real coding sequence:
-rcds <- read.fasta(file = system.file("sequences/malM.fasta", package = "seqinr"))[[1]]
-uco( rcds, index = "freq")
-uco( rcds, index = "eff")
-uco( rcds, index = "rscu")
-uco( rcds, as.data.frame = TRUE)
-
-```
-
+    ## Force NA to zero:
+    uco(ecolicgpe5, index = "rscu", NA.rscu = 0)
 
 [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 
-配列データを取得
+配列データを取得する:  
 
     # Retrieving sequence data
-
-    # Load the SeqinR package
-    library(seqinr)
 
     # the path to the FTP directory containing the data
     ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2" # Escherichia coli str. K-12 substr. MG1655
 
-    # "_cds_from_genomic.fna.gz"
-    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_cds_from_genomic.fna.gz" )
+    filesuffix <- "_cds_from_genomic.fna.gz"
+    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], filesuffix )
     seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
     length(seqs) # Print out the number of sequences retrieved
-    seq1 <- seqs[[1]]
-    uco(seq1, index = "eff")  # Absolute frequencies
-    uco(seq1, index = "freq") # Relative frequencies    uco(seq1, index = "rscu") # Relative Synonymous Codon Usage (RSCU)    df <- uco(seq1, as.data.frame = TRUE) # all indices are returned into a data frame
-    df[order(df$AA),]
 
+`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
+複数のDNA配列の結合データを作成する:  
 
+    # Flatten Lists
+    seqs.concat <- unlist(seqs)
 
+全てのタンパク質コード配列(CDS)の累積コドン使用頻度（絶対度数、相対度数、観測度数と期待度数の比）を計算する:  
 
+    # Codon usage for the collection of all genes    uco(seqs.concat, index = "eff")  # Absolute frequencies
+    uco(seqs.concat, index = "freq") # Relative frequencies    uco(seqs.concat, index = "rscu") # Relative Synonymous Codon Usage (RSCU)    df <- uco(seqs.concat, as.data.frame = TRUE) # all indices are returned into a data frame
 
+    # Data Output
+    write.csv(df[order(df$AA),], file="~/Desktop/table.csv", quote=TRUE, row.names=TRUE)
+    write.table(df[order(df$AA),], file="~/Desktop/table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
 
 
 
