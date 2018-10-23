@@ -329,7 +329,7 @@ Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.tx
     curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt"
     download.file(url = curl, destfile = basename(curl))
 
-[Ｒ言語のデータの入出力と編集](https://www1.doshisha.ac.jp/~mjin/R/02.html)
+[Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
 
 データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
 
