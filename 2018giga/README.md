@@ -24,6 +24,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 - 2018-10-09 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2018-10-16 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2018-10-23 No. 5 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md)
+  - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#ncbi-assembly_reports)
+  - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#ncbi-genome_reports)
 - 2018-10-30 No. 6 - TBA
 - 2018-11-06 No. 7 - 中間発表 [interim report](#interim-report)
 - 2018-11-13 前半科目試験日
@@ -36,6 +38,15 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 - 2019-01-08 No. 13 - TBA
 - 2019-01-15 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
+
+----------
+## interim report
+**中間発表**
+
+スライド1枚以上を用いてプロジェクト（解析対象の生物や遺伝子）について説明する。
+発表時間：1人あたり最大5分（質疑応答を含む）
+
+5 minutes will be allocated for each presentation, including presentation and discussion.
 
 ----------
 
