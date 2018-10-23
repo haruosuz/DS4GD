@@ -387,8 +387,8 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
     # Reading sequence data
     library("seqinr") # Load the SeqinR package
-    basename(curl)
-    seqs <- read.fasta(file = basename(curl), seqtype = c("DNA"), strip.desc = TRUE)
+    filename <- basename(curl)
+    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
     #seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
 
     length(seqs) # get the number of elements
@@ -416,6 +416,8 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
     # Apply a Function over a List
     X <- sapply(seqs, rho)
+
+    par(family="mono")
 
     # Hierarchical Clustering
     plot(hclust(dist(t(X))))
