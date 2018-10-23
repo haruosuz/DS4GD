@@ -333,7 +333,9 @@ Right click the link *assembly_summary_genbank.txt*, *assembly_summary_refseq.tx
 
 データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
 
-    d <- read.delim(file = basename(curl), stringsAsFactors = FALSE, check.names = FALSE, skip = 1) 
+    # Loading Data into R
+    filename <- basename(curl)
+    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE, skip = 1) 
 
 [データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
 
@@ -465,7 +467,8 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
 
     # Loading Data into R
-    d <- read.delim(file = basename(curl), stringsAsFactors = FALSE, check.names = FALSE)
+    filename <- basename(curl)
+    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE)
 
 [データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
 
