@@ -1,3 +1,4 @@
+
 **[生命情報解析 / 生命動態のデータサイエンス [DS2]](https://github.com/haruosuz/DS4GD/tree/master/2018giga)**  
 https://vu.sfc.keio.ac.jp/sfc-sfs/
 
@@ -22,7 +23,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [Codon usage](#codon-usage) コドン使用
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
-- [Genome signature](#genome-signature) ゲノムの特徴
 
 ----------
 ## assignment 0
@@ -144,6 +144,151 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 
 ![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
 
+### E-utilities
+- [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
+  - [Entrez Direct: E-utilities on the UNIX Command Line - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
+  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
+    - [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
+
+| Record Type | &rettype | &retmode |
+|:-----------:|:--------:|:--------:|
+| Additional option for db = nuccore |
+| db = nuccore, nucest, nucgss, protein or popset |
+| FASTA | fasta | text |
+| GenBank flat file with full sequence (contigs) | gbwithparts | text |
+| CDS nucleotide FASTA | fasta_cds_na | text |
+| CDS protein FASTA | fasta_cds_aa | text |
+| db = sequences |
+| FASTA | fasta | text |
+
+```
+# Retrieving sequence data from NCBI
+library("seqinr")
+ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
+#ACCESSION <- "NC_008011.1" # Lawsonia intracellularis PHE/MN1-00
+
+# fasta
+seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+write.fasta(sequences=seqs, names=getAnnot(seqs), file.out=paste0(ACCESSION,".fna"))
+
+# fasta_cds_aa
+seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
+write.fasta(sequences=seqs, names=getAnnot(seqs), file.out=paste0(ACCESSION,".faa"))
+
+# fasta_cds_na
+seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+write.fasta(sequences=seqs, names=getAnnot(seqs), file.out=paste0(ACCESSION,".ffn"))
+
+# Inspecting data
+length(seqs) # get the number of elements
+head(unlist(getAnnot(seqs))) # get sequence annotations
+```
+
+----------
+## Codon usage
+**コドン使用**
+
+https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage
+
+- [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
+- [遺伝子発現量予測](http://bioinfo.ie.niigata-u.ac.jp/?遺伝子発現量予測)
+- [コドン組成に基づくBLSOM解析](http://bioinfo.ie.niigata-u.ac.jp/?コドン組成に基づくBLSOM解析)
+
+https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
+
+dotchart.uco Cleveland plot for codon usage tables
+
+uco Codon usage indices
+
+    # Load the SeqinR package
+    library(seqinr)
+    
+    ## Show all possible codons:
+    words()
+    
+    ## Make a coding sequence from this:
+    (cds <- s2c(paste(words(), collapse = "")))
+    
+    ## Get codon counts:
+    uco(cds, index = "eff")
+    
+    ## Get codon relative frequencies:
+    uco(cds, index = "freq")
+    
+    ## Get RSCU values:
+    uco(cds, index = "rscu")
+    
+    ## Show what happens with ambiguous bases:
+    uco(s2c("aaannnttt"))
+    
+    ## Use a real coding sequence:
+    rcds <- read.fasta(file = system.file("sequences/malM.fasta", package = "seqinr"))[[1]]
+    uco( rcds, index = "freq")
+    uco( rcds, index = "eff")
+    uco( rcds, index = "rscu")
+    uco( rcds, as.data.frame = TRUE)
+    
+    ## Show what happens with RSCU when an amino-acid is missing:
+    ecolicgpe5 <- read.fasta(file = system.file("sequences/ecolicgpe5.fasta",package="seqinr"))[[1]]
+    uco(ecolicgpe5, index = "rscu")
+
+    ## Force NA to zero:
+    uco(ecolicgpe5, index = "rscu", NA.rscu = 0)
+
+[NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
+
+[タンパク質コード配列(CDS)](https://www.ddbj.nig.ac.jp/ddbj/cds.html)データを取得する:  
+
+```
+    # Retrieving sequence data from NCBI
+
+    # Load the SeqinR package
+    library(seqinr)
+
+    # accession prefix: GCA for GenBank and GCF for RefSeq
+    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2" # Escherichia coli str. K-12 substr. MG1655
+    filesuffix <- "_cds_from_genomic.fna.gz"
+    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], filesuffix )
+    seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
+
+    # E-utilities: fasta_cds_na
+    ACCESSION <- "NC_008011.1" # Lawsonia intracellularis PHE/MN1-00
+    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+
+    # Print out the number of sequences retrieved
+    length(seqs)
+```
+
+DNA配列の長さが3の倍数（コドン）にならないCDS（偽遺伝子 pseudogene）を解析から除外する:  
+
+TF <- sapply(seqs, length)%%3 != 0; sum(TF); unlist(getAnnot(seqs[TF])); # [pseudo=true]
+TF <- grepl(pattern = "pseudo=true", x = getAnnot(seqs)); sum(TF); unlist(getAnnot(seqs[TF]))
+seqs <- seqs[!TF]
+
+`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
+複数のDNA配列の結合データを作成する:  
+
+    # Flatten Lists
+    seqs.concat <- unlist(seqs)
+
+全てのタンパク質コード配列(CDS)の累積コドン使用頻度（絶対度数、相対度数、観測度数と期待度数の比）を計算する:  
+
+    # Codon usage for the collection of all genes    uco(seqs.concat, index = "eff")  # Absolute frequencies
+    uco(seqs.concat, index = "freq") # Relative frequencies    uco(seqs.concat, index = "rscu") # Relative Synonymous Codon Usage (RSCU)    df <- uco(seqs.concat, as.data.frame = TRUE) # all indices are returned into a data frame
+
+    # Data Output
+    write.csv(df[order(df$AA),], file="~/Desktop/table.csv", quote=TRUE, row.names=TRUE)
+    write.table(df[order(df$AA),], file="~/Desktop/table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
+
+G-language System 
+[コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
+[Codon usage analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#codon_usage_analysis)
+
+- http://rest.g-language.org/NC_008011 # Lawsonia intracellularis PHE/MN1-00 chromosome, complete genome.
+- http://rest.g-language.org/NC_008011/codon_compiler/data=R0
+- http://rest.g-language.org/NC_008011/codon_compiler/data=R3
+- http://rest.g-language.org/help/codon_compiler
+
 ----------
 ## assignment 3
 **課題No.3 「DNA Sequence Statistics (1)」**
@@ -158,7 +303,6 @@ NCBIからDNA配列を取得する:
     library("seqinr")
     ACCESSION <- "NC_001477" # Dengue virus 1
     #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
     filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
     seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
     seq1 <- seqs[[1]]
@@ -873,92 +1017,6 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
     mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
     plot.phylo(mytree, main = "Phylogenetic Tree")
 
-----------
-## Codon usage
-**コドン使用**
-
-https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage
-
-- [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
-- [遺伝子発現量予測](http://bioinfo.ie.niigata-u.ac.jp/?遺伝子発現量予測)
-- [コドン組成に基づくBLSOM解析](http://bioinfo.ie.niigata-u.ac.jp/?コドン組成に基づくBLSOM解析)
-
-https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
-
-dotchart.uco Cleveland plot for codon usage tables
-
-uco Codon usage indices
-
-    # Load the SeqinR package
-    library(seqinr)
-    
-    ## Show all possible codons:
-    words()
-    
-    ## Make a coding sequence from this:
-    (cds <- s2c(paste(words(), collapse = "")))
-    
-    ## Get codon counts:
-    uco(cds, index = "eff")
-    
-    ## Get codon relative frequencies:
-    uco(cds, index = "freq")
-    
-    ## Get RSCU values:
-    uco(cds, index = "rscu")
-    
-    ## Show what happens with ambiguous bases:
-    uco(s2c("aaannnttt"))
-    
-    ## Use a real coding sequence:
-    rcds <- read.fasta(file = system.file("sequences/malM.fasta", package = "seqinr"))[[1]]
-    uco( rcds, index = "freq")
-    uco( rcds, index = "eff")
-    uco( rcds, index = "rscu")
-    uco( rcds, as.data.frame = TRUE)
-    
-    ## Show what happens with RSCU when an amino-acid is missing:
-    ecolicgpe5 <- read.fasta(file = system.file("sequences/ecolicgpe5.fasta",package="seqinr"))[[1]]
-    uco(ecolicgpe5, index = "rscu")
-
-    ## Force NA to zero:
-    uco(ecolicgpe5, index = "rscu", NA.rscu = 0)
-
-[NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
-
-配列データを取得する:  
-
-    # Retrieving sequence data
-
-    # Load the SeqinR package
-    library(seqinr)
-
-    # the path to the FTP directory containing the data
-    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2" # Escherichia coli str. K-12 substr. MG1655
-
-    filesuffix <- "_cds_from_genomic.fna.gz"
-    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], filesuffix )
-    seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
-    length(seqs) # Print out the number of sequences retrieved
-
-`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
-複数のDNA配列の結合データを作成する:  
-
-    # Flatten Lists
-    seqs.concat <- unlist(seqs)
-
-全てのタンパク質コード配列(CDS)の累積コドン使用頻度（絶対度数、相対度数、観測度数と期待度数の比）を計算する:  
-
-    # Codon usage for the collection of all genes    uco(seqs.concat, index = "eff")  # Absolute frequencies
-    uco(seqs.concat, index = "freq") # Relative frequencies    uco(seqs.concat, index = "rscu") # Relative Synonymous Codon Usage (RSCU)    df <- uco(seqs.concat, as.data.frame = TRUE) # all indices are returned into a data frame
-
-    # Data Output
-    write.csv(df[order(df$AA),], file="~/Desktop/table.csv", quote=TRUE, row.names=TRUE)
-    write.table(df[order(df$AA),], file="~/Desktop/table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
-
-
-
-
 
 ----------
 ## Sequence similarity search
@@ -1180,60 +1238,6 @@ BLASTの実行:
 
 ----------
 
-## Genome signature
-**ゲノムの特徴**
-
-**[微生物の生態とゲノムの特徴](http://meeting-jsme2018.com/symposium.html)**
-
-- [Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
-
-**原核生物のゲノムサイズとGC含量との関係**
-
-Figure 1 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg)
-
-**[好熱菌](https://ja.wikipedia.org/wiki/好熱菌)と常温菌のコドン使用の違い**
-
-[Synonymous codon usage is subject to selection in thermophilic bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/)
-
-**[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
-
-[Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/)
-
-Figure 1 [Grouping of halophiles and non-halophiles according to their standardized amino acid usage.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/figure/F1/)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/bin/gb-2008-9-4-r70-1.jpg)
-
-**ウィルスの宿主への適応：コドン使用とアミノ酸使用の解析**
-
-[Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/)
-
-Figure 3 [Amino acid distribution and codon usage in viruses infecting taxonomy-unified hosts. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f3/)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f3.jpg)
-
-Figure 6 [Similarity in GC content and codon usage between pairs of viruses and hosts.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f6/)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f6.jpg)
-
-**コドン使用に基づく高発現遺伝子予測**
-
-[Characterizations of Highly Expressed Genes of Four Fast-Growing Bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/)
-
-FIG. 1 [Genes of ≥100 codons in the four fast-growing bacteria. Each gene is represented by a single point. Its position is determined by its bias relative to all genes B(g|C) and by its bias relative to the RP genes B(g|RP).](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/figure/F1/)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/bin/jb1710100001.jpg)
-
-**GC含量、連続塩基組成、アミノ酸・コドン使用に基づく外来性遺伝子クラスターの検出**
-
-[Karlin S (2001) Trends Microbiol. "Detecting anomalous gene clusters and pathogenicity islands in diverse bacterial genomes."](https://www.ncbi.nlm.nih.gov/pubmed/11435108) | [pdf](https://eclass.uoa.gr/modules/document/file.php/D473/Βιβλιογραφία/DNA%20Composition/Karlin_2001.pdf)
-
-Fig. 1. [The contrasts are displayed for 20 and 50 kb sliding window plots of G+C content, genomic signature profiles, codon usage biases and amino acid anomalies for eight different bacterial species.](https://www.sciencedirect.com/science/article/pii/S0966842X01020790#FIG1)
-
-![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr1.jpg)
-
-----------
 
 
 
