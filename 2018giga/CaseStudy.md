@@ -622,7 +622,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     colnames(d)
     colnames(d)[1] <- "species_genus"
 
-[文字列の処理](http://stat.biopapyrus.net/r/string.html)  
+[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     pattern <- "Escherichia coli.*K-12|Haemophilus influenzae|Borrelia burgdorferi"
