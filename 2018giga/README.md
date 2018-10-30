@@ -25,8 +25,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 - 2018-10-16 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2018-10-23 No. 5 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md)
   - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#ncbi-assembly_reports)
+- 2018-10-30 No. 6 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md)
   - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#ncbi-genome_reports)
-- 2018-10-30 No. 6 - TBA
 - 2018-11-06 No. 7 - 中間発表 [interim report](#interim-report)
 - 2018-11-13 前半科目試験日
 - 2018-11-20 午前：前半科目追試 | 午後：三田祭準備
