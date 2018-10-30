@@ -693,7 +693,7 @@ DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力
 DNA配列の2連続塩基含量:  
 
     # DNA words
-    count(seq1, 2)
+    count(seq=seq1, wordsize=2)
 
 #### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
 
