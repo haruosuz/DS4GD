@@ -780,7 +780,8 @@ DNA配列の2連続塩基組成（観測値/期待値）:
     heatmap(X, margins=c(10,5), cexCol=1.0)
 
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
-- [塩基組成に基づいたプラスミドの宿主域の予測](http://www.sigmbi.jp/?m=201601)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
 
 ----------
 
