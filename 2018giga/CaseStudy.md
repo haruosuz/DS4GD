@@ -763,8 +763,12 @@ DNA配列の2連続塩基組成（観測値/期待値）:
 
 [45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)
 
+    # Data Output
     write.csv(t(X), file="table.csv", quote=TRUE, row.names=TRUE)
     write.table(t(X), file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
+
+    # open current working directory
+    system("open .")
 
 `matplot()`関数でプロットする:  
 
