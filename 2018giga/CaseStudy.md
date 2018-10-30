@@ -259,7 +259,7 @@ uco Codon usage indices
     length(seqs)
 ```
 
-DNA配列の長さが3の倍数（コドン）にならないCDS（偽遺伝子 pseudogene）を解析から除外する:  
+DNA配列の長さが3の倍数（コドン）にならないCDS（例えば、偽遺伝子 pseudogene）を解析から除外する:  
 
     TF <- sapply(seqs, length)%%3 != 0; sum(TF); unlist(getAnnot(seqs[TF])); # [pseudo=true]
     TF <- grepl(pattern = "pseudo=true", x = getAnnot(seqs)); sum(TF); unlist(getAnnot(seqs[TF]))
