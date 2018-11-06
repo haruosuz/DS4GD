@@ -28,13 +28,15 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 - 2018-10-30 No. 6 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md)
   - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#ncbi-genome_reports)
 - 2018-11-06 No. 7 - 中間発表 [interim report](#interim-report)
+  - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
+  - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
 - 2018-11-13 前半科目試験日
 - 2018-11-20 午前：前半科目追試 | 午後：三田祭準備
 - 2018-11-27 No. 8 - 配列類似性検索 [Sequence similarity search](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#sequence-similarity-search)
 - 2018-12-04 No. 9 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2018-12-11 No. 10 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2018-12-18 No. 11 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
-- 2018-12-25 No. 12 - [Guest Speaker](#guest-speaker)
+- 2018-12-18 No. 11 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
+- 2018-12-25 No. 12 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2019-01-08 No. 13 - TBA
 - 2019-01-15 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
