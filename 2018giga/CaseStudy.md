@@ -886,7 +886,7 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
 ## assignment 7
 **課題No.7 「Pairwise Sequence Alignment」**
 
-http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises
+[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
 
 Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
 
