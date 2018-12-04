@@ -1009,6 +1009,9 @@ Q3. Build a rooted phylogenetic tree of the four proteins, using an outgroup. Wh
     mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
     plot.phylo(mytree, main = "Phylogenetic Tree")
 
+    # get sequence annotations
+    unlist(getAnnot(seqs))
+
 ----------
 ## Sequence similarity search
 **配列類似性検索**
