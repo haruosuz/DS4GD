@@ -925,6 +925,13 @@ Q5. What is the alignment score for the optimal local alignment between the two 
 	gapOpening = -9.5, gapExtension = -0.5, type="local")
 	mylocalAlign
 
+
+----------
+
+https://togotv.dbcls.jp/20120612.html
+オーソログDB Inparanoidの使い方 統合TV(togotv)｜生命科学系DB・ツール使い倒し系チャンネル
+
+
 ----------
 ## assignment 8
 **課題No.8 「Multiple Alignment and Phylogenetic Trees」**
