@@ -925,13 +925,6 @@ Q5. What is the alignment score for the optimal local alignment between the two 
 	gapOpening = -9.5, gapExtension = -0.5, type="local")
 	mylocalAlign
 
-
-----------
-
-https://togotv.dbcls.jp/20120612.html
-オーソログDB Inparanoidの使い方 統合TV(togotv)｜生命科学系DB・ツール使い倒し系チャンネル
-
-
 ----------
 ## assignment 8
 **課題No.8 「Multiple Alignment and Phylogenetic Trees」**
@@ -942,12 +935,15 @@ Answer the following questions, using the R package. For each question, please r
 
 Q1. Calculate the genetic distances between four protein sequences of interest. Which are the most closely related proteins, and which are the least closely related, based on the genetic distances?
 
-    library("seqinr")
+    library("seqinr") # Load the SeqinR package
     # create a function to retrieve several sequences from UniProt
     retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file = paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype = c("AA"), strip.desc = TRUE)[[1]]
 
     seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5") # Make a vector containing the names of the sequences
     seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
+
+    length(seqs) # get the number of elements
+    unlist(getAnnot(seqs)) # get sequence annotations
 
     # write out the sequences to a FASTA file
     write.fasta(seqs, seqnames, file="myseq.fasta")
@@ -1008,9 +1004,6 @@ Q3. Build a rooted phylogenetic tree of the four proteins, using an outgroup. Wh
     mytree <- nj(mydist)
     mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
     plot.phylo(mytree, main = "Phylogenetic Tree")
-
-    # get sequence annotations
-    unlist(getAnnot(seqs))
 
 ----------
 ## Sequence similarity search
