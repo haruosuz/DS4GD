@@ -17,6 +17,8 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 ## Class Schedule & Materials
 **講義日程と資料**
 
+[2018年度秋学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/18f_calendar_171211_j.pdf)
+
 - 2018-09-25 No. 1 - イントロダクション [Introduction](#introduction)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#genome-signature)
   - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
@@ -35,9 +37,10 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 - 2018-11-27 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2018-12-04 No. 9 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2018-12-11 [No Class]【休講】
-- 2018-12-18 No. 10 - 配列類似性検索 [Sequence similarity search](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#sequence-similarity-search)
-- 2018-12-22 (Saturday) [Supplementary Class] （土曜日）2限【補講】No. 11 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
-- 2018-12-25 No. 12 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+- 2018-12-18 No. 10 - TBA
+- 2018-12-22 (Saturday) [Supplementary Class] （土曜日）2限【補講】No. 11 - TBA
+- 2018-12-25 No. 12 - TBA
+- 2018-12-28 事務室閉室・冬季休校（12/28～1/5）
 - 2019-01-08 No. 13 - TBA
 - 2019-01-15 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
