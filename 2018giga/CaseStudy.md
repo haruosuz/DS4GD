@@ -1020,21 +1020,11 @@ Q3. Build a rooted phylogenetic tree of the four proteins, using an outgroup. Wh
 ### Downloading data
 データのダウンロード
 
-[UniProt](http://www.uniprot.org)の[Download latest release](http://www.uniprot.org/downloads)を開く。  
-"Reviewed (Swiss-Prot) / FAQ	xml | [fasta](ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz) | text"  
-を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Go the UniProt website (http://www.uniprot.org), and then click the link "Download latest release".  
-"Reviewed (Swiss-Prot) / FAQ	xml | [fasta](ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz) | text"  
-Right click the link and select "Copy Link Address".
-
-
 <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> をブラウザ（Firefox または Chrome）で開く。  
-[*uniprot_sprot.fasta.gz*](ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz)
-を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+*uniprot_sprot.fasta.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
 Open the URL <ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/> with your browser (Firefox or Chrome).  
-Right click the link [*uniprot_sprot.fasta.gz*](ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz) and select "Copy Link Address".
+Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
 
 ![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
 
@@ -1075,9 +1065,7 @@ Right click the link [*uniprot_sprot.fasta.gz*](ftp://ftp.uniprot.org/pub/databa
     # look at the top of a file with head
     head -n 3 uniprot_sprot.fasta
 
-Extract [FASTA headers](http://www.uniprot.org/help/fasta-headers):
-
-    >db|UniqueIdentifier|EntryName ProteinName OS=OrganismName[ GN=GeneName]PE=ProteinExistence SV=SequenceVersion
+Extract [FASTA headers](http://www.uniprot.org/help/fasta-headers).
 
 `grep`で、[FASTA](https://ja.wikipedia.org/wiki/FASTA)形式ファイルのヘッダ（`>`で始まる行）にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）:  
 
