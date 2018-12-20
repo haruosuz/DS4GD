@@ -1034,12 +1034,12 @@ Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
 ディレクトリを作成する:  
 
     # make directories
-    mkdir -p ~/projects/uniprot_sprot/data
+    mkdir -p ~/projects/data/uniprot/uniprot_sprot
 
 ディレクトリを移動する:  
 
     # change directories
-    cd ~/projects/uniprot_sprot/data/
+    cd ~/projects/data/uniprot/uniprot_sprot/
 
 圧縮ファイル（*uniprot_sprot.fasta.gz*）を`wget`または`curl`でダウンロードする:  
 
@@ -1138,7 +1138,7 @@ BLASTの実行:
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
-    WorkingDirectory <- "~/projects/uniprot_sprot/data"
+    WorkingDirectory <- "~/projects/data/uniprot/uniprot_sprot"
 
     # Set and Get Working Directory
     setwd(WorkingDirectory)
@@ -1204,7 +1204,7 @@ BLASTの実行:
 ![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
 
     # change directories
-    cd ~/projects/uniprot_sprot/data/
+    cd ~/projects/data/uniprot/uniprot_sprot/
 
     # create a variable and assign it a value
     DB="uniprot_sprot.fasta"
