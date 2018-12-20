@@ -1044,7 +1044,7 @@ Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
 圧縮ファイル（*uniprot_sprot.fasta.gz*）を`wget`または`curl`でダウンロードする:  
 
     # download data with wget and curl
-      #wget ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
+   #wget -b ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
     curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
 
 `gunzip`コマンドでファイルを展開する:  
@@ -1130,9 +1130,17 @@ BLASTの実行:
     # Multiple Sequence Alignment using MAFFT
     mafft mysubject.fasta > myalign.fasta
 
+![](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/fig/sv2/sv7.jpg)
+
 [SeaView](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/seaview2.html)でアライメントを表示する。
 
 [SeaView](http://doua.prabi.fr/software/seaview) is a multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny.
+
+![](http://blog.amelieff.jp/images/weblogo2.png)
+
+[WebLogo](http://weblogo.berkeley.edu/logo.cgi)で配列の保存度を表示する。
+
+[WebLogo](https://weblogo.berkeley.edu/) generates sequence logos indicating sequence conservation.
 
 ![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
 
