@@ -1136,7 +1136,7 @@ BLASTの実行:
 
 [SeaView](http://doua.prabi.fr/software/seaview) is a multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny.
 
-![](http://blog.amelieff.jp/images/weblogo2.png)
+![](https://weblogo.berkeley.edu/img/weblogo-fig1.png)
 
 [WebLogo](http://weblogo.berkeley.edu/logo.cgi)で配列の保存度を表示する。
 
