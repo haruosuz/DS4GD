@@ -29,7 +29,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ## assignment-9
 **課題No.9 「draft report」**
 
-Combine and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest), and submit it as your draft report in PDF format.
+Combine and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest), and submit it in PDF format as your draft report.
 
 これまでの課題（興味あるDNA/タンパク質の配列解析の結果）を統合・編集し、レポートのドラフトとしてPDFファイルで提出する。
 
