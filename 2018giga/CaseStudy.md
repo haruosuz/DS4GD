@@ -1056,6 +1056,11 @@ Right click the link *uniprot_sprot.fasta.gz* and select "Copy Link Address".
     #wget -b ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
      curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/knowledgebase/uniprot_sprot.fasta.gz
 
+`tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）:  
+
+    # Use `tail -f` to constantly monitor files (use Control-C to stop)
+    tail -f wget-log
+
 `gunzip`コマンドでファイルを展開する:  
 
     # decompress files with the command gunzip
