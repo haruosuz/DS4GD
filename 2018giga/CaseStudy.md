@@ -1086,7 +1086,7 @@ Extract [FASTA headers](http://www.uniprot.org/help/fasta-headers).
     # use grep to extract lines matching the pattern "^>" (use Control-C to stop)
     grep "^>" uniprot_sprot.fasta
 
-Pipe the standard output to the next command with the pipe character (|).
+Pipe the standard output to the next command with the pipe character (`|`).
 
 [パイプ](https://ja.wikipedia.org/wiki/パイプ_%28コンピュータ%29)でプログラムの入出力をつなぐ。
 
@@ -1139,10 +1139,11 @@ BLASTの実行:
 ### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 多重配列アライメントと系統樹
 
-[MAFFTを使ってマルチプルアラインメントを行う](http://doi.org/10.7875/togotv.2015.035)
-
     # Multiple Sequence Alignment using MAFFT
     mafft mysubject.fasta > myalign.fasta
+
+- [2018-04-03 MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う](https://togotv.dbcls.jp/20180403.html)
+- [2015-04-13 MAFFTを使ってマルチプルアラインメントを行う](http://doi.org/10.7875/togotv.2015.035)
 
 ![](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/fig/sv2/sv7.jpg)
 
