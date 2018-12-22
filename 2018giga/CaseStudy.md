@@ -25,6 +25,14 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
 
 ----------
+## assignment-9
+**課題No.9 「draft report」**
+
+Combine and edit your previous assignments 0-8 (e.g. results of analyzing DNA/protein sequences of interest), and submit it as your draft report in PDF format.
+
+これまでの課題No.0-8（興味あるDNA/タンパク質の配列解析の結果）を統合・編集し、レポートのドラフトとしてPDFファイルで提出する。
+
+----------
 ## assignment 0
 **選抜課題**
 
