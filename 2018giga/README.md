@@ -40,9 +40,9 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 - 2018-12-18 No. 10 - 配列類似性検索 [Sequence similarity search](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#sequence-similarity-search)
 - 2018-12-22 (Saturday) [Supplementary Class] （土曜日）2限【補講】No. 11 - 配列類似性検索 [Sequence similarity search](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#sequence-similarity-search)
   - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#multiple-alignment-and-phylogenetic-trees)
-- 2018-12-25 No. 12 - TBA
+- 2018-12-25 No. 12  - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2018-12-28 事務室閉室・冬季休校（12/28～1/5）
-- 2019-01-08 No. 13 - TBA
+- 2019-01-08 No. 13 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2019-01-15 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
 
