@@ -20,6 +20,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 6](#assignment-6) 課題No.6 「dotplot」
 - [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題No.8 「Multiple Alignment and Phylogenetic Trees」
+- [assignment 9](#assignment-9) 課題No.9 「draft report」
 - [Codon usage](#codon-usage) コドン使用
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
@@ -28,9 +29,9 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ## assignment-9
 **課題No.9 「draft report」**
 
-Combine and edit your previous assignments 0-8 (e.g. results of analyzing DNA/protein sequences of interest), and submit it as your draft report in PDF format.
+Combine and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest), and submit it as your draft report in PDF format.
 
-これまでの課題No.0-8（興味あるDNA/タンパク質の配列解析の結果）を統合・編集し、レポートのドラフトとしてPDFファイルで提出する。
+これまでの課題（興味あるDNA/タンパク質の配列解析の結果）を統合・編集し、レポートのドラフトとしてPDFファイルで提出する。
 
 ----------
 ## assignment 0
