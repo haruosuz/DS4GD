@@ -1184,90 +1184,20 @@ BLASTの実行:
     library(ape)
     mytree <- nj(mydist)
 	par(family="mono")
-    plot.phylo(mytree, type = "unrooted")
+    plot.phylo(mytree, type = "unrooted") # type = "phylogram", "cladogram", "fan", "unrooted", "radial"
 
-### [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
+    # 有根系統樹
+    # Building a rooted phylogenetic tree
+    library(phangorn); mytree <- midpoint(mytree) # midpoint rooting
+    plot.phylo(ladderize(mytree, right = FALSE), main = "Phylogenetic Tree")
 
-配列データを取得
+    # Saving a phylogenetic tree as a Newick-format tree file
+    write.tree(mytree, file="mytree.newick")
 
-    # Retrieving sequence data
+    # open current working directory
+    system("open .")
 
-    # Load the SeqinR package
-    library(seqinr)
-
-    # the path to the FTP directory containing the data
-    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2" # Escherichia coli str. K-12 substr. MG1655
-
-    # "_cds_from_genomic.fna.gz"
-    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_cds_from_genomic.fna.gz" )
-    seqs.cds <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
-    length(seqs.cds) # Print out the number of sequences retrieved
-    seqs.cds.trans <- getTrans(seqs.cds)
-    seqs.cds.trans[[1]]
-
-    # "_protein.faa.gz"
-    curl <- paste0(ftp_path, "/", unlist(strsplit(ftp_path, split="/"))[10], "_protein.faa.gz" )
-    seqs.faa <- read.fasta(file = gzcon(url(curl)), seqtype = c("AA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
-    length(seqs.faa) # Print out the number of sequences retrieved
-    seqs.faa[[1]]
-
-[`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
-関数を用いて、配列のアノテーションを取得する:  
-
-    # grepl(pattern, x) returns a logical vector (match or not for each element of x)
-    pattern <- "translation elongation factor"
-    TF <- grepl(pattern = pattern, x = getAnnot(seqs.faa), ignore.case = TRUE)
-    sum(TF)
-
-`write.fasta()`関数を用いて、配列データをFASTA形式ファイルとして書き出す:  
-
-    # Writing sequence data out as a FASTA file
-    write.fasta(sequences = seqs.faa[TF], names = getAnnot(seqs.faa[TF]), file.out = "myquery.fasta")
-
-![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
-
-    # change directories
-    cd ~/projects/data/uniprot/uniprot_sprot/
-
-    # create a variable and assign it a value
-    DB="uniprot_sprot.fasta"
-
-BLASTの実行:  
-
-    # Running BLAST
-    blastp -db $DB -query myquery.fasta -outfmt 7 -out blastp-out.txt -evalue 1e-10 -num_threads 4 -max_target_seqs 1
-
-`blastdbcmd`コマンドで、ヒットした配列をBLAST用DBから取得:  
-
-    # Extracting data from BLAST databases with blastdbcmd
-    grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | blastdbcmd -db $DB -entry_batch - > mysubject.fasta
-
-----------
-
-
-
-
-----------
-
-[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
-
-    # change shell to bash
-    bash
-
-## Working with Data in R
-
-R [統合TV | 生命科学系DB・ツール使い倒し系チャンネル](http://togotv.dbcls.jp/information.html#p6)
-
-[R の起動と終了](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html)  
-
-![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
-
-年月日を確認:  
-
-    # Get Current Date and Time
-    Sys.Date()
-
-
+[SeaView](http://doua.prabi.fr/software/seaview)でnewick形式ファイルの系統樹を表示する。
 
 ----------
 
