@@ -13,6 +13,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
 - [NCBI](#ncbi)
+- [Codon usage](#codon-usage) コドン使用
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -21,7 +22,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題No.8 「Multiple Alignment and Phylogenetic Trees」
 - [assignment 9](#assignment-9) 課題No.9 「draft report」
-- [Codon usage](#codon-usage) コドン使用
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
 
