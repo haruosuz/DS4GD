@@ -1024,12 +1024,12 @@ https://github.com/haruosuz/DS4GD/tree/master/2018giga#final-presentation
 2019-01-15 最終発表のスライド <YOUR_NAME.pdf> を提出する。
 発表時間：1人あたり最大5分
 
-生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、アミノ酸・コドン使用、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、配列データベース検索、多重配列アライメントと系統樹、ネットワーク、公共データベース・ウェブツールによる解析などが含まれる。
+生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、多重配列アライメントと系統樹、公共データベース・ウェブツールによる解析などが含まれる。
 
 Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2019-01-15.
 Five minutes will be allocated for each presentation, including presentation and discussion.
 
-Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), amino acid and codon usage, pairwise sequence alignment (dotplot, global/local alignment), sequence database search, multiple alignment and phylogenetic trees, network, public database and web tools, etc.
+Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global/local alignment), multiple alignment and phylogenetic trees, public database and web tools, etc.
 
 ----------
 ## Sequence similarity search
