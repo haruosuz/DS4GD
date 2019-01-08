@@ -46,6 +46,24 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)
 - 2019-01-22 レポート提出期限 Deadline for [final report](#final-report)
 
 ----------
+## final presentation
+**最終発表**
+
+Five minutes will be allocated for each presentation.
+
+発表時間：1人あたり最大5分
+
+----------
+## final report
+**レポート**
+
+Submit your final report in PDF format.
+
+- 提出期限：2019年1月22日(火)  
+- 提出先：SFC-SFSの課題にレポートのファイルを登録する。  
+- 書式：A4で5枚以内。本文以降に付録(appendix)を付けることができる。ファイル容量に注意する。
+
+----------
 ## interim report
 **中間発表**
 
