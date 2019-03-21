@@ -39,8 +39,6 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-07-09 No. 13 - ケーススタディ Case Study
 - 2019-07-16 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2019-07-23 レポート提出期限 Deadline for [final report](#final-report)
-- 2019-07-24 *[CAMDA2019 Conference @ Basel, Switzerland](http://camda.info/)*
-- 2019-08-30 *[2019 MetaSUB Meeting @ Istanbul, Turkey](http://metasub.org/)*
 - 2019-XX-XX (Saturday) [Supplementary Class] （土曜日）2限【補講】No. XX
 
 ----------
