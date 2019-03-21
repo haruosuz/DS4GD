@@ -93,6 +93,18 @@ Submit your final report in PDF format.
 
 ![](https://media.nature.com/m685/nature-assets/ismej/journal/v6/n8/images/ismej2011211f2.jpg)
 
+**[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
+- [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
+細菌は染色体とプラスミドという2種類のDNAを持っています。
+細菌同士は接触するとプラスミドを交換。
+プラスミドを交換することで細菌の能力を強化。
+- [Shintani M., Suzuki H. (2019) Plasmids and Their Hosts. In: Nishida H., Oshima T. (eds) DNA Traffic in the Environment. Springer, Singapore](https://link.springer.com/chapter/10.1007/978-981-13-3411-5_6)
+- [Yano et al. (2018) Comput Struct Biotechnol J. 17:70-81. "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
+  - [Table 1 Lists of plasmids in different incompatibility groups.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6312765/table/t0005/?report=objectonly)
+    - https://www.ncbi.nlm.nih.gov/nuccore/NC_012885
+    - https://www.ncbi.nlm.nih.gov/nuccore/KF976462
+    - https://www.ncbi.nlm.nih.gov/nuccore/GU256641
+
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
 ![http://www.quizbiology.com/2013/05/bioinformatics-mcq-quiz.html](http://lh5.ggpht.com/-RVDAcMLXpPQ/UaLVfpoguLI/AAAAAAAAGdw/n8DEk4aPAIg/Bioinformatics%252520Resources%25255B11%25255D.png)
@@ -104,6 +116,7 @@ Submit your final report in PDF format.
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 
 ![http://abacus.bates.edu/bioinformatics1/sequencesearch3.html](http://abacus.bates.edu/bioinformatics1/screenshots/NCBI-5-FASTA.jpg)
+
 
 ----------
 
