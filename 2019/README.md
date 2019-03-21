@@ -10,7 +10,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 
 ## References
 **参考文献**
-- [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
+- [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://a-little-book-of-r-for-bioinformatics.readthedocs.org/en/latest/)
 - [坊農秀雅, 小野浩雅 (監修). 生命科学データベース・ウェブツール, メディカルサイエンスインターナショナル, 2019, 168p.](https://www.medsi.co.jp/books/products/detail.php?product_id=3665)
 - [藤博幸 (編). よくわかるバイオインフォマティクス入門, 講談社, 2019, 205p.](https://www.kspub.co.jp/book/detail/5138212.html)
 
