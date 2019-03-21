@@ -33,13 +33,12 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-06-04 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2019-06-11 No. 9 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2019-06-18 No. 10 - [Guest Speaker](#guest-speaker)
-- 2019-06-21 *[Global City Sampling Day](https://github.com/haruosuz/metasub/blob/master/README.md#csd)*
 - 2019-06-25 No. 11 - ケーススタディ Case Study
 - 2019-07-02 No. 12 - ケーススタディ Case Study
 - 2019-07-09 No. 13 - ケーススタディ Case Study
 - 2019-07-16 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2019-07-23 レポート提出期限 Deadline for [final report](#final-report)
-- 2019-XX-XX (Saturday) [Supplementary Class] （土曜日）2限【補講】No. XX
+- 2019-XX-XX (Saturday) [Supplementary Class] （土曜日）3限【補講】No. XX - ケーススタディ Case Study
 
 ----------
 ## interim report
