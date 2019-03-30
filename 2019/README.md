@@ -71,25 +71,15 @@ Submit your final report in PDF format.
 ----------
 
 ## Introduction
-
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
- 
-![http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about](http://blog.thegrandlocus.com/img/bioinformatic_word_cloud.png)
-
 ### [Bioinformatician](http://blog.fejes.ca/?p=2418)
-
-![http://blog.fejes.ca/?p=2418](http://blog.fejes.ca/wp-content/uploads/2014/01/bioinformatics_chart1.png)
-
 ### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
-
-![http://www.metabolomics.bbsrc.ac.uk/background.htm](http://www.metabolomics.bbsrc.ac.uk/background_files/image038.gif)
-
 **[Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)**
 
 ![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springernature.com/springer-cms/rest/v1/content/6629006/data/v1)
 
 - [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja) | [Jessica Green: Are we filtering the wrong microbes? | TED Talk](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes)
-- [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
+  - [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
 
 ![](https://media.nature.com/m685/nature-assets/ismej/journal/v6/n8/images/ismej2011211f2.jpg)
 
@@ -98,12 +88,8 @@ Submit your final report in PDF format.
 細菌は染色体とプラスミドという2種類のDNAを持っています。
 細菌同士は接触するとプラスミドを交換。
 プラスミドを交換することで細菌の能力を強化。
-- [Shintani M., Suzuki H. (2019) Plasmids and Their Hosts. In: Nishida H., Oshima T. (eds) DNA Traffic in the Environment. Springer, Singapore](https://link.springer.com/chapter/10.1007/978-981-13-3411-5_6)
 - [Yano et al. (2018) Comput Struct Biotechnol J. 17:70-81. "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
   - [Table 1 Lists of plasmids in different incompatibility groups.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6312765/table/t0005/?report=objectonly)
-    - https://www.ncbi.nlm.nih.gov/nuccore/NC_012885
-    - https://www.ncbi.nlm.nih.gov/nuccore/KF976462
-    - https://www.ncbi.nlm.nih.gov/nuccore/GU256641
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
@@ -116,7 +102,6 @@ Submit your final report in PDF format.
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 
 ![http://abacus.bates.edu/bioinformatics1/sequencesearch3.html](http://abacus.bates.edu/bioinformatics1/screenshots/NCBI-5-FASTA.jpg)
-
 
 ----------
 
