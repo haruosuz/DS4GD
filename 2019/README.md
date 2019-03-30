@@ -93,8 +93,6 @@ Submit your final report in PDF format.
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
-![http://www.quizbiology.com/2013/05/bioinformatics-mcq-quiz.html](http://lh5.ggpht.com/-RVDAcMLXpPQ/UaLVfpoguLI/AAAAAAAAGdw/n8DEk4aPAIg/Bioinformatics%252520Resources%25255B11%25255D.png)
-
 #### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
 
 ![http://www.arb-silva.de/documentation/sina-tutorial/](https://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/01_input_dataset.png)
@@ -106,8 +104,7 @@ Submit your final report in PDF format.
 ----------
 
 ### [R: The R Project for Statistical Computing](https://www.r-project.org/)
-[RStudio](https://www.rstudio.com/products/RStudio/)
-Take a tour of RStudio’s IDE
+[RStudioでRを直感的に使おう MacOS版 2017](https://doi.org/10.7875/togotv.2017.043)
 
 ![http://www.sthda.com/english/wiki/running-rstudio-and-setting-up-your-working-directory-easy-r-programming](http://www.sthda.com/sthda/RDoc/images/rstudio.png)
 
