@@ -26,15 +26,15 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-04-23 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2019-04-30 *【国民の休日】National Holiday*
 - 2019-05-07 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
-- 2019-05-14 No. 5 - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
-- 2019-05-21 No. 6 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
+- 2019-05-14 No. 5 - ケーススタディ Case Study
+- 2019-05-21 No. 6 - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
 - 2019-05-28 No. 7 - ケーススタディ Case Study
-- 2019-06-04 No. 8 - ケーススタディ Case Study
   - 中間発表 [interim report](#interim-report)
+- 2019-06-04 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2019-06-11 No. 9 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2019-06-18 No. 10 - [Guest Speaker](#guest-speaker)
-- 2019-06-25 No. 11 - ケーススタディ Case Study
-- 2019-07-02 No. 12 - ケーススタディ Case Study
+- 2019-06-25 No. 11 - [Guest Speaker](#guest-speaker)
+- 2019-07-02 No. 12 - [Guest Speaker](#guest-speaker)
 - 2019-07-09 No. 13 - ケーススタディ Case Study
 - 2019-07-16 No. 14 - 最終回
   - 最終発表 [final presentation](#final-presentation)
