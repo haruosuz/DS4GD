@@ -1,6 +1,6 @@
 Keio SFC 2019 Spring Tuesday 3rd Period  
-SFC 2019年度 春学期 火曜日3時限
-教室 [λ18](http://classroom.sfc.keio.ac.jp/class/l-to/l-18.html)  
+SFC 2019年度 春学期 火曜日3時限 
+教室 Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
 
 # DS4GD
 DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
@@ -20,10 +20,10 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 [2019年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/19s_calendar_j.pdf)
 
 - 2019-04-09 No. 1 - イントロダクション [Introduction](#introduction)
-  - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
   - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 - 2019-04-16 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2019-04-23 No. 3 - DNA配列解析1 [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
+  - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
 - 2019-04-30 *【国民の休日】National Holiday*
 - 2019-05-07 No. 4 - DNA配列解析2 [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2019-05-14 No. 5 - ケーススタディ Case Study
