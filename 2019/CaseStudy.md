@@ -148,17 +148,9 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 ### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
 
-![https://en.wikipedia.org/wiki/Plasmid](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/600px-Plasmid_%28english%29.svg.png)
-
+- ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
 - [Yano et al. (2018) Comput Struct Biotechnol J. 17:70-81. "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
   - [Table 1 Lists of plasmids in different incompatibility groups.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6312765/table/t0005/?report=objectonly)
-
-```
-ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
-ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/IDS/Plasmids.ids
-ftp://ftp.ncbi.nlm.nih.gov/refseq/release/release-notes/
-ftp://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/
-```
 
 ----------
 ## assignment 3
