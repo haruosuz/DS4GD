@@ -12,6 +12,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
 - [NCBI](#ncbi)
+  - [plasmid](#plasmid)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -144,44 +145,19 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 
 ![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
 
-### E-utilities
-- [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
-  - [Entrez Direct: E-utilities on the UNIX Command Line - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
-  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
-    - [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
+### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
+**[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
 
-| Record Type | &rettype | &retmode |
-|:-----------:|:--------:|:--------:|
-| Additional option for db = nuccore |
-| db = nuccore, nucest, nucgss, protein or popset |
-| FASTA | fasta | text |
-| GenBank flat file with full sequence (contigs) | gbwithparts | text |
-| CDS nucleotide FASTA | fasta_cds_na | text |
-| CDS protein FASTA | fasta_cds_aa | text |
-| db = sequences |
-| FASTA | fasta | text |
+![https://en.wikipedia.org/wiki/Plasmid](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/600px-Plasmid_%28english%29.svg.png)
+
+- [Yano et al. (2018) Comput Struct Biotechnol J. 17:70-81. "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
+  - [Table 1 Lists of plasmids in different incompatibility groups.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6312765/table/t0005/?report=objectonly)
 
 ```
-# Retrieving sequence data from NCBI
-library("seqinr")
-ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
-#ACCESSION <- "NC_008011.1" # Lawsonia intracellularis PHE/MN1-00
-
-# fasta
-seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
-write.fasta(sequences=seqs, names=getAnnot(seqs), file.out=paste0(ACCESSION,".fna"))
-
-# fasta_cds_aa
-seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
-write.fasta(sequences=seqs, names=getAnnot(seqs), file.out=paste0(ACCESSION,".faa"))
-
-# fasta_cds_na
-seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
-write.fasta(sequences=seqs, names=getAnnot(seqs), file.out=paste0(ACCESSION,".ffn"))
-
-# Inspecting data
-length(seqs) # get the number of elements
-head(unlist(getAnnot(seqs))) # get sequence annotations
+ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
+ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/IDS/Plasmids.ids
+ftp://ftp.ncbi.nlm.nih.gov/refseq/release/release-notes/
+ftp://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/
 ```
 
 ----------
