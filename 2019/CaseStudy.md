@@ -133,6 +133,12 @@ References:
 https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages
 
 ----------
+
+[GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
+
+![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
+
+----------
 ## NCBI
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
 
@@ -147,10 +153,6 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 - ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
 - [Yano et al. (2018) Comput Struct Biotechnol J. 17:70-81. "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
   - [Table 1 Lists of plasmids in different incompatibility groups.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6312765/table/t0005/?report=objectonly)
-
-[GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
-
-![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
 
 ----------
 ## assignment 3
