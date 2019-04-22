@@ -137,13 +137,9 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
 
 [ゲノムブラウザ](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、"Search"ボタンを押す。
-例えば、[ライム病](https://ja.wikipedia.org/wiki/ライム病)の病原体である[*Borrelia burgdorferi*](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Borrelia%20burgdorferi)を検索し、"Prokaryotes"をクリックすると、[*Borrelia burgdorferi* Strain](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Borrelia%20burgdorferi)一覧が表示されるので、列**Organism Name**の[Borrelia burgdorferi B31](https://www.ncbi.nlm.nih.gov/genome/738?genome_assembly_id=168382)をクリックして開く。
-**Replicon Info**下の表の列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
+例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)の[*Sinorhizobium meliloti*](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti)を検索し、"Prokaryotes"をクリックすると、[*Sinorhizobium meliloti* Strain](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti)一覧が表示されるので、列**Organism Name**の[Sinorhizobium meliloti 1021](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)をクリックして開く。
+**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
 列**Type**のChrは染色体、Plsmはプラスミドを指す。
-
-[GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
-
-![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
 
 ### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
@@ -151,6 +147,10 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 - ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
 - [Yano et al. (2018) Comput Struct Biotechnol J. 17:70-81. "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
   - [Table 1 Lists of plasmids in different incompatibility groups.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6312765/table/t0005/?report=objectonly)
+
+[GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
+
+![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
 
 ----------
 ## assignment 3
