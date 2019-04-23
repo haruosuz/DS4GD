@@ -138,7 +138,7 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 ![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
 
 ----------
-## NCBI
+## [NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
 
 [ゲノムブラウザ](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
