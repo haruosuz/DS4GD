@@ -148,7 +148,7 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 [ここで](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
 列**Type**のChrは染色体、Plsmはプラスミドを指す。
 
-複数のレプリコン（染色体とプラスミド）を保持する細菌の例:
+複数のレプリコン（染色体とプラスミド）を保有する細菌の例:
 ```
 Agrobacterium tumefaciens str. C58 (chromosome circular, linear; plasmid At, Ti)
 Aureimonas sp. AU20 (plasmid pAU20rrn)
@@ -181,6 +181,10 @@ NCBIからDNA配列を取得する:
     library("seqinr")
     ACCESSION <- "NC_001477" # Dengue virus 1
     #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    #ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
+    #ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
+    #ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
+    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome
     filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
     seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
     seq1 <- seqs[[1]]
@@ -202,6 +206,7 @@ Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucl
 	help("GC")
     GC(seq1)
     GC(seq1, exact=FALSE)
+    GC(seq1, exact=TRUE) # logical: if TRUE ambiguous bases are taken into account when computing the G+C content (see details).
 
 Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
 
