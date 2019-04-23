@@ -206,7 +206,7 @@ Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucl
 	help("GC")
     GC(seq1)
     GC(seq1, exact=FALSE)
-    GC(seq1, exact=TRUE) # logical: if TRUE ambiguous bases are taken into account when computing the G+C content (see details).
+    GC(seq1, exact=TRUE)
 
 Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
 
