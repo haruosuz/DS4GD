@@ -259,13 +259,10 @@ Q1. Draw a sliding window plot of GC content in the genome, using a window size 
 	# make a sliding window plot with a window size of 200 nucleotides:
     slidingwindowplotGC(200, seq1)
 
+Q2. Draw a sliding window plot of GC content in the genome sequence using a window size of 2000 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
+
 	# make a sliding window plot of GC content using a window size of 2000 nucleotides:
     slidingwindowplotGC(2000, seq1)
-
-Q2. Draw a sliding window plot of GC content in the genome sequence using a window size of 20000 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
-
-	# make a sliding window plot with a window size of 20000 nucleotides:
-    slidingwindowplotGC(20000, seq1)
 
 Q3. Write a function to calculate the AT content of a DNA sequence (ie. the fraction of the nucleotides in the sequence that are As or Ts). What is the AT content of the genome?
 
