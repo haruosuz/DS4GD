@@ -167,14 +167,6 @@ Sinorhizobium meliloti 1021 (plasmid pSymA, pSymB)
 Yersinia pestis CO92 (plasmid pCD1, pPCP1, pMT1)
 ```
 
-----------
-## assignment 3
-**課題No.3 「DNA Sequence Statistics (1)」**
-
-[Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
-
-Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-
 NCBIからDNA配列を取得する:  
 
     # Retrieving a DNA sequence from NCBI
@@ -185,9 +177,18 @@ NCBIからDNA配列を取得する:
     #ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
     #ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
     #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome
+    #ACCESSION <- "NC_000908" # Mycoplasma genitalium G37, complete genome
     filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
     seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
     seq1 <- seqs[[1]]
+
+----------
+## assignment 3
+**課題No.3 「DNA Sequence Statistics (1)」**
+
+[Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
+
+Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 
 Q1. What are the last twenty nucleotides of the genome sequence?
 
@@ -234,17 +235,6 @@ How can you check that the subsequence that you have looked at is 1000 nucleotid
 
 Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 
-NCBIからDNA配列を取得する:  
-
-    # Retrieving a DNA sequence from NCBI
-    library("seqinr")
-    ACCESSION <- "NC_001477" # Dengue virus 1
-    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome, complete genome
-    filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
-    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
-    seq1 <- seqs[[1]]
-
 Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
 
 	# write a function to make a sliding window plot:
@@ -253,7 +243,7 @@ Q1. Draw a sliding window plot of GC content in the genome, using a window size 
       require("zoo") # this function requires the 'zoo' R package # install.packages('zoo')
       x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
       y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = GC)
-      plot(x, y, type="b", xlab="Position (bp)", ylab="GC content")
+      plot(x, y, type="l", xlab="Position (bp)", ylab="GC content")
     }
 
 	# make a sliding window plot with a window size of 200 nucleotides:
