@@ -244,6 +244,11 @@ Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial speci
 
 Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 
+[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
+フォント・ファミリーを指定する．
+
+    par(family="mono")
+
 Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
 
 	# write a function to make a sliding window plot:
