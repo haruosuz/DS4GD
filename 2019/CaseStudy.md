@@ -171,7 +171,10 @@ Pseudomonas resinovorans NBRC 106553 (strain CA10; IncP-­7 plasmid pCAR1.3)
 
 [ゲノム　第4版](https://www.medsi.co.jp/books/products/detail.php?product_id=3642)
 第8章 原核生物ゲノムと真核生物の細胞小器官ゲノム
-表8.2 原核生物のゲノム構成の例
+| 8.1 原核生物ゲノムの構造的特徴
+| 一部の細菌は直鎖状ゲノムや分節ゲノムをもつ
+| 表8.1 代表的なプラスミドの特徴
+| 表8.2 原核生物のゲノム構成の例
 
 NCBIからDNA配列を取得する:  
 
