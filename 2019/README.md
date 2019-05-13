@@ -19,6 +19,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 
 [2019年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/19s_calendar_j.pdf)
 
+ - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md)
 - 2019-04-09 No. 1 - イントロダクション [Introduction](#introduction)
   - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 - 2019-04-16 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
@@ -30,6 +31,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-05-14 No. 5 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md)
   - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-assembly_reports)
   - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
+  - 連続塩基組成 [k-mer frequency](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 - 2019-05-21 No. 6 - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
 - 2019-05-28 No. 7 - ケーススタディ Case Study
   - 中間発表 [interim report](#interim-report)
