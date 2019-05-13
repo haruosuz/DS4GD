@@ -1,4 +1,3 @@
-
 **[生命情報解析 / 生命動態のデータサイエンス [DS2]](https://github.com/haruosuz/DS4GD/tree/master/2019)**  
 https://vu.sfc.keio.ac.jp/sfc-sfs/
 
@@ -142,7 +141,7 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
 
 [ゲノムブラウザ](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
-例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種"Sinorhizobium meliloti"を検索する。
+例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*を検索する。
 [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti)、検索ボックス下の「Overview (1); Eukaryotes (0); Prokaryotes (204); Viruses (0); Plasmids (65); Organelles (0)」のうち、「Prokaryotes」をクリックすると、*Sinorhizobium meliloti*に属する菌株**Strain**が表示される。
 [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti)、列**Organism Name**の"Sinorhizobium meliloti 1021"株をクリックして開く。
 [ここで](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
@@ -387,7 +386,7 @@ Right click the link *assembly_summary_genbank.txt* or *assembly_summary_refseq.
     table(d$refseq_category)
     table(d$assembly_level)
 
-例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種"Sinorhizobium meliloti"
+例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*
 の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
@@ -450,19 +449,6 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     # Flatten Lists
     length(unlist(seqs))
     GC(unlist(seqs))
-
-複数のDNA配列の2連続塩基組成（観測値/期待値）を解析する:  
-
-    # Apply a Function over a List
-    X <- sapply(seqs, rho)
-    X <- sapply(seqs, rho, wordsize = 2)
-
-    par(family="mono")
-
-    # Hierarchical Clustering
-    plot(hclust(dist(t(X))))
-
-- [Wong K et al. (2002) "Dinucleotide compositional analysis of Sinorhizobium meliloti using the genome signature: distinguishing chromosomes and plasmids."](https://www.ncbi.nlm.nih.gov/pubmed/12444420)
 
 ----------
 ## NCBI GENOME_REPORTS
@@ -565,8 +551,6 @@ seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
 
     # get sequence annotations
     getAnnot(seqs)
-    #sapply(getAnnot(seqs), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") ) # Genus Species
-    #sub(pattern="([^ ]+) ([^ ]+) (.+) (chromosome.*|plasmid .*), .+", replacement="\\1 \\2 \\4", getAnnot(seqs))
 
 リスト`seqs`の1番目の要素を変数`seq1`に代入する:  
 
@@ -593,23 +577,35 @@ DNA配列の2連続塩基組成（観測値/期待値）:
 
     # Over-represented and under-represented DNA words
     rho(seq1, wordsize = 2)
-    
-    par(family="mono")
-    par(cex=0.7)
+
+[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
+関数 par()
+
+[50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
+棒グラフ：barplot()
+
+[51. 低水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/51.html)
+直線
+abline
+
+    par(cex = 0.7, family = "mono")
     barplot(sort(rho(seq1, wordsize = 2)))
     abline(h=1)
 
 `sapply()`関数は、リストの各要素に関数を適用する。
-複数のDNA配列を解析する:  
+複数のDNA配列の2連続塩基組成（観測値/期待値）を解析する:  
 
     # Apply a Function over a List
     X <- sapply(seqs, rho)
+    X <- sapply(seqs, rho, wordsize = 2)
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
     # Exploring and Transforming Dataframes
     dim(X)
-    colnames(X) <- substr(getAnnot(seqs), 1, 14) # get sequence annotations
+    colnames(X) <- substr(getAnnot(seqs), 1, 14)
+    #colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") ) # Genus Species
+    #colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+) (chromosome.*|plasmid .*), .+", replacement="\\1 \\4", getAnnot(seqs)) # Accession Replicon
 
 [45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)
 
@@ -620,9 +616,8 @@ DNA配列の2連続塩基組成（観測値/期待値）:
     # open current working directory
     system("open .")
 
-`matplot()`関数でプロットする:  
-
-    par(family="mono")
+[50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
+関数 matplot()
 
     matplot(X, type="l", col=1:ncol(X), lty=1:ncol(X))
     legend("bottomleft", legend=colnames(X), col=1:ncol(X), lty=1:ncol(X))
@@ -637,13 +632,12 @@ DNA配列の2連続塩基組成（観測値/期待値）:
     # Draw a Heat Map
     heatmap(X, margins=c(10,5), cexCol=1.0)
 
+### References
+
+- [Wong K et al. (2002) "Dinucleotide compositional analysis of Sinorhizobium meliloti using the genome signature: distinguishing chromosomes and plasmids."](https://www.ncbi.nlm.nih.gov/pubmed/12444420)
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
-
-----------
-
-### References
 
 https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
 Genomes Download FAQ
