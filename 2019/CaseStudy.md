@@ -523,15 +523,26 @@ command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_
 Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
 #Organism_Name <- "Sinorhizobium meliloti 1021"
 #Organism_Name <- "B.* burgdorferi B31"
-command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Chromosome|Complete Genome/ && $20 ~ /REFR|REPR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
+command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Chromosome|Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ## Invoke a System Command
 ACCESSIONs <- system(command, intern=TRUE)
+ACCESSIONs
 #ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") # Sinorhizobium meliloti 1021 chromosome; plasmid pSymA; plasmid pSymB
 
 # Retrieve the sequences and store them in list variable "seqs"
 seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
 ```
+
+配列の数をカウントする:  
+
+    # get the number of elements
+    length(seqs)
+
+配列のアノテーションを取得する:  
+
+    # get sequence annotations
+    getAnnot(seqs)
 
 配列データをFASTA形式ファイルとして書き出す:  
 
@@ -546,16 +557,6 @@ seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
     setwd("~/projects/data/ncbi/genome_reports")					# Set Working Directory
     library(seqinr)									# Load the SeqinR package
     seqs <- read.fasta(file = "mySequences.fna", seqtype = c("DNA"), strip.desc = TRUE)	# Reading sequence data
-
-配列の数をカウントする:  
-
-    # get the number of elements
-    length(seqs)
-
-配列のアノテーションを取得する:  
-
-    # get sequence annotations
-    getAnnot(seqs)
 
 リスト`seqs`の1番目の要素を変数`seq1`に代入する:  
 
