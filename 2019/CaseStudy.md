@@ -523,12 +523,12 @@ command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_
 Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
 #Organism_Name <- "Sinorhizobium meliloti 1021"
 #Organism_Name <- "B.* burgdorferi B31"
-command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Chromosome|Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
+command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ## Invoke a System Command
 ACCESSIONs <- system(command, intern=TRUE)
-ACCESSIONs
 #ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") # Sinorhizobium meliloti 1021 chromosome; plasmid pSymA; plasmid pSymB
+ACCESSIONs
 
 # Retrieve the sequences and store them in list variable "seqs"
 seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
