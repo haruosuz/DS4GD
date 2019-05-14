@@ -462,7 +462,6 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 ```
 eukaryotes.txt: Eukaryotic genome sequencing projects
 prokaryotes.txt: Prokaryotic genome sequencing projects
-viruses.txt:   Viral genome sequencing projects 
 ```
 
 ### Working with Data in R
