@@ -484,8 +484,8 @@ Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril
 [インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
     # Download File from the Internet
-    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt" # 60.9 MB
-    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt" # 2.1 MB
+    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt" # 原核生物 # 60.9 MB
+    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt" # 真核生物 # 2.1 MB
     download.file(url = curl, destfile = basename(curl))
 
 [Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
@@ -515,11 +515,11 @@ retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutil
 
 # Make a vector containing NCBI GenBank/RefSeq accessions
 ## create a system command to be invoked, as a character string
-### eukaryotes.txt
+### eukaryotes 真核生物
 Organism_Name <- "Saccharomyces cerevisiae S288C"
 command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[0-9]+)\\.[0-9]+.*/$1/g;'")
 
-### prokaryotes.txt
+### prokaryotes 原核生物
 Organism_Name <- "B.* burgdorferi"
 Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti"
 command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Chromosome|Complete Genome/ && $20 ~ /REFR|REPR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[0-9]+)\\.[0-9]+.*/$1/g;'")
@@ -569,18 +569,18 @@ seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
 
 DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力される。
 
+#### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+
 DNA配列の2連続塩基含量:  
 
     # DNA words
     count(seq=seq1, wordsize=2)
 
-#### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
-連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
-
 DNA配列の2連続塩基組成（観測値/期待値）:  
 
     # Over-represented and under-represented DNA words
-    rho(seq1, wordsize = 2)
+    rho(seq = seq1, wordsize = 2)
 
 [53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
 関数 par()
