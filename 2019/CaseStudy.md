@@ -622,7 +622,9 @@ abline
     system("open .")
 
 [50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
-関数 matplot()
+matplot()
+
+    par(family="mono")
 
     matplot(X, type="l", col=1:ncol(X), lty=1:ncol(X))
     legend("bottomleft", legend=colnames(X), col=1:ncol(X), lty=1:ncol(X))
