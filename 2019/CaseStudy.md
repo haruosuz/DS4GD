@@ -454,7 +454,6 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 ----------
 
 ## NCBI GENOME_REPORTS
-[NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
 [NCBI](#ncbi)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
 
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
