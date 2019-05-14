@@ -517,15 +517,16 @@ retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutil
 ## create a system command to be invoked, as a character string
 ### eukaryotes 真核生物
 Organism_Name <- "Saccharomyces cerevisiae S288C"
-command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[0-9]+)\\.[0-9]+.*/$1/g;'")
+command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ### prokaryotes 原核生物
-Organism_Name <- "B.* burgdorferi B31"
 Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
-command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[0-9]+)\\.[0-9]+.*/$1/g;'")
+#Organism_Name <- "B.* burgdorferi B31"
+command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Chromosome|Complete Genome/ && $20 ~ /REFR|REPR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ## Invoke a System Command
 ACCESSIONs <- system(command, intern=TRUE)
+ACCESSIONs
 
 # Retrieve the sequences and store them in list variable "seqs"
 seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
