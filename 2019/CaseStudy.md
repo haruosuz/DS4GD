@@ -520,9 +520,9 @@ Organism_Name <- "Saccharomyces cerevisiae S288C"
 command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ### prokaryotes 原核生物
-Organism_Name <- "B.* burgdorferi"
-Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti"
-command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Chromosome|Complete Genome/ && $20 ~ /REFR|REPR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[0-9]+)\\.[0-9]+.*/$1/g;'")
+Organism_Name <- "B.* burgdorferi B31"
+Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
+command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ## Invoke a System Command
 ACCESSIONs <- system(command, intern=TRUE)
