@@ -28,10 +28,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
   - [NCBI](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi)データベース
 - 2019-04-30 *【国民の休日】National Holiday*
 - 2019-05-07 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
-- 2019-05-14 No. 5 - ケーススタディ [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md)
-  - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-assembly_reports)
-  - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
-  - 連続塩基組成 [k-mer frequency](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+- 2019-05-14 No. 5 - ケーススタディ Case Study [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
 - 2019-05-21 No. 6 - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
 - 2019-05-28 No. 7 - ケーススタディ Case Study
   - 中間発表 [interim report](#interim-report)
