@@ -324,7 +324,7 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 ----------
 
 ## NCBI ASSEMBLY_REPORTS
-[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列のメタデータが記載されている。
+[NCBI](#ncbi)のゲノム配列のメタデータが記載されている。
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
 
@@ -338,13 +338,14 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
 
 NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
-*assembly_summary_genbank.txt* or *assembly_summary_refseq.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+*assembly_summary_genbank.txt* または *assembly_summary_refseq.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
 Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
 Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
 Right click the link *assembly_summary_genbank.txt* or *assembly_summary_refseq.txt*, and select "Copy Link Address".
 
 ### Working with Data in R
+Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
@@ -451,7 +452,10 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     GC(unlist(seqs))
 
 ----------
+
 ## NCBI GENOME_REPORTS
+[NCBI Genome List](https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#ncbi-genome-list)
+[NCBI](#ncbi)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
 
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
 *README*をクリックして開く。
@@ -463,6 +467,7 @@ viruses.txt:   Viral genome sequencing projects
 ```
 
 ### Working with Data in R
+Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
@@ -572,6 +577,7 @@ DNA配列の2連続塩基含量:
     count(seq=seq1, wordsize=2)
 
 #### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
 DNA配列の2連続塩基組成（観測値/期待値）:  
 
