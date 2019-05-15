@@ -571,13 +571,13 @@ seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
 
 DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力される。
 
-#### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
-連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
-
 DNA配列の2連続塩基含量（カウント）:  
 
     # DNA words
     count(seq=seq1, wordsize=2)
+
+#### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
 DNA配列の2連続塩基組成（観測値/期待値）:  
 
