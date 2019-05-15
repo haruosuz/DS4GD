@@ -521,13 +521,13 @@ command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_
 
 ### prokaryotes 原核生物
 Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
-#Organism_Name <- "Sinorhizobium meliloti 1021"
 #Organism_Name <- "B.* burgdorferi B31"
-command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
+command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Chromosome|Complete Genome/ && $20 ~ /REFR|REPR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
+#command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ## Invoke a System Command
 ACCESSIONs <- system(command, intern=TRUE)
-#ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") # Sinorhizobium meliloti 1021 chromosome; plasmid pSymA; plasmid pSymB
+#ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") #Organism_Name <- "Sinorhizobium meliloti 1021"
 ACCESSIONs
 
 # Retrieve the sequences and store them in list variable "seqs"
@@ -583,7 +583,7 @@ DNA配列の2連続塩基含量:
 DNA配列の2連続塩基組成（観測値/期待値）:  
 
     # Over-represented and under-represented DNA words
-    rho(seq = seq1, wordsize = 2)
+    rho(seq = seq1, wordsize = 3)
 
 [53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
 関数 par()
