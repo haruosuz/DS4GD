@@ -582,7 +582,7 @@ DNA配列の2連続塩基含量:
 DNA配列の2連続塩基組成（観測値/期待値）:  
 
     # Over-represented and under-represented DNA words
-    rho(seq = seq1, wordsize = 3)
+    rho(seq = seq1, wordsize = 2)
 
 [53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
 関数 par()
@@ -594,7 +594,7 @@ DNA配列の2連続塩基組成（観測値/期待値）:
 直線
 abline
 
-    par(cex = 0.7, family = "mono")
+    par(family="mono", cex = 0.7)
     barplot(sort(rho(seq1, wordsize = 2)))
     abline(h=1)
 
@@ -603,7 +603,7 @@ abline
 
     # Apply a Function over a List
     X <- sapply(seqs, rho)
-    X <- sapply(seqs, rho, wordsize = 2)
+    X <- sapply(seqs, rho, wordsize = 3)
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
