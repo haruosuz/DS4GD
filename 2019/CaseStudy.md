@@ -574,7 +574,7 @@ DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力
 #### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
 連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
-DNA配列の2連続塩基含量:  
+DNA配列の2連続塩基含量（カウント）:  
 
     # DNA words
     count(seq=seq1, wordsize=2)
@@ -582,7 +582,7 @@ DNA配列の2連続塩基含量:
 DNA配列の2連続塩基組成（観測値/期待値）:  
 
     # Over-represented and under-represented DNA words
-    rho(seq = seq1, wordsize = 2)
+    rho(seq = seq1, wordsize=2)
 
 [53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
 関数 par()
@@ -603,7 +603,7 @@ abline
 
     # Apply a Function over a List
     X <- sapply(seqs, rho)
-    X <- sapply(seqs, rho, wordsize = 3)
+    X <- sapply(seqs, rho, wordsize = 2)
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
