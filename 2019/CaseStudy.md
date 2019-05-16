@@ -15,6 +15,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
+- [NCBI E-utilities](#ncbi-e-utilities)
 - [assignment 6](#assignment-6) 課題No.6 「dotplot」
 - [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題No.8 「Multiple Alignment and Phylogenetic Trees」
@@ -687,7 +688,7 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 
 ----------
 
-## [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/README.md#e-utilities)
+## [NCBI E-utilities](https://github.com/haruosuz/bioinfo/blob/master/README.md#e-utilities)
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
@@ -705,8 +706,6 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 
 [ミディクロリア](https://ja.wikipedia.org/wiki/ミディクロリア) [Candidatus Midichloria mitochondrii](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Midichloria%20mitochondrii)はミトコンドリアに細胞内共生する細菌である。
 
-[腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=409151) のプラスミドpOSAK1の配列データを取得する。
-
 [サルモネラ](https://ja.wikipedia.org/wiki/サルモネラ) ネズミチフス菌 [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344](https://www.ncbi.nlm.nih.gov/genome/152?genome_assembly_id=154382) のプラスミド pRSF1010_SL1344 の配列データを取得する。
 
 NCBIから配列データを取得する:  
@@ -716,7 +715,6 @@ library("seqinr")
 
 # Retrieving sequence data from NCBI
 ACCESSION <- "NC_017719" # Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 plasmid pRSF1010_SL1344
-#ACCESSION <- "NC_002127" # Escherichia coli O157:H7 str. Sakai plasmid pOSAK1
 #ACCESSION <- "NC_015722" # Candidatus Midichloria mitochondrii IricVA
 
 ## nucleotide FASTA
@@ -737,8 +735,8 @@ length(faa)
 # 配列のアノテーションを取得する:  
 # get sequence annotations
 getAnnot(fna)
-head(unlist(getAnnot(ffn)), 1)
-head(unlist(getAnnot(faa)), 1)
+head(getAnnot(ffn), 1)
+head(getAnnot(faa), 1)
 
 # 配列データをFASTA形式ファイルとして書き出す:  
 # Writing sequence data out as a FASTA file
@@ -797,7 +795,7 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 
     setwd("~/projects/data/ncbi/eutils") # Set Working Directory
     library(seqinr) # Load the SeqinR package
-    lx <- read.fasta(file = "mySequences.fasta", seqtype = c("AA"), strip.desc = TRUE) # Reading sequence data
+    lseq <- read.fasta(file = "mySequences.fasta", seqtype = c("AA"), strip.desc = TRUE) # Reading sequence data
 
 #### Amino acid usage
 **タンパク質の[アミノ酸組成](https://kotobank.jp/word/アミノ酸組成-761227)**
@@ -812,12 +810,12 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 
     # Apply a Function over a List
     # get the length of sequences
-    sapply(lx, length)
+    sapply(lseq, length)
 
 `summary()`関数でデータの要約:
  
     # Object Summaries
-    summary(lx[[1]])
+    summary(lseq[[1]])
 
 配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
 
@@ -827,35 +825,35 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
     ?AAstat
 
     # Get protein statistics
-    AAstat(lx[[1]])
+    AAstat(lseq[[1]])
 
 ![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
 
 アミノ酸の個数を出力:  
 
     # Get amino acid counts
-    AAstat(lx[[1]], plot = FALSE)$Compo
+    AAstat(lseq[[1]], plot = FALSE)$Compo
 
 物理化学的クラス (Tiny, Small, Aliphatic, Aromatic, Non-polar, Polar, Charged, Positive, Negative) の割合を出力:
 
     # Get the percentage of each physico-chemical classes
-    AAstat(lx[[1]], plot = FALSE)$Prop
+    AAstat(lseq[[1]], plot = FALSE)$Prop
 
-    AAstat(lx[[1]], plot = FALSE)$Prop$Aromatic
+    AAstat(lseq[[1]], plot = FALSE)$Prop$Aromatic
 
 `sapply()`関数は、リストの各要素に関数を適用する。複数タンパク質配列の物理化学的クラスの割合を求める:  
 
     # Apply a Function over a List
     # get the percentage of each physico-chemical classes
-    sapply(lx, function(x) AAstat(x, plot=FALSE)$Prop )
+    sapply(lseq, function(x) AAstat(x, plot=FALSE)$Prop )
 
 複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
 
     # absolute frequencies
-    ( X <- sapply(lx, function(x) AAstat(x, plot=FALSE)$Compo ) )
+    ( X <- sapply(lseq, function(x) AAstat(x, plot=FALSE)$Compo ) )
 
     # relative frequencies
-    ( X <- sapply(lx, function(x) summary(x)$composition ) )
+    ( X <- sapply(lseq, function(x) summary(x)$composition ) )
 
 データをカンマ区切りファイルとして出力する:  
 
@@ -869,7 +867,7 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 
     # Exploring and Transforming Dataframes
     dim(X)
-    colnames(X) <- sub(pattern=".+protein=(.+)\\] \\[protein_id=.+", replacement="\\1", getAnnot(lx))
+    colnames(X) <- sub(pattern=".+protein=(.+)\\] \\[protein_id=.+", replacement="\\1", getAnnot(lseq))
 
 タンパク質のアミノ酸使用パターンを比較する。`matplot()`関数でプロットする:  
 
