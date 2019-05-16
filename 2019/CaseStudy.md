@@ -10,7 +10,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
-- [NCBI](#ncbi)
+- [NCBI](#ncbi) genome_browse ゲノムブラウザ
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -684,6 +684,207 @@ https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
 Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP directory names. One way to do this would be using the following awk command:
 
 	awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gbff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
+
+----------
+
+## [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/README.md#e-utilities)
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    WorkingDirectory <- "~/projects/data/ncbi/eutils"
+
+    # Invoke a System Command
+    system( paste0("mkdir -p ",WorkingDirectory) )
+
+    # Set and Get Working Directory
+    setwd(WorkingDirectory)
+    getwd()
+
+    # List the Files in a Directory
+    dir()
+
+[ミディクロリア](https://ja.wikipedia.org/wiki/ミディクロリア) [Candidatus Midichloria mitochondrii](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Midichloria%20mitochondrii)はミトコンドリアに細胞内共生する細菌である。
+
+[腸管出血性大腸菌O157](https://ja.wikipedia.org/wiki/O157) [Escherichia coli O157:H7 Sakai](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=409151) のプラスミドpOSAK1の配列データを取得する。
+
+[サルモネラ](https://ja.wikipedia.org/wiki/サルモネラ) ネズミチフス菌 [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344](https://www.ncbi.nlm.nih.gov/genome/152?genome_assembly_id=154382) のプラスミド pRSF1010_SL1344 の配列データを取得する。
+
+NCBIから配列データを取得する:  
+```
+# Load the SeqinR package
+library("seqinr")
+
+# Retrieving sequence data from NCBI
+ACCESSION <- "NC_017719" # Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 plasmid pRSF1010_SL1344
+#ACCESSION <- "NC_002127" # Escherichia coli O157:H7 str. Sakai plasmid pOSAK1
+#ACCESSION <- "NC_015722" # Candidatus Midichloria mitochondrii IricVA
+
+## nucleotide FASTA
+fna <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+
+## CDS nucleotide FASTA
+ffn <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+
+## CDS protein FASTA
+faa <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
+
+# 配列の数をカウントする:  
+# get the number of elements
+length(fna)
+length(ffn)
+length(faa)
+
+# 配列のアノテーションを取得する:  
+# get sequence annotations
+getAnnot(fna)
+head(unlist(getAnnot(ffn)), 1)
+head(unlist(getAnnot(faa)), 1)
+
+# 配列データをFASTA形式ファイルとして書き出す:  
+# Writing sequence data out as a FASTA file
+write.fasta(sequences=fna, names=getAnnot(fna), file.out=paste0(ACCESSION,".fna"))
+write.fasta(sequences=ffn, names=getAnnot(ffn), file.out=paste0(ACCESSION,".ffn"))
+write.fasta(sequences=faa, names=getAnnot(faa), file.out=paste0(ACCESSION,".faa"))
+
+```
+
+prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#output-files)
+
+| Extension | Description |
+| --------- | ----------- |
+| .fna | Nucleotide FASTA file of the input contig sequences. |
+| .faa | Protein FASTA file of the translated CDS sequences. |
+| .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
+
+[DDBJ タンパク質コード配列; CDS feature について](https://www.ddbj.nig.ac.jp/ddbj/cds.html)
+
+[`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
+関数を用いて、核酸配列をタンパク質に翻訳する:  
+
+    # Translate nucleic acid sequences into proteins
+    myTrans <- getTrans(ffn)
+    myTrans[[1]]
+    faa[[1]]
+
+[`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
+関数を用いて、配列のアノテーションを取得する:  
+
+    # get sequence annotations
+    myAnnot <- getAnnot(faa)
+
+[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
+
+プラスミドの接合伝達時に必要なDNAの複製・移動を担うタンパク質（MOB: "mobilization"）([新谷ら, 2013](https://www.jseb.jp/wordpress/wp-content/uploads/13-02-125.pdf))と、機能が不明なタンパク質("hypothetical protein")を抽出する:  
+
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    # grepl returns a logical vector (match or not for each element of x).
+    pattern <- "mobilization|hypothetical.protein"
+    TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
+    sum(TF)
+    myAnnot[TF]
+
+[リスト](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html)の成分を取り出す:  
+
+    # extract the elements of the list object
+    faa[TF]
+
+`write.fasta()`関数を用いて、配列データをFASTA形式ファイルとして書き出す:  
+
+    # Writing sequence data out as a FASTA file
+    write.fasta(sequences = faa[TF], names = getAnnot(faa[TF]), file.out = "mySequences.fasta")
+
+作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+
+    setwd("~/projects/data/ncbi/eutils") # Set Working Directory
+    library(seqinr) # Load the SeqinR package
+    lx <- read.fasta(file = "mySequences.fasta", seqtype = c("AA"), strip.desc = TRUE) # Reading sequence data
+
+#### Amino acid usage
+**タンパク質の[アミノ酸組成](https://kotobank.jp/word/アミノ酸組成-761227)**
+
+[アミノ酸の物性](https://www.thermofisher.com/jp/ja/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/amino-acid-physical-properties.html)
+
+![http://www.jalview.org/help/html/misc/aaproperties.html](http://www.jalview.org/help/html/misc/properties.gif)
+
+[タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html) 平成22年度、清水謙多郎
+
+`sapply()`は、リストの各要素に関数を適用する。タンパク質配列の長さ（アミノ酸残基数）を求める:  
+
+    # Apply a Function over a List
+    # get the length of sequences
+    sapply(lx, length)
+
+`summary()`関数でデータの要約:
+ 
+    # Object Summaries
+    summary(lx[[1]])
+
+配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
+
+[`AAstat()`](https://www.rdocumentation.org/packages/seqinr/versions/3.3-3/topics/AAstat)
+関数を用いて、タンパク質の配列情報（アミノ酸残基数、物理化学的クラスの割合、等電点の理論値）を求める:  
+
+    ?AAstat
+
+    # Get protein statistics
+    AAstat(lx[[1]])
+
+![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
+
+アミノ酸の個数を出力:  
+
+    # Get amino acid counts
+    AAstat(lx[[1]], plot = FALSE)$Compo
+
+物理化学的クラス (Tiny, Small, Aliphatic, Aromatic, Non-polar, Polar, Charged, Positive, Negative) の割合を出力:
+
+    # Get the percentage of each physico-chemical classes
+    AAstat(lx[[1]], plot = FALSE)$Prop
+
+    AAstat(lx[[1]], plot = FALSE)$Prop$Aromatic
+
+`sapply()`関数は、リストの各要素に関数を適用する。複数タンパク質配列の物理化学的クラスの割合を求める:  
+
+    # Apply a Function over a List
+    # get the percentage of each physico-chemical classes
+    sapply(lx, function(x) AAstat(x, plot=FALSE)$Prop )
+
+複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
+
+    # absolute frequencies
+    ( X <- sapply(lx, function(x) AAstat(x, plot=FALSE)$Compo ) )
+
+    # relative frequencies
+    ( X <- sapply(lx, function(x) summary(x)$composition ) )
+
+データをカンマ区切りファイルとして出力する:  
+
+    # Export data as a CSV file to be read by spreadsheets:
+    write.csv(t(X), file="table.csv")
+
+    # open current working directory
+    system("open .")
+
+[26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
+
+    # Exploring and Transforming Dataframes
+    dim(X)
+    colnames(X) <- sub(pattern=".+protein=(.+)\\] \\[protein_id=.+", replacement="\\1", getAnnot(lx))
+
+タンパク質のアミノ酸使用パターンを比較する。`matplot()`関数でプロットする:  
+
+    # plot amino acid usage profiles together using matplot
+    matplot(X, type="l", col=rainbow(12), lty=1:6)
+    legend("topleft", legend=colnames(X), col=rainbow(12), lty=1:6)
+    # lty: 0=blank, 1=solid (default), 2=dashed, 3=dotted, 4=dotdash, 5=longdash, 6=twodash
+
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+
+    # Hierarchical cluster analysis
+    plot(hclust(dist(t(X))))
+
+
+
 
 ----------
 ## assignment 6
