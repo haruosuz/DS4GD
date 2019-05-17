@@ -29,7 +29,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-04-30 *【国民の休日】National Holiday*
 - 2019-05-07 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2019-05-14 No. 5 - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
-- 2019-05-21 No. 6 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-e-utilities)
+- 2019-05-21 No. 6 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#coding-sequences)
 - 2019-05-28 No. 7 - 中間発表 [interim report](#interim-report)
   - タンパク質配列解析 [Protein sequence analysis](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
 - 2019-06-04 No. 8 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
