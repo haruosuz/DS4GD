@@ -783,7 +783,7 @@ CDSの要約統計量（最小値、中央値、最大値など）を求める:
 
     summary(d[, c("Length", "GCcontent", "GCp3")])
 
-[R | R を利用した統計解析およびデータの視覚化](R | R を利用した統計解析およびデータの視覚化)
+[R | R を利用した統計解析およびデータの視覚化](https://stats.biopapyrus.jp/r/)
 
     plot(d[, c("Length", "GCcontent", "GCp3")])
 
