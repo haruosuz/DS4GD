@@ -15,7 +15,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
-- [NCBI E-utilities](#ncbi-e-utilities)
+- [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 6](#assignment-6) 課題No.6 「dotplot」
 - [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題No.8 「Multiple Alignment and Phylogenetic Trees」
@@ -688,7 +688,8 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 
 ----------
 
-## [NCBI E-utilities](https://github.com/haruosuz/bioinfo/blob/master/README.md#e-utilities)
+## [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#annotation-of-coding-sequences)
+タンパク質コード配列 
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
@@ -708,6 +709,7 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 
 [サルモネラ](https://ja.wikipedia.org/wiki/サルモネラ) ネズミチフス菌 [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344](https://www.ncbi.nlm.nih.gov/genome/152?genome_assembly_id=154382) のプラスミド pRSF1010_SL1344 の配列データを取得する。
 
+[E-utilities](https://github.com/haruosuz/bioinfo/blob/master/README.md#e-utilities)を用いて、
 NCBIから配列データを取得する:  
 ```
 # Load the SeqinR package
@@ -755,6 +757,26 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 | .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
 
 [DDBJ タンパク質コード配列; CDS feature について](https://www.ddbj.nig.ac.jp/ddbj/cds.html)
+
+`sapply()`は、リストの各要素に関数を適用する。タンパク質コード配列（CDS）の長さ、G+C含量、アノテーションのテーブルを作成する:  
+
+    # Apply a Function over a List
+    Length <- sapply(ffn, length) # length of sequences
+    GCcontent <- sapply(ffn, GC) # Global G+C content
+    GCp1 <- sapply(ffn, GC1) # G+C at 1st codon position
+    GCp2 <- sapply(ffn, GC2) # Global 2nd codon position
+    GCp3 <- sapply(ffn, GC3) # Global 3rd codon position
+    Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[protein=(.+)\\] \\[protein_id=.+", replacement="\\1 \\2", getAnnot(ffn))
+    df <- data.frame(Length, GCcontent, GCp1, GCp2, GCp3, Annotation)
+
+    # Data Output
+    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
+    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
+
+    # open current working directory
+    system("open .")
+
+plot(df$Length, df$GCcontent)
 
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
