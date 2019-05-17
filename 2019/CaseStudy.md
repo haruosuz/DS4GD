@@ -779,7 +779,7 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 
 `summary()`関数でデータフレームの列を要約する。  
-ゲノムの Size (Mb), GC%, Genes, Proteins の要約統計量（最小値、中央値、最大値など）を求める:  
+CDSの要約統計量（最小値、中央値、最大値など）を求める:  
 
     summary(d[, c("Length", "GCcontent", "GCp3")])
 
