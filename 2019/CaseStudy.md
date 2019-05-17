@@ -138,7 +138,8 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 ![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
 
 ----------
-## [NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
+## NCBI Genome List
+[NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
 
 [ゲノムブラウザ](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
@@ -706,6 +707,13 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
     # List the Files in a Directory
     dir()
 
+[seqinr](https://github.com/haruosuz/r4bioinfo/blob/master/R_seqinR/README.md)
+パッケージの呼び出し:
+```
+# Loading seqinr package
+library("seqinr")
+```
+
 [ミディクロリア](https://ja.wikipedia.org/wiki/ミディクロリア) [Candidatus Midichloria mitochondrii](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Midichloria%20mitochondrii)はミトコンドリアに細胞内共生する細菌である。
 
 [サルモネラ](https://ja.wikipedia.org/wiki/サルモネラ) ネズミチフス菌 [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344](https://www.ncbi.nlm.nih.gov/genome/152?genome_assembly_id=154382) のプラスミド pRSF1010_SL1344 の配列データを取得する。
@@ -713,9 +721,6 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/README.md#e-utilities)を用いて、
 NCBIから配列データを取得する:  
 ```
-# Load the SeqinR package
-library("seqinr")
-
 # Retrieving sequence data from NCBI
 ACCESSION <- "NC_017719" # Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 plasmid pRSF1010_SL1344
 #ACCESSION <- "NC_015722" # Candidatus Midichloria mitochondrii IricVA
@@ -757,13 +762,14 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 | .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
 
 `sapply()`は、リストの各要素に関数を適用する。タンパク質コード配列（CDS）の長さ、G+C含量、アノテーションのテーブルを作成する:  
-
-    # Apply a Function over a List
-    Length <- sapply(ffn, length)
-    GCcontent <- sapply(ffn, GC) # Global G+C content
-    GCp3 <- sapply(ffn, GC3) # G+C at 3rd codon position
-    Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[protein=(.+)\\] \\[protein_id=.+", replacement="\\1 \\2", getAnnot(ffn))
-    d <- data.frame(Length, GCcontent, GCp3, Annotation)
+```
+# Apply a Function over a List
+Length <- sapply(ffn, length)
+GCcontent <- sapply(ffn, GC) # Global G+C content
+GCp3 <- sapply(ffn, GC3) # G+C at 3rd codon position
+Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[protein=(.+)\\] (\\[(protein_id|pseudo)=(.+)) \\[location=.+", replacement="\\1 \\2 \\3", getAnnot(ffn))
+d <- data.frame(Length, GCcontent, GCp3, Annotation)
+```
 
 データのエクスポート。  
 `write.table`関数でタブ区切りファイルとして出力する:  
@@ -802,6 +808,32 @@ pairs.panels(d[, c("Length", "GCcontent", "GCp3")])
     myTrans <- getTrans(ffn)
     myTrans[[1]]
     faa[[1]]
+
+- 2019年5月16日[【合成生物学】大腸菌の遺伝コードを圧縮する](https://www.natureasia.com/ja-jp/nature/pr-highlights/12951)
+- [Total synthesis of Escherichia coli with a recoded genome | Nature](https://www.nature.com/articles/s41586-019-1192-5)
+
+```
+# to plot genetic code as in textbooks
+tablecode()
+```
+
+https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage
+
+[コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
+
+`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
+複数のDNA配列の結合データを作成する:  
+
+    # Flatten Lists
+    ffn.concat <- unlist(ffn)
+
+全てのタンパク質コード配列(CDS)の累積コドン使用頻度（絶対度数、相対度数、観測度数と期待度数の比）を計算する:  
+データをカンマ区切りファイルとして出力する:  
+
+    # Codon usage for the collection of all genes    df <- uco(ffn.concat, as.data.frame = TRUE) # all indices are returned into a data frame
+
+    # Export data as a CSV file to be read by spreadsheets:
+    write.csv(df[order(df$AA),], file="~/Desktop/table.uco.csv", quote=TRUE, row.names=FALSE)
 
 [`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
 関数を用いて、配列のアノテーションを取得する:  
@@ -890,17 +922,11 @@ pairs.panels(d[, c("Length", "GCcontent", "GCp3")])
 
     # absolute frequencies
     ( X <- sapply(lseq, function(x) AAstat(x, plot=FALSE)$Compo ) )
+    write.csv(t(X), file="~/Desktop/table.aau.af.csv")
 
     # relative frequencies
     ( X <- sapply(lseq, function(x) summary(x)$composition ) )
-
-データをカンマ区切りファイルとして出力する:  
-
-    # Export data as a CSV file to be read by spreadsheets:
-    write.csv(t(X), file="table.csv")
-
-    # open current working directory
-    system("open .")
+    write.csv(t(X), file="~/Desktop/table.aau.rf.csv")
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
