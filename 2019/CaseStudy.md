@@ -689,7 +689,8 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 ----------
 
 ## [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#annotation-of-coding-sequences)
-タンパク質コード配列 
+
+[DDBJ タンパク質コード配列; CDS feature について](https://www.ddbj.nig.ac.jp/ddbj/cds.html)
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
@@ -745,7 +746,6 @@ head(getAnnot(faa), 1)
 write.fasta(sequences=fna, names=getAnnot(fna), file.out=paste0(ACCESSION,".fna"))
 write.fasta(sequences=ffn, names=getAnnot(ffn), file.out=paste0(ACCESSION,".ffn"))
 write.fasta(sequences=faa, names=getAnnot(faa), file.out=paste0(ACCESSION,".faa"))
-
 ```
 
 prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#output-files)
@@ -756,27 +756,44 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 | .faa | Protein FASTA file of the translated CDS sequences. |
 | .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
 
-[DDBJ タンパク質コード配列; CDS feature について](https://www.ddbj.nig.ac.jp/ddbj/cds.html)
-
 `sapply()`は、リストの各要素に関数を適用する。タンパク質コード配列（CDS）の長さ、G+C含量、アノテーションのテーブルを作成する:  
 
     # Apply a Function over a List
-    Length <- sapply(ffn, length) # length of sequences
+    Length <- sapply(ffn, length)
     GCcontent <- sapply(ffn, GC) # Global G+C content
-    GCp1 <- sapply(ffn, GC1) # G+C at 1st codon position
-    GCp2 <- sapply(ffn, GC2) # Global 2nd codon position
-    GCp3 <- sapply(ffn, GC3) # Global 3rd codon position
+    GCp3 <- sapply(ffn, GC3) # G+C at 3rd codon position
     Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[protein=(.+)\\] \\[protein_id=.+", replacement="\\1 \\2", getAnnot(ffn))
-    df <- data.frame(Length, GCcontent, GCp1, GCp2, GCp3, Annotation)
+    d <- data.frame(Length, GCcontent, GCp3, Annotation)
 
-    # Data Output
-    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
-    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
+データのエクスポート。  
+`write.table`関数でタブ区切りファイルとして出力する:  
+`write.csv`関数でカンマ区切りファイルとして出力する:  
+
+    # Exporting Data
+    write.table(d, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
+    write.csv(d, file="table.csv", quote=TRUE, row.names=TRUE)
 
     # open current working directory
     system("open .")
 
-plot(df$Length, df$GCcontent)
+https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
+
+`summary()`関数でデータフレームの列を要約する。  
+ゲノムの Size (Mb), GC%, Genes, Proteins の要約統計量（最小値、中央値、最大値など）を求める:  
+
+    summary(d[, c("Length", "GCcontent", "GCp3")])
+
+[R | R を利用した統計解析およびデータの視覚化](R | R を利用した統計解析およびデータの視覚化)
+
+    plot(d[, c("Length", "GCcontent", "GCp3")])
+
+[pairs.panels](https://github.com/haruosuz/r4bioinfo/blob/master/R_memo/R_plot.md#pairspanels)
+
+```
+#install.packages("psych")
+library(psych)
+pairs.panels(d[, c("Length", "GCcontent", "GCp3")])
+```
 
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
