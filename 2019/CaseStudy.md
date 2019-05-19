@@ -10,7 +10,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
-- [NCBI](#ncbi) genome_browse ゲノムブラウザ
+- [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
@@ -141,6 +141,7 @@ https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#inst
 ## NCBI Genome List
 [NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
+の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
 
 [ゲノムブラウザ](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
 例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*を検索する。
@@ -454,9 +455,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     GC(unlist(seqs))
 
 ----------
-
 ## NCBI GENOME_REPORTS
-[NCBI](#ncbi)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
 
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
 *README*をクリックして開く。
@@ -801,6 +800,32 @@ library(psych)
 pairs.panels(d[, c("Length", "GCcontent", "GCp3")])
 ```
 
+2019年5月16日[【合成生物学】大腸菌の遺伝コードを圧縮する](https://www.natureasia.com/ja-jp/nature/pr-highlights/12951)
+[Total synthesis of Escherichia coli with a recoded genome | Nature](https://www.nature.com/articles/s41586-019-1192-5)
+
+```
+# to plot genetic code as in textbooks
+tablecode()
+```
+
+[コドン使用の解析](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)
+
+`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
+全CDSの結合データを作成する:  
+
+    # Flatten Lists
+    ffn.concat <- unlist(ffn)
+
+全CDSの結合データのコドン使用頻度（絶対度数、相対度数、観測度数と期待度数の比）を計算し、カンマ区切りファイルとして出力する:  
+
+    # Codon usage for the collection of all genes    df <- uco(ffn.concat, as.data.frame = TRUE) # all indices are returned into a data frame
+
+    # Export data as a CSV file to be read by spreadsheets:
+    write.csv(df[order(df$AA),], file="table.uco.csv", quote=TRUE, row.names=FALSE)
+
+    # open current working directory
+    system("open .")
+
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
 
@@ -808,32 +833,6 @@ pairs.panels(d[, c("Length", "GCcontent", "GCp3")])
     myTrans <- getTrans(ffn)
     myTrans[[1]]
     faa[[1]]
-
-- 2019年5月16日[【合成生物学】大腸菌の遺伝コードを圧縮する](https://www.natureasia.com/ja-jp/nature/pr-highlights/12951)
-- [Total synthesis of Escherichia coli with a recoded genome | Nature](https://www.nature.com/articles/s41586-019-1192-5)
-
-```
-# to plot genetic code as in textbooks
-tablecode()
-```
-
-https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage
-
-[コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
-
-`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
-複数のDNA配列の結合データを作成する:  
-
-    # Flatten Lists
-    ffn.concat <- unlist(ffn)
-
-全てのタンパク質コード配列(CDS)の累積コドン使用頻度（絶対度数、相対度数、観測度数と期待度数の比）を計算する:  
-データをカンマ区切りファイルとして出力する:  
-
-    # Codon usage for the collection of all genes    df <- uco(ffn.concat, as.data.frame = TRUE) # all indices are returned into a data frame
-
-    # Export data as a CSV file to be read by spreadsheets:
-    write.csv(df[order(df$AA),], file="~/Desktop/table.uco.csv", quote=TRUE, row.names=FALSE)
 
 [`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
 関数を用いて、配列のアノテーションを取得する:  
@@ -912,7 +911,8 @@ https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage
 
     AAstat(lseq[[1]], plot = FALSE)$Prop$Aromatic
 
-`sapply()`関数は、リストの各要素に関数を適用する。複数タンパク質配列の物理化学的クラスの割合を求める:  
+`sapply()`関数は、リストの各要素に関数を適用する。
+複数タンパク質配列の物理化学的クラスの割合を求める:  
 
     # Apply a Function over a List
     # get the percentage of each physico-chemical classes
@@ -922,11 +922,14 @@ https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage
 
     # absolute frequencies
     ( X <- sapply(lseq, function(x) AAstat(x, plot=FALSE)$Compo ) )
-    write.csv(t(X), file="~/Desktop/table.aau.af.csv")
+    write.csv(t(X), file="table.aau.af.csv")
 
     # relative frequencies
     ( X <- sapply(lseq, function(x) summary(x)$composition ) )
-    write.csv(t(X), file="~/Desktop/table.aau.rf.csv")
+    write.csv(t(X), file="table.aau.rf.csv")
+
+    # open current working directory
+    system("open .")
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
