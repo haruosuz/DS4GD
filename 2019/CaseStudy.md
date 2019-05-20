@@ -836,7 +836,7 @@ uco(seq = testseq, index = "rscu")
     # Flatten Lists
     ffn.concat <- unlist(ffn)
 
-全CDSの結合データのコドン使用頻度（絶対度数`eff`、相対度数`freq`、Relative Synonymous Codon Usage `rscu`）を計算し、カンマ区切りファイルとして出力する:  
+全CDSの結合データのコドン使用頻度`("eff", "freq", "rscu")`を計算し、カンマ区切りファイルとして出力する:  
 
     # Codon usage for the collection of all genes    df.uco <- uco(ffn.concat, as.data.frame = TRUE) # all indices are returned into a data frame
 
