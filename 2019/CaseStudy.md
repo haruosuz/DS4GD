@@ -708,7 +708,7 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 
 [ミディクロリア](https://ja.wikipedia.org/wiki/ミディクロリア) [Candidatus Midichloria mitochondrii](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Midichloria%20mitochondrii)はミトコンドリアに細胞内共生する細菌である。
 
-[サルモネラ](https://ja.wikipedia.org/wiki/サルモネラ) ネズミチフス菌 [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344](https://www.ncbi.nlm.nih.gov/genome/152?genome_assembly_id=154382) のプラスミド pRSF1010_SL1344 の配列データを取得する。
+[サルモネラ](https://ja.wikipedia.org/wiki/サルモネラ) ネズミチフス菌 [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344](https://www.ncbi.nlm.nih.gov/genome/152?genome_assembly_id=154382) のプラスミド pRSF1010_SL1344 は、IncQグループに属する広宿主域 broad host range プラスミドである ([新谷ら, 2013](https://www.jseb.jp/wordpress/wp-content/uploads/13-02-125.pdf))。
 
 [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/README.md#e-utilities)を用いて、
 NCBIから配列データを取得する:  
@@ -737,8 +737,8 @@ length(faa)
 # 配列のアノテーションを取得する:  
 # get sequence annotations
 getAnnot(fna)
-head(getAnnot(ffn), 1)
-head(getAnnot(faa), 1)
+head(getAnnot(ffn), 2)
+head(getAnnot(faa), 2)
 
 # 配列データをFASTA形式ファイルとして書き出す:  
 # Writing sequence data out as a FASTA file
@@ -758,10 +758,10 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 [45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)  
 関数`save()`でデータの構造を記録する。呼び出す場合は関数`load()`を用いる。
 ```
-save(fna, ffn, faa, file="fasta.RData") # Save R Objects
-rm(faa, ffn, fna)
-ls()
-load(file="fasta.RData") # Reload Saved Datasets
+save(fna, ffn, faa, file="my_fna_ffn_faa.RData") # Save R Objects
+ls() # List Objects
+rm(faa, ffn, fna) # Remove Objects
+load(file="my_fna_ffn_faa.RData") # Reload Saved Datasets
 ```
 
 `sapply()`は、リストの各要素に関数を適用する。  
@@ -786,23 +786,35 @@ df <- data.frame(Length, GCcontent, GCp3, Annotation)
     # open current working directory
     system("open .")
 
+[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
+```
+# Exploring and Transforming Dataframes
+dim(df)
+head(df, n=1)
+colnames(df)
+
+df[, c("Length", "GCcontent", "GCp3")]
+df[, 1:3]
+( val <- df[, -4] )
+```
+
 https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 
 `summary()`関数でデータフレームの列を要約する。  
 CDSの要約統計量（最小値、中央値、最大値など）を求める:  
 
-    summary(df[, c("Length", "GCcontent", "GCp3")])
+    summary(val)
 
 [R | R を利用した統計解析およびデータの視覚化](https://stats.biopapyrus.jp/r/)
 
-    plot(df[, c("Length", "GCcontent", "GCp3")])
+    plot(val)
 
 [pairs.panels](https://github.com/haruosuz/r4bioinfo/blob/master/R_memo/R_plot.md#pairspanels)
 
 ```
 #install.packages("psych")
 library(psych)
-pairs.panels(df[, c("Length", "GCcontent", "GCp3")])
+pairs.panels(val)
 ```
 
 2019年5月16日[【合成生物学】大腸菌の遺伝コードを圧縮する](https://www.natureasia.com/ja-jp/nature/pr-highlights/12951)
@@ -844,7 +856,7 @@ uco(seq = testseq, index = "rscu")
 
 全CDSの結合データのコドン使用頻度`("eff", "freq", "rscu")`を計算し、カンマ区切りファイルとして出力する:  
 
-    # Codon usage for the collection of all genes    df.uco <- uco(ffn.concat, as.data.frame = TRUE) # all indices are returned into a data frame
+    # Codon usage for the collection of all genes    df.uco <- uco(ffn.concat, as.data.frame=TRUE) # all indices are returned into a data frame
 
     # Export data as a CSV file to be read by spreadsheets:
     write.csv(df.uco[order(df.uco$AA),], file="table.uco.csv", quote=TRUE, row.names=FALSE)
@@ -883,17 +895,6 @@ uco(seq = testseq, index = "rscu")
     # extract the elements of the list object
     faa[TF]
 
-`write.fasta()`関数を用いて、配列データをFASTA形式ファイルとして書き出す:  
-
-    # Writing sequence data out as a FASTA file
-    write.fasta(sequences = faa[TF], names = getAnnot(faa[TF]), file.out = "mySequences.fasta")
-
-作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
-
-    setwd("~/projects/data/ncbi/eutils") # Set Working Directory
-    library(seqinr) # Load the SeqinR package
-    lseq <- read.fasta(file = "mySequences.fasta", seqtype = c("AA"), strip.desc = TRUE) # Reading sequence data
-
 #### Amino acid usage
 **タンパク質の[アミノ酸組成](https://kotobank.jp/word/アミノ酸組成-761227)**
 
@@ -907,52 +908,46 @@ uco(seq = testseq, index = "rscu")
 
     # Apply a Function over a List
     # get the length of sequences
-    sapply(lseq, length)
+    sapply(faa[TF], length)
+
+`[[ ]]`はリスト内の要素（ベクトル）を取り出す。
+リストの1番目の要素を取り出す:  
+
+    # extract the 1st element:
+    faa1 <- faa[TF][[1]]
 
 `summary()`関数でデータの要約:  
 
     # Object Summaries
-    summary(lseq[[1]])
+    summary(faa1)
 
 配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
 
-[`AAstat()`](https://www.rdocumentation.org/packages/seqinr/versions/3.3-3/topics/AAstat)
-関数を用いて、タンパク質の配列情報（アミノ酸残基数、物理化学的クラスの割合、等電点の理論値）を求める:  
-
-    ?AAstat
-
-    # Get protein statistics
-    AAstat(lseq[[1]])
-
 ![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
 
-アミノ酸の個数を出力:  
+[`AAstat()`](https://www.rdocumentation.org/packages/seqinr/versions/3.3-3/topics/AAstat)
+関数を用いて、タンパク質の配列情報（アミノ酸残基数、物理化学的クラスの割合、[等電点](https://ja.wikipedia.org/wiki/等電点)の理論値）を求める:  
+
+    # Get protein statistics
+    AAstat(seq=faa1)
+
+    aa <- AAstat(seq=faa1, plot=FALSE)
 
     # Get amino acid counts
-    AAstat(lseq[[1]], plot = FALSE)$Compo
-
-物理化学的クラス (Tiny, Small, Aliphatic, Aromatic, Non-polar, Polar, Charged, Positive, Negative) の割合を出力:
+    aa$Compo
 
     # Get the percentage of each physico-chemical classes
-    AAstat(lseq[[1]], plot = FALSE)$Prop
-
-    AAstat(lseq[[1]], plot = FALSE)$Prop$Aromatic
-
-`sapply()`関数は、リストの各要素に関数を適用する。
-複数タンパク質配列の物理化学的クラスの割合を求める:  
-
-    # Apply a Function over a List
-    # get the percentage of each physico-chemical classes
-    sapply(lseq, function(x) AAstat(x, plot=FALSE)$Prop )
+    aa$Prop
+    aa$Prop$Aromatic
 
 複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
 
     # absolute frequencies
-    ( X <- sapply(lseq, function(x) AAstat(x, plot=FALSE)$Compo ) )
+    ( X <- sapply(faa[TF], function(x) AAstat(x, plot=FALSE)$Compo ) )
     write.csv(t(X), file="table.aau.af.csv")
 
     # relative frequencies
-    ( X <- sapply(lseq, function(x) summary(x)$composition ) )
+    ( X <- sapply(faa[TF], function(x) summary(x)$composition ) )
     write.csv(t(X), file="table.aau.rf.csv")
 
     # open current working directory
@@ -962,7 +957,7 @@ uco(seq = testseq, index = "rscu")
 
     # Exploring and Transforming Dataframes
     dim(X)
-    colnames(X) <- sub(pattern=".+protein=(.+)\\] \\[(protein_id|pseudo)=.+", replacement="\\1", getAnnot(lseq))
+    colnames(X) <- sub(pattern=".+protein=(.+)\\] \\[(protein_id|pseudo)=.+", replacement="\\1", getAnnot(faa[TF]))
 
 クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)  
 
@@ -972,7 +967,7 @@ uco(seq = testseq, index = "rscu")
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)  
 
     # Draw a Heat Map
-    heatmap(X, margins=c(20,2), cexCol=0.9, scale="none", col=gray.colors(12))
+    heatmap(X, margins=c(8,2), cexCol=0.9, scale="none", col=gray.colors(12))
 
 ----------
 ## assignment 6
