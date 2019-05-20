@@ -872,13 +872,9 @@ uco(seq = testseq, index = "rscu")
     faa[[1]]
 
 ### amino acid usage
-**タンパク質の[アミノ酸組成](https://kotobank.jp/word/アミノ酸組成-761227)**
+**タンパク質のアミノ酸使用**
 
-[アミノ酸の物性](https://www.thermofisher.com/jp/ja/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/amino-acid-physical-properties.html)
-
-![http://www.jalview.org/help/html/misc/aaproperties.html](http://www.jalview.org/help/html/misc/properties.gif)
-
-[タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html) 平成22年度、清水謙多郎
+平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
 
 `[[ ]]`はリスト内の要素（ベクトル）を取り出す。
 リストの1番目の要素を取り出す:  
@@ -892,6 +888,10 @@ uco(seq = testseq, index = "rscu")
     summary(faa1)
 
 配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
+
+アミノ酸の物性](https://www.thermofisher.com/jp/ja/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/amino-acid-physical-properties.html)
+
+![http://www.jalview.org/help/html/misc/aaproperties.html](http://www.jalview.org/help/html/misc/properties.gif)
 
 ![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
 
