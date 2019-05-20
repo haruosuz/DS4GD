@@ -755,7 +755,7 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 | .faa | Protein FASTA file of the translated CDS sequences. |
 | .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
 
-![45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)  
+[45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)  
 関数`save()`でデータの構造を記録する。呼び出す場合は関数`load()`を用いる。
 ```
 save(fna, ffn, faa, file="fasta.RData") # Save R Objects
