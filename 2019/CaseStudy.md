@@ -826,7 +826,7 @@ tablecode()
 ```
 
 ### codon usage
-[コドン使用の解析](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)
+**[コドン使用](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)**
 
 [`uco`](https://rdrr.io/rforge/seqinr/man/uco.html)
 関数を用いて、コドン使用頻度（絶対度数 codon counts `eff`、相対度数 relative frequencies `freq`、Relative Synonymous Codon Usage `rscu`）を計算する:  
@@ -872,7 +872,7 @@ uco(seq = testseq, index = "rscu")
     faa[[1]]
 
 ### amino acid usage
-**タンパク質のアミノ酸使用**
+**アミノ酸使用**
 
 平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
 
@@ -889,7 +889,7 @@ uco(seq = testseq, index = "rscu")
 
 配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
 
-アミノ酸の物性](https://www.thermofisher.com/jp/ja/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/amino-acid-physical-properties.html)
+[アミノ酸の物性](https://www.thermofisher.com/jp/ja/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/amino-acid-physical-properties.html)
 
 ![http://www.jalview.org/help/html/misc/aaproperties.html](http://www.jalview.org/help/html/misc/properties.gif)
 
