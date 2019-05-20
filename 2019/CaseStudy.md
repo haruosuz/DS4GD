@@ -767,7 +767,7 @@ Length <- sapply(ffn, length)
 GCcontent <- sapply(ffn, GC) # Global G+C content
 GCp3 <- sapply(ffn, GC3) # G+C at 3rd codon position
 Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[protein=(.+)\\] (\\[(protein_id|pseudo)=(.+)) \\[location=.+", replacement="\\1 \\2 \\3", getAnnot(ffn))
-d <- data.frame(Length, GCcontent, GCp3, Annotation)
+df <- data.frame(Length, GCcontent, GCp3, Annotation)
 ```
 
 データのエクスポート。  
@@ -775,8 +775,8 @@ d <- data.frame(Length, GCcontent, GCp3, Annotation)
 `write.csv`関数でカンマ区切りファイルとして出力する:  
 
     # Exporting Data
-    write.table(d, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
-    write.csv(d, file="table.csv", quote=TRUE, row.names=TRUE)
+    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
+    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
 
     # open current working directory
     system("open .")
@@ -786,18 +786,18 @@ https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 `summary()`関数でデータフレームの列を要約する。  
 CDSの要約統計量（最小値、中央値、最大値など）を求める:  
 
-    summary(d[, c("Length", "GCcontent", "GCp3")])
+    summary(df[, c("Length", "GCcontent", "GCp3")])
 
 [R | R を利用した統計解析およびデータの視覚化](https://stats.biopapyrus.jp/r/)
 
-    plot(d[, c("Length", "GCcontent", "GCp3")])
+    plot(df[, c("Length", "GCcontent", "GCp3")])
 
 [pairs.panels](https://github.com/haruosuz/r4bioinfo/blob/master/R_memo/R_plot.md#pairspanels)
 
 ```
 #install.packages("psych")
 library(psych)
-pairs.panels(d[, c("Length", "GCcontent", "GCp3")])
+pairs.panels(df[, c("Length", "GCcontent", "GCp3")])
 ```
 
 2019年5月16日[【合成生物学】大腸菌の遺伝コードを圧縮する](https://www.natureasia.com/ja-jp/nature/pr-highlights/12951)
@@ -810,18 +810,38 @@ tablecode()
 
 [コドン使用の解析](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)
 
+テスト配列データの3連続塩基頻度とコドン使用頻度（絶対度数 codon counts `eff`、相対度数 relative frequencies `freq`、Relative Synonymous Codon Usage `rscu`）を計算する:  
+```
+# Create tests
+testseq <- s2c("ttcttt")
+
+## trimer
+count(seq = testseq, wordsize = 3)
+
+## codon counts `eff`
+uco(seq = testseq, index = "eff")
+
+## codon relative frequencies `freq`
+uco(seq = testseq, index = "freq")
+
+## Relative Synonymous Codon Usage `rscu`
+uco(seq = testseq, index = "rscu")
+```
+
+連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+
 `unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
-全CDSの結合データを作成する:  
+全CDSのデータを結合する(concatenate):  
 
     # Flatten Lists
     ffn.concat <- unlist(ffn)
 
-全CDSの結合データのコドン使用頻度（絶対度数、相対度数、観測度数と期待度数の比）を計算し、カンマ区切りファイルとして出力する:  
+全CDSの結合データのコドン使用頻度（絶対度数`eff`、相対度数`freq`、Relative Synonymous Codon Usage `rscu`）を計算し、カンマ区切りファイルとして出力する:  
 
-    # Codon usage for the collection of all genes    df <- uco(ffn.concat, as.data.frame = TRUE) # all indices are returned into a data frame
+    # Codon usage for the collection of all genes    df.uco <- uco(ffn.concat, as.data.frame = TRUE) # all indices are returned into a data frame
 
     # Export data as a CSV file to be read by spreadsheets:
-    write.csv(df[order(df$AA),], file="table.uco.csv", quote=TRUE, row.names=FALSE)
+    write.csv(df.uco[order(df.uco$AA),], file="table.uco.csv", quote=TRUE, row.names=FALSE)
 
     # open current working directory
     system("open .")
