@@ -706,13 +706,6 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
     # List the Files in a Directory
     dir()
 
-[seqinr](https://github.com/haruosuz/r4bioinfo/blob/master/R_seqinR/README.md)
-パッケージの呼び出し:
-```
-# Loading seqinr package
-library("seqinr")
-```
-
 [ミディクロリア](https://ja.wikipedia.org/wiki/ミディクロリア) [Candidatus Midichloria mitochondrii](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Midichloria%20mitochondrii)はミトコンドリアに細胞内共生する細菌である。
 
 [サルモネラ](https://ja.wikipedia.org/wiki/サルモネラ) ネズミチフス菌 [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344](https://www.ncbi.nlm.nih.gov/genome/152?genome_assembly_id=154382) のプラスミド pRSF1010_SL1344 の配列データを取得する。
@@ -721,6 +714,8 @@ library("seqinr")
 NCBIから配列データを取得する:  
 ```
 # Retrieving sequence data from NCBI
+library("seqinr") # Loading seqinr package
+
 ACCESSION <- "NC_017719" # Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 plasmid pRSF1010_SL1344
 #ACCESSION <- "NC_015722" # Candidatus Midichloria mitochondrii IricVA
 
@@ -760,7 +755,17 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 | .faa | Protein FASTA file of the translated CDS sequences. |
 | .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
 
-`sapply()`は、リストの各要素に関数を適用する。タンパク質コード配列（CDS）の長さ、G+C含量、アノテーションのテーブルを作成する:  
+
+関数`save()`でデータの構造を記録する。呼び出す場合は関数`load()`を用いる。
+```
+save(fna, ffn, faa, file="fasta.RData") # Save R Objects
+rm(faa, ffn, fna)
+ls()
+load(file="fasta.RData") # Reload Saved Datasets
+```
+
+`sapply()`は、リストの各要素に関数を適用する。  
+タンパク質コード配列（CDS）の長さ、G+C含量、アノテーションのテーブルを作成する:  
 ```
 # Apply a Function over a List
 Length <- sapply(ffn, length)
@@ -810,7 +815,8 @@ tablecode()
 
 [コドン使用の解析](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)
 
-テスト配列データの3連続塩基頻度とコドン使用頻度（絶対度数 codon counts `eff`、相対度数 relative frequencies `freq`、Relative Synonymous Codon Usage `rscu`）を計算する:  
+[`uco`](https://rdrr.io/rforge/seqinr/man/uco.html)
+関数を用いて、コドン使用頻度（絶対度数 codon counts `eff`、相対度数 relative frequencies `freq`、Relative Synonymous Codon Usage `rscu`）を計算する:  
 ```
 # Create tests
 testseq <- s2c("ttcttt")
@@ -830,7 +836,7 @@ uco(seq = testseq, index = "rscu")
 
 連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
-`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
+`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。  
 全CDSのデータを結合する(concatenate):  
 
     # Flatten Lists
@@ -868,6 +874,7 @@ uco(seq = testseq, index = "rscu")
     # grepl returns a logical vector (match or not for each element of x).
     pattern <- "mobilization|hypothetical.protein"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
+    #TF <- !grepl(pattern = "hypothetical.protein", x = myAnnot, ignore.case = TRUE)
     sum(TF)
     myAnnot[TF]
 
@@ -902,8 +909,8 @@ uco(seq = testseq, index = "rscu")
     # get the length of sequences
     sapply(lseq, length)
 
-`summary()`関数でデータの要約:
- 
+`summary()`関数でデータの要約:  
+
     # Object Summaries
     summary(lseq[[1]])
 
@@ -955,22 +962,17 @@ uco(seq = testseq, index = "rscu")
 
     # Exploring and Transforming Dataframes
     dim(X)
-    colnames(X) <- sub(pattern=".+protein=(.+)\\] \\[protein_id=.+", replacement="\\1", getAnnot(lseq))
+    colnames(X) <- sub(pattern=".+protein=(.+)\\] \\[(protein_id|pseudo)=.+", replacement="\\1", getAnnot(lseq))
 
-タンパク質のアミノ酸使用パターンを比較する。`matplot()`関数でプロットする:  
-
-    # plot amino acid usage profiles together using matplot
-    matplot(X, type="l", col=rainbow(12), lty=1:6)
-    legend("topleft", legend=colnames(X), col=rainbow(12), lty=1:6)
-    # lty: 0=blank, 1=solid (default), 2=dashed, 3=dotted, 4=dotdash, 5=longdash, 6=twodash
-
-クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)  
 
     # Hierarchical cluster analysis
     plot(hclust(dist(t(X))))
 
+ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)  
 
-
+    # Draw a Heat Map
+    heatmap(X, margins=c(20,2), cexCol=0.9, scale="none", col=gray.colors(12))
 
 ----------
 ## assignment 6
