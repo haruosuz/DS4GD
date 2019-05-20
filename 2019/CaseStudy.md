@@ -933,11 +933,11 @@ uco(seq = testseq, index = "rscu")
 複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
 
     # absolute frequencies
-    ( X <- sapply(faa[TF], function(x) AAstat(x, plot=FALSE)$Compo ) )
+    X <- sapply(faa[TF], function(x) AAstat(x, plot=FALSE)$Compo )
     write.csv(t(X), file="table.aa_af.csv")
 
     # relative frequencies
-    ( X <- sapply(faa[TF], function(x) summary(x)$composition ) )
+    X <- sapply(faa[TF], function(x) summary(x)$composition )
     write.csv(t(X), file="table.aa_rf.csv")
 
     # open current working directory
