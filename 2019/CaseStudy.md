@@ -825,6 +825,7 @@ pairs.panels(val)
 tablecode()
 ```
 
+### codon usage
 [コドン使用の解析](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)
 
 [`uco`](https://rdrr.io/rforge/seqinr/man/uco.html)
@@ -845,8 +846,6 @@ uco(seq = testseq, index = "freq")
 ## Relative Synonymous Codon Usage `rscu`
 uco(seq = testseq, index = "rscu")
 ```
-
-連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
 `unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。  
 全CDSのデータを結合する(concatenate):  
@@ -872,30 +871,7 @@ uco(seq = testseq, index = "rscu")
     myTrans[[1]]
     faa[[1]]
 
-[`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
-関数を用いて、配列のアノテーションを取得する:  
-
-    # get sequence annotations
-    myAnnot <- getAnnot(faa)
-
-[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
-
-プラスミドの接合伝達時に必要なDNAの複製・移動を担うタンパク質（MOB: "mobilization"）([新谷ら, 2013](https://www.jseb.jp/wordpress/wp-content/uploads/13-02-125.pdf))と、機能が不明なタンパク質("hypothetical protein")を抽出する:  
-
-    # grep(pattern, x) returns the positions of all elements in x that match pattern
-    # grepl returns a logical vector (match or not for each element of x).
-    pattern <- "mobilization|hypothetical.protein"
-    TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
-    #TF <- !grepl(pattern = "hypothetical.protein", x = myAnnot, ignore.case = TRUE)
-    sum(TF)
-    myAnnot[TF]
-
-[リスト](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html)の成分を取り出す:  
-
-    # extract the elements of the list object
-    faa[TF]
-
-#### Amino acid usage
+### amino acid usage
 **タンパク質の[アミノ酸組成](https://kotobank.jp/word/アミノ酸組成-761227)**
 
 [アミノ酸の物性](https://www.thermofisher.com/jp/ja/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/amino-acid-physical-properties.html)
@@ -904,17 +880,11 @@ uco(seq = testseq, index = "rscu")
 
 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html) 平成22年度、清水謙多郎
 
-`sapply()`は、リストの各要素に関数を適用する。タンパク質配列の長さ（アミノ酸残基数）を求める:  
-
-    # Apply a Function over a List
-    # get the length of sequences
-    sapply(faa[TF], length)
-
 `[[ ]]`はリスト内の要素（ベクトル）を取り出す。
 リストの1番目の要素を取り出す:  
 
     # extract the 1st element:
-    faa1 <- faa[TF][[1]]
+    faa1 <- faa[[1]]
 
 `summary()`関数でデータの要約:  
 
@@ -940,15 +910,39 @@ uco(seq = testseq, index = "rscu")
     aa$Prop
     aa$Prop$Aromatic
 
+[`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
+関数を用いて、配列のアノテーションを取得する:  
+
+    # get sequence annotations
+    myAnnot <- getAnnot(faa)
+
+[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
+
+[転移酵素](https://ja.wikipedia.org/wiki/転移酵素) "transferase" と、機能が不明なタンパク質 "hypothetical protein" を抽出する:  
+
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    # grepl returns a logical vector (match or not for each element of x).
+    pattern <- "transferase|hypothetical.protein"
+    TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
+    #TF <- !grepl(pattern = "hypothetical.protein", x = myAnnot, ignore.case = TRUE)
+    sum(TF)
+    myAnnot[TF]
+
+[リスト](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html)の成分を取り出す:  
+
+    # extract the elements of the list object
+    faa[TF]
+
+`sapply()`関数は、リストの各要素に関数を適用する。  
 複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
 
     # absolute frequencies
     ( X <- sapply(faa[TF], function(x) AAstat(x, plot=FALSE)$Compo ) )
-    write.csv(t(X), file="table.aau.af.csv")
+    write.csv(t(X), file="table.aa_af.csv")
 
     # relative frequencies
     ( X <- sapply(faa[TF], function(x) summary(x)$composition ) )
-    write.csv(t(X), file="table.aau.rf.csv")
+    write.csv(t(X), file="table.aa_rf.csv")
 
     # open current working directory
     system("open .")
@@ -962,12 +956,12 @@ uco(seq = testseq, index = "rscu")
 クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)  
 
     # Hierarchical cluster analysis
-    plot(hclust(dist(t(X))))
+    plot(hclust(dist(t(X))), hang=-1)
 
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)  
 
     # Draw a Heat Map
-    heatmap(X, margins=c(8,2), cexCol=0.9, scale="none", col=gray.colors(12))
+    heatmap(X, margins=c(15, 2), cexCol=0.9, scale="none", col=gray.colors(12))
 
 ----------
 ## assignment 6
