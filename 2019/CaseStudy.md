@@ -695,18 +695,17 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
     WorkingDirectory <- "~/projects/data/ncbi/eutils"
+    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+    dir() # List the Files in a Directory
 
-    # Invoke a System Command
-    system( paste0("mkdir -p ",WorkingDirectory) )
+[NCBI Genome List](#ncbi-genome-list)
+でゲノムを探す。
 
-    # Set and Get Working Directory
-    setwd(WorkingDirectory)
-    getwd()
+[緩歩動物](https://ja.wikipedia.org/wiki/緩歩動物) [Tardigrada](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Tardigrada) 
+[Ramazzottius varieornatus](https://www.ncbi.nlm.nih.gov/genome/46574) 
 
-    # List the Files in a Directory
-    dir()
-
-[ミディクロリア](https://ja.wikipedia.org/wiki/ミディクロリア) [Candidatus Midichloria mitochondrii](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Midichloria%20mitochondrii)はミトコンドリアに細胞内共生する細菌である。
+[ミディクロリア](https://ja.wikipedia.org/wiki/ミディクロリア) [Candidatus Midichloria mitochondrii](https://www.ncbi.nlm.nih.gov/genome/2543)はミトコンドリアに細胞内共生する細菌である。
 
 [サルモネラ](https://ja.wikipedia.org/wiki/サルモネラ) ネズミチフス菌 [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344](https://www.ncbi.nlm.nih.gov/genome/152?genome_assembly_id=154382) のプラスミド pRSF1010_SL1344 は、IncQグループに属する広宿主域 broad host range プラスミドである ([新谷ら, 2013](https://www.jseb.jp/wordpress/wp-content/uploads/13-02-125.pdf))。
 
@@ -718,6 +717,7 @@ library("seqinr") # Loading seqinr package
 
 ACCESSION <- "NC_017719" # Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 plasmid pRSF1010_SL1344
 #ACCESSION <- "NC_015722" # Candidatus Midichloria mitochondrii IricVA
+#ACCESSION <- "AP017609" # Ramazzottius varieornatus mitochondrial DNA, complete genome, strain: YOKOZUNA-1
 
 ## nucleotide FASTA
 fna <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
@@ -752,8 +752,8 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 | Extension | Description |
 | --------- | ----------- |
 | .fna | Nucleotide FASTA file of the input contig sequences. |
-| .faa | Protein FASTA file of the translated CDS sequences. |
 | .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
+| .faa | Protein FASTA file of the translated CDS sequences. |
 
 [45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)  
 関数`save()`でデータの構造を記録する。呼び出す場合は関数`load()`を用いる。
