@@ -614,11 +614,15 @@ abline
     #colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") ) # Genus Species
     #colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+) (chromosome.*|plasmid .*), .+", replacement="\\1 \\4", getAnnot(seqs)) # Accession Replicon
 
-[45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)
+- [CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
 
-    # Data Output
+データのエクスポート。  
+`write.csv`関数でカンマ区切りファイルとして出力する:  
+`write.table`関数でタブ区切りファイルとして出力する:  
+
+    # Exporting Data
     write.csv(t(X), file="table.csv", quote=TRUE, row.names=TRUE)
-    write.table(t(X), file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names = NA)
+    write.table(t(X), file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
 
     # open current working directory
     system("open .")
@@ -761,8 +765,6 @@ rm(faa, ffn, fna) # Remove Objects
 load(file="my_fna_ffn_faa.RData") # Reload Saved Datasets
 ```
 
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/24.html
-
 - [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
 
 `sapply()`関数は、リストの各要素に関数を適用する。
@@ -776,20 +778,21 @@ Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[protein=(.+)\\] (\\[(protei
 df <- data.frame(Length, GCcontent, GCp3, Annotation)
 ```
 
-- [write.csv() で簡単にCSV出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
+- [CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
 
 データのエクスポート。  
-`write.table`関数でタブ区切りファイルとして出力する:  
 `write.csv`関数でカンマ区切りファイルとして出力する:  
+`write.table`関数でタブ区切りファイルとして出力する:  
 
     # Exporting Data
-    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
     write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
+    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
 
     # open current working directory
     system("open .")
 
 - [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
+  - [データフレームの要素の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-5)
 
 行と列の数、先頭部分、列名の確認:  
 ```
@@ -798,6 +801,7 @@ dim(df)
 head(df, n=1)
 colnames(df)
 
+# データフレームの要素の参照
 df[, c("Length", "GCcontent", "GCp3")]
 df[, 1:3]
 ( val <- df[, -4] )
