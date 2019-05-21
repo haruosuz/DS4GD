@@ -744,7 +744,7 @@ write.fasta(sequences=ffn, names=getAnnot(ffn), file.out=paste0(ACCESSION,".ffn"
 write.fasta(sequences=faa, names=getAnnot(faa), file.out=paste0(ACCESSION,".faa"))
 ```
 
-prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#output-files)
+- prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#output-files)
 
 | Extension | Description |
 | --------- | ----------- |
@@ -752,7 +752,8 @@ prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#o
 | .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
 | .faa | Protein FASTA file of the translated CDS sequences. |
 
-[45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)  
+- [45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)
+
 関数`save()`でデータの構造を記録する。呼び出す場合は関数`load()`を用いる。
 ```
 save(fna, ffn, faa, file="my_fna_ffn_faa.RData") # Save R Objects
@@ -761,7 +762,11 @@ rm(faa, ffn, fna) # Remove Objects
 load(file="my_fna_ffn_faa.RData") # Reload Saved Datasets
 ```
 
-`sapply()`は、リストの各要素に関数を適用する。  
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/24.html
+
+- [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
+
+`sapply()`関数は、リストの各要素に関数を適用する。
 タンパク質コード配列（CDS）の長さ、G+C含量、アノテーションのテーブルを作成する:  
 ```
 # Apply a Function over a List
@@ -771,6 +776,8 @@ GCp3 <- sapply(ffn, GC3) # G+C at 3rd codon position
 Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[protein=(.+)\\] (\\[(protein_id|pseudo)=(.+)) \\[location=.+", replacement="\\1 \\2 \\3", getAnnot(ffn))
 df <- data.frame(Length, GCcontent, GCp3, Annotation)
 ```
+
+- [write.csv() で簡単にCSV出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
 
 データのエクスポート。  
 `write.table`関数でタブ区切りファイルとして出力する:  
@@ -783,7 +790,9 @@ df <- data.frame(Length, GCcontent, GCp3, Annotation)
     # open current working directory
     system("open .")
 
-[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
+- [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
+
+行と列の数、先頭部分、列名の確認:  
 ```
 # Exploring and Transforming Dataframes
 dim(df)
@@ -795,7 +804,7 @@ df[, 1:3]
 ( val <- df[, -4] )
 ```
 
-https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
+- https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 
 `summary()`関数でデータフレームの列を要約する。  
 CDSの要約統計量（最小値、中央値、最大値など）を求める:  
@@ -814,7 +823,7 @@ library(psych)
 pairs.panels(val)
 ```
 
-2019年5月16日[【合成生物学】大腸菌の遺伝コードを圧縮する](https://www.natureasia.com/ja-jp/nature/pr-highlights/12951)
+- 2019年5月16日[【合成生物学】大腸菌の遺伝コードを圧縮する](https://www.natureasia.com/ja-jp/nature/pr-highlights/12951)
 [Total synthesis of Escherichia coli with a recoded genome | Nature](https://www.nature.com/articles/s41586-019-1192-5)
 
 ```
@@ -844,7 +853,9 @@ uco(seq = testseq, index = "freq")
 uco(seq = testseq, index = "rscu")
 ```
 
-`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。  
+- [リストをベクトルに変換するunlist()関数](https://ito-hi.blog.so-net.ne.jp/2011-07-12)
+
+`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
 全CDSのデータを結合する(concatenate):  
 
     # Flatten Lists
