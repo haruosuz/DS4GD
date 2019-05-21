@@ -701,9 +701,8 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 
 [NCBI Genome List](#ncbi-genome-list)
 でゲノムを探す。
-- [緩歩動物](https://ja.wikipedia.org/wiki/緩歩動物) [Tardigrada](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Tardigrada)
-[ヨコヅナクマムシ (Ramazzottius varieornatus) ゲノム配列データの公開](https://www.ddbj.nig.ac.jp/news/ja/wn160915.html)
-- [ミディクロリア](https://ja.wikipedia.org/wiki/ミディクロリア) [Candidatus Midichloria mitochondrii](https://www.ncbi.nlm.nih.gov/genome/2543)はミトコンドリアに細胞内共生する細菌である。
+- [Tardigrada](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Tardigrada) [ヨコヅナクマムシ (Ramazzottius varieornatus) ゲノム配列データの公開](https://www.ddbj.nig.ac.jp/news/ja/wn160915.html)
+- [ミディクロリア](https://ja.wikipedia.org/wiki/ミディクロリア) [Candidatus Midichloria mitochondrii](https://www.ncbi.nlm.nih.gov/genome/2543) はミトコンドリアに細胞内共生する細菌である。
 - [サルモネラ](https://ja.wikipedia.org/wiki/サルモネラ) ネズミチフス菌 [Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344](https://www.ncbi.nlm.nih.gov/genome/152?genome_assembly_id=154382) のプラスミド pRSF1010_SL1344 は、IncQグループに属する広宿主域 broad host range プラスミドである ([新谷ら, 2013](https://www.jseb.jp/wordpress/wp-content/uploads/13-02-125.pdf))。
 
 [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/README.md#e-utilities)を用いて、
