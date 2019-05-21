@@ -814,6 +814,11 @@ CDSの要約統計量（最小値、中央値、最大値など）を求める:
 
     summary(val)
 
+[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
+フォント・ファミリーを指定する．
+
+    par(family="mono")
+
 [R | R を利用した統計解析およびデータの視覚化](https://stats.biopapyrus.jp/r/)
 
     plot(val)
