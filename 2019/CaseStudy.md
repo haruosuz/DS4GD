@@ -693,8 +693,9 @@ Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP dir
 ----------
 
 ## [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#annotation-of-coding-sequences)
-
-[DDBJ タンパク質コード配列; CDS feature について](https://www.ddbj.nig.ac.jp/ddbj/cds.html)
+- [Coding region](https://en.wikipedia.org/wiki/Coding_region)
+- [DDBJ タンパク質コード配列; CDS feature について](https://www.ddbj.nig.ac.jp/ddbj/cds.html)
+- [オープンリーディングフレーム](https://ja.wikipedia.org/wiki/オープンリーディングフレーム) (Open Reading Frame; ORF)
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
