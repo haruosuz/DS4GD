@@ -16,11 +16,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
-- [assignment 6](#assignment-6) 課題No.6 「dotplot」
-- [assignment 7](#assignment-7) 課題No.7 「Pairwise Sequence Alignment」
-- [assignment 8](#assignment-8) 課題No.8 「Multiple Alignment and Phylogenetic Trees」
-- [assignment 9](#assignment-9) 課題No.9 「draft report」
-- [assignment 10](#assignment-10) 課題No.10 「presentation slides」
+- [assignment 7](#assignment-7) 課題No.7 「dotplot」
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
 
@@ -977,8 +973,8 @@ uco(seq = testseq, index = "rscu")
     heatmap(X, margins=c(15, 2), cexCol=0.9, scale="none", col=gray.colors(12))
 
 ----------
-## assignment 6
-**課題No.6 「dotplot」**
+## assignment 7
+**課題No.7 「dotplot」**
 
 https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot
 
@@ -1024,153 +1020,6 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
 
 	# needle, water
 	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
-
-----------
-## assignment 7
-**課題No.7 「Pairwise Sequence Alignment」**
-
-[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
-
-Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
-
-Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
-
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_009193.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta")[[1]]
-
-    seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
-    seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
-
-Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
-(set gapOpening = -9.5 and gapExtension = -0.5)
-
-	library("Biostrings")		# load the Biostrings package
-	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
-    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
-	myglobalAlign
-
-Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
-
-    writePairwiseAlignments(myglobalAlign)
-
-Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
-
-	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
-    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
-	myglobalAlign2
-
-Q5. What is the alignment score for the optimal local alignment between the two proteins?
-
-    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5, type="local")
-	mylocalAlign
-
-----------
-## assignment 8
-**課題No.8 「Multiple Alignment and Phylogenetic Trees」**
-
-[Exercises on Multiple Alignment and Phylogenetic Trees](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises)
-
-Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
-
-Q1. Calculate the genetic distances between four protein sequences of interest. Which are the most closely related proteins, and which are the least closely related, based on the genetic distances?
-
-    library("seqinr") # Load the SeqinR package
-    # create a function to retrieve several sequences from UniProt
-    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file = paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype = c("AA"), strip.desc = TRUE)[[1]]
-
-    seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5") # Make a vector containing the names of the sequences
-    seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
-
-    length(seqs) # get the number of elements
-    unlist(getAnnot(seqs)) # get sequence annotations
-
-    # write out the sequences to a FASTA file
-    write.fasta(seqs, seqnames, file="myseq.fasta")
-
-    # Read an XStringSet object from a file
-    library(Biostrings)
-    mySequences <- readAAStringSet(file = "myseq.fasta")
-
-    # Multiple Sequence Alignment using ClustalW
-    library(msa)
-    myAlignment <- msa(mySequences, "ClustalW")
-
-    # write an XStringSet object to a file
-    writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
-
-    # read the FASTA-format alignment into R, and calculate the genetic distances between the protein sequences:
-    myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
-    mydist <- dist.alignment(myaln)
-    mydist
-
-Q2. Build an unrooted phylogenetic tree of the four proteins, using the neighbour-joining algorithm. Which are the most closely related proteins, based on the tree?
-
-    par(family="mono")
-
-    library(ape)
-    mytree <- nj(mydist)
-    plot.phylo(mytree, type="unrooted")
-
-Q3. Build a rooted phylogenetic tree of the four proteins, using an outgroup. Which are the most closely related proteins, based on the tree? What extra information does this tree tell you, compared to the unrooted tree in Q2?
-
-    library("seqinr")
-    # create a function to retrieve several sequences from UniProt
-    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file = paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype = c("AA"), strip.desc = TRUE)[[1]]
-    seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5", "Q32ZE1") # Make a vector containing the names of the sequences
-    seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
-
-    # write out the sequences to a FASTA file
-    write.fasta(seqs, seqnames, file="myseq.fasta")
-
-    # Read an XStringSet object from a file
-    library(Biostrings)
-    mySequences <- readAAStringSet(file = "myseq.fasta")
-
-    # Multiple Sequence Alignment using ClustalW
-    library(msa)
-    myAlignment <- msa(mySequences, "ClustalW")
-
-    # write an XStringSet object to a file
-    writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
-
-    # read the FASTA-format alignment into R, and calculate the genetic distances between the protein sequences:
-    myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
-    mydist <- dist.alignment(myaln)
-    mydist
-
-    # construct a phylogenetic tree
-    library(ape)
-    mytree <- nj(mydist)
-    mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
-    plot.phylo(mytree, main = "Phylogenetic Tree")
-
-----------
-## assignment-9
-**課題No.9 「draft report」**
-
-Integrate and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it in PDF format.
-
-これまでの課題（興味あるDNA/タンパク質の配列解析の結果）を統合・編集してレポートのドラフトを作成し、PDFファイルで提出する。
-
-----------
-## assignment-10
-**課題No.10 「presentation slides」**
-
-https://github.com/haruosuz/DS4GD/tree/master/2018giga#final-presentation
-
-2019-01-15 最終発表のスライド <YOUR_NAME.pdf> を提出する。
-発表時間：1人あたり最大5分
-
-生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、多重配列アライメントと系統樹、公共データベース・ウェブツールによる解析などが含まれる。
-
-Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2019-01-15.
-Five minutes will be allocated for each presentation, including presentation and discussion.
-
-Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global/local alignment), multiple alignment and phylogenetic trees, public database and web tools, etc.
 
 ----------
 ## Sequence similarity search
