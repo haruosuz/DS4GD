@@ -976,7 +976,8 @@ uco(seq = testseq, index = "rscu")
 ## assignment 7
 **課題No.7 「dotplot」**
 
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot
+ドットプロットで2つの配列を比較
+[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
 
 Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 
