@@ -49,6 +49,10 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 **特別講演**
 
 - 講師: 森秀人 氏
+- [講義資料](https://github.com/ponnhide/DS4GD_HM)
+```
+git clone https://github.com/ponnhide/DS4GD_HM
+```
 - 2019-06-04 No. 8 [Python入門](https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM1.md#python入門)
 
 ----------
