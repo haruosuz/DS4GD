@@ -45,6 +45,13 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-XX-XX (Saturday) [Supplementary Class] （土曜日）3限【補講】No. XX - ケーススタディ Case Study
 
 ----------
+## Guest speaker
+**特別講演**
+
+- 講師: 森秀人 氏
+- 2019-06-04 No. 8 [Python入門](https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM1.md#python入門)
+
+----------
 ## interim report
 **中間発表**
 
