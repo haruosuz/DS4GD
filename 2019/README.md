@@ -55,6 +55,12 @@ git clone https://github.com/ponnhide/DS4GD_HM
 ```
 - 2019-06-04 No. 8 [Python入門](https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM1.md#python入門)
 - 2019-06-11 No. 9 https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM2.md
+```
+git clone https://github.com/ponnhide/DS4GD_HM
+cd DS4GD_HM/
+cd sample_program/
+python drift0.py 
+```
 
 ----------
 ## interim report
