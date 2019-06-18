@@ -50,19 +50,17 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 
 - 講師: 森秀人 氏
 - [講義資料](https://github.com/ponnhide/DS4GD_HM)
-```
-git clone https://github.com/ponnhide/DS4GD_HM
-```
-- 2019-06-04 No. 8 [Python入門](https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM1.md#python入門)
-- 2019-06-11 No. 9 https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM2.md
-  - [sequence analysis with Python](https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM2.md#dnaprotein-sequence-analysis-wiith-python)
+  - 2019-06-04 No. 8 [Python入門](https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM1.md#python入門)
+  - 2019-06-11 No. 9 https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM2.md
+    - [sequence analysis with Python](https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM2.md#dnaprotein-sequence-analysis-wiith-python)
+  - 2019-06-18 No. 10 https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM3.md
 ```
 git clone https://github.com/ponnhide/DS4GD_HM
 cd DS4GD_HM/
 cd sample_program/
-python drift0.py 
+python GCskew_slide.py
+python plot2.py sample2_GCskew.txt
 ```
-- 2019-06-18 No. 10 https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM3.md
 
 ----------
 ## interim report
