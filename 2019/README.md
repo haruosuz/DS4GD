@@ -33,9 +33,9 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-05-28 No. 7 - 中間発表 [interim report](#interim-report)
   - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
     - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
-- 2019-06-04 No. 8 - [Guest Speaker](#guest-speaker) | [Python入門](https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM1.md#python入門)
-- 2019-06-11 No. 9 - [Guest Speaker](#guest-speaker) | https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM2.md
-- 2019-06-18 No. 10 - [Guest Speaker](#guest-speaker) | https://github.com/ponnhide/DS4GD_HM/blob/master/DS4GD_HM3.md
+- 2019-06-04 No. 8 - [Guest Speaker](#guest-speaker)
+- 2019-06-11 No. 9 - [Guest Speaker](#guest-speaker)
+- 2019-06-18 No. 10 - [Guest Speaker](#guest-speaker)
 - 2019-06-25 No. 11 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2019-07-02 No. 12 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2019-07-09 No. 13 - TBA
