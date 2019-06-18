@@ -58,8 +58,12 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 git clone https://github.com/ponnhide/DS4GD_HM
 cd DS4GD_HM/
 cd sample_program/
+
 python GCskew_slide.py
 python plot2.py sample2_GCskew.txt
+
+python get_CDS.py 
+ls -ltr
 ```
 
 ----------
