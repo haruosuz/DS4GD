@@ -968,17 +968,6 @@ uco(seq = testseq, index = "rscu")
     heatmap(X, margins=c(15, 2), cexCol=0.9, scale="none", col=gray.colors(12))
 
 ----------
-
-### Elongation Factor
-細菌の翻訳伸長因子
-[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
-[EF-G](https://ja.wikipedia.org/wiki/EF-G)
-
-[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
-
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
-
-----------
 ## assignment 7
 **課題No.7 「dotplot」**
 
@@ -1027,6 +1016,17 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
 
 	# needle, water
 	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
+
+----------
+
+### Elongation Factor
+翻訳伸長因子
+[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
+[EF-G](https://ja.wikipedia.org/wiki/EF-G)
+
+[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
+
+![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
 
 ----------
 ## assignment 11
