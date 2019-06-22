@@ -969,8 +969,8 @@ uco(seq = testseq, index = "rscu")
 
 ----------
 
-### EF-Tu 
-細菌の翻訳伸長因子 elongation factor
+### Elongation Factor
+細菌の翻訳伸長因子
 [EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
 [EF-G](https://ja.wikipedia.org/wiki/EF-G)
 
