@@ -17,6 +17,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 7](#assignment-7) 課題No.7 「dotplot」
+- [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
 
@@ -1021,6 +1022,50 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
 
 	# needle, water
 	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
+
+----------
+## assignment 11
+**課題No.11 「Pairwise Sequence Alignment」**
+
+[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
+
+Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+
+Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
+
+    library("seqinr")
+    seq1 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_009193.fasta")[[1]]
+    seq2 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta")[[1]]
+
+    seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
+    seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
+
+Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
+(set gapOpening = -9.5 and gapExtension = -0.5)
+
+	library("Biostrings")		# load the Biostrings package
+	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
+    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign
+
+Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
+
+    writePairwiseAlignments(myglobalAlign)
+
+Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
+
+	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
+    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign2
+
+Q5. What is the alignment score for the optimal local alignment between the two proteins?
+
+    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+	gapOpening = -9.5, gapExtension = -0.5, type="local")
+	mylocalAlign
+
 
 ----------
 ## Sequence similarity search
