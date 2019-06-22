@@ -1018,17 +1018,6 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
 	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
 
 ----------
-
-### Elongation Factor
-翻訳伸長因子
-[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
-[EF-G](https://ja.wikipedia.org/wiki/EF-G)
-
-[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
-
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
-
-----------
 ## assignment 11
 **課題No.11 「Pairwise Sequence Alignment」**
 
@@ -1071,6 +1060,16 @@ Q5. What is the alignment score for the optimal local alignment between the two 
 	gapOpening = -9.5, gapExtension = -0.5, type="local")
 	mylocalAlign
 
+----------
+
+### Elongation Factor
+翻訳伸長因子
+[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
+[EF-G](https://ja.wikipedia.org/wiki/EF-G)
+
+[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
+
+![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
 
 ----------
 ## Sequence similarity search
