@@ -129,12 +129,6 @@ References:
 https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages
 
 ----------
-
-[GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
-
-![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
-
-----------
 ## NCBI Genome List
 [NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
@@ -972,6 +966,17 @@ uco(seq = testseq, index = "rscu")
 
     # Draw a Heat Map
     heatmap(X, margins=c(15, 2), cexCol=0.9, scale="none", col=gray.colors(12))
+
+----------
+
+### EF-Tu 
+細菌の翻訳伸長因子 elongation factor
+[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
+[EF-G](https://ja.wikipedia.org/wiki/EF-G)
+
+[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
+
+![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
 
 ----------
 ## assignment 7
