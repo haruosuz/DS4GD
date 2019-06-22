@@ -36,8 +36,11 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-06-04 No. 8 - [Guest Speaker](#guest-speaker)
 - 2019-06-11 No. 9 - [Guest Speaker](#guest-speaker)
 - 2019-06-18 No. 10 - [Guest Speaker](#guest-speaker)
-- 2019-06-25 No. 11 - クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
-- 2019-07-02 No. 12 - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+- 2019-06-25 No. 11 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+  - 2つのDNA配列間のグローバル・アライメント [Pairwise global alignment of DNA sequences](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
+  - 2つのタンパク質配列間のグローバル・アライメント [Pairwise global alignment of protein sequences](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-protein-sequences-using-the-needleman-wunsch-algorithm)
+  - UniProt配列のアライメント [Aligning UniProt sequences](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#aligning-uniprot-sequences)
+- 2019-07-02 No. 12 - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-assembly_reports)
 - 2019-07-09 No. 13 - TBA
 - 2019-07-16 No. 14 - 最終回
   - 最終発表 [final presentation](#final-presentation)
