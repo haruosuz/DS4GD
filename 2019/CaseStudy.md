@@ -361,7 +361,6 @@ Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril
     d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE)
 
 - [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
-  - [データフレームの要素の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-5)
 
 行と列の数、列名、先頭部分の確認:  
 ```
@@ -371,7 +370,6 @@ colnames(d)
 head(d, n=1)
 
 table(d$Status)
-#table(d$Reference)
 ```
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
