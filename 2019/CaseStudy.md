@@ -13,8 +13,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
-- [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
+- [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 7](#assignment-7) 課題No.7 「dotplot」
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
@@ -316,6 +316,240 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
     # rho < 1: under-represented
 
 ----------
+## NCBI GENOME_REPORTS
+
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
+*README*をクリックして開く。
+
+```
+eukaryotes.txt: Eukaryotic genome sequencing projects
+prokaryotes.txt: Prokaryotic genome sequencing projects
+```
+
+### Working with Data in R
+Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    WorkingDirectory <- "~/projects/data/ncbi/genome_reports"
+
+    # Invoke a System Command
+    system( paste0("mkdir -p ",WorkingDirectory) )
+
+    # Set and Get Working Directory
+    setwd(WorkingDirectory)
+    getwd()
+
+    # List the Files in a Directory
+    dir()
+
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
+
+    # Download File from the Internet
+    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt" # 原核生物 # 60.9 MB
+    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt" # 真核生物 # 2.1 MB
+    download.file(url = curl, destfile = basename(curl))
+
+[Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
+
+データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
+
+    # Loading Data into R
+    filename <- basename(curl)
+    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE)
+
+- [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
+  - [データフレームの要素の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-5)
+
+行と列の数、列名、先頭部分の確認:  
+```
+# Exploring and Transforming Dataframes
+dim(d)
+colnames(d)
+head(d, n=1)
+d[1,]
+
+table(d$Status)
+table(d$Reference)
+```
+
+[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
+
+生物名 `#Organism/Name` で検索し抽出する:  
+```
+# grep(pattern, x) returns the positions of all elements in x that match pattern
+# grepl returns a logical vector (match or not for each element of x).
+Organism_Name <- "Sinorhizobium meliloti 1021"
+#Organism_Name <- "Bacillus anthracis str. 'Ames Ancestor'|Escherichia coli O157:H7 str. Sakai|JMP134"
+#Organism_Name <- "Bacillus anthracis .*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
+TF <- grepl(pattern = Organism_Name, x = d$`#Organism/Name`, ignore.case = TRUE)
+sum(TF)
+d[TF,]
+```
+
+NCBIから複数のDNA配列を取得する:  
+```
+# Retrieving a list of DNA sequences from NCBI
+
+# Load the SeqinR package
+library("seqinr")
+
+# create a function to retrieve several nucleotide sequences from NCBI
+retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
+
+# Make a vector containing NCBI GenBank/RefSeq accessions
+## create a system command to be invoked, as a character string
+### eukaryotes 真核生物
+Organism_Name <- "Saccharomyces cerevisiae S288C"
+command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
+
+### prokaryotes 原核生物
+Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
+command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
+
+Organism_Name <- "Bacillus anthracis .*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
+command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
+
+## Invoke a System Command
+ACCESSIONs <- system(command, intern=TRUE)
+#ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") #Organism_Name <- "Sinorhizobium meliloti 1021"
+ACCESSIONs
+
+# Retrieve the sequences and store them in list variable "seqs"
+seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
+```
+
+配列の数をカウントする:  
+
+    # get the number of elements
+    length(seqs)
+
+配列のアノテーションを取得する:  
+
+    # get sequence annotations
+    getAnnot(seqs)
+
+配列データをFASTA形式ファイルとして書き出す:  
+
+	# write the sequences to a FASTA-format file
+    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80)
+
+    # open current working directory
+    system("open .")
+
+作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+
+    setwd("~/projects/data/ncbi/genome_reports")					# Set Working Directory
+    library(seqinr)									# Load the SeqinR package
+    seqs <- read.fasta(file = "mySequences.fna", seqtype = c("DNA"), strip.desc = TRUE)	# Reading sequence data
+
+リスト`seqs`の1番目の要素を変数`seq1`に代入する:  
+
+    # store the first element of the list object `seqs` in a variable `seq1`
+    seq1 <- seqs[[1]]
+
+#### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
+
+`summary()`関数でデータの要約:  
+
+    # Object Summaries
+    summary(seq1)
+
+DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力される。
+
+DNA配列の2連続塩基含量（カウント）:  
+
+    # DNA words
+    count(seq=seq1, wordsize=2)
+
+#### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+
+DNA配列の2連続塩基組成（観測値/期待値）:  
+
+    # Over-represented and under-represented DNA words
+    rho(seq = seq1, wordsize=2)
+
+[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
+関数 par()
+
+[50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
+棒グラフ：barplot()
+
+[51. 低水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/51.html)
+直線
+abline
+
+    par(family="mono", cex = 0.7)
+    barplot(sort(rho(seq1, wordsize = 2)))
+    abline(h=1)
+
+- [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
+
+`sapply()`関数は、リストの各要素に関数を適用する。  
+DNA配列の長さ、G+C含量、アノテーションのテーブルを作成する:  
+```
+# Apply a Function over a List
+Length <- sapply(seqs, length)
+GCcontent <- sapply(seqs, GC)
+Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[protein=(.+)\\] (\\[(protein_id|pseudo)=(.+)) \\[location=.+", replacement="\\1 \\2 \\3", getAnnot(seqs))
+df <- data.frame(Length, GCcontent, Annotation)
+```
+
+- [CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
+
+データのエクスポート。  
+`write.csv`関数でカンマ区切りファイルとして出力する:  
+`write.table`関数でタブ区切りファイルとして出力する:  
+
+    # Exporting Data
+    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
+    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
+
+    # open current working directory
+    system("open .")
+
+複数のDNA配列の2連続塩基組成（観測値/期待値）を解析する:  
+
+    # Apply a Function over a List
+     X <- sapply(seqs, rho)
+    #X <- sapply(seqs, rho, wordsize = 3)
+
+[26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
+
+    # Exploring and Transforming Dataframes
+    dim(X)
+    colnames(X) <- substr(getAnnot(seqs), 1, 14)
+    #colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") ) # Genus Species
+    #colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+ (chromosome.*|.*plasmid.*|.+'|DNA)), .+", replacement="\\1 \\4", getAnnot(seqs)) # Accession Replicon
+
+[50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
+matplot()
+
+    par(family="mono")
+
+    matplot(X, type="l", col=1:ncol(X), lty=1:ncol(X))
+    legend("bottomleft", legend=colnames(X), col=1:ncol(X), lty=1:ncol(X))
+
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+
+    # Hierarchical Clustering
+    plot(hclust(dist(t(X))), hang=-1)
+
+ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+
+    # Draw a Heat Map
+    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=gray.colors(12))
+
+### References
+
+- [Takahashi M et al. Genomics. 2009 "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
+- [Wong K et al. (2002) "Dinucleotide compositional analysis of Sinorhizobium meliloti using the genome signature: distinguishing chromosomes and plasmids."](https://www.ncbi.nlm.nih.gov/pubmed/12444420)
+- [Campbell A et al. PNAS. 1999 "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
+
+----------
 
 ## NCBI ASSEMBLY_REPORTS
 [NCBI](#ncbi)のゲノム配列のメタデータが記載されている。
@@ -429,7 +663,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
 - [24. apply() ファミリー](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/24.html)
 
-`sapply()`関数は、リストの各要素に関数を適用する。
+`sapply()`関数は、リストの各要素に関数を適用する。  
 複数のDNA配列を解析する:  
 
     # Apply a Function over a List
@@ -445,203 +679,7 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
     length(unlist(seqs))
     GC(unlist(seqs))
 
-----------
-## NCBI GENOME_REPORTS
-
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
-*README*をクリックして開く。
-
-```
-eukaryotes.txt: Eukaryotic genome sequencing projects
-prokaryotes.txt: Prokaryotic genome sequencing projects
-```
-
-### Working with Data in R
-Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
-
-[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
-
-    WorkingDirectory <- "~/projects/data/ncbi/genome_reports"
-
-    # Invoke a System Command
-    system( paste0("mkdir -p ",WorkingDirectory) )
-
-    # Set and Get Working Directory
-    setwd(WorkingDirectory)
-    getwd()
-
-    # List the Files in a Directory
-    dir()
-
-[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
-
-    # Download File from the Internet
-    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt" # 原核生物 # 60.9 MB
-    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt" # 真核生物 # 2.1 MB
-    download.file(url = curl, destfile = basename(curl))
-
-[Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
-
-データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
-
-    # Loading Data into R
-    filename <- basename(curl)
-    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE)
-
-[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
-
-    # Exploring and Transforming Dataframes
-    dim(d)
-    head(d, n = 1)
-    colnames(d)
-
-NCBIから複数のDNA配列を取得する:  
-```
-# Retrieving a list of DNA sequences from NCBI
-
-# Load the SeqinR package
-library("seqinr")
-
-# create a function to retrieve several nucleotide sequences from NCBI
-retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
-
-# Make a vector containing NCBI GenBank/RefSeq accessions
-## create a system command to be invoked, as a character string
-### eukaryotes 真核生物
-Organism_Name <- "Saccharomyces cerevisiae S288C"
-command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
-
-### prokaryotes 原核生物
-Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
-#Organism_Name <- "B.* burgdorferi B31"
-command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
-
-## Invoke a System Command
-ACCESSIONs <- system(command, intern=TRUE)
-#ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") #Organism_Name <- "Sinorhizobium meliloti 1021"
-ACCESSIONs
-
-# Retrieve the sequences and store them in list variable "seqs"
-seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
-```
-
-配列の数をカウントする:  
-
-    # get the number of elements
-    length(seqs)
-
-配列のアノテーションを取得する:  
-
-    # get sequence annotations
-    getAnnot(seqs)
-
-配列データをFASTA形式ファイルとして書き出す:  
-
-	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80)
-
-    # open current working directory
-    system("open .")
-
-作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
-
-    setwd("~/projects/data/ncbi/genome_reports")					# Set Working Directory
-    library(seqinr)									# Load the SeqinR package
-    seqs <- read.fasta(file = "mySequences.fna", seqtype = c("DNA"), strip.desc = TRUE)	# Reading sequence data
-
-リスト`seqs`の1番目の要素を変数`seq1`に代入する:  
-
-    # store the first element of the list object `seqs` in a variable `seq1`
-    seq1 <- seqs[[1]]
-
-#### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
-
-`summary()`関数でデータの要約:  
-
-    # Object Summaries
-    summary(seq1)
-
-DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力される。
-
-DNA配列の2連続塩基含量（カウント）:  
-
-    # DNA words
-    count(seq=seq1, wordsize=2)
-
-#### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
-連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
-
-DNA配列の2連続塩基組成（観測値/期待値）:  
-
-    # Over-represented and under-represented DNA words
-    rho(seq = seq1, wordsize=2)
-
-[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
-関数 par()
-
-[50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
-棒グラフ：barplot()
-
-[51. 低水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/51.html)
-直線
-abline
-
-    par(family="mono", cex = 0.7)
-    barplot(sort(rho(seq1, wordsize = 2)))
-    abline(h=1)
-
-`sapply()`関数は、リストの各要素に関数を適用する。
-複数のDNA配列の2連続塩基組成（観測値/期待値）を解析する:  
-
-    # Apply a Function over a List
-    X <- sapply(seqs, rho)
-    X <- sapply(seqs, rho, wordsize = 2)
-
-[26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
-
-    # Exploring and Transforming Dataframes
-    dim(X)
-    colnames(X) <- substr(getAnnot(seqs), 1, 14)
-    #colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") ) # Genus Species
-    #colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+) (chromosome.*|plasmid .*), .+", replacement="\\1 \\4", getAnnot(seqs)) # Accession Replicon
-
-- [CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
-
-データのエクスポート。  
-`write.csv`関数でカンマ区切りファイルとして出力する:  
-`write.table`関数でタブ区切りファイルとして出力する:  
-
-    # Exporting Data
-    write.csv(t(X), file="table.csv", quote=TRUE, row.names=TRUE)
-    write.table(t(X), file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
-
-    # open current working directory
-    system("open .")
-
-[50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
-matplot()
-
-    par(family="mono")
-
-    matplot(X, type="l", col=1:ncol(X), lty=1:ncol(X))
-    legend("bottomleft", legend=colnames(X), col=1:ncol(X), lty=1:ncol(X))
-
-クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
-
-    # Hierarchical Clustering
-    plot(hclust(dist(t(X))))
-
-ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
-
-    # Draw a Heat Map
-    heatmap(X, margins=c(10,5), cexCol=1.0)
-
 ### References
-
-- [Wong K et al. (2002) "Dinucleotide compositional analysis of Sinorhizobium meliloti using the genome signature: distinguishing chromosomes and plasmids."](https://www.ncbi.nlm.nih.gov/pubmed/12444420)
-- [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
 
 https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
 Genomes Download FAQ
@@ -759,7 +797,7 @@ load(file="my_fna_ffn_faa.RData") # Reload Saved Datasets
 
 - [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
 
-`sapply()`関数は、リストの各要素に関数を適用する。
+`sapply()`関数は、リストの各要素に関数を適用する。  
 タンパク質コード配列（CDS）の長さ、G+C含量、アノテーションのテーブルを作成する:  
 ```
 # Apply a Function over a List
@@ -786,12 +824,12 @@ df <- data.frame(Length, GCcontent, GCp3, Annotation)
 - [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
   - [データフレームの要素の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-5)
 
-行と列の数、先頭部分、列名の確認:  
+行と列の数、列名、先頭部分の確認:  
 ```
 # Exploring and Transforming Dataframes
 dim(df)
-head(df, n=1)
 colnames(df)
+head(df, n=1)
 
 # データフレームの要素の参照
 df[, c("Length", "GCcontent", "GCp3")]
