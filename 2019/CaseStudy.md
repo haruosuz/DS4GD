@@ -324,6 +324,7 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 ```
 eukaryotes.txt: Eukaryotic genome sequencing projects
 prokaryotes.txt: Prokaryotic genome sequencing projects
+viruses.txt:   Viral genome sequencing projects
 ```
 
 ### Working with Data in R
@@ -348,6 +349,7 @@ Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril
     # Download File from the Internet
     curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt" # 原核生物 # 60.9 MB
     #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt" # 真核生物 # 2.1 MB
+    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt" # ウイルス # 4.7 MB
     download.file(url = curl, destfile = basename(curl))
 
 [Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
@@ -367,10 +369,9 @@ Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril
 dim(d)
 colnames(d)
 head(d, n=1)
-d[1,]
 
 table(d$Status)
-table(d$Reference)
+#table(d$Reference)
 ```
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
@@ -382,7 +383,8 @@ table(d$Reference)
 Organism_Name <- "Sinorhizobium meliloti 1021"
 #Organism_Name <- "Bacillus anthracis str. 'Ames Ancestor'|Escherichia coli O157:H7 str. Sakai|JMP134"
 #Organism_Name <- "Bacillus anthracis .*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
-TF <- grepl(pattern = Organism_Name, x = d$`#Organism/Name`, ignore.case = TRUE)
+#Organism_Name <- "orovirus"
+TF <- grepl(pattern = Organism_Name, x = d$`#Organism/Name`)
 sum(TF)
 d[TF,]
 ```
@@ -399,6 +401,11 @@ retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutil
 
 # Make a vector containing NCBI GenBank/RefSeq accessions
 ## create a system command to be invoked, as a character string
+
+### viruses ウイルス
+Organism_Name <- "orovirus"
+command <- paste0("grep -v '^#' viruses.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $10 !~ /-/ && $15 ~ /Complete Genome/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/(.+:)*(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$2/g;'")
+
 ### eukaryotes 真核生物
 Organism_Name <- "Saccharomyces cerevisiae S288C"
 command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
