@@ -10,14 +10,14 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
-- [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
+- [assignment 7](#assignment-7) 課題No.7 「dotplot」
+- [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
+- [NCBI Genome List](#ncbi-genome-list)
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
-- [assignment 7](#assignment-7) 課題No.7 「dotplot」
-- [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
 
@@ -129,62 +129,6 @@ References:
 https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages
 
 ----------
-## NCBI Genome List
-[NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
-[国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
-の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
-
-[ゲノムブラウザ](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
-例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*を検索する。
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti)、検索ボックス下の「Overview (1); Eukaryotes (0); Prokaryotes (204); Viruses (0); Plasmids (65); Organelles (0)」のうち、「Prokaryotes」をクリックすると、*Sinorhizobium meliloti*に属する菌株**Strain**が表示される。
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti)、列**Organism Name**の"Sinorhizobium meliloti 1021"株をクリックして開く。
-[ここで](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
-列**Type**のChrは染色体、Plsmはプラスミドを指す。
-
-複数のレプリコン（染色体とプラスミド）を保有する細菌の例:
-```
-Agrobacterium tumefaciens str. C58 | 4 replicons (chromosome circular; chromosome linear; plasmid At; plasmid Ti)
-Aureimonas sp. AU20 | 9 replicons (plasmid pAU20rrn)
-炭疽菌 Bacillus anthracis str. 'Ames Ancestor' | chromosome; plasmid pXO1; plasmid pXO2
-Borrelia burgdorferi B31 | 22 replicons
-放射線耐性菌 Deinococcus radiodurans R1 | chromosome 1; chromosome 2; plasmid CP1; plasmid MP1
-コレラ菌 Vibrio cholerae O1 biovar El Tor str. N16961 | chromosome I; chromosome II
-ウェルシュ菌 Clostridium perfringens str. 13 (plasmid pCP13)
-Cupriavidus necator (a.k.a. Ralstonia eutropha) JMP134 (IncP­-1 plasmid pJP4)
-腸管出血性大腸菌 Escherichia coli O157:H7 str. Sakai (plasmid pO157, pOSAK1)
-大腸菌 Escherichia coli SMS-3-5 (IncF plasmid pSMS35_130)
-Geobacter lovleyi SZ
-Mycobacteroides abscessus subsp. bolletii (IncP-1β plasmid pMAB01)
-Pseudomonas resinovorans NBRC 106553 (strain CA10; IncP-­7 plasmid pCAR1.3)
-サルモネラ チフス菌 Salmonella enterica subsp. enterica serovar Typhi str. CT18 (plasmid pHCM1, pHCM2)
-サルモネラ ネズミチフス菌 Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 (IncQ plasmid pRSF1010_SL1344)
-アルファルファ根粒菌 Sinorhizobium meliloti 1021 (plasmid pSymA, pSymB)
-ペスト菌 Yersinia pestis CO92 (plasmid pCD1, pPCP1, pMT1)
-```
-
-[ゲノム　第4版](https://www.medsi.co.jp/books/products/detail.php?product_id=3642)
-第8章 原核生物ゲノムと真核生物の細胞小器官ゲノム
-| 8.1 原核生物ゲノムの構造的特徴
-| 一部の細菌は直鎖状ゲノムや分節ゲノムをもつ
-| 表8.1 代表的なプラスミドの特徴
-| 表8.2 原核生物のゲノム構成の例
-
-NCBIからDNA配列を取得する:  
-
-    # Retrieving a DNA sequence from NCBI
-    library("seqinr")
-    ACCESSION <- "NC_001477" # Dengue virus 1
-    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    #ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
-    #ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
-    #ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
-    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome
-    #ACCESSION <- "NC_000908" # Mycoplasma genitalium G37, complete genome
-    filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
-    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
-    seq1 <- seqs[[1]]
-
-----------
 ## assignment 3
 **課題No.3 「DNA Sequence Statistics (1)」**
 
@@ -230,15 +174,6 @@ How can you check that the subsequence that you have looked at is 1000 nucleotid
 
     count(seq=seq1[1:1000], wordsize=2)
     count(seq=seq1[(length(seq1)-1000+1):length(seq1)], wordsize=2)
-
-----------
-
-https://twitter.com/Symbionticism/status/1123203760564637697
-Seth Bordenstein on Twitter: "This is a game changer. Many intracellular microbes have a genome wide bias in A’s and T’s. The major assumption has been a mutational bias / drift impacts this outcome. Well, not so fast. Evidence below that selection can contribute or cause it.… https://t.co/yfDqN3b3Lj"
-8:33 AM - 30 Apr 2019
-https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007778
-Selective advantages favour high genomic AT-contents in intracellular elements
-Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial species with different genomic GC-contents revealed that the costs of G+C-rich plasmids decreased with an increasing GC-content of their host’s genomic DNA. 
 
 ----------
 ## assignment 4
@@ -316,8 +251,180 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
     # rho < 1: under-represented
 
 ----------
+## assignment 7
+**課題No.7 「dotplot」**
+
+ドットプロットで2つの配列を比較
+[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
+
+Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+Q1. Download FASTA-format files of two protein sequences from UniProt.
+
+    # CySp1 - Cylindrical silk protein 1 - Nephila clavata (Joro spider)
+    library("seqinr")
+    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S3.fasta")[[1]]
+    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S4.fasta")[[1]]
+
+    length(seq1) # 757
+    length(seq2) # 1259
+
+	par(family="mono")
+
+Q2. Create a dotplot for two sequences.
+
+    dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
+
+Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
+
+    dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
+    dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
+
+![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
+
+    # change shell to bash
+    bash
+
+[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
+「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
+[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
+
+	# 配列取得方法
+	## togowsの利用 http://togotv.dbcls.jp/20110425.html
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
+
+	# dottup
+	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
+
+	# needle, water
+	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
+
+----------
+## assignment 11
+**課題No.11 「Pairwise Sequence Alignment」**
+
+[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
+
+Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+
+Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
+
+    library("seqinr")
+    seq1 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_009193.fasta")[[1]]
+    seq2 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta")[[1]]
+
+    seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
+    seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
+
+Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
+(set gapOpening = -9.5 and gapExtension = -0.5)
+
+	library("Biostrings")		# load the Biostrings package
+	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
+    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign
+
+Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
+
+    writePairwiseAlignments(myglobalAlign)
+
+Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
+
+	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
+    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign2
+
+Q5. What is the alignment score for the optimal local alignment between the two proteins?
+
+    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+	gapOpening = -9.5, gapExtension = -0.5, type="local")
+	mylocalAlign
+
+----------
+
+### Elongation Factor
+翻訳伸長因子
+[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
+[EF-G](https://ja.wikipedia.org/wiki/EF-G)
+
+[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
+
+![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
+
+----------
+
+https://twitter.com/Symbionticism/status/1123203760564637697
+Seth Bordenstein on Twitter: "This is a game changer. Many intracellular microbes have a genome wide bias in A’s and T’s. The major assumption has been a mutational bias / drift impacts this outcome. Well, not so fast. Evidence below that selection can contribute or cause it.… https://t.co/yfDqN3b3Lj"
+8:33 AM - 30 Apr 2019
+https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007778
+Selective advantages favour high genomic AT-contents in intracellular elements
+Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial species with different genomic GC-contents revealed that the costs of G+C-rich plasmids decreased with an increasing GC-content of their host’s genomic DNA. 
+
+----------
+
+## NCBI Genome List
+[NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
+[国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
+の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
+
+ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
+例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*を検索する。
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti)、検索ボックス下の「Overview (1); Eukaryotes (0); Prokaryotes (204); Viruses (0); Plasmids (65); Organelles (0)」のうち、「Prokaryotes」をクリックすると、*Sinorhizobium meliloti*に属する菌株**Strain**が表示される。
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti)、列**Organism Name**の"Sinorhizobium meliloti 1021"株をクリックして開く。
+[ここで](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
+列**Type**のChrは染色体、Plsmはプラスミドを指す。
+
+複数のレプリコン（染色体とプラスミド）を保有する細菌の例:
+```
+Agrobacterium tumefaciens str. C58 | 4 replicons (chromosome circular; chromosome linear; plasmid At; plasmid Ti)
+Aureimonas sp. AU20 | 9 replicons (plasmid pAU20rrn)
+炭疽菌 Bacillus anthracis str. 'Ames Ancestor' | chromosome; plasmid pXO1; plasmid pXO2
+Borrelia burgdorferi B31 | 22 replicons
+放射線耐性菌 Deinococcus radiodurans R1 | chromosome 1; chromosome 2; plasmid CP1; plasmid MP1
+コレラ菌 Vibrio cholerae O1 biovar El Tor str. N16961 | chromosome I; chromosome II
+ウェルシュ菌 Clostridium perfringens str. 13 (plasmid pCP13)
+Cupriavidus necator (a.k.a. Ralstonia eutropha) JMP134 (IncP­-1 plasmid pJP4)
+腸管出血性大腸菌 Escherichia coli O157:H7 str. Sakai (plasmid pO157, pOSAK1)
+大腸菌 Escherichia coli SMS-3-5 (IncF plasmid pSMS35_130)
+Geobacter lovleyi SZ
+Mycobacteroides abscessus subsp. bolletii (IncP-1β plasmid pMAB01)
+Pseudomonas resinovorans NBRC 106553 (strain CA10; IncP-­7 plasmid pCAR1.3)
+サルモネラ チフス菌 Salmonella enterica subsp. enterica serovar Typhi str. CT18 (plasmid pHCM1, pHCM2)
+サルモネラ ネズミチフス菌 Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 (IncQ plasmid pRSF1010_SL1344)
+アルファルファ根粒菌 Sinorhizobium meliloti 1021 (plasmid pSymA, pSymB)
+ペスト菌 Yersinia pestis CO92 (plasmid pCD1, pPCP1, pMT1)
+```
+
+[ゲノム　第4版](https://www.medsi.co.jp/books/products/detail.php?product_id=3642)
+第8章 原核生物ゲノムと真核生物の細胞小器官ゲノム
+| 8.1 原核生物ゲノムの構造的特徴
+| 一部の細菌は直鎖状ゲノムや分節ゲノムをもつ
+| 表8.1 代表的なプラスミドの特徴
+| 表8.2 原核生物のゲノム構成の例
+
+NCBIからDNA配列を取得する:  
+
+    # Retrieving a DNA sequence from NCBI
+    library("seqinr")
+    ACCESSION <- "NC_001477" # Dengue virus 1
+    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    #ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
+    #ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
+    #ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
+    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome
+    #ACCESSION <- "NC_000908" # Mycoplasma genitalium G37, complete genome
+    filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
+    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
+    seq1 <- seqs[[1]]
+
+----------
 ## NCBI GENOME_REPORTS
 
+ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)
+の表のテキスト版をFTPサイトからダウンロードする。
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
 *README*をクリックして開く。
 
@@ -327,7 +434,6 @@ prokaryotes.txt: Prokaryotic genome sequencing projects
 viruses.txt:   Viral genome sequencing projects
 ```
 
-### Working with Data in R
 Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
@@ -547,10 +653,9 @@ matplot()
     heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=gray.colors(12))
 
 ### References
+オリゴヌクレオチド組成の解析
 - [Takahashi M et al. (2009) "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
-オリゴヌクレオチド組成に基づく細菌の系統推定
 - [Suzuki H et al. (2008) "Using Mahalanobis distance to compare genomic signatures between bacterial plasmids and chromosomes."](https://www.ncbi.nlm.nih.gov/pubmed/18953039)
-オリゴヌクレオチド組成に基づくプラスミドの宿主予測
 - [Wong K et al. (2002) "Dinucleotide compositional analysis of Sinorhizobium meliloti using the genome signature: distinguishing chromosomes and plasmids."](https://www.ncbi.nlm.nih.gov/pubmed/12444420)
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
 
@@ -1012,109 +1117,8 @@ uco(seq = testseq, index = "rscu")
     # Draw a Heat Map
     heatmap(X, margins=c(15, 2), cexCol=0.9, scale="none", col=gray.colors(12))
 
-----------
-## assignment 7
-**課題No.7 「dotplot」**
 
-ドットプロットで2つの配列を比較
-[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
 
-Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-
-Q1. Download FASTA-format files of two protein sequences from UniProt.
-
-    # CySp1 - Cylindrical silk protein 1 - Nephila clavata (Joro spider)
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S3.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S4.fasta")[[1]]
-
-    length(seq1) # 757
-    length(seq2) # 1259
-
-	par(family="mono")
-
-Q2. Create a dotplot for two sequences.
-
-    dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
-
-Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
-
-    dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
-    dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
-
-![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
-
-    # change shell to bash
-    bash
-
-[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
-「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
-[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
-
-	# 配列取得方法
-	## togowsの利用 http://togotv.dbcls.jp/20110425.html
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
-
-	# dottup
-	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
-
-	# needle, water
-	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
-
-----------
-## assignment 11
-**課題No.11 「Pairwise Sequence Alignment」**
-
-[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
-
-Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
-
-Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
-
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_009193.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta")[[1]]
-
-    seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
-    seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
-
-Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
-(set gapOpening = -9.5 and gapExtension = -0.5)
-
-	library("Biostrings")		# load the Biostrings package
-	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
-    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
-	myglobalAlign
-
-Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
-
-    writePairwiseAlignments(myglobalAlign)
-
-Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
-
-	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
-    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
-	myglobalAlign2
-
-Q5. What is the alignment score for the optimal local alignment between the two proteins?
-
-    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5, type="local")
-	mylocalAlign
-
-----------
-
-### Elongation Factor
-翻訳伸長因子
-[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
-[EF-G](https://ja.wikipedia.org/wiki/EF-G)
-
-[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
-
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
 
 ----------
 ## Sequence similarity search
