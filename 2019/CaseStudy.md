@@ -623,8 +623,7 @@ df <- data.frame(Length, GCcontent, Annotation)
 複数のDNA配列の2連続塩基組成（観測値/期待値）を解析する:  
 
     # Apply a Function over a List
-     X <- sapply(seqs, rho)
-    #X <- sapply(seqs, rho, wordsize = 3)
+    X <- sapply(seqs, rho, wordsize = 2)
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
