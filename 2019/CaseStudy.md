@@ -10,16 +10,25 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
+- [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
+- [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
+- [NCBI GENOME_REPORTS](#ncbi-genome_reports)
+- [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 7](#assignment-7) 課題No.7 「dotplot」
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
-- [NCBI Genome List](#ncbi-genome-list)
-- [NCBI GENOME_REPORTS](#ncbi-genome_reports)
-- [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
-- [Coding sequences](#coding-sequences) タンパク質コード配列
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
+
+----------
+
+https://twitter.com/Symbionticism/status/1123203760564637697
+Seth Bordenstein on Twitter: "This is a game changer. Many intracellular microbes have a genome wide bias in A’s and T’s. The major assumption has been a mutational bias / drift impacts this outcome. Well, not so fast. Evidence below that selection can contribute or cause it.… https://t.co/yfDqN3b3Lj"
+8:33 AM - 30 Apr 2019
+https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007778
+Selective advantages favour high genomic AT-contents in intracellular elements
+Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial species with different genomic GC-contents revealed that the costs of G+C-rich plasmids decreased with an increasing GC-content of their host’s genomic DNA. 
 
 ----------
 ## assignment 0
@@ -127,6 +136,63 @@ Record the version of R and R packages by the `sessionInfo()` function.
 References:
 
 https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages
+
+----------
+
+## NCBI Genome List
+[NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
+[国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
+の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
+
+ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
+例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*を検索する。
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti)、検索ボックス下の「Overview (1); Eukaryotes (0); Prokaryotes (204); Viruses (0); Plasmids (65); Organelles (0)」のうち、「Prokaryotes」をクリックすると、*Sinorhizobium meliloti*に属する菌株**Strain**が表示される。
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti)、列**Organism Name**の"Sinorhizobium meliloti 1021"株をクリックして開く。
+[ここで](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
+列**Type**のChrは染色体、Plsmはプラスミドを指す。
+
+複数のレプリコン（染色体とプラスミド）を保有する細菌の例:
+```
+Agrobacterium tumefaciens str. C58 | 4 replicons (chromosome circular; chromosome linear; plasmid At; plasmid Ti)
+Aureimonas sp. AU20 | 9 replicons (plasmid pAU20rrn)
+炭疽菌 Bacillus anthracis str. 'Ames Ancestor' | chromosome; plasmid pXO1; plasmid pXO2
+Borrelia burgdorferi B31 | 22 replicons
+放射線耐性菌 Deinococcus radiodurans R1 | chromosome 1; chromosome 2; plasmid CP1; plasmid MP1
+コレラ菌 Vibrio cholerae O1 biovar El Tor str. N16961 | chromosome I; chromosome II
+ウェルシュ菌 Clostridium perfringens str. 13 (plasmid pCP13)
+Cupriavidus necator (a.k.a. Ralstonia eutropha) JMP134 (IncP­-1 plasmid pJP4)
+腸管出血性大腸菌 Escherichia coli O157:H7 str. Sakai (plasmid pO157, pOSAK1)
+大腸菌 Escherichia coli SMS-3-5 (IncF plasmid pSMS35_130)
+Geobacter lovleyi SZ
+Mycobacteroides abscessus subsp. bolletii (IncP-1β plasmid pMAB01)
+Pseudomonas resinovorans NBRC 106553 (strain CA10; IncP-­7 plasmid pCAR1.3)
+サルモネラ チフス菌 Salmonella enterica subsp. enterica serovar Typhi str. CT18 (plasmid pHCM1, pHCM2)
+サルモネラ ネズミチフス菌 Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 (IncQ plasmid pRSF1010_SL1344)
+アルファルファ根粒菌 Sinorhizobium meliloti 1021 (plasmid pSymA, pSymB)
+ペスト菌 Yersinia pestis CO92 (plasmid pCD1, pPCP1, pMT1)
+```
+
+[ゲノム　第4版](https://www.medsi.co.jp/books/products/detail.php?product_id=3642)
+第8章 原核生物ゲノムと真核生物の細胞小器官ゲノム
+| 8.1 原核生物ゲノムの構造的特徴
+| 一部の細菌は直鎖状ゲノムや分節ゲノムをもつ
+| 表8.1 代表的なプラスミドの特徴
+| 表8.2 原核生物のゲノム構成の例
+
+NCBIからDNA配列を取得する:  
+
+    # Retrieving a DNA sequence from NCBI
+    library("seqinr")
+    ACCESSION <- "NC_001477" # Dengue virus 1
+    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+    #ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
+    #ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
+    #ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
+    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome
+    #ACCESSION <- "NC_000908" # Mycoplasma genitalium G37, complete genome
+    filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
+    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
+    seq1 <- seqs[[1]]
 
 ----------
 ## assignment 3
@@ -251,174 +317,174 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
     # rho < 1: under-represented
 
 ----------
-## assignment 7
-**課題No.7 「dotplot」**
 
-ドットプロットで2つの配列を比較
-[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
+## NCBI ASSEMBLY_REPORTS
+NCBIのゲノム配列のメタデータが記載されている。
 
-Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
 
-Q1. Download FASTA-format files of two protein sequences from UniProt.
+	The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
+	assembly_summary_genbank.txt            - current GenBank genome assemblies
+	assembly_summary_refseq.txt             - current RefSeq genome assemblies
 
-    # CySp1 - Cylindrical silk protein 1 - Nephila clavata (Joro spider)
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S3.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S4.fasta")[[1]]
+- April 9, 2018 [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+- 2018-10-23 [RefSeq - JI](http://fish-evol.org/RefSeq.html) 井上 潤
+- 2017.03.12 [RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース](https://bi.biopapyrus.jp/db/refseq.html)
 
-    length(seq1) # 757
-    length(seq2) # 1259
+NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
+*assembly_summary_genbank.txt* または *assembly_summary_refseq.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
-	par(family="mono")
+Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
+Right click the link *assembly_summary_genbank.txt* or *assembly_summary_refseq.txt*, and select "Copy Link Address".
 
-Q2. Create a dotplot for two sequences.
+### Working with Data in R
+Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 
-    dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
-Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
+    WorkingDirectory <- "~/projects/data/ncbi/assembly_reports/"
 
-    dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
-    dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
+    # Invoke a System Command
+    system( paste0("mkdir -p ",WorkingDirectory) )
 
-![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
+    # Set and Get Working Directory
+    setwd(WorkingDirectory)
+    getwd()
 
-    # change shell to bash
-    bash
+    # List the Files in a Directory
+    dir()
 
-[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
-「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
-[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
-	# 配列取得方法
-	## togowsの利用 http://togotv.dbcls.jp/20110425.html
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
+    # Download File from the Internet
+    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt"
+    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt"
+    download.file(url = curl, destfile = basename(curl))
 
-	# dottup
-	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
+[Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
 
-	# needle, water
-	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
+データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
 
-----------
-## assignment 11
-**課題No.11 「Pairwise Sequence Alignment」**
+    # Loading Data into R
+    filename <- basename(curl)
+    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE, skip = 1) 
 
-[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
+[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
 
-Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+    # Exploring and Transforming Dataframes
+    dim(d)
+    head(d, n = 1)
+    colnames(d)
+    colnames(d)[1] <- "assembly_accession"
 
-Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
+    table(d$refseq_category)
+    table(d$assembly_level)
 
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_009193.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta")[[1]]
+例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*
+の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
-    seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
-    seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
 
-Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
-(set gapOpening = -9.5 and gapExtension = -0.5)
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    # grepl returns a logical vector (match or not for each element of x).
+    pattern <- "Sinorhizobium meliloti"
+    #pattern <- "B.*burgdorferi" # "Borrelia burgdorferi"
+    TF <- grepl(pattern = pattern, x = d$organism_name) & grepl(pattern = "reference|representative", x = d$refseq_category) & d$assembly_level == "Complete Genome" & d$version_status == "latest"
+    d[TF,]
+    d$ftp_path[TF]
 
-	library("Biostrings")		# load the Biostrings package
-	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
-    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
-	myglobalAlign
+抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
-Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
+Open the URL with your browser (Firefox or Chrome). Right click the link *README.txt*, and select "Copy Link Address".
 
-    writePairwiseAlignments(myglobalAlign)
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
 
-Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
+[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
 
-	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
-    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
-	myglobalAlign2
+    *_genomic.fna.gz: FASTA format of the genomic sequence(s) in the assembly. 
+    *_cds_from_genomic.fna.gz: FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
+    *_protein.faa.gz: FASTA format of the accessioned protein products annotated on the genome assembly.
+    *_genomic.gbff.gz: GenBank flat file format of the genomic sequence(s) in the assembly. 
 
-Q5. What is the alignment score for the optimal local alignment between the two proteins?
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
-    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5, type="local")
-	mylocalAlign
+    # Download File from the Internet
+    filesuffix <- "_genomic.fna.gz"
+    #filesuffix <- "_cds_from_genomic.fna.gz"
+    #filesuffix <- "_protein.faa.gz"
+    curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], filesuffix )
+    download.file(url = curl, destfile = basename(curl))
 
-----------
+`read.fasta()`関数で配列データを読み込む:  
 
-### Elongation Factor
-翻訳伸長因子
-[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
-[EF-G](https://ja.wikipedia.org/wiki/EF-G)
-
-[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
-
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
-
-----------
-
-https://twitter.com/Symbionticism/status/1123203760564637697
-Seth Bordenstein on Twitter: "This is a game changer. Many intracellular microbes have a genome wide bias in A’s and T’s. The major assumption has been a mutational bias / drift impacts this outcome. Well, not so fast. Evidence below that selection can contribute or cause it.… https://t.co/yfDqN3b3Lj"
-8:33 AM - 30 Apr 2019
-https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007778
-Selective advantages favour high genomic AT-contents in intracellular elements
-Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial species with different genomic GC-contents revealed that the costs of G+C-rich plasmids decreased with an increasing GC-content of their host’s genomic DNA. 
-
-----------
-
-## NCBI Genome List
-[NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
-[国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
-の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
-
-ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
-例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*を検索する。
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti)、検索ボックス下の「Overview (1); Eukaryotes (0); Prokaryotes (204); Viruses (0); Plasmids (65); Organelles (0)」のうち、「Prokaryotes」をクリックすると、*Sinorhizobium meliloti*に属する菌株**Strain**が表示される。
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti)、列**Organism Name**の"Sinorhizobium meliloti 1021"株をクリックして開く。
-[ここで](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
-列**Type**のChrは染色体、Plsmはプラスミドを指す。
-
-複数のレプリコン（染色体とプラスミド）を保有する細菌の例:
-```
-Agrobacterium tumefaciens str. C58 | 4 replicons (chromosome circular; chromosome linear; plasmid At; plasmid Ti)
-Aureimonas sp. AU20 | 9 replicons (plasmid pAU20rrn)
-炭疽菌 Bacillus anthracis str. 'Ames Ancestor' | chromosome; plasmid pXO1; plasmid pXO2
-Borrelia burgdorferi B31 | 22 replicons
-放射線耐性菌 Deinococcus radiodurans R1 | chromosome 1; chromosome 2; plasmid CP1; plasmid MP1
-コレラ菌 Vibrio cholerae O1 biovar El Tor str. N16961 | chromosome I; chromosome II
-ウェルシュ菌 Clostridium perfringens str. 13 (plasmid pCP13)
-Cupriavidus necator (a.k.a. Ralstonia eutropha) JMP134 (IncP­-1 plasmid pJP4)
-腸管出血性大腸菌 Escherichia coli O157:H7 str. Sakai (plasmid pO157, pOSAK1)
-大腸菌 Escherichia coli SMS-3-5 (IncF plasmid pSMS35_130)
-Geobacter lovleyi SZ
-Mycobacteroides abscessus subsp. bolletii (IncP-1β plasmid pMAB01)
-Pseudomonas resinovorans NBRC 106553 (strain CA10; IncP-­7 plasmid pCAR1.3)
-サルモネラ チフス菌 Salmonella enterica subsp. enterica serovar Typhi str. CT18 (plasmid pHCM1, pHCM2)
-サルモネラ ネズミチフス菌 Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 (IncQ plasmid pRSF1010_SL1344)
-アルファルファ根粒菌 Sinorhizobium meliloti 1021 (plasmid pSymA, pSymB)
-ペスト菌 Yersinia pestis CO92 (plasmid pCD1, pPCP1, pMT1)
-```
-
-[ゲノム　第4版](https://www.medsi.co.jp/books/products/detail.php?product_id=3642)
-第8章 原核生物ゲノムと真核生物の細胞小器官ゲノム
-| 8.1 原核生物ゲノムの構造的特徴
-| 一部の細菌は直鎖状ゲノムや分節ゲノムをもつ
-| 表8.1 代表的なプラスミドの特徴
-| 表8.2 原核生物のゲノム構成の例
-
-NCBIからDNA配列を取得する:  
-
-    # Retrieving a DNA sequence from NCBI
-    library("seqinr")
-    ACCESSION <- "NC_001477" # Dengue virus 1
-    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    #ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
-    #ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
-    #ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
-    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome
-    #ACCESSION <- "NC_000908" # Mycoplasma genitalium G37, complete genome
-    filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
+    # Reading sequence data and store them in list variable "seqs"
+    library("seqinr") # Load the SeqinR package
+    filename <- basename(curl)
     seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
-    seq1 <- seqs[[1]]
+    #seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE)
+
+    length(seqs) # get the number of elements
+    unlist(getAnnot(seqs)) # get sequence annotations
+
+- [24. apply() ファミリー](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/24.html)
+
+`sapply()`関数は、リストの各要素に関数を適用する。  
+複数のDNA配列を解析する:  
+
+    # Apply a Function over a List
+    sapply(seqs, length)
+    sapply(seqs, GC)
+
+- [23. リスト](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html)
+
+`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
+複数のDNA配列の結合データを解析する:  
+
+    # Flatten Lists
+    length(unlist(seqs))
+    GC(unlist(seqs))
+
+### References
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
+Genomes Download FAQ
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#protocols
+2. What is the best protocol to use to download large data sets?
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files
+11. What is the file content within each specific assembly directory?
+
+*_cds_from_genomic.fna.gz
+FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
+
+*_genomic.fna.gz
+FASTA format of the genomic sequence(s) in the assembly. 
+
+*_genomic.gbff.gz
+GenBank flat file format of the genomic sequence(s) in the assembly. 
+
+*_protein.faa.gz
+FASTA format of the accessioned protein products annotated on the genome assembly.
+
+http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind
+12. How can I find the sequence and annotation of my genome of interest?
+
+Using the assembly summary report files
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#current
+14. How can I download only the current version of each assembly?
+
+Use either of the two master assembly summary files, or the assembly_summary.txt file for the species or taxonomic group of interest (see above), select those assemblies that are marked as "latest" in the version_status column (11), and then use the FTP path indicated in column 20 to download the data.
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
+15. How can I download RefSeq data for all complete bacterial genomes?
+
+Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP directory names. One way to do this would be using the following awk command:
+
+	awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gbff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
 
 ----------
 ## NCBI GENOME_REPORTS
@@ -485,7 +551,7 @@ table(d$Status)
 # grep(pattern, x) returns the positions of all elements in x that match pattern
 # grepl returns a logical vector (match or not for each element of x).
 Organism_Name <- "Sinorhizobium meliloti 1021"
-#Organism_Name <- "Bacillus anthracis .*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
+#Organism_Name <- "Bacillus anthracis.*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
 TF <- grepl(pattern = Organism_Name, x = d$`#Organism/Name`)
 sum(TF)
 d[TF,]
@@ -514,7 +580,7 @@ command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_
 
 ### prokaryotes 原核生物
 Organism_Name <- "Sinorhizobium meliloti 1021"
-#Organism_Name <- "Bacillus anthracis .*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
+#Organism_Name <- "Bacillus anthracis.*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
 command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ## Invoke a System Command
@@ -660,176 +726,6 @@ matplot()
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
-
-----------
-
-## NCBI ASSEMBLY_REPORTS
-[NCBI](#ncbi)のゲノム配列のメタデータが記載されている。
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
-
-	The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
-	assembly_summary_genbank.txt            - current GenBank genome assemblies
-	assembly_summary_refseq.txt             - current RefSeq genome assemblies
-
-- April 9, 2018 [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
-- 2018-10-23 [RefSeq - JI](http://fish-evol.org/RefSeq.html) 井上 潤
-- 2017.03.12 [RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース](https://bi.biopapyrus.jp/db/refseq.html)
-
-NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
-*assembly_summary_genbank.txt* または *assembly_summary_refseq.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
-Right click the link *assembly_summary_genbank.txt* or *assembly_summary_refseq.txt*, and select "Copy Link Address".
-
-### Working with Data in R
-Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
-
-[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
-
-    WorkingDirectory <- "~/projects/data/ncbi/assembly_reports/"
-
-    # Invoke a System Command
-    system( paste0("mkdir -p ",WorkingDirectory) )
-
-    # Set and Get Working Directory
-    setwd(WorkingDirectory)
-    getwd()
-
-    # List the Files in a Directory
-    dir()
-
-[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
-
-    # Download File from the Internet
-    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt"
-    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt"
-    download.file(url = curl, destfile = basename(curl))
-
-[Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
-
-データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
-
-    # Loading Data into R
-    filename <- basename(curl)
-    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE, skip = 1) 
-
-[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
-
-    # Exploring and Transforming Dataframes
-    dim(d)
-    head(d, n = 1)
-    colnames(d)
-    colnames(d)[1] <- "assembly_accession"
-
-    table(d$refseq_category)
-    table(d$assembly_level)
-
-例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*
-の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
-
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
-
-    # grep(pattern, x) returns the positions of all elements in x that match pattern
-    # grepl returns a logical vector (match or not for each element of x).
-    pattern <- "Sinorhizobium meliloti"
-    #pattern <- "B.* burgdorferi" # "Borrelia burgdorferi"
-    TF <- grepl(pattern = pattern, x = d$organism_name) & grepl(pattern = "reference|representative", x = d$refseq_category) & d$assembly_level == "Complete Genome" & d$version_status == "latest"
-    d[TF,]
-    d$ftp_path[TF]
-
-抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Open the URL with your browser (Firefox or Chrome). Right click the link *README.txt*, and select "Copy Link Address".
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
-
-[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
-
-    *_genomic.fna.gz: FASTA format of the genomic sequence(s) in the assembly. 
-    *_cds_from_genomic.fna.gz: FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
-    *_protein.faa.gz: FASTA format of the accessioned protein products annotated on the genome assembly.
-    *_genomic.gbff.gz: GenBank flat file format of the genomic sequence(s) in the assembly. 
-
-[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
-
-    # Download File from the Internet
-    filesuffix <- "_genomic.fna.gz"
-    #filesuffix <- "_cds_from_genomic.fna.gz"
-    #filesuffix <- "_protein.faa.gz"
-    curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], filesuffix )
-    download.file(url = curl, destfile = basename(curl))
-
-`read.fasta()`関数で配列データを読み込む:  
-
-    # Reading sequence data and store them in list variable "seqs"
-    library("seqinr") # Load the SeqinR package
-    filename <- basename(curl)
-    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
-    #seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE)
-
-    length(seqs) # get the number of elements
-    unlist(getAnnot(seqs)) # get sequence annotations
-
-- [24. apply() ファミリー](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/24.html)
-
-`sapply()`関数は、リストの各要素に関数を適用する。  
-複数のDNA配列を解析する:  
-
-    # Apply a Function over a List
-    sapply(seqs, length)
-    sapply(seqs, GC)
-
-- [23. リスト](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html)
-
-`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
-複数のDNA配列の結合データを解析する:  
-
-    # Flatten Lists
-    length(unlist(seqs))
-    GC(unlist(seqs))
-
-### References
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
-Genomes Download FAQ
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#protocols
-2. What is the best protocol to use to download large data sets?
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files
-11. What is the file content within each specific assembly directory?
-
-*_cds_from_genomic.fna.gz
-FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
-
-*_genomic.fna.gz
-FASTA format of the genomic sequence(s) in the assembly. 
-
-*_genomic.gbff.gz
-GenBank flat file format of the genomic sequence(s) in the assembly. 
-
-*_protein.faa.gz
-FASTA format of the accessioned protein products annotated on the genome assembly.
-
-http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind
-12. How can I find the sequence and annotation of my genome of interest?
-
-Using the assembly summary report files
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#current
-14. How can I download only the current version of each assembly?
-
-Use either of the two master assembly summary files, or the assembly_summary.txt file for the species or taxonomic group of interest (see above), select those assemblies that are marked as "latest" in the version_status column (11), and then use the FTP path indicated in column 20 to download the data.
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
-15. How can I download RefSeq data for all complete bacterial genomes?
-
-Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP directory names. One way to do this would be using the following awk command:
-
-	awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gbff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
 
 ----------
 
@@ -1117,8 +1013,113 @@ uco(seq = testseq, index = "rscu")
     # Draw a Heat Map
     heatmap(X, margins=c(15, 2), cexCol=0.9, scale="none", col=gray.colors(12))
 
+----------
 
 
+
+----------
+## assignment 7
+**課題No.7 「dotplot」**
+
+ドットプロットで2つの配列を比較
+[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
+
+Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+Q1. Download FASTA-format files of two protein sequences from UniProt.
+
+    # CySp1 - Cylindrical silk protein 1 - Nephila clavata (Joro spider)
+    library("seqinr")
+    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S3.fasta")[[1]]
+    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S4.fasta")[[1]]
+
+    length(seq1) # 757
+    length(seq2) # 1259
+
+	par(family="mono")
+
+Q2. Create a dotplot for two sequences.
+
+    dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
+
+Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
+
+    dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
+    dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
+
+![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
+
+    # change shell to bash
+    bash
+
+[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
+「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
+[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
+
+	# 配列取得方法
+	## togowsの利用 http://togotv.dbcls.jp/20110425.html
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
+
+	# dottup
+	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
+
+	# needle, water
+	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
+
+----------
+## assignment 11
+**課題No.11 「Pairwise Sequence Alignment」**
+
+[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
+
+Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+
+Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
+
+    library("seqinr")
+    seq1 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_009193.fasta")[[1]]
+    seq2 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta")[[1]]
+
+    seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
+    seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
+
+Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
+(set gapOpening = -9.5 and gapExtension = -0.5)
+
+	library("Biostrings")		# load the Biostrings package
+	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
+    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign
+
+Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
+
+    writePairwiseAlignments(myglobalAlign)
+
+Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
+
+	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
+    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign2
+
+Q5. What is the alignment score for the optimal local alignment between the two proteins?
+
+    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+	gapOpening = -9.5, gapExtension = -0.5, type="local")
+	mylocalAlign
+
+----------
+
+### Elongation Factor
+翻訳伸長因子
+[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
+[EF-G](https://ja.wikipedia.org/wiki/EF-G)
+
+[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
+
+![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
 
 ----------
 ## Sequence similarity search
@@ -1312,4 +1313,8 @@ BLASTの実行:
 ![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/mbe/27/2/10.1093/molbev/msp259/2/m_molbiolevolmsp259f01_3c.gif?Expires=1545572639&Signature=fOWaS-pdA~W-WnKyf1YvpUrcbrK6B0FVW5WBmrE~BczkdAgkModbmfuC7hKvNqBjJExgGZzAJt-~usX0g38ApCVbJxYzQzr1AIgjIgztMI6v3c6U~MSWbckpj63YACB5Z8vd60XJe3kC8pnle5~x2ImDyUTWGjQutx4X6kck0-gpOQ1-o4jiEVYx-1ulL63-r0lM8K~MtN5AE1NgdElTvvLa0ui6YLME5u2gf17Y8U~onACmCPbf42K-RZg4mFDOJw0pe0O6qI~oTdSUoS0DTfackKrz5V6qujwERSCdR2778J9fTOxyz2jSpWVgtTxZTpTOQT3npMZvnztYAmZ~Cg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
 
 ----------
+
+
+
+
 
