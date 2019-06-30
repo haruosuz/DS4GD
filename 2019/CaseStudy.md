@@ -455,7 +455,7 @@ Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril
     # Download File from the Internet
     curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt" # 原核生物 # 60.9 MB
     #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt" # 真核生物 # 2.1 MB
-    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt" # ウイルス # 4.7 MB
+    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt"    # ウイルス # 4.7 MB
     download.file(url = curl, destfile = basename(curl))
 
 [Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
@@ -485,9 +485,7 @@ table(d$Status)
 # grep(pattern, x) returns the positions of all elements in x that match pattern
 # grepl returns a logical vector (match or not for each element of x).
 Organism_Name <- "Sinorhizobium meliloti 1021"
-#Organism_Name <- "Bacillus anthracis str. 'Ames Ancestor'|Escherichia coli O157:H7 str. Sakai|JMP134"
 #Organism_Name <- "Bacillus anthracis .*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
-#Organism_Name <- "orovirus"
 TF <- grepl(pattern = Organism_Name, x = d$`#Organism/Name`)
 sum(TF)
 d[TF,]
@@ -515,10 +513,8 @@ Organism_Name <- "Saccharomyces cerevisiae S288C"
 command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ### prokaryotes 原核生物
-Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
-command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
-
-Organism_Name <- "Bacillus anthracis .*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
+Organism_Name <- "Sinorhizobium meliloti 1021"
+#Organism_Name <- "Bacillus anthracis .*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
 command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ## Invoke a System Command
@@ -591,13 +587,20 @@ DNA配列の2連続塩基組成（観測値/期待値）:
 直線
 abline
 
-    par(family="mono", cex = 0.7)
+    par(family="mono")
+    par(cex = 0.7)
+
     barplot(sort(rho(seq1, wordsize = 2)))
     abline(h=1)
 
 - [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
 
-`sapply()`関数は、リストの各要素に関数を適用する。  
+```
+# Apply a Function over a List
+lapply(seqs, summary)
+sapply(seqs, summary)
+```
+
 DNA配列の長さ、G+C含量、アノテーションのテーブルを作成する:  
 ```
 # Apply a Function over a List
@@ -635,8 +638,6 @@ df <- data.frame(Length, GCcontent, Annotation)
 
 [50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
 matplot()
-
-    par(family="mono")
 
     matplot(X, type="l", col=1:ncol(X), lty=1:ncol(X))
     legend("bottomleft", legend=colnames(X), col=1:ncol(X), lty=1:ncol(X))
