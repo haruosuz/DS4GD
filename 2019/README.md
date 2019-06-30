@@ -19,15 +19,16 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 
 [2019年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/19s_calendar_j.pdf)
 
+- [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md)
 - 2019-04-09 No. 1 - イントロダクション [Introduction](#introduction)
   - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 - 2019-04-16 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2019-04-23 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-  - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome-list)
+  - Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome-list)
 - 2019-04-30 *【国民の休日】National Holiday*
 - 2019-05-07 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
-- 2019-05-14 No. 5 - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
+- 2019-05-14 No. 5 - Case Study [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
 - 2019-05-21 No. 6 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#coding-sequences)
 - 2019-05-28 No. 7 - 中間発表 [interim report](#interim-report)
   - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
@@ -36,9 +37,9 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-06-11 No. 9 - [Guest Speaker](#guest-speaker)
 - 2019-06-18 No. 10 - [Guest Speaker](#guest-speaker)
 - 2019-06-25 No. 11 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
-- 2019-07-02 No. 12 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md)
-  - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
-  - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-assembly_reports)
+- 2019-07-02 No. 12 - Case Study [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
+  - *k*連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+  - Case Study [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-assembly_reports)
 - 2019-07-09 No. 13 - TBA
 - 2019-07-16 No. 14 - 最終回
   - 最終発表 [final presentation](#final-presentation)
