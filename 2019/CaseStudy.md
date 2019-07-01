@@ -597,6 +597,11 @@ seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
     # get the number of elements
     length(seqs)
 
+配列の名前（アクセッション番号）を取得する:  
+
+    # get sequence names
+    getName(seqs)
+
 配列のアノテーションを取得する:  
 
     # get sequence annotations
@@ -698,7 +703,9 @@ df <- data.frame(Length, GCcontent, Annotation)
 
     # Exploring and Transforming Dataframes
     dim(X)
-    colnames(X) <- substr(getAnnot(seqs), 1, 14)
+    colnames(X)
+    colnames(X) <- getAnnot(seqs)
+    #colnames(X) <- substr(getAnnot(seqs), 1, 14)
     #colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") ) # Genus Species
     #colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+ (chromosome.*|.*plasmid.*|.+'|DNA)), .+", replacement="\\1 \\4", getAnnot(seqs)) # Accession Replicon
 
