@@ -1075,6 +1075,17 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
 	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
 
 ----------
+
+### Elongation Factor
+翻訳伸長因子
+[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
+[EF-G](https://ja.wikipedia.org/wiki/EF-G)
+
+[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
+
+![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
+
+----------
 ## assignment 11
 **課題No.11 「Pairwise Sequence Alignment」**
 
@@ -1118,15 +1129,30 @@ Q5. What is the alignment score for the optimal local alignment between the two 
 	mylocalAlign
 
 ----------
+## assignment-12
+**課題No.12 「draft report」**
 
-### Elongation Factor
-翻訳伸長因子
-[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
-[EF-G](https://ja.wikipedia.org/wiki/EF-G)
+Integrate and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it in PDF format.
 
-[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
+これまでの課題（興味あるDNA/タンパク質の配列解析の結果）を統合・編集してレポートのドラフトを作成し、PDFファイルで提出する。
 
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
+----------
+## assignment-13
+**課題No.13 「presentation slides」**
+
+https://github.com/haruosuz/DS4GD/tree/master/2018giga#final-presentation
+
+2019-07-16 最終発表のスライド <YOUR_NAME.pdf> を提出する。
+発表時間：1人あたり最大5分
+
+生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、Pythonによる配列解析などが含まれる。
+
+Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2019-07-16.
+Five minutes will be allocated for each presentation, including presentation and discussion.
+
+Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global/local alignment), sequence analysis with Python, etc.
+
+----------
 
 ----------
 ## Sequence similarity search
