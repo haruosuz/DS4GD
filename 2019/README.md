@@ -37,6 +37,7 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-06-11 No. 9 - [Guest Speaker](#guest-speaker)
 - 2019-06-18 No. 10 - [Guest Speaker](#guest-speaker)
 - 2019-06-25 No. 11 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+  - 2つのDNA配列間のグローバル・アライメント [Pairwise global alignment of DNA sequences](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2019-07-02 No. 12 - Case Study [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
   - *k*-mer 連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 - 2019-07-09 No. 13 - TBA
