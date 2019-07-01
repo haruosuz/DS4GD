@@ -18,6 +18,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 7](#assignment-7) 課題No.7 「dotplot」
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
+- [assignment 12](#assignment-12) 課題No.12 「draft report」
+- [assignment 13](#assignment-13) 課題No.13 「presentation slides」
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
 
