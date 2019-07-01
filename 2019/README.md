@@ -38,13 +38,12 @@ DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS
 - 2019-06-18 No. 10 - [Guest Speaker](#guest-speaker)
 - 2019-06-25 No. 11 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
 - 2019-07-02 No. 12 - Case Study [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports)
-  - *k*連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
-  - Case Study [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-assembly_reports)
+  - *k*-mer 連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 - 2019-07-09 No. 13 - TBA
+  - Case Study [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-assembly_reports)
 - 2019-07-16 No. 14 - 最終回
   - 最終発表 [final presentation](#final-presentation)
 - 2019-07-23 レポート提出期限 Deadline for [final report](#final-report)
-- 2019-XX-XX (Saturday) [Supplementary Class] （土曜日）3限【補講】No. XX - ケーススタディ Case Study
 
 ----------
 ## Guest speaker
