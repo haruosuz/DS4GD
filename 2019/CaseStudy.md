@@ -15,6 +15,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
+- [2019-07-09](#2019-07-09)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 7](#assignment-7) 課題No.7 「dotplot」
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
@@ -585,6 +586,9 @@ Organism_Name <- "Sinorhizobium meliloti 1021"
 #Organism_Name <- "Bacillus anthracis.*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
 command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
+#Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
+#command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
+
 ## Invoke a System Command
 ACCESSIONs <- system(command, intern=TRUE)
 #ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") #Organism_Name <- "Sinorhizobium meliloti 1021"
@@ -628,7 +632,7 @@ seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
     # store the first element of the list object `seqs` in a variable `seq1`
     seq1 <- seqs[[1]]
 
-#### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
+### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
 
 `summary()`関数でデータの要約:  
 
@@ -642,7 +646,7 @@ DNA配列の2連続塩基含量（カウント）:
     # DNA words
     count(seq=seq1, wordsize=2)
 
-#### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
 連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
 DNA配列の2連続塩基組成（観測値/期待値）:  
@@ -703,13 +707,27 @@ df <- data.frame(Length, GCcontent, Annotation)
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
-    # Exploring and Transforming Dataframes
-    dim(X)
-    colnames(X)
-    colnames(X) <- getAnnot(seqs)
-    #colnames(X) <- substr(getAnnot(seqs), 1, 14)
-    #colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") ) # Genus Species
-    #colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+ (chromosome.*|.*plasmid.*|.+'|DNA)), .+", replacement="\\1 \\4", getAnnot(seqs)) # Accession Replicon
+```
+# Exploring and Transforming Dataframes
+dim(X)
+colnames(X)
+
+
+# Exploring and Transforming Dataframes
+dim(X)
+colnames(X)
+colnames(X) <- getName(seqs) # get sequence names
+colnames(X) <- getAnnot(seqs) # get sequence annotations
+
+# Substrings # e.g. "NC_003047.1 Si"
+#colnames(X) <- substr(getAnnot(seqs), 1, 14)
+
+# Genus Species # e.g. "Sinorhizobium meliloti"
+#colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") )
+
+# Accession Replicon # e.g. "NC_003047.1 chromosome", "NC_003037.1 plasmid pSymA", "NC_003078.1 plasmid pSymB"
+#colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+ (chromosome.*|.*plasmid.*|.+'|DNA)), .+", replacement="\\1 \\4", getAnnot(seqs))
+```
 
 [50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
 matplot()
@@ -735,6 +753,104 @@ matplot()
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
+
+----------
+## 2019-07-09
+
+Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    WorkingDirectory <- "~/projects/data/ncbi/genome_reports"
+    #system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+    dir() # List the Files in a Directory
+
+データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
+
+    # Loading Data into R
+    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt"
+    filename <- basename(curl)
+    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE)
+
+行と列の数、列名、先頭部分の確認:  
+```
+# Exploring and Transforming Dataframes
+dim(d)
+colnames(d)
+head(d, n=1)
+```
+
+NCBIから複数のDNA配列を取得する:  
+```
+# Retrieving a list of DNA sequences from NCBI
+library("seqinr") # Load the SeqinR package
+# create a function to retrieve several nucleotide sequences from NCBI
+retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)[[1]]
+
+# Make a vector containing NCBI GenBank/RefSeq accessions
+## create a system command to be invoked, as a character string
+Organism_Name <- "Bacillus anthracis.*Ames Ancestor|E.*coli O157.*Sakai"
+command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
+## Invoke a System Command
+ACCESSIONs <- system(command, intern=TRUE)
+ACCESSIONs
+
+# Retrieve the sequences and store them in list variable "seqs"
+seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
+```
+
+配列データを確認し、FASTA形式ファイルとして書き出す:  
+```
+length(seqs) # get the number of elements
+unlist(getAnnot(seqs)) # get sequence annotations
+write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80) # write the sequences to a FASTA-format file
+system("open .")
+```
+
+DNA配列の連続塩基組成（k-mer頻度）を解析する:  
+
+    # Apply a Function over a List
+    X <- sapply(seqs, rho, wordsize = 2)
+
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+
+```
+# Exploring and Transforming Dataframes
+dim(X)
+colnames(X) <- substr(getAnnot(seqs), 1, 14)
+colnames(X)
+
+# Hierarchical Clustering
+plot(hclust(dist(t(X))), hang=-1)
+```
+
+### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+
+    # 配列間の距離を計算する
+    # Calculating distances between sequences
+    mydist <- dist(t(X))
+
+    # 無根樹の構築
+    # Building an unrooted tree
+    library(ape) # install.packages("ape")
+    mytree <- nj(mydist)
+	par(family="mono")
+    plot.phylo(mytree, type = "unrooted") # type = "phylogram", "cladogram", "fan", "unrooted", "radial"
+
+    # 有根樹の構築
+    # Building a rooted tree
+    library(phangorn); mytree <- midpoint(mytree) # midpoint rooting
+    plot.phylo(ladderize(mytree, right = FALSE), main = "Neighbor-Joining midpoint rooted tree")
+
+    # Newick形式ファイルとして保存する
+    # Saving a phylogenetic tree as a Newick-format tree file
+    write.tree(mytree, file="mytree.newick")
+
+    # open current working directory
+    system("open .")
+
+Newick形式ファイルから[SeaView](http://doua.prabi.fr/software/seaview)で樹を描く。
 
 ----------
 
@@ -1023,10 +1139,6 @@ uco(seq = testseq, index = "rscu")
     heatmap(X, margins=c(15, 2), cexCol=0.9, scale="none", col=gray.colors(12))
 
 ----------
-
-
-
-----------
 ## assignment 7
 **課題No.7 「dotplot」**
 
@@ -1076,16 +1188,16 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
 	# needle, water
 	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
 
-----------
+http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
+ラージゲノムにも対応したdot plot解析ツール D-GENIES - macでインフォマティクス
 
+----------
 ### Elongation Factor
 翻訳伸長因子
 [EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
 [EF-G](https://ja.wikipedia.org/wiki/EF-G)
 
 [重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
-
-![](https://www.brh.co.jp/_old/imgs/katari/shinka/14_zu03.gif)
 
 ----------
 ## assignment 11
