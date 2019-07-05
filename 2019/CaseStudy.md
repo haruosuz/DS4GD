@@ -815,24 +815,25 @@ system("open .")
 複数のDNA配列の連続塩基組成（*k*-mer頻度）を解析する:
 ```
 # Apply a Function over a List
-X <- sapply(seqs, rho, wordsize = 2)
+myrho <- sapply(seqs, rho, wordsize = 2)
+myrho <- sapply(seqs, rho, wordsize = 4)
 
 # Exploring and Transforming Dataframes
-dim(X)
-colnames(X) <- substr(getAnnot(seqs), 1, 14)
-colnames(X)
+dim(myrho)
+colnames(myrho) <- substr(getAnnot(seqs), 1, 14)
+colnames(myrho)
 ```
 
 [距離行列 distance matrix](https://ja.wikipedia.org/wiki/距離行列)
 ```
 # Calculating distances between sequences
-mydist <- dist(t(X))
+mydist <- dist(t(myrho))
 ```
 
 距離行列を用いて、[非加重結合法 Unweighted Pair Group Method with Arithmetic mean (UPGMA)](https://ja.wikipedia.org/wiki/非加重結合法) により樹 tree を構築する。
 ```
 # Distance Matrix Computation
-mydist <- dist(t(X), method = "average") # (= UPGMA)
+mydist <- dist(t(myrho), method = "average") # (= UPGMA)
 
 # Hierarchical Clustering
 hc <- hclust(mydist)
