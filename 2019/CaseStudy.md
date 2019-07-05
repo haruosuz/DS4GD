@@ -538,14 +538,13 @@ Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril
 - [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
 
 行と列の数、列名、先頭部分の確認:  
-```
-# Exploring and Transforming Dataframes
-dim(d)
-colnames(d)
-head(d, n=1)
 
-table(d$Status)
-```
+    # Exploring and Transforming Dataframes
+    dim(d)
+    colnames(d)
+    head(d, n=1)
+
+    table(d$Status)
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
@@ -771,16 +770,16 @@ Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril
 
     # Loading Data into R
     curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt"
+    #download.file(url = curl, destfile = basename(curl))
     filename <- basename(curl)
     d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE)
 
 行と列の数、列名、先頭部分の確認:  
-```
-# Exploring and Transforming Dataframes
-dim(d)
-colnames(d)
-head(d, n=1)
-```
+
+    # Exploring and Transforming Dataframes
+    dim(d)
+    colnames(d)
+    head(d, n=1)
 
 複数のDNA配列をNCBIから取得する:  
 ```
