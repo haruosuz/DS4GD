@@ -810,7 +810,9 @@ write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nb
 system("open .")
 ```
 
-DNA配列の連続塩基組成（*k*-mer頻度）を解析する:  
+連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+
+複数のDNA配列の連続塩基組成（*k*-mer頻度）を解析する:
 ```
 # Apply a Function over a List
 X <- sapply(seqs, rho, wordsize = 2)
