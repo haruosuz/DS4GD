@@ -821,28 +821,32 @@ colnames(X) <- substr(getAnnot(seqs), 1, 14)
 colnames(X)
 ```
 
-クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+[距離行列 distance matrix](https://ja.wikipedia.org/wiki/距離行列)
 ```
-# Hierarchical Clustering
-plot(hclust(dist(t(X))), hang=-1)
-```
-
-### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-
-距離行列に基づいて、[近隣結合法 NJ (Neighbor-Joining)](https://ja.wikipedia.org/wiki/近隣結合法) により樹 tree を構築する。
-
-```
-# 距離を計算する
 # Calculating distances between sequences
 mydist <- dist(t(X))
+```
+
+距離行列を用いて、[非加重結合法 Unweighted Pair Group Method with Arithmetic mean (UPGMA)](https://ja.wikipedia.org/wiki/非加重結合法) により樹 tree を構築する。
+```
+# Distance Matrix Computation
+mydist <- dist(t(X), method = "average") # (= UPGMA)
+
+# Hierarchical Clustering
+hc <- hclust(mydist)
 
 par(family="mono")
+plot(hc, hang=-1)
+```
+
+距離行列を用いて、[近隣結合法 Neighbor-Joining (NJ)](https://ja.wikipedia.org/wiki/近隣結合法) により樹 tree を構築する。
+```
 library(ape) # install.packages("ape")
 
 # 無根樹の構築
 # Building an unrooted tree
 mytree <- nj(mydist)
-plot.phylo(mytree, type = "unrooted") # type = "phylogram", "cladogram", "fan", "unrooted", "radial"
+plot.phylo(mytree, type = "unrooted")
 
 # 有根樹の構築
 # Building a rooted tree
