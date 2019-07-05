@@ -756,6 +756,7 @@ matplot()
 
 ----------
 ## 2019-07-09
+[NCBI GENOME_REPORTS](#ncbi-genome_reports)
 
 Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 
@@ -804,53 +805,59 @@ seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
 ```
 length(seqs) # get the number of elements
 unlist(getAnnot(seqs)) # get sequence annotations
-write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80) # write the sequences to a FASTA-format file
+# write the sequences to a FASTA-format file
+write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80)
 system("open .")
 ```
 
-DNA配列の連続塩基組成（k-mer頻度）を解析する:  
-
-    # Apply a Function over a List
-    X <- sapply(seqs, rho, wordsize = 2)
-
-クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
-
+DNA配列の連続塩基組成（*k*-mer頻度）を解析する:  
 ```
+# Apply a Function over a List
+X <- sapply(seqs, rho, wordsize = 2)
+
 # Exploring and Transforming Dataframes
 dim(X)
 colnames(X) <- substr(getAnnot(seqs), 1, 14)
 colnames(X)
+```
 
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+```
 # Hierarchical Clustering
 plot(hclust(dist(t(X))), hang=-1)
 ```
 
 ### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 
-    # 配列間の距離を計算する
-    # Calculating distances between sequences
-    mydist <- dist(t(X))
+距離行列に基づいて、[近隣結合法 NJ (Neighbor-Joining)](https://ja.wikipedia.org/wiki/近隣結合法) により樹 tree を構築する。
 
-    # 無根樹の構築
-    # Building an unrooted tree
-    library(ape) # install.packages("ape")
-    mytree <- nj(mydist)
-	par(family="mono")
-    plot.phylo(mytree, type = "unrooted") # type = "phylogram", "cladogram", "fan", "unrooted", "radial"
+```
+# 距離を計算する
+# Calculating distances between sequences
+mydist <- dist(t(X))
 
-    # 有根樹の構築
-    # Building a rooted tree
-    library(phangorn); mytree <- midpoint(mytree) # midpoint rooting
-    plot.phylo(ladderize(mytree, right = FALSE), main = "Neighbor-Joining midpoint rooted tree")
+par(family="mono")
+library(ape) # install.packages("ape")
 
-    # Newick形式ファイルとして保存する
-    # Saving a phylogenetic tree as a Newick-format tree file
-    write.tree(mytree, file="mytree.newick")
+# 無根樹の構築
+# Building an unrooted tree
+mytree <- nj(mydist)
+plot.phylo(mytree, type = "unrooted") # type = "phylogram", "cladogram", "fan", "unrooted", "radial"
 
-    # open current working directory
-    system("open .")
+# 有根樹の構築
+# Building a rooted tree
+library(phangorn); mytree <- midpoint(mytree) # midpoint rooting
+plot.phylo(ladderize(mytree, right = FALSE), main = "Neighbor-Joining midpoint rooted tree")
 
-Newick形式ファイルから[SeaView](http://doua.prabi.fr/software/seaview)で樹を描く。
+# Newick形式ファイルとして保存する
+# Saving a tree as a Newick-format tree file
+write.tree(mytree, file="mytree.newick")
+
+# open current working directory
+system("open .")
+```
+
+Newick形式ファイルから[SeaView](http://doua.prabi.fr/software/seaview)で樹 tree を描く。
 
 ----------
 
