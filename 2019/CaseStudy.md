@@ -863,6 +863,10 @@ system("open .")
 
 Newick形式ファイルから[SeaView](http://doua.prabi.fr/software/seaview)で樹 tree を描く。
 
+### References
+- 三中信宏 (2003) クラスター分析の光と闇 ――なぜヒトは分類に憑かれるのか？―― [html](http://cse.naro.affrc.go.jp/minaka/R/R-cluster.html) [pdf](http://cse.naro.affrc.go.jp/minaka/R/clustering-04.pdf)
+- 2016-09-10 [「種問題」ははてしなく続く - archief voor stambomen](http://leeswijzer.hatenablog.com/entry/2016/09/10/102132)
+
 ----------
 
 ## [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2017/CaseStudy.md#annotation-of-coding-sequences)
