@@ -560,7 +560,7 @@ sum(TF)
 d[TF,]
 ```
 
-NCBIから複数のDNA配列を取得する:  
+複数のDNA配列をNCBIから取得する:  
 ```
 # Retrieving a list of DNA sequences from NCBI
 
@@ -782,7 +782,7 @@ colnames(d)
 head(d, n=1)
 ```
 
-NCBIから複数のDNA配列を取得する:  
+複数のDNA配列をNCBIから取得する:  
 ```
 # Retrieving a list of DNA sequences from NCBI
 library("seqinr") # Load the SeqinR package
@@ -801,13 +801,10 @@ ACCESSIONs
 seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
 ```
 
-配列データを確認し、FASTA形式ファイルとして書き出す:  
+配列の数とアノテーションを確認する:  
 ```
 length(seqs) # get the number of elements
 unlist(getAnnot(seqs)) # get sequence annotations
-# write the sequences to a FASTA-format file
-write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80)
-system("open .")
 ```
 
 連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
@@ -816,7 +813,6 @@ system("open .")
 ```
 # Apply a Function over a List
 myrho <- sapply(seqs, rho, wordsize = 2)
-myrho <- sapply(seqs, rho, wordsize = 4)
 
 # Exploring and Transforming Dataframes
 dim(myrho)
