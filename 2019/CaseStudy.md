@@ -820,7 +820,7 @@ colnames(myrho)
 [距離行列 distance matrix](https://ja.wikipedia.org/wiki/距離行列)
 ```
 # Calculating distances between sequences
-mydist <- dist(t(myrho))
+mydist <- dist(t(myrho), method = "euclidean")
 ```
 
 距離行列を用いて、[非加重結合法 Unweighted Pair Group Method with Arithmetic mean (UPGMA)](https://ja.wikipedia.org/wiki/非加重結合法) により樹 tree を構築する。
