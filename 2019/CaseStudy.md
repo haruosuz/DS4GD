@@ -825,11 +825,8 @@ mydist <- dist(t(myrho))
 
 距離行列を用いて、[非加重結合法 Unweighted Pair Group Method with Arithmetic mean (UPGMA)](https://ja.wikipedia.org/wiki/非加重結合法) により樹 tree を構築する。
 ```
-# Distance Matrix Computation
-mydist <- dist(t(myrho), method = "average")
-
 # Hierarchical Clustering
-hc <- hclust(mydist)
+hc <- hclust(mydist, method = "average")
 
 par(family="mono")
 plot(hc, hang=-1)
