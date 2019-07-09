@@ -839,16 +839,16 @@ plot(hc, hang=-1)
 
 距離行列を用いて、[近隣結合法 Neighbor-Joining (NJ)](https://ja.wikipedia.org/wiki/近隣結合法) により樹 tree を構築する。
 ```
-library(ape) # install.packages("ape")
-
 # 無根樹の構築
 # Building an unrooted tree
+library(ape) # install.packages("ape")
 mytree <- nj(mydist)
 plot.phylo(mytree, type = "unrooted")
 
 # 有根樹の構築
 # Building a rooted tree
-library(phangorn); mytree <- midpoint(mytree) # midpoint rooting
+library(phangorn) # install.packages("phangorn")
+mytree <- midpoint(mytree) # midpoint rooting
 plot.phylo(ladderize(mytree, right = FALSE), main = "Neighbor-Joining midpoint rooted tree")
 
 # Newick形式ファイルとして保存する
@@ -862,6 +862,7 @@ system("open .")
 Newick形式ファイルから[SeaView](http://doua.prabi.fr/software/seaview)で樹 tree を描く。
 
 ### References
+- 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 三中信宏 (2003) クラスター分析の光と闇 ――なぜヒトは分類に憑かれるのか？―― [html](http://cse.naro.affrc.go.jp/minaka/R/R-cluster.html) [pdf](http://cse.naro.affrc.go.jp/minaka/R/clustering-04.pdf)
 - 2016-09-10 [「種問題」ははてしなく続く - archief voor stambomen](http://leeswijzer.hatenablog.com/entry/2016/09/10/102132)
 
