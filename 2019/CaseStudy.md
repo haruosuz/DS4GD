@@ -739,7 +739,9 @@ matplot()
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
     # Draw a Heat Map
-    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=gray.colors(12))
+    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+
+[Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
 ### References
 オリゴヌクレオチド組成の解析
