@@ -95,6 +95,7 @@ Submit your final report in PDF format.
 - 提出期限：2019年7月23日(火)  
 - 提出先：SFC-SFSの課題にレポートのファイルを登録する。  
 - 書式：A4で5枚以内。本文以降に付録(appendix)を付けることができる。ファイル容量に注意する。
+- 文章構成：[IMRAD](https://ja.wikipedia.org/wiki/IMRAD)形式。序論、方法、結果と考察、参考文献を含める。
 
 ----------
 
