@@ -704,14 +704,11 @@ df <- data.frame(Length, GCcontent, Annotation)
     # Apply a Function over a List
     X <- sapply(seqs, rho, wordsize = 2)
 
+#### colnames
+
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
 ```
-# Exploring and Transforming Dataframes
-dim(X)
-colnames(X)
-
-
 # Exploring and Transforming Dataframes
 dim(X)
 colnames(X)
@@ -818,6 +815,7 @@ dim(myrho)
 colnames(myrho) <- substr(getAnnot(seqs), 1, 14)
 colnames(myrho)
 ```
+[colnames](#colnames)
 
 [距離行列 distance matrix](https://ja.wikipedia.org/wiki/距離行列)
 ```
