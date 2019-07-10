@@ -724,7 +724,7 @@ colnames(X) <- getAnnot(seqs) # get sequence annotations
 #colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+ (chromosome.*|.*plasmid.*|.+'|DNA)), .+", replacement="\\1 \\4", getAnnot(seqs))
 
 # Accession Genus Name # e.g. "NC_003037.1 Sinorhizobium pSymA"
-sub(pattern="([^ ]+) ([^ ]+) (.+) ([^ ]+), complete .+", replacement="\\1 \\2 \\4", getAnnot(seqs))
+#colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+) ([^ ]+), complete .+", replacement="\\1 \\2 \\4", getAnnot(seqs))
 ```
 
 [50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
