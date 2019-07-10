@@ -582,10 +582,9 @@ command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_
 
 ### prokaryotes 原核生物
 Organism_Name <- "Sinorhizobium meliloti 1021"
+#Organism_Name <- "Sinorhizobium meliloti 1021|Deinococcus radiodurans R1"
 #Organism_Name <- "Bacillus anthracis.*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
 command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
-
-#Organism_Name <- "Deinococcus radiodurans R1|Sinorhizobium meliloti 1021"
 #command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ## Invoke a System Command
@@ -723,6 +722,9 @@ colnames(X) <- getAnnot(seqs) # get sequence annotations
 
 # Accession Replicon # e.g. "NC_003047.1 chromosome", "NC_003037.1 plasmid pSymA", "NC_003078.1 plasmid pSymB"
 #colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+ (chromosome.*|.*plasmid.*|.+'|DNA)), .+", replacement="\\1 \\4", getAnnot(seqs))
+
+# Accession Genus Name # e.g. "NC_003037.1 Sinorhizobium pSymA"
+sub(pattern="([^ ]+) ([^ ]+) (.+) ([^ ]+), complete .+", replacement="\\1 \\2 \\4", getAnnot(seqs))
 ```
 
 [50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
@@ -828,7 +830,7 @@ mydist <- dist(t(myrho), method = "euclidean")
 距離行列を用いて、[非加重結合法 Unweighted Pair Group Method with Arithmetic mean (UPGMA)](https://ja.wikipedia.org/wiki/非加重結合法) により樹 tree を構築する。
 ```
 # Hierarchical Clustering
-hc <- hclust(mydist, method = "average")
+hc <- hclust(mydist, method = "average") # UPGMA
 
 par(family="mono")
 plot(hc, hang=-1)
