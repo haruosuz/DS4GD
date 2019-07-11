@@ -809,7 +809,7 @@ unlist(getAnnot(seqs)) # get sequence annotations
 
 #### [k-mer frequency](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
-連続塩基組成を解析する:
+k = 2,3,4連続塩基組成を解析する:
 ```
 # Over-represented and under-represented DNA words
  k = 2 # 2-mers or dinucleotide
