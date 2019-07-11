@@ -812,7 +812,9 @@ unlist(getAnnot(seqs)) # get sequence annotations
 複数のDNA配列の連続塩基組成（*k*-mer頻度）を解析する:
 ```
 # Apply a Function over a List
-myrho <- sapply(seqs, rho, wordsize = 2)
+ myrho <- sapply(seqs, rho, wordsize = 2) # k = 2
+#myrho <- sapply(seqs, rho, wordsize = 3) # k = 3
+#myrho <- sapply(seqs, rho, wordsize = 4) # k = 4
 
 # Exploring and Transforming Dataframes
 dim(myrho)
@@ -820,6 +822,8 @@ colnames(myrho) <- substr(getAnnot(seqs), 1, 14)
 colnames(myrho)
 ```
 [colnames](#colnames)
+
+クラスタリング [clustering](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
 
 [距離行列 distance matrix](https://ja.wikipedia.org/wiki/距離行列)
 ```
@@ -1141,15 +1145,15 @@ uco(seq = testseq, index = "rscu")
     dim(X)
     colnames(X) <- sub(pattern=".+protein=(.+)\\] \\[(protein_id|pseudo)=.+", replacement="\\1", getAnnot(faa[TF]))
 
-クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)  
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
 
     # Hierarchical cluster analysis
     plot(hclust(dist(t(X))), hang=-1)
 
-ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)  
+ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
     # Draw a Heat Map
-    heatmap(X, margins=c(15, 2), cexCol=0.9, scale="none", col=gray.colors(12))
+    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
 ----------
 ## assignment 7
