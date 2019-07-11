@@ -807,14 +807,15 @@ length(seqs) # get the number of elements
 unlist(getAnnot(seqs)) # get sequence annotations
 ```
 
-#### [k-mer](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+#### [k-mer frequency](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
-複数のDNA配列の連続塩基組成（*k*-mer頻度）を解析する:
+連続塩基組成を解析する:
 ```
-# Apply a Function over a List
- myrho <- sapply(seqs, rho, wordsize = 2) # k = 2
-#myrho <- sapply(seqs, rho, wordsize = 3) # k = 3
-#myrho <- sapply(seqs, rho, wordsize = 4) # k = 4
+# Over-represented and under-represented DNA words
+ k = 2 # 2-mers or dinucleotide
+#k = 3 # 3-mers or trinucleotide
+#k = 4 # 4-mers or tetranucleotide
+myrho <- sapply(seqs, rho, wordsize = k)
 
 # Exploring and Transforming Dataframes
 dim(myrho)
