@@ -823,7 +823,7 @@ colnames(myrho)
 ```
 [colnames](#colnames)
 
-クラスタリング [clustering](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+#### [clustering](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
 
 [距離行列 distance matrix](https://ja.wikipedia.org/wiki/距離行列)
 ```
