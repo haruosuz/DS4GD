@@ -807,7 +807,7 @@ length(seqs) # get the number of elements
 unlist(getAnnot(seqs)) # get sequence annotations
 ```
 
-連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+#### [k-mer](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
 複数のDNA配列の連続塩基組成（*k*-mer頻度）を解析する:
 ```
@@ -831,7 +831,7 @@ colnames(myrho)
 mydist <- dist(t(myrho), method = "euclidean")
 ```
 
-距離行列を用いて、[非加重結合法 Unweighted Pair Group Method with Arithmetic mean (UPGMA)](https://ja.wikipedia.org/wiki/非加重結合法) により樹 tree を構築する。
+距離行列を用いて、[非加重結合法 Unweighted Pair Group Method with Arithmetic mean (UPGMA)](https://ja.wikipedia.org/wiki/非加重結合法) により樹 tree を構築する:
 ```
 # Hierarchical Clustering
 hc <- hclust(mydist, method = "average") # UPGMA
@@ -840,7 +840,7 @@ par(family="mono")
 plot(hc, hang=-1)
 ```
 
-距離行列を用いて、[近隣結合法 Neighbor-Joining (NJ)](https://ja.wikipedia.org/wiki/近隣結合法) により樹 tree を構築する。
+距離行列を用いて、[近隣結合法 Neighbor-Joining (NJ)](https://ja.wikipedia.org/wiki/近隣結合法) により樹 tree を構築する:
 ```
 # 無根樹の構築
 # Building an unrooted tree
