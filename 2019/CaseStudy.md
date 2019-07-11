@@ -822,9 +822,9 @@ dim(myrho)
 colnames(myrho) <- substr(getAnnot(seqs), 1, 14)
 colnames(myrho)
 ```
-[colnames](#colnames)
 
 #### [clustering](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+クラスタリング
 
 [距離行列 distance matrix](https://ja.wikipedia.org/wiki/距離行列)
 ```
