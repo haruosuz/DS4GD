@@ -1494,6 +1494,11 @@ https://archive.iii.kyushu-u.ac.jp/public/yY4gQAsJhADAshIB4o9sBr9AMsmC54QAXInOuk
 
 ### PopulationGenetics_Osada
 
+```
+open ~/2019-08-04/PopulationGenetics_Osada/PopulationGenetics_Osada/installing_software.html
+
+open ~/2019-08-04/PopulationGenetics_Osada/PopulationGenetics_Osada/Kimura_lecture.html
+```
 
 ### TraitEvolution_Wu
 
@@ -1507,6 +1512,20 @@ Rscript --vanilla ./Trait_Evolution.R
 # Changing format using Ape in R
 cd ~/2019-08-04/TraitEvolution_Wu/AncestorStateReconstruction/
 Rscript --vanilla ./ChangeToNexTree.R
+
+# MultiState + Maximum Likelihood Method
+./BayesTraitsV2 tree.nex Traits.txt
+
+Please select the model of evolution to use.
+1)	MultiState
+1
+
+Please select the analysis method to use.
+1)	Maximum Likelihood.
+2)	MCMC
+1
+
+> run
 
 # Two-way ANOVA model adapted to Poisson regression
 cd ~/2019-08-04/TraitEvolution_Wu/GeneSpecificRate/
