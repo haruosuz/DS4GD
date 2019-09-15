@@ -66,18 +66,10 @@ Submit your final report in PDF format.
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
 ### [Bioinformatician](http://blog.fejes.ca/?p=2418)
 ### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
-#### microbes
-微生物
+#### [Human microbiome](https://en.wikipedia.org/wiki/Human_microbiome)
+[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)
 
 - [You are your microbes - Jessica Green and Karen Guillemin | TED-Ed](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin)
-
-#### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
-**人工環境の微生物群集**
-
-- TED Talk [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-  - [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
-
-![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
 
 #### antibiotic resistance
 [抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)
@@ -86,8 +78,6 @@ Submit your final report in PDF format.
 
 - [The evolution of antibiotic resistance | Science](https://science.sciencemag.org/content/365/6458/1082)
 
-![](https://science.sciencemag.org/content/sci/365/6458/1082/F1.medium.gif)
-
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
 
@@ -95,8 +85,15 @@ Submit your final report in PDF format.
 
 [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
 
+#### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
+**人工環境の微生物群集**
+
+- TED Talk [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+  - [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
+
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
+**都市の微生物群集**
 
 ![https://twitter.com/Daniela_Bezdan/status/1009876180684754944](https://pbs.twimg.com/media/DgPMfQ9X0AMEi1l?format=jpg&name=small)
 
