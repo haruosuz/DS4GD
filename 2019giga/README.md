@@ -65,11 +65,7 @@ Submit your final report in PDF format.
 ## Introduction
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
 
-![](http://blog.thegrandlocus.com/img/bioinformatic_word_cloud.png)
-
 ### [Bioinformatician](https://www.biostars.org/p/223069/)
-
-![](https://www.biostarhandbook.com/static/what-is-a-biostar.png)
 
 ### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 #### [Human microbiome](https://en.wikipedia.org/wiki/Human_microbiome)
