@@ -16,7 +16,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 ## Class Schedule & Materials
 **講義日程と資料**
 
-[Calendar for Fall Semester 2019](https://www.sfc.keio.ac.jp/doc/19f_calendar_e.pdf)
+[Calendar for Fall Semester 2019](https://www.sfc.keio.ac.jp/doc/19f_calendar_e.pdf) |
 [2019年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/19f_calendar_j.pdf)
 
 - 2019-09-24 No. 1 - イントロダクション [Introduction](#introduction)
