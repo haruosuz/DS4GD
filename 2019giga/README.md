@@ -88,7 +88,7 @@ Travel Surveillance and Genomics Uncover a Hidden Zika Outbreak during the Wanin
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
 
-[](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
 
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
 
