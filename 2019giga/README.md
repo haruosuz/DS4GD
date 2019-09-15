@@ -4,9 +4,9 @@ Keio SFC
 教室 Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
 
 # DS4GD
-DATA SCIENCE FOR GENOME DYNAMICS [DS2](GIGA/GG/GI)
+DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2019_25381&ks=B3206&key=c2db0cdbb741a9be92dffba95e846145&lang=en)  
-生命動態のデータサイエンス[DS2](GIGA/GG/GI)
+生命動態のデータサイエンス (GIGA)
 [シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2019_25381&ks=B3206&key=c2db0cdbb741a9be92dffba95e846145&lang=ja)
 
 ## References
@@ -77,13 +77,9 @@ Travel Surveillance and Genomics Uncover a Hidden Zika Outbreak during the Wanin
 ![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springernature.com/springer-cms/rest/v1/content/6629006/data/v1)
 
 - [Jessica Green: Are we filtering the wrong microbes? | TED Talk](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+  - [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
 
 ![https://ja.wikipedia.org/wiki/IMRAD](http://kaihooo.com/wp-content/uploads/microbea.png)
-
-- [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
-
-![](https://media.nature.com/m685/nature-assets/ismej/journal/v6/n8/images/ismej2011211f2.jpg)
-
 
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
 都市のメタゲノム
@@ -92,10 +88,9 @@ Travel Surveillance and Genomics Uncover a Hidden Zika Outbreak during the Wanin
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
 
+[](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
+
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
-- [Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
-  - [Table 1 Lists of plasmids in different incompatibility groups.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6312765/table/t0005/?report=objectonly)
-- ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
