@@ -67,12 +67,14 @@ Submit your final report in PDF format.
 ### [Bioinformatician](http://blog.fejes.ca/?p=2418)
 ### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 #### [Human microbiome](https://en.wikipedia.org/wiki/Human_microbiome)
-[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)
+**[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)**
 
 - [You are your microbes - Jessica Green and Karen Guillemin | TED-Ed](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin)
 
+![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
+
 #### antibiotic resistance
-[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)
+**[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
 
 - [What causes antibiotic resistance? - Kevin Wu | TED-Ed](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu)
 
@@ -81,9 +83,9 @@ Submit your final report in PDF format.
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/300px-Plasmid_%28english%29.svg.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
 
-[抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
+- [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
 
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
@@ -93,12 +95,11 @@ Submit your final report in PDF format.
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
-**都市の微生物群集**
 
 ![https://twitter.com/Daniela_Bezdan/status/1009876180684754944](https://pbs.twimg.com/media/DgPMfQ9X0AMEi1l?format=jpg&name=small)
 
 #### Epidemiology
-[疫学](https://ja.wikipedia.org/wiki/疫学)
+**[疫学](https://ja.wikipedia.org/wiki/疫学)**
 
 - TED Talk [Steven Johnson: How the "ghost map" helped end a killer disease](https://www.ted.com/talks/steven_johnson_tours_the_ghost_map) | [スティーブ・ジョンソンの感染地図](https://www.ted.com/talks/steven_johnson_tours_the_ghost_map?embed=true&language=ja)
 - [Nathan Grubaugh on Twitter](https://twitter.com/NathanGrubaugh/status/1164553815376441350)
