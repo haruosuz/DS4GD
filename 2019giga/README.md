@@ -67,30 +67,50 @@ Submit your final report in PDF format.
 ### [Bioinformatician](http://blog.fejes.ca/?p=2418)
 ### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
 
-https://twitter.com/NathanGrubaugh/status/1164553815376441350
-https://www.cell.com/cell/fulltext/S0092-8674(19)30783-4
-Travel Surveillance and Genomics Uncover a Hidden Zika Outbreak during the Waning Epidemic
-
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
 ![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springernature.com/springer-cms/rest/v1/content/6629006/data/v1)
 
-- [Jessica Green: Are we filtering the wrong microbes? | TED Talk](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+- TED Talk [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+
   - [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
 
-![https://ja.wikipedia.org/wiki/IMRAD](http://kaihooo.com/wp-content/uploads/microbea.png)
+![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
+
+#### antibiotic resistance
+[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)
+
+- [What causes antibiotic resistance? - Kevin Wu | TED-Ed](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu)
+
+- [The evolution of antibiotic resistance | Science](https://science.sciencemag.org/content/365/6458/1082)
+
+![](https://science.sciencemag.org/content/sci/365/6458/1082/F1.medium.gif)
+
+#### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
+**[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/300px-Plasmid_%28english%29.svg.png)
+
+[抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
+
+
+#### epidemiology
+[疫学](https://ja.wikipedia.org/wiki/疫学)
+
+- TED Talk [Steven Johnson: How the "ghost map" helped end a killer disease](https://www.ted.com/talks/steven_johnson_tours_the_ghost_map) | [スティーブ・ジョンソンの感染地図](https://www.ted.com/talks/steven_johnson_tours_the_ghost_map?embed=true&language=ja)
+- [Nathan Grubaugh on Twitter](https://twitter.com/NathanGrubaugh/status/1164553815376441350)
+  - [Travel Surveillance and Genomics Uncover a Hidden Zika Outbreak during the Waning Epidemic: Cell](https://www.cell.com/cell/fulltext/S0092-8674(19)30783-4)
+
+![](https://marlin-prod.literatumonline.com/cms/attachment/7a797cef-d2d1-4ca3-ab81-765204acfa81/fx1.jpg)
 
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
 都市のメタゲノム
 [Media - MetaSUB](http://metasub.org/media-2/)
 
-#### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
-**[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
 
-- [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
+
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
