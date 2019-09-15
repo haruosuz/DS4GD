@@ -66,14 +66,15 @@ Submit your final report in PDF format.
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
 ### [Bioinformatician](http://blog.fejes.ca/?p=2418)
 ### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
+#### microbes
+微生物
+
+- [You are your microbes - Jessica Green and Karen Guillemin | TED-Ed](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin)
 
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
-![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springernature.com/springer-cms/rest/v1/content/6629006/data/v1)
-
 - TED Talk [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-
   - [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
 
 ![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
@@ -94,23 +95,17 @@ Submit your final report in PDF format.
 
 [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
 
+#### [MetaSUB](http://metasub.org/media-2/)
+**[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
 
-#### epidemiology
+![https://twitter.com/Daniela_Bezdan/status/1009876180684754944](https://pbs.twimg.com/media/DgPMfQ9X0AMEi1l?format=jpg&name=small)
+
+#### Epidemiology
 [疫学](https://ja.wikipedia.org/wiki/疫学)
 
 - TED Talk [Steven Johnson: How the "ghost map" helped end a killer disease](https://www.ted.com/talks/steven_johnson_tours_the_ghost_map) | [スティーブ・ジョンソンの感染地図](https://www.ted.com/talks/steven_johnson_tours_the_ghost_map?embed=true&language=ja)
 - [Nathan Grubaugh on Twitter](https://twitter.com/NathanGrubaugh/status/1164553815376441350)
   - [Travel Surveillance and Genomics Uncover a Hidden Zika Outbreak during the Waning Epidemic: Cell](https://www.cell.com/cell/fulltext/S0092-8674(19)30783-4)
-
-![](https://marlin-prod.literatumonline.com/cms/attachment/7a797cef-d2d1-4ca3-ab81-765204acfa81/fx1.jpg)
-
-**[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
-都市のメタゲノム
-[Media - MetaSUB](http://metasub.org/media-2/)
-
-
-
-
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
@@ -120,7 +115,7 @@ Submit your final report in PDF format.
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 
-![http://abacus.bates.edu/bioinformatics1/sequencesearch3.html](http://abacus.bates.edu/bioinformatics1/screenshots/NCBI-5-FASTA.jpg)
+- [trfA - Plasmid replication initiator protein TrfA - Escherichia coli - trfA gene & protein](https://www.uniprot.org/uniprot/P07676)
 
 ----------
 
