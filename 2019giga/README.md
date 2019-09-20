@@ -31,8 +31,8 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2019-11-05 No. 6 - TBA
 - 2019-11-12 No. 7 - 中間発表 [interim report](#interim-report)
 - 2018-11-19 午前：前半科目追試 | 午後：三田祭準備 *[Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
-- 2019-11-26 No. 8 - TBA
-- 2019-12-03 No. 9 - TBA
+- 2019-11-26 No. 8 - [Guest Speaker](#guest-speaker)
+- 2019-12-03 No. 9 - [Guest Speaker](#guest-speaker)
 - 2019-12-10 No. 10 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
 - 2019-12-17 No. 11 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
@@ -47,6 +47,13 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 **中間発表**
 
 5 minutes will be allocated for each presentation, including presentation and discussion.
+
+----------
+## Guest speaker
+**特別講演**
+
+- 2019-11-26 No. 8 - 講師: [Dr. Kirill Kryukov](http://kirill-kryukov.com/kirr/) ([Biomedical Informatics Laboratory | Department of Molecular Life Science, Tokai University School of Medicine](http://bmi.med.u-tokai.ac.jp/))
+- 2019-12-03 No. 9 - 講師: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学・医学部　特定研究員）
 
 ----------
 ## final presentation
