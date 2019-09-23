@@ -26,19 +26,18 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
   - Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
 - 2019-10-15 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
-- 2019-10-22 即位礼【国民の休日】*[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2019-10-29 No. 5 - Case Study [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome_reports)
-- 2019-11-05 No. 6 - TBA
+- 2019-10-22 *即位礼【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
+- 2019-10-29 No. 5 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
+- 2019-11-05 No. 6 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
 - 2019-11-12 No. 7 - 中間発表 [interim report](#interim-report)
-- 2018-11-19 午前：前半科目追試 | 午後：三田祭準備 *[Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
+- 2018-11-19 *午前：前半科目追試 | 午後：三田祭準備 [Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
 - 2019-11-26 No. 8 - [Guest Speaker](#guest-speaker)
 - 2019-12-03 No. 9 - [Guest Speaker](#guest-speaker)
 - 2019-12-10 No. 10 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
-- 2019-12-17 No. 11 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
-  - 2つのDNA配列間のグローバル・アライメント [Pairwise global alignment of DNA sequences](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
-- 2019-12-24 No. 12 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2020-01-07 No. 13 - Case Study [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-assembly_reports)
+- 2019-12-17 No. 11 - TBA
+- 2019-12-24 No. 12 - TBA
+- 2020-01-07 No. 13 - TBA
 - 2020-01-14 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
 
