@@ -53,7 +53,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 **特別講演**
 
 - 2019-11-26 No. 8 - 講師: [Dr. Kirill Kryukov](http://kirill-kryukov.com/kirr/) ([Biomedical Informatics Laboratory | Department of Molecular Life Science, Tokai University School of Medicine](http://bmi.med.u-tokai.ac.jp/))
-- 2019-12-03 No. 9 - 講師: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学・医学部　特定研究員）
+- 2019-12-03 No. 9 - 講師: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学・医学部）
 
 ----------
 ## final presentation
@@ -75,25 +75,27 @@ Submit your final report in PDF format.
 ### [Bioinformatician](https://www.biostars.org/p/223069/)
 
 ### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
+
 #### [Human microbiome](https://en.wikipedia.org/wiki/Human_microbiome)
 **[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)**
 
-- [You are your microbes - Jessica Green and Karen Guillemin | TED-Ed](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin)
+- TED-Ed [You are your microbes - Jessica Green and Karen Guillemin](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin) | [微生物から成る人体 — ジェシカ・グリーン ＆カレン・ギリマン](https://www.ted-ja.com/2017/02/wei-sheng-wu-karacheng-ruren-ti.html?m=1)
 
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
 - TED Talk [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-  - [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
 
 ![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
 
 #### Antibiotic resistance
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
 
-- [What causes antibiotic resistance? - Kevin Wu | TED-Ed](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu)
+- TED-Ed [What causes antibiotic resistance? - Kevin Wu](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu) | [抗生物質に対する耐性が生まれるのはなぜか？ - ケビン・ウー](https://amara.org/en/videos/VllmqrFumzGt/ja/812239/)
 
 - [The evolution of antibiotic resistance | Science](https://science.sciencemag.org/content/365/6458/1082)
+
+![https://science.sciencemag.org/content/365/6458/1082](https://science.sciencemag.org/content/sci/365/6458/1082/F1.medium.gif)
 
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
