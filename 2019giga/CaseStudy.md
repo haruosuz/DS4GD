@@ -1,4 +1,4 @@
-**[生命情報解析 / 生命動態のデータサイエンス [DS2]](https://github.com/haruosuz/DS4GD/tree/master/2019)**  
+**[生命情報解析 / 生命動態のデータサイエンス [DS2]](https://github.com/haruosuz/DS4GD)**  
 https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ----------
@@ -23,62 +23,33 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 13](#assignment-13) 課題No.13 「presentation slides」
 
 ----------
-
-https://twitter.com/Symbionticism/status/1123203760564637697
-Seth Bordenstein on Twitter: "This is a game changer. Many intracellular microbes have a genome wide bias in A’s and T’s. The major assumption has been a mutational bias / drift impacts this outcome. Well, not so fast. Evidence below that selection can contribute or cause it.… https://t.co/yfDqN3b3Lj"
-8:33 AM - 30 Apr 2019
-https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007778
-Selective advantages favour high genomic AT-contents in intracellular elements
-Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial species with different genomic GC-contents revealed that the costs of G+C-rich plasmids decreased with an increasing GC-content of their host’s genomic DNA. 
-
-----------
 ## assignment 0
 **選抜課題**
 
 【課題内容】
-本授業で解析したい生物（ゲノム/遺伝子/タンパク質）配列を300文字以内で述べてください。課題のタイトルと参考文献も明記してください。
+本授業で解析したい興味ある生物（ゲノム/遺伝子/タンパク質）配列を述べてください。課題のタイトルと参考文献も明記してください。
 
-DNAまたはタンパク質の配列を検索するには、
-
-- NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"Candidatus Midichloria mitochondrii"）を入力して、"Search"ボタンを押す
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#retrieving-genome-sequence-data-via-the-ncbi-website
-
-または
-
-- UniProtウェブサイト (http://www.uniprot.org) にアクセスし、ウェブページ上部の検索ボックスにキーワード（例えば、"antibiotic resistance Clostridium difficile"）を入力して、"Search"ボタンを押す
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#viewing-the-uniprot-webpage-for-a-protein-sequence
-
----
-
-Please describe DNA or protein sequences you're interested in. Please also state your project title and references.
-
-To find DNA or protein sequences,
-
-- go to the NCBI website (https://www.ncbi.nlm.nih.gov), type keywords (e.g. "Candidatus Midichloria mitochondrii") in the Search box at the top of the webpage, and press the “Search” button beside the Search box.
-http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#retrieving-genome-sequence-data-via-the-ncbi-website
-
-or
-
-- go the UniProt website (http://www.uniprot.org). At the top of the UniProt website, you will see a search box, and you can type keywords (e.g. "antibiotic resistance Clostridium difficile") that you are looking for in this search box, and then click on the “Search” button to search for it.
-http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#viewing-the-uniprot-webpage-for-a-protein-sequence
+Please describe biological (genome/gene/protein) sequences you're interested in. Please also state your project title and references.
 
 ----------
 ## assignment 1
-**課題No.1 「Introduction to R」**    
+**課題No.1 「Introduction to R」**
 
-以下の何れかの動画レッスンを見て、疑問点を報告する。
-Watch one of the following videos and write your comments or questions.- [R言語入門 (全13回)](http://dotinstall.com/lessons/basic_r)
-- [Introduction to R](https://www.youtube.com/watch?v=WiO44CiSPF0&list=PL8eNk_zTBST_KL2gnciUv1oor0ECw8Hqg)
+Watch the following videos and write your comments or questions.- [Introduction to R](https://www.youtube.com/watch?v=WiO44CiSPF0&list=PL8eNk_zTBST_KL2gnciUv1oor0ECw8Hqg)
+
+[Example answer]
+
+I watched the videos #1 to #9 of [Introduction to R](https://www.youtube.com/watch?v=WiO44CiSPF0&list=PL8eNk_zTBST_KL2gnciUv1oor0ECw8Hqg). My questions are as follows:
+1. What is difference between dataframe and list in R?
+
+以下の動画レッスンを見て、疑問点を報告する。
+- [R言語入門 (全13回)](http://dotinstall.com/lessons/basic_r)
 
 [回答例]
-[Example answer]
 
 [R言語入門 (全13回)](http://dotinstall.com/lessons/basic_r)の動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
 1. 行列とデータフレームとリストの違いが理解できなかった。
 2. 因子ベクトルというものがよくわからなかった。
-
-I watched the videos #3 to #13 of [Introduction to R](https://www.youtube.com/watch?v=WiO44CiSPF0&list=PL8eNk_zTBST_KL2gnciUv1oor0ECw8Hqg). My questions are as follows:
-1. What is difference between dataframe and list in R? 
 
 ----------
 ## assignment 2
