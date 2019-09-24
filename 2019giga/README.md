@@ -35,8 +35,8 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2019-12-03 No. 9 - [Guest Speaker](#guest-speaker)
 - 2019-12-10 No. 10 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
-- 2019-12-17 No. 11 - TBA
-- 2019-12-24 No. 12 - TBA
+- 2019-12-17 No. 11 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+- 2019-12-24 No. 12 - Gene expression, amino acid and codon usage
 - 2020-01-07 No. 13 - TBA
 - 2020-01-14 No. 14 - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
