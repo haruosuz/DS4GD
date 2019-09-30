@@ -499,7 +499,7 @@ NCBIから配列データを取得する:
 library("seqinr") # Loading seqinr package
 ACCESSION <- "NC_000913" # Escherichia coli str. K-12 substr. MG1655
 
-## Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA)
+## Nucleotide FASTA file of all CDSs
 seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
 
 # 配列の数をカウントする:  
