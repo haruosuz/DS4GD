@@ -547,6 +547,8 @@ uco(seq = testseq, index = "rscu")
 `unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
 CDSの結合(concatenate)データのコドン使用頻度`("eff", "freq", "rscu")`を計算し、カンマ区切りファイルとして出力する:  
 ```
+# Compute codon usage for a set of highly expressed genes (high) and the genome as a whole (all), and export data as a CSV file to be read by spreadsheets:
+
 # 全遺伝子群のコドン使用
 # Codon usage for the collection of all genes
 df.uco.all <- uco(unlist(seqs), as.data.frame=TRUE)
