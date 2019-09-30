@@ -20,15 +20,13 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 [2019年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/19f_calendar_j.pdf)
 
 - 2019-09-24 No. 1 - イントロダクション [Introduction](#introduction)
-  - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 - 2019-10-01 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2019-10-08 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
-  - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-  - Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
+  - [NCBI sequence database](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-sequence-database)
 - 2019-10-15 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2019-10-22 *即位礼【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2019-10-29 No. 5 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
-- 2019-11-05 No. 6 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
+- 2019-10-29 No. 5 - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome_reports)
+- 2019-11-05 No. 6 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#coding-sequences)
 - 2019-11-12 No. 7 - 中間発表 [interim report](#interim-report)
 - 2018-11-19 *午前：前半科目追試 | 午後：三田祭準備 [Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
 - 2019-11-26 No. 8 - [Guest Speaker](#guest-speaker)
@@ -80,6 +78,9 @@ Submit your final report in PDF format.
 
 - TED-Ed [You are your microbes - Jessica Green and Karen Guillemin](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin) | [微生物から成る人体 — ジェシカ・グリーン ＆カレン・ギリマン](https://www.ted-ja.com/2017/02/wei-sheng-wu-karacheng-ruren-ti.html?m=1)
 
+  - May 16, 2019 [The CHILD Cohort Study and a baby’s microbiome](https://www.youtube.com/watch?v=eL9dAGiCNLU)
+  - Oct 10, 2016 [What is the human microbiome?](https://www.youtube.com/watch?v=YB-8JEo_0bI)
+
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
@@ -106,6 +107,9 @@ Submit your final report in PDF format.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
 
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
+細菌は染色体とプラスミドという2種類のDNAを持っています。
+細菌同士は接触するとプラスミドを交換。
+プラスミドを交換することで細菌の能力を強化。
 - [Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
   - [Table 1 Lists of plasmids in different incompatibility groups.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6312765/table/t0005/?report=objectonly)
 - ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
