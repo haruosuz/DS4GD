@@ -535,93 +535,12 @@ write.fasta(sequences=faa, names=getAnnot(faa), file.out=paste0(ACCESSION,".faa"
 | .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
 | .faa | Protein FASTA file of the translated CDS sequences. |
 
-- [45. ファイルへのデータ出力](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/45.html)
-
-関数`save()`でデータの構造を記録する。呼び出す場合は関数`load()`を用いる。
-```
-save(fna, ffn, faa, file="my_fna_ffn_faa.RData") # Save R Objects
-ls() # List Objects
-rm(faa, ffn, fna) # Remove Objects
-load(file="my_fna_ffn_faa.RData") # Reload Saved Datasets
-```
-
-- [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
-
-`sapply()`関数は、リストの各要素に関数を適用する。  
-タンパク質コード配列（CDS）の長さ、G+C含量、アノテーションのテーブルを作成する:  
-```
-# Apply a Function over a List
-Length <- sapply(ffn, length)
-GCcontent <- sapply(ffn, GC) # Global G+C content
-GCp3 <- sapply(ffn, GC3) # G+C at 3rd codon position
-Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[db_xref=(.+)\\] \\[protein=(.+)\\] (\\[(protein_id|pseudo)=(.+)) \\[location=.+", replacement="\\1 \\3", getAnnot(ffn))
-df <- data.frame(Length, GCcontent, GCp3, Annotation)
-```
-
-- [CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
-
-データのエクスポート。  
-`write.csv`関数でカンマ区切りファイルとして出力する:  
-`write.table`関数でタブ区切りファイルとして出力する:  
-
-    # Exporting Data
-    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
-    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
-
-    # open current working directory
-    system("open .")
-
-- [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
-  - [データフレームの要素の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-5)
-
-行と列の数、列名、先頭部分の確認:  
-```
-# Exploring and Transforming Dataframes
-dim(df)
-colnames(df)
-head(df, n=2)
-
-# データフレームの要素の参照
-val <- df[, c("Length", "GCcontent", "GCp3")]
-#val <- df[, 1:3]
-#val <- df[, -4]
-head(val, n=2)
-```
-
-- https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
-
-`summary()`関数でデータフレームの列を要約する。  
-CDSの要約統計量（最小値、中央値、最大値など）を求める:  
-
-    summary(val)
-
-[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
-フォント・ファミリーを指定する．
-
-    par(family="mono")
-
-[R | R を利用した統計解析およびデータの視覚化](https://stats.biopapyrus.jp/r/)
-
-    plot(val)
-
-[pairs.panels](https://github.com/haruosuz/r4bioinfo/blob/master/R_memo/R_plot.md#pairspanels)
-
-```
-#install.packages("psych")
-library(psych)
-pairs.panels(val)
-```
-
-- 2019年5月16日[【合成生物学】大腸菌の遺伝コードを圧縮する](https://www.natureasia.com/ja-jp/nature/pr-highlights/12951)
-[Total synthesis of Escherichia coli with a recoded genome | Nature](https://www.nature.com/articles/s41586-019-1192-5)
-
-```
-# to plot genetic code as in textbooks
-tablecode()
-```
-
 ### codon usage
 **[コドン使用](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)**
+
+
+https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage
+
 
 [`uco`](https://rdrr.io/rforge/seqinr/man/uco.html)
 関数を用いて、コドン使用頻度（絶対度数 codon counts `eff`、相対度数 relative frequencies `freq`、Relative Synonymous Codon Usage `rscu`）を計算する:  
