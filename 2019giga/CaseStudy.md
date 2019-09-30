@@ -10,10 +10,9 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
-- [NCBI Genome List](#ncbi-genome-list)
+- [NCBI sequence database](#ncbi-sequence-database)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
-- [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
 - [2019-07-09](#2019-07-09)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
@@ -57,6 +56,8 @@ I watched the videos #2 to #17 of [Introduction to R](https://www.youtube.com/wa
 ## assignment 2
 **課題No.2 「Installing R packages seqinr & Biostrings」**
 
+[Installing R packages](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages)
+
 RパッケージseqinrとBioconductorパッケージBiostringsをインストールする。
 
 パッケージseqinrのインストール:  
@@ -67,14 +68,13 @@ RパッケージseqinrとBioconductorパッケージBiostringsをインストー
 BioconductorパッケージBiostringsのインストール:  
 
     # Install the Bioconductor package called "Biostrings":
-    source("https://bioconductor.org/biocLite.R")
-    biocLite("Biostrings")
+    #install.packages("BiocManager")
+    BiocManager::install("Biostrings")
 
-パッケージの呼び出し:  
+Rのバージョンを確認:  
 
-    # Load the packages into R:
-    library("seqinr")
-    library("Biostrings")
+    # Print the version of R running:
+    R.version.string
 
 Rパッケージのバージョンを確認:  
 
@@ -82,91 +82,51 @@ Rパッケージのバージョンを確認:
     packageVersion("seqinr")
     packageVersion("Biostrings")
 
-Rのバージョンを確認:  
+パッケージの呼び出し:  
 
-    # Print the version of R running:
-    R.version.string
+    # Load the packages into R:
+    library("seqinr")
+    library("Biostrings")
 
 回答例:  
+```
+# Example answer:  
 
-    # Example answer:  
-
-    > packageVersion("seqinr")
-    [1] ‘3.4.5’
-
-    > packageVersion("Biostrings")
-    [1] ‘2.42.1’
-
-    > R.version.string
-    [1] "R version 3.3.3 (2017-03-06)"
-
-Record the version of R and R packages by the `sessionInfo()` function.
-
-    > sessionInfo()
-    R version 3.3.3 (2017-03-06)
-    Platform: x86_64-apple-darwin13.4.0 (64-bit)
-    Running under: OS X Mavericks 10.9.5
-
-References:
-
-https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages
+> R.version.string[1] "R version 3.6.1 (2019-07-05)"> packageVersion("seqinr")[1] ‘3.6.1’
+> packageVersion("Biostrings")[1] ‘2.52.0’
+```
 
 ----------
 
-## NCBI Genome List
-[NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
-[国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
-の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
+## NCBI sequence database
 
-ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
-例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*を検索する。
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti)、検索ボックス下の「Overview (1); Eukaryotes (0); Prokaryotes (204); Viruses (0); Plasmids (65); Organelles (0)」のうち、「Prokaryotes」をクリックすると、*Sinorhizobium meliloti*に属する菌株**Strain**が表示される。
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti)、列**Organism Name**の"Sinorhizobium meliloti 1021"株をクリックして開く。
-[ここで](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に識別子 (Accession) が示されている。
-列**Type**のChrは染色体、Plsmはプラスミドを指す。
+https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/
 
-複数のレプリコン（染色体とプラスミド）を保有する細菌の例:
-```
-Agrobacterium tumefaciens str. C58 | 4 replicons (chromosome circular; chromosome linear; plasmid At; plasmid Ti)
-Aureimonas sp. AU20 | 9 replicons (plasmid pAU20rrn)
-炭疽菌 Bacillus anthracis str. 'Ames Ancestor' | chromosome; plasmid pXO1; plasmid pXO2
-Borrelia burgdorferi B31 | 22 replicons
-放射線耐性菌 Deinococcus radiodurans R1 | chromosome 1; chromosome 2; plasmid CP1; plasmid MP1
-コレラ菌 Vibrio cholerae O1 biovar El Tor str. N16961 | chromosome I; chromosome II
-ウェルシュ菌 Clostridium perfringens str. 13 (plasmid pCP13)
-Cupriavidus necator (a.k.a. Ralstonia eutropha) JMP134 (IncP­-1 plasmid pJP4)
-腸管出血性大腸菌 Escherichia coli O157:H7 str. Sakai (plasmid pO157, pOSAK1)
-大腸菌 Escherichia coli SMS-3-5 (IncF plasmid pSMS35_130)
-Geobacter lovleyi SZ
-Mycobacteroides abscessus subsp. bolletii (IncP-1β plasmid pMAB01)
-Pseudomonas resinovorans NBRC 106553 (strain CA10; IncP-­7 plasmid pCAR1.3)
-サルモネラ チフス菌 Salmonella enterica subsp. enterica serovar Typhi str. CT18 (plasmid pHCM1, pHCM2)
-サルモネラ ネズミチフス菌 Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344 (IncQ plasmid pRSF1010_SL1344)
-アルファルファ根粒菌 Sinorhizobium meliloti 1021 (plasmid pSymA, pSymB)
-ペスト菌 Yersinia pestis CO92 (plasmid pCD1, pPCP1, pMT1)
-```
+References
 
-[ゲノム　第4版](https://www.medsi.co.jp/books/products/detail.php?product_id=3642)
-第8章 原核生物ゲノムと真核生物の細胞小器官ゲノム
-| 8.1 原核生物ゲノムの構造的特徴
-| 一部の細菌は直鎖状ゲノムや分節ゲノムをもつ
-| 表8.1 代表的なプラスミドの特徴
-| 表8.2 原核生物のゲノム構成の例
+- [Tatusova et al. Nucleic Acids Res. 2015 Jan;43(Database issue):D599-605. "Update on RefSeq microbial genomes resources."](https://www.ncbi.nlm.nih.gov/pubmed/25510495)
+- [López et al. MBio. 2019 May 28;10(3). pii: e00505-19. "Codon Usage Heterogeneity in the Multipartite Prokaryote Genome: Selection-Based Coding Bias Associated with Gene Location, Expression Level, and Ancestry."](https://www.ncbi.nlm.nih.gov/pubmed/31138741)
+
+Examples of multipartite genomes (chromosomes and plasmids)
+
+- [Cupriavidus pinatubonensis JMP134](https://www.ncbi.nlm.nih.gov/genome/538?genome_assembly_id=167793) (Ralstonia eutropha) Chr (1, 2), Plsm (Plasmid1, megaplasmid)
+- [Pseudomonas resinovorans NBRC 106553](https://www.ncbi.nlm.nih.gov/genome/15312?genome_assembly_id=176382) Chr, Plsm (IncP-­7 pCAR1.3)
+- [Sinorhizobium meliloti 1021](https://www.ncbi.nlm.nih.gov/genome/1004) Chr, Plsm (pSymA, pSymB)
+- []()
 
 NCBIからDNA配列を取得する:  
-
-    # Retrieving a DNA sequence from NCBI
-    library("seqinr")
-    ACCESSION <- "NC_001477" # Dengue virus 1
-    #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-    #ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
-    #ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
-    #ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
-    #ACCESSION <- "NC_001318" # Borrelia burgdorferi B31 chromosome
-    #ACCESSION <- "NC_000908" # Mycoplasma genitalium G37, complete genome
-    filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
-    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
-    seq1 <- seqs[[1]]
+```
+# Retrieving a DNA sequence from NCBI
+library("seqinr")
+ACCESSION <- "NC_001477" # Dengue virus 1
+#ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+#ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
+#ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
+#ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
+filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
+seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
+seq1 <- seqs[[1]]
+```
 
 ----------
 ## assignment 3
@@ -291,193 +251,21 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
     # rho < 1: under-represented
 
 ----------
-
-## NCBI ASSEMBLY_REPORTS
-NCBIのゲノム配列のメタデータが記載されている。
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
-
-	The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
-	assembly_summary_genbank.txt            - current GenBank genome assemblies
-	assembly_summary_refseq.txt             - current RefSeq genome assemblies
-
-- April 9, 2018 [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
-- 2018-10-23 [RefSeq - JI](http://fish-evol.org/RefSeq.html) 井上 潤
-- 2017.03.12 [RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース](https://bi.biopapyrus.jp/db/refseq.html)
-
-NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
-*assembly_summary_genbank.txt* または *assembly_summary_refseq.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
-Right click the link *assembly_summary_genbank.txt* or *assembly_summary_refseq.txt*, and select "Copy Link Address".
-
-### Working with Data in R
-Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
-
-[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
-
-    WorkingDirectory <- "~/projects/data/ncbi/assembly_reports/"
-
-    # Invoke a System Command
-    system( paste0("mkdir -p ",WorkingDirectory) )
-
-    # Set and Get Working Directory
-    setwd(WorkingDirectory)
-    getwd()
-
-    # List the Files in a Directory
-    dir()
-
-[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
-
-    # Download File from the Internet
-    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt"
-    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt"
-    download.file(url = curl, destfile = basename(curl))
-
-[Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
-
-データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
-
-    # Loading Data into R
-    filename <- basename(curl)
-    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE, skip = 1) 
-
-[データフレーム](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)の行と列の数、先頭部分、列名の確認:  
-
-    # Exploring and Transforming Dataframes
-    dim(d)
-    head(d, n = 1)
-    colnames(d)
-    colnames(d)[1] <- "assembly_accession"
-
-    table(d$refseq_category)
-    table(d$assembly_level)
-
-例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*
-の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
-
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
-
-    # grep(pattern, x) returns the positions of all elements in x that match pattern
-    # grepl returns a logical vector (match or not for each element of x).
-    pattern <- "Sinorhizobium meliloti"
-    #pattern <- "B.*burgdorferi" # "Borrelia burgdorferi"
-    TF <- grepl(pattern = pattern, x = d$organism_name) & grepl(pattern = "reference|representative", x = d$refseq_category) & d$assembly_level == "Complete Genome" & d$version_status == "latest"
-    d[TF,]
-    d$ftp_path[TF]
-
-抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Open the URL with your browser (Firefox or Chrome). Right click the link *README.txt*, and select "Copy Link Address".
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
-
-[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
-
-    *_genomic.fna.gz: FASTA format of the genomic sequence(s) in the assembly. 
-    *_cds_from_genomic.fna.gz: FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
-    *_protein.faa.gz: FASTA format of the accessioned protein products annotated on the genome assembly.
-    *_genomic.gbff.gz: GenBank flat file format of the genomic sequence(s) in the assembly. 
-
-[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
-
-    # Download File from the Internet
-    filesuffix <- "_genomic.fna.gz"
-    #filesuffix <- "_cds_from_genomic.fna.gz"
-    #filesuffix <- "_protein.faa.gz"
-    curl <- paste0(d$ftp_path[TF], "/", unlist(strsplit(d$ftp_path[TF], split="/"))[10], filesuffix )
-    download.file(url = curl, destfile = basename(curl))
-
-`read.fasta()`関数で配列データを読み込む:  
-
-    # Reading sequence data and store them in list variable "seqs"
-    library("seqinr") # Load the SeqinR package
-    filename <- basename(curl)
-    seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
-    #seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE)
-
-    length(seqs) # get the number of elements
-    unlist(getAnnot(seqs)) # get sequence annotations
-
-- [24. apply() ファミリー](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/24.html)
-
-`sapply()`関数は、リストの各要素に関数を適用する。  
-複数のDNA配列を解析する:  
-
-    # Apply a Function over a List
-    sapply(seqs, length)
-    sapply(seqs, GC)
-
-- [23. リスト](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html)
-
-`unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
-複数のDNA配列の結合データを解析する:  
-
-    # Flatten Lists
-    length(unlist(seqs))
-    GC(unlist(seqs))
-
-### References
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
-Genomes Download FAQ
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#protocols
-2. What is the best protocol to use to download large data sets?
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files
-11. What is the file content within each specific assembly directory?
-
-*_cds_from_genomic.fna.gz
-FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
-
-*_genomic.fna.gz
-FASTA format of the genomic sequence(s) in the assembly. 
-
-*_genomic.gbff.gz
-GenBank flat file format of the genomic sequence(s) in the assembly. 
-
-*_protein.faa.gz
-FASTA format of the accessioned protein products annotated on the genome assembly.
-
-http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind
-12. How can I find the sequence and annotation of my genome of interest?
-
-Using the assembly summary report files
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#current
-14. How can I download only the current version of each assembly?
-
-Use either of the two master assembly summary files, or the assembly_summary.txt file for the species or taxonomic group of interest (see above), select those assemblies that are marked as "latest" in the version_status column (11), and then use the FTP path indicated in column 20 to download the data.
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
-15. How can I download RefSeq data for all complete bacterial genomes?
-
-Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP directory names. One way to do this would be using the following awk command:
-
-	awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gbff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
-
-----------
 ## NCBI GENOME_REPORTS
 
-ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)
-の表のテキスト版をFTPサイトからダウンロードする。
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
-*README*をクリックして開く。
+- [Tatusova et al. Nucleic Acids Res. 2015 Jan;43(Database issue):D599-605. "Update on RefSeq microbial genomes resources."](https://www.ncbi.nlm.nih.gov/pubmed/25510495)
 
-```
-eukaryotes.txt: Eukaryotic genome sequencing projects
-prokaryotes.txt: Prokaryotic genome sequencing projects
-viruses.txt:   Viral genome sequencing projects
-```
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
+*README* や *prokaryotes.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> with your browser (Firefox or Chrome).  
+Right click the link *README* or *prokaryotes.txt*, and select "Copy Link Address".
 
 Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
+    # assign a value to a variable
     WorkingDirectory <- "~/projects/data/ncbi/genome_reports"
 
     # Invoke a System Command
@@ -493,9 +281,7 @@ Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril
 [インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
     # Download File from the Internet
-    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt" # 原核生物 # 60.9 MB
-    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt" # 真核生物 # 2.1 MB
-    #curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt"    # ウイルス # 4.7 MB
+    curl <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt"
     download.file(url = curl, destfile = basename(curl))
 
 [Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
@@ -542,26 +328,14 @@ retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutil
 
 # Make a vector containing NCBI GenBank/RefSeq accessions
 ## create a system command to be invoked, as a character string
-
-### viruses ウイルス
-Organism_Name <- "orovirus"
-command <- paste0("grep -v '^#' viruses.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $10 !~ /-/ && $15 ~ /Complete Genome/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/(.+:)*(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$2/g;'")
-
-### eukaryotes 真核生物
-Organism_Name <- "Saccharomyces cerevisiae S288C"
-command <- paste0("grep -v '^#' eukaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f10 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
-
-### prokaryotes 原核生物
 Organism_Name <- "Sinorhizobium meliloti 1021"
 #Organism_Name <- "Sinorhizobium meliloti 1021|Deinococcus radiodurans R1"
 #Organism_Name <- "Bacillus anthracis.*Ames Ancestor|E.*coli O157.*Sakai|JMP134"
 command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
-#command <- paste0("grep -v '^#' prokaryotes.txt | awk -F '\t' '$1 ~ /", Organism_Name ,"/ && $16 ~ /Complete Genome/ && $20 ~ /REFR/ {print $0}' | cut -f9 | tr ';' '\n' | perl -pe 's/.+:(([A-Z]+_*)[A-Z0-9]+)\\.[0-9]+.*/$1/g;'")
 
 ## Invoke a System Command
 ACCESSIONs <- system(command, intern=TRUE)
 #ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") #Organism_Name <- "Sinorhizobium meliloti 1021"
-ACCESSIONs
 
 # Retrieve the sequences and store them in list variable "seqs"
 seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
@@ -592,6 +366,7 @@ seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
 
 作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
 
+    # quit and restart R
     setwd("~/projects/data/ncbi/genome_reports")					# Set Working Directory
     library(seqinr)									# Load the SeqinR package
     seqs <- read.fasta(file = "mySequences.fna", seqtype = c("DNA"), strip.desc = TRUE)	# Reading sequence data
@@ -602,25 +377,30 @@ seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
     seq1 <- seqs[[1]]
 
 ### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-1)
+- [Length of a DNA sequence](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#length-of-a-dna-sequence)
+- [Base composition of a DNA sequence](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#base-composition-of-a-dna-sequence)
+- [GC Content of DNA](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#gc-content-of-dna)
 
-`summary()`関数でデータの要約:  
+データの要約:
 
     # Object Summaries
     summary(seq1)
 
 DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力される。
 
-DNA配列の2連続塩基含量（カウント）:  
+- [DNA words](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#dna-words)
 
-    # DNA words
+DNA配列の2連続塩基含量（カウント）:
+
+    # Composition of dimer/trimer/etc oligomers
     count(seq=seq1, wordsize=2)
 
 ### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
-連続塩基組成 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+- [Over-represented and under-represented DNA words](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#over-represented-and-under-represented-dna-words)
 
 DNA配列の2連続塩基組成（観測値/期待値）:  
 
-    # Over-represented and under-represented DNA words
+    # over- and under- representation of dinucleotides
     rho(seq = seq1, wordsize=2)
 
 [53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
@@ -633,13 +413,12 @@ DNA配列の2連続塩基組成（観測値/期待値）:
 直線
 abline
 
-    par(family="mono")
-    par(cex = 0.7)
+    par(family="mono", cex = 0.7)
 
     barplot(sort(rho(seq1, wordsize = 2)))
     abline(h=1)
 
-- [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
+[applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
 
 ```
 # Apply a Function over a List
@@ -656,7 +435,7 @@ Annotation <- unlist(getAnnot(seqs))
 df <- data.frame(Length, GCcontent, Annotation)
 ```
 
-- [CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
+[CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
 
 データのエクスポート。  
 `write.csv`関数でカンマ区切りファイルとして出力する:  
@@ -674,49 +453,23 @@ df <- data.frame(Length, GCcontent, Annotation)
     # Apply a Function over a List
     X <- sapply(seqs, rho, wordsize = 2)
 
-#### colnames
-
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
 ```
 # Exploring and Transforming Dataframes
 dim(X)
 colnames(X)
-colnames(X) <- getName(seqs) # get sequence names
-colnames(X) <- getAnnot(seqs) # get sequence annotations
-
-# Substrings # e.g. "NC_003047.1 Si"
-#colnames(X) <- substr(getAnnot(seqs), 1, 14)
-
-# Genus Species # e.g. "Sinorhizobium meliloti"
-#colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(unlist(strsplit(x, split=" "))[2:3], collapse=" ") )
-
-# Accession Replicon # e.g. "NC_003047.1 chromosome", "NC_003037.1 plasmid pSymA", "NC_003078.1 plasmid pSymB"
-#colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+ (chromosome.*|.*plasmid.*|.+'|DNA)), .+", replacement="\\1 \\4", getAnnot(seqs))
-
-# Accession Genus Name # e.g. "NC_003037.1 Sinorhizobium pSymA"
-#colnames(X) <- sub(pattern="([^ ]+) ([^ ]+) (.+) ([^ ]+), complete .+", replacement="\\1 \\2 \\4", getAnnot(seqs))
+#colnames(X) <- getAnnot(seqs) # get sequence annotations
 ```
-
-[50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
-matplot()
-
-    matplot(X, type="l", col=1:ncol(X), lty=1:ncol(X))
-    legend("bottomleft", legend=colnames(X), col=1:ncol(X), lty=1:ncol(X))
-
-クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
-
-    # Hierarchical Clustering
-    plot(hclust(dist(t(X))), hang=-1)
 
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
     # Draw a Heat Map
-    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+    heatmap(X, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
 [Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
-### References
+## References
 オリゴヌクレオチド組成の解析
 - [Takahashi M et al. (2009) "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
 - [Suzuki H et al. (2008) "Using Mahalanobis distance to compare genomic signatures between bacterial plasmids and chromosomes."](https://www.ncbi.nlm.nih.gov/pubmed/18953039)
@@ -724,6 +477,14 @@ matplot()
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
+
+
+
+----------
+
+
+
+
 
 ----------
 ## 2019-07-09
