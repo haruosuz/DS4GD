@@ -14,7 +14,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
-- [2019-07-09](#2019-07-09)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 7](#assignment-7) 課題No.7 「dotplot」
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
@@ -487,7 +486,8 @@ colnames(X)
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
-    WorkingDirectory <- "~/projects/data/ncbi/eutils"
+    # Set Working Directory
+    WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
     system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
     setwd(WorkingDirectory); getwd() # Set and Get Working Directory
     dir() # List the Files in a Directory
@@ -499,62 +499,43 @@ NCBIから配列データを取得する:
 library("seqinr") # Loading seqinr package
 ACCESSION <- "NC_000913" # Escherichia coli str. K-12 substr. MG1655
 
-## nucleotide FASTA
-fna <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
-
-## CDS nucleotide FASTA
+## Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA)
 ffn <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
-
-## CDS protein FASTA
-faa <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
 
 # 配列の数をカウントする:  
 # get the number of elements
-length(fna)
 length(ffn)
-length(faa)
 
 # 配列のアノテーションを取得する:  
 # get sequence annotations
-getAnnot(fna)
 head(getAnnot(ffn), 2)
-head(getAnnot(faa), 2)
 
 # 配列データをFASTA形式ファイルとして書き出す:  
 # Writing sequence data out as a FASTA file
-write.fasta(sequences=fna, names=getAnnot(fna), file.out=paste0(ACCESSION,".fna"))
 write.fasta(sequences=ffn, names=getAnnot(ffn), file.out=paste0(ACCESSION,".ffn"))
-write.fasta(sequences=faa, names=getAnnot(faa), file.out=paste0(ACCESSION,".faa"))
+
+# 配列データを読み込む
+# Reading sequence data into R
+filename <- "NC_000913.ffn"
+seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
 ```
-
-- prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#output-files)
-
-| Extension | Description |
-| --------- | ----------- |
-| .fna | Nucleotide FASTA file of the input contig sequences. |
-| .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
-| .faa | Protein FASTA file of the translated CDS sequences. |
 
 ### codon usage
 **[コドン使用](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)**
 
-
-https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage
-
-
 [`uco`](https://rdrr.io/rforge/seqinr/man/uco.html)
-関数を用いて、コドン使用頻度（絶対度数 codon counts `eff`、相対度数 relative frequencies `freq`、Relative Synonymous Codon Usage `rscu`）を計算する:  
+関数を用いて、コドン使用頻度`("eff", "freq", "rscu")`を計算する:  
 ```
 # Create tests
 testseq <- s2c("ttcttt")
 
-## trimer
+## trimer frequencies
 count(seq = testseq, wordsize = 3)
 
-## codon counts `eff`
+## absolute codon frequencies or codon counts `eff`
 uco(seq = testseq, index = "eff")
 
-## codon relative frequencies `freq`
+## relative codon frequencies `freq`
 uco(seq = testseq, index = "freq")
 
 ## Relative Synonymous Codon Usage `rscu`
@@ -564,20 +545,25 @@ uco(seq = testseq, index = "rscu")
 - [リストをベクトルに変換するunlist()関数](https://ito-hi.blog.so-net.ne.jp/2011-07-12)
 
 `unlist()`関数は、リストの要素を端からベクトルとして結合して 1 つのベクトルとしてまとめる。
-全CDSのデータを結合する(concatenate):  
+CDSの結合(concatenate)データのコドン使用頻度`("eff", "freq", "rscu")`を計算し、カンマ区切りファイルとして出力する:  
 
-    # Flatten Lists
-    ffn.concat <- unlist(ffn)
+# 全遺伝子群のコドン使用
+# Codon usage for the collection of all genes
+df.uco.all <- uco(unlist(seqs), as.data.frame=TRUE)
+write.csv(df.uco.all[order(df.uco.all$AA),], file="table.uco.all.csv", quote=TRUE, row.names=FALSE)
 
-全CDSの結合データのコドン使用頻度`("eff", "freq", "rscu")`を計算し、カンマ区切りファイルとして出力する:  
+# 高発現遺伝子群のコドン使用
+# Codon usage for the collection of highly expressed genes encoding ribosomal proteins
+pattern <- "ribosomal subunit protein"
+TF <- grepl(pattern = pattern, x = getAnnot(seqs), ignore.case = TRUE)
+sum(TF) # unlist(getAnnot(seqs[TF]))
+df.uco.high <- uco(unlist(seqs[TF]), as.data.frame=TRUE)
+write.csv(df.uco.high[order(df.uco.high$AA),], file="table.uco.high.csv", quote=TRUE, row.names=FALSE)
 
-    # Codon usage for the collection of all genes    df.uco <- uco(ffn.concat, as.data.frame=TRUE) # all indices are returned into a data frame
+# open current working directory
+system("open .")
 
-    # Export data as a CSV file to be read by spreadsheets:
-    write.csv(df.uco[order(df.uco$AA),], file="table.uco.csv", quote=TRUE, row.names=FALSE)
-
-    # open current working directory
-    system("open .")
+[Codon usage in E. coli.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/)
 
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
@@ -585,7 +571,17 @@ uco(seq = testseq, index = "rscu")
     # Translate nucleic acid sequences into proteins
     myTrans <- getTrans(ffn)
     myTrans[[1]]
-    faa[[1]]
+
+
+
+
+
+
+
+
+----------
+
+
 
 ### amino acid usage
 **[アミノ酸](https://ja.wikipedia.org/wiki/アミノ酸)使用**
