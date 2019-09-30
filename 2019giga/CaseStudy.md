@@ -500,24 +500,15 @@ library("seqinr") # Loading seqinr package
 ACCESSION <- "NC_000913" # Escherichia coli str. K-12 substr. MG1655
 
 ## Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA)
-ffn <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
 
 # 配列の数をカウントする:  
 # get the number of elements
-length(ffn)
+length(seqs)
 
 # 配列のアノテーションを取得する:  
 # get sequence annotations
-head(getAnnot(ffn), 2)
-
-# 配列データをFASTA形式ファイルとして書き出す:  
-# Writing sequence data out as a FASTA file
-write.fasta(sequences=ffn, names=getAnnot(ffn), file.out=paste0(ACCESSION,".ffn"))
-
-# 配列データを読み込む
-# Reading sequence data into R
-filename <- "NC_000913.ffn"
-seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
+head(getAnnot(seqs), 2)
 ```
 
 ### codon usage
@@ -575,10 +566,6 @@ system("open .")
     # Translate nucleic acid sequences into proteins
     myTrans <- getTrans(ffn)
     myTrans[[1]]
-
-
-
-
 
 
 
