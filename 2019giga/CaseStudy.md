@@ -538,7 +538,7 @@ uco(seq = testseq, index = "rscu")
 - [Sharp et al. Philos Trans R Soc Lond B Biol Sci. 2010 Apr 27;365(1544):1203-12. "Forces that influence the evolution of codon bias."](https://www.ncbi.nlm.nih.gov/pubmed/20308095)
   - [Codon usage in E. coli.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/)
 
-大腸菌ゲノムにおける全遺伝子群と高発現遺伝子群のコドン使用頻度 relative synonymous codon usage (rscu) を計算する。
+大腸菌ゲノムにおける全遺伝子群と高発現遺伝子群のコドン使用頻度を計算する。
 
 - [リストをベクトルに変換するunlist()関数](https://ito-hi.blog.so-net.ne.jp/2011-07-12)
 
