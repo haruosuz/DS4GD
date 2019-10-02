@@ -514,8 +514,8 @@ head(getAnnot(seqs), 2)
 ### codon usage
 **[コドン使用](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)**
 
-テスト用の配列データを作成。  
-`count`関数で3連続塩基`(wordsize = 3)`をカウントする。  
+テスト用の配列データを作成する。  
+[`count`](https://rdrr.io/rforge/seqinr/man/count.html)関数で3連続塩基`(wordsize = 3)`をカウントする。  
 [`uco`](https://rdrr.io/rforge/seqinr/man/uco.html)関数でコドン使用頻度`(index = "eff", "freq", "rscu")`を計算する。
 
 ```
