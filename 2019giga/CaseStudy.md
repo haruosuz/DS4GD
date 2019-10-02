@@ -480,10 +480,6 @@ colnames(X)
 [DDBJ タンパク質コード配列; CDS feature について](https://www.ddbj.nig.ac.jp/ddbj/cds.html) |
 [DDBJ Protein Coding Sequence; CDS feature](https://www.ddbj.nig.ac.jp/ddbj/cds-e.html)
 
-- [Sharp et al. Philos Trans R Soc Lond B Biol Sci. 2010 Apr 27;365(1544):1203-12. "Forces that influence the evolution of codon bias."](https://www.ncbi.nlm.nih.gov/pubmed/20308095)
-- NCBI [Genome List](https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/)
-  - [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
-
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
     # Set Working Directory
@@ -492,8 +488,12 @@ colnames(X)
     setwd(WorkingDirectory); getwd() # Set and Get Working Directory
     dir() # List the Files in a Directory
 
-[E-utilities](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#e-utilities)を用いて、
-NCBIから配列データを取得する:  
+### [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#e-utilities)
+
+- NCBI [Genome List](https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/)
+  - [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
+
+大腸菌K-12株の遺伝子（CDS）の塩基配列データをNCBIから取得する:
 ```
 # Retrieving sequence data from NCBI
 library("seqinr") # Loading seqinr package
@@ -514,8 +514,10 @@ head(getAnnot(seqs), 2)
 ### codon usage
 **[コドン使用](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)**
 
-[`uco`](https://rdrr.io/rforge/seqinr/man/uco.html)
-関数を用いて、コドン使用頻度`("eff", "freq", "rscu")`を計算する:  
+テスト用の配列データを作成。
+`count`関数で3連続塩基`(wordsize = 3)`をカウントする。
+[`uco`](https://rdrr.io/rforge/seqinr/man/uco.html)関数でコドン使用頻度`(index = "eff", "freq", "rscu")`を計算する。
+
 ```
 # Create tests
 testseq <- s2c("ttcttt")
@@ -532,6 +534,11 @@ uco(seq = testseq, index = "freq")
 ## Relative Synonymous Codon Usage `rscu`
 uco(seq = testseq, index = "rscu")
 ```
+
+- [Sharp et al. Philos Trans R Soc Lond B Biol Sci. 2010 Apr 27;365(1544):1203-12. "Forces that influence the evolution of codon bias."](https://www.ncbi.nlm.nih.gov/pubmed/20308095)
+  - [Codon usage in E. coli.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/)
+
+大腸菌ゲノムにおける全遺伝子群と高発現遺伝子群のコドン使用頻度 relative synonymous codon usage (rscu) を計算する。
 
 - [リストをベクトルに変換するunlist()関数](https://ito-hi.blog.so-net.ne.jp/2011-07-12)
 
@@ -557,8 +564,6 @@ write.csv(df.uco.high[order(df.uco.high$AA),], file="table.uco.high.csv", quote=
 # open current working directory
 system("open .")
 ```
-
-[Codon usage in E. coli.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/)
 
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
