@@ -142,7 +142,8 @@ Q3. How many of each of the four nucleotides A, C, T and G, and any other symbol
 
     table(seq1)
 
-[DDBJ 配列の記載に用いる略号](http://www.ddbj.nig.ac.jp/sub/code-j.html)
+DDBJ [配列の記載に用いる略号](http://www.ddbj.nig.ac.jp/sub/code-j.html)  
+DDBJ [Codes Used in Sequence Description](https://www.ddbj.nig.ac.jp/ddbj/code-e.html)
 
 Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucleotides are included, (ii) non-A/C/T/G nucleotides are discarded?
 
@@ -246,7 +247,6 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 
 ----------
 ## NCBI GENOME_REPORTS
-
 - [Tatusova et al. Nucleic Acids Res. 2015 Jan;43(Database issue):D599-605. "Update on RefSeq microbial genomes resources."](https://www.ncbi.nlm.nih.gov/pubmed/25510495)
 
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> をブラウザ（Firefox または Chrome）で開く。 
