@@ -10,7 +10,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
-- [NCBI sequence database](#ncbi-sequence-database)
+- [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
@@ -97,21 +97,11 @@ Rパッケージのバージョンを確認:
 
 ----------
 
-## NCBI sequence database
-
+## NCBI Genome List
 https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/
 
 References
-
 - [Tatusova et al. Nucleic Acids Res. 2015 Jan;43(Database issue):D599-605. "Update on RefSeq microbial genomes resources."](https://www.ncbi.nlm.nih.gov/pubmed/25510495)
-- [López et al. MBio. 2019 May 28;10(3). pii: e00505-19. "Codon Usage Heterogeneity in the Multipartite Prokaryote Genome: Selection-Based Coding Bias Associated with Gene Location, Expression Level, and Ancestry."](https://www.ncbi.nlm.nih.gov/pubmed/31138741)
-
-Examples of multipartite genomes (chromosomes and plasmids)
-
-- [Cupriavidus pinatubonensis JMP134](https://www.ncbi.nlm.nih.gov/genome/538?genome_assembly_id=167793) (Ralstonia eutropha) Chr (1, 2), Plsm (Plasmid1, megaplasmid)
-- [Pseudomonas resinovorans NBRC 106553](https://www.ncbi.nlm.nih.gov/genome/15312?genome_assembly_id=176382) Chr, Plsm (IncP-­7 pCAR1.3)
-- [Sinorhizobium meliloti 1021](https://www.ncbi.nlm.nih.gov/genome/1004) Chr, Plsm (pSymA, pSymB)
-- []()
 
 NCBIからDNA配列を取得する:  
 ```
@@ -119,9 +109,6 @@ NCBIからDNA配列を取得する:
 library("seqinr")
 ACCESSION <- "NC_001477" # Dengue virus 1
 #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-#ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
-#ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
-#ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
 filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
 seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
 seq1 <- seqs[[1]]
@@ -548,12 +535,12 @@ CDSの結合(concatenate)データのコドン使用頻度`("eff", "freq", "rscu
 # Compute codon usage for a set of highly expressed genes (high) and the genome as a whole (all), 
 # and export data as a CSV file to be read by spreadsheets:
 
-# 全遺伝子群のコドン使用
+# 全遺伝子群(all)のコドン使用頻度
 # Codon usage for the collection of all genes
 df.uco.all <- uco(unlist(seqs), as.data.frame=TRUE)
 write.csv(df.uco.all[order(df.uco.all$AA),], file="table.uco.all.csv", quote=TRUE, row.names=FALSE)
 
-# 高発現遺伝子群のコドン使用
+# 高発現遺伝子群(high)のコドン使用頻度
 # Codon usage for the collection of highly expressed genes encoding ribosomal proteins
 pattern <- "ribosomal subunit protein"
 TF <- grepl(pattern = pattern, x = getAnnot(seqs), ignore.case = TRUE)
