@@ -99,10 +99,10 @@ Rパッケージのバージョンを確認:
 
 ## NCBI Genome List
 - [Tatusova et al. Nucleic Acids Res. 2015 Jan;43(Database issue):D599-605. "Update on RefSeq microbial genomes resources."](https://www.ncbi.nlm.nih.gov/pubmed/25510495)
-- At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for the bacterial species [*Sinorhizobium meliloti*](https://en.wikipedia.org/wiki/Sinorhizobium_meliloti), you would type just Organism name "Sinorhizobium meliloti" in the search box and press "Search".
+- At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for the bacterial species *Sinorhizobium meliloti*, you would type just Organism name "Sinorhizobium meliloti" in the search box and press "Search".
 - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti), you will see the number of hits to "Sinorhizobium meliloti" in each of the NCBI databases: "Overview (1); Eukaryotes (0); Prokaryotes (199); Viruses (0); Plasmids (65); Organelles (0)". When you click on "Prokaryotes", it will show all the strains belonging to the species.
 - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti), When you click on the Organism Name "Sinorhizobium meliloti 1021", it will bring you to the record for this organism in the NCBI Genome database.
-- [On this page](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472), you will see the "Summary", "Publications", and "Replicon Info" of the Organism Sinorhizobium meliloti 1021. The NCBI accessions for the DNA sequences of the chromosome (Chr) and plasmids (Plsm) pSymA and pSymB are NC_003047, NC_003037 and NC_003078, respectively.
+- [On this page](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472), you will see the "Summary", "Publications", and "Replicon Info" of the Organism *Sinorhizobium meliloti* 1021. The NCBI accessions for the DNA sequences of the chromosome (Chr) and plasmids (Plsm) pSymA and pSymB are NC_003047, NC_003037 and NC_003078, respectively.
 
 NCBIからDNA配列を取得する:  
 ```
