@@ -116,7 +116,8 @@ ACCESSION <- "NC_001477" # Dengue virus 1
 #ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
 #ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
 #ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
-filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta") # http://togows.dbcls.jp/help/
+# TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
+filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
 seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
 seq1 <- seqs[[1]]
 ```
