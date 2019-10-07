@@ -24,7 +24,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
   - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
 - 2019-10-08 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
-  - [NCBI sequence database](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-sequence-database)
+  - Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
 - 2019-10-15 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2019-10-22 *即位礼【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2019-10-29 No. 5 - [NCBI GENOME_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome_reports)
@@ -49,8 +49,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 
 ----------
 ## Guest speaker
-**特別講演**
-
+**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 - 2019-11-26 No. 8 - 講師: [Dr. Kirill Kryukov](http://kirill-kryukov.com/kirr/) ([Biomedical Informatics Laboratory | Department of Molecular Life Science, Tokai University School of Medicine](http://bmi.med.u-tokai.ac.jp/))
 - 2019-12-03 No. 9 - 講師: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学・医学部）
 
@@ -79,9 +78,8 @@ Submit your final report in PDF format.
 **[ヒト微生物群集](https://ja.wikipedia.org/wiki/ヒトマイクロバイオーム)**
 
 - TED-Ed [You are your microbes - Jessica Green and Karen Guillemin](https://ed.ted.com/lessons/you-are-your-microbes-jessica-green-and-karen-guillemin) | [微生物から成る人体 — ジェシカ・グリーン ＆カレン・ギリマン](https://www.ted-ja.com/2017/02/wei-sheng-wu-karacheng-ruren-ti.html?m=1)
-
-  - May 16, 2019 [The CHILD Cohort Study and a baby’s microbiome](https://www.youtube.com/watch?v=eL9dAGiCNLU)
-  - Oct 10, 2016 [What is the human microbiome?](https://www.youtube.com/watch?v=YB-8JEo_0bI)
+- May 16, 2019 [The CHILD Cohort Study and a baby’s microbiome](https://www.youtube.com/watch?v=eL9dAGiCNLU)
+- Oct 10, 2016 [What is the human microbiome?](https://www.youtube.com/watch?v=YB-8JEo_0bI)
 
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
