@@ -105,7 +105,7 @@ Rパッケージのバージョンを確認:
   - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for the bacterial species *Sinorhizobium meliloti*, you would type just Organism name "Sinorhizobium meliloti" in the search box and press "Search".
   - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti), you will see the number of hits to "Sinorhizobium meliloti" in each of the NCBI databases: "Overview (1); Eukaryotes (0); Prokaryotes (199); Viruses (0); Plasmids (65); Organelles (0)". When you click on "Prokaryotes", it will show all the strains belonging to the species.
   - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti), When you click on the Organism Name "Sinorhizobium meliloti 1021", it will bring you to the record for this organism in the NCBI Genome database.
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472), you will see the "Summary", "Publications", and "Replicon Info" of the Organism *Sinorhizobium meliloti* 1021. The NCBI accessions for the DNA sequences of the chromosome (Chr) and plasmids (Plsm) pSymA and pSymB are NC_003047, NC_003037 and NC_003078, respectively.
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472), you will see the "Summary", "Publications", and "Replicon Info" of the Organism *Sinorhizobium meliloti* 1021. The NCBI accessions for the DNA sequences of the chromosome (Chr) and plasmids (Plsm) pSymA and pSymB are "NC_003047.1", "NC_003037.1" and "NC_003078.1", respectively.
 
 NCBIからDNA配列を取得する:  
 ```
@@ -113,9 +113,7 @@ NCBIからDNA配列を取得する:
 library("seqinr")
 ACCESSION <- "NC_001477" # Dengue virus 1
 #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-#ACCESSION <- "NC_003047" # Sinorhizobium meliloti 1021 chromosome
-#ACCESSION <- "NC_003037" # Sinorhizobium meliloti 1021 plasmid pSymA
-#ACCESSION <- "NC_003078" # Sinorhizobium meliloti 1021 plasmid pSymB
+#ACCESSION <- "NC_003037.1" # Sinorhizobium meliloti 1021 plasmid pSymA
 # TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
 filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
 seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
@@ -157,7 +155,7 @@ Q5. How many of each of the four nucleotides A, C, T and G are there in the comp
 ![http://revertra.webcrow.jp/DNA/index.php](http://revertra.webcrow.jp/DNA/dnaseq.png)
 
 	#help.search("complement")
-	help("comp")
+	#help("comp")
     table(comp(seq1))
 
 Q6. How many occurrences of the DNA words CC, CG and GC occur in the genome sequence?
