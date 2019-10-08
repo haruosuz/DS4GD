@@ -156,7 +156,7 @@ Q5. How many of each of the four nucleotides A, C, T and G are there in the comp
 
 ![http://revertra.webcrow.jp/DNA/index.php](http://revertra.webcrow.jp/DNA/dnaseq.png)
 
-	help.search("complement")
+	#help.search("complement")
 	help("comp")
     table(comp(seq1))
 
