@@ -132,7 +132,7 @@ Download the DNA sequence of your genome of interest. Answer the following quest
 
 Q1. What are the last twenty nucleotides of the genome sequence?
 
-    seq1[(length(seq1)-20+1):length(seq1)]
+    tail(seq1, 20)
 
 Q2. What is the length in nucleotides of the genome sequence?
 
@@ -167,8 +167,8 @@ Q6. How many occurrences of the DNA words CC, CG and GC occur in the genome sequ
 Q7. How many occurrences of the DNA words CC, CG and GC occur in the (i) first 1000 and (ii) last 1000 nucleotides of the genome sequence?
 How can you check that the subsequence that you have looked at is 1000 nucleotides long?
 
-    count(seq=seq1[1:1000], wordsize=2)
-    count(seq=seq1[(length(seq1)-1000+1):length(seq1)], wordsize=2)
+    count(seq=head(seq1, 1000), wordsize=2)
+    count(seq=tail(seq1, 1000), wordsize=2)
 
 ----------
 ## assignment 4
