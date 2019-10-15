@@ -168,6 +168,8 @@ seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
 seq1 <- seqs[[1]]
 ```
 
+Please record what you typed to download DNA sequence data, to make your analysis reproducible.
+
 ----------
 ## assignment 4
 **課題No.4 「DNA Sequence Statistics (2)」**
