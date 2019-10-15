@@ -196,12 +196,12 @@ Q1. Draw a sliding window plot of GC content in the genome, using a window size 
     }
 
 	# make a sliding window plot with a window size of 200 nucleotides:
-    slidingwindowplotGC(200, seq1)
+    slidingwindowplotGC(windowsize = 200, inputseq = seq1)
 
 Q2. Draw a sliding window plot of GC content in the genome sequence using a window size of 2000 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
 
 	# make a sliding window plot of GC content using a window size of 2000 nucleotides:
-    slidingwindowplotGC(2000, seq1)
+    slidingwindowplotGC(windowsize = 2000, inputseq = seq1)
 
 Q3. Write a function to calculate the AT content of a DNA sequence (ie. the fraction of the nucleotides in the sequence that are As or Ts). What is the AT content of the genome?
 
@@ -231,14 +231,14 @@ Use it to make a sliding window plot of AT content along the genome, using a win
 
     par(mfrow=c(2,1))
 	# make a sliding window plot of AT content:
-    slidingwindowplotAT(2000, seq1)
+    slidingwindowplotAT(windowsize = 2000, inputseq = seq1)
 	# This is the mirror image of the plot of GC content (because AT equals 1 minus GC):
-    slidingwindowplotGC(2000, seq1)
+    slidingwindowplotGC(windowsize = 2000, inputseq = seq1)
 
 Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the genome sequence?
 
 	# calculate Rho for words of length 3 in the genome
-	rho(seq1, wordsize=3)
+	rho(sequence = seq1, wordsize=3)
 
     # rho > 1: over-represented
     # rho < 1: under-represented
