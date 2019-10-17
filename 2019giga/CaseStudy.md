@@ -245,11 +245,6 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
     # rho < 1: under-represented
 
 ----------
-----------
-----------
-----------
-----------
-
 ## assignment 5
 **課題No.5 「NCBI accession」**
 
@@ -261,6 +256,17 @@ NC_001477
 
 The NCBI accession for the DNA sequence of "Dengue virus 1, complete genome" is NC_001477 (https://www.ncbi.nlm.nih.gov/nuccore/NC_001477).
 
+----------
+----------
+----------
+----------
+----------
+
+----------
+----------
+----------
+----------
+----------
 
 ----------
 ## NCBI GENOME_REPORTS
