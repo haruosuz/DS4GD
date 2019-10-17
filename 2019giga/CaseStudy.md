@@ -13,6 +13,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
+- [assignment 5](#assignment-5) 課題No.5 「NCBI accession」
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 7](#assignment-7) 課題No.7 「dotplot」
@@ -248,6 +249,18 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 ----------
 ----------
 ----------
+
+## assignment 5
+**課題No.5 「NCBI accession」**
+
+Please provide the NCBI accessions for the DNA sequences analyzed.
+
+[Example answer]
+
+NC_001477
+
+The NCBI accession for the DNA sequence of "Dengue virus 1, complete genome" is NC_001477 (https://www.ncbi.nlm.nih.gov/nuccore/NC_001477).
+
 
 ----------
 ## NCBI GENOME_REPORTS
