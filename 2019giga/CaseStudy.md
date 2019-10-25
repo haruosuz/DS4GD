@@ -14,6 +14,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [assignment 5](#assignment-5) 課題No.5 「NCBI accession」
+- [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI GENOME_REPORTS](#ncbi-genome_reports)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 7](#assignment-7) 課題No.7 「dotplot」
@@ -257,16 +258,296 @@ NC_001477
 The NCBI accession for the DNA sequence of "Dengue virus 1, complete genome" is NC_001477 (https://www.ncbi.nlm.nih.gov/nuccore/NC_001477).
 
 ----------
-----------
-----------
-----------
-----------
 
-----------
-----------
-----------
-----------
-----------
+## NCBI ASSEMBLY_REPORTS
+NCBIのゲノム配列のメタデータが記載されている。
+
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt>
+```
+The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
+assembly_summary_genbank.txt            - current GenBank genome assemblies
+assembly_summary_refseq.txt             - current RefSeq genome assemblies
+```
+
+- April 9, 2018 [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+- 2018-10-23 [RefSeq - JI](http://fish-evol.org/RefSeq.html) 井上 潤
+- 2017.03.12 [RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース](https://bi.biopapyrus.jp/db/refseq.html)
+
+NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
+*assembly_summary_genbank.txt* または *assembly_summary_refseq.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
+Right click the link *assembly_summary_genbank.txt* or *assembly_summary_refseq.txt*, and select "Copy Link Address".
+
+### Working with Data in R
+Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    WorkingDirectory <- "~/projects/data/ncbi/assembly_reports"
+
+    # Invoke a System Command
+    system( paste0("mkdir -p ",WorkingDirectory) )
+
+    # Set and Get Working Directory
+    setwd(WorkingDirectory)
+    getwd()
+
+    # List the Files in a Directory
+    list.files()
+
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
+
+```
+# Download File from the Internet
+URLs <- c("ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt",
+          "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt")
+download.file(url = URLs, destfile = basename(URLs))
+```
+
+[Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
+
+データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
+
+    # Loading Data into R
+     filename <- "assembly_summary_refseq.txt"   # 53M
+    #filename <- "assembly_summary_genbank.txt" # 150M
+    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE, skip = 1) 
+
+- [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
+
+行と列の数、列名、先頭部分の確認:  
+
+    # Exploring and Transforming Dataframes
+    dim(d)
+    head(d, n = 1)
+    colnames(d)
+    colnames(d)[1] <- "assembly_accession"
+
+    table(d$refseq_category)
+    table(d$assembly_level)
+
+[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
+
+生物名`organism_name`で検索する。
+例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*
+の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
+
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+
+    # `grepl` returns a logical vector (match or not for each element of x).
+    organism_name <- "Sinorhizobium meliloti"
+    organism_name <- "Sinorhizobium meliloti 1021|Deinococcus radiodurans R1"
+    #organism_name <- "Ebolavirus" # https://www.ncbi.nlm.nih.gov/nuccore/NC_002549.1
+    #organism_name <- "Dengue virus" # https://www.ncbi.nlm.nih.gov/nuccore/NC_001477
+    #organism_name <- "Mycobacterium leprae TN" # https://www.ncbi.nlm.nih.gov/nuccore/NC_002677.1
+    #organism_name <- "Loxodonta africana" # 957M # GCA_000001905.1_Loxafr3.0_genomic.fna.gz
+    #organism_name <- "elephant "
+    TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & grepl(pattern = "Complete Genome", x = d$assembly_level) & d$version_status == "latest"
+    #TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & grepl(pattern = "Complete Genome", x = d$assembly_level) & d$version_status == "latest" & grepl(pattern = "reference|representative", x = d$refseq_category) 
+    d[TF,]
+    d$ftp_path[TF]
+
+抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
+
+Open the URL with your browser (Firefox or Chrome). Right click the link *README.txt*, and select "Copy Link Address".
+
+[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
+
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt>
+```
+   *_genomic.fna.gz file
+       FASTA format of the genomic sequence(s) in the assembly.
+```
+
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
+```
+# Download File from the Internet
+filesuffix <- "_genomic.fna.gz"
+URLs <- sapply(d$ftp_path[TF], function(x) paste0(x, "/", unlist(strsplit(x, split="/"))[10], filesuffix ) )
+download.file(url = URLs, destfile = basename(URLs))
+```
+
+### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
+#### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
+
+- [リストにオブジェクトをしまう](Rプログラム (TAKENAKA's Web Page))
+
+`read.fasta()`関数で配列データを読み込む:  
+```
+# Reading sequence data and store them in list variable "seqs"
+lf <- basename(URLs)
+library("seqinr") # Load the SeqinR package
+seqs <- list()
+for (i in 1:length(lf)) seqs <- c(seqs, read.fasta(file = lf[i], seqtype = c("DNA"), strip.desc = TRUE) )
+
+length(seqs) # get the number of elements
+getName(seqs) # get sequence names
+getAnnot(seqs) # get sequence annotations
+```
+
+#### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
+
+配列データをFASTA形式ファイルとして書き出す:  
+
+	# write the sequences to a FASTA-format file
+    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80)
+
+    # open current working directory
+    system("open .")
+
+作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+
+    # quit and restart R
+    setwd("~/projects/data/ncbi/assembly_reports")					# Set Working Directory
+    library(seqinr)									# Load the SeqinR package
+    seqs <- read.fasta(file = "mySequences.fna", seqtype = c("DNA"), strip.desc = TRUE)	# Reading sequence data
+
+リスト`seqs`の1番目の要素を変数`seq1`に代入する:  
+
+    # store the first element of the list object `seqs` in a variable `seq1`
+    seq1 <- seqs[[1]]
+
+#### [Length of a DNA sequence](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#length-of-a-dna-sequence)
+#### [Base composition of a DNA sequence](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#base-composition-of-a-dna-sequence)
+#### [GC Content of DNA](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#gc-content-of-dna)
+
+データの要約:  
+
+    # Object Summaries
+    summary(seq1)
+
+DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力される。
+
+#### [DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-words)
+
+DNA配列の2連続塩基含量（カウント）:
+
+    # Composition of dimer/trimer/etc oligomers
+    count(seq = seq1, wordsize = 2)
+
+### [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#dna-sequence-statistics-2)
+#### [Over-represented and under-represented DNA words](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#over-represented-and-under-represented-dna-words)
+
+DNA配列の2連続塩基組成（観測値/期待値）:  
+
+    # over- and under- representation of dinucleotides
+    rho(seq = seq1, wordsize = 2)
+
+[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
+関数 par()
+
+[50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
+棒グラフ：barplot()
+
+[51. 低水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/51.html)
+直線
+abline
+
+    par(family="mono", cex = 0.7)
+
+    barplot(sort(rho(seq = seq1, wordsize = 2)))
+    abline(h=1)
+
+[applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
+
+```
+# Apply a Function over a List
+lapply(seqs, summary)
+sapply(seqs, summary)
+```
+
+DNA配列の長さ、G+C含量、アノテーションのテーブルを作成する:  
+```
+# Apply a Function over a List
+Length <- sapply(seqs, length)
+GCcontent <- sapply(seqs, GC)
+Annotation <- unlist(getAnnot(seqs))
+df <- data.frame(Length, GCcontent, Annotation)
+```
+
+[CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
+
+データのエクスポート。  
+`write.csv`関数でカンマ区切りファイルとして出力する:  
+`write.table`関数でタブ区切りファイルとして出力する:  
+
+    # Exporting Data
+    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
+    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
+
+    # open current working directory
+    system("open .")
+
+複数のDNA配列の2連続塩基組成（観測値/期待値）を解析する:  
+
+    # Apply a Function over a List
+    X <- sapply(seqs, rho, wordsize = 2)
+
+[26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
+
+```
+# Exploring and Transforming Dataframes
+dim(X)
+colnames(X)
+colnames(X) <- getAnnot(seqs) # get sequence annotations
+
+# Substrings # e.g. "NC_003047.1 Si"
+#colnames(X) <- substr(getAnnot(seqs), 1, 14)
+
+#colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(substr(x = unlist(strsplit(x, split=" ")), start=1, stop=1), collapse="") )
+```
+
+ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+
+    # Draw a Heat Map
+    heatmap(X, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+
+[Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
+
+### References
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
+Genomes Download FAQ
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#protocols
+2. What is the best protocol to use to download large data sets?
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files
+11. What is the file content within each specific assembly directory?
+
+*_cds_from_genomic.fna.gz
+FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
+
+*_genomic.fna.gz
+FASTA format of the genomic sequence(s) in the assembly. 
+
+*_genomic.gbff.gz
+GenBank flat file format of the genomic sequence(s) in the assembly. 
+
+*_protein.faa.gz
+FASTA format of the accessioned protein products annotated on the genome assembly.
+
+http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind
+12. How can I find the sequence and annotation of my genome of interest?
+
+Using the assembly summary report files
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#current
+14. How can I download only the current version of each assembly?
+
+Use either of the two master assembly summary files, or the assembly_summary.txt file for the species or taxonomic group of interest (see above), select those assemblies that are marked as "latest" in the version_status column (11), and then use the FTP path indicated in column 20 to download the data.
+
+https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
+15. How can I download RefSeq data for all complete bacterial genomes?
+
+Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP directory names. One way to do this would be using the following awk command:
+
+	awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gbff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
+
+
 
 ----------
 ## NCBI GENOME_REPORTS
