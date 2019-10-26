@@ -260,11 +260,12 @@ The NCBI accession for the DNA sequence of "Dengue virus 1, complete genome" is 
 
 ## NCBI ASSEMBLY_REPORTS
 
+NCBIのゲノム配列のメタデータが記載されている *assembly_summary* ファイルを使用して、目的のゲノムの配列とアノテーションを見つける。
+
 Genomes Download FAQ
 [How can I find the sequence and annotation of my genome of interest?](http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind)
 Using the assembly summary report files
 
-assembly_summaryファイルには、NCBIのゲノム配列のメタデータが記載されている。
 ```
 # ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
 The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
