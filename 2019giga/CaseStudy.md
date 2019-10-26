@@ -420,7 +420,7 @@ Genomes Download FAQ
 [Base composition of a DNA sequence](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#base-composition-of-a-dna-sequence)  
 [GC Content of DNA](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#gc-content-of-dna)  
 
-DNA配列の統計（長さ、塩基組成、GC含量）を計算する。
+DNA配列の長さ、塩基組成、GC含量を計算する。
 
     # データの要約:  
     # Object Summaries
@@ -428,13 +428,13 @@ DNA配列の統計（長さ、塩基組成、GC含量）を計算する。
 
 [DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-words)
 
-    # DNA配列の2連続塩基含量（カウント）:  
-    # Composition of dimer/trimer/etc oligomers
+    # 2連続塩基含量（カウント）:  
+    # Counts the number of dinucleotides
     count(seq = seq1, wordsize = 2)
 
 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
-    # DNA配列の2連続塩基組成（観測値/期待値）:  
+    # 2連続塩基組成（観測値/期待値）:  
     # over- and under- representation of dinucleotides
     rho(seq = seq1, wordsize = 2)
 
@@ -458,7 +458,7 @@ DNA配列の統計（長さ、塩基組成、GC含量）を計算する。
     lapply(seqs, summary)
     sapply(seqs, summary)
 
-DNA配列の長さ、G+C含量、アノテーションのデータフレームを作成する:  
+DNA配列の長さ、GC含量、アノテーションのデータフレームを作成する:  
 
     # Apply a Function over a List
     Length <- sapply(seqs, length) # Length of a DNA sequence
