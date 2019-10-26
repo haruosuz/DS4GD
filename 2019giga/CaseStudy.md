@@ -285,6 +285,7 @@ Rの起動
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
+    # assign a character vector of the directory path to the variable
     WorkingDirectory <- "~/projects/data/ncbi/assembly_reports"
     
     # Invoke a System Command
