@@ -502,7 +502,7 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
     #colnames(myrho) <- substr(getAnnot(seqs), start=1, stop=14) # Substrings of a Character Vector
     
     # e.g. "NDv1cg"
-    #colnames(X) <- sapply(getAnnot(seqs),function(x) paste0(substr(x=unlist(strsplit(x,split=" ")),1,1),collapse=""))
+    #colnames(myrho) <- sapply(getAnnot(seqs),function(x) paste0(substr(x=unlist(strsplit(x,split=" ")),1,1),collapse=""))
 
     # Column Names
     colnames(myrho)
@@ -510,7 +510,7 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
     # Draw a Heat Map
-    heatmap(X, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+    heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
 [Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
@@ -522,7 +522,6 @@ Using oligonucleotide (k-mer) frequency as genomic signature
 
 - [Takahashi M et al. (2009) "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
 - [Suzuki H et al. (2008) "Using Mahalanobis distance to compare genomic signatures between bacterial plasmids and chromosomes."](https://www.ncbi.nlm.nih.gov/pubmed/18953039)
-- [Wong K et al. (2002) "Dinucleotide compositional analysis of Sinorhizobium meliloti using the genome signature: distinguishing chromosomes and plasmids."](https://www.ncbi.nlm.nih.gov/pubmed/12444420)
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
