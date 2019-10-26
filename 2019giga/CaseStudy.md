@@ -491,10 +491,9 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
-    # Exploring and Transforming Dataframes
-    # Dimensions of an Object
-    dim(myrho)
-    
+    # Column Names
+    colnames(myrho)
+
     # e.g. "NC_001477.1 Dengue virus 1, complete genome"
     #colnames(myrho) <- getAnnot(seqs) # get sequence annotations
     
@@ -503,9 +502,6 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
     
     # e.g. "NDv1cg"
     #colnames(myrho) <- sapply(getAnnot(seqs),function(x) paste0(substr(x=unlist(strsplit(x,split=" ")),1,1),collapse=""))
-
-    # Column Names
-    colnames(myrho)
 
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
