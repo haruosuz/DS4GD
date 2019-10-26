@@ -519,9 +519,8 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
 Using oligonucleotide (k-mer) frequency as genomic signature
 
 - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-- [Suzuki H., Brown C.J., Top E.M. (2014) Genomic Signature Analysis to Predict Plasmid Host Range. In: Bell E. (eds) Molecular Life Sciences. Springer, New York, NY](https://link.springer.com/referenceworkentry/10.1007/978-1-4614-6436-5_574-1)
+- [Suzuki H et al. (2010) "Predicting plasmid promiscuity based on genomic signature."](https://www.ncbi.nlm.nih.gov/pubmed/20851899)
 - [Takahashi M et al. (2009) "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
-- [Suzuki H et al. (2008) "Using Mahalanobis distance to compare genomic signatures between bacterial plasmids and chromosomes."](https://www.ncbi.nlm.nih.gov/pubmed/18953039)
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
