@@ -1,4 +1,4 @@
-**[生命情報解析 / 生命動態のデータサイエンス [DS2]](https://github.com/haruosuz/DS4GD)**  
+**[DATA SCIENCE FOR GENOME DYNAMICS (GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2019giga)**  
 https://vu.sfc.keio.ac.jp/sfc-sfs/
 
 ----------
