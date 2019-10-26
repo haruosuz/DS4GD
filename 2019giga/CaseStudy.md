@@ -489,7 +489,7 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
     #k = 4 # 4-mers or tetranucleotide
     myrho <- sapply(seqs, rho, wordsize = k)
 
-[26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
+[列名の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-4)
 
     # Column Names
     colnames(myrho)
