@@ -311,7 +311,7 @@ Using the assembly summary report files
 
 [ファイルからデータを読み込む](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/40.html)
 
-データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
+データのインポート。`read.delim()`関数で、タブ区切り(TSV)ファイルを読み込む:  
 
     # Loading Data into R
     filename <- "assembly_summary_refseq.txt"
@@ -351,10 +351,7 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
     # `grepl` returns a logical vector (match or not for each element of x).
     organism_name <- "Sinorhizobium meliloti 1021"
     #organism_name <- "Dengue virus"
-    #organism_name <- "Mycobacterium leprae TN"
-    #organism_name <- "Ebolavirus"
-    #organism_name <- "elephant "
-    TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & grepl(pattern = "Complete Genome", x = d$assembly_level) & d$version_status == "latest"
+    TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & d$version_status == "latest" & grepl(pattern = "Complete Genome", x = d$assembly_level)
     d[TF,]
     d$ftp_path[TF]
 
@@ -382,20 +379,18 @@ Genomes Download FAQ
 ### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 #### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
 
-- [リストにオブジェクトをしまう](Rプログラム (TAKENAKA's Web Page))
+配列データを読み込む:  
 
-`read.fasta()`関数で配列データを読み込む:  
-```
-# Reading sequence data and store them in list variable "seqs"
-lf <- basename(URLs)
-library("seqinr") # Load the SeqinR package
-seqs <- list()
-for (i in 1:length(lf)) seqs <- c(seqs, read.fasta(file=lf[i], seqtype="DNA", strip.desc=TRUE) )
-
-length(seqs) # get the number of elements
-getName(seqs) # get sequence names
-getAnnot(seqs) # get sequence annotations
-```
+    # Reading sequence data and store them in list variable "seqs"
+    lf <- basename(URLs)
+    seqs <- list()
+    library("seqinr") # Load the SeqinR package
+    for (i in 1:length(lf)) seqs <- c(seqs, read.fasta(file=lf[i], seqtype="DNA", strip.desc=TRUE) )
+    
+    # get sequence information
+    length(seqs) # get the number of elements
+    getName(seqs) # get sequence names
+    getAnnot(seqs) # get sequence annotations
 
 #### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
 
@@ -432,7 +427,7 @@ DNA配列の長さ、塩基組成、GC含量 (length, composition, GC) が出力
 
 #### [DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-words)
 
-DNA配列の2連続塩基含量（カウント）:
+DNA配列の2連続塩基含量（カウント）:  
 
     # Composition of dimer/trimer/etc oligomers
     count(seq = seq1, wordsize = 2)
@@ -456,36 +451,33 @@ DNA配列の2連続塩基組成（観測値/期待値）:
 abline
 
     par(family="mono", cex = 0.7)
-
     barplot(sort(rho(seq = seq1, wordsize = 2)))
-    abline(h=1)
+    abline(h=1) # Add Straight Lines to a Plot
 
 [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
 
-```
-# Apply a Function over a List
-lapply(seqs, summary)
-sapply(seqs, summary)
-```
+    # Apply a Function over a List
+    lapply(seqs, summary)
+    sapply(seqs, summary)
 
-DNA配列の長さ、G+C含量、アノテーションのテーブルを作成する:  
-```
-# Apply a Function over a List
-Length <- sapply(seqs, length)
-GCcontent <- sapply(seqs, GC)
-Annotation <- unlist(getAnnot(seqs))
-df <- data.frame(Length, GCcontent, Annotation)
-```
+DNA配列の長さ、G+C含量、アノテーションのデータフレームを作成する:  
 
-[CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
+    # Apply a Function over a List
+    Length <- sapply(seqs, length) # Length of a DNA sequence
+    GCcontent <- sapply(seqs, GC) # GC Content of DNA
+    Annotation <- unlist(getAnnot(seqs)) # sequence annotations
 
-データのエクスポート。  
-`write.csv`関数でカンマ区切りファイルとして出力する:  
-`write.table`関数でタブ区切りファイルとして出力する:  
+    # data frame
+    df <- data.frame(Length, GCcontent, Annotation)
+    df
+
+[CSVやTSVを書き出す](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
+
+データのエクスポート。タブ区切り(TSV)やカンマ区切り(CSV)ファイルとして出力する:  
 
     # Exporting Data
-    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
     write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
+    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
 
     # open current working directory
     system("open .")
@@ -494,6 +486,7 @@ df <- data.frame(Length, GCcontent, Annotation)
 
     # Apply a Function over a List
     X <- sapply(seqs, rho, wordsize = 2)
+    X
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
@@ -501,11 +494,14 @@ df <- data.frame(Length, GCcontent, Annotation)
 # Exploring and Transforming Dataframes
 dim(X)
 colnames(X)
-colnames(X) <- getAnnot(seqs) # get sequence annotations
 
-# Substrings # e.g. "NC_003047.1 Si"
-#colnames(X) <- substr(getAnnot(seqs), 1, 14)
+# "NC_001477.1 Dengue virus 1, complete genome"
+#colnames(X) <- getAnnot(seqs) # get sequence annotations
 
+# "NC_001477.1 De"
+#colnames(X) <- substr(getAnnot(seqs), start=1, stop=14)
+
+# "NDv1cg"
 #colnames(X) <- sapply(getAnnot(seqs), function(x) paste0(substr(x = unlist(strsplit(x, split=" ")), start=1, stop=1), collapse="") )
 ```
 
@@ -516,13 +512,9 @@ colnames(X) <- getAnnot(seqs) # get sequence annotations
 
 [Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
-### References
+----------
 
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
-Genomes Download FAQ
-
-
-
+----------
 
 ----------
 ## NCBI GENOME_REPORTS
