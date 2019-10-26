@@ -340,17 +340,14 @@ Using the assembly summary report files
     table(d$assembly_level)
 
 #### [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
-顧みられない熱帯病
-- the Dengue virus, which causes Dengue fever
-- the Rabies virus, which causes Rabies
 
 Genomes Download FAQ
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 
-例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する細菌*Sinorhizobium meliloti*
+例えば、[デング熱](https://ja.wikipedia.org/wiki/デング熱)を引き起こすウイルス "Dengue virus"
 の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Dengue virus" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
