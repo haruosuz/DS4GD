@@ -306,8 +306,8 @@ Using the assembly summary report files
 
     # Download File from the Internet
     # Either the two master assembly summary files:
-    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt" # 53M
-    #ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt" # 150M
+    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt"
+    #ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt"
     download.file(url = ftp_path, destfile = basename(URLs))
 
 [ファイルからデータを読み込む](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/40.html)
@@ -315,8 +315,8 @@ Using the assembly summary report files
 データのインポート。`read.delim()`関数で、タブ区切り(TSV)ファイルを読み込む:  
 
     # Loading Data into R
-    filename <- "assembly_summary_refseq.txt"
-    #filename <- "assembly_summary_genbank.txt"
+    filename <- "assembly_summary_refseq.txt" # 53M
+    #filename <- "assembly_summary_genbank.txt" # 150M
     d <- read.delim(file=filename, skip=1, check.names=FALSE, stringsAsFactors=FALSE) 
 
 [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
@@ -353,7 +353,7 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
 
     # `grepl` returns a logical vector (match or not for each element of x).
     organism_name <- "Dengue virus"
-    #organism_name <- "Dengue virus|Rabies"
+    organism_name <- "Dengue virus|Rabies"
     TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & d$version_status == "latest" & grepl(pattern = "Complete Genome", x = d$assembly_level)
     d[TF,]
     d$ftp_path[TF]
