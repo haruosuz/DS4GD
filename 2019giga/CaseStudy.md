@@ -353,7 +353,8 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
     # `grepl` returns a logical vector (match or not for each element of x).
     organism_name <- "Dengue virus"
     organism_name <- "Dengue virus|Rabies"
-    TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & d$version_status == "latest" & grepl(pattern = "Complete Genome", x = d$assembly_level)
+    TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & 
+     d$version_status == "latest" & grepl(pattern = "Complete Genome", x = d$assembly_level)
     d[TF,]
     d$ftp_path[TF]
 
@@ -387,8 +388,9 @@ Genomes Download FAQ
     seqs <- list()
     library("seqinr") # Load the SeqinR package
     for (i in 1:length(lf)) seqs <- c(seqs, read.fasta(file=lf[i], seqtype="DNA", strip.desc=TRUE) )
-    
-    # get sequence information
+
+配列の数とアノテーションを確認する:
+
     length(seqs) # get the number of elements
     getName(seqs) # get sequence names
     getAnnot(seqs) # get sequence annotations
@@ -429,13 +431,12 @@ DNA配列の長さ、塩基組成、GC含量を計算する。
 [DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-words)
 
     # 2連続塩基含量（カウント）:  
-    # Counts the number of dinucleotides
+    # dinucleotide count
     count(seq = seq1, wordsize = 2)
 
 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
-    # 2連続塩基組成（観測値/期待値）:  
-    # over- and under- representation of dinucleotides
+    # dinucleotide relative abundance
     rho(seq = seq1, wordsize = 2)
 
 [棒グラフの描画](https://data-science.gr.jp/implementation/ida_r_barplot.html)
@@ -480,26 +481,31 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
     # open current working directory
     system("open .")
 
-複数のDNA配列の2連続塩基組成（観測値/期待値）を解析する:  
+複数のDNA配列のk連続塩基組成（観測値/期待値）を解析する:  
 
-    # Apply a Function over a List
-    # over- and under- representation of dinucleotides
-    X <- sapply(seqs, rho, wordsize = 2)
-    X
+    # oligonucleotide relative abundance
+     k = 2 # 2-mers or dinucleotide
+    #k = 3 # 3-mers or trinucleotide
+    #k = 4 # 4-mers or tetranucleotide
+    myrho <- sapply(seqs, rho, wordsize = k)
 
 [26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
 
     # Exploring and Transforming Dataframes
-    colnames(X)
+    # Dimensions of an Object
+    dim(myrho)
     
     # e.g. "NC_001477.1 Dengue virus 1, complete genome"
-    #colnames(X) <- getAnnot(seqs) # get sequence annotations
+    #colnames(myrho) <- getAnnot(seqs) # get sequence annotations
     
     # e.g. "NC_001477.1 De"
-    #colnames(X) <- substr(getAnnot(seqs), start=1, stop=14) # Substrings of a Character Vector
+    #colnames(myrho) <- substr(getAnnot(seqs), start=1, stop=14) # Substrings of a Character Vector
     
     # e.g. "NDv1cg"
     #colnames(X) <- sapply(getAnnot(seqs),function(x) paste0(substr(x=unlist(strsplit(x,split=" ")),1,1),collapse=""))
+
+    # Column Names
+    colnames(myrho)
 
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
