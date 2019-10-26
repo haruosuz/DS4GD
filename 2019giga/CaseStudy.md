@@ -432,26 +432,26 @@ DNA配列の2連続塩基含量（カウント）:
     # Composition of dimer/trimer/etc oligomers
     count(seq = seq1, wordsize = 2)
 
-### [Over-represented and under-represented DNA words](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#over-represented-and-under-represented-dna-words)
+### [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
 
 DNA配列の2連続塩基組成（観測値/期待値）:  
 
     # over- and under- representation of dinucleotides
     rho(seq = seq1, wordsize = 2)
 
-[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
-関数 par()
+[棒グラフの描画](https://data-science.gr.jp/implementation/ida_r_barplot.html)
 
-[50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
-棒グラフ：barplot()
-
-[51. 低水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/51.html)
-直線
-abline
-
-    par(family="mono", cex = 0.7)
+    # Creates a bar plot with a horizontal line
+    par(family="mono", cex = 0.7) # Set Graphical Parameters
     barplot(sort(rho(seq = seq1, wordsize = 2)))
     abline(h=1) # Add Straight Lines to a Plot
+
+- [53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
+関数 par()
+- [50. 高水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/50.html)
+棒グラフ barplot()
+- [51. 低水準作図関数](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/51.html)
+直線 abline
 
 [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
 
