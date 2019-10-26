@@ -343,9 +343,6 @@ Genomes Download FAQ
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 
 #### [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
-顧みられない熱帯病
-- the Dengue virus, which causes Dengue fever
-- the Rabies virus, which causes Rabies
 
 例えば、[デング熱](https://ja.wikipedia.org/wiki/デング熱)を引き起こすウイルス "Dengue virus"
 の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
