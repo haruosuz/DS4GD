@@ -304,7 +304,6 @@ Using the assembly summary report files
 [インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
     # Download File from the Internet
-    # Either the two master assembly summary files:
     ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt"
     #ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt"
     download.file(url = ftp_path, destfile = basename(URLs))
@@ -321,7 +320,6 @@ Using the assembly summary report files
 [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
 
     # Exploring and Transforming Dataframes
-    
     # 行数・列数の参照
     # Dimensions of an Object
     dim(d)
