@@ -261,9 +261,8 @@ The NCBI accession for the DNA sequence of "Dengue virus 1, complete genome" is 
 
 ## NCBI ASSEMBLY_REPORTS
 NCBIのゲノム配列のメタデータが記載されている。
-
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt>
 ```
+# ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
 The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
 assembly_summary_genbank.txt            - current GenBank genome assemblies
 assembly_summary_refseq.txt             - current RefSeq genome assemblies
@@ -287,66 +286,75 @@ Rの起動 [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
     WorkingDirectory <- "~/projects/data/ncbi/assembly_reports"
-
+    
     # Invoke a System Command
     system( paste0("mkdir -p ",WorkingDirectory) )
-
+    
     # Set and Get Working Directory
     setwd(WorkingDirectory)
     getwd()
-
+    
     # List the Files in a Directory
     list.files()
 
+Genomes Download FAQ
+[How can I find the sequence and annotation of my genome of interest?](http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind)
+Using the assembly summary report files
+
 [インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
-```
-# Download File from the Internet
-URLs <- c("ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt",
-          "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt")
-download.file(url = URLs, destfile = basename(URLs))
-```
+    # Download File from the Internet
+    # Either the two master assembly summary files:
+    ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq.txt" # 53M
+    #ftp_path <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_genbank.txt" # 150M
+    download.file(url = ftp_path, destfile = basename(URLs))
 
-[Ｒ言語のデータの入出力と編集](https://www.cis.doshisha.ac.jp/mjin/R/02.html)
+[ファイルからデータを読み込む](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/40.html)
 
 データのインポート。`read.delim()`関数でタブ区切りファイルを読み込む:  
 
     # Loading Data into R
-     filename <- "assembly_summary_refseq.txt"   # 53M
-    #filename <- "assembly_summary_genbank.txt" # 150M
-    d <- read.delim(file = filename, stringsAsFactors = FALSE, check.names = FALSE, skip = 1) 
+    filename <- "assembly_summary_refseq.txt"
+    #filename <- "assembly_summary_genbank.txt"
+    d <- read.delim(file=filename, skip=1, check.names=FALSE, stringsAsFactors=FALSE) 
 
-- [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
-
-行と列の数、列名、先頭部分の確認:  
+[R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
 
     # Exploring and Transforming Dataframes
+    
+    # 行数・列数の参照
+    # Dimensions of an Object
     dim(d)
-    head(d, n = 1)
+    
+    # 列名の参照・変更
+    # Column Names
     colnames(d)
     colnames(d)[1] <- "assembly_accession"
-
-    table(d$refseq_category)
+    
+    # Return the First or Last Part of an Object
+    head(d, n = 1)
+    tail(d, n = 1)
+    
+    # Cross Tabulation
     table(d$assembly_level)
+
+Genomes Download FAQ
+[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
-生物名`organism_name`で検索する。
-例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する種*Sinorhizobium meliloti*
+例えば、[シノリゾビウム属](https://ja.wikipedia.org/wiki/シノリゾビウム属)に属する細菌*Sinorhizobium meliloti*
 の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
 
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Sinorhizobium meliloti" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
 
     # `grepl` returns a logical vector (match or not for each element of x).
-    organism_name <- "Sinorhizobium meliloti"
-    organism_name <- "Sinorhizobium meliloti 1021|Deinococcus radiodurans R1"
-    #organism_name <- "Ebolavirus" # https://www.ncbi.nlm.nih.gov/nuccore/NC_002549.1
-    #organism_name <- "Dengue virus" # https://www.ncbi.nlm.nih.gov/nuccore/NC_001477
-    #organism_name <- "Mycobacterium leprae TN" # https://www.ncbi.nlm.nih.gov/nuccore/NC_002677.1
-    #organism_name <- "Loxodonta africana" # 957M # GCA_000001905.1_Loxafr3.0_genomic.fna.gz
+    organism_name <- "Sinorhizobium meliloti 1021"
+    #organism_name <- "Dengue virus"
+    #organism_name <- "Mycobacterium leprae TN"
+    #organism_name <- "Ebolavirus"
     #organism_name <- "elephant "
     TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & grepl(pattern = "Complete Genome", x = d$assembly_level) & d$version_status == "latest"
-    #TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & grepl(pattern = "Complete Genome", x = d$assembly_level) & d$version_status == "latest" & grepl(pattern = "reference|representative", x = d$refseq_category) 
     d[TF,]
     d$ftp_path[TF]
 
@@ -354,21 +362,22 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
 
 Open the URL with your browser (Firefox or Chrome). Right click the link *README.txt*, and select "Copy Link Address".
 
+Genomes Download FAQ
 [What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
 
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt>
 ```
+# ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+
    *_genomic.fna.gz file
        FASTA format of the genomic sequence(s) in the assembly.
 ```
 
 [インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
-```
-# Download File from the Internet
-filesuffix <- "_genomic.fna.gz"
-URLs <- sapply(d$ftp_path[TF], function(x) paste0(x, "/", unlist(strsplit(x, split="/"))[10], filesuffix ) )
-download.file(url = URLs, destfile = basename(URLs))
-```
+
+    # Download File from the Internet
+    filesuffix <- "_genomic.fna.gz"
+    URLs <- sapply(d$ftp_path[TF], function(x) paste0(x, "/", unlist(strsplit(x, split="/"))[10], filesuffix ) )
+    download.file(url = URLs, destfile = basename(URLs))
 
 ### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 #### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
@@ -381,7 +390,7 @@ download.file(url = URLs, destfile = basename(URLs))
 lf <- basename(URLs)
 library("seqinr") # Load the SeqinR package
 seqs <- list()
-for (i in 1:length(lf)) seqs <- c(seqs, read.fasta(file = lf[i], seqtype = c("DNA"), strip.desc = TRUE) )
+for (i in 1:length(lf)) seqs <- c(seqs, read.fasta(file=lf[i], seqtype="DNA", strip.desc=TRUE) )
 
 length(seqs) # get the number of elements
 getName(seqs) # get sequence names
@@ -401,9 +410,9 @@ getAnnot(seqs) # get sequence annotations
 作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
 
     # quit and restart R
-    setwd("~/projects/data/ncbi/assembly_reports")					# Set Working Directory
-    library(seqinr)									# Load the SeqinR package
-    seqs <- read.fasta(file = "mySequences.fna", seqtype = c("DNA"), strip.desc = TRUE)	# Reading sequence data
+    setwd("~/projects/data/ncbi/assembly_reports") # Set Working Directory
+    library(seqinr) # Load the SeqinR package
+    seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
 
 リスト`seqs`の1番目の要素を変数`seq1`に代入する:  
 
@@ -512,40 +521,6 @@ colnames(X) <- getAnnot(seqs) # get sequence annotations
 https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/
 Genomes Download FAQ
 
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#protocols
-2. What is the best protocol to use to download large data sets?
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files
-11. What is the file content within each specific assembly directory?
-
-*_cds_from_genomic.fna.gz
-FASTA format of the nucleotide sequences corresponding to all CDS features annotated on the assembly, based on the genome sequence.
-
-*_genomic.fna.gz
-FASTA format of the genomic sequence(s) in the assembly. 
-
-*_genomic.gbff.gz
-GenBank flat file format of the genomic sequence(s) in the assembly. 
-
-*_protein.faa.gz
-FASTA format of the accessioned protein products annotated on the genome assembly.
-
-http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind
-12. How can I find the sequence and annotation of my genome of interest?
-
-Using the assembly summary report files
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#current
-14. How can I download only the current version of each assembly?
-
-Use either of the two master assembly summary files, or the assembly_summary.txt file for the species or taxonomic group of interest (see above), select those assemblies that are marked as "latest" in the version_status column (11), and then use the FTP path indicated in column 20 to download the data.
-
-https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete
-15. How can I download RefSeq data for all complete bacterial genomes?
-
-Append the filename of interest, in this case "*_genomic.gbff.gz" to the FTP directory names. One way to do this would be using the following awk command:
-
-	awk 'BEGIN{FS=OFS="/";filesuffix="genomic.gbff.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' ftpdirpaths > ftpfilepaths
 
 
 
