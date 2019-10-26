@@ -274,11 +274,11 @@ assembly_summary_refseq.txt             - current RefSeq genome assemblies
 
 NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
-*assembly_summary_genbank.txt* または *assembly_summary_refseq.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
+*assembly_summary_refseq.txt* または *assembly_summary_genbank.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
 
 Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
 Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
-Right click the link *assembly_summary_genbank.txt* or *assembly_summary_refseq.txt*, and select "Copy Link Address".
+Right click the link *assembly_summary_refseq.txt* or *assembly_summary_genbank.txt*, and select "Copy Link Address".
 
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
