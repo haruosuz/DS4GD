@@ -260,14 +260,22 @@ The NCBI accession for the DNA sequence of "Dengue virus 1, complete genome" is 
 
 ## NCBI ASSEMBLY_REPORTS
 
-NCBIのゲノム配列のメタデータが記載されている *assembly_summary* ファイルを使用して、目的のゲノムの配列とアノテーションを見つける。
+NCBIのゲノム配列のメタデータが記載されている *assembly_summary* ファイルを用いて、目的のゲノム配列を見つける。
 
 Genomes Download FAQ
 [How can I find the sequence and annotation of my genome of interest?](http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind)
 Using the assembly summary report files
 
+NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
+*README_assembly_summary.txt* をクリックする。
+
+Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
+Click the link *README_assembly_summary.txt*.
+
 ```
-# ftp://ftp.ncbi.nlm.nih.gov/genomes/README_assembly_summary.txt
+# ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/README_assembly_summary.txt
 The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
 assembly_summary_genbank.txt            - current GenBank genome assemblies
 assembly_summary_refseq.txt             - current RefSeq genome assemblies
@@ -276,14 +284,6 @@ assembly_summary_refseq.txt             - current RefSeq genome assemblies
 - April 9, 2018 [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
 - 2018-10-23 [RefSeq - JI](http://fish-evol.org/RefSeq.html) 井上 潤
 - 2017.03.12 [RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース](https://bi.biopapyrus.jp/db/refseq.html)
-
-NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
-*assembly_summary_refseq.txt* または *assembly_summary_genbank.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
-Right click the link *assembly_summary_refseq.txt* or *assembly_summary_genbank.txt*, and select "Copy Link Address".
 
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
