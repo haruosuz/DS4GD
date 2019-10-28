@@ -322,19 +322,22 @@ Rの起動
 [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
 
     # Exploring and Transforming Dataframes
+
     # 行数・列数の参照
     # Dimensions of an Object
     dim(d)
-    
+
+    # 先頭と末尾の表示
+    # Return the First or Last Part of an Object
+    head(d, n = 1)
+    tail(d, n = 1)
+
     # 列名の参照・変更
     # Column Names
     colnames(d)
     colnames(d)[1] <- "assembly_accession"
     
-    # Return the First or Last Part of an Object
-    head(d, n = 1)
-    tail(d, n = 1)
-    
+    # クロス集計
     # Cross Tabulation
     table(d$assembly_level)
 
@@ -344,7 +347,7 @@ Genomes Download FAQ
 #### [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 
 例えば、[デング熱](https://ja.wikipedia.org/wiki/デング熱)を引き起こすウイルス "Dengue virus"
-の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する:  
+の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する
 
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Dengue virus" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
 
@@ -367,7 +370,6 @@ Genomes Download FAQ
 
 ```
 # ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
-
    *_genomic.fna.gz file
        FASTA format of the genomic sequence(s) in the assembly.
 ```
@@ -392,7 +394,6 @@ Genomes Download FAQ
 配列の数とアノテーションを確認する:
 
     length(seqs) # get the number of elements
-    getName(seqs) # get sequence names
     getAnnot(seqs) # get sequence annotations
 
 #### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
@@ -486,7 +487,6 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
     # oligonucleotide relative abundance
      k = 2 # 2-mers or dinucleotide
     #k = 3 # 3-mers or trinucleotide
-    #k = 4 # 4-mers or tetranucleotide
     myrho <- sapply(seqs, rho, wordsize = k)
 
 [列名の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-4)
