@@ -260,19 +260,13 @@ The NCBI accession for the DNA sequence of "Dengue virus 1, complete genome" is 
 
 ## NCBI ASSEMBLY_REPORTS
 
-NCBIのゲノム配列のメタデータが記載されている *assembly_summary* ファイルを用いて、目的のゲノム配列を見つける。
-
+NCBIのゲノム配列のメタデータが記載されている *assembly_summary* ファイルを用いて、目的のゲノム配列を見つける。  
 Genomes Download FAQ
 [How can I find the sequence and annotation of my genome of interest?](http://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind)
 Using the assembly summary report files
 
-NCBIウェブサイト (https://www.ncbi.nlm.nih.gov) にアクセスし、右下のリンク"NCBI FTP Site"をクリックして開く。  
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。  
-*README_assembly_summary.txt* をクリックする。
-
-Go to the NCBI website (https://www.ncbi.nlm.nih.gov), and then click the link "NCBI FTP Site".   
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome).  
-Click the link *README_assembly_summary.txt*.
+URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。*README_assembly_summary.txt* をクリックする。  
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome). Click the link *README_assembly_summary.txt*.
 
 ```
 # ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/README_assembly_summary.txt
@@ -346,10 +340,7 @@ Genomes Download FAQ
 
 #### [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 
-例えば、[デング熱](https://ja.wikipedia.org/wiki/デング熱)を引き起こすウイルス "Dengue virus"
-の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する
-
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Dengue virus" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12)
+例えば、[デング熱](https://ja.wikipedia.org/wiki/デング熱)を引き起こすウイルス "Dengue virus" の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Dengue virus" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
@@ -361,8 +352,7 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
     d[TF,]
     d$ftp_path[TF]
 
-抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
+抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 Open the URL with your browser (Firefox or Chrome). Right click the link *README.txt*, and select "Copy Link Address".
 
 Genomes Download FAQ
