@@ -370,7 +370,7 @@ Genomes Download FAQ
     # Download File from the Internet
     filesuffix <- "_genomic.fna.gz"
     URLs <- sapply(d$ftp_path[TF], function(x) paste0(x, "/", unlist(strsplit(x, split="/"))[10], filesuffix ) )
-    download.file(url = URLs, destfile = basename(URLs))
+    download.file(url = URLs, destfile = basename(URLs), method = "libcurl")
 
 #### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
 
