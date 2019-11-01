@@ -165,7 +165,7 @@ ACCESSION <- "NC_001477" # Dengue virus 1
 #ACCESSION <- "NC_003037.1" # Sinorhizobium meliloti 1021 plasmid pSymA
 # TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
 filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
-seqs <- read.fasta(file = filename, seqtype = c("DNA"), strip.desc = TRUE)
+seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
 seq1 <- seqs[[1]]
 ```
 
@@ -522,6 +522,9 @@ Using oligonucleotide (k-mer) frequency as genomic signature
 [DDBJ タンパク質コード配列; CDS feature について](https://www.ddbj.nig.ac.jp/ddbj/cds.html) |
 [DDBJ Protein Coding Sequence; CDS feature](https://www.ddbj.nig.ac.jp/ddbj/cds-e.html)
 
+### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+Rの起動
+
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
     # Set Working Directory
@@ -535,109 +538,153 @@ Using oligonucleotide (k-mer) frequency as genomic signature
 - NCBI [Genome List](https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/)
   - [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
 
-大腸菌K-12株の遺伝子（CDS）の塩基配列データをNCBIから取得する:
-```
-# Retrieving sequence data from NCBI
-library("seqinr") # Loading seqinr package
-ACCESSION <- "NC_000913" # Escherichia coli str. K-12 substr. MG1655
+タンパク質コード配列（CDS）のデータをNCBIから取得する:  
+Retrieving Protein Coding Sequence (CDS) data from NCBI:  
 
-# Nucleotide FASTA file of all CDSs
-seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype="DNA", strip.desc=TRUE)
+    # Retrieving sequence data using SeqinR
+    library("seqinr") # Loading seqinr package
+    ACCESSION <- "NC_000913" # Escherichia coli str. K-12 substr. MG1655
+    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype="DNA", strip.desc=TRUE)
 
-# 配列の数をカウントする:  
-# get the number of elements
-length(seqs)
-
-# 配列のアノテーションを取得する:  
-# get sequence annotations
-head(getAnnot(seqs), 2)
-
-# 配列データをFASTA形式ファイルとして書き出す:  
-# Writing sequence data out as a FASTA file
-write.fasta(sequences=seqs, names=getAnnot(ffn), file.out=paste0(ACCESSION,".ffn"))
-```
-
-```
-filename <- paste0(ACCESSION,".ffn")
-ffn <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
-```
-
-
-- [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
-
-`sapply()`関数は、リストの各要素に関数を適用する。  
-タンパク質コード配列（CDS）の長さ、G+C含量、アノテーションのテーブルを作成する:  
-```
-# Apply a Function over a List
-Length <- sapply(ffn, length)
-GCcontent <- sapply(ffn, GC) # Global G+C content
-GCp3 <- sapply(ffn, GC3) # G+C at 3rd codon position
-Annotation <- sub(pattern=".+\\[locus_tag=(.+)\\] \\[protein=(.+)\\] (\\[(protein_id|pseudo)=(.+)) \\[location=.+", replacement="\\1 \\2 \\3", getAnnot(ffn))
-df <- data.frame(Length, GCcontent, GCp3, Annotation)
-```
-
-- [CSVやTSVで出力](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
-
-データのエクスポート。  
-`write.csv`関数でカンマ区切りファイルとして出力する:  
-`write.table`関数でタブ区切りファイルとして出力する:  
-
-    # Exporting Data
-    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
-    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
+    # Writing sequence data out as a FASTA file
+    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out=paste0(ACCESSION,".ffn"))
 
     # open current working directory
     system("open .")
 
-- [R – データフレームの参照・変更](http://taustation.com/r-datafrrame-display-modification/)
-  - [データフレームの要素の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-5)
+    # Reading sequence data into R
+    library("seqinr") # Loading seqinr package
+    filename <- paste0(ACCESSION,".ffn")
+    #filename <- "NC_000913.ffn"
+    seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
 
-行と列の数、列名、先頭部分の確認:  
-```
-# Exploring and Transforming Dataframes
-dim(df)
-colnames(df)
-head(df, n=1)
+配列の数とアノテーションを確認する:  
 
-# データフレームの要素の参照
-df[, c("Length", "GCcontent", "GCp3")]
-df[, 1:3]
-( val <- df[, -4] )
-```
+    # get the number of elements
+    length(seqs)
+
+    # get sequence annotations
+    # Return the First or Last Part of an Object
+    head(getAnnot(seqs), n = 1)
+    tail(getAnnot(seqs), n = 3)
+
+[applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
+
+DNA配列の長さ、GC含量、アノテーションのデータフレームを作成する:  
+
+    # Apply a Function over a List
+    Length <- sapply(seqs, length) # Length of a DNA sequence
+    GCcontent <- sapply(seqs, GC) # Global G+C content
+    GCpos1 <- sapply(seqs, GCpos, pos=1) # G+C in the first position of the codon bases GC1
+    GCpos2 <- sapply(seqs, GCpos, pos=2) # G+C in the second position of the codon bases GC2
+    GCpos3 <- sapply(seqs, GCpos, pos=3) # G+C in the third position of the codon bases GC3
+
+    # data frame
+    df <- data.frame(Length, GCcontent, GCpos1, GCpos2, GCpos3)
+    head(df)
+
+[CSVやTSVを書き出す](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
+
+データのエクスポート。タブ区切り(TSV)やカンマ区切り(CSV)ファイルとして出力する:  
+
+    # Exporting Data
+    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
+    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
+
+    # open current working directory
+    system("open .")
 
 - https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 
 `summary()`関数でデータフレームの列を要約する。  
 CDSの要約統計量（最小値、中央値、最大値など）を求める:  
 
-    summary(val)
-
-[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
-フォント・ファミリーを指定する．
-
-    par(family="mono")
+    # Generic function for Object Summaries
+    summary(df)
 
 [R | R を利用した統計解析およびデータの視覚化](https://stats.biopapyrus.jp/r/)
 
-    plot(val)
+[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
+フォント・ファミリーを指定する
 
-[pairs.panels](https://github.com/haruosuz/r4bioinfo/blob/master/R_memo/R_plot.md#pairspanels)
+    # setting font in plots
+    par(family="mono")
 
-```
-#install.packages("psych")
-library(psych)
-pairs.panels(val)
-```
+    # Generic function for plotting of R objects
+    plot(df)
 
-- 2019年5月16日[【合成生物学】大腸菌の遺伝コードを圧縮する](https://www.natureasia.com/ja-jp/nature/pr-highlights/12951)
-[Total synthesis of Escherichia coli with a recoded genome | Nature](https://www.nature.com/articles/s41586-019-1192-5)
+    # histograms and correlations for a data matrix
+    #install.packages("psych")
+    library(psych)
+    pairs.panels(df)
 
-```
-# to plot genetic code as in textbooks
-tablecode()
-```
+遺伝暗号 [Genetic code](https://en.wikipedia.org/wiki/Genetic_code) | [Genetic Codes - NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi)
+
+    # to plot genetic code as in textbooks
+    tablecode()
 
 ### codon usage
+
+    #install.packages("vhica")
+    library(vhica)
+    CUB(sequence = seqs[1:2], method = "ENC")
+    #ENC <- CUB(sequence = seqs, method = "ENC")
+
+
+
+https://bioconductor.org/packages/release/bioc/html/sscu.html
+Bioconductor - sscu
+
+To install this package, start R and enter:
+```
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("sscu")
+```
+
+
+
+
+library(sscu)
+s_index
+
+library(help = sscu)     # documentation on package 'sscu'
+
+
+
+> install.packages("sscu")Warning in install.packages :  package ‘sscu’ is not available (for R version 3.6.1)> 
+
+
+
+
+https://www.ncbi.nlm.nih.gov/pubmed/30965565
+Viruses. 2019 Apr 8;11(4). pii: E331. doi: 10.3390/v11040331.
+Codon Usage Bias Analysis of Citrus tristeza Virus: Higher Codon Adaptation to Citrus reticulata Host.
+Biswas KK1, Palchoudhury S2, Chakraborty P3, Bhattacharyya UK4, Ghosh DK5, Debnath P6, Ramadugu C7, Keremane ML8, Khetarpal RK9, Lee RF10.
+
+https://www.ncbi.nlm.nih.gov/pubmed/29551886
+Evol Bioinform Online. 2018 Mar 9;14:1176934318761368. doi: 10.1177/1176934318761368. eCollection 2018.
+Evolution of Synonymous Codon Usage Bias in West African and Central African Strains of Monkeypox Virus.
+Karumathil S1, Raveendran NT2, Ganesh D3, Kumar Ns S4, Nair RR1, Dirisala VR4.
+
+https://www.ncbi.nlm.nih.gov/pubmed/30110957
+Int J Mol Sci. 2018 Aug 14;19(8). pii: E2397. doi: 10.3390/ijms19082397.
+Comprehensive Analysis of Codon Usage on Rabies Virus and Other Lyssaviruses.
+Zhang X1, Cai Y2, Zhai X3, Liu J4, Zhao W5, Ji S6, Su S7, Zhou J8.
+
+https://www.ncbi.nlm.nih.gov/pubmed/25445348
+Virus Res. 2015 Jan 22;196:87-93. doi: 10.1016/j.virusres.2014.11.005. Epub 2014 Nov 14.
+Genome-wide analysis of codon usage bias in Ebolavirus.
+Cristina J1, Moreno P2, Moratorio G3, Musto H4.
+
+https://www.ncbi.nlm.nih.gov/pubmed/21450075
+Virol J. 2011 Mar 30;8:146. doi: 10.1186/1743-422X-8-146.
+Analysis of codon usage and nucleotide composition bias in polioviruses.
+Zhang J1, Wang M, Liu WQ, Zhou JH, Chen HT, Ma LN, Ding YZ, Gu YX, Liu YS.
+
+
+
 
 
 
@@ -694,6 +741,9 @@ write.csv(df.uco.high[order(df.uco.high$AA),], file="table.uco.high.csv", quote=
 # open current working directory
 system("open .")
 ```
+
+
+
 
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
