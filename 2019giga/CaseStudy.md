@@ -296,6 +296,7 @@ Rの起動
     
     # List the Files in a Directory
     list.files()
+    dir()
 
 [インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
@@ -382,7 +383,7 @@ Genomes Download FAQ
     library("seqinr") # Load the SeqinR package
     for (i in 1:length(lf)) seqs <- c(seqs, read.fasta(file=lf[i], seqtype="DNA", strip.desc=TRUE) )
 
-配列の数とアノテーションを確認する:
+配列の数とアノテーションを確認する:  
 
     length(seqs) # get the number of elements
     getAnnot(seqs) # get sequence annotations
@@ -414,19 +415,21 @@ Genomes Download FAQ
 [Base composition of a DNA sequence](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#base-composition-of-a-dna-sequence)  
 [GC Content of DNA](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#gc-content-of-dna)  
 
-DNA配列の長さ、塩基組成、GC含量を計算する。
+DNA配列の統計（長さ、塩基組成、GC含量）を計算する:  
 
-    # データの要約:  
-    # Object Summaries
+    # `summary` function to calculate DNA Sequence Statistics (length, composition, GC)
     summary(seq1)
 
 [DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-words)
 
-    # 2連続塩基含量（カウント）:  
+DNA配列の2連続塩基含量（カウント）:  
+
     # dinucleotide count
     count(seq = seq1, wordsize = 2)
 
 [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+
+DNA配列の2連続塩基組成（観測値/期待値）:  
 
     # dinucleotide relative abundance
     rho(seq = seq1, wordsize = 2)
@@ -473,12 +476,10 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
     # open current working directory
     system("open .")
 
-複数のDNA配列のk連続塩基組成（観測値/期待値）を解析する:  
+複数のDNA配列の2連続塩基組成（観測値/期待値）を解析する:  
 
-    # oligonucleotide relative abundance
-     k = 2 # 2-mers or dinucleotide
-    #k = 3 # 3-mers or trinucleotide
-    myrho <- sapply(seqs, rho, wordsize = k)
+    # dinucleotide relative abundance
+    myrho <- sapply(seqs, rho, wordsize = 2)
 
 [列名の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-4)
 
@@ -514,7 +515,195 @@ Using oligonucleotide (k-mer) frequency as genomic signature
 
 ----------
 
+## NCBI RefSeq Release
+
+URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。  
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> with your browser (Firefox or Chrome). Click the link *README*.
+
+Sequence data is available in the following directories:
+
+        ftp://ftp.ncbi.nih.gov/refseq/release/mitochondrion/
+        ftp://ftp.ncbi.nih.gov/refseq/release/viral/
+
+*viral.1.1.genomic.fna.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Right click the link *viral.1.1.genomic.fna.gz*, and select "Copy Link Address".
+
+### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+Rの起動
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    # Set Working Directory
+    WorkingDirectory <- "~/projects/data/ncbi/refseq_release" # assign a value to a variable
+    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+    dir() # List the Files in a Directory
+
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
+
+    # Download File from the Internet
+    name <- "viral"
+    #name <- "mitochondrion"
+    filesuffix <- "genomic.fna.gz"
+    #name <- "plasmid"; filesuffix <- "rna.fna.gz"
+    url <- paste0("ftp://ftp.ncbi.nlm.nih.gov/refseq/release/", name, "/", name, ".*.", filesuffix)
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.*.genomic.fna.gz"
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.*.genomic.fna.gz"
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.rna.fna.gz"
+    destfile = paste0(name, ".", filesuffix)
+    download.file(url = url, destfile = destfile, method = "wget")
+
+    # open current working directory
+    system("open .")
+
+#### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
+
+配列データを読み込む:  
+
+    library(seqinr) # Load the SeqinR package
+    filename <- destfile
+    #filename <- "plasmid.rna.fna.gz"
+    #filename <- "viral.genomic.fna.gz"
+    #filename <- "mitochondrion.genomic.fna.gz"
+    seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+
+    length(seqs)# get the number of elements
+
+配列のアノテーションを取得する:  
+
+    # get sequence annotations
+    myAnnot <- getAnnot(seqs)
+    head(myAnnot)
+
+[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
+
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    # grepl returns a logical vector (match or not for each element of x)
+    pattern <- "bornavirus|disease virus" # "viral.genomic.fna.gz"
+    #pattern <- "Mammuthus|Elephas|Loxodonta africana" # "mitochondrion.genomic.fna.gz"
+    #pattern <- "ribosomal RNA" # "plasmid.rna.fna.gz"
+    TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
+    sum(TF)
+    myAnnot[TF]
+
+#### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
+
+配列データをFASTA形式ファイルとして書き出す:  
+
+	# write the sequences to a FASTA-format file
+    write.fasta(sequences=seqs[TF], names=myAnnot[TF], file.out="mySequences.fna")
+
+作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+
+    # quit and restart R
+    setwd("~/projects/data/ncbi/refseq_release") # Set Working Directory
+    library(seqinr) # Load the SeqinR package
+    seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+
+配列の数とアノテーションを確認する:  
+
+    length(seqs) # get the number of elements
+    unlist(getAnnot(seqs)) # get sequence annotations
+
+#### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
+[Length of a DNA sequence](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#length-of-a-dna-sequence)  
+[Base composition of a DNA sequence](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#base-composition-of-a-dna-sequence)  
+[GC Content of DNA](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#gc-content-of-dna)  
+
+[applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
+
+DNA配列の統計（長さ、塩基組成、GC含量）を計算する:  
+
+    # Apply a Function over a List
+    # `summary` function to calculate DNA Sequence Statistics (length, composition, GC)
+    lapply(seqs, summary)
+    sapply(seqs, summary)
+
+#### [Over-represented and under-represented DNA words](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words)
+
+DNA配列のk連続塩基組成（観測値/期待値）を解析する:  
+
+    # oligonucleotide relative abundance
+     k = 2 # 2-mers or dinucleotide
+    #k = 3 # 3-mers or trinucleotide
+    #k = 4 # 4-mers or tetranucleotide
+    myrho <- sapply(seqs, rho, wordsize = k)
+
+[列名の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-4)
+
+    # Column Names
+    colnames(myrho)
+    colnames(myrho) <- sapply(getAnnot(seqs),function(x) paste0(substr(x=unlist(strsplit(x,split=" ")),1,1),collapse=""))
+    colnames(myrho)
+
+ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+
+    # Draw a Heat Map
+    heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+
+
+
 ----------
+
+## [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#e-utilities)
+The Entrez Programming Utilities (E-utilities)
+
+### [NCBI Genome List](#ncbi-genome-list)
+Searching for sequence data in the NCBI database http://www.ncbi.nlm.nih.gov/genome/browse/
+- [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
+- [Sinorhizobium meliloti 1021](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)
+- [Mammuthus primigenius (woolly mammoth)](https://www.ncbi.nlm.nih.gov/genome/6934?genome_assembly_id=37154)
+
+### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+Rの起動
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    # Set Working Directory
+    WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
+    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+    dir() # List the Files in a Directory
+
+複数のDNA配列をNCBIから取得する:  
+
+    # Retrieving a list of DNA sequences from NCBI
+
+    # Load the SeqinR package
+    library("seqinr")
+
+    # create a function to retrieve several nucleotide sequences from NCBI
+    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype="DNA", strip.desc=TRUE)[[1]]
+
+    # Make a vector containing NCBI GenBank/RefSeq accessions
+    ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") # Sinorhizobium meliloti 1021
+    ACCESSIONs <- c("NC_001542.1", "NC_001477.1", "NC_002640.1", "NC_001475.2", "NC_001474.2") # "Dengue virus|Rabies"
+
+    # Retrieve the sequences and store them in list variable "seqs"
+    seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
+
+	# write the sequences to a FASTA-format file
+    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar=80)
+
+    # open current working directory
+    system("open .")
+
+作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+
+    # quit and restart R
+    setwd("~/projects/data/ncbi/eutils") # Set Working Directory
+    library(seqinr) # Load the SeqinR package
+    seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+
+配列の数とアノテーションを確認する:  
+
+    length(seqs) # get the number of elements
+    getAnnot(seqs) # get sequence annotations
+
+
+
+
+
 
 ----------
 
@@ -533,9 +722,7 @@ Rの起動
     setwd(WorkingDirectory); getwd() # Set and Get Working Directory
     dir() # List the Files in a Directory
 
-### [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#e-utilities)
-
-- NCBI [Genome List](https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/)
+- [NCBI Genome List](#ncbi-genome-list)
   - [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
 
 タンパク質コード配列（CDS）のデータをNCBIから取得する:  
@@ -805,7 +992,7 @@ system("open .")
 [転移酵素](https://ja.wikipedia.org/wiki/転移酵素) "transferase" と、機能が不明なタンパク質 "hypothetical protein" を抽出する:  
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
-    # grepl returns a logical vector (match or not for each element of x).
+    # grepl returns a logical vector (match or not for each element of x)
     pattern <- "transferase|hypothetical.protein"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     #TF <- !grepl(pattern = "hypothetical.protein", x = myAnnot, ignore.case = TRUE)
