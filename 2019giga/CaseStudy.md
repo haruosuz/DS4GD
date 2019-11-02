@@ -516,9 +516,6 @@ Sequence data is available in the following directories:
         ftp://ftp.ncbi.nih.gov/refseq/release/mitochondrion/
         ftp://ftp.ncbi.nih.gov/refseq/release/viral/
 
-*viral.1.1.genomic.fna.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
-Right click the link *viral.1.1.genomic.fna.gz*, and select "Copy Link Address".
-
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
 
