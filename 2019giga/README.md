@@ -19,6 +19,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 [Calendar for Fall Semester 2019](https://www.sfc.keio.ac.jp/doc/19f_calendar_e.pdf) |
 [2019年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/19f_calendar_j.pdf)
 
+- [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
 - 2019-09-24 No. 1 - イントロダクション [Introduction](#introduction)
 - 2019-10-01 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
   - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
@@ -27,8 +28,8 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
   - Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
 - 2019-10-15 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2019-10-22 *即位礼【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2019-10-29 No. 5 - [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-assembly_reports)
-- 2019-11-05 No. 6 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
+- 2019-10-29 No. 5 - Case Study [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-assembly_reports)
+- 2019-11-05 No. 6 - Case Study [NCBI RefSeq Release](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-refseq-release)
 - 2019-11-12 No. 7 - 中間発表 [interim report](#interim-report)
   - タンパク質データベース [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
 - 2018-11-19 *午前：前半科目追試 | 午後：三田祭準備 [Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
