@@ -31,7 +31,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2019-10-29 No. 5 - Case Study [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-assembly_reports)
 - 2019-11-05 No. 6 - Case Study [NCBI RefSeq Release](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-refseq-release)
 - 2019-11-12 No. 7 - 中間発表 [interim report](#interim-report)
-  - タンパク質データベース [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
+  - タンパク質データベース [Protein sequence database](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
 - 2018-11-19 *午前：前半科目追試 | 午後：三田祭準備 [Preparation for Mita Festival](http://www.gakuji.keio.ac.jp/en/calendar.html)*
 - 2019-11-26 No. 8 - [Guest Speaker](#guest-speaker)
 - 2019-12-03 No. 9 - [Guest Speaker](#guest-speaker)
