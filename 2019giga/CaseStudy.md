@@ -536,11 +536,7 @@ Rの起動
     name <- "viral"
     #name <- "mitochondrion"
     filesuffix <- "genomic.fna.gz"
-    #name <- "plasmid"; filesuffix <- "rna.fna.gz"
     url <- paste0("ftp://ftp.ncbi.nlm.nih.gov/refseq/release/", name, "/", name, ".*.", filesuffix)
-    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.*.genomic.fna.gz"
-    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.*.genomic.fna.gz"
-    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.rna.fna.gz"
     destfile = paste0(name, ".", filesuffix)
     download.file(url = url, destfile = destfile, method = "wget")
 
@@ -553,7 +549,6 @@ Rの起動
 
     library(seqinr) # Load the SeqinR package
     filename <- destfile
-    #filename <- "plasmid.rna.fna.gz"
     #filename <- "viral.genomic.fna.gz"
     #filename <- "mitochondrion.genomic.fna.gz"
     seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE) # Reading sequence data
@@ -570,9 +565,8 @@ Rの起動
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x)
-    pattern <- "bornavirus|disease virus" # "viral.genomic.fna.gz"
+    pattern <- "Dengue virus|Rabies" # "viral.genomic.fna.gz"
     #pattern <- "Mammuthus|Elephas|Loxodonta africana" # "mitochondrion.genomic.fna.gz"
-    #pattern <- "ribosomal RNA" # "plasmid.rna.fna.gz"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     sum(TF)
     myAnnot[TF]
@@ -597,9 +591,6 @@ Rの起動
     unlist(getAnnot(seqs)) # get sequence annotations
 
 #### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
-[Length of a DNA sequence](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#length-of-a-dna-sequence)  
-[Base composition of a DNA sequence](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#base-composition-of-a-dna-sequence)  
-[GC Content of DNA](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#gc-content-of-dna)  
 
 [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
 
@@ -625,7 +616,6 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
     # Column Names
     colnames(myrho)
     colnames(myrho) <- sapply(getAnnot(seqs),function(x) paste0(substr(x=unlist(strsplit(x,split=" ")),1,1),collapse=""))
-    colnames(myrho)
 
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
