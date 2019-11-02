@@ -569,7 +569,6 @@ Rの起動
     #pattern <- "Mammuthus|Elephas|Loxodonta africana" # "mitochondrion.genomic.fna.gz"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     sum(TF)
-    myAnnot[TF]
 
 #### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
 
@@ -609,15 +608,12 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
      k = 2 # 2-mers or dinucleotide
     #k = 3 # 3-mers or trinucleotide
     #k = 4 # 4-mers or tetranucleotide
+    #k = 5 # 5-mers or pentanucleotide
     myrho <- sapply(seqs, rho, wordsize = k)
 
-[列名の参照・変更](http://taustation.com/r-datafrrame-display-modification/#i-4)
-
     # Column Names
-    colnames(myrho)
     colnames(myrho) <- sapply(getAnnot(seqs),function(x) paste0(substr(x=unlist(strsplit(x,split=" ")),1,1),collapse=""))
-
-ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+    colnames(myrho)
 
     # Draw a Heat Map
     heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
@@ -627,6 +623,7 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
 Using oligonucleotide (k-mer) frequency as genomic signature
 
 - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
+- 2018/09/17 [k-mer counting, part I: Introduction | BioInfoLogics](https://bioinfologics.github.io/post/2018/09/17/k-mer-counting-part-i-introduction/)
 - [Suzuki H et al. (2010) "Predicting plasmid promiscuity based on genomic signature."](https://www.ncbi.nlm.nih.gov/pubmed/20851899)
 - [Takahashi M et al. (2009) "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
 - [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
@@ -689,10 +686,6 @@ Rの起動
 
     length(seqs) # get the number of elements
     getAnnot(seqs) # get sequence annotations
-
-
-
-
 
 
 ----------
