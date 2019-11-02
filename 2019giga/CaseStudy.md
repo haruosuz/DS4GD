@@ -534,7 +534,7 @@ Rの起動
     #name <- "mitochondrion"
     filesuffix <- "genomic.fna.gz"
     url <- paste0("ftp://ftp.ncbi.nlm.nih.gov/refseq/release/", name, "/", name, ".*.", filesuffix)
-    destfile = paste0(name, ".", filesuffix)
+    destfile <- paste0(name, ".", filesuffix)
     download.file(url = url, destfile = destfile, method = "wget")
 
     # open current working directory
@@ -563,7 +563,7 @@ Rの起動
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x)
     pattern <- "Dengue virus|Rabies" # "viral.genomic.fna.gz"
-    #pattern <- "Mammuthus|Elephas|Loxodonta africana" # "mitochondrion.genomic.fna.gz"
+    #pattern <- "Elephas|Loxodonta|Mammuthus" # "mitochondrion.genomic.fna.gz"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     sum(TF)
 
