@@ -15,6 +15,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [assignment 5](#assignment-5) 課題No.5 「NCBI accession」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
+- [NCBI RefSeq Release](#ncbi-refseq-release)
+- [E-utilities](#e-utilities)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 7](#assignment-7) 課題No.7 「dotplot」
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
@@ -502,17 +504,6 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
 
 [Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
-## References
-
-Using oligonucleotide (k-mer) frequency as genomic signature
-
-- ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-- [Suzuki H et al. (2010) "Predicting plasmid promiscuity based on genomic signature."](https://www.ncbi.nlm.nih.gov/pubmed/20851899)
-- [Takahashi M et al. (2009) "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
-- [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
-
 ----------
 
 ## NCBI RefSeq Release
@@ -641,7 +632,16 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
     # Draw a Heat Map
     heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
+## References
 
+Using oligonucleotide (k-mer) frequency as genomic signature
+
+- ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
+- [Suzuki H et al. (2010) "Predicting plasmid promiscuity based on genomic signature."](https://www.ncbi.nlm.nih.gov/pubmed/20851899)
+- [Takahashi M et al. (2009) "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
+- [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
 
 ----------
 
