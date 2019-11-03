@@ -571,14 +571,18 @@ Rの起動
 
 - https://en.wikipedia.org/wiki/Zika_virus
 Zika virus is related to the dengue, yellow fever, Japanese encephalitis, and West Nile viruses.
+- https://en.wikipedia.org/wiki/Flavivirus
+West Nile virus, dengue virus, tick-borne encephalitis virus, yellow fever virus, Zika virus
+- https://en.wikipedia.org/wiki/Filoviridae
+Ebola virus and Marburg virus
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x)
     pattern <- "Dengue virus" # "viral.genomic.fna.gz"
-    pattern <- "Zika|dengue|yellow fever|Japanese encephalitis|West Nile" # "viral.genomic.fna.gz"
-    #pattern <- "ebolavirus|Marburg virus" # "viral.genomic.fna.gz"
+    pattern <- "Zika virus|dengue|yellow fever|Japanese encephalitis|West Nile"
+    #pattern <- "Ebola|Marburg virus"
     #pattern <- "Elephas|Loxodonta|Mammuthus" # "mitochondrion.genomic.fna.gz"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     sum(TF)
