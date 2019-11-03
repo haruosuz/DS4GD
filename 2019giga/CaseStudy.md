@@ -513,7 +513,18 @@ Open the URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> with your browser (Fire
 
 Sequence data is available in the following directories:
 
+        ftp://ftp.ncbi.nih.gov/refseq/release/archaea/
+        ftp://ftp.ncbi.nih.gov/refseq/release/bacteria/
+        ftp://ftp.ncbi.nih.gov/refseq/release/complete/
+        ftp://ftp.ncbi.nih.gov/refseq/release/fungi/
+        ftp://ftp.ncbi.nih.gov/refseq/release/invertebrate/
         ftp://ftp.ncbi.nih.gov/refseq/release/mitochondrion/
+        ftp://ftp.ncbi.nih.gov/refseq/release/plant/
+        ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/
+        ftp://ftp.ncbi.nih.gov/refseq/release/plastid/
+        ftp://ftp.ncbi.nih.gov/refseq/release/protozoa/
+        ftp://ftp.ncbi.nih.gov/refseq/release/vertebrate_mammalian/
+        ftp://ftp.ncbi.nih.gov/refseq/release/vertebrate_other/
         ftp://ftp.ncbi.nih.gov/refseq/release/viral/
 
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
