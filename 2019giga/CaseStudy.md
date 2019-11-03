@@ -569,8 +569,6 @@ Rの起動
     myAnnot <- getAnnot(seqs)
     head(myAnnot)
 
-- https://en.wikipedia.org/wiki/Zika_virus
-Zika virus is related to the dengue, yellow fever, Japanese encephalitis, and West Nile viruses.
 - https://en.wikipedia.org/wiki/Flavivirus
 West Nile virus, dengue virus, tick-borne encephalitis virus, yellow fever virus, Zika virus
 - https://en.wikipedia.org/wiki/Filoviridae
