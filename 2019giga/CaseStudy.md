@@ -348,7 +348,7 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
-    # `grepl` returns a logical vector (match or not for each element of x).
+    # grepl returns a logical vector (match or not for each element of x)
     organism_name <- "Dengue virus"
     organism_name <- "Dengue virus|Rabies"
     TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & 
@@ -569,11 +569,16 @@ Rの起動
     myAnnot <- getAnnot(seqs)
     head(myAnnot)
 
+- https://en.wikipedia.org/wiki/Zika_virus
+Zika virus is related to the dengue, yellow fever, Japanese encephalitis, and West Nile viruses.
+
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x)
-    pattern <- "Dengue virus|Rabies" # "viral.genomic.fna.gz"
+    pattern <- "Dengue virus" # "viral.genomic.fna.gz"
+    pattern <- "Zika|dengue|yellow fever|Japanese encephalitis|West Nile" # "viral.genomic.fna.gz"
+    #pattern <- "ebolavirus|Marburg virus" # "viral.genomic.fna.gz"
     #pattern <- "Elephas|Loxodonta|Mammuthus" # "mitochondrion.genomic.fna.gz"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     sum(TF)
