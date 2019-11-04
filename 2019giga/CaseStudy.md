@@ -504,6 +504,15 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
 
 [Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
+## References
+
+Using oligonucleotide (k-mer) frequency as genomic signature
+
+- ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
+- [Suzuki H et al. (2010) "Predicting plasmid promiscuity based on genomic signature."](https://www.ncbi.nlm.nih.gov/pubmed/20851899)
+- [Takahashi M et al. (2009) "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
+- [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
+
 ----------
 
 ## NCBI RefSeq Release
@@ -569,6 +578,7 @@ Rの起動
     myAnnot <- getAnnot(seqs)
     head(myAnnot)
 
+[Virus](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#virus)
 - https://en.wikipedia.org/wiki/Zika_virus
 Zika virus is related to the dengue, yellow fever, Japanese encephalitis, and West Nile viruses.
 - https://en.wikipedia.org/wiki/Flavivirus
@@ -635,17 +645,10 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
     # Draw a Heat Map
     heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
+
 ## References
-
-Using oligonucleotide (k-mer) frequency as genomic signature
-
-- ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
+- オリゴヌクレオチド組成 [Oligonucleotide Composition](https://github.com/haruosuz/mgsa/blob/master/references/mgsa.nucleotide_composition.md#oligonucleotide)
 - 2018/09/17 [k-mer counting, part I: Introduction | BioInfoLogics](https://bioinfologics.github.io/post/2018/09/17/k-mer-counting-part-i-introduction/)
-- [Suzuki H et al. (2010) "Predicting plasmid promiscuity based on genomic signature."](https://www.ncbi.nlm.nih.gov/pubmed/20851899)
-- [Takahashi M et al. (2009) "Estimation of bacterial species phylogeny through oligonucleotide frequency distances."](https://www.ncbi.nlm.nih.gov/pubmed/19442633)
-- [Campbell A et al. (1999) "Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA."](https://www.ncbi.nlm.nih.gov/pubmed/10430917)
-
-![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC17754/bin/pq1692140001.jpg)
 
 ----------
 
