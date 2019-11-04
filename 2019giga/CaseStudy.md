@@ -520,6 +520,13 @@ Using oligonucleotide (k-mer) frequency as genomic signature
 URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。  
 Open the URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> with your browser (Firefox or Chrome). Click the link *README*.
 
+```
+# ftp://ftp.ncbi.nlm.nih.gov/refseq/release/README
+
+The NCBI RefSeq project is an ongoing effort to provide a curated, 
+non-redundant collection of reference sequences, representative 
+of the central dogma, for each major organism.
+
 Sequence data is available in the following directories:
 
         ftp://ftp.ncbi.nih.gov/refseq/release/archaea/
@@ -535,6 +542,7 @@ Sequence data is available in the following directories:
         ftp://ftp.ncbi.nih.gov/refseq/release/vertebrate_mammalian/
         ftp://ftp.ncbi.nih.gov/refseq/release/vertebrate_other/
         ftp://ftp.ncbi.nih.gov/refseq/release/viral/
+```
 
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
