@@ -49,6 +49,11 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 
 5 minutes will be allocated for each presentation, including presentation and discussion.
 
+References
+- https://www.presentationzen.com/presentationzen/2010/08/a-long-time-ago-before-death-by-powerpoint.html
+
+![](https://www.presentationzen.com/.a/6a00d83451b64669e20133f3377056970b-popup)
+
 ----------
 ## Guest speaker
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
