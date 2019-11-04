@@ -49,10 +49,9 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 
 5 minutes will be allocated for each presentation, including presentation and discussion.
 
-References
-- https://www.presentationzen.com/presentationzen/
-- https://www.presentationzen.com/presentationzen/2010/08/a-long-time-ago-before-death-by-powerpoint.html
+https://www.presentationzen.com/presentationzen/
 
+![https://www.academyhills.com/library/calendar/tqe2it00000ht48v.html](https://www.academyhills.com/library/calendar/tqe2it00000ht48v-img/tqe2it00000ht4en.jpg)
 
 ----------
 ## Guest speaker
@@ -91,7 +90,7 @@ Submit your final report in PDF format.
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
-- TED Talk [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+- July 2011 TED Talk 5:18 [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
 
 ![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
 
@@ -118,9 +117,6 @@ Submit your final report in PDF format.
 細菌は染色体とプラスミドという2種類のDNAを持っています。
 細菌同士は接触するとプラスミドを交換。
 プラスミドを交換することで細菌の能力を強化。
-- [Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
-  - [Table 1 Lists of plasmids in different incompatibility groups.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6312765/table/t0005/?report=objectonly)
-- ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt
 
 #### [Virus](https://en.wikipedia.org/wiki/Virus)
 **[ウイルス](https://ja.wikipedia.org/wiki/ウイルス)**
