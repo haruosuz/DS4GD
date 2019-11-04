@@ -569,10 +569,12 @@ Rの起動
     myAnnot <- getAnnot(seqs)
     head(myAnnot)
 
+- https://en.wikipedia.org/wiki/Zika_virus
+Zika virus is related to the dengue, yellow fever, Japanese encephalitis, and West Nile viruses.
 - https://en.wikipedia.org/wiki/Flavivirus
-West Nile virus, dengue virus, tick-borne encephalitis virus, yellow fever virus, Zika virus
+This genus includes the West Nile virus, dengue virus, tick-borne encephalitis virus, yellow fever virus, Zika virus
 - https://en.wikipedia.org/wiki/Filoviridae
-Ebola virus and Marburg virus
+Two members of the family that are commonly known are Ebola virus and Marburg virus.
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
