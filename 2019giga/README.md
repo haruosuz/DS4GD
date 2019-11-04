@@ -118,22 +118,6 @@ Submit your final report in PDF format.
 細菌同士は接触するとプラスミドを交換。
 プラスミドを交換することで細菌の能力を強化。
 
-#### [Virus](https://en.wikipedia.org/wiki/Virus)
-**[ウイルス](https://ja.wikipedia.org/wiki/ウイルス)**
-
-Many serious diseases such as rabies, Ebola virus disease, AIDS (HIV), avian influenza, and SARS are caused by viruses. 
-
-- [エボラ出血熱封じ込めに不可欠な「エボラウイルスの働き」の理解が進むムービー](https://gigazine.net/news/20141110-ebola-virus-mechanism/)
-The Ebola Virus Explained — How Your Body Fights For Survival
-- October 2018 TED Talk 11:14 [Alexander Belcredi: How a long-forgotten virus could help us solve the antibiotics crisis | TED Talk](https://www.ted.com/talks/alexander_belcredi_how_a_long_forgotten_virus_could_help_us_solve_the_antibiotics_crisis) | [アレクサンダー・ベルクレディ: 長く忘れられていたウィルスが抗生物質の危機を解決しうるのはなぜか](https://www.ted.com/talks/alexander_belcredi_how_a_long_forgotten_virus_could_help_us_solve_the_antibiotics_crisis?language=ja)
-- Oct 20, 2019 [Nature News & Comment on Twitter: "Japan imported Ebola and four other dangerous viruses in preparation for a possible outbreak at the 2020 Olympics. https://t.co/Ak5QOPI1HP"](https://twitter.com/NatureNews/status/1185903524242165761)
-  - [Why Japan imported Ebola ahead of the 2020 Olympics](https://www.nature.com/articles/d41586-019-03103-4)
-Last month, Japan imported Ebola and four other dangerous viruses in preparation for a possible outbreak at the event. The Japanese health ministry says researchers will use the samples, which include Marburg virus, Lassa virus, and the viruses that cause South American haemorrhagic fever and Crimean–Congo haemorrhagic fever, to validate tests under development.
-- Aug 23, 2019 [Nathan Grubaugh on Twitter](https://twitter.com/NathanGrubaugh/status/1164553815376441350)
-  - [Travel Surveillance and Genomics Uncover a Hidden Zika Outbreak during the Waning Epidemic: Cell](https://www.cell.com/cell/fulltext/S0092-8674(19)30783-4)
-
-![](https://marlin-prod.literatumonline.com/cms/attachment/7a797cef-d2d1-4ca3-ab81-765204acfa81/fx1.jpg)
-
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
 #### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
