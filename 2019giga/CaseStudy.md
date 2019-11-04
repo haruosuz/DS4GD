@@ -578,7 +578,7 @@ Rの起動
     myAnnot <- getAnnot(seqs)
     head(myAnnot)
 
-[Virus](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#virus)
+[Virus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md)
 - https://en.wikipedia.org/wiki/Zika_virus
 Zika virus is related to the dengue, yellow fever, Japanese encephalitis, and West Nile viruses.
 - https://en.wikipedia.org/wiki/Flavivirus
@@ -590,12 +590,12 @@ Two members of the family that are commonly known are Ebola virus and Marburg vi
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x)
-    pattern <- "Dengue virus" # "viral.genomic.fna.gz"
-    pattern <- "Zika virus|dengue|yellow fever|Japanese encephalitis|West Nile"
-    #pattern <- "Ebola|Marburg virus"
+    pattern <- "Ebola|Marburg" # "viral.genomic.fna.gz"
+    #pattern <- "Zika virus|dengue|yellow fever|Japanese encephalitis|West Nile"
     #pattern <- "Elephas|Loxodonta|Mammuthus" # "mitochondrion.genomic.fna.gz"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     sum(TF)
+    unlist(myAnnot[TF])
 
 #### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
 
@@ -614,7 +614,7 @@ Two members of the family that are commonly known are Ebola virus and Marburg vi
 配列の数とアノテーションを確認する:  
 
     length(seqs) # get the number of elements
-    unlist(getAnnot(seqs)) # get sequence annotations
+    getAnnot(seqs) # get sequence annotations
 
 #### [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 
@@ -645,10 +645,12 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
     # Draw a Heat Map
     heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
+    unlist(getAnnot(seqs)) # get sequence annotations
 
 ## References
-- オリゴヌクレオチド組成 [Oligonucleotide Composition](https://github.com/haruosuz/mgsa/blob/master/references/mgsa.nucleotide_composition.md#oligonucleotide)
-- 2018/09/17 [k-mer counting, part I: Introduction | BioInfoLogics](https://bioinfologics.github.io/post/2018/09/17/k-mer-counting-part-i-introduction/)
+- オリゴヌクレオチド組成
+[Oligonucleotide Composition](https://github.com/haruosuz/mgsa/blob/master/references/mgsa.nucleotide_composition.md#oligonucleotide) | 
+[k-mer](https://github.com/haruosuz/mgsa/blob/master/references/mgsa.nucleotide_composition.md#k-mer)
 
 ----------
 
