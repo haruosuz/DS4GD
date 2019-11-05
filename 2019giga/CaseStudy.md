@@ -651,6 +651,9 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
     colnames(myrho) <- sapply(getAnnot(seqs),function(x) paste0(substr(x=unlist(strsplit(x,split=" ")),1,1),collapse=""))
     colnames(myrho)
 
+    # Set Graphical Parameters
+    par(family="mono", cex = 0.9)
+
     # Draw a Heat Map
     heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
