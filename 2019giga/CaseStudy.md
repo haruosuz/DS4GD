@@ -558,12 +558,12 @@ Rの起動
 [インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
     # Download File from the Internet
-    name <- "viral"
-    #name <- "mitochondrion"
-    filesuffix <- "genomic.fna.gz"
-    url <- paste0("ftp://ftp.ncbi.nlm.nih.gov/refseq/release/", name, "/", name, ".*.", filesuffix)
-    destfile <- paste0(name, ".", filesuffix)
-    download.file(url = url, destfile = destfile, method = "wget")
+     url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.1.1.genomic.fna.gz" # 58.0 kB
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.2.1.genomic.fna.gz" # 62.1 MB
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.3.1.genomic.fna.gz" # 29.1 MB
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.2.1.genomic.fna.gz" # 21.9 MB
+    filename <- basename(url)
+    download.file(url = url, destfile = filename)
 
     # open current working directory
     system("open .")
@@ -573,9 +573,8 @@ Rの起動
 配列データを読み込む:  
 
     library(seqinr) # Load the SeqinR package
-    filename <- destfile
-    #filename <- "viral.genomic.fna.gz"
-    #filename <- "mitochondrion.genomic.fna.gz"
+    #filename <- "viral.1.1.genomic.fna.gz"
+    #filename <- "mitochondrion.2.1.genomic.fna.gz"
     seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE) # Reading sequence data
 
     length(seqs)# get the number of elements
@@ -652,8 +651,6 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
 
     # Draw a Heat Map
     heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
-
-    unlist(getAnnot(seqs)) # get sequence annotations
 
 ## References
 - オリゴヌクレオチド組成
