@@ -655,9 +655,10 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
 
     # Draw a Heat Map
     par(family="mono", cex=0.7) # Set Graphical Parameters
+
     heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
-    getAnnot(seqs) # get sequence annotations
+    unlist(getAnnot(seqs)) # get sequence annotations
 
 ## References
 - オリゴヌクレオチド組成
