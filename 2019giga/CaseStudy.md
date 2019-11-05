@@ -574,6 +574,8 @@ Rの起動
 
     library(seqinr) # Load the SeqinR package
     #filename <- "viral.1.1.genomic.fna.gz"
+    #filename <- "viral.2.1.genomic.fna.gz"
+    #filename <- "viral.3.1.genomic.fna.gz"
     #filename <- "mitochondrion.2.1.genomic.fna.gz"
     seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE) # Reading sequence data
 
