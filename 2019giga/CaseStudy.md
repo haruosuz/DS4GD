@@ -599,12 +599,14 @@ Two members of the family that are commonly known are Ebola virus and Marburg vi
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x)
-    pattern <- "Ebola|Marburg" # "viral.genomic.fna.gz"
-    #pattern <- "Zika virus|dengue|yellow fever|Japanese encephalitis|West Nile"
-    #pattern <- "Elephas|Loxodonta|Mammuthus" # "mitochondrion.genomic.fna.gz"
+    pattern <- "Ebola|Marburg" # "viral.2.1.genomic.fna.gz"
+    #pattern <- "Influenza" # "viral.2.1.genomic.fna.gz"
+    #pattern <- "Zika virus|dengue|yellow fever|Japanese encephalitis|West Nile" # "viral.3.1.genomic.fna.gz"
+    #pattern <- "Elephas|Loxodonta|Mammuthus" #
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     sum(TF)
     unlist(myAnnot[TF])
+
 
 #### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
 
