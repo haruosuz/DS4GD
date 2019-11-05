@@ -439,7 +439,7 @@ DNA配列の2連続塩基組成（観測値/期待値）:
 [棒グラフの描画](https://data-science.gr.jp/implementation/ida_r_barplot.html)
 
     # Creates a bar plot with a straight line
-    par(family="mono", cex = 0.7) # Set Graphical Parameters
+    par(family="mono", cex=0.7) # Set Graphical Parameters
     barplot(sort(rho(seq = seq1, wordsize = 2)))
     abline(h=1) # Add Straight Lines to a Plot
 
@@ -651,11 +651,11 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
     colnames(myrho) <- sapply(getAnnot(seqs),function(x) paste0(substr(x=unlist(strsplit(x,split=" ")),1,1),collapse=""))
     colnames(myrho)
 
-    # Set Graphical Parameters
-    par(family="mono", cex = 0.9)
-
     # Draw a Heat Map
+    par(family="mono", cex=0.7) # Set Graphical Parameters
     heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+
+    getAnnot(seqs) # get sequence annotations
 
 ## References
 - オリゴヌクレオチド組成
