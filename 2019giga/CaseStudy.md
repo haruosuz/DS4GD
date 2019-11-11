@@ -918,8 +918,11 @@ uco(seq = testseq, index = "freq")
 uco(seq = testseq, index = "rscu")
 ```
 
-- [Sharp et al. Philos Trans R Soc Lond B Biol Sci. 2010 Apr 27;365(1544):1203-12. "Forces that influence the evolution of codon bias."](https://www.ncbi.nlm.nih.gov/pubmed/20308095)
-  - [Codon usage in E. coli.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/)
+- [Sharp et al. (2010) "Forces that influence the evolution of codon bias."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/)
+  - [Table 1.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/?report=objectonly)
+Codon usage in E. coli. Codon usage is compared between a set of 40 highly expressed genes (high; see Sharp et al. 2005) and the genome as a whole (all); the data are relative synonymous codon usage values (the ratio of the observed number to that expected if all codons for an amino acid were used equally). Nineteen codons occurring at significantly higher frequencies (see Henry & Sharp 2007) in the high dataset are shown in bold. The data are for E. coli strain K-12 MG1655 (accession number U00096).
+- [tRNADB-CE : tRNA gene database curated manually by experts](http://trna.ie.niigata-u.ac.jp/cgi-bin/trnadb/whole_spe_list_inc.cgi?STYPE=B&DTYPE=CMP)
+  - Anticodon table [Escherichia coli K-12](http://trna.ie.niigata-u.ac.jp/cgi-bin/trnadb/whole_anticodon.cgi?GID=|U00096&DTYPE=CMP&VTYPE=1)
 
 大腸菌ゲノムにおける全遺伝子群と高発現遺伝子群のコドン使用頻度を計算する。
 
@@ -948,11 +951,6 @@ write.csv(df.uco.high[order(df.uco.high$AA),], file="table.uco.high.csv", quote=
 system("open .")
 ```
 
-- [Sharp PM et al. (2010) "Forces that influence the evolution of codon bias"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/)
-  - [Table 1.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/?report=objectonly)
-Codon usage in E. coli. Codon usage is compared between a set of 40 highly expressed genes (high; see Sharp et al. 2005) and the genome as a whole (all); the data are relative synonymous codon usage values (the ratio of the observed number to that expected if all codons for an amino acid were used equally). Nineteen codons occurring at significantly higher frequencies (see Henry & Sharp 2007) in the high dataset are shown in bold. The data are for E. coli strain K-12 MG1655 (accession number U00096).
-- [tRNADB-CE : tRNA gene database curated manually by experts](http://trna.ie.niigata-u.ac.jp/cgi-bin/trnadb/whole_spe_list_inc.cgi?STYPE=B&DTYPE=CMP)
-  - Anticodon table [Escherichia coli K-12](http://trna.ie.niigata-u.ac.jp/cgi-bin/trnadb/whole_anticodon.cgi?GID=|U00096&DTYPE=CMP&VTYPE=1)
 
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
