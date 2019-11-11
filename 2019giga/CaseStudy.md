@@ -16,9 +16,9 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 5](#assignment-5) 課題No.5 「NCBI accession」
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI RefSeq Release](#ncbi-refseq-release)
+- [assignment 8](#assignment-8) 課題No.8 「dotplot」
 - [E-utilities](#e-utilities)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
-- [assignment 7](#assignment-7) 課題No.7 「dotplot」
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
 - [assignment 12](#assignment-12) 課題No.12 「draft report」
 - [assignment 13](#assignment-13) 課題No.13 「presentation slides」
@@ -668,6 +668,67 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
 [k-mer](https://github.com/haruosuz/mgsa/blob/master/references/mgsa.nucleotide_composition.md#k-mer)
 
 ----------
+### Elongation Factor
+翻訳伸長因子
+[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
+[EF-G](https://ja.wikipedia.org/wiki/EF-G)
+
+[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
+
+----------
+## assignment 8
+**課題No.8 「dotplot」**
+
+ドットプロットで2つの配列を比較
+[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
+
+Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+
+Q1. Download FASTA-format files of two protein sequences from UniProt.
+
+    # CySp1 - Cylindrical silk protein 1 - Nephila clavata (Joro spider)
+    library("seqinr")
+    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S3.fasta")[[1]]
+    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S4.fasta")[[1]]
+    length(seq1) # 757
+    length(seq2) # 1259
+
+    # setting font in plots
+    par(family="mono")
+
+Q2. Create a dotplot for two sequences.
+
+    dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
+
+Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
+
+    dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
+    dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
+
+![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
+
+    # change shell to bash
+    bash
+
+[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
+「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
+[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
+
+	# 配列取得方法
+	## togowsの利用 http://togotv.dbcls.jp/20110425.html
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
+
+	# dottup
+	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
+
+	# needle, water
+	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
+
+http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
+ラージゲノムにも対応したdot plot解析ツール D-GENIES - macでインフォマティクス
+
+----------
 
 ## [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#e-utilities)
 The Entrez Programming Utilities (E-utilities)
@@ -1053,67 +1114,6 @@ system("open .")
 
     # Draw a Heat Map
     heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
-
-----------
-## assignment 7
-**課題No.7 「dotplot」**
-
-ドットプロットで2つの配列を比較
-[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
-
-Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-
-Q1. Download FASTA-format files of two protein sequences from UniProt.
-
-    # CySp1 - Cylindrical silk protein 1 - Nephila clavata (Joro spider)
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S3.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S4.fasta")[[1]]
-
-    length(seq1) # 757
-    length(seq2) # 1259
-
-	par(family="mono")
-
-Q2. Create a dotplot for two sequences.
-
-    dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
-
-Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
-
-    dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
-    dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
-
-![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
-
-    # change shell to bash
-    bash
-
-[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
-「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
-[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
-
-	# 配列取得方法
-	## togowsの利用 http://togotv.dbcls.jp/20110425.html
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
-
-	# dottup
-	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
-
-	# needle, water
-	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
-
-http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
-ラージゲノムにも対応したdot plot解析ツール D-GENIES - macでインフォマティクス
-
-----------
-### Elongation Factor
-翻訳伸長因子
-[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
-[EF-G](https://ja.wikipedia.org/wiki/EF-G)
-
-[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
 
 ----------
 ## assignment 11
