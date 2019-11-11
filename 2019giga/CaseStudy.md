@@ -892,71 +892,6 @@ CDSの要約統計量（最小値、中央値、最大値など）を求める:
     tablecode()
 
 ### codon usage
-
-    #install.packages("vhica")
-    library(vhica)
-    CUB(sequence = seqs[1:2], method = "ENC")
-    #ENC <- CUB(sequence = seqs, method = "ENC")
-
-
-
-https://bioconductor.org/packages/release/bioc/html/sscu.html
-Bioconductor - sscu
-
-To install this package, start R and enter:
-```
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-
-BiocManager::install("sscu")
-```
-
-
-
-
-library(sscu)
-s_index
-
-library(help = sscu)     # documentation on package 'sscu'
-
-
-
-> install.packages("sscu")Warning in install.packages :  package ‘sscu’ is not available (for R version 3.6.1)> 
-
-
-
-
-https://www.ncbi.nlm.nih.gov/pubmed/30965565
-Viruses. 2019 Apr 8;11(4). pii: E331. doi: 10.3390/v11040331.
-Codon Usage Bias Analysis of Citrus tristeza Virus: Higher Codon Adaptation to Citrus reticulata Host.
-Biswas KK1, Palchoudhury S2, Chakraborty P3, Bhattacharyya UK4, Ghosh DK5, Debnath P6, Ramadugu C7, Keremane ML8, Khetarpal RK9, Lee RF10.
-
-https://www.ncbi.nlm.nih.gov/pubmed/29551886
-Evol Bioinform Online. 2018 Mar 9;14:1176934318761368. doi: 10.1177/1176934318761368. eCollection 2018.
-Evolution of Synonymous Codon Usage Bias in West African and Central African Strains of Monkeypox Virus.
-Karumathil S1, Raveendran NT2, Ganesh D3, Kumar Ns S4, Nair RR1, Dirisala VR4.
-
-https://www.ncbi.nlm.nih.gov/pubmed/30110957
-Int J Mol Sci. 2018 Aug 14;19(8). pii: E2397. doi: 10.3390/ijms19082397.
-Comprehensive Analysis of Codon Usage on Rabies Virus and Other Lyssaviruses.
-Zhang X1, Cai Y2, Zhai X3, Liu J4, Zhao W5, Ji S6, Su S7, Zhou J8.
-
-https://www.ncbi.nlm.nih.gov/pubmed/25445348
-Virus Res. 2015 Jan 22;196:87-93. doi: 10.1016/j.virusres.2014.11.005. Epub 2014 Nov 14.
-Genome-wide analysis of codon usage bias in Ebolavirus.
-Cristina J1, Moreno P2, Moratorio G3, Musto H4.
-
-https://www.ncbi.nlm.nih.gov/pubmed/21450075
-Virol J. 2011 Mar 30;8:146. doi: 10.1186/1743-422X-8-146.
-Analysis of codon usage and nucleotide composition bias in polioviruses.
-Zhang J1, Wang M, Liu WQ, Zhou JH, Chen HT, Ma LN, Ding YZ, Gu YX, Liu YS.
-
-
-
-
-
-
-### codon usage
 **[コドン使用](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)**
 
 テスト用の配列データを作成する。  
@@ -1010,8 +945,7 @@ write.csv(df.uco.high[order(df.uco.high$AA),], file="table.uco.high.csv", quote=
 system("open .")
 ```
 
-
-
+[Table 1. Codon usage in E. coli. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/?report=objectonly)
 
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
@@ -1020,12 +954,7 @@ system("open .")
     myTrans <- getTrans(ffn)
     myTrans[[1]]
 
-
-
-
 ----------
-
-
 
 ### amino acid usage
 **[アミノ酸](https://ja.wikipedia.org/wiki/アミノ酸)使用**
