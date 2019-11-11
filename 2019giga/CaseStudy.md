@@ -805,6 +805,7 @@ Rの起動
 
 - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
   - [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
+
 | Type | RefSeq | INSDC |
 |:-----|:-------|:------|
 | Chr | NC_000913.3 | U00096.3 |
