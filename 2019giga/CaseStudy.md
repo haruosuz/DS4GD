@@ -803,8 +803,11 @@ Rの起動
     setwd(WorkingDirectory); getwd() # Set and Get Working Directory
     dir() # List the Files in a Directory
 
-- [NCBI Genome List](#ncbi-genome-list)
+- [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
   - [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
+| Type | RefSeq | INSDC |
+|:-----|:-------|:------|
+| Chr | NC_000913.3 | U00096.3 |
 
 タンパク質コード配列（CDS）のデータをNCBIから取得する:  
 Retrieving Protein Coding Sequence (CDS) data from NCBI:  
@@ -945,7 +948,11 @@ write.csv(df.uco.high[order(df.uco.high$AA),], file="table.uco.high.csv", quote=
 system("open .")
 ```
 
-[Table 1. Codon usage in E. coli. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/?report=objectonly)
+- [Sharp PM et al. (2010) "Forces that influence the evolution of codon bias"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/)
+  - [Table 1.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/?report=objectonly)
+Codon usage in E. coli. Codon usage is compared between a set of 40 highly expressed genes (high; see Sharp et al. 2005) and the genome as a whole (all); the data are relative synonymous codon usage values (the ratio of the observed number to that expected if all codons for an amino acid were used equally). Nineteen codons occurring at significantly higher frequencies (see Henry & Sharp 2007) in the high dataset are shown in bold. The data are for E. coli strain K-12 MG1655 (accession number U00096).
+- [tRNADB-CE : tRNA gene database curated manually by experts](http://trna.ie.niigata-u.ac.jp/cgi-bin/trnadb/whole_spe_list_inc.cgi?STYPE=B&DTYPE=CMP)
+  - Anticodon table [Escherichia coli K-12](http://trna.ie.niigata-u.ac.jp/cgi-bin/trnadb/whole_anticodon.cgi?GID=|U00096&DTYPE=CMP&VTYPE=1)
 
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
