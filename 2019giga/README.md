@@ -95,10 +95,14 @@ Submit your final report in PDF format.
 
 ![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
 
+![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png){width=70%}
+
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
 
 ![https://twitter.com/Daniela_Bezdan/status/1009876180684754944](https://pbs.twimg.com/media/DgPMfQ9X0AMEi1l?format=jpg&name=small)
+
+![https://twitter.com/Daniela_Bezdan/status/1009876180684754944](https://pbs.twimg.com/media/DgPMfQ9X0AMEi1l?format=jpg&name=small){width=70%}
 
 #### Antibiotic resistance
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
@@ -108,6 +112,7 @@ Submit your final report in PDF format.
 - [The evolution of antibiotic resistance | Science](https://science.sciencemag.org/content/365/6458/1082)
 
 ![https://science.sciencemag.org/content/365/6458/1082](https://science.sciencemag.org/content/sci/365/6458/1082/F1.medium.gif)
+![https://science.sciencemag.org/content/365/6458/1082](https://science.sciencemag.org/content/sci/365/6458/1082/F1.medium.gif){width=70%}
 
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
