@@ -94,8 +94,6 @@ Submit your final report in PDF format.
 - July 2011 TED Talk 5:18 [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
 
 ![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
-![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png | width=100)
-![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png =250x250)
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
