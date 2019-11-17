@@ -57,8 +57,14 @@ https://www.presentationzen.com/presentationzen/
 ----------
 ## Guest speaker
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
-- 2019-11-26 No. 8 - 講師: [Dr. Kirill Kryukov](http://kirill-kryukov.com/kirr/) ([Biomedical Informatics Laboratory | Department of Molecular Life Science, Tokai University School of Medicine](http://mls.med.u-tokai.ac.jp/bmi/index-e.html))
-- 2019-12-03 No. 9 - 講師: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学医学部 [情報生物医学研究室](http://mls.med.u-tokai.ac.jp/bmi/index.html)） 
+
+### 2019-11-26
+- Speaker: [Dr. Kirill Kryukov](http://kirill-kryukov.com/kirr/) ([Biomedical Informatics Laboratory | Department of Molecular Life Science, Tokai University School of Medicine](http://mls.med.u-tokai.ac.jp/bmi/index-e.html))
+- Title: "Fundamentals of Big Data Sequence Analysis"
+
+### 2019-12-03
+- Speaker: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学医学部 [情報生物医学研究室](http://mls.med.u-tokai.ac.jp/bmi/index.html)）
+- Title: "Evolution and detection of gene mutations under selection"
 
 ----------
 ## final presentation
