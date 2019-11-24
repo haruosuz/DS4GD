@@ -1,7 +1,7 @@
-[Keio University Shonan Fujisawa Campus](https://www.sfc.keio.ac.jp/en/) (SFC)  
-2019 Fall Tuesday 2nd Period  
-2019年度 秋学期 火曜日[2時限 11：10～12：40](https://www.sfc.keio.ac.jp/faculty/class/class.html#1)  
+[Keio University Shonan Fujisawa Campus](https://www.sfc.keio.ac.jp/en/) (SFC)
 教室 Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
+2019 Fall Tuesday 2nd Period
+2019年度 秋学期 火曜日[2時限 11：10～12：40](https://www.sfc.keio.ac.jp/faculty/class/class.html#1)  
 
 # DS4GD
 DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
