@@ -132,9 +132,6 @@ Submit your final report in PDF format.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
 
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
-細菌は染色体とプラスミドという2種類のDNAを持っています。
-細菌同士は接触するとプラスミドを交換。
-プラスミドを交換することで細菌の能力を強化。
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
