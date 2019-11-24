@@ -1,6 +1,6 @@
-Keio SFC 
-2019 Fall Tuesday 2nd Period
-2019年度 秋学期 火曜日[2時限 11：10～12：40](https://www.sfc.keio.ac.jp/faculty/class/class.html#1)
+[Keio University Shonan Fujisawa Campus](https://www.sfc.keio.ac.jp/en/) (SFC)
+2019 Fall Tuesday 2nd Period  
+2019年度 秋学期 火曜日[2時限 11：10～12：40](https://www.sfc.keio.ac.jp/faculty/class/class.html#1)  
 教室 Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
 
 # DS4GD
@@ -59,22 +59,20 @@ https://www.presentationzen.com/presentationzen/
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
 ### 2019-11-26
-- Date: 2019-11-26
-- Time: 11：10-12：40
-- Venue: Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
 - Speaker: [Dr. Kirill Kryukov](http://kirill-kryukov.com/kirr/) ([Biomedical Informatics Laboratory | Department of Molecular Life Science, Tokai University School of Medicine](http://mls.med.u-tokai.ac.jp/bmi/index-e.html))
 - Title: "Fundamentals of Big Data Sequence Analysis"
+- Language: English
+- Date: 2019-11-26
+- Time: 11:10-12:40
+- Venue: Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
 
 ### 2019-12-03
-- Date: 2019-12-03
-- Time: 11：10-12：40
-- Venue: Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
 - Speaker: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学医学部 [情報生物医学研究室](http://mls.med.u-tokai.ac.jp/bmi/index.html)）
 - Title: "Evolution and detection of gene mutations under selection"
-
-[Keio University Shonan Fujisawa Campus](https://www.sfc.keio.ac.jp/en/)
-SFC
-[Campus Access](https://www.sfc.keio.ac.jp/en/maps.html)
+- Language: English and Japanese
+- Date: 2019-12-03
+- Time: 11:10-12:40
+- Venue: Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
 
 ----------
 ## final presentation
