@@ -1,4 +1,4 @@
-[Keio University Shonan Fujisawa Campus](https://www.sfc.keio.ac.jp/en/) (SFC)
+[Keio University Shonan Fujisawa Campus](https://www.sfc.keio.ac.jp/en/) (SFC)  
 2019 Fall Tuesday 2nd Period  
 2019年度 秋学期 火曜日[2時限 11：10～12：40](https://www.sfc.keio.ac.jp/faculty/class/class.html#1)  
 教室 Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
@@ -73,6 +73,9 @@ https://www.presentationzen.com/presentationzen/
 - Date: 2019-12-03
 - Time: 11:10-12:40
 - Venue: Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
+
+[Keio University Shonan Fujisawa Campus](https://www.sfc.keio.ac.jp/en/) (SFC)
+[Campus Access](https://www.sfc.keio.ac.jp/en/maps.html)
 
 ----------
 ## final presentation
