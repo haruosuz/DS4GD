@@ -59,12 +59,22 @@ https://www.presentationzen.com/presentationzen/
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
 ### 2019-11-26
+- Date: 2019-11-26
+- Time: 11：10-12：40
+- Venue: Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
 - Speaker: [Dr. Kirill Kryukov](http://kirill-kryukov.com/kirr/) ([Biomedical Informatics Laboratory | Department of Molecular Life Science, Tokai University School of Medicine](http://mls.med.u-tokai.ac.jp/bmi/index-e.html))
 - Title: "Fundamentals of Big Data Sequence Analysis"
 
 ### 2019-12-03
+- Date: 2019-12-03
+- Time: 11：10-12：40
+- Venue: Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
 - Speaker: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学医学部 [情報生物医学研究室](http://mls.med.u-tokai.ac.jp/bmi/index.html)）
 - Title: "Evolution and detection of gene mutations under selection"
+
+[Keio University Shonan Fujisawa Campus](https://www.sfc.keio.ac.jp/en/)
+SFC
+[Campus Access](https://www.sfc.keio.ac.jp/en/maps.html)
 
 ----------
 ## final presentation
