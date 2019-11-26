@@ -758,7 +758,15 @@ mkdir ~/projects
 # change directory
 cd ~/projects/
 
+# list directory contents
+ls
 
+
+
+
+
+
+# 
 
 
 
