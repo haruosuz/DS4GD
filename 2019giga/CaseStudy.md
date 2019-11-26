@@ -17,6 +17,9 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [NCBI RefSeq Release](#ncbi-refseq-release)
 - [assignment 8](#assignment-8) 課題No.8 「dotplot」
+- [2019-11-26](#2019-11-26)
+- [assignment 9](#assignment-9) 課題No.9 「Guest Speaker (1)」
+- [assignment 10](#assignment-10) 課題No.10 「Guest Speaker (2)」
 - [E-utilities](#e-utilities)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
@@ -395,7 +398,7 @@ Genomes Download FAQ
 配列データをFASTA形式ファイルとして書き出す:  
 
 	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80)
+    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar=80)
 
     # open current working directory
     system("open .")
@@ -727,6 +730,34 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
 
 http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
 ラージゲノムにも対応したdot plot解析ツール D-GENIES - macでインフォマティクス
+
+----------
+## 2019-11-26
+
+- https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#guest-speaker
+- [Kirr's homepage](http://kirill-kryukov.com/kirr/)
+  - [Nucleotide Archival Format (NAF)](http://kirill-kryukov.com/study/naf/)
+NAF compressor and decompressor are available at github: https://github.com/KirillKryukov/naf.
+- https://github.com/KirillKryukov
+  - https://github.com/KirillKryukov/naf
+Nucleotide Archival Format - Compressed file format for DNA/RNA/protein sequences
+  - https://github.com/KirillKryukov/seq-tools
+Super-fast simple sequence-processing tools
+
+```
+
+bash
+cd ~/projects/
+
+```
+
+----------
+## assignment 9
+**課題No.9 「Guest Speaker (1)」**
+
+----------
+## assignment 10
+**課題No.10 「Guest Speaker (2)」**
 
 ----------
 
