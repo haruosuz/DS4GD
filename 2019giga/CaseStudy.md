@@ -774,31 +774,13 @@ gzip -dc GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz > Ao.fa
 # -h, --human-readable	print human readable sizes
 ls -lh
 
-# Inspecting Data with Head and Tail
+# Inspecting Data with Head
 head -n 10 Ao.fa
 
+# Creating Simple Programs with Grep and Pipes
 grep '>' Ao.fa
-
-# Pipes in Action: Creating Simple Programs with Grep and Pipes
 grep '>' Ao.fa | wc
 ```
-
-- https://github.com/haruosuz/introBI/blob/master/2019/README.md
-- http://apprize.info/data/bioinformatics/index.html
-Bioinformatics Data Skills (2015)
-- https://apprize.info/data/bioinformatics/3.html
-Chapter 3: Remedial Unix Shell
-  - Redirecting Standard Out to a File
-  - Pipes in Action: Creating Simple Programs with Grep and Pipes
-- https://apprize.info/data/bioinformatics/6.html
-Chapter 6: Bioinformatics Data
-- https://apprize.info/data/bioinformatics/7.html
-Chapter 7: Unix Data Tools
-  - Inspecting Data with Head and Tail
-- https://apprize.info/data/bioinformatics/12.html
-Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks
-  - Writing and Running Robust Bash Scripts
-  - Running Bash scripts
 
 *a.sh*
 ```
