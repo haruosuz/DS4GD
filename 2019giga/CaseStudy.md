@@ -770,8 +770,14 @@ Right click the link *GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz*, and select "
 ```
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_AoryTK10_1.0/GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz
 
-# list directory contents
-ls
+# -l     use a long listing format
+ls -l
+
+# -h, --human-readable	print human readable sizes
+ls -lh
+
+# decompress files
+gzip -dc GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz > GCA_009684975.1_AoryTK10_1.0_genomic.fna
 ```
 
 
