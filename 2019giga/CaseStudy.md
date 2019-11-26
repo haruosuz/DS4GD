@@ -735,12 +735,6 @@ http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
 ## 2019-11-26
 
 - https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#guest-speaker
-- [Kirr's homepage](http://kirill-kryukov.com/kirr/)
-- https://github.com/KirillKryukov
-  - https://github.com/KirillKryukov/naf
-Nucleotide Archival Format - Compressed file format for DNA/RNA/protein sequences
-  - https://github.com/KirillKryukov/seq-tools
-Super-fast simple sequence-processing tools
 
 ```
 # print working directory
@@ -819,6 +813,15 @@ chmod 755 a.sh
 
 ./a.sh
 ```
+
+- [Kirr's homepage](http://kirill-kryukov.com/kirr/)
+- https://github.com/KirillKryukov
+  - https://github.com/KirillKryukov/naf
+Nucleotide Archival Format - Compressed file format for DNA/RNA/protein sequences
+  - https://github.com/KirillKryukov/seq-tools
+Super-fast simple sequence-processing tools
+
+
 
 # 
 
