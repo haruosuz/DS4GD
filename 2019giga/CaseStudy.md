@@ -759,6 +759,7 @@ ls
 - https://www.ncbi.nlm.nih.gov/assembly
 Browse by Organism
   - https://www.ncbi.nlm.nih.gov/assembly/organism/
+Aspergillus oryzae (ascomycetes)	AoryTK10_1.0
 
 ```
 
