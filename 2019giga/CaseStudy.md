@@ -777,9 +777,10 @@ ls -l
 ls -lh
 
 # decompress files
-gzip -dc GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz > GCA_009684975.1_AoryTK10_1.0_genomic.fna
+gzip -dc GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz > Ao.fa
 ```
 
+https://github.com/haruosuz/introBI/blob/master/2019/README.md#redirecting-standard-out-to-a-file
 
 
 
