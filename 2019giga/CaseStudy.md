@@ -782,7 +782,7 @@ grep '>' Ao.fa
 grep '>' Ao.fa | wc
 ```
 
-*a.sh*
+Create a shell script named *a.sh* in your favorite text editor (e.g. [Atom](https://atom.io/)):  
 ```
 #!/bin/sh
 
