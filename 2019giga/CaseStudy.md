@@ -813,10 +813,17 @@ Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing
 echo Hello
 ```
 
+Running scripts
+```
+chmod 755 a.sh
+
+./a.sh
+```
+
 # 
 
 
-
+```
 # make directory
 mkdir ~/projects
 
@@ -839,7 +846,6 @@ open .
 ## assignment 9
 **課題No.9 「Guest Speaker (1)」**
 
-Report your results of analyzing biological data (e.g. genome DNA sequences and protein sequences) you're interested in.
 
 ----------
 ## assignment 10
