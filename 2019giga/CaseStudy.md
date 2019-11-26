@@ -782,25 +782,24 @@ ls -lh
 
 # Inspecting Data with Head and Tail
 head -n 10 Ao.fa
+
+grep '>' Ao.fa
+
+grep '>' Ao.fa | wc
 ```
 
 - https://github.com/haruosuz/introBI/blob/master/2019/README.md#redirecting-standard-out-to-a-file
 - http://apprize.info/data/bioinformatics/index.html
+Bioinformatics Data Skills (2015)
 - https://apprize.info/data/bioinformatics/3.html
-Redirecting Standard Out to a File
+Chapter 3: Remedial Unix Shell
+  - Redirecting Standard Out to a File
+  - Pipes in Action: Creating Simple Programs with Grep and Pipes
+- https://apprize.info/data/bioinformatics/6.html
+Chapter 6: Bioinformatics Data
 - https://apprize.info/data/bioinformatics/7.html
-Inspecting Data with Head and Tail
-
-```
-
-```
-
-
-
-
-
-
-
+Chapter 7: Unix Data Tools
+  - Inspecting Data with Head and Tail
 
 ```
 
