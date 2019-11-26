@@ -837,6 +837,12 @@ ennaf -h
 Download the DNA sequence of your genome of interest.
 Report your results of analyzing sequence data.
 
+```
+wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_AoryTK10_1.0/GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz
+gzip -dc GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz > Ao.fa
+grep '>' Ao.fa | wc
+```
+
 ----------
 ## assignment 10
 **課題No.10 「Guest Speaker (2)」**
