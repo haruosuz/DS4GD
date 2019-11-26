@@ -815,20 +815,27 @@ chmod 755 a.sh
 ```
 
 - [Kirr's homepage](http://kirill-kryukov.com/kirr/)
+  - http://kirill-kryukov.com/study/naf/
+  - http://kirr.dyndns.org/sequence-compression-benchmark/
 - https://github.com/KirillKryukov
   - https://github.com/KirillKryukov/naf
 Nucleotide Archival Format - Compressed file format for DNA/RNA/protein sequences
 
-https://github.com/KirillKryukov/naf/blob/master/README.md#installing
 ```
+# https://github.com/KirillKryukov/naf/blob/master/README.md#installing
 git clone --recurse-submodules https://github.com/KirillKryukov/naf.git
-cd naf && make && make test && sudo make install
+cd naf && make && make test && make install
+
+# https://github.com/KirillKryukov/naf/blob/master/README.md#compressing
+ennaf -h
 ```
 
 ----------
 ## assignment 9
 **課題No.9 「Guest Speaker (1)」**
 
+Download the DNA sequence of your genome of interest.
+Report your results of analyzing sequence data.
 
 ----------
 ## assignment 10
