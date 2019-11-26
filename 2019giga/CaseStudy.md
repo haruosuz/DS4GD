@@ -773,14 +773,32 @@ wget ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_Aory
 # -l     use a long listing format
 ls -l
 
+# decompress file
+# Redirecting Standard Out to a File
+gzip -dc GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz > Ao.fa
+
 # -h, --human-readable	print human readable sizes
 ls -lh
 
-# decompress files
-gzip -dc GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz > Ao.fa
+# Inspecting Data with Head and Tail
+head -n 10 Ao.fa
 ```
 
-https://github.com/haruosuz/introBI/blob/master/2019/README.md#redirecting-standard-out-to-a-file
+- https://github.com/haruosuz/introBI/blob/master/2019/README.md#redirecting-standard-out-to-a-file
+- http://apprize.info/data/bioinformatics/index.html
+- https://apprize.info/data/bioinformatics/3.html
+Redirecting Standard Out to a File
+- https://apprize.info/data/bioinformatics/7.html
+Inspecting Data with Head and Tail
+
+```
+
+```
+
+
+
+
+
 
 
 
