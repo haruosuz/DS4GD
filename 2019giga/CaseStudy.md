@@ -736,8 +736,6 @@ http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
 
 - https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#guest-speaker
 - [Kirr's homepage](http://kirill-kryukov.com/kirr/)
-  - [Nucleotide Archival Format (NAF)](http://kirill-kryukov.com/study/naf/)
-NAF compressor and decompressor are available at github: https://github.com/KirillKryukov/naf.
 - https://github.com/KirillKryukov
   - https://github.com/KirillKryukov/naf
 Nucleotide Archival Format - Compressed file format for DNA/RNA/protein sequences
@@ -745,15 +743,15 @@ Nucleotide Archival Format - Compressed file format for DNA/RNA/protein sequence
 Super-fast simple sequence-processing tools
 
 ```
-
 bash
-cd ~/projects/
 
 ```
 
 ----------
 ## assignment 9
 **課題No.9 「Guest Speaker (1)」**
+
+Report your results of analyzing biological data (e.g. genome DNA sequences and protein sequences) you're interested in.
 
 ----------
 ## assignment 10
