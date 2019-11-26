@@ -760,6 +760,9 @@ ls
 Browse by Organism
   - https://www.ncbi.nlm.nih.gov/assembly/organism/
 Aspergillus oryzae (ascomycetes)	AoryTK10_1.0
+    - https://www.ncbi.nlm.nih.gov/assembly/GCA_009684975.1/
+FTP directory for GenBank assembly
+      - ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_AoryTK10_1.0
 
 ```
 
