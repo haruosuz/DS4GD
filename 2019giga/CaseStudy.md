@@ -834,6 +834,7 @@ ennaf -h
 ## assignment 9
 **課題No.9 「Guest Speaker (1)」**
 
+https://www.ncbi.nlm.nih.gov/assembly/organism/ 
 Download the DNA sequence of your genome of interest.
 Report your results of analyzing sequence data.
 
