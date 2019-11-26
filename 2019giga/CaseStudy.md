@@ -743,7 +743,26 @@ Nucleotide Archival Format - Compressed file format for DNA/RNA/protein sequence
 Super-fast simple sequence-processing tools
 
 ```
+# print working directory
+pwd
+
+
+
+
+
+# change shell to bash
 bash
+
+# make directory
+mkdir ~/projects
+
+# change directory
+cd ~/projects/
+
+
+# open current directory
+open .
+
 
 ```
 
