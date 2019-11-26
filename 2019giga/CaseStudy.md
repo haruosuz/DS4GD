@@ -785,10 +785,11 @@ head -n 10 Ao.fa
 
 grep '>' Ao.fa
 
+# Pipes in Action: Creating Simple Programs with Grep and Pipes
 grep '>' Ao.fa | wc
 ```
 
-- https://github.com/haruosuz/introBI/blob/master/2019/README.md#redirecting-standard-out-to-a-file
+- https://github.com/haruosuz/introBI/blob/master/2019/README.md
 - http://apprize.info/data/bioinformatics/index.html
 Bioinformatics Data Skills (2015)
 - https://apprize.info/data/bioinformatics/3.html
@@ -800,9 +801,16 @@ Chapter 6: Bioinformatics Data
 - https://apprize.info/data/bioinformatics/7.html
 Chapter 7: Unix Data Tools
   - Inspecting Data with Head and Tail
+- https://apprize.info/data/bioinformatics/12.html
+Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks
+  - Writing and Running Robust Bash Scripts
+  - Running Bash scripts
 
+*a.sh*
 ```
+#!/bin/sh
 
+echo Hello
 ```
 
 # 
