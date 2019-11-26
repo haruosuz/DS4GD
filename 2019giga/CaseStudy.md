@@ -764,6 +764,12 @@ Aspergillus oryzae (ascomycetes)	AoryTK10_1.0
 FTP directory for GenBank assembly
       - ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_AoryTK10_1.0
 
+
+ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_AoryTK10_1.0/GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz
+
+抽出されたURLをブラウザFirefox/Chromeで開く。*GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Open the URL with your browser (Firefox or Chrome). Right click the link *GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz*, and select "Copy Link Address".
+
 ```
 
 ```
