@@ -818,31 +818,11 @@ chmod 755 a.sh
 - https://github.com/KirillKryukov
   - https://github.com/KirillKryukov/naf
 Nucleotide Archival Format - Compressed file format for DNA/RNA/protein sequences
-  - https://github.com/KirillKryukov/seq-tools
-Super-fast simple sequence-processing tools
 
-
-
-# 
-
-
+https://github.com/KirillKryukov/naf/blob/master/README.md#installing
 ```
-# make directory
-mkdir ~/projects
-
-# change directory
-cd ~/projects/
-
-
-
-# change shell to bash
-bash
-
-
-# open current directory
-open .
-
-
+git clone --recurse-submodules https://github.com/KirillKryukov/naf.git
+cd naf && make && make test && sudo make install
 ```
 
 ----------
