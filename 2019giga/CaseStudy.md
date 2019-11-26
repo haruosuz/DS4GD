@@ -752,14 +752,17 @@ mkdir 1
 # change directory
 cd 1
 
-# make directory
-mkdir ~/projects
-
-# change directory
-cd ~/projects/
-
 # list directory contents
 ls
+```
+
+- https://www.ncbi.nlm.nih.gov/assembly
+Browse by Organism
+  - https://www.ncbi.nlm.nih.gov/assembly/organism/
+
+```
+
+```
 
 
 
@@ -767,6 +770,17 @@ ls
 
 
 # 
+
+
+
+
+
+
+# make directory
+mkdir ~/projects
+
+# change directory
+cd ~/projects/
 
 
 
