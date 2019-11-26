@@ -746,18 +746,24 @@ Super-fast simple sequence-processing tools
 # print working directory
 pwd
 
+# make directory
+mkdir 1
 
-
-
-
-# change shell to bash
-bash
+# change directory
+cd 1
 
 # make directory
 mkdir ~/projects
 
 # change directory
 cd ~/projects/
+
+
+
+
+
+# change shell to bash
+bash
 
 
 # open current directory
