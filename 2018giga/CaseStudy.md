@@ -1114,10 +1114,7 @@ Pipe the standard output to the next command with the pipe character (`|`).
     # wc -l outputs the number of lines
     grep "^>" uniprot_sprot.fasta | wc -l
 
-### [BLAST](https://github.com/haruosuz/bioinfo/blob/master/README.md#blast)
-
-[__BLAST(Basic Local Alignment Search Tool)__ はNCBIで開発された配列類似性検索のためのツール。
-BLASTのquery配列はFASTA形式、コマンドラインツールを利用する際のDBとして はmulti-FASTA形式の塩基 OR アミノ酸配列である必要がある。](https://github.com/dogrunjp/presentation/blob/master/20171216_drbonobon_4/PITCHME.md)
+### [BLAST](https://github.com/haruosuz/bioinfo/blob/master/references/README.blast.md)
 
 [変数に値を設定する](https://shellscript.sunone.me/variable.html#変数に値を設定する):  
 
