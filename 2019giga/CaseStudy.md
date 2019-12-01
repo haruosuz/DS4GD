@@ -742,7 +742,7 @@ http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
 
 [Open Terminal in Mac](http://ihelper.us/how-to-open-a-terminal-in-mac/)
 
-<img src="http://ihelper.us/wp-content/uploads/2019/10/open-terminal.png" width=30% alt="http://ihelper.us/how-to-open-a-terminal-in-mac/">
+<img src="http://ihelper.us/wp-content/uploads/2019/10/open-terminal.png" width=50% alt="http://ihelper.us/how-to-open-a-terminal-in-mac/">
 
 [Shell Commands](https://ss64.com/osx/)
 ```
