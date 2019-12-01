@@ -825,9 +825,7 @@ ennaf -h
 ## assignment 9
 **課題No.9 「Guest Speaker (1)」**
 
-https://www.ncbi.nlm.nih.gov/assembly/organism/
-
-Download the DNA sequence of your genome of interest.
+Download DNA sequences of your genome of interest from [NCBI](https://www.ncbi.nlm.nih.gov/assembly/organism/). 
 Report your results of analyzing sequence data.
 
 [Shell Commands](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/):
@@ -835,7 +833,7 @@ Report your results of analyzing sequence data.
 mkdir -p ~/projects
 cd ~/projects/
 URL=ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_AoryTK10_1.0/GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz
-#wget $URL
+wget $URL
 gzip -dc `basename $URL` > mySequences.fna
 ls -lh
 grep '>' mySequences.fna | head
