@@ -565,6 +565,8 @@ Rの起動
     #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.2.1.genomic.fna.gz" # 62.1 MB
     #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.3.1.genomic.fna.gz" # 29.1 MB
     #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.2.1.genomic.fna.gz" # 21.9 MB
+    #url <- "ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/plasmid.6.1.genomic.fna.gz" # 25.4 MB
+    #url <- "ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/plasmid.1.rna.fna.gz" # 3.1 kB
     filename <- basename(url)
     download.file(url = url, destfile = filename)
 
@@ -580,6 +582,7 @@ Rの起動
     #filename <- "viral.2.1.genomic.fna.gz"
     #filename <- "viral.3.1.genomic.fna.gz"
     #filename <- "mitochondrion.2.1.genomic.fna.gz"
+    #filename <- "plasmid.1.rna.fna.gz"
     seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE) # Reading sequence data
 
     length(seqs)# get the number of elements
@@ -606,6 +609,8 @@ Two members of the family that are commonly known are Ebola virus and Marburg vi
     #pattern <- "Influenza" # "viral.2.1.genomic.fna.gz"
     #pattern <- "Zika virus|dengue|yellow fever|Japanese encephalitis|West Nile" # "viral.3.1.genomic.fna.gz"
     #pattern <- "Elephas|Loxodonta|Mammuthus" #
+    #pattern <- "ribosomal RNA" # "plasmid.1.rna.fna.gz"
+
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     sum(TF)
     unlist(myAnnot[TF])
@@ -662,6 +667,9 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
     # Draw a Heat Map
     heatmap(myrho, margins=c(7, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
+    # Hierarchical cluster analysis
+    plot(hclust(dist(t(myrho))), hang=-1)
+
     # get sequence annotations
     unlist(getAnnot(seqs))
 
@@ -669,6 +677,7 @@ DNA配列のk連続塩基組成（観測値/期待値）を解析する:
 - オリゴヌクレオチド組成
 [Oligonucleotide Composition](https://github.com/haruosuz/mgsa/blob/master/references/mgsa.nucleotide_composition.md#oligonucleotide) | 
 [k-mer](https://github.com/haruosuz/mgsa/blob/master/references/mgsa.nucleotide_composition.md#k-mer)
+- クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
 
 ----------
 ### Elongation Factor
