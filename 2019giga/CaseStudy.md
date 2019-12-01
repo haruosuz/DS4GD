@@ -743,6 +743,11 @@ http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
 ----------
 ## [2019-11-26](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-11-26)
 
+[Open Terminal in Mac](http://ihelper.us/how-to-open-a-terminal-in-mac/)
+
+![](http://ihelper.us/wp-content/uploads/2019/10/open-terminal.png)
+
+[Shell Commands](https://ss64.com/osx/)
 ```
 # print working directory
 pwd
