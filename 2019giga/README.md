@@ -63,6 +63,7 @@ https://www.presentationzen.com/presentationzen/
 - Title: "Fundamentals of Big Data Sequence Analysis"
 - [Slides](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/Slides_2019-11-26.pdf)
 - [Codes](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#2019-11-26)
+- [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-9) 課題No.9 「Guest Speaker (1)」
 
 ### 2019-12-03
 - Speaker: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学医学部 [情報生物医学研究室](http://mls.med.u-tokai.ac.jp/bmi/index.html)）
