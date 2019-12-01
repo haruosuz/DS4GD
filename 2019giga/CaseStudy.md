@@ -825,7 +825,8 @@ ennaf -h
 ## assignment 9
 **課題No.9 「Guest Speaker (1)」**
 
-https://www.ncbi.nlm.nih.gov/assembly/organism/ 
+https://www.ncbi.nlm.nih.gov/assembly/organism/
+
 Download the DNA sequence of your genome of interest.
 Report your results of analyzing sequence data.
 
@@ -835,11 +836,10 @@ mkdir -p ~/projects
 cd ~/projects/
 URL=ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_AoryTK10_1.0/GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz
 wget $URL
-# basename - strip directory and suffix from filenames
-FASTA=`basename $URL .gz` # GCA_009684975.1_AoryTK10_1.0_genomic.fna
-gzip -dc `basename $URL` > $FASTA
+gzip -dc `basename $URL` > seq.fasta
 ls -lh
-grep '>' $FASTA | wc
+grep '>' seq.fasta | head
+grep '>' seq.fasta | wc
 ```
 
 ----------
