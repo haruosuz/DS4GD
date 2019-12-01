@@ -744,6 +744,7 @@ http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
 ## 2019-11-26
 
 - https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#guest-speaker
+- https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-11-26
 
 ```
 # print working directory
@@ -825,7 +826,7 @@ ennaf -h
 ## assignment 9
 **課題No.9 「Guest Speaker (1)」**
 
-Download DNA sequences of your genome of interest from [NCBI](https://www.ncbi.nlm.nih.gov/assembly/organism/). 
+Download DNA sequences of your genome of interest from [NCBI](https://www.ncbi.nlm.nih.gov/assembly/organism/).
 Report your results of analyzing sequence data.
 
 Shell Commands:
@@ -841,8 +842,20 @@ grep '>' mySequences.fna | wc
 ```
 
 ----------
+## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
+
+
+
+
+
+----------
 ## assignment 10
 **課題No.10 「Guest Speaker (2)」**
+
+
+
+
+
 
 ----------
 
