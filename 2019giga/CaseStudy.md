@@ -830,16 +830,16 @@ https://www.ncbi.nlm.nih.gov/assembly/organism/
 Download the DNA sequence of your genome of interest.
 Report your results of analyzing sequence data.
 
-Example code: 
+[Shell Commands](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/):
 ```
 mkdir -p ~/projects
 cd ~/projects/
 URL=ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_AoryTK10_1.0/GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz
-wget $URL
-gzip -dc `basename $URL` > seq.fasta
+#wget $URL
+gzip -dc `basename $URL` > mySequences.fna
 ls -lh
-grep '>' seq.fasta | head
-grep '>' seq.fasta | wc
+grep '>' mySequences.fna | head
+grep '>' mySequences.fna | wc
 ```
 
 ----------
