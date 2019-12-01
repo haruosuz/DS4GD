@@ -741,10 +741,7 @@ http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
 ラージゲノムにも対応したdot plot解析ツール D-GENIES - macでインフォマティクス
 
 ----------
-## 2019-11-26
-
-- https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#guest-speaker
-- https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-11-26
+## [2019-11-26](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-11-26)
 
 ```
 # print working directory
