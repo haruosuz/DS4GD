@@ -719,9 +719,6 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
 
 ![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
 
-    # change shell to bash
-    bash
-
 [(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
 「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
 [講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
@@ -745,7 +742,7 @@ http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
 
 [Open Terminal in Mac](http://ihelper.us/how-to-open-a-terminal-in-mac/)
 
-![](http://ihelper.us/wp-content/uploads/2019/10/open-terminal.png)
+<img src="http://ihelper.us/wp-content/uploads/2019/10/open-terminal.png" width=30% alt="http://ihelper.us/how-to-open-a-terminal-in-mac/">
 
 [Shell Commands](https://ss64.com/osx/)
 ```
