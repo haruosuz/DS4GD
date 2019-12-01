@@ -828,7 +828,7 @@ ennaf -h
 Download DNA sequences of your genome of interest from [NCBI](https://www.ncbi.nlm.nih.gov/assembly/organism/). 
 Report your results of analyzing sequence data.
 
-[Shell Commands](https://www.geeksforgeeks.org/basic-shell-commands-in-linux/):
+Shell Commands:
 ```
 mkdir -p ~/projects
 cd ~/projects/
