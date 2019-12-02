@@ -834,7 +834,7 @@ Download DNA sequences of your genome of interest (*_genomic.fna.gz* file). Repo
   - On this page (https://www.ncbi.nlm.nih.gov/assembly/GCF_000006965.1/), click on "FTP directory for RefSeq assembly"
   - On this page (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/965/GCF_000006965.1_ASM696v1), right click the link *GCF_000006965.1_ASM696v1_genomic.fna.gz*, and select "Copy Link Address".
 
-Using Shell:
+Using Shell:  
 ```
 URL=ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/965/GCF_000006965.1_ASM696v1/GCF_000006965.1_ASM696v1_genomic.fna.gz
 wget $URL
@@ -844,7 +844,7 @@ grep '>' mySequences.fna | head
 grep '>' mySequences.fna | wc
 ```
 
-Using R:
+Using R:  
 [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-assembly_reports)
 
 ----------
