@@ -864,7 +864,7 @@ mkdir -p ~/projects
 cd ~/projects/
 
 # Download FASTA-format files
-wget https://github.com/haruosuz/DS4GD/raw/master/2019giga/guest-speaker/2019-12-02/ebov.zip
+wget https://github.com/haruosuz/DS4GD/raw/master/2019giga/guest-speaker/2019-12-03/ebov.zip
 
 # extract compressed files in a ZIP archive
 unzip ebov.zip
@@ -877,13 +877,9 @@ grep "^>" *.fas
 
 ```
 
-
 ----------
 ## assignment 10
 **課題No.10 「Guest Speaker (2)」**
-
-
-
 
 
 
