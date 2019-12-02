@@ -58,7 +58,9 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 ### 2019-12-03
 - Speaker: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学医学部 [情報生物医学研究室](http://mls.med.u-tokai.ac.jp/bmi/index.html)）
 - Title: "Evolution and detection of genes under selection"
-- [Slides](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-02/DS4GD_ueda_Dec03_web.key.pdf)
+- [Slides](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/DS4GD_ueda_Dec03_web.key.pdf)
+- [Codes](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#2019-12-03)
+- [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-10) 課題No.9 「Guest Speaker (1)」
 - Language: English and Japanese
 - Date: 2019-12-03
 - Time: 11:10-12:40
