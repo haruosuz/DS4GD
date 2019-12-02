@@ -832,7 +832,7 @@ Download DNA sequences of your genome of interest (*_genomic.fna.gz* file). Repo
   - At the NCBI Assembly page (https://www.ncbi.nlm.nih.gov/assembly), click on "Browse by Organism".
   - On this page (https://www.ncbi.nlm.nih.gov/assembly/organism/), type the Organism name (e.g. "Sinorhizobium meliloti 1021") in the search box next to the "Search by organism" button, and then click on Name [ASM696v1](https://www.ncbi.nlm.nih.gov/assembly/GCF_000006965.1/) for Organism "Sinorhizobium meliloti 1021 (a-proteobacteria)".
   - On this page (https://www.ncbi.nlm.nih.gov/assembly/GCF_000006965.1/), click on "FTP directory for RefSeq assembly"
-  - On this page <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/965/GCF_000006965.1_ASM696v1>, right click the link *GCF_000006965.1_ASM696v1_genomic.fna.gz*, and select "Copy Link Address".
+  - On this page (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/006/965/GCF_000006965.1_ASM696v1), right click the link *GCF_000006965.1_ASM696v1_genomic.fna.gz*, and select "Copy Link Address".
 
 Using Shell:
 ```
