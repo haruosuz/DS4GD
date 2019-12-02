@@ -830,9 +830,9 @@ Download DNA sequences of your genome of interest.
 Report your results of analyzing sequence data.
 
 - Retrieving genome sequence data via the NCBI website
-  - At the NCBI Assembly page (https://www.ncbi.nlm.nih.gov/assembly), click on [Browse by Organism](https://www.ncbi.nlm.nih.gov/assembly/organism/).
+  - At the NCBI Assembly page (https://www.ncbi.nlm.nih.gov/assembly), click on "Browse by Organism".
   - On this page (https://www.ncbi.nlm.nih.gov/assembly/organism/), type the Organism name (e.g. "Dengue virus") in the search box, and then click on "Dengue virus 1 (viruses)" [ViralProj15306](https://www.ncbi.nlm.nih.gov/assembly/GCF_000862125.1/).
-  - On this page (https://www.ncbi.nlm.nih.gov/assembly/GCF_000862125.1/), click on [FTP directory for RefSeq assembly](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/862/125/GCF_000862125.1_ViralProj15306)
+  - On this page (https://www.ncbi.nlm.nih.gov/assembly/GCF_000862125.1/), click on "FTP directory for RefSeq assembly"
   - On this page (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/862/125/GCF_000862125.1_ViralProj15306), right click the link *GCF_000862125.1_ViralProj15306_genomic.fna.gz*, and select "Copy Link Address".
 
 Using Shell:
