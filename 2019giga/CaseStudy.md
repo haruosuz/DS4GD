@@ -826,8 +826,7 @@ ennaf -h
 ## assignment 9
 **課題No.9 「Guest Speaker (1)」**
 
-Download DNA sequences of your genome of interest.
-Report your results of analyzing sequence data.
+Download DNA sequences of your genome of interest (*_genomic.fna.gz* file). Report your results of analyzing sequence data.
 
 - Retrieving genome sequence data via the NCBI website
   - At the NCBI Assembly page (https://www.ncbi.nlm.nih.gov/assembly), click on "Browse by Organism".
@@ -835,7 +834,7 @@ Report your results of analyzing sequence data.
   - On this page (https://www.ncbi.nlm.nih.gov/assembly/GCF_000862125.1/), click on "FTP directory for RefSeq assembly"
   - On this page (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/862/125/GCF_000862125.1_ViralProj15306), right click the link *GCF_000862125.1_ViralProj15306_genomic.fna.gz*, and select "Copy Link Address".
 
-Using Shell:
+Using Shell to download the sequence:
 ```
 URL=ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/862/125/GCF_000862125.1_ViralProj15306/GCF_000862125.1_ViralProj15306_genomic.fna.gz
 wget $URL
@@ -845,7 +844,7 @@ grep '>' mySequences.fna | head
 grep '>' mySequences.fna | wc
 ```
 
-Using R:
+Using R to download the sequence:
 [NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-assembly_reports)
 
 ----------
