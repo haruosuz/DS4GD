@@ -851,7 +851,7 @@ Using R:
 ----------
 ## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
 
-[NCBI Virus Variation Resource](https://www.ncbi.nlm.nih.gov/genome/viruses/variation/)
+NCBI Virus Variation Resource (https://www.ncbi.nlm.nih.gov/genome/viruses/variation/)
 
 [Open Terminal in Mac](http://ihelper.us/how-to-open-a-terminal-in-mac/)
 
