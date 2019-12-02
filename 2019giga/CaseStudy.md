@@ -19,6 +19,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 8](#assignment-8) 課題No.8 「dotplot」
 - [2019-11-26](#2019-11-26)
 - [assignment 9](#assignment-9) 課題No.9 「Guest Speaker (1)」
+- [2019-12-03](#2019-12-03)
 - [assignment 10](#assignment-10) 課題No.10 「Guest Speaker (2)」
 - [E-utilities](#e-utilities)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
@@ -850,13 +851,37 @@ Using R:
 ----------
 ## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
 
+[Open Terminal in Mac](http://ihelper.us/how-to-open-a-terminal-in-mac/)
 
+<img src="http://ihelper.us/wp-content/uploads/2019/10/open-terminal.png" width=50% alt="http://ihelper.us/how-to-open-a-terminal-in-mac/">
 
+[Shell Commands](https://ss64.com/osx/)
+```
+# make directory
+mkdir -p ~/projects
+
+# change directory
+cd ~/projects/
+
+# Download FASTA-format files
+wget https://github.com/haruosuz/DS4GD/raw/master/2019giga/guest-speaker/2019-12-02/ebov.zip
+
+# extract compressed files in a ZIP archive
+unzip ebov.zip
+
+# change directory
+cd ebov/
+
+# use `grep` to extract lines matching the pattern "^>"
+grep "^>" *.fas
+
+```
 
 
 ----------
 ## assignment 10
 **課題No.10 「Guest Speaker (2)」**
+
 
 
 
