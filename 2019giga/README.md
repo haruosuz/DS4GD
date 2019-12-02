@@ -45,16 +45,6 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
 
 ----------
-## interim report
-**中間発表**
-
-5 minutes will be allocated for each presentation, including presentation and discussion.
-
-https://www.presentationzen.com/presentationzen/
-
-![https://www.academyhills.com/library/calendar/tqe2it00000ht48v.html](https://www.academyhills.com/library/calendar/tqe2it00000ht48v-img/tqe2it00000ht4en.jpg)
-
-----------
 ## Guest speaker
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
@@ -67,11 +57,22 @@ https://www.presentationzen.com/presentationzen/
 
 ### 2019-12-03
 - Speaker: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学医学部 [情報生物医学研究室](http://mls.med.u-tokai.ac.jp/bmi/index.html)）
-- Title: "Evolution and detection of gene mutations under selection"
+- Title: "Evolution and detection of genes under selection"
+- [Slides](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-02/DS4GD_ueda_Dec03_web.key.pdf)
 - Language: English and Japanese
 - Date: 2019-12-03
 - Time: 11:10-12:40
 - Venue: Classroom [λ21](http://classroom.sfc.keio.ac.jp/class/l-to/l-21.html)
+
+----------
+## interim report
+**中間発表**
+
+5 minutes will be allocated for each presentation, including presentation and discussion.
+
+https://www.presentationzen.com/presentationzen/
+
+![https://www.academyhills.com/library/calendar/tqe2it00000ht48v.html](https://www.academyhills.com/library/calendar/tqe2it00000ht48v-img/tqe2it00000ht4en.jpg)
 
 ----------
 ## final presentation
