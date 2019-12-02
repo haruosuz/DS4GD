@@ -885,6 +885,81 @@ grep "^>" *.fas
 
 
 
+----------
+
+
+
+----------
+## assignment 11
+**課題No.11 「Pairwise Sequence Alignment」**
+
+[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
+
+Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+
+Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
+
+    library("seqinr")
+    seq1 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_009193.fasta")[[1]]
+    seq2 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta")[[1]]
+
+    seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
+    seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
+
+Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
+(set gapOpening = -9.5 and gapExtension = -0.5)
+
+	library("Biostrings")		# load the Biostrings package
+	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
+    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign
+
+Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
+
+    writePairwiseAlignments(myglobalAlign)
+
+Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
+
+	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
+    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
+	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+	myglobalAlign2
+
+Q5. What is the alignment score for the optimal local alignment between the two proteins?
+
+    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+	gapOpening = -9.5, gapExtension = -0.5, type="local")
+	mylocalAlign
+
+----------
+## assignment-12
+**課題No.12 「draft report」**
+
+Integrate and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it in PDF format.
+
+これまでの課題（興味あるDNA/タンパク質の配列解析の結果）を統合・編集してレポートのドラフトを作成し、PDFファイルで提出する。
+
+----------
+## assignment-13
+**課題No.13 「presentation slides」**
+
+https://github.com/haruosuz/DS4GD/tree/master/2018giga#final-presentation
+
+2019-07-16 最終発表のスライド <YOUR_NAME.pdf> を提出する。
+発表時間：1人あたり最大5分
+
+生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、Pythonによる配列解析などが含まれる。
+
+Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2019-07-16.
+Five minutes will be allocated for each presentation, including presentation and discussion.
+
+Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global/local alignment), sequence analysis with Python, etc.
+
+----------
+
+
+
 
 ----------
 
@@ -1208,71 +1283,7 @@ system("open .")
     # Draw a Heat Map
     heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
-----------
-## assignment 11
-**課題No.11 「Pairwise Sequence Alignment」**
 
-[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
-
-Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
-
-Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
-
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_009193.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta")[[1]]
-
-    seq1string <- toupper(c2s(seq1))	# convert the sequence to a string and to uppercase
-    seq2string <- toupper(c2s(seq2))	# convert the sequence to a string and to uppercase
-
-Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
-(set gapOpening = -9.5 and gapExtension = -0.5)
-
-	library("Biostrings")		# load the Biostrings package
-	data(BLOSUM50)			# load the BLOSUM50 scoring matrix
-    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
-	myglobalAlign
-
-Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
-
-    writePairwiseAlignments(myglobalAlign)
-
-Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
-
-	data(BLOSUM62)			# load the BLOSUM62 scoring matrix
-    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
-	myglobalAlign2
-
-Q5. What is the alignment score for the optimal local alignment between the two proteins?
-
-    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5, type="local")
-	mylocalAlign
 
 ----------
-## assignment-12
-**課題No.12 「draft report」**
 
-Integrate and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it in PDF format.
-
-これまでの課題（興味あるDNA/タンパク質の配列解析の結果）を統合・編集してレポートのドラフトを作成し、PDFファイルで提出する。
-
-----------
-## assignment-13
-**課題No.13 「presentation slides」**
-
-https://github.com/haruosuz/DS4GD/tree/master/2018giga#final-presentation
-
-2019-07-16 最終発表のスライド <YOUR_NAME.pdf> を提出する。
-発表時間：1人あたり最大5分
-
-生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、Pythonによる配列解析などが含まれる。
-
-Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2019-07-16.
-Five minutes will be allocated for each presentation, including presentation and discussion.
-
-Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global/local alignment), sequence analysis with Python, etc.
-
-----------
