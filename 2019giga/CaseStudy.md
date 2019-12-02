@@ -353,11 +353,12 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
 
     # grepl returns a logical vector (match or not for each element of x)
     organism_name <- "Dengue virus"
-    organism_name <- "Dengue virus|Rabies"
     TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & 
      d$version_status == "latest" & grepl(pattern = "Complete Genome", x = d$assembly_level)
     d[TF,]
     d$ftp_path[TF]
+
+```> d$ftp_path[TF][1] "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/862/125/GCF_000862125.1_ViralProj15306"[2] "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/865/065/GCF_000865065.1_ViralProj15599"[3] "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/866/625/GCF_000866625.1_ViralProj15598"[4] "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/871/845/GCF_000871845.1_ViralProj20183"```
 
 抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 Open the URL with your browser (Firefox or Chrome). Right click the link *README.txt*, and select "Copy Link Address".
@@ -825,20 +826,27 @@ ennaf -h
 ## assignment 9
 **課題No.9 「Guest Speaker (1)」**
 
-Download DNA sequences of your genome of interest from [NCBI](https://www.ncbi.nlm.nih.gov/assembly/organism/).
+Download DNA sequences of your genome of interest.
 Report your results of analyzing sequence data.
 
-Shell Commands:
+- Retrieving genome sequence data via the NCBI website
+  - At the NCBI Assembly page (https://www.ncbi.nlm.nih.gov/assembly), click on [Browse by Organism](https://www.ncbi.nlm.nih.gov/assembly/organism/).
+  - On this page (https://www.ncbi.nlm.nih.gov/assembly/organism/), type the Organism name (e.g. "Dengue virus") in the search box, and then click on "Dengue virus 1 (viruses)" [ViralProj15306](https://www.ncbi.nlm.nih.gov/assembly/GCF_000862125.1/).
+  - On this page (https://www.ncbi.nlm.nih.gov/assembly/GCF_000862125.1/), click on [FTP directory for RefSeq assembly](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/862/125/GCF_000862125.1_ViralProj15306)
+  - On this page (ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/862/125/GCF_000862125.1_ViralProj15306), right click the link *GCF_000862125.1_ViralProj15306_genomic.fna.gz*, and select "Copy Link Address".
+
+Using Shell:
 ```
-mkdir -p ~/projects
-cd ~/projects/
-URL=ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/009/684/975/GCA_009684975.1_AoryTK10_1.0/GCA_009684975.1_AoryTK10_1.0_genomic.fna.gz
+URL=ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/862/125/GCF_000862125.1_ViralProj15306/GCF_000862125.1_ViralProj15306_genomic.fna.gz
 wget $URL
 gzip -dc `basename $URL` > mySequences.fna
 ls -lh
 grep '>' mySequences.fna | head
 grep '>' mySequences.fna | wc
 ```
+
+Using R:
+[NCBI ASSEMBLY_REPORTS](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-assembly_reports)
 
 ----------
 ## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
