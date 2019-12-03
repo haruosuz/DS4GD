@@ -886,7 +886,7 @@ grep -c "^>" *.fas
 ## assignment 10
 **課題No.10 「Guest Speaker (2)」**
 
-
+- Data [ebov.zip](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/ebov.zip?raw=true)
 
 ----------
 
