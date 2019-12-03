@@ -975,11 +975,8 @@ NCBI Virus Variation Resource (https://www.ncbi.nlm.nih.gov/genome/viruses/varia
 **課題No.10 「Guest Speaker (2)」**
 
 1. Obtain at least one gene from the link
-
-Data [ebov.zip](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/ebov.zip?raw=true)
-
-2. Calculate Ka/Ks ratio (and compare which Ka/Ks ratio are relatively larger than GP if you use more than one genes)
-
+[ebov.zip](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/ebov.zip?raw=true)
+2. Calculate Ka/Ks ratio (and compare which Ka/Ks ratio are relatively larger than GP if you use more than one genes).
 Use the following command
 ```
 s <- read.alignment(file = "EBOV.GP.14nt.fas", format = "fasta")
