@@ -974,8 +974,22 @@ NCBI Virus Variation Resource (https://www.ncbi.nlm.nih.gov/genome/viruses/varia
 ## assignment 10
 **課題No.10 「Guest Speaker (2)」**
 
-----------
+```
+# Set and Get Working Directory
+getwd()
+setwd("~/Downloads/ebov")
+getwd()
 
+#Read alaignment of GP genes
+s <- read.alignment(file = "EBOV.GP.14nt.fas", format = "fasta")
+
+#Calculate Ka and Ks values using kaks function
+result <- kaks(s) 
+#Calculate ka/ks ratio
+kaks <- result$ka/result$ks
+head(kaks)
+
+```
 
 
 ----------
