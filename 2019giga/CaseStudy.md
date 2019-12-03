@@ -922,6 +922,7 @@ s$seq[1]
 
 #Calculate Ka and Ks values using kaks function
 result <- kaks(s)  # ——> see table
+result
 
 # Calculate Ka/Ks ratio
 kaks <- result$ka/result$ks
