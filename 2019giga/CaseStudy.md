@@ -954,9 +954,11 @@ colnames (ksm)
 
 # Final dataset containing ka and ks values
 final <- cbind (kam, ksm)
+final
 
 # Delete redundant columns 4 and 5
 final <- final[,c(-4,-5)]
+final
 
 # Plot ka and ks values using ggplot2 package
 p <- ggplot(data=final, aes(x=Ks, y=Ka, color=Species1, shape=Species2))
