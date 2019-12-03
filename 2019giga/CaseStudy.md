@@ -941,10 +941,16 @@ ks
 # Reshape table
 kam <- melt(ka)
 ksm <- melt(ks)
+kam
+ksm
 
 # Change col names for simplicity…
+colnames (kam)
+colnames (ksm)
 colnames (kam) <- c("Species1", "Species2", "Ka")
 colnames (ksm) <- c("Species1", "Species2", "Ks")
+colnames (kam)
+colnames (ksm)
 
 # Final dataset containing ka and ks values
 final <- cbind (kam, ksm)
