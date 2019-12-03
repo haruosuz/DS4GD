@@ -877,6 +877,9 @@ cd ebov/
 # use `grep` to extract lines matching the pattern "^>"
 grep "^>" *.fas
 
+# --count
+grep -c "^>" *.fas
+
 ```
 
 ----------
