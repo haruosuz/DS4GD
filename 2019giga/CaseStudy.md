@@ -851,12 +851,6 @@ Using R:
 ----------
 ## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
 
-- Data [ebov.zip](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/ebov.zip?raw=true)
-
-[Open Terminal in Mac](http://ihelper.us/how-to-open-a-terminal-in-mac/)
-
-<img src="http://ihelper.us/wp-content/uploads/2019/10/open-terminal.png" width=50% alt="http://ihelper.us/how-to-open-a-terminal-in-mac/">
-
 [Shell Commands](https://ss64.com/osx/)
 ```
 # make directory
@@ -900,7 +894,6 @@ library(dplyr)
 
 #install.packages("stringr")
 library (stringr)
-
 
 #Make an own function to get lower triangle of the Ka/Ks matrix table
 get_lower <-function(k){
@@ -989,23 +982,13 @@ R command examples:
 ```
 # libraries I need (no need to install...)
 library(seqinr)
-library(reshape)
-library(ggplot2)
-library(dplyr)
-library(stringr)
-
-#Make an own function to get lower triangle of the Ka/Ks matrix table
-get_lower <-function(k){
-  k[upper.tri(k)] <- NA
-  return(k)
-}
 
 # Set and Get Working Directory
 setwd("~/Downloads/ebov")
 getwd()
 dir()
 
-#Read alaignment of GP genes
+#Read alignment of GP genes
 s <- read.alignment(file = "EBOV.GP.14nt.fas", format = "fasta")
 
 #Calculate Ka and Ks values using kaks function
