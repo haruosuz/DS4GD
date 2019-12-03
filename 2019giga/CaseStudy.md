@@ -926,6 +926,7 @@ result
 
 # Calculate Ka/Ks ratio
 kaks <- result$ka/result$ks
+kaks
 
 # Store ka and ks results separately
 ka <- as.matrix(result$ka)
@@ -934,6 +935,8 @@ ks <- as.matrix(result$ks)
 # Extract values which are required for analysis
 ka <- get_lower(ka)
 ks <- get_lower(ks)
+ka
+ks
 
 # Reshape table
 kam <- melt(ka)
