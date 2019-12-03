@@ -917,7 +917,8 @@ get_lower <-function(k){
 s <- read.alignment(file = system.file("sequences/test.phylip", package = "seqinr"), format = "phylip")
 
 #Check alignment
-s or s$seq[1]
+s
+s$seq[1]
 
 #Calculate Ka and Ks values using kaks function
 result <- kaks(s)  # ——> see table
