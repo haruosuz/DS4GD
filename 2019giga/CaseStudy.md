@@ -851,8 +851,6 @@ Using R:
 ----------
 ## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
 
-NCBI Virus Variation Resource (https://www.ncbi.nlm.nih.gov/genome/viruses/variation/)
-
 - Data [ebov.zip](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/ebov.zip?raw=true)
 
 [Open Terminal in Mac](http://ihelper.us/how-to-open-a-terminal-in-mac/)
@@ -902,7 +900,6 @@ library(dplyr)
 
 #install.packages("stringr")
 library (stringr)
-
 
 
 #Make an own function to get lower triangle of the Ka/Ks matrix table
@@ -962,17 +959,16 @@ final
 
 # Plot ka and ks values using ggplot2 package
 p <- ggplot(data=final, aes(x=Ks, y=Ka, color=Species1, shape=Species2))
-p <-  p + geom_point(size=5) +  theme_bw()
-p <- p +  geom_abline(slope = 1,intercept = 0, color = "red")  
-p <- p +  geom_abline(slope = 2, intercept = 0, color = "blue")
-p <- p +  geom_text(aes(5,5,label = 'slope 1', vjust = -1), color="red")
-p <- p +  geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color="blue")
-
+p <- p + geom_point(size=5) +  theme_bw()
+p <- p + geom_abline(slope = 1,intercept = 0, color = "red")  
+p <- p + geom_abline(slope = 2, intercept = 0, color = "blue")
+p <- p + geom_text(aes(5,5,label = 'slope 1', vjust = -1), color="red")
+p <- p + geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color="blue")
 p
 
-
-
 ```
+
+NCBI Virus Variation Resource (https://www.ncbi.nlm.nih.gov/genome/viruses/variation/)
 
 ----------
 ## assignment 10
