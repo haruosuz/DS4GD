@@ -853,6 +853,8 @@ Using R:
 
 NCBI Virus Variation Resource (https://www.ncbi.nlm.nih.gov/genome/viruses/variation/)
 
+- Data [ebov.zip](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/ebov.zip?raw=true)
+
 [Open Terminal in Mac](http://ihelper.us/how-to-open-a-terminal-in-mac/)
 
 <img src="http://ihelper.us/wp-content/uploads/2019/10/open-terminal.png" width=50% alt="http://ihelper.us/how-to-open-a-terminal-in-mac/">
@@ -882,11 +884,35 @@ grep -c "^>" *.fas
 
 ```
 
+### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+Rの起動
+
+```
+#install.packages("seqinr")
+library("seqinr")
+
+#install.packages("reshape")
+library (reshape)
+
+#install.packages("ggplot2")
+library(ggplot2)
+
+#install.packages("dplyr")
+library(dplyr)
+
+#install.packages("stringr")
+library (stringr)
+
+#Make an own function to get lower triangle of the Ka/Ks matrix table
+get_lower <-function(k){
+  k[upper.tri(k)] <- NA
+  return(k)
+}
+```
+
 ----------
 ## assignment 10
 **課題No.10 「Guest Speaker (2)」**
-
-- Data [ebov.zip](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/ebov.zip?raw=true)
 
 ----------
 
