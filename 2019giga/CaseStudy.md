@@ -988,6 +988,7 @@ kaks <- result$ka/result$ks
 head (kaks)
 ```
 
+R command examples:
 ```
 # libraries I need (no need to install...)
 library(seqinr)
@@ -1003,7 +1004,7 @@ get_lower <-function(k){
 }
 
 # Set and Get Working Directory
-#setwd("~/Downloads/ebov")
+setwd("~/Downloads/ebov")
 getwd()
 dir()
 
