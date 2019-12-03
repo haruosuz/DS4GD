@@ -974,11 +974,38 @@ NCBI Virus Variation Resource (https://www.ncbi.nlm.nih.gov/genome/viruses/varia
 ## assignment 10
 **課題No.10 「Guest Speaker (2)」**
 
+1. Obtain at least one gene from the link
+
+Data [ebov.zip](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/ebov.zip?raw=true)
+
+2. Calculate Ka/Ks ratio (and compare which Ka/Ks ratio are relatively larger than GP if you use more than one genes)
+
+Use the following command
 ```
+s <- read.alignment(file = "EBOV.GP.14nt.fas", format = "fasta")
+result <- kaks(s) 
+kaks <- result$ka/result$ks
+head (kaks)
+```
+
+```
+# libraries I need (no need to install...)
+library(seqinr)
+library(reshape)
+library(ggplot2)
+library(dplyr)
+library(stringr)
+
+#Make an own function to get lower triangle of the Ka/Ks matrix table
+get_lower <-function(k){
+  k[upper.tri(k)] <- NA
+  return(k)
+}
+
 # Set and Get Working Directory
+#setwd("~/Downloads/ebov")
 getwd()
-setwd("~/Downloads/ebov")
-getwd()
+dir()
 
 #Read alaignment of GP genes
 s <- read.alignment(file = "EBOV.GP.14nt.fas", format = "fasta")
@@ -988,9 +1015,7 @@ result <- kaks(s)
 #Calculate ka/ks ratio
 kaks <- result$ka/result$ks
 head(kaks)
-
 ```
-
 
 ----------
 ## assignment 11
