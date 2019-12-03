@@ -903,11 +903,62 @@ library(dplyr)
 #install.packages("stringr")
 library (stringr)
 
+
+
 #Make an own function to get lower triangle of the Ka/Ks matrix table
 get_lower <-function(k){
   k[upper.tri(k)] <- NA
   return(k)
 }
+
+#------------------------------------------------------------------------
+
+# First, read alignment from system file in seqinr
+s <- read.alignment(file = system.file("sequences/test.phylip", package = "seqinr"), format = "phylip")
+
+#Check alignment
+s or s$seq[1]
+
+#Calculate Ka and Ks values using kaks function
+result <- kaks(s)  # ——> see table
+
+# Calculate Ka/Ks ratio
+kaks <- result$ka/result$ks
+
+# Store ka and ks results separately
+ka <- as.matrix(result$ka)
+ks <- as.matrix(result$ks)
+
+# Extract values which are required for analysis
+ka <- get_lower(ka)
+ks <- get_lower(ks)
+
+# Reshape table
+kam <- melt(ka)
+ksm <- melt(ks)
+
+# Change col names for simplicity…
+colnames (kam) <- c("Species1", "Species2", "Ka")
+colnames (ksm) <- c("Species1", "Species2", "Ks")
+
+# Final dataset containing ka and ks values
+final <- cbind (kam, ksm)
+
+# Delete redundant columns 4 and 5
+final <- final[,c(-4,-5)]
+
+# Plot ka and ks values using ggplot2 package
+p <- ggplot(data=final, aes(x=Ks, y=Ka, color=Species1, shape=Species2))
+p <-  p + geom_point(size=5) +  theme_bw()
+p <- p +  geom_abline(slope = 1,intercept = 0, color = "red")  
+p <- p +  geom_abline(slope = 2, intercept = 0, color = "blue")
+p <- p +  geom_text(aes(5,5,label = 'slope 1', vjust = -1), color="red")
+p <- p +  geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color="blue")
+
+p
+
+
+
 ```
 
 ----------
