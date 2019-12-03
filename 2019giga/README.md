@@ -60,7 +60,6 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - Title: "Evolution and detection of genes under selection"
 - [Slides](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/DS4GD_ueda_Dec03_web.key.pdf)
 - [Codes](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#2019-12-03)
-- Data [ebov.zip](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/ebov.zip?raw=true)
 - [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-10) 課題No.10 「Guest Speaker (2)」
 - Date: 2019-12-03
 - Time: 11:10-12:40
