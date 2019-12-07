@@ -995,7 +995,7 @@ Q2. What is the alignment score for the optimal global alignment between the two
 	library("Biostrings") # load the Biostrings package
 	data(BLOSUM50) # load the BLOSUM50 scoring matrix
     myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+			gapOpening = -9.5, gapExtension = -0.5) # align the two sequences
 	myglobalAlign
 
 Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
@@ -1006,13 +1006,13 @@ Q4. What global alignment score do you get for the two proteins, when you use th
 
 	data(BLOSUM62) # load the BLOSUM62 scoring matrix
     myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
-	gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+			gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
 	myglobalAlign2
 
 Q5. What is the alignment score for the optimal local alignment between the two proteins?
 
     mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-	gapOpening = -9.5, gapExtension = -0.5, type="local")
+			gapOpening = -9.5, gapExtension = -0.5, type="local")
 	mylocalAlign
 
 ----------
