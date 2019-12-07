@@ -21,11 +21,11 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 9](#assignment-9) 課題No.9 「Guest Speaker (1)」
 - [2019-12-03](#2019-12-03)
 - [assignment 10](#assignment-10) 課題No.10 「Guest Speaker (2)」
-- [E-utilities](#e-utilities)
-- [Coding sequences](#coding-sequences) タンパク質コード配列
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
 - [assignment 12](#assignment-12) 課題No.12 「draft report」
 - [assignment 13](#assignment-13) 課題No.13 「presentation slides」
+- [E-utilities](#e-utilities)
+- [Coding sequences](#coding-sequences) タンパク質コード配列
 
 ----------
 ## assignment 0
@@ -851,32 +851,7 @@ Using R:
 ----------
 ## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
 
-[Shell Commands](https://ss64.com/osx/)
-```
-# make directory
-mkdir -p ~/projects
-
-# change directory
-cd ~/projects/
-
-# Download FASTA-format files
-wget https://github.com/haruosuz/DS4GD/raw/master/2019giga/guest-speaker/2019-12-03/ebov.zip
-
-# extract compressed files in a ZIP archive
-unzip ebov.zip
-
-# change directory
-cd ebov/
-
-# use `grep` to extract lines matching the pattern "^>"
-grep "^>" *.fas
-
-# --count
-grep -c "^>" *.fas
-
-```
-
-### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+[Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
 
 ```
