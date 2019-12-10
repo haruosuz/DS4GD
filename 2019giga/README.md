@@ -37,7 +37,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2019-11-26 No. 8 - [Guest Speaker](#guest-speaker)
 - 2019-12-03 No. 9 - [Guest Speaker](#guest-speaker)
 - 2019-12-10 No. 10 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
-- 2019-12-12 [Kenkyukai Orientation](#kenkyukai -orientation) 研究会オリエンテーション
+- 2019-12-12 [Kenkyukai Orientation](#kenkyukai-orientation) 研究会オリエンテーション
 - 2019-12-17 No. 11 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2019-12-24 No. 12 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#coding-sequences)
 - 2020-01-07 No. 13 - Gene expression, amino acid and codon usage
