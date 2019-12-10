@@ -51,6 +51,7 @@ https://twitter.com/aiskeiosfc/status/1202778341792600064
 AIS @ Keio SFC on Twitter: "Hello everyone! It's half way through the semester and we guess many of you are interest in joining a kenkyukai(seminar). AIS is holding the Kenkyukai Orientation next Thursday at the cafeteria! Come join us and find a kenkyukai that interests you https://t.co/rcTBrZfA9K" / Twitter
 
 ![](https://pbs.twimg.com/media/ELEghnhUYAERJEk?format=jpg&name=medium)
+![](https://pbs.twimg.com/media/ELEghnhUYAERJEk?format=jpg&name=small)
 
 <Kenkyukai Orientation>
 Date and time：December 12th 2019 (Thursday) 17:00~
