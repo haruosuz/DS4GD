@@ -103,6 +103,38 @@ Rパッケージのバージョンを確認:
 ```
 
 ----------
+## Installing R packages
+
+Rパッケージ
+[`ape`](https://cran.r-project.org/web/packages/ape/index.html)と
+[`msa`](https://bioconductor.org/packages/release/bioc/html/msa.html)
+のインストール:  
+```
+# Install the "ape" package:
+install.packages("ape")
+
+# Install the "msa" package:
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("msa")
+```
+
+Rパッケージのバージョン出力:  
+```
+# Print the versions of these packages:
+packageVersion("ape")
+packageVersion("msa")
+```
+
+Rパッケージの呼び出し:  
+```
+# Load the packages into R:
+library("ape")
+library("msa")
+```
+
+----------
 ## assignment 3
 **課題No.3 「DNA Sequence Statistics (1)」**
 
@@ -596,12 +628,6 @@ Rの起動
     head(myAnnot)
 
 [Virus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md)
-- https://en.wikipedia.org/wiki/Zika_virus
-Zika virus is related to the dengue, yellow fever, Japanese encephalitis, and West Nile viruses.
-- https://en.wikipedia.org/wiki/Flavivirus
-This genus includes the West Nile virus, dengue virus, tick-borne encephalitis virus, yellow fever virus, Zika virus
-- https://en.wikipedia.org/wiki/Filoviridae
-Two members of the family that are commonly known are Ebola virus and Marburg virus.
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
@@ -995,7 +1021,7 @@ Q2. What is the alignment score for the optimal global alignment between the two
 	library("Biostrings") # load the Biostrings package
 	data(BLOSUM50) # load the BLOSUM50 scoring matrix
     myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-			gapOpening = -9.5, gapExtension = -0.5) # align the two sequences
+                      gapOpening = -9.5, gapExtension = -0.5) # align the two sequences
 	myglobalAlign
 
 Q3. Use the writePairwiseAlignments() function to view the optimal global alignment.
@@ -1006,26 +1032,114 @@ Q4. What global alignment score do you get for the two proteins, when you use th
 
 	data(BLOSUM62) # load the BLOSUM62 scoring matrix
     myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
-			gapOpening = -9.5, gapExtension = -0.5)	# align the two sequences
+                       gapOpening = -9.5, gapExtension = -0.5) # align the two sequences
 	myglobalAlign2
 
 Q5. What is the alignment score for the optimal local alignment between the two proteins?
 
     mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
-			gapOpening = -9.5, gapExtension = -0.5, type="local")
+                     gapOpening = -9.5, gapExtension = -0.5, type="local")
 	mylocalAlign
 
 ----------
 ## assignment-12
-**課題No.12 「draft report」**
+**課題No.12 「Multiple Alignment and Phylogenetic Trees」**
+
+[Exercises on Multiple Alignment and Phylogenetic Trees](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises)
+
+Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+
+Q1. Calculate the genetic distances between four protein sequences of interest. Which are the most closely related proteins, and which are the least closely related, based on the genetic distances?
+
+    library("seqinr") # Load the SeqinR package
+    # create a function to retrieve several sequences from UniProt
+    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file = paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype = c("AA"), strip.desc = TRUE)[[1]]
+
+    seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5") # Make a vector containing the names of the sequences
+    seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
+
+    length(seqs) # get the number of elements
+    unlist(getAnnot(seqs)) # get sequence annotations
+
+    # write out the sequences to a FASTA file
+    write.fasta(seqs, seqnames, file="myseq.fasta")
+
+    # Read an XStringSet object from a file
+    library(Biostrings)
+    mySequences <- readAAStringSet(file = "myseq.fasta")
+
+    # Multiple Sequence Alignment using ClustalW
+    library(msa)
+    myAlignment <- msa(mySequences, "ClustalW")
+
+    # write an XStringSet object to a file
+    writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
+
+    # read the FASTA-format alignment into R, and calculate the genetic distances between the protein sequences:
+    myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
+    mydist <- dist.alignment(myaln)
+    mydist
+
+Q2. Build an unrooted phylogenetic tree of the four proteins, using the neighbour-joining algorithm. Which are the most closely related proteins, based on the tree?
+
+    library(ape)
+    mytree <- nj(mydist)
+    plot.phylo(mytree, type="unrooted")
+
+Q3. Build a rooted phylogenetic tree of the four proteins, using an outgroup. Which are the most closely related proteins, based on the tree? What extra information does this tree tell you, compared to the unrooted tree in Q2?
+
+    library("seqinr")
+    # create a function to retrieve several sequences from UniProt
+    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file = paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype = c("AA"), strip.desc = TRUE)[[1]]
+    seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5", "Q32ZE1") # Make a vector containing the names of the sequences
+    seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
+
+    # write out the sequences to a FASTA file
+    write.fasta(seqs, seqnames, file="myseq.fasta")
+
+    # Read an XStringSet object from a file
+    library(Biostrings)
+    mySequences <- readAAStringSet(file = "myseq.fasta")
+
+    # Multiple Sequence Alignment using ClustalW
+    library(msa)
+    myAlignment <- msa(mySequences, "ClustalW")
+
+    # write an XStringSet object to a file
+    writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
+
+    # read the FASTA-format alignment into R, and calculate the genetic distances between the protein sequences:
+    myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
+    mydist <- dist.alignment(myaln)
+    mydist
+
+    # construct a phylogenetic tree
+    library(ape)
+    mytree <- nj(mydist)
+    mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
+    plot.phylo(mytree, main = "Phylogenetic Tree")
+
+----------
+
+
+----------
+----------
+----------
+----------
+----------
+
+
+----------
+## assignment-13
+**課題No.13 「draft report」**
 
 Integrate and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it in PDF format.
 
 これまでの課題（興味あるDNA/タンパク質の配列解析の結果）を統合・編集してレポートのドラフトを作成し、PDFファイルで提出する。
 
 ----------
-## assignment-13
-**課題No.13 「presentation slides」**
+## assignment-14
+**課題No.14 「presentation slides」**
 
 https://github.com/haruosuz/DS4GD/tree/master/2018giga#final-presentation
 
@@ -1369,4 +1483,290 @@ system("open .")
 
 
 ----------
+
+
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+
+
+
+
+
+
+
+
+
+----------
+## faa
+
+- [NCBI RefSeq Release](#ncbi-refseq-release)
+
+- http://apprize.info/data/bioinformatics/index.html
+Bioinformatics Data Skills (2015)
+  - https://apprize.info/data/bioinformatics/3.html
+Redirecting Standard Out to a File
+  - https://apprize.info/data/bioinformatics/6.html
+Working with Gzipped Compressed Files
+  - https://apprize.info/data/bioinformatics/7.html
+Plain-Text Data Summary Information with wc, ls, and awk
+  - https://apprize.info/data/bioinformatics/12.html
+Variables and Command Arguments
+
+    # ディレクトリを作成し移動する
+    # make directories
+    mkdir -p  ~/projects/data/ncbi/refseq_release
+    # change to the directory
+    cd ~/projects/data/ncbi/refseq_release/
+
+    # ファイルをダウンロードする
+    # download files
+    wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/{README,RELEASE_NUMBER}
+    wget --background ftp://ftp.ncbi.nlm.nih.gov/refseq/release/{mitochondrion,viral}/{*.genomic.fna.gz,*.protein.faa.gz}
+
+    # `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
+    # Use `tail -f` to constantly monitor files (use Control-C to stop)
+    tail -f wget-log
+
+    # Working with Gzipped Compressed Files
+    # Redirecting Standard Out to a File
+    # Plain-Text Data Summary Information with wc, ls, and awk
+    zgrep -c "^>" *.faa.gz
+    gzcat *.faa.gz > all.faa
+    grep -c "^>" all.faa
+    ls -lh
+
+organism_name="Elephas|Loxodonta|Mammuthus"
+grep "^>" all.faa | awk -F "\t" '$1 ~ /'"$organism_name"'/ {print $0}' | grep "cytochrome c oxidase subunit I "
+
+```
+
+### [BLAST](https://github.com/haruosuz/bioinfo/blob/master/references/README.blast.md)
+Basic Local Alignment Search Tool
+
+    # 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+    # create a variable and assign it a value with (do not use spaces around the equals sign!):  
+    DB="all.faa"
+
+    # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
+    # To access a variable’s value, we use a dollar sign in front of the variable’s name:  
+    echo $DB
+
+# BLAST
+DB=reformat.$DB
+QUERY=all.fasta
+PROGRAM=blastn; DBTYPE=nucl
+PROGRAM=blastp; DBTYPE=prot
+
+    # `makeblastdb`コマンドで、BLAST用に DB の index を作成する:  
+    # Building a BLAST database http://www.ncbi.nlm.nih.gov/books/NBK279688/
+    makeblastdb -in $DB -dbtype $DBTYPE -hash_index -parse_seqids
+
+
+BLAST検索に使うquery配列の取得
+`blastdbcmd`コマンドで、自家製BLAST用DBから必要な配列エントリ取得
+
+    # Extracting data from BLAST databases with blastdbcmd https://www.ncbi.nlm.nih.gov/books/NBK279689/
+    # >sp|P05833|REPA_ECOLX Protein RepA OS=Escherichia coli OX=562 GN=repA PE=3 SV=1
+    blastdbcmd -db $DB -entry all -outfmt "%i %t" | awk '/P05833|REPA_ECOLX/ {print $1}' | \
+     sed 's/^lcl|//g' | blastdbcmd -db $DB -entry_batch - > myquery.fasta
+
+
+
+
+
+# Running BLAST script
+bash ${PATH_SCRIPTS}run_blastp.sh $QUERY $DB
+
+OUT=$PROGRAM-$(basename $QUERY .fasta)-$(basename $DB .fasta).txt
+
+# Running R script
+Rscript --vanilla ${PATH_SCRIPTS}my_blast_card.R $OUT
+
+
+
+
+
+BLASTの実行:  
+
+    # Running BLAST
+    blastp -db $DB -query myquery.fasta
+
+    blastp -db $DB -query myquery.fasta -outfmt 7 -out blastp-out.txt -evalue 1e-10 -num_threads 4
+
+`blastdbcmd`コマンドで、ヒットした配列をBLAST用DBから取得:  
+
+    # Extracting data from BLAST databases with blastdbcmd
+    grep -v '#' blastp-out.txt | awk '{print $2}' | uniq | head -n 10 | blastdbcmd -db $DB -entry_batch - > mysubject.fasta
+
+### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+多重配列アライメントと系統樹
+
+    # Multiple Sequence Alignment using MAFFT
+    mafft mysubject.fasta > myalign.fasta
+
+- [2018-04-03 MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う](https://togotv.dbcls.jp/20180403.html)
+- [2015-04-13 MAFFTを使ってマルチプルアラインメントを行う](http://doi.org/10.7875/togotv.2015.035)
+
+![](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/fig/sv2/sv7.jpg)
+
+[SeaView](http://www2.tba.t-com.ne.jp/nakada/takashi/phylogeny/seaview2.html)でアライメントを表示する。
+
+[SeaView](http://doua.prabi.fr/software/seaview) is a multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny.
+
+![](https://weblogo.berkeley.edu/img/weblogo-fig1.png)
+
+[WebLogo](http://weblogo.berkeley.edu/logo.cgi)で配列の保存度を表示する。
+
+[WebLogo](https://weblogo.berkeley.edu/) generates sequence logos indicating sequence conservation.
+
+![http://cse.naro.affrc.go.jp/takezawa/r-tips/r/02.html](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/image/Mac.gif)
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    WorkingDirectory <- "~/projects/data/uniprot/uniprot_sprot"
+
+    # Set and Get Working Directory
+    setwd(WorkingDirectory)
+    getwd()
+
+    # List the Files in a Directory
+    dir()
+
+    # 多重アライメントのファイルをRに読み込む
+    # Reading a multiple alignment file into R
+    library(seqinr)
+    myaln <- read.alignment(file = "myalign.fasta", format = "fasta")
+
+    # タンパク質配列間の遺伝的距離を計算する
+    # Calculating genetic distances between protein sequences
+    mydist <- dist.alignment(myaln)
+
+    # 無根系統樹の構築
+    # Building an unrooted phylogenetic tree
+    library(ape)
+    mytree <- nj(mydist)
+	par(family="mono")
+    plot.phylo(mytree, type = "unrooted") # type = "phylogram", "cladogram", "fan", "unrooted", "radial"
+
+    # 有根系統樹
+    # Building a rooted phylogenetic tree
+    library(phangorn); mytree <- midpoint(mytree) # midpoint rooting
+    plot.phylo(ladderize(mytree, right = FALSE), main = "Phylogenetic Tree")
+
+    # Saving a phylogenetic tree as a Newick-format tree file
+    write.tree(mytree, file="mytree.newick")
+
+    # open current working directory
+    system("open .")
+
+[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を表示する。
+
+[SeaView Version 4: A Multiplatform Graphical User Interface for Sequence Alignment and Phylogenetic Tree Building](https://academic.oup.com/mbe/article/27/2/221/970247)
+
+![](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/mbe/27/2/10.1093/molbev/msp259/2/m_molbiolevolmsp259f01_3c.gif?Expires=1545572639&Signature=fOWaS-pdA~W-WnKyf1YvpUrcbrK6B0FVW5WBmrE~BczkdAgkModbmfuC7hKvNqBjJExgGZzAJt-~usX0g38ApCVbJxYzQzr1AIgjIgztMI6v3c6U~MSWbckpj63YACB5Z8vd60XJe3kC8pnle5~x2ImDyUTWGjQutx4X6kck0-gpOQ1-o4jiEVYx-1ulL63-r0lM8K~MtN5AE1NgdElTvvLa0ui6YLME5u2gf17Y8U~onACmCPbf42K-RZg4mFDOJw0pe0O6qI~oTdSUoS0DTfackKrz5V6qujwERSCdR2778J9fTOxyz2jSpWVgtTxZTpTOQT3npMZvnztYAmZ~Cg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
+
+
+
+
+
+
+### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+多重配列アライメントと系統樹
+
+[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)
+で"16S ribosomal RNA"の配列を抽出し、FASTAヘッダをperlで編集する:  
+```
+# seqkit grep -h
+myfile=all.fna
+pattern="16S ribosomal RNA"
+seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) \[locus_tag=([^ ]+)\] (.+)\n/>$1 $2\n/g,s/ /~/g' > myseq.fasta
+grep "^>" myseq.fasta
+```
+
+[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
+[MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う](https://doi.org/10.7875/togotv.2018.093)
+
+[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
+```
+# mafft --help
+input=myseq.fasta
+output="${input}".aln
+mafft "${input}" > "${output}"
+```
+
+[RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
+```
+# raxmlHPC -h
+sequenceFileName=myseq.fasta.aln
+outputFileName="${sequenceFileName}".newick
+substitutionModel=GTRGAMMA
+raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
+```
+
+[FastTree](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#fasttree)による最尤系統樹推定:  
+```
+alignment_file=myseq.fasta.aln
+tree_file="${alignment_file}".newick
+FastTree -fastest -nt -gtr "${alignment_file}" > "${tree_file}"
+```
+
+[Newick](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.md#newick)形式のファイル
+*myseq.fasta.aln.newick* or *RAxML_bestTree.myseq.fasta.aln.newick*
+を用いて、
+[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
+
+
+
+
+
+
+
+----------
+## Install
+
+[bioconda](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#bioconda)
+をインストールする:
+```
+# 1. Install conda
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+sh Miniconda3-latest-MacOSX-x86_64.sh
+
+# 2. Set up channels
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+# 3. Install packages
+conda install seqkit
+conda install mafft
+conda install raxml
+conda install fasttree
+conda install blast
+```
+
+
+
+
+
+----------
+
+
+
+
+
+
+
+----------
+
+
+
+
 
