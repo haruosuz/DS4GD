@@ -10,6 +10,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
+- [Installing R packages](#installing-r-packages)
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
@@ -107,18 +108,18 @@ Rパッケージのバージョンを確認:
 ## Installing R packages
 
 Rパッケージ
-[`ape`](https://cran.r-project.org/web/packages/ape/index.html)と
-[`msa`](https://bioconductor.org/packages/release/bioc/html/msa.html)
+[`msa`](https://bioconductor.org/packages/release/bioc/html/msa.html),
+[`ape`](http://ape-package.ird.fr/ape_installation.html))
 のインストール:  
 ```
-# Install the "ape" package:
-install.packages("ape")
-
 # Install the "msa" package:
 if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
+     install.packages("BiocManager")
 
 BiocManager::install("msa")
+
+# Install the "ape" package:
+install.packages("ape")
 ```
 
 Rパッケージのバージョン出力:  
@@ -1052,15 +1053,11 @@ Answer the following questions, using the R package. For each question, please r
 
 Q1. Calculate the genetic distances between four protein sequences of interest. Which are the most closely related proteins, and which are the least closely related, based on the genetic distances?
 
-    library("seqinr") # Load the SeqinR package
-    # create a function to retrieve several sequences from UniProt
-    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file = paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype = c("AA"), strip.desc = TRUE)[[1]]
-
     seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5") # Make a vector containing the names of the sequences
+    # retrieve several sequences from UniProt
+    library("seqinr") # Load the SeqinR package
+    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file=paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype="AA", strip.desc=TRUE)[[1]]
     seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
-
-    length(seqs) # get the number of elements
-    unlist(getAnnot(seqs)) # get sequence annotations
 
     # write out the sequences to a FASTA file
     write.fasta(seqs, seqnames, file="myseq.fasta")
@@ -1076,8 +1073,10 @@ Q1. Calculate the genetic distances between four protein sequences of interest. 
     # write an XStringSet object to a file
     writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
 
-    # read the FASTA-format alignment into R, and calculate the genetic distances between the protein sequences:
+    # read the FASTA-format alignment into R
     myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
+
+    # calculate the genetic distances between the protein sequences
     mydist <- dist.alignment(myaln)
     mydist
 
@@ -1089,10 +1088,10 @@ Q2. Build an unrooted phylogenetic tree of the four proteins, using the neighbou
 
 Q3. Build a rooted phylogenetic tree of the four proteins, using an outgroup. Which are the most closely related proteins, based on the tree? What extra information does this tree tell you, compared to the unrooted tree in Q2?
 
-    library("seqinr")
-    # create a function to retrieve several sequences from UniProt
-    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file = paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype = c("AA"), strip.desc = TRUE)[[1]]
     seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5", "Q32ZE1") # Make a vector containing the names of the sequences
+    # retrieve several sequences from UniProt
+    library("seqinr")
+    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file=paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype="AA", strip.desc=TRUE)[[1]]
     seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
 
     # write out the sequences to a FASTA file
@@ -1109,16 +1108,21 @@ Q3. Build a rooted phylogenetic tree of the four proteins, using an outgroup. Wh
     # write an XStringSet object to a file
     writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
 
-    # read the FASTA-format alignment into R, and calculate the genetic distances between the protein sequences:
+    # read the FASTA-format alignment into R
     myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
+
+    # calculate the genetic distances between the protein sequences
     mydist <- dist.alignment(myaln)
     mydist
 
-    # construct a phylogenetic tree
+    # construct a phylogenetic tree with the neighbor joining algorithm
     library(ape)
     mytree <- nj(mydist)
     mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
     plot.phylo(mytree, main = "Phylogenetic Tree")
+
+    # get sequence annotations
+    unlist(getAnnot(seqs))
 
 ----------
 
