@@ -22,8 +22,9 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2019-12-03](#2019-12-03)
 - [assignment 10](#assignment-10) 課題No.10 「Guest Speaker (2)」
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
-- [assignment 12](#assignment-12) 課題No.12 「draft report」
-- [assignment 13](#assignment-13) 課題No.13 「presentation slides」
+- [assignment 12](#assignment-12) 課題No.12 「Multiple Alignment and Phylogenetic Trees」
+- [assignment 13](#assignment-13) 課題No.13 「draft report」
+- [assignment 14](#assignment-12) 課題No.14 「presentation slides」
 - [E-utilities](#e-utilities)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
 
@@ -1127,6 +1128,11 @@ Q3. Build a rooted phylogenetic tree of the four proteins, using an outgroup. Wh
 ----------
 ----------
 ----------
+----------
+----------
+----------
+----------
+----------
 
 
 ----------
@@ -1577,6 +1583,10 @@ BLAST検索に使うquery配列の取得
     # >sp|P05833|REPA_ECOLX Protein RepA OS=Escherichia coli OX=562 GN=repA PE=3 SV=1
     blastdbcmd -db $DB -entry all -outfmt "%i %t" | awk '/P05833|REPA_ECOLX/ {print $1}' | \
      sed 's/^lcl|//g' | blastdbcmd -db $DB -entry_batch - > myquery.fasta
+
+
+
+
 
 
 
