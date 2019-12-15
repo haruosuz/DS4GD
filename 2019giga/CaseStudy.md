@@ -10,7 +10,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages seqinr & Biostrings」
-- [Installing R packages](#installing-r-packages)
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
@@ -23,6 +22,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [2019-12-03](#2019-12-03)
 - [assignment 10](#assignment-10) 課題No.10 「Guest Speaker (2)」
 - [assignment 11](#assignment-11) 課題No.11 「Pairwise Sequence Alignment」
+- [Installing R packages](#installing-r-packages)
 - [assignment 12](#assignment-12) 課題No.12 「Multiple Alignment and Phylogenetic Trees」
 - [assignment 13](#assignment-13) 課題No.13 「draft report」
 - [assignment 14](#assignment-12) 課題No.14 「presentation slides」
@@ -102,40 +102,6 @@ Rパッケージのバージョンを確認:
 
 > R.version.string[1] "R version 3.6.1 (2019-07-05)"> packageVersion("seqinr")[1] ‘3.6.1’
 > packageVersion("Biostrings")[1] ‘2.52.0’
-```
-
-----------
-## Installing R packages
-
-多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-
-Rパッケージ
-[`msa`](https://bioconductor.org/packages/release/bioc/html/msa.html),
-[`ape`](http://ape-package.ird.fr/ape_installation.html)
-のインストール:  
-```
-# Install the "msa" package:
-if (!requireNamespace("BiocManager", quietly = TRUE))
-     install.packages("BiocManager")
-
-BiocManager::install("msa")
-
-# Install the "ape" package:
-install.packages("ape")
-```
-
-Rパッケージのバージョン出力:  
-```
-# Print the versions of these packages:
-packageVersion("ape")
-packageVersion("msa")
-```
-
-Rパッケージの呼び出し:  
-```
-# Load the packages into R:
-library("ape")
-library("msa")
 ```
 
 ----------
@@ -1044,6 +1010,40 @@ Q5. What is the alignment score for the optimal local alignment between the two 
     mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
                      gapOpening = -9.5, gapExtension = -0.5, type="local")
 	mylocalAlign
+
+----------
+## Installing R packages
+
+多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+
+Rパッケージ
+[`msa`](https://bioconductor.org/packages/release/bioc/html/msa.html),
+[`ape`](http://ape-package.ird.fr/ape_installation.html)
+のインストール:  
+```
+# Install the "msa" package:
+if (!requireNamespace("BiocManager", quietly = TRUE))
+     install.packages("BiocManager")
+
+BiocManager::install("msa")
+
+# Install the "ape" package:
+install.packages("ape")
+```
+
+Rパッケージのバージョン出力:  
+```
+# Print the versions of these packages:
+packageVersion("msa")
+packageVersion("ape")
+```
+
+Rパッケージの呼び出し:  
+```
+# Load the packages into R:
+library("msa")
+library("ape")
+```
 
 ----------
 ## assignment-12
