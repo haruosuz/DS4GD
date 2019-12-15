@@ -37,22 +37,13 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2019-11-26 No. 8 - [Guest Speaker](#guest-speaker)
 - 2019-12-03 No. 9 - [Guest Speaker](#guest-speaker)
 - 2019-12-10 No. 10 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
-  - 2019-12-12 [Kenkyukai Orientation](#kenkyukai-orientation) 研究会オリエンテーション
+  - 2つのDNA配列間のグローバル・アライメント [Pairwise global alignment of DNA sequences](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2019-12-17 No. 11 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2019-12-24 No. 12 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#coding-sequences)
-- 2020-01-07 No. 13 - Gene expression, amino acid and codon usage
-- 2020-01-14 No. 14 - 最終発表 [final presentation](#final-presentation)
+- 2020-01-07 No. 13 - TBA
+- 2020-01-14 No. 14 - 最終回
+  - 最終発表 [final presentation](#final-presentation)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
-
-----------
-## Kenkyukai Orientation
-- Date and time：December 12th 2019 (Thursday) 17:00~
-- Place：Cafeteria North Wing
-
-https://twitter.com/aiskeiosfc/status/1202778341792600064
-AIS @ Keio SFC on Twitter: "Hello everyone! It's half way through the semester and we guess many of you are interest in joining a kenkyukai(seminar). AIS is holding the Kenkyukai Orientation next Thursday at the cafeteria! Come join us and find a kenkyukai that interests you https://t.co/rcTBrZfA9K" / Twitter
-
-![](https://pbs.twimg.com/media/ELEghnhUYAERJEk?format=jpg&name=small)
 
 ----------
 ## Guest speaker
