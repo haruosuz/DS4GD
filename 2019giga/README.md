@@ -39,6 +39,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2019-12-10 No. 10 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - 2つのDNA配列間のグローバル・アライメント [Pairwise global alignment of DNA sequences](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2019-12-17 No. 11 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+  - [virus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md)
 - 2019-12-24 No. 12 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#coding-sequences)
 - 2020-01-07 No. 13 - TBA
 - 2020-01-14 No. 14 - 最終回
