@@ -107,9 +107,11 @@ Rパッケージのバージョンを確認:
 ----------
 ## Installing R packages
 
+多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+
 Rパッケージ
 [`msa`](https://bioconductor.org/packages/release/bioc/html/msa.html),
-[`ape`](http://ape-package.ird.fr/ape_installation.html))
+[`ape`](http://ape-package.ird.fr/ape_installation.html)
 のインストール:  
 ```
 # Install the "msa" package:
