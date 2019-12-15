@@ -1047,82 +1047,63 @@ Q5. What is the alignment score for the optimal local alignment between the two 
 ## assignment-12
 **課題No.12 「Multiple Alignment and Phylogenetic Trees」**
 
-[Exercises on Multiple Alignment and Phylogenetic Trees](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises)
+- [Exercises on Multiple Alignment and Phylogenetic Trees](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises)
+  - [Answers to the exercises on Multiple Alignment and Phylogenetic Trees](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#multiple-alignment-and-phylogenetic-trees)
 
 Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
 
-Q1. Calculate the genetic distances between four protein sequences of interest. Which are the most closely related proteins, and which are the least closely related, based on the genetic distances?
+Q1. Calculate the genetic distances between >3 protein sequences of interest. Which are the most closely related proteins, and which are the least closely related, based on the genetic distances?
+```
+seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5") # Make a vector containing the names of the sequences
+seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5", "Q32ZE1") # Make a vector containing the names of the sequences
+# retrieve several sequences from UniProt
+library("seqinr") # Load the SeqinR package
+retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file=paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype="AA", strip.desc=TRUE)[[1]]
+seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
 
-    seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5") # Make a vector containing the names of the sequences
-    # retrieve several sequences from UniProt
-    library("seqinr") # Load the SeqinR package
-    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file=paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype="AA", strip.desc=TRUE)[[1]]
-    seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
+# write out the sequences to a FASTA file
+write.fasta(seqs, seqnames, file="myseq.fasta")
 
-    # write out the sequences to a FASTA file
-    write.fasta(seqs, seqnames, file="myseq.fasta")
+# Read an XStringSet object from a file
+library(Biostrings)
+mySequences <- readAAStringSet(file = "myseq.fasta")
 
-    # Read an XStringSet object from a file
-    library(Biostrings)
-    mySequences <- readAAStringSet(file = "myseq.fasta")
+# Multiple Sequence Alignment using ClustalW
+library(msa)
+myAlignment <- msa(mySequences, "ClustalW")
 
-    # Multiple Sequence Alignment using ClustalW
-    library(msa)
-    myAlignment <- msa(mySequences, "ClustalW")
+# write an XStringSet object to a file
+writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
 
-    # write an XStringSet object to a file
-    writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
+# read the FASTA-format alignment into R
+myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
 
-    # read the FASTA-format alignment into R
-    myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
+# calculate the genetic distances between the protein sequences
+mydist <- dist.alignment(myaln)
+mydist
+```
 
-    # calculate the genetic distances between the protein sequences
-    mydist <- dist.alignment(myaln)
-    mydist
+Q2. Build an unrooted phylogenetic tree of the proteins, using the neighbour-joining algorithm. Which are the most closely related proteins, based on the tree?
+```
+# construct a phylogenetic tree with the neighbor joining algorithm
+library(ape)
+mytree <- nj(mydist)
+plot.phylo(mytree, type="unrooted")
+```
 
-Q2. Build an unrooted phylogenetic tree of the four proteins, using the neighbour-joining algorithm. Which are the most closely related proteins, based on the tree?
+Q3. Build a rooted phylogenetic tree of the proteins, using an outgroup. Which are the most closely related proteins, based on the tree? What extra information does this tree tell you, compared to the unrooted tree in Q2?
+```
+mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
+plot.phylo(mytree, main = "Phylogenetic Tree")
+```
 
-    library(ape)
-    mytree <- nj(mydist)
-    plot.phylo(mytree, type="unrooted")
+```
+# get sequence annotations
+unlist(getAnnot(seqs))
 
-Q3. Build a rooted phylogenetic tree of the four proteins, using an outgroup. Which are the most closely related proteins, based on the tree? What extra information does this tree tell you, compared to the unrooted tree in Q2?
-
-    seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5", "Q32ZE1") # Make a vector containing the names of the sequences
-    # retrieve several sequences from UniProt
-    library("seqinr")
-    retrieve_seqs_uniprot <- function(ACCESSION) read.fasta(file=paste0("http://www.uniprot.org/uniprot/",ACCESSION,".fasta"), seqtype="AA", strip.desc=TRUE)[[1]]
-    seqs <- lapply(seqnames,  retrieve_seqs_uniprot) # Retrieve the sequences and store them in list variable "seqs"
-
-    # write out the sequences to a FASTA file
-    write.fasta(seqs, seqnames, file="myseq.fasta")
-
-    # Read an XStringSet object from a file
-    library(Biostrings)
-    mySequences <- readAAStringSet(file = "myseq.fasta")
-
-    # Multiple Sequence Alignment using ClustalW
-    library(msa)
-    myAlignment <- msa(mySequences, "ClustalW")
-
-    # write an XStringSet object to a file
-    writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
-
-    # read the FASTA-format alignment into R
-    myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
-
-    # calculate the genetic distances between the protein sequences
-    mydist <- dist.alignment(myaln)
-    mydist
-
-    # construct a phylogenetic tree with the neighbor joining algorithm
-    library(ape)
-    mytree <- nj(mydist)
-    mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
-    plot.phylo(mytree, main = "Phylogenetic Tree")
-
-    # get sequence annotations
-    unlist(getAnnot(seqs))
+# setting font in plots
+par(family="mono")
+```
 
 ----------
 
