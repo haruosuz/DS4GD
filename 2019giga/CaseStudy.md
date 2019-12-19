@@ -1055,6 +1055,8 @@ library("ape")
 Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
 
 Q1. Calculate the genetic distances between >3 protein sequences of interest. Which are the most closely related proteins, based on the genetic distances?
+
+For example, to retrieve the sequences of NS1 proteins from different Dengue virus strains: Dengue virus 1 NS1 protein (Uniprot Q9YRR4), Dengue virus 2 NS1 protein (UniProt Q9YP96), Dengue virus 3 NS1 protein (UniProt B0LSS3), and Dengue virus 4 NS1 protein (UniProt Q6TFL5), and also the Zika virus protein (accession Q32ZE1) as the outgroup, from [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot), we type:
 ```
 seqnames <- c("Q9YRR4", "Q9YP96", "B0LSS3", "Q6TFL5", "Q32ZE1") # Make a vector containing the names of the sequences
 # retrieve several sequences from UniProt
@@ -1082,10 +1084,16 @@ myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
 # calculate the genetic distances between the protein sequences
 mydist <- dist.alignment(myaln)
 mydist
+
+# get sequence annotations
+unlist(getAnnot(seqs))
 ```
 
 Q2. Build an unrooted phylogenetic tree of the proteins, using the neighbour-joining algorithm. Which are the most closely related proteins, based on the tree?
 ```
+# setting font in plots
+par(family="mono")
+
 # construct a phylogenetic tree with the neighbor joining algorithm
 library(ape)
 mytree <- nj(mydist)
@@ -1096,14 +1104,6 @@ Q3. Build a rooted phylogenetic tree of the proteins, using an outgroup. Which a
 ```
 mytree <- root(mytree, outgroup = "Q32ZE1", resolve.root = TRUE)
 plot.phylo(mytree, main = "Phylogenetic Tree")
-```
-
-```
-# get sequence annotations
-unlist(getAnnot(seqs))
-
-# setting font in plots
-par(family="mono")
 ```
 
 ----------
