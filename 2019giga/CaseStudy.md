@@ -1118,15 +1118,15 @@ Integrate and edit your previous assignments (e.g. results of analyzing DNA/prot
 
 https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#final-presentation
 
-2020-01-14 最終発表のスライド <YOUR_NAME.pdf> を提出する。
-発表時間：1人あたり最大5分
-
-生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、多重配列アライメントと系統樹などが含まれる。
-
 Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2020-01-14.
 Five minutes will be allocated for each presentation, including presentation and discussion.
 
 Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global/local alignment), multiple alignment and phylogenetic trees, etc.
+
+2020-01-14 最終発表のスライド <YOUR_NAME.pdf> を提出する。
+発表時間：1人あたり最大5分
+
+生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、多重配列アライメントと系統樹などが含まれる。
 
 ----------
 
@@ -1290,6 +1290,7 @@ library(seqinr) # Load the SeqinR package
 seqs <- read.fasta(file="myseq.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
 
 https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md
+```
 
 [Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot)
 ドットプロットで2つの配列を比較
@@ -1320,11 +1321,9 @@ dev.off(which = dev.cur()) # close the device
 system("open .")
 ```
 
-
-
 ### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 多重配列アライメントと系統樹
-
+```
 # Read an XStringSet object from a file
 library(Biostrings)
 mySequences <- readAAStringSet(file = "myseq.faa")
@@ -1351,18 +1350,14 @@ library(ape)
 mytree <- nj(mydist)
 plot.phylo(mytree, type="unrooted")
 
-
 # 有根系統樹
 # Building a rooted phylogenetic tree
 library(phangorn) # install.packages("phangorn")
 mytree <- midpoint(mytree) # midpoint rooting
 plot.phylo(ladderize(mytree, right = FALSE), main = "Neighbor-Joining midpoint rooted tree", cex=0.9)
 
-
 system("open .")
-
-
-
+```
 
 ----------
 
