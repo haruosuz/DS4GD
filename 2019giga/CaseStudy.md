@@ -1105,21 +1105,6 @@ plot.phylo(mytree, main = "Phylogenetic Tree")
 ```
 
 ----------
-
-
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-
-
-----------
 ## assignment-13
 **課題No.13 「draft report」**
 
@@ -1131,79 +1116,252 @@ Integrate and edit your previous assignments (e.g. results of analyzing DNA/prot
 ## assignment-14
 **課題No.14 「presentation slides」**
 
-https://github.com/haruosuz/DS4GD/tree/master/2018giga#final-presentation
+https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#final-presentation
 
-2019-07-16 最終発表のスライド <YOUR_NAME.pdf> を提出する。
+2020-01-14 最終発表のスライド <YOUR_NAME.pdf> を提出する。
 発表時間：1人あたり最大5分
 
-生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、Pythonによる配列解析などが含まれる。
+生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、多重配列アライメントと系統樹などが含まれる。
 
-Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2019-07-16.
+Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2020-01-14.
 Five minutes will be allocated for each presentation, including presentation and discussion.
 
-Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global/local alignment), sequence analysis with Python, etc.
-
-----------
-
-
-
+Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global/local alignment), multiple alignment and phylogenetic trees, etc.
 
 ----------
 
 ## [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#e-utilities)
 The Entrez Programming Utilities (E-utilities)
 
-### [NCBI Genome List](#ncbi-genome-list)
-Searching for sequence data in the NCBI database http://www.ncbi.nlm.nih.gov/genome/browse/
-- [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
-- [Sinorhizobium meliloti 1021](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472)
-- [Mammuthus primigenius (woolly mammoth)](https://www.ncbi.nlm.nih.gov/genome/6934?genome_assembly_id=37154)
+- [Yanagiya et al. (2018) Front Microbiol. 9:2602. "Novel Self-Transmissible and Broad-Host-Range Plasmids Exogenously Captured From Anaerobic Granules or Cow Manure."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6232296/)
+- https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/ebolavirus
+- https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/Zika%20virus
+- https://www.ncbi.nlm.nih.gov/genome/browse/#!/organelles/Mammuthus
 
-### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
-Rの起動
+NCBIから配列データを取得する:  
+```
+# Set Working Directory
+WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
+system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+dir() # List the Files in a Directory
 
-[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+# Retrieving sequence data from NCBI
+library("seqinr") # Loading seqinr package
 
-    # Set Working Directory
-    WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
-    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
-    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
-    dir() # List the Files in a Directory
+# Accession Numbers of Sequence Data
+ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid pSN1216-29
+#ACCESSION <- "NC_002549" # https://www.ncbi.nlm.nih.gov/nuccore/NC_002549 Zaire ebolavirus
+#ACCESSION <- "NC_007596" # https://www.ncbi.nlm.nih.gov/nuccore/NC_007596 Mammuthus primigenius mitochondrion 
+#ACCESSION <- "NC_015529" # https://www.ncbi.nlm.nih.gov/nuccore/NC_015529 Mammuthus columbi mitochondrion 
 
-複数のDNA配列をNCBIから取得する:  
+## nucleotide FASTA
+fna <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
 
-    # Retrieving a list of DNA sequences from NCBI
+## CDS nucleotide FASTA
+ffn <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
 
-    # Load the SeqinR package
-    library("seqinr")
+## CDS protein FASTA
+faa <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
 
-    # create a function to retrieve several nucleotide sequences from NCBI
-    retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype="DNA", strip.desc=TRUE)[[1]]
+# 配列の数をカウントする:  
+# get the number of elements
+length(fna)
+length(ffn)
+length(faa)
 
-    # Make a vector containing NCBI GenBank/RefSeq accessions
-    ACCESSIONs <- c("NC_003047", "NC_003037", "NC_003078") # Sinorhizobium meliloti 1021
-    ACCESSIONs <- c("NC_001542.1", "NC_001477.1", "NC_002640.1", "NC_001475.2", "NC_001474.2") # "Dengue virus|Rabies"
+# 配列のアノテーションを取得する:  
+# get sequence annotations
+getAnnot(fna)
+head(getAnnot(ffn), 2)
+head(getAnnot(faa), 2)
 
-    # Retrieve the sequences and store them in list variable "seqs"
-    seqs <- lapply(ACCESSIONs,  retrieve_ncbi_fna)
+# 配列データをFASTA形式ファイルとして書き出す:  
+# Writing sequence data out as a FASTA file
+write.fasta(sequences=fna, names=getAnnot(fna), file.out=paste0(ACCESSION,".fna"))
+write.fasta(sequences=ffn, names=getAnnot(ffn), file.out=paste0(ACCESSION,".ffn"))
+write.fasta(sequences=faa, names=getAnnot(faa), file.out=paste0(ACCESSION,".faa"))
 
-	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar=80)
+# open current working directory
+system("open .")
+```
 
-    # open current working directory
-    system("open .")
+- prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#output-files)
 
-作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+| Extension | Description |
+| --------- | ----------- |
+| .fna | Nucleotide FASTA file of the input contig sequences. |
+| .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
+| .faa | Protein FASTA file of the translated CDS sequences. |
 
-    # quit and restart R
-    setwd("~/projects/data/ncbi/eutils") # Set Working Directory
-    library(seqinr) # Load the SeqinR package
-    seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+### fna
 
-配列の数とアノテーションを確認する:  
+```
+# 複数のDNA配列をNCBIから取得する:  
+# Retrieving a list of DNA sequences from NCBI
 
-    length(seqs) # get the number of elements
-    getAnnot(seqs) # get sequence annotations
+library(seqinr) # Load the SeqinR package
+
+# create a function to retrieve several nucleotide sequences from NCBI
+retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype="DNA", strip.desc=TRUE)[[1]]
+
+# Make a vector containing NCBI accessions
+ACCESSIONs <- c("KM670336", "AP018710", "NZ_CP014764", "NZ_CP015073", "NZ_CP020602")
+
+# Retrieve the sequences and store them in list variable "seqs"
+seqs <- lapply(ACCESSIONs, retrieve_ncbi_fna)
+
+# write the sequences to a FASTA-format file
+write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar=80)
+
+# open current working directory
+system("open .")
+
+# 作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+# quit and restart R
+setwd("~/projects/data/ncbi/eutils") # Set Working Directory
+library(seqinr) # Load the SeqinR package
+seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+
+# 配列の数とアノテーションを確認する:  
+length(seqs) # get the number of elements
+getAnnot(seqs) # get sequence annotations
+
+# Apply a Function over a List
+lapply(seqs, summary)
+sapply(seqs, summary)
+
+# for文でループ処理を行う。複数のヒートマップをファイル出力する:
+# for loop to carry out the same command several times
+pdf("Rplot_heatmap_rho.pdf") # create a PDF device called "Rplot_heatmap_rho.pdf"
+par(family="mono", cex=0.9) # Set Graphical Parameters
+for(k in 1:4){
+  myrho <- sapply(seqs, rho, wordsize = k)
+  heatmap(myrho, margins=c(7, 2), cexRow=1/k, cexCol=0.7, scale="none", col=rev(gray.colors(12)))
+}
+dev.off(which = dev.cur()) # close the device
+
+# open current working directory
+system("open .")
+```
+
+### faa
+
+
+
+```
+library(seqinr) # Load the SeqinR package
+
+# Make a vector containing NCBI accessions
+ACCESSIONs <- c("KM670336", "AP018710", "NZ_CP014764", "NZ_CP015073", "NZ_CP020602")
+
+# create a function to retrieve several sequences from NCBI
+retrieve_ncbi_faa <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype="AA", strip.desc=TRUE)
+
+# Retrieve the sequences and store them in list variable "seqs"
+seqs <- lapply(ACCESSIONs, retrieve_ncbi_faa)
+
+seqs <- list()
+for(ACCESSION in ACCESSIONs) seqs <- c(seqs, retrieve_ncbi_faa(ACCESSION) )
+
+# Inspecting data
+length(seqs) # get the number of elements
+head(unlist(getAnnot(seqs)), n=3) # get sequence annotations
+
+myAnnot <- unlist(getAnnot(seqs)) # sequence annotations
+
+# grepl returns a logical vector (match or not for each element of x)
+pattern <- "gene=repA]|protein=replication initiator protein A]"
+TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
+sum(TF)
+myAnnot[TF]
+sapply(seqs[TF], length)
+
+Annotation <- sub(pattern=".+\\|(\\S+) .+", replacement="\\1", myAnnot[TF])
+
+# write out the sequences to a FASTA file
+write.fasta(seqs[TF], Annotation, file="myseq.faa")
+
+system("open .")
+
+# quit and restart R
+setwd("~/projects/data/ncbi/eutils") # Set Working Directory
+library(seqinr) # Load the SeqinR package
+seqs <- read.fasta(file="myseq.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
+
+https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md
+
+[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot)
+ドットプロットで2つの配列を比較
+```
+# setting font in plots
+par(family="mono")
+
+# ドットプロットで2つの配列を比較:
+# Comparing two sequences using a dotplot
+s1 <- seqs[[1]]
+s2 <- seqs[[2]]
+dotPlot(s1, s2)
+nmbr <- 3; dotPlot(s1, s2, wsize = nmbr, wstep = nmbr, nmatch = nmbr, xlab = getName(s1), ylab = getName(s2))
+
+# for文でループ処理を行う。複数のドットプロットをファイル出力する:
+# for loop to carry out the same command several times
+pdf("Rplot_dotPlot.pdf") # create a PDF device called "Rplot_dotPlot.pdf"
+par(mfrow=c(2,2))
+for (n1 in 1:length(seqs)) {
+  for (n2 in n1:length(seqs)) {
+    s1 <- seqs[[n1]]
+    s2 <- seqs[[n2]]
+    dotPlot(s1, s2, xlab=getName(s1), ylab=getName(s2))
+  }
+}
+dev.off(which = dev.cur()) # close the device
+
+system("open .")
+```
+
+
+
+### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+多重配列アライメントと系統樹
+
+# Read an XStringSet object from a file
+library(Biostrings)
+mySequences <- readAAStringSet(file = "myseq.faa")
+
+# Multiple Sequence Alignment using ClustalW
+library(msa)
+myAlignment <- msa(mySequences, "ClustalW")
+
+# write an XStringSet object to a file
+writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
+
+# read the FASTA-format alignment into R
+myaln <- read.alignment(file = "myaln.fasta", format = "fasta")
+
+# calculate the genetic distances between the protein sequences
+mydist <- dist.alignment(myaln)
+mydist
+
+# setting font in plots
+par(family="mono")
+
+# construct a phylogenetic tree with the neighbor joining algorithm
+library(ape)
+mytree <- nj(mydist)
+plot.phylo(mytree, type="unrooted")
+
+
+# 有根系統樹
+# Building a rooted phylogenetic tree
+library(phangorn) # install.packages("phangorn")
+mytree <- midpoint(mytree) # midpoint rooting
+plot.phylo(ladderize(mytree, right = FALSE), main = "Neighbor-Joining midpoint rooted tree", cex=0.9)
+
+
+system("open .")
+
+
 
 
 ----------
