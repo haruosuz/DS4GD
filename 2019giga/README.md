@@ -40,7 +40,8 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
   - 2つのDNA配列間のグローバル・アライメント [Pairwise global alignment of DNA sequences](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2019-12-17 No. 11 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
   - [virus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md)
-- 2019-12-24 No. 12 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#coding-sequences)
+- 2019-12-24 No. 12 - [E-utilities](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#e-utilities)
+  - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#coding-sequences)
 - *事務室閉室・冬季休校（12/28～1/5）[December 28 – January 5 | Saturday – Sunday | Winter Break Period | Administrative Office Closed](https://giga.sfc.keio.ac.jp/the-giga-program/giga-program-study-opportunities/academic-calendars/)*
 - 2020-01-07 No. 13 - TBA
 - 2020-01-14 No. 14 - 最終回
