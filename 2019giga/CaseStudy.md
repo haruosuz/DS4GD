@@ -1211,9 +1211,6 @@ ACCESSIONs <- c("KM670336", "AP018710", "NZ_CP014764", "NZ_CP015073", "NZ_CP0206
 # create a function to retrieve several nucleotide sequences from NCBI
 retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype="DNA", strip.desc=TRUE)[[1]]
 
-# Make a vector containing NCBI accessions
-ACCESSIONs <- c("KM670336", "AP018710", "NZ_CP014764", "NZ_CP015073", "NZ_CP020602")
-
 # Retrieve the sequences and store them in list variable "seqs"
 seqs <- lapply(ACCESSIONs, retrieve_ncbi_fna)
 
@@ -1387,15 +1384,6 @@ Rの起動
 | Type | RefSeq | INSDC |
 |:-----|:-------|:------|
 | Chr | NC_000913.3 | U00096.3 |
-
-```
-# Accession Numbers of Sequence Data
-ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid pSN1216-29
-#ACCESSION <- "NC_002549" # https://www.ncbi.nlm.nih.gov/nuccore/NC_002549 Zaire ebolavirus
-#ACCESSION <- "NC_007596" # https://www.ncbi.nlm.nih.gov/nuccore/NC_007596 Mammuthus primigenius mitochondrion 
-#ACCESSION <- "NC_015529" # https://www.ncbi.nlm.nih.gov/nuccore/NC_015529 Mammuthus columbi mitochondrion 
-```
-
 
 タンパク質コード配列（CDS）のデータをNCBIから取得する:  
 Retrieving Protein Coding Sequence (CDS) data from NCBI:  
