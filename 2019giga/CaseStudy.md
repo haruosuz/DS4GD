@@ -1203,6 +1203,7 @@ system("open .")
 複数の.fnaファイルをNCBIから取得する:  
 Retrieving .fna files from NCBI:  
 ```
+setwd("~/projects/data/ncbi/eutils") # Set Working Directory
 library(seqinr) # Load the SeqinR package
 
 # Make a vector containing NCBI accessions
@@ -1217,14 +1218,8 @@ seqs <- lapply(ACCESSIONs, retrieve_ncbi_fna)
 # write the sequences to a FASTA-format file
 write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar=80)
 
-# open current working directory
-system("open .")
-
-# 作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
-# quit and restart R
-setwd("~/projects/data/ncbi/eutils") # Set Working Directory
-library(seqinr) # Load the SeqinR package
-seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+# Reading sequence data
+seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE)
 
 # 配列の数とアノテーションを確認する:  
 length(seqs) # get the number of elements
@@ -1252,6 +1247,7 @@ system("open .")
 複数の.faaファイルをNCBIから取得する:  
 Retrieving .faa files from NCBI:  
 ```
+setwd("~/projects/data/ncbi/eutils") # Set Working Directory
 library(seqinr) # Load the SeqinR package
 
 # Make a vector containing NCBI accessions
@@ -1284,13 +1280,8 @@ Annotation <- sub(pattern=".+\\|(\\S+) .+", replacement="\\1", myAnnot[TF])
 # write out the sequences to a FASTA file
 write.fasta(seqs[TF], Annotation, file="myseq.faa")
 
-# open current working directory
-system("open .")
-
-# quit and restart R
-setwd("~/projects/data/ncbi/eutils") # Set Working Directory
-library(seqinr) # Load the SeqinR package
-seqs <- read.fasta(file="myseq.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
+# Reading sequence data
+seqs <- read.fasta(file="myseq.faa", seqtype="AA", strip.desc=TRUE)
 ```
 
 [Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot)  
@@ -1347,18 +1338,24 @@ mydist
 # setting font in plots
 par(family="mono")
 
-# 無根系統樹
+# 無根系統樹の構築
+# Building an unrooted tree
 # construct a phylogenetic tree with the neighbor joining algorithm
-library(ape)
+library(ape) # install.packages("ape")
 mytree <- nj(mydist)
-plot.phylo(mytree, type="unrooted")
+plot.phylo(mytree, type = "unrooted")
 
-# 有根系統樹
+# 有根系統樹の構築
 # Building a rooted phylogenetic tree
 library(phangorn) # install.packages("phangorn")
 mytree <- midpoint(mytree) # midpoint rooting
 plot.phylo(ladderize(mytree, right = FALSE), main = "Neighbor-Joining midpoint rooted tree", cex=0.9)
 
+# Newick形式ファイルとして保存する
+# Saving a tree as a Newick-format tree file
+write.tree(mytree, file="mytree.newick")
+
+# open current working directory
 system("open .")
 ```
 
