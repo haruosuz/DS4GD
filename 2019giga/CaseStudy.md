@@ -1238,7 +1238,7 @@ sapply(seqs, summary)
 # for loop to carry out the same command several times
 pdf("Rplot_heatmap_rho.pdf") # create a PDF device called "Rplot_heatmap_rho.pdf"
 par(family="mono", cex=0.9) # Set Graphical Parameters
-for(k in 1:4){
+for(k in 2:4){
   myrho <- sapply(seqs, rho, wordsize = k)
   heatmap(myrho, margins=c(7, 2), cexRow=1/k, cexCol=0.7, scale="none", col=rev(gray.colors(12)))
 }
@@ -1293,7 +1293,7 @@ library(seqinr) # Load the SeqinR package
 seqs <- read.fasta(file="myseq.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
 ```
 
-[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot)
+[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot)  
 ドットプロットで2つの配列を比較
 ```
 # setting font in plots
@@ -1323,7 +1323,7 @@ dev.off(which = dev.cur()) # close the device
 system("open .")
 ```
 
-### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+[Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)  
 多重配列アライメントと系統樹
 ```
 # Read an XStringSet object from a file
@@ -1347,6 +1347,7 @@ mydist
 # setting font in plots
 par(family="mono")
 
+# 無根系統樹
 # construct a phylogenetic tree with the neighbor joining algorithm
 library(ape)
 mytree <- nj(mydist)
