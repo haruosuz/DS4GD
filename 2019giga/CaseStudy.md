@@ -1133,20 +1133,33 @@ Report your main findings on analyses of biological data (e.g. genome DNA sequen
 ## [E-utilities](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#e-utilities)
 The Entrez Programming Utilities (E-utilities)
 
+- prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#output-files)
+
+| Extension | Description |
+| --------- | ----------- |
+| .fna | Nucleotide FASTA file of the input contig sequences. |
+| .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
+| .faa | Protein FASTA file of the translated CDS sequences. |
+
+### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+Rの起動
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    # Set Working Directory
+    WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
+    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+    dir() # List the Files in a Directory
+
 - [Yanagiya et al. (2018) Front Microbiol. 9:2602. "Novel Self-Transmissible and Broad-Host-Range Plasmids Exogenously Captured From Anaerobic Granules or Cow Manure."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6232296/)
 - https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/ebolavirus
 - https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/Zika%20virus
 - https://www.ncbi.nlm.nih.gov/genome/browse/#!/organelles/Mammuthus
 
-NCBIから配列データを取得する:  
+配列データをNCBIから取得する:  
+Retrieving sequence data from NCBI:  
 ```
-# Set Working Directory
-WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
-system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
-setwd(WorkingDirectory); getwd() # Set and Get Working Directory
-dir() # List the Files in a Directory
-
-# Retrieving sequence data from NCBI
 library("seqinr") # Loading seqinr package
 
 # Accession Numbers of Sequence Data
@@ -1186,21 +1199,14 @@ write.fasta(sequences=faa, names=getAnnot(faa), file.out=paste0(ACCESSION,".faa"
 system("open .")
 ```
 
-- prokka [Output Files](https://github.com/tseemann/prokka/blob/master/README.md#output-files)
-
-| Extension | Description |
-| --------- | ----------- |
-| .fna | Nucleotide FASTA file of the input contig sequences. |
-| .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
-| .faa | Protein FASTA file of the translated CDS sequences. |
-
 ### fna
-
+複数の.fnaファイルをNCBIから取得する:  
+Retrieving .fna files from NCBI:  
 ```
-# 複数のDNA配列をNCBIから取得する:  
-# Retrieving a list of DNA sequences from NCBI
-
 library(seqinr) # Load the SeqinR package
+
+# Make a vector containing NCBI accessions
+ACCESSIONs <- c("KM670336", "AP018710", "NZ_CP014764", "NZ_CP015073", "NZ_CP020602")
 
 # create a function to retrieve several nucleotide sequences from NCBI
 retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype="DNA", strip.desc=TRUE)[[1]]
@@ -1246,9 +1252,8 @@ system("open .")
 ```
 
 ### faa
-
-
-
+複数の.faaファイルをNCBIから取得する:  
+Retrieving .faa files from NCBI:  
 ```
 library(seqinr) # Load the SeqinR package
 
@@ -1259,8 +1264,7 @@ ACCESSIONs <- c("KM670336", "AP018710", "NZ_CP014764", "NZ_CP015073", "NZ_CP0206
 retrieve_ncbi_faa <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype="AA", strip.desc=TRUE)
 
 # Retrieve the sequences and store them in list variable "seqs"
-seqs <- lapply(ACCESSIONs, retrieve_ncbi_faa)
-
+#seqs <- lapply(ACCESSIONs, retrieve_ncbi_faa)
 seqs <- list()
 for(ACCESSION in ACCESSIONs) seqs <- c(seqs, retrieve_ncbi_faa(ACCESSION) )
 
@@ -1277,19 +1281,19 @@ sum(TF)
 myAnnot[TF]
 sapply(seqs[TF], length)
 
+# sub and gsub perform replacement of the first and all matches respectively.
 Annotation <- sub(pattern=".+\\|(\\S+) .+", replacement="\\1", myAnnot[TF])
 
 # write out the sequences to a FASTA file
 write.fasta(seqs[TF], Annotation, file="myseq.faa")
 
+# open current working directory
 system("open .")
 
 # quit and restart R
 setwd("~/projects/data/ncbi/eutils") # Set Working Directory
 library(seqinr) # Load the SeqinR package
 seqs <- read.fasta(file="myseq.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
-
-https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md
 ```
 
 [Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot)
@@ -1318,6 +1322,7 @@ for (n1 in 1:length(seqs)) {
 }
 dev.off(which = dev.cur()) # close the device
 
+# open current working directory
 system("open .")
 ```
 
@@ -1382,6 +1387,15 @@ Rの起動
 | Type | RefSeq | INSDC |
 |:-----|:-------|:------|
 | Chr | NC_000913.3 | U00096.3 |
+
+```
+# Accession Numbers of Sequence Data
+ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid pSN1216-29
+#ACCESSION <- "NC_002549" # https://www.ncbi.nlm.nih.gov/nuccore/NC_002549 Zaire ebolavirus
+#ACCESSION <- "NC_007596" # https://www.ncbi.nlm.nih.gov/nuccore/NC_007596 Mammuthus primigenius mitochondrion 
+#ACCESSION <- "NC_015529" # https://www.ncbi.nlm.nih.gov/nuccore/NC_015529 Mammuthus columbi mitochondrion 
+```
+
 
 タンパク質コード配列（CDS）のデータをNCBIから取得する:  
 Retrieving Protein Coding Sequence (CDS) data from NCBI:  
