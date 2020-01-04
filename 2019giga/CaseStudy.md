@@ -719,25 +719,7 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
     dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
     dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
 
-![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
-
-[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
-「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
-[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
-
-	# 配列取得方法
-	## togowsの利用 http://togotv.dbcls.jp/20110425.html
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
-
-	# dottup
-	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
-
-	# needle, water
-	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
-
-http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
-ラージゲノムにも対応したdot plot解析ツール D-GENIES - macでインフォマティクス
+https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#dotplot
 
 ----------
 ## [2019-11-26](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-11-26)
