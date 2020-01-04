@@ -1420,9 +1420,9 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
     # Apply a Function over a List
     Length <- sapply(seqs, length) # Length of a DNA sequence
     GCcontent <- sapply(seqs, GC) # Global G+C content
-    GCpos1 <- sapply(seqs, GCpos, pos=1) # G+C in the first position of the codon bases GC1
-    GCpos2 <- sapply(seqs, GCpos, pos=2) # G+C in the second position of the codon bases GC2
-    GCpos3 <- sapply(seqs, GCpos, pos=3) # G+C in the third position of the codon bases GC3
+    GCpos1 <- sapply(seqs, GCpos, pos=1) # G+C in the 1st position of the codon bases
+    GCpos2 <- sapply(seqs, GCpos, pos=2) # G+C in the 2nd position of the codon bases
+    GCpos3 <- sapply(seqs, GCpos, pos=3) # G+C in the 3rd position of the codon bases
 
     # data frame
     df <- data.frame(Length, GCcontent, GCpos1, GCpos2, GCpos3)
