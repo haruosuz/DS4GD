@@ -27,7 +27,11 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 13](#assignment-13) 課題No.13 「draft report」
 - [assignment 14](#assignment-12) 課題No.14 「presentation slides」
 - [E-utilities](#e-utilities)
+  - [fna](#fna)
+  - [faa](#faa)
 - [Coding sequences](#coding-sequences) タンパク質コード配列
+  - [codon usage](#codon-usage) コドン使用
+  - [amino acid usage](#amino-acid-usage) アミノ酸使用
 
 ----------
 ## assignment 0
@@ -1469,6 +1473,8 @@ CDSの要約統計量（最小値、中央値、最大値など）を求める:
 
     library("seqinr") # Loading seqinr package
     tablecode() # to plot genetic code as in textbooks
+
+----------
 
 ### codon usage
 **[コドン使用](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)**
