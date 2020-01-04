@@ -1439,8 +1439,6 @@ DNA配列の長さ、GC含量、アノテーションのデータフレームを
     # open current working directory
     system("open .")
 
-- https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
-
 `summary()`関数でデータフレームの列を要約する。  
 CDSの要約統計量（最小値、中央値、最大値など）を求める:  
 
@@ -1462,6 +1460,10 @@ CDSの要約統計量（最小値、中央値、最大値など）を求める:
     #install.packages("psych")
     library(psych)
     pairs.panels(df)
+
+- [Since bacterial genomes have little non-coding DNA, and the first two positions within codons are constrained by protein-coding requirements, most of the variation is due to the third position of codons [(8) and Figure 2].](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC549432/)
+- [コドン選択は主としてコドンの3文字目の選択に対応しています。ロイシン(Leu)とアルギニン(Arg)とセリン(Ser)については1文字目にも選択の余地がありますが、コドン2文字目の変化は必ずアミノ酸の変化をもたらします。従って、ゲノムのG+C%は、コドン1･2文字目に比べて、3文字目で最も顕著に観察されています。](https://www.nig.ac.jp/museum/evolution/04_c.html)
+- [これまでに、コドン1文字目のG+C含量（GC1）やコドン2文字目のG+C含量（GC2）と比較して、コドン3文字目のG+C含量（GC3）は、コドンバイアスに及ぼす寄与が最も大きいことが報告されている。](http://www.iab.keio.ac.jp/research/highlight/papers/200904131400.html)
 
 遺伝暗号 [Genetic code](https://en.wikipedia.org/wiki/Genetic_code) | [Genetic Codes - NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi)
 
@@ -1525,12 +1527,11 @@ write.csv(df.uco.high[order(df.uco.high$AA),], file="table.uco.high.csv", quote=
 system("open .")
 ```
 
-
 [`getTrans`](https://www.rdocumentation.org/packages/seqinr/versions/3.4-5/topics/getTrans)
 関数を用いて、核酸配列をタンパク質に翻訳する:  
 
     # Translate nucleic acid sequences into proteins
-    myTrans <- getTrans(ffn)
+    myTrans <- getTrans(seqs)
     myTrans[[1]]
 
 ----------
@@ -1539,6 +1540,14 @@ system("open .")
 **[アミノ酸](https://ja.wikipedia.org/wiki/アミノ酸)使用**
 
 平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
+
+```
+# Accession Numbers of Sequence Data
+ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid pSN1216-29
+
+## CDS protein FASTA
+faa <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
+```
 
 `[[ ]]`はリスト内の要素（ベクトル）を取り出す。
 リストの1番目の要素を取り出す:  
@@ -1578,11 +1587,11 @@ system("open .")
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
-[転移酵素](https://ja.wikipedia.org/wiki/転移酵素) "transferase" と、機能が不明なタンパク質 "hypothetical protein" を抽出する:  
+4型分泌装置 [T4SS Secretion System (T4SS)](https://en.wikipedia.org/wiki/Secretion)と、機能が不明なタンパク質 "hypothetical protein" を抽出する:  
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x)
-    pattern <- "transferase|hypothetical.protein"
+    pattern <- "T4SS|hypothetical.protein"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     #TF <- !grepl(pattern = "hypothetical.protein", x = myAnnot, ignore.case = TRUE)
     sum(TF)
@@ -1623,27 +1632,4 @@ system("open .")
     # Draw a Heat Map
     heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
-
-
 ----------
-
-
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-
-
-
-----------
-
-
-
-
-
