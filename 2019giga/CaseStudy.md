@@ -1467,8 +1467,8 @@ CDSの要約統計量（最小値、中央値、最大値など）を求める:
 
 遺伝暗号 [Genetic code](https://en.wikipedia.org/wiki/Genetic_code) | [Genetic Codes - NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi)
 
-    # to plot genetic code as in textbooks
-    tablecode()
+    library("seqinr") # Loading seqinr package
+    tablecode() # to plot genetic code as in textbooks
 
 ### codon usage
 **[コドン使用](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)**
