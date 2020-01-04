@@ -1541,7 +1541,11 @@ system("open .")
 
 平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
 
+配列データをNCBIから取得する:  
+Retrieving sequence data from NCBI:  
 ```
+library("seqinr") # Loading seqinr package
+
 # Accession Numbers of Sequence Data
 ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid pSN1216-29
 
