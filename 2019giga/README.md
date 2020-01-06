@@ -46,14 +46,8 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2020-01-07 No. 13 - [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
   - https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 - 2020-01-14 No. 14 - 最終回 final class
-  - 最終発表 [final presentation](#final-presentation)
+  - 最終発表 [final presentation](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-14)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
-
-----------
-## final presentation
-**最終発表**
-
-Five minutes will be allocated for each presentation.
 
 ----------
 ## final report
