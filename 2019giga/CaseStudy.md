@@ -1102,17 +1102,15 @@ Integrate and edit your previous assignments (e.g. results of analyzing DNA/prot
 ## assignment 14
 **課題No.14 「presentation slides」**
 
-https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#final-presentation
-
 Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2020-01-14.
-Five minutes will be allocated for each presentation, including presentation and discussion.
+10 minutes will be allocated for each presentation, including presentation and discussion.
 
-Report your main findings on analyses of biological data (e.g. DNA and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global sequence alignment, and local sequence alignment), multiple sequence alignment and phylogenetic trees, etc.
+Report your main findings on analyses of biological data (e.g. DNA and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global sequence alignment, and local sequence alignment), multiple sequence alignment, and phylogenetic trees, etc.
 
 2020-01-14 最終発表のスライド <YOUR_NAME.pdf> を提出する。
-発表時間：1人あたり最大5分
+発表時間：1人あたり最大10分
 
-生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメントと系統樹などが含まれる。
+生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
 
 ----------
 
