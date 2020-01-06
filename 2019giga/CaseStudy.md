@@ -25,7 +25,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [Installing R packages](#installing-r-packages)
 - [assignment 12](#assignment-12) 課題No.12 「Multiple Alignment and Phylogenetic Trees」
 - [assignment 13](#assignment-13) 課題No.13 「draft report」
-- [assignment 14](#assignment-12) 課題No.14 「presentation slides」
+- [assignment 14](#assignment-14) 課題No.14 「presentation slides」
 - [E-utilities](#e-utilities)
   - [fna](#fna)
   - [faa](#faa)
@@ -1032,7 +1032,7 @@ library("ape")
 ```
 
 ----------
-## assignment-12
+## assignment 12
 **課題No.12 「Multiple Alignment and Phylogenetic Trees」**
 
 - [Exercises on Multiple Alignment and Phylogenetic Trees](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises)
@@ -1091,7 +1091,7 @@ plot.phylo(mytree, main = "Phylogenetic Tree")
 ```
 
 ----------
-## assignment-13
+## assignment 13
 **課題No.13 「draft report」**
 
 Integrate and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it in PDF format.
@@ -1099,7 +1099,7 @@ Integrate and edit your previous assignments (e.g. results of analyzing DNA/prot
 これまでの課題（興味あるDNA/タンパク質の配列解析の結果）を統合・編集してレポートのドラフトを作成し、PDFファイルで提出する。
 
 ----------
-## assignment-14
+## assignment 14
 **課題No.14 「presentation slides」**
 
 https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#final-presentation
@@ -1107,12 +1107,12 @@ https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#final-presentat
 Submit your PDF presentation slides for your final presentation 最終発表 Tuesday 2020-01-14.
 Five minutes will be allocated for each presentation, including presentation and discussion.
 
-Report your main findings on analyses of biological data (e.g. genome DNA sequences and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC Content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global/local alignment), multiple alignment and phylogenetic trees, etc.
+Report your main findings on analyses of biological data (e.g. DNA and protein sequences) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global sequence alignment, and local sequence alignment), multiple sequence alignment and phylogenetic trees, etc.
 
 2020-01-14 最終発表のスライド <YOUR_NAME.pdf> を提出する。
 発表時間：1人あたり最大5分
 
-生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル/ローカル・アラインメント）、多重配列アライメントと系統樹などが含まれる。
+生物学的データ（ゲノムDNA配列やタンパク質配列）の解析結果を報告する。解析の例として、DNA配列の統計（長さ、GC含量、連続塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメントと系統樹などが含まれる。
 
 ----------
 
