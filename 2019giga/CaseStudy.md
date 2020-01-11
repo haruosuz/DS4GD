@@ -652,7 +652,7 @@ DNA配列の統計（長さ、塩基組成、GC含量）を計算する:
 
 DNA配列のk連続塩基組成（観測値/期待値）を解析する:  
 
-    # oligonucleotide relative abundance
+    # oligonucleotide (k-mer) frequency
      k = 2 # 2-mers or dinucleotide
     #k = 3 # 3-mers or trinucleotide
     #k = 4 # 4-mers or tetranucleotide
@@ -1125,25 +1125,23 @@ The Entrez Programming Utilities (E-utilities)
 | .ffn | Nucleotide FASTA file of all the prediction transcripts (CDS, rRNA, tRNA, tmRNA, misc_RNA) |
 | .faa | Protein FASTA file of the translated CDS sequences. |
 
+- data
+  - [Yanagiya et al. (2018) Front Microbiol. 9:2602. "Novel Self-Transmissible and Broad-Host-Range Plasmids Exogenously Captured From Anaerobic Granules or Cow Manure."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6232296/)
+  - https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/ebolavirus
+  - https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/Zika%20virus
+  - https://www.ncbi.nlm.nih.gov/genome/browse/#!/organelles/Mammuthus
+
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
-
-[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
-
-    # Set Working Directory
-    WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
-    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
-    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
-    dir() # List the Files in a Directory
-
-- [Yanagiya et al. (2018) Front Microbiol. 9:2602. "Novel Self-Transmissible and Broad-Host-Range Plasmids Exogenously Captured From Anaerobic Granules or Cow Manure."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6232296/)
-- https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/ebolavirus
-- https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/Zika%20virus
-- https://www.ncbi.nlm.nih.gov/genome/browse/#!/organelles/Mammuthus
 
 配列データをNCBIから取得する:  
 Retrieving sequence data from NCBI:  
 ```
+# Set Working Directory
+WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
+system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+
 library("seqinr") # Loading seqinr package
 
 # Accession Numbers of Sequence Data
@@ -1153,34 +1151,28 @@ ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid 
 #ACCESSION <- "NC_015529" # https://www.ncbi.nlm.nih.gov/nuccore/NC_015529 Mammuthus columbi mitochondrion 
 
 ## nucleotide FASTA
-fna <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+fna.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
 
 ## CDS nucleotide FASTA
-ffn <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+ffn.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
 
 ## CDS protein FASTA
-faa <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
+faa.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
 
 # 配列の数をカウントする:  
 # get the number of elements
-length(fna)
-length(ffn)
-length(faa)
-
-# 配列のアノテーションを取得する:  
-# get sequence annotations
-getAnnot(fna)
-head(getAnnot(ffn), 2)
-head(getAnnot(faa), 2)
+length(fna.seqs)
+length(ffn.seqs)
+length(faa.seqs)
 
 # 配列データをFASTA形式ファイルとして書き出す:  
 # Writing sequence data out as a FASTA file
-write.fasta(sequences=fna, names=getAnnot(fna), file.out=paste0(ACCESSION,".fna"))
-write.fasta(sequences=ffn, names=getAnnot(ffn), file.out=paste0(ACCESSION,".ffn"))
-write.fasta(sequences=faa, names=getAnnot(faa), file.out=paste0(ACCESSION,".faa"))
+write.fasta(sequences=fna.seqs, names=getAnnot(fna.seqs), file.out=paste0(ACCESSION,".fna"))
+write.fasta(sequences=ffn.seqs, names=getAnnot(ffn.seqs), file.out=paste0(ACCESSION,".ffn"))
+write.fasta(sequences=faa.seqs, names=getAnnot(faa.seqs), file.out=paste0(ACCESSION,".faa"))
 
-# open current working directory
-system("open .")
+dir() # List the Files in a Directory
+system("open .") # open current working directory
 ```
 
 ### fna
@@ -1197,10 +1189,10 @@ ACCESSIONs <- c("KM670336", "AP018710", "NZ_CP014764", "NZ_CP015073", "NZ_CP0206
 retrieve_ncbi_fna <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype="DNA", strip.desc=TRUE)[[1]]
 
 # Retrieve the sequences and store them in list variable "seqs"
-seqs <- lapply(ACCESSIONs, retrieve_ncbi_fna)
+fna.seqs <- lapply(ACCESSIONs, retrieve_ncbi_fna)
 
 # write the sequences to a FASTA-format file
-write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar=80)
+write.fasta(sequences=fna.seqs, names=getAnnot(fna.seqs), file.out="mySequences.fna")
 
 # Reading sequence data
 seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE)
@@ -1222,9 +1214,6 @@ for(k in 2:4){
   heatmap(myrho, margins=c(7, 2), cexRow=1/k, cexCol=0.7, scale="none", col=rev(gray.colors(12)))
 }
 dev.off(which = dev.cur()) # close the device
-
-# open current working directory
-system("open .")
 ```
 
 ### faa
@@ -1241,36 +1230,30 @@ ACCESSIONs <- c("KM670336", "AP018710", "NZ_CP014764", "NZ_CP015073", "NZ_CP0206
 retrieve_ncbi_faa <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype="AA", strip.desc=TRUE)
 
 # Retrieve the sequences and store them in list variable "seqs"
-#seqs <- lapply(ACCESSIONs, retrieve_ncbi_faa)
-seqs <- list()
-for(ACCESSION in ACCESSIONs) seqs <- c(seqs, retrieve_ncbi_faa(ACCESSION) )
+#faa.seqs <- lapply(ACCESSIONs, retrieve_ncbi_faa)
+faa.seqs <- list()
+for(ACCESSION in ACCESSIONs) faa.seqs <- c(faa.seqs, retrieve_ncbi_faa(ACCESSION) )
 
 # Inspecting data
-length(seqs) # get the number of elements
-head(unlist(getAnnot(seqs)), n=3) # get sequence annotations
-
-myAnnot <- unlist(getAnnot(seqs)) # sequence annotations
+length(faa.seqs) # get the number of elements
+myAnnot <- unlist(getAnnot(faa.seqs)) # sequence annotations
 
 # grepl returns a logical vector (match or not for each element of x)
 pattern <- "gene=repA]|protein=replication initiator protein A]"
 TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
 sum(TF)
 myAnnot[TF]
-sapply(seqs[TF], length)
+sapply(faa.seqs[TF], length)
 
 # sub and gsub perform replacement of the first and all matches respectively.
 Annotation <- sub(pattern=".+\\|(\\S+) .+", replacement="\\1", myAnnot[TF])
 
 # write out the sequences to a FASTA file
-write.fasta(seqs[TF], Annotation, file="myseq.faa")
+write.fasta(faa.seqs[TF], Annotation, file="myseq.faa")
 
 # Reading sequence data
 seqs <- read.fasta(file="myseq.faa", seqtype="AA", strip.desc=TRUE)
-```
 
-[Comparing two sequences using a dotplot](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#comparing-two-sequences-using-a-dotplot)  
-ドットプロットで2つの配列を比較
-```
 # setting font in plots
 par(family="mono")
 
@@ -1352,87 +1335,51 @@ system("open .")
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
 
-[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
-
-    # Set Working Directory
-    WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
-    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
-    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
-    dir() # List the Files in a Directory
-
-- [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
-  - [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
-
-| Type | RefSeq | INSDC |
-|:-----|:-------|:------|
-| Chr | NC_000913.3 | U00096.3 |
-
 タンパク質コード配列（CDS）のデータをNCBIから取得する:  
 Retrieving Protein Coding Sequence (CDS) data from NCBI:  
+```
+# Set Working Directory
+WorkingDirectory <- "~/projects/data/ncbi/eutils" # assign a value to a variable
+system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+setwd(WorkingDirectory); getwd() # Set and Get Working Directory
 
-    # Retrieving sequence data using SeqinR
-    library("seqinr") # Loading seqinr package
-    ACCESSION <- "NC_000913" # Escherichia coli str. K-12 substr. MG1655
-    seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype="DNA", strip.desc=TRUE)
+library("seqinr") # Loading seqinr package
 
-    # Writing sequence data out as a FASTA file
-    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out=paste0(ACCESSION,".ffn"))
+# Accession Numbers of Sequence Data
+ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid pSN1216-29
 
-    # open current working directory
-    system("open .")
+## CDS nucleotide FASTA
+ffn.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
 
-    # Reading sequence data into R
-    library("seqinr") # Loading seqinr package
-    filename <- paste0(ACCESSION,".ffn")
-    #filename <- "NC_000913.ffn"
-    seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
+# get the number of elements
+length(ffn.seqs)
 
-配列の数とアノテーションを確認する:  
-
-    # get the number of elements
-    length(seqs)
-
-    # get sequence annotations
-    # Return the First or Last Part of an Object
-    head(getAnnot(seqs), n = 1)
-    tail(getAnnot(seqs), n = 3)
+# Writing sequence data out as a FASTA file
+write.fasta(sequences=ffn.seqs, names=getAnnot(ffn.seqs), file.out=paste0(ACCESSION,".ffn"))
+```
 
 [applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
 
 DNA配列の長さ、GC含量、アノテーションのデータフレームを作成する:  
 
-    # Apply a Function over a List
-    Length <- sapply(seqs, length) # Length of a DNA sequence
-    GCcontent <- sapply(seqs, GC) # Global G+C content
-    GCpos1 <- sapply(seqs, GCpos, pos=1) # G+C in the 1st position of the codon bases
-    GCpos2 <- sapply(seqs, GCpos, pos=2) # G+C in the 2nd position of the codon bases
-    GCpos3 <- sapply(seqs, GCpos, pos=3) # G+C in the 3rd position of the codon bases
+```
+# Apply a Function over a List
+Length <- sapply(ffn.seqs, length) # Length of a DNA sequence
+GCcontent <- sapply(ffn.seqs, GC) # Global G+C content
+GCpos1 <- sapply(ffn.seqs, GCpos, pos=1) # G+C in the 1st position of the codon bases
+GCpos2 <- sapply(ffn.seqs, GCpos, pos=2) # G+C in the 2nd position of the codon bases
+GCpos3 <- sapply(ffn.seqs, GCpos, pos=3) # G+C in the 3rd position of the codon bases
 
-    # data frame
-    df <- data.frame(Length, GCcontent, GCpos1, GCpos2, GCpos3)
-    head(df)
-
-[CSVやTSVを書き出す](http://a-habakiri.hateblo.jp/entry/2016/12/12/222806)
-
-データのエクスポート。タブ区切り(TSV)やカンマ区切り(CSV)ファイルとして出力する:  
-
-    # Exporting Data
-    write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
-    write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
-
-    # open current working directory
-    system("open .")
+# data frame
+df <- data.frame(Length, GCcontent, GCpos1, GCpos2, GCpos3)
+head(df)
+```
 
 `summary()`関数でデータフレームの列を要約する。  
 CDSの要約統計量（最小値、中央値、最大値など）を求める:  
 
     # Generic function for Object Summaries
     summary(df)
-
-[R | R を利用した統計解析およびデータの視覚化](https://stats.biopapyrus.jp/r/)
-
-[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
-フォント・ファミリーを指定する
 
     # setting font in plots
     par(family="mono")
@@ -1449,6 +1396,24 @@ CDSの要約統計量（最小値、中央値、最大値など）を求める:
 - [コドン選択は主としてコドンの3文字目の選択に対応しています。ロイシン(Leu)とアルギニン(Arg)とセリン(Ser)については1文字目にも選択の余地がありますが、コドン2文字目の変化は必ずアミノ酸の変化をもたらします。従って、ゲノムのG+C%は、コドン1･2文字目に比べて、3文字目で最も顕著に観察されています。](https://www.nig.ac.jp/museum/evolution/04_c.html)
 - [これまでに、コドン1文字目のG+C含量（GC1）やコドン2文字目のG+C含量（GC2）と比較して、コドン3文字目のG+C含量（GC3）は、コドンバイアスに及ぼす寄与が最も大きいことが報告されている。](http://www.iab.keio.ac.jp/research/highlight/papers/200904131400.html)
 
+```
+df$Annotation <- unlist(getAnnot(ffn.seqs)) # get sequence annotations
+df$location <- sub(pattern=".+\\[location=(.+)\\] \\[gbkey=.+", replacement="\\1", df$Annotation)
+df$protein <- sub(pattern=".+\\[protein=(.+)\\] \\[protein_id=.+", replacement="\\1", df$Annotation)
+rownames(df) <- NULL
+
+# Return the First or Last Part of an Object
+head(df, n = 1)
+tail(df, n = 2)
+
+# Exporting Data
+write.table(df, file="table.txt", sep="\t", quote=FALSE, row.names=TRUE, col.names=NA)
+write.csv(df, file="table.csv", quote=TRUE, row.names=TRUE)
+
+# open current working directory
+system("open .")
+```
+
 遺伝暗号 [Genetic code](https://en.wikipedia.org/wiki/Genetic_code) | [Genetic Codes - NCBI](https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi)
 
     library("seqinr") # Loading seqinr package
@@ -1457,28 +1422,20 @@ CDSの要約統計量（最小値、中央値、最大値など）を求める:
 ----------
 
 ### codon usage
-**[コドン使用](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage)**
+**コドン使用**
 
-テスト用の配列データを作成する。  
-[`count`](https://rdrr.io/rforge/seqinr/man/count.html)関数で3連続塩基`(wordsize = 3)`をカウントする。  
-[`uco`](https://rdrr.io/rforge/seqinr/man/uco.html)関数でコドン使用頻度`(index = "eff", "freq", "rscu")`を計算する。
+https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#codon-usage
+テスト用の配列データを作成する。
 
-```
-# Create tests
-testseq <- s2c("ttcttt")
+https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage
+DNA配列の長さが3の倍数（コドン）にならないCDS（例えば、偽遺伝子 pseudogene）を解析から除外する:
 
-## trimer frequencies
-count(seq = testseq, wordsize = 3)
+https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage
+Compute codon usage differences between gene classes for identifying Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes.
 
-## absolute codon frequencies or codon counts `eff`
-uco(seq = testseq, index = "eff")
-
-## relative codon frequencies `freq`
-uco(seq = testseq, index = "freq")
-
-## Relative Synonymous Codon Usage `rscu`
-uco(seq = testseq, index = "rscu")
-```
+https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#codon-usage
+999 coding DNA sequences (CDSs) from E. coli
+CDSs from E. coli O157:H7 Sakai
 
 - [Sharp et al. (2010) "Forces that influence the evolution of codon bias."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/)
   - [Table 1.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/?report=objectonly)
@@ -1487,6 +1444,28 @@ Codon usage in E. coli. Codon usage is compared between a set of 40 highly expre
   - Anticodon table [Escherichia coli K-12](http://trna.ie.niigata-u.ac.jp/cgi-bin/trnadb/whole_anticodon.cgi?GID=|U00096&DTYPE=CMP&VTYPE=1)
 
 大腸菌ゲノムにおける全遺伝子群と高発現遺伝子群のコドン使用頻度を計算する。
+
+- [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
+  - [Escherichia coli str. K-12 substr. MG1655](https://www.ncbi.nlm.nih.gov/genome/167?genome_assembly_id=161521)
+
+| Type | RefSeq | INSDC |
+|:-----|:-------|:------|
+| Chr | NC_000913.3 | U00096.3 |
+
+配列データをNCBIから取得する:  
+Retrieving sequence data from NCBI:  
+```
+library("seqinr") # Loading seqinr package
+
+# Accession Numbers of Sequence Data
+ACCESSION <- "NC_000913" # Escherichia coli str. K-12 substr. MG1655
+
+## CDS nucleotide FASTA
+ffn.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+
+# get the number of elements
+length(ffn.seqs)
+```
 
 - [リストをベクトルに変換するunlist()関数](https://ito-hi.blog.so-net.ne.jp/2011-07-12)
 
@@ -1498,15 +1477,15 @@ CDSの結合(concatenate)データのコドン使用頻度`("eff", "freq", "rscu
 
 # 全遺伝子群(all)のコドン使用頻度
 # Codon usage for the collection of all genes
-df.uco.all <- uco(unlist(seqs), as.data.frame=TRUE)
+df.uco.all <- uco(unlist(ffn.seqs), as.data.frame=TRUE)
 write.csv(df.uco.all[order(df.uco.all$AA),], file="table.uco.all.csv", quote=TRUE, row.names=FALSE)
 
 # 高発現遺伝子群(high)のコドン使用頻度
 # Codon usage for the collection of highly expressed genes encoding ribosomal proteins
 pattern <- "ribosomal subunit protein"
-TF <- grepl(pattern = pattern, x = getAnnot(seqs), ignore.case = TRUE)
-sum(TF) # unlist(getAnnot(seqs[TF]))
-df.uco.high <- uco(unlist(seqs[TF]), as.data.frame=TRUE)
+TF <- grepl(pattern = pattern, x = getAnnot(ffn.seqs), ignore.case = TRUE)
+sum(TF) # unlist(getAnnot(ffn.seqs[TF]))
+df.uco.high <- uco(unlist(ffn.seqs[TF]), as.data.frame=TRUE)
 write.csv(df.uco.high[order(df.uco.high$AA),], file="table.uco.high.csv", quote=TRUE, row.names=FALSE)
 
 # open current working directory
@@ -1517,7 +1496,7 @@ system("open .")
 関数を用いて、核酸配列をタンパク質に翻訳する:  
 
     # Translate nucleic acid sequences into proteins
-    myTrans <- getTrans(seqs)
+    myTrans <- getTrans(ffn.seqs)
     myTrans[[1]]
 
 ----------
@@ -1538,36 +1517,6 @@ ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid 
 ## CDS protein FASTA
 faa <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
 ```
-
-`[[ ]]`はリスト内の要素（ベクトル）を取り出す。
-リストの1番目の要素を取り出す:  
-
-    # extract the 1st element:
-    faa1 <- faa[[1]]
-
-`summary()`関数でデータの要約:  
-
-    # Object Summaries
-    summary(faa1)
-
-配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
-
-![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
-
-[`AAstat()`](https://www.rdocumentation.org/packages/seqinr/versions/3.3-3/topics/AAstat)
-関数を用いて、タンパク質の配列情報（アミノ酸残基数、物理化学的クラスの割合、[等電点](https://ja.wikipedia.org/wiki/等電点)の理論値）を求める:  
-
-    # Get protein statistics
-    AAstat(seq=faa1)
-
-    aa <- AAstat(seq=faa1, plot=FALSE)
-
-    # Get amino acid counts
-    aa$Compo
-
-    # Get the percentage of each physico-chemical classes
-    aa$Prop
-    aa$Prop$Aromatic
 
 [`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
 関数を用いて、配列のアノテーションを取得する:  
