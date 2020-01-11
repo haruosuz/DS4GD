@@ -77,7 +77,11 @@ http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapte
 ## assignment 1
 **課題No.1 「R言語入門」**    
 
-次の動画レッスンを見て、疑問点を報告する。[R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)【回答例】動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
+次の動画レッスンを見て、疑問点を報告する。
+[R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
+
+【回答例】
+動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
 - 因子ベクトルというものがよくわからなかった。
 - 行列とデータフレームとリストの違いが理解できなかった。
 
@@ -726,26 +730,6 @@ Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itsel
     dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
     dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
 
-![https://moshbox.jp/?p=27311](https://moshbox.jp/be/wp-content/uploads/2017/03/Terminal_Commands-01.png)
-
-    # change shell to bash
-    bash
-
-[(Rで)塩基配列解析](http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html)
-「2-1. 配列解析基礎」坊農秀雅 (DBCLS)
-[講義資料](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
-
-	# 配列取得方法
-	## togowsの利用 http://togotv.dbcls.jp/20110425.html
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
-    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
-
-	# dottup
-	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
-
-	# needle, water
-	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
-
 ----------
 ## assignment 7
 **課題No.7 「Pairwise Sequence Alignment」**
@@ -799,14 +783,18 @@ Rコード
 
 	# igraph のセットアップ
 	#install.packages("igraph")
+
 	library(igraph)
 	
 	# グラフの読み込み
 	edge <- c(1,2, 1,4, 2,3, 2,3, 2,4, 3,1, 4,4)
 	g <- graph(edge)
 	V(g)
+
 	E(g)
+
 	plot(g)
+
 
 	# グラフのロード
 	## グラフをロードします
@@ -814,44 +802,60 @@ Rコード
 	g <- graph.edgelist(a, directed=FALSE)
 
 	## キャラクター（ノード）の数を表示します
+
 	print(V(g))
+
 	## 一緒に登場するキャラクターの組（エッジ）の数を表示します
 	print(E(g))
 	
 	##ロードしたグラフに前処理を施します
 	g <- simplify(g, remove.multiple=T, remove.loops=T)
 
+
 	## 再度、エッジの数を表示します
+
 	print(E(g))
 
 	# 重要なヒーローの特定
 	## まず、各ノードの次数中心性を求めます
 	d <- degree(g)
+
 	## 計算結果を参照します
 	head(sort(d, decreasing=T), 10)
+
 	
 	## 次に、各ノードのページランクを求めます
+
 	p <- page.rank(g)
+
 	## 計算結果を参照します
 	head(sort(p$vector, decreasing=T), 10)
 
 	## 同様に、各ノードの媒介中心性も求めてみます
 	b <- betweenness(g)
+
 	## 計算結果を参照します
 	head(sort(b, decreasing=T), 10)
+
 
 	# コミュニティの抽出
 	## 各ノードの連結成分を求めてみます
 	c <- clusters(g)
 	## 各クラスターのサイズを確認します
+
 	print(c$csize)
 
+
 	## マイナーなクラスタのメンバーを確認します。
+
 	groups(c)[2:4]
+
 	
 	## グラフ中のコミュニティを貪欲法を使って抽出します。	## これは計算コストの低いコミュニティ抽出のアルゴリズムです。
 	c <- fastgreedy.community(g)
+
 	## 抽出されたコミュニティの数を出力します
+
 	print(c)
 
 	# スケールフリー・ネットワーク
@@ -862,6 +866,7 @@ Rコード
 	g <- barabasi.game(30, m=2, directed=FALSE)
 	plot(g)
 
+
 	## ノードが 10,000個になると描画してもよくわからないので、	## 次数（つながっているノードの数）ごとにどれくらいの割合のノードが	## 分布しているか（次数分布）をグラフにしてみます。
 	g <- barabasi.game(10000, m=2, directed=FALSE)
 	dd <- degree.distribution(g)
@@ -870,11 +875,16 @@ Rコード
 	## さらに、ノード間の平均距離を調べてみます。
 	average.path.length(g)
 
+
 参考資料
 - Barabasi
+
   - Network biology: understanding the cell's functional organization (2004) https://www.nature.com/articles/nrg1272
+
   - Network medicine: a network-based approach to human disease (2010) https://www.nature.com/articles/nrg2918
+
   - Do your proteins have their own social network? (TED) https://www.tedmed.com/talks/show?id=7282
+
   - 書籍「新ネットワーク思考」(2001)
 
 References
@@ -991,6 +1001,8 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
 
 - g-language Tutorials [Codon usage analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#codon_usage_analysis) [コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
 - [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
+- [遺伝子発現量予測](http://bioinfo.ie.niigata-u.ac.jp/?遺伝子発現量予測)
+- [コドン組成に基づくBLSOM解析](http://bioinfo.ie.niigata-u.ac.jp/?コドン組成に基づくBLSOM解析)
 - 葉緑体遺伝子のコドン使用 [Suzuki H, Morton BR. (2016) "Codon Adaptation of Plastid Genes."](http://www.ncbi.nlm.nih.gov/pubmed/27196606) psbA gene
 - コドン使用に基づく高発現・外来性遺伝子予測 Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes
   - [PHX/PA user guide](http://www.cmbl.uga.edu/software/PHX-PA-guide.htm)
@@ -1003,14 +1015,41 @@ https://cran.r-project.org/web/packages/seqinr/seqinr.pdf
     # Load the SeqinR package
     library(seqinr)
 
+dotchart.uco Cleveland plot for codon usage tables
+
 uco Codon usage indices
-    ## Show all possible codons:    words()
-    ## Make a coding sequence from this:    (cds <- s2c(paste(words(), collapse = "")))
-    ## Get codon counts:    uco(cds, index = "eff")
-    ## Get codon relative frequencies:    uco(cds, index = "freq")
-    ## Get RSCU values:    uco(cds, index = "rscu")
-    ## Show what happens with ambiguous bases:    uco(s2c("aaannnttt"))
-    ## Use a real coding sequence:
+    
+    ## Show all possible codons:
+    words()
+    
+    ## Make a coding sequence from this:
+    (cds <- s2c(paste(words(), collapse = "")))
+    
+    ## Get codon counts:
+    uco(cds, index = "eff")
+    
+    ## Get codon relative frequencies:
+    uco(cds, index = "freq")
+    
+    ## Get RSCU values:
+    uco(cds, index = "rscu")
+    
+    ## Show what happens with ambiguous bases:
+    uco(s2c("aaannnttt"))
+    
+    ## Use a real coding sequence:
+    rcds <- read.fasta(file = system.file("sequences/malM.fasta", package = "seqinr"))[[1]]
+    uco( rcds, index = "freq")
+    uco( rcds, index = "eff")
+    uco( rcds, index = "rscu")
+    uco( rcds, as.data.frame = TRUE)
+    
+    ## Show what happens with RSCU when an amino-acid is missing:
+    ecolicgpe5 <- read.fasta(file = system.file("sequences/ecolicgpe5.fasta",package="seqinr"))[[1]]
+    uco(ecolicgpe5, index = "rscu")
+
+    ## Force NA to zero:
+    uco(ecolicgpe5, index = "rscu", NA.rscu = 0)
 
 [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 
@@ -1029,8 +1068,11 @@ uco Codon usage indices
     seqs <- read.fasta(file = gzcon(url(curl)), seqtype = c("DNA"), strip.desc = TRUE) # Retrieve the sequences and store them in list variable "seqs"
     length(seqs) # Print out the number of sequences retrieved
     seq1 <- seqs[[1]]
-    uco(seq1, index = "eff")  # Absolute frequencies
-    uco(seq1, index = "freq") # Relative frequencies    uco(seq1, index = "rscu") # Relative Synonymous Codon Usage (RSCU)    df <- uco(seq1, as.data.frame = TRUE) # all indices are returned into a data frame
+
+    uco(seq1, index = "eff")  # Absolute frequencies
+    uco(seq1, index = "freq") # Relative frequencies
+    uco(seq1, index = "rscu") # Relative Synonymous Codon Usage (RSCU)
+    df <- uco(seq1, as.data.frame = TRUE) # all indices are returned into a data frame
     df[order(df$AA),]
 
 Compute codon usage differences between gene classes for identifying Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes.
@@ -1043,7 +1085,8 @@ Compute codon usage differences between gene classes for identifying Predicted H
 
     # 各遺伝子のコドン使用
     # Codon usage for all individual genes (>100 codons in length)
-    seqs <- seqs[sapply(seqs, length) > 300]    cu.seqs <- t(sapply(seqs, uco, index="rscu"))
+    seqs <- seqs[sapply(seqs, length) > 300]
+    cu.seqs <- t(sapply(seqs, uco, index="rscu"))
 
     # 全遺伝子群のコドン使用
     # Codon usage for the collection of all genes (average gene)
