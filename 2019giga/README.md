@@ -48,6 +48,8 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2020-01-14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-14)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
+  - 授業調査 [Class Survey]
+  - 先端生命科学 [Advanced Biosciences]
 
 ----------
 ## final report
@@ -56,6 +58,37 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 Submit your final report in PDF format.
 
 - [IMRAD](https://en.wikipedia.org/wiki/IMRAD) (Introduction, Methods, Results, and Discussion)
+
+----------
+## Class Survey
+
+We are writing to inform you that the period for students to fill out the “Semester-End General Class Survey” for Spring semester classes has begun.
+
+■Schedule (2019 Fall semester)
+
+Survey period	                        Saturday, January 11, 10 a.m.～　 Tuesday, January 28, 11 p.m.
+
+Questions regarding classes can be accessed by clicking on【授業調査】(Class Survey) after logging on to SFC-SFS
+(https://vu.sfc.keio.ac.jp/sfc-sfs/).
+
+----------
+## Advanced Biosciences
+
+“Advanced Biosciences” seminars (Tomita, Naito, Kuroda, Kanai, Soga, Arakawa, Suzuki and Tsujimoto) are operated along with “Systems Biology Project” for graduate students. All members, including faculty members, graduate students, and undergraduate students are involved to research projects. All undergraduate students must take Dr. Tomita’s “Introduction to Systems Biology” for first semester in order to join our “Advanced Biosciences” seminars.
+Please check our website for more details. 　http://bio.sfc.keio.ac.jp/
+```
+(1) All undergraduate students must take Dr. Tomita’s “Introduction to Systems Biology” (Seminar B1) for first semester.
+(2) Details for course registration will be announced in seminar.
+(3) All students must have high motivation to lead future society via “Advanced Biosciences” project.
+(4) We welcome students who have not studied biology in high school.
+ <<There will be an interview for applicants. >>
+Deadline: January 20 (Mon), 2020
+Date of interview: January 25 (Sat) or 27 (Mon), 2020.
+Please send an e-mail Prof. Tomita and Ms. Namba (mt@sfc.keio.ac.jp, cnamba@sfc.keio.ac.jp). Title “Application for Dr. Tomita’s seminar.”
+Details will be announced later.
+```
+Two camps will be held in 2020 Spring semester.
+1. Freshmen camp (April 11-12, 2020) at TTCK. Cost: 3,000yen + Transportation  2. Summer camp (July 18-19, 2020) Cost: 10,000yen + Transportation
 
 ----------
 ## Guest speaker
