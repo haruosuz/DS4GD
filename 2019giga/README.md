@@ -43,7 +43,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2019-12-24 No. 12 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#coding-sequences)
   - [E-utilities](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#e-utilities)
 - *事務室閉室・冬季休校（12/28～1/5）[December 28 – January 5 | Saturday – Sunday | Winter Break Period | Administrative Office Closed](https://giga.sfc.keio.ac.jp/the-giga-program/giga-program-study-opportunities/academic-calendars/)*
-- 2020-01-07 No. 13 - [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds) RStudio, R markdown, and a collection of R packages called the `tidyverse`
+- 2020-01-07 No. 13 - [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds) RStudio, R markdown, `tidyverse`
   - https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 - 2020-01-14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-14)
