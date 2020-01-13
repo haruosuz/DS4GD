@@ -81,7 +81,7 @@ Please check our website for more details. 　http://bio.sfc.keio.ac.jp/
 
 While microorganisms have important roles in various environments (e.g. human body, natural and built environments), they can cause many infectious diseases, which are threats to public health. In this research group, we use bioinformatics and genomics to understand microbial diversity and its medicinal, agricultural and industrial applications.
 
-Our research focuses on reproducible bioinformatics, genome microbiology, and urban microbiomes. It has been estimated that, by 2050, 10 million people will die every year due to antimicrobial resistance (AMR) if no action is taken. Plasmids often carry multiple AMR genes and can be horizontally transferred between bacteria, contributing to the spread of AMR. To identify and track antimicrobial resistance (AMR) genes and mobile genetic elements (e.g. plasmids and viruses) in urban built environments, we have been collecting samples in mass-transit systems around the globe (Danko et al., 2019) and will collect samples before, during, and after the 2020 Summer Olympic Games (https://github.com/haruosuz/metasub/blob/master/README.md). We are using a combination of bioinformatics tools for identifying plasmids and AMR genes in microbiomes, predicting plasmid host range, and gaining insight into microbial lifestyles (Yano et al., 2018; Merino et al., 2019). 
+Our research focuses on reproducible bioinformatics, genome microbiology, and urban microbiomes. It has been estimated that, by 2050, 10 million people will die every year due to antimicrobial resistance (AMR) if no action is taken. Plasmids often carry multiple AMR genes and can be horizontally transferred between bacteria, contributing to the spread of AMR. To identify and track antimicrobial resistance (AMR) genes and mobile genetic elements (e.g. plasmids and viruses) in urban built environments, we have been collecting samples in mass-transit systems around the globe (Danko et al., 2019) and will collect samples before, during, and after the 2020 Summer Olympic Games (https://github.com/haruosuz/metasub/blob/master/README.md). We are using a combination of bioinformatics tools for identifying plasmids and AMR genes in microbiomes, predicting plasmid host range, and gaining insight into microbial lifestyles (Yano et al., 2018; Merino et al., 2019).
 
 ```
 (1) All undergraduate students must take Dr. Tomita’s “Introduction to Systems Biology” (Seminar B1) for first semester.
@@ -95,7 +95,7 @@ Date of interview: January 25 (Sat) or 27 (Mon), 2020.
 Please send an e-mail Prof. Tomita and Ms. Namba (mt@sfc.keio.ac.jp, cnamba@sfc.keio.ac.jp). Title “Application for Dr. Tomita’s seminar.”
 Details will be announced later.
 
-References:
+**References:**
 - Danko et al. (2019) "Global Genetic Cartography of Urban Metagenomes and Anti-Microbial Resistance" doi: https://doi.org/10.1101/724526
 - Merino et al. (2019) "Comparative genomics of Bacteria commonly identified in the built environment." doi: 10.1186/s12864-018-5389-z.
 - Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design." doi: 10.1016/j.csbj.2018.12.001.
