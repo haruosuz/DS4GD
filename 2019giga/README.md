@@ -43,20 +43,20 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
 - 2019-12-24 No. 12 - タンパク質コード配列 [Coding sequences](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#coding-sequences)
   - [E-utilities](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#e-utilities)
 - *事務室閉室・冬季休校（12/28～1/5）[December 28 – January 5 | Saturday – Sunday | Winter Break Period | Administrative Office Closed](https://giga.sfc.keio.ac.jp/the-giga-program/giga-program-study-opportunities/academic-calendars/)*
-- 2020-01-07 No. 13 - [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
+- 2020-01-07 No. 13 - [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds) RStudio, R markdown, and a collection of R packages called the `tidyverse`
   - https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 - 2020-01-14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-14)
   - https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
-  - 授業調査 [Class Survey]
-  - 先端生命科学 [Advanced Biosciences]
+  - 授業調査 [Class Survey](#class-survey)
+  - 先端生命科学 [Advanced Biosciences](#advanced-biosciences)
 
 ----------
 ## final report
 **レポート**
 
-Submit your final report in PDF format.
+Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, etc.)
 
 - [IMRAD](https://en.wikipedia.org/wiki/IMRAD) (Introduction, Methods, Results, and Discussion)
 
