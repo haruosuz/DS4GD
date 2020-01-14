@@ -50,7 +50,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
   - https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz
 ```
 BiocManager::install("DECIPHER")
-``
+```
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
   - 授業調査 [Class Survey](https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#class-survey)
   - 先端生命科学 [Advanced Biosciences](https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#advanced-biosciences)
