@@ -46,9 +46,7 @@ DATA SCIENCE FOR GENOME DYNAMICS (GIGA)
   - https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 - 2020-01-14 No. 14 - 最終回 final class
   - 最終発表 [final presentation](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-14)
-  - [virus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md)
-    - [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus)
-  - https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz
+  - [virus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md) | [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) | [R markdown for the analysis of coronavirus](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
 - 2020-01-21 レポート提出期限 Deadline for [final report](#final-report)
   - 授業調査 [Class Survey](https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#class-survey)
   - 先端生命科学 [Advanced Biosciences](https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#advanced-biosciences)
