@@ -22,8 +22,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
 - 2020-05-05 No. 1 - イントロダクション [Introduction](#introduction) | *こどもの日【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
   - [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds) RStudio, R markdown, `tidyverse`
-  - https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
-  - [virus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md) | [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) | download [R markdown](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz) for the analysis of coronavirus.
+  - Google Colab [NCBI Genome List](https://colab.research.google.com/drive/1K3Z0Rh9OZYQjZ1xT0_hOaRuW4EiEpVU7#scrollTo=J2mT2lQJ0vKZ)
 - 2020-05-12 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2020-05-19 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2020-05-26 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
@@ -66,15 +65,11 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 
 ### [Bioinformatician](https://www.biostars.org/p/223069/)
 
-### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
+### [Bioinformatics Research](https://github.com/haruosuz/books/blob/master/bbs/README.md#13-principal-applications-of-bioinformatics)
 
 #### [Nextstrain](https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md#nextstrain)
 Real-time tracking of pathogen evolution
-
-- [Nextstrain](https://nextstrain.org/)
-  - [Genomic epidemiology of novel coronavirus - Global subsampling](https://nextstrain.org/ncov/global?animate=2019-12-05,2020-03-29,0,0,30000)
-
-新型コロナウイルスの流行状況を遺伝子配列データをもとに分析したNextstrainのレポート
+ゲノム配列データに基づいて病原体の進化と伝播をリアルタイムで追跡
 
 <img src="https://i.gzn.jp/img/2020/03/31/nextstrain-covid19-report/00_m.png" width=25%>
 
@@ -82,12 +77,10 @@ Real-time tracking of pathogen evolution
 **人工環境の微生物群集**
 
 - July 2011 TED Talk 5:18 [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-- [Dietz et al. (2020) "2019 Novel Coronavirus (COVID-19) Pandemic: Built Environment Considerations To Reduce Transmission."](https://msystems.asm.org/content/5/2/e00245-20)
-新型コロナウイルス感染症：人工環境で感染を減らすには
-
+- 新型コロナウイルス感染症：人工環境で感染を減らすには [Dietz et al. (2020) "2019 Novel Coronavirus (COVID-19) Pandemic: Built Environment Considerations To Reduce Transmission."](https://msystems.asm.org/content/5/2/e00245-20)
 FIG 2
 Conceptualization of SARS-CoV-2 deposition.  
-![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.small.gif)
+![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.medium.gif)
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
