@@ -51,10 +51,6 @@ DATA SCIENCE FOR GENOME DYNAMICS
 
 5 minutes will be allocated for each presentation, including presentation and discussion.
 
-https://www.presentationzen.com/presentationzen/
-
-![https://www.academyhills.com/library/calendar/tqe2it00000ht48v.html](https://www.academyhills.com/library/calendar/tqe2it00000ht48v-img/tqe2it00000ht4en.jpg)
-
 ----------
 ## final report
 **レポート**
@@ -76,26 +72,28 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 Real-time tracking of pathogen evolution
 
 - [Nextstrain](https://nextstrain.org/)
-Real-time tracking of pathogen evolution
   - [Genomic epidemiology of novel coronavirus - Global subsampling](https://nextstrain.org/ncov/global?animate=2019-12-05,2020-03-29,0,0,30000)
+
+新型コロナウイルスの流行状況を遺伝子配列データをもとに分析したNextstrainのレポート
+
+![https://gigazine.net/news/20200331-nextstrain-covid19-report/](https://i.gzn.jp/img/2020/03/31/nextstrain-covid19-report/00_m.png)
 
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
 - July 2011 TED Talk 5:18 [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-
-![http://kaihooo.com/microbea/](http://kaihooo.com/wp-content/uploads/microbea.png)
-
 - [Dietz et al. (2020) "2019 Novel Coronavirus (COVID-19) Pandemic: Built Environment Considerations To Reduce Transmission."](https://msystems.asm.org/content/5/2/e00245-20)
 新型コロナウイルス感染症：人工環境で感染を減らすには
+
+![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.medium.gif)
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
 
-![https://twitter.com/Daniela_Bezdan/status/1009876180684754944](https://pbs.twimg.com/media/DgPMfQ9X0AMEi1l?format=jpg&name=small)
-
 - ["NYC Scientists Swab the Subway in Search of SARS-CoV-2." Is it there? So far, nope! Environmental and ongoing clinical #COVID19 efforts discussed here:](https://twitter.com/mason_lab/status/1245394591819477003)
 ニューヨークの地下鉄で新型コロナウイルス（SARS-CoV-2）は今のところ見つかっていない。10％はヒトRNA、1～2％はウイルスRNA（インフルエンザウイルスを含む）、残りの88％は由来不明。
+
+![](https://pbs.twimg.com/card_img/1251224380496941056/OcnxbVDI?format=jpg&name=small)
 
 #### Antibiotic resistance
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
