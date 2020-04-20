@@ -85,7 +85,7 @@ Real-time tracking of pathogen evolution
 - [Dietz et al. (2020) "2019 Novel Coronavirus (COVID-19) Pandemic: Built Environment Considerations To Reduce Transmission."](https://msystems.asm.org/content/5/2/e00245-20)
 新型コロナウイルス感染症：人工環境で感染を減らすには
 
-![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.medium.gif)
+![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.small.gif)
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
@@ -93,7 +93,7 @@ Real-time tracking of pathogen evolution
 - ["NYC Scientists Swab the Subway in Search of SARS-CoV-2." Is it there? So far, nope! Environmental and ongoing clinical #COVID19 efforts discussed here:](https://twitter.com/mason_lab/status/1245394591819477003)
 ニューヨークの地下鉄で新型コロナウイルス（SARS-CoV-2）は今のところ見つかっていない。10％はヒトRNA、1～2％はウイルスRNA（インフルエンザウイルスを含む）、残りの88％は由来不明。
 
-![](https://pbs.twimg.com/card_img/1251224380496941056/OcnxbVDI?format=jpg&name=small)
+<img src="https://pbs.twimg.com/card_img/1251224380496941056/OcnxbVDI?format=jpg&name=small" width=50%>
 
 #### Antibiotic resistance
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
