@@ -19,7 +19,6 @@ DATA SCIENCE FOR GENOME DYNAMICS
 [[UPDATED] Calendar for Spring Semester 2020](https://www.sfc.keio.ac.jp/en/docs/681a9a34e5cb149a55e3780977a9b59f366781ec.pdf) |
 [【変更後】 2020年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/82bacea42ef958c454eb0044be552fc00dbb7952.pdf)
 
-- [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
 - 2020-05-05 No. 1 - イントロダクション [Introduction](#introduction) | *こどもの日【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
   - [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds) RStudio, R markdown, `tidyverse`
   - [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb)
@@ -40,6 +39,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-07-21 No. 12 - 最終回
   - 最終発表 [final presentation](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-14)
 - 2020-07-28 レポート提出期限 Deadline for [final report](#final-report)
+- [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
 
 ----------
 ## Guest speaker
@@ -120,14 +120,15 @@ Conceptualization of SARS-CoV-2 deposition.
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 
-[SARS coronavirus 2 (SARS-CoV-2) proteome ~ ViralZone page](https://viralzone.expasy.org/8996)
+<img src="https://www.nature.com/articles/s41591-020-0820-9/figures/1" alt="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-020-0820-9/MediaObjects/41591_2020_820_Fig1_HTML.png" width=25%>
 
 ----------
 
 ### [R: The R Project for Statistical Computing](https://www.r-project.org/)
-2017-05-12 [RStudioでRを直感的に使おう MacOS版 2017 統合TV(togotv)｜生命科学系DB・ツール使い倒し系チャンネル](https://doi.org/10.7875/togotv.2017.043)
+- 2017-05-12 [RStudioでRを直感的に使おう MacOS版 2017 統合TV(togotv)｜生命科学系DB・ツール使い倒し系チャンネル](https://doi.org/10.7875/togotv.2017.043)
+- Jan 24, 2020 [R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners](https://www.youtube.com/watch?v=YBAWVNWiZlU)
 
-![http://www.sthda.com/english/wiki/running-rstudio-and-setting-up-your-working-directory-easy-r-programming](http://www.sthda.com/sthda/RDoc/images/rstudio.png)
+<img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
 ----------
 
