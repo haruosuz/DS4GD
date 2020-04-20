@@ -71,6 +71,8 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 Real-time tracking of pathogen evolution
 ゲノム配列データに基づいて病原体の進化と伝播をリアルタイムで追跡
 
+![](https://i.gzn.jp/img/2020/03/31/nextstrain-covid19-report/00_m.png)
+
 <img src="https://i.gzn.jp/img/2020/03/31/nextstrain-covid19-report/00_m.png" width=25%>
 
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
@@ -78,9 +80,14 @@ Real-time tracking of pathogen evolution
 
 - July 2011 TED Talk 5:18 [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
 - 新型コロナウイルス感染症：人工環境で感染を減らすには [Dietz et al. (2020) "2019 Novel Coronavirus (COVID-19) Pandemic: Built Environment Considerations To Reduce Transmission."](https://msystems.asm.org/content/5/2/e00245-20)
+
+FIG 1
+Structure of SARS-CoV-2 virus.  
+![](https://msystems.asm.org/content/msys/5/2/e00245-20/F1.small.gif)
+
 FIG 2
 Conceptualization of SARS-CoV-2 deposition.  
-![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.medium.gif)
+![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.small.gif)
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
