@@ -120,7 +120,7 @@ Conceptualization of SARS-CoV-2 deposition.
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 
-<img src="https://www.nature.com/articles/s41591-020-0820-9/figures/1" alt="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-020-0820-9/MediaObjects/41591_2020_820_Fig1_HTML.png" width=25%>
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-020-0820-9/MediaObjects/41591_2020_820_Fig1_HTML.png" alt="https://www.nature.com/articles/s41591-020-0820-9/figures/1" width=25%>
 
 ----------
 
