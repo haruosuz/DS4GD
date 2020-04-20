@@ -22,7 +22,8 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md)
 - 2020-05-05 No. 1 - イントロダクション [Introduction](#introduction) | *こどもの日【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
   - [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds) RStudio, R markdown, `tidyverse`
-  - Google Colab [NCBI Genome List](https://colab.research.google.com/drive/1K3Z0Rh9OZYQjZ1xT0_hOaRuW4EiEpVU7#scrollTo=J2mT2lQJ0vKZ)
+  - [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb)
+ [NCBI Genome List](https://colab.research.google.com/drive/1K3Z0Rh9OZYQjZ1xT0_hOaRuW4EiEpVU7#scrollTo=J2mT2lQJ0vKZ)
 - 2020-05-12 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2020-05-19 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2020-05-26 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
@@ -70,8 +71,6 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 #### [Nextstrain](https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md#nextstrain)
 Real-time tracking of pathogen evolution
 ゲノム配列データに基づいて病原体の進化と伝播をリアルタイムで追跡
-
-![](https://i.gzn.jp/img/2020/03/31/nextstrain-covid19-report/00_m.png)
 
 <img src="https://i.gzn.jp/img/2020/03/31/nextstrain-covid19-report/00_m.png" width=25%>
 
