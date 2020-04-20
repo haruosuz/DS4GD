@@ -12,6 +12,8 @@ DATA SCIENCE FOR GENOME DYNAMICS
 ## References
 **参考文献**
 - [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
+- [Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p.](https://github.com/haruosuz/books/tree/master/r4ds)
+- [Andrew Beckerman, Dylan Childs, and Owen Petchey - Getting Started with R: An Introduction for Biologists, 2nd Edition, Oxford University Press, 2017, 240p.](https://github.com/haruosuz/books/tree/master/r4all)
 
 ## Class Schedule & Materials
 **講義日程と資料**
@@ -117,7 +119,6 @@ Conceptualization of SARS-CoV-2 deposition.
 #### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
 
 <img src="https://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/01_input_dataset.png" alt="http://www.arb-silva.de/documentation/sina-tutorial/" width=50%>
-
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 
