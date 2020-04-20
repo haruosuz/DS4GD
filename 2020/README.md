@@ -103,7 +103,7 @@ Conceptualization of SARS-CoV-2 deposition.
 
 - [The evolution of antibiotic resistance | Science](https://science.sciencemag.org/content/365/6458/1082)
 
-![](https://science.sciencemag.org/content/sci/365/6458/1082/F1.small.gif)
+![](https://science.sciencemag.org/content/sci/365/6458/1082/F1.medium.gif)
 
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
@@ -120,7 +120,7 @@ Conceptualization of SARS-CoV-2 deposition.
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 
-- [trfA - Plasmid replication initiator protein TrfA - Escherichia coli - trfA gene & protein](https://www.uniprot.org/uniprot/P07676)
+[SARS coronavirus 2 (SARS-CoV-2) proteome ~ ViralZone page](https://viralzone.expasy.org/8996)
 
 ----------
 
