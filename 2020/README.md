@@ -117,7 +117,7 @@ Conceptualization of SARS-CoV-2 deposition.
 
 #### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
 
-<img src="https://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/01_input_dataset.png" alt="http://www.arb-silva.de/documentation/sina-tutorial/" width=50%>
+![https://twitter.com/cosmos4u/status/1234503992501252096](https://pbs.twimg.com/media/ER3UpDPW4AIgzDX?format=png&name=small)
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 
