@@ -87,11 +87,11 @@ Real-time tracking of pathogen evolution
 
 FIG 1
 Structure of SARS-CoV-2 virus.  
-![](https://msystems.asm.org/content/msys/5/2/e00245-20/F1.small.gif)
+![](https://msystems.asm.org/content/msys/5/2/e00245-20/F1.medium.gif)
 
 FIG 2
 Conceptualization of SARS-CoV-2 deposition.  
-![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.small.gif)
+![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.medium.gif)
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
