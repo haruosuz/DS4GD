@@ -65,15 +65,14 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 ## Introduction
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
 
-![](http://blog.thegrandlocus.com/img/bioinformatic_word_cloud.png)
-
 ### [Bioinformatician](https://www.biostars.org/p/223069/)
 
 ### [Bioinformatics Research](https://github.com/haruosuz/books/blob/master/bbs/README.md#13-principal-applications-of-bioinformatics)
 
-#### Phylogenetic analysis
-**系統解析**
+#### [Molecular phylogenetics](https://en.wikipedia.org/wiki/Molecular_phylogenetics)
+**[分子系統学](https://ja.wikipedia.org/wiki/分子系統学)**
 
+- [Washburne et al. (2018) Nat Microbiol. 3(6):652-661. "Methods for phylogenetic analysis of microbiome data."](https://www.nature.com/articles/s41564-018-0156-0)
 - [Nextstrain](https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md#nextstrain)
 Real-time tracking of pathogen evolution
 ゲノム配列データに基づいて病原体の進化と伝播をリアルタイムで追跡
