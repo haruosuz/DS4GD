@@ -27,9 +27,9 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-05-12 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2020-05-19 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2020-05-26 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
-- 2020-06-02 No. 5 - [Guest Speaker](#guest-speaker) 教育体験
-- 2020-06-09 No. 6 - [Guest Speaker](#guest-speaker) 教育体験
-- 2020-06-16 No. 7 - [Guest Speaker](#guest-speaker) 教育体験
+- 2020-06-02 No. 5 - [Guest Speaker](#guest-speaker)
+- 2020-06-09 No. 6 - [Guest Speaker](#guest-speaker)
+- 2020-06-16 No. 7 - [Guest Speaker](#guest-speaker)
 - 2020-06-23 No. 8 - Case Study
 - 2020-06-30 No. 9 - 中間発表 [interim report](#interim-report)
   - タンパク質データベース Protein sequence database [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
@@ -65,11 +65,16 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 ## Introduction
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
 
+![](http://blog.thegrandlocus.com/img/bioinformatic_word_cloud.png)
+
 ### [Bioinformatician](https://www.biostars.org/p/223069/)
 
 ### [Bioinformatics Research](https://github.com/haruosuz/books/blob/master/bbs/README.md#13-principal-applications-of-bioinformatics)
 
-#### [Nextstrain](https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md#nextstrain)
+#### Phylogenetic analysis
+**系統解析**
+
+- [Nextstrain](https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md#nextstrain)
 Real-time tracking of pathogen evolution
 ゲノム配列データに基づいて病原体の進化と伝播をリアルタイムで追跡
 
