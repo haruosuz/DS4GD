@@ -20,10 +20,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 [[UPDATED] Calendar for Spring Semester 2020](https://www.sfc.keio.ac.jp/en/docs/681a9a34e5cb149a55e3780977a9b59f366781ec.pdf) |
 [【変更後】 2020年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/82bacea42ef958c454eb0044be552fc00dbb7952.pdf)
 
-- 2020-05-05 No. 1 - イントロダクション [Introduction](#introduction) | *こどもの日【国民の休日】[National Holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-  - [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds) RStudio, R markdown, `tidyverse`
-  - [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb)
- [NCBI Genome List](https://colab.research.google.com/drive/1K3Z0Rh9OZYQjZ1xT0_hOaRuW4EiEpVU7#scrollTo=J2mT2lQJ0vKZ)
+- 2020-05-05 No. 1 - イントロダクション [Introduction](#introduction)
 - 2020-05-12 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2020-05-19 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2020-05-26 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
@@ -87,11 +84,11 @@ Real-time tracking of pathogen evolution
 
 FIG 1
 Structure of SARS-CoV-2 virus.  
-![](https://msystems.asm.org/content/msys/5/2/e00245-20/F1.medium.gif)
+![](https://msystems.asm.org/content/msys/5/2/e00245-20/F1.small.gif)
 
 FIG 2
 Conceptualization of SARS-CoV-2 deposition.  
-![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.medium.gif)
+![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.small.gif)
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
