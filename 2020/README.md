@@ -66,35 +66,21 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 
 ### [Bioinformatics Research](https://github.com/haruosuz/books/blob/master/bbs/README.md#13-principal-applications-of-bioinformatics)
 
-#### [Molecular phylogenetics](https://en.wikipedia.org/wiki/Molecular_phylogenetics)
-**[分子系統学](https://ja.wikipedia.org/wiki/分子系統学)**
-
-- [Washburne et al. (2018) Nat Microbiol. 3(6):652-661. "Methods for phylogenetic analysis of microbiome data."](https://www.nature.com/articles/s41564-018-0156-0)
-- [Nextstrain](https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md#nextstrain)
-Real-time tracking of pathogen evolution
-ゲノム配列データに基づいて病原体の進化と伝播をリアルタイムで追跡
-
-<img src="https://i.gzn.jp/img/2020/03/31/nextstrain-covid19-report/00_m.png" width=25%>
-
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
 - July 2011 TED Talk 5:18 [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
 - 新型コロナウイルス感染症：人工環境で感染を減らすには [Dietz et al. (2020) "2019 Novel Coronavirus (COVID-19) Pandemic: Built Environment Considerations To Reduce Transmission."](https://msystems.asm.org/content/5/2/e00245-20)
 
-FIG 1
-Structure of SARS-CoV-2 virus.  
-![](https://msystems.asm.org/content/msys/5/2/e00245-20/F1.small.gif)
-
-FIG 2
 Conceptualization of SARS-CoV-2 deposition.  
 ![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.small.gif)
 
 #### [MetaSUB](http://metasub.org/media-2/)
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
 
+- 紹介ビデオ [MetaSUB Introductory Video](https://vimeo.com/171773795)
 - ["NYC Scientists Swab the Subway in Search of SARS-CoV-2." Is it there? So far, nope! Environmental and ongoing clinical #COVID19 efforts discussed here:](https://twitter.com/mason_lab/status/1245394591819477003)
-ニューヨークの地下鉄で新型コロナウイルス（SARS-CoV-2）は今のところ見つかっていない。10％はヒトRNA、1～2％はウイルスRNA（インフルエンザウイルスを含む）、残りの88％は由来不明。
+ニューヨークの地下鉄で新型コロナウイルス（SARS-CoV-2）は今のところ見つかっていない。
 
 <img src="https://pbs.twimg.com/card_img/1251224380496941056/OcnxbVDI?format=jpg&name=small" width=25%>
 
@@ -118,11 +104,11 @@ Conceptualization of SARS-CoV-2 deposition.
 
 #### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
 
-![https://twitter.com/cosmos4u/status/1234503992501252096](https://pbs.twimg.com/media/ER3UpDPW4AIgzDX?format=png&name=small)
+![http://www.arb-silva.de/documentation/sina-tutorial/](https://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/01_input_dataset.png)
 
 #### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
 
-<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-020-0820-9/MediaObjects/41591_2020_820_Fig1_HTML.png" alt="https://www.nature.com/articles/s41591-020-0820-9/figures/1" width=50%>
+- [trfA - Plasmid replication initiator protein TrfA - Escherichia coli - trfA gene & protein](https://www.uniprot.org/uniprot/P07676)
 
 ----------
 
