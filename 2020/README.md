@@ -61,8 +61,11 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 
 ## Introduction
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
+
 ### [Bioinformatician](https://www.biostars.org/p/223069/)
+
 ### [Bioinformatics Research](https://github.com/haruosuz/books/blob/master/bbs/README.md#13-principal-applications-of-bioinformatics)
+
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
@@ -87,6 +90,8 @@ Conceptualization of SARS-CoV-2 deposition.
 
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
 
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
 
