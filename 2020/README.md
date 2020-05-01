@@ -61,16 +61,14 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 
 ## Introduction
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
-
 ### [Bioinformatician](https://www.biostars.org/p/223069/)
-
 ### [Bioinformatics Research](https://github.com/haruosuz/books/blob/master/bbs/README.md#13-principal-applications-of-bioinformatics)
-
 #### [Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)
 **人工環境の微生物群集**
 
 - July 2011 TED Talk 5:18 [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
-- 新型コロナウイルス感染症：人工環境で感染を減らすには [Dietz et al. (2020) "2019 Novel Coronavirus (COVID-19) Pandemic: Built Environment Considerations To Reduce Transmission."](https://msystems.asm.org/content/5/2/e00245-20)
+- [Dietz et al. (2020) "2019 Novel Coronavirus (COVID-19) Pandemic: Built Environment Considerations To Reduce Transmission."](https://msystems.asm.org/content/5/2/e00245-20)
+新型コロナウイルス感染症：人工環境で感染を減らすには
 
 Conceptualization of SARS-CoV-2 deposition.  
 ![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.small.gif)
@@ -81,8 +79,6 @@ Conceptualization of SARS-CoV-2 deposition.
 - 紹介ビデオ [MetaSUB Introductory Video](https://vimeo.com/171773795)
 - ["NYC Scientists Swab the Subway in Search of SARS-CoV-2." Is it there? So far, nope! Environmental and ongoing clinical #COVID19 efforts discussed here:](https://twitter.com/mason_lab/status/1245394591819477003)
 ニューヨークの地下鉄で新型コロナウイルス（SARS-CoV-2）は今のところ見つかっていない。
-
-<img src="https://pbs.twimg.com/card_img/1251224380496941056/OcnxbVDI?format=jpg&name=small" width=25%>
 
 #### Antibiotic resistance
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
