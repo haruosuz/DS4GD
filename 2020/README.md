@@ -89,26 +89,12 @@ Conceptualization of SARS-CoV-2 deposition.
 
 - TED-Ed [What causes antibiotic resistance? - Kevin Wu](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu) | [抗生物質に対する耐性が生まれるのはなぜか？ - ケビン・ウー](https://amara.org/en/videos/VllmqrFumzGt/ja/812239/)
 
-- [The evolution of antibiotic resistance | Science](https://science.sciencemag.org/content/365/6458/1082)
-
-![](https://science.sciencemag.org/content/sci/365/6458/1082/F1.medium.gif)
-
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
 
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
-
-#### [Nucleotide](http://www.ddbj.nig.ac.jp/sub/code-e.html#nucleotide)
-
-![http://www.arb-silva.de/documentation/sina-tutorial/](https://www.arb-silva.de/fileadmin/graphics_general/main/tutorial_aligner/01_input_dataset.png)
-
-#### [Amino Acids](http://www.ddbj.nig.ac.jp/sub/code-e.html#amino)
-
-- [trfA - Plasmid replication initiator protein TrfA - Escherichia coli - trfA gene & protein](https://www.uniprot.org/uniprot/P07676)
 
 ----------
 
