@@ -80,7 +80,7 @@ Conceptualization of SARS-CoV-2 deposition.
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
 
 - 紹介ビデオ [MetaSUB Introductory Video](https://vimeo.com/171773795)
-- ニューヨークの地下鉄で新型コロナウイルス（SARS-CoV-2）は今のところ見つかっていない。 ["NYC Scientists Swab the Subway in Search of SARS-CoV-2." Is it there? So far, nope! Environmental and ongoing clinical #COVID19 efforts discussed here:](https://twitter.com/mason_lab/status/1245394591819477003)
+- ニューヨークの地下鉄で新型コロナウイルスは今のところ見つかっていない。["NYC Scientists Swab the Subway in Search of SARS-CoV-2." Is it there? So far, nope! Environmental and ongoing clinical #COVID19 efforts discussed here:](https://twitter.com/mason_lab/status/1245394591819477003)
   - [Shotgun Transcriptome and Isothermal Profiling of SARS-CoV-2 Infection Reveals Unique Host Responses, Viral Diversification, and Drug Interactions | bioRxiv](https://www.biorxiv.org/content/10.1101/2020.04.20.048066v5)
 
 <img src="https://pbs.twimg.com/card_img/1255452540919001088/dqUeHRiK?format=jpg&name=small" alt="https://www.wired.com/story/microbe-mappers-are-tracking-covid-19s-invisible-traces/" width=25%>
