@@ -70,6 +70,7 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 **人工環境の微生物群集**
 
 - July 2011 TED Talk 5:18 [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+  - [Kembel et al. (2012) "Architectural design influences the diversity and structure of the built environment microbiome."](https://www.ncbi.nlm.nih.gov/pubmed/22278670)
 - [Dietz et al. (2020) "2019 Novel Coronavirus (COVID-19) Pandemic: Built Environment Considerations To Reduce Transmission."](https://msystems.asm.org/content/5/2/e00245-20)
 新型コロナウイルス感染症：人工環境で感染を減らすには
 
@@ -80,8 +81,10 @@ Conceptualization of SARS-CoV-2 deposition.
 **[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
 
 - 紹介ビデオ [MetaSUB Introductory Video](https://vimeo.com/171773795)
-- ["NYC Scientists Swab the Subway in Search of SARS-CoV-2." Is it there? So far, nope! Environmental and ongoing clinical #COVID19 efforts discussed here:](https://twitter.com/mason_lab/status/1245394591819477003)
+- [Shotgun Transcriptome and Isothermal Profiling of SARS-CoV-2 Infection Reveals Unique Host Responses, Viral Diversification, and Drug Interactions | bioRxiv](https://www.biorxiv.org/content/10.1101/2020.04.20.048066v5)
 ニューヨークの地下鉄で新型コロナウイルス（SARS-CoV-2）は今のところ見つかっていない。
+
+![https://www.wired.com/story/microbe-mappers-are-tracking-covid-19s-invisible-traces/](https://pbs.twimg.com/card_img/1255452540919001088/dqUeHRiK?format=jpg&name=small)
 
 #### Antibiotic resistance
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
