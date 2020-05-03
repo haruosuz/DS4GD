@@ -14,8 +14,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [assignment 5](#assignment-5) 課題No.5 「Guest Speaker (1)」
-- [assignment 5](#assignment-5) 課題No.6 「Guest Speaker (2)」
-- [assignment 5](#assignment-5) 課題No.7 「Guest Speaker (3)」
+- [assignment 6](#assignment-6) 課題No.6 「Guest Speaker (2)」
+- [assignment 7](#assignment-7) 課題No.7 「Guest Speaker (3)」
 - [assignment 8](#assignment-8) 課題No.8 「dotplot」
 - [assignment 9](#assignment-9) 課題No.9 「Pairwise Sequence Alignment」
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
@@ -309,7 +309,15 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 
 ----------
 ## assignment 5
-**課題No.5 「NCBI accession」**
+**課題No.5 「Guest Speaker (1)」**
+
+----------
+## assignment 6
+**課題No.6 「Guest Speaker (2)」**
+
+----------
+## assignment 7
+**課題No.7 「Guest Speaker (3)」**
 
 ----------
 ### Elongation Factor
@@ -330,24 +338,30 @@ Answer the following questions. For each question, please record your answer, an
 
 Q1. Download FASTA-format files of two protein sequences from UniProt.
 
-    # CySp1 - Cylindrical silk protein 1 - Nephila clavata (Joro spider)
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S3.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q2V0S4.fasta")[[1]]
-    length(seq1) # 757
-    length(seq2) # 1259
+```
+library(seqinr)
+seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]
+seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/A0PQ23.fasta")[[1]]
+length(seq1)
+getAnnot(seq1)
 
-    # setting font in plots
-    par(family="mono")
+# setting font in plots
+par(family="mono")
+```
 
 Q2. Create a dotplot for two sequences.
-
-    dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
+```
+dotPlot(seq1, seq2, wsize = 1, wstep = 1, nmatch = 1)
+dotPlot(seq1, seq2, wsize = 2, wstep = 2, nmatch = 2)
+dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
+```
 
 Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
+```
+dotPlot(seq1, seq1, wsize = 1, wstep = 1, nmatch = 1)
 
-    dotPlot(seq1, seq1, wsize = 3, wstep = 3, nmatch = 3)
-    dotPlot(seq2, seq2, wsize = 3, wstep = 3, nmatch = 3)
+dotPlot(seq2, seq2, wsize = 1, wstep = 1, nmatch = 1)
+```
 
 https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#dotplot
 
