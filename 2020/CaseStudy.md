@@ -151,6 +151,42 @@ Running under: macOS Mojave 10.14.6
 ```
 
 ----------
+
+## NCBI Genome List
+[NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
+[国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
+の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
+
+- NCBIのウェブサイトからゲノム配列データを取得する。
+  - ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
+例えば、[ハンセン病（Leprosy）](https://ja.wikipedia.org/wiki/ハンセン病)の原因細菌[*Mycobacterium leprae*（らい菌）](https://ja.wikipedia.org/wiki/らい菌)を検索する。
+  - [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Mycobacterium%20leprae)、検索ボックス下の「Overview(1); Prokaryotes(6)」のうち、「Prokaryotes」をクリックすると、*Mycobacterium leprae*に属する菌株**Strain**が表示される。
+  - [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Mycobacterium%20leprae)、列**Organism Name**の"Mycobacterium leprae TN"株をクリックして開く。
+  - [ここで](https://www.ncbi.nlm.nih.gov/genome/903?genome_assembly_id=169891)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に[アクセッション番号](https://www.ddbj.nig.ac.jp/acc_def.html)が示されている。
+アクセッション番号は、"NC_002677.1" (RefSeq) と "AL450380.1" (INSDC) 。
+
+- Retrieving genome sequence data via the NCBI website
+  - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for the bacterial species *Mycobacterium leprae*, you would type just Organism name "Mycobacterium leprae" in the search box and press "Search".
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Mycobacterium%20leprae), you will see the number of hits to "Mycobacterium leprae" in each of the NCBI databases: "Overview(1); Prokaryotes(6)". When you click on "Prokaryotes", it will show all the strains belonging to the species.
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Mycobacterium%20leprae), When you click on the Organism Name "Mycobacterium leprae TN", it will bring you to the record for this organism in the NCBI Genome database.
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/903?genome_assembly_id=169891), you will see the "Summary", "Publications", and "Replicon Info" of the Organism. 
+The NCBI [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the DNA sequences are "NC_002677.1" (RefSeq) and "AL450380.1" (INSDC), respectively.
+
+NCBIからDNA配列を取得する:  
+```
+# Retrieving a DNA sequence from NCBI
+library(seqinr)
+ACCESSION <- "NC_001477" # Dengue virus 1
+#ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
+#filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
+seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
+seq1 <- seqs[[1]]
+```
+
+Please record what you typed to download DNA sequence data, to make your analysis reproducible.
+
+----------
 ## assignment 3
 **課題No.3 「DNA Sequence Statistics (1)」**
 
@@ -197,33 +233,6 @@ How can you check that the subsequence that you have looked at is 1000 nucleotid
 
     count(seq=head(seq1, 1000), wordsize=2)
     count(seq=tail(seq1, 1000), wordsize=2)
-
-----------
-## NCBI Genome List
-
-- [Tatusova et al. Nucleic Acids Res. 2015 Jan;43(Database issue):D599-605. "Update on RefSeq microbial genomes resources."](https://www.ncbi.nlm.nih.gov/pubmed/25510495)
-- [*Sinorhizobium meliloti*](https://en.wikipedia.org/wiki/Sinorhizobium_meliloti)
-  - [López et al. MBio. 2019 May 28;10(3). pii: e00505-19. "Codon Usage Heterogeneity in the Multipartite Prokaryote Genome: Selection-Based Coding Bias Associated with Gene Location, Expression Level, and Ancestry."](https://www.ncbi.nlm.nih.gov/pubmed/31138741)
-- Retrieving genome sequence data via the NCBI website
-  - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for the bacterial species *Sinorhizobium meliloti*, you would type just Organism name "Sinorhizobium meliloti" in the search box and press "Search".
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/Sinorhizobium%20meliloti), you will see the number of hits to "Sinorhizobium meliloti" in each of the NCBI databases: "Overview (1); Eukaryotes (0); Prokaryotes (199); Viruses (0); Plasmids (65); Organelles (0)". When you click on "Prokaryotes", it will show all the strains belonging to the species.
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/prokaryotes/Sinorhizobium%20meliloti), When you click on the Organism Name "Sinorhizobium meliloti 1021", it will bring you to the record for this organism in the NCBI Genome database.
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/1004?genome_assembly_id=300472), you will see the "Summary", "Publications", and "Replicon Info" of the Organism *Sinorhizobium meliloti* 1021. The NCBI accessions for the DNA sequences of the chromosome (Chr) and plasmids (Plsm) pSymA and pSymB are "NC_003047.1", "NC_003037.1" and "NC_003078.1", respectively.
-
-NCBIからDNA配列を取得する:  
-```
-# Retrieving a DNA sequence from NCBI
-library("seqinr")
-ACCESSION <- "NC_001477" # Dengue virus 1
-#ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-#ACCESSION <- "NC_003037.1" # Sinorhizobium meliloti 1021 plasmid pSymA
-# TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
-filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
-seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
-seq1 <- seqs[[1]]
-```
-
-Please record what you typed to download DNA sequence data, to make your analysis reproducible.
 
 ----------
 ## assignment 4
