@@ -11,8 +11,9 @@ DATA SCIENCE FOR GENOME DYNAMICS
 
 ## References
 **参考文献**
-- [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
 - [Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p.](https://github.com/haruosuz/books/tree/master/r4ds)
+- [Conrad Bessant; Darren Oakley; Ian Shadforth - Building Bioinformatics Solutions 2nd edition, Oxford University Press, 2014, 368p.](https://github.com/haruosuz/books/tree/master/bbs)
+- [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
 
 ## Class Schedule & Materials
 **講義日程と資料**
@@ -87,7 +88,9 @@ Conceptualization of SARS-CoV-2 deposition.
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
 
 - TED-Ed [What causes antibiotic resistance? - Kevin Wu](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu) | [抗生物質に対する耐性が生まれるのはなぜか？ - ケビン・ウー](https://amara.org/en/videos/VllmqrFumzGt/ja/812239/)
-- [The Comprehensive Antibiotic Resistance Database](https://card.mcmaster.ca/)
+- [Hendriksen et al. Front Public Health. 2019 Sep 4;7:242. "Using Genomics to Track Global Antimicrobial Resistance."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6737581/)
+- [Boolchandani et al. Nat Rev Genet. 2019 Jun;20(6):356-370. "Sequencing-based methods and resources to study antimicrobial resistance."](https://www.nature.com/articles/s41576-019-0108-4)
+- [Su et al. J Clin Microbiol. 2019 Feb 27;57(3). "Genome-Based Prediction of Bacterial Antibiotic Resistance."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6425178/)
 
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
@@ -95,7 +98,10 @@ Conceptualization of SARS-CoV-2 deposition.
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/200px-Plasmid_%28english%29.svg.png)
 
 - [抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
-- [PLSDB - A plasmid database](https://ccb-microbe.cs.uni-saarland.de/plsdb/plasmids/)
+細菌は染色体とプラスミドという2種類のDNAを持っています。
+細菌同士は接触するとプラスミドを交換。
+プラスミドを交換することで細菌の能力を強化。
+- [Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design."](https://www.ncbi.nlm.nih.gov/pubmed/30619542)
 
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
