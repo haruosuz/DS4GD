@@ -79,7 +79,7 @@ Conceptualization of SARS-CoV-2 deposition.
 
 - 紹介ビデオ [MetaSUB Introductory Video](https://vimeo.com/171773795)
 - ニューヨークの地下鉄で新型コロナウイルスは今のところ見つかっていない。
-["RNA-seq of 84 samples in the NYC subway, with so far negative CoV-2 results (somewhat reassuring), but only as the outbreak started. Sequencing is ongoing here and also across the world with the @metasub Consortium to look at RNA viruses in hospitals and city centers."](https://twitter.com/mason_lab/status/1252938297866891264)
+["NYC Scientists Swab the Subway in Search of SARS-CoV-2." Is it there? So far, nope! Environmental and ongoing clinical #COVID19 efforts discussed here:](https://twitter.com/mason_lab/status/1245394591819477003)
 
 <img src="https://pbs.twimg.com/card_img/1255452540919001088/dqUeHRiK?format=jpg&name=small" alt="https://www.wired.com/story/microbe-mappers-are-tracking-covid-19s-invisible-traces/" width=25%>
 
