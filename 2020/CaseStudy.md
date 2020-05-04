@@ -41,20 +41,23 @@ Watch the following videos and write your comments or questions.
 - [Introduction to R](https://www.youtube.com/watch?v=WiO44CiSPF0&list=PL8eNk_zTBST_KL2gnciUv1oor0ECw8Hqg)
 
 [Example answer]
-
-I watched the videos #2 to #17 of [Introduction to R](https://www.youtube.com/watch?v=WiO44CiSPF0&list=PL8eNk_zTBST_KL2gnciUv1oor0ECw8Hqg). My questions are as follows:
+```
+I watched the videos #2 to #17 of "Introduction to R".
+My questions are as follows:
 1. What is difference between Data Frames and Lists in R?
-
+```
 
 以下の動画レッスンを見て、疑問点を報告する。
 - [R言語入門 (全13回)](http://dotinstall.com/lessons/basic_r)
 
 
 [回答例]
-
-[R言語入門 (全13回)](http://dotinstall.com/lessons/basic_r)の動画レッスン番号 #03 ~ #13 を見た。疑問点は次の通りである。
+```
+「R言語入門 (全13回)」の動画レッスン番号 #03 ~ #13 を見た。
+疑問点は次の通りである。
 1. 行列とデータフレームとリストの違いが理解できなかった。
 2. 因子ベクトルというものがよくわからなかった。
+```
 
 ----------
 ## assignment 2
