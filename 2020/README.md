@@ -87,9 +87,6 @@ Conceptualization of SARS-CoV-2 deposition.
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
 
 - TED-Ed [What causes antibiotic resistance? - Kevin Wu](https://ed.ted.com/lessons/how-antibiotics-become-resistant-over-time-kevin-wu) | [抗生物質に対する耐性が生まれるのはなぜか？ - ケビン・ウー](https://amara.org/en/videos/VllmqrFumzGt/ja/812239/)
-- [Hendriksen et al. Front Public Health. 2019 Sep 4;7:242. "Using Genomics to Track Global Antimicrobial Resistance."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6737581/)
-- [Boolchandani et al. Nat Rev Genet. 2019 Jun;20(6):356-370. "Sequencing-based methods and resources to study antimicrobial resistance."](https://www.nature.com/articles/s41576-019-0108-4)
-- [Su et al. J Clin Microbiol. 2019 Feb 27;57(3). "Genome-Based Prediction of Bacterial Antibiotic Resistance."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6425178/)
 
 #### [Plasmid](https://en.wikipedia.org/wiki/Plasmid)
 **[プラスミド](https://ja.wikipedia.org/wiki/プラスミド)**
