@@ -75,12 +75,11 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 Conceptualization of SARS-CoV-2 deposition.  
 ![https://msystems.asm.org/content/5/2/e00245-20](https://msystems.asm.org/content/msys/5/2/e00245-20/F2.small.gif)
 
-#### [MetaSUB](http://metasub.org/media-2/)
-**[MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)**
+#### [MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes](https://github.com/haruosuz/metasub/blob/master/README.md)
 
-- MetaSUB国際コンソーシアム紹介ビデオ [MetaSUB Introductory Video](https://vimeo.com/171773795)
+- 紹介ビデオ [MetaSUB Introductory Video](https://vimeo.com/171773795)
 - ニューヨークの地下鉄で新型コロナウイルスは今のところ見つかっていない。
-[Shotgun Transcriptome and Isothermal Profiling of SARS-CoV-2 Infection Reveals Unique Host Responses, Viral Diversification, and Drug Interactions | bioRxiv](https://www.biorxiv.org/content/10.1101/2020.04.20.048066v5)
+["RNA-seq of 84 samples in the NYC subway, with so far negative CoV-2 results (somewhat reassuring), but only as the outbreak started. Sequencing is ongoing here and also across the world with the @metasub Consortium to look at RNA viruses in hospitals and city centers."](https://twitter.com/mason_lab/status/1252938297866891264)
 
 <img src="https://pbs.twimg.com/card_img/1255452540919001088/dqUeHRiK?format=jpg&name=small" alt="https://www.wired.com/story/microbe-mappers-are-tracking-covid-19s-invisible-traces/" width=25%>
 
