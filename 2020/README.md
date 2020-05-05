@@ -11,8 +11,6 @@ DATA SCIENCE FOR GENOME DYNAMICS
 
 ## References
 **参考文献**
-- [Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p.](https://github.com/haruosuz/books/tree/master/r4ds)
-- [Conrad Bessant; Darren Oakley; Ian Shadforth - Building Bioinformatics Solutions 2nd edition, Oxford University Press, 2014, 368p.](https://github.com/haruosuz/books/tree/master/bbs)
 - [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
 
 ## Class Schedule & Materials
@@ -22,6 +20,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 [【変更後】 2020年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/82bacea42ef958c454eb0044be552fc00dbb7952.pdf)
 
 - 2020-05-05 No. 1 - イントロダクション [Introduction](#introduction)
+  - [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1) 課題No.1 「Introduction to R」
 - 2020-05-12 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2020-05-19 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2020-05-26 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
