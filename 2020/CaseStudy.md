@@ -38,17 +38,16 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 **課題No.1 「Introduction to R」**
 
 Watch the following videos and write your comments or questions.
-- [Introduction to R](https://www.youtube.com/watch?v=WiO44CiSPF0&list=PL8eNk_zTBST_KL2gnciUv1oor0ECw8Hqg)
+- [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/watch?v=UX6yNAC2sAc&list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
 
-[Example answer]
 ```
-I watched the videos #2 to #17 of "Introduction to R".
+I watched the videos Part 2 to Part 11 of "Introduction to R Programming".
 My questions are as follows:
 1. What is difference between Data Frames and Lists in R?
 ```
 
 以下の動画レッスンを見て、疑問点を報告する。
-- [R言語入門 (全13回)](http://dotinstall.com/lessons/basic_r)
+- [R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
 
 
 [回答例]
