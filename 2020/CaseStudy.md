@@ -76,8 +76,8 @@ https://raw.githubusercontent.com/haruosuz/r4bioinfo/master/scripts/my_datascien
 [9] "low-med"
 ```
 
+The dollar sign `$` is used to specify a single variable (`average.income`) within a data frame (`income`).
 `average.income` and `income.level` are variable/object names where lowercase words were separated with `.`.
-To specify a single variable (average.income) within a data frame (income), use the dollar sign `$`.
 
 References:
 
