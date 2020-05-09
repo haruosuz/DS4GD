@@ -63,8 +63,7 @@ My questions are as follows:
 
 ----------
 
-R script:
-https://raw.githubusercontent.com/haruosuz/r4bioinfo/master/scripts/my_datasciencedojo_r.R
+[Control Statements: For Loop, If, Else - Introduction to R Programming - Part 10](https://www.youtube.com/watch?v=QEzWBLb9xa4&list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx&index=10)
 
 ```
 > income$average.income
