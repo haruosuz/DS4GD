@@ -38,8 +38,9 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 **課題No.1 「Introduction to R」**
 
 Watch the following videos and write your comments or questions.
-- [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/watch?v=UX6yNAC2sAc&list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
+- [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
 
+- 
 [Example answer]
 ```
 I watched the videos Part 2 to Part 11 of "Introduction to R Programming".
@@ -58,6 +59,117 @@ My questions are as follows:
 1. 行列とデータフレームとリストの違いが理解できなかった。
 2. 因子ベクトルというものがよくわからなかった。
 ```
+
+----------
+
+----------
+
+R script:
+https://raw.githubusercontent.com/haruosuz/r4bioinfo/master/scripts/my_datasciencedojo_r.R
+
+```
+> income$average.income
+[1]  85000 112000  60000  68000  78000  82000  90000  72000  82000
+
+> income.level
+[1] "low-med" "high"    "low-med" "low-med" "low-med" "low-med" "high"    "low-med"
+[9] "low-med"
+```
+
+`average.income` and `income.level` are variable/object names where lowercase words were separated with `.`.
+To specify a single variable (average.income) within a data frame (income), use the dollar sign `$`.
+
+References:
+
+https://r4ds.had.co.nz/workflow-basics.html#whats-in-a-name
+Object names must start with a letter, and can only contain letters, numbers, _ and ..
+
+https://www.r-bloggers.com/dataframes-and-the-tidyverse/
+To specify a single variable within a data frame or tibble, use the dollar sign $.
+
+----------
+
+https://dotinstall.com/lessons/basic_r
+R言語入門 (全13回) - プログラミングならドットインストール
+
+----------
+
+https://dotinstall.com/lessons/basic_r/28106
+#06 ベクトルの演算をしてみよう | R言語入門 - プログラミングならドットインストール
+
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/14.html
+14. ベクトル計算
+
+ベクトルを集合と見立てて集合演算を行うことも出来る．まず，集合演算用の関数を紹介する．
+```
+union(x, y)	和集合
+intersect(x, y)	積集合
+setdiff(x, y)	差集合
+```
+
+----------
+
+https://dotinstall.com/lessons/basic_r/28107
+#07 因子ベクトルを使ってみよう | R言語入門 - プログラミングならドットインストール
+
+http://www.okadajp.org/RWiki/?因子Tips大全
+
+https://sites.google.com/site/webtextofr/edit
+7. ベクトルデータの操作 - 統計ソフトRの使い方
+
+Rには大きく４つのタイプのデータがあります．それは，(1)　数値型，(2) 文字列型，(3) 因子型，(4) 論理値型です．
+因子型データは，例えば男性を”1”，女性を”2”として入力されたデータです．
+いわゆるカテゴリカルデータ（質的データ）は，Rでは因子型データとして扱います．
+
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html
+16. 種々のベクトル
+
+順序つき因子ベクトルと順序無し因子ベクトル
+関数 factor() を用いることで，カテゴリーを要素としたベクトルを作成することが出来る．関数 levels() でグループ化されているかを確認することが出来，関数 str() でオブジェクトの要約値を表示することが出来る．
+結果を見ると，要素の順序が勝手に入れ替わっていることが分かる．明示的に順序を指定する場合は，引数 levels に順序を指定すれば良い．
+関数 factor() では因子間に大小関係は無かったが，関数 ordered() で順序付きの因子ベクトルが作成出来る．
+
+https://sites.google.com/site/leihcrev/r/ordered-and-unordered-factors
+入門本編 4章 順序付き因子と順序無し因子
+「因子 (factor)」とは、ベクトルの一種で、同じ要素数を持つ別のベクトルの要素のカテゴリ化を行うもの。「順序付き因子 (ordered factor)」と「順序無し因子 (unordered factor)」がある。主にモデル式で効果を発揮する。
+順序付き因子を適用したデータは、尺度水準が順序尺度であることを示す。順序無し因子を適用すれば名義尺度にあたる。因子を付加していない数値ベクトルは、間隔尺度以上の高水準の尺度ということになる。順序付き因子と順序無し因子は、モデルへの当てはめなどで異なった振舞いを示す。
+
+----------
+
+https://dotinstall.com/lessons/basic_r/28108
+#08 行列を扱ってみよう | R言語入門 - プログラミングならドットインストール
+
+https://dotinstall.com/lessons/basic_r/28109
+#09 行列を編集してみよう | R言語入門 - プログラミングならドットインストール
+
+----------
+
+https://dotinstall.com/lessons/basic_r/28110
+#10 リストを扱ってみよう | R言語入門 - プログラミングならドットインストール
+
+http://www.okadajp.org/RWiki/?リストTips大全
+
+http://takenaka-akio.org/doc/r_auto/list.html
+リストにオブジェクトをしまう
+
+ベクトルは、同じ型のデータをまとめて並べたデータ構造です。 これに対し、リストはどのような型のデータでもしまえるデータ構造です。 ベクトルでもリスト自身でもデータフレームでも統計解析関数が返す複雑なオブジェクトでも、なんでも格納できます。 自動化した処理の結果をいくつもまとめておいて、最後にまとめて処理したいなどという場合にも便利でしょう。 なお、データフレームもリストの一種です。
+
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html
+23. リスト
+
+R にはデータの種類としてベクトルや行列，配列などが用意されている（ 1 や 'a' も長さ 1 のベクトル）が，リストはこれら異なる構造のデータを集めて 1 個のオブジェクトにしたものである．異なった型のベクトルを 1 個のリストにまとめてもよいし，リストの要素としてリストを用いても構わない．
+
+----------
+
+https://dotinstall.com/lessons/basic_r/28111
+#11 データフレームを扱ってみよう | R言語入門 - プログラミングならドットインストール
+
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html
+39. データフレーム事始
+
+データフレームとは data.frame クラスを持つリストのことであり，数値ベクトルや文字ベクトル，因子ベクトル（文字型ベクトル）などの異なる型のデータをまとめて1 つの変数として持っている．外見は行列と同じ 2 次元配列であるが，データフレームの各行・列はラベルを必ず持ち，ラベルによる操作が可能である点が普通の行列と異なる．しかも各列の要素の型はバラバラでも構わないので，ベクトルやリストで持っているデータをデータフレームに変換することで統計解析がやりやすくなる．
+
+----------
 
 ----------
 ## assignment 2
@@ -86,7 +198,8 @@ BiocManager::install("DECIPHER")
 ```
 
 [Update all/some/none? [a/s/n]: と聞かれることもありますが基本はnでいいです。](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/R_install.pdf)
-[At any point (especially if you’ve used R/Bioconductor in the past), R may ask you if you want to update any old packages by asking Update all/some/none? [a/s/n]:. If you see this, type n](http://bioconnector.github.io/bims8382/setup-r.html)
+[At any point (especially if you’ve used R/Bioconductor in the past), R may ask you if you want to update any old packages by asking Update all/some/none? [a/s/n]:. If you see this, type](http://bioconnector.github.io/bims8382/setup-r.html)
+`n`
 
 Rパッケージのバージョンを確認:  
 ```
@@ -484,5 +597,19 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
 
 ----------
+
+----------
+
+----------
+
+----------
+
+----------
+
+
+
+----------
+
+
 
 
