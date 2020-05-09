@@ -40,7 +40,6 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 Watch the following videos and write your comments or questions.
 - [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
 
-- 
 [Example answer]
 ```
 I watched the videos Part 2 to Part 11 of "Introduction to R Programming".
