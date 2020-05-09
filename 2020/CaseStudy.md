@@ -79,12 +79,10 @@ The dollar sign `$` is used to specify a single variable (`average.income`) with
 `average.income` and `income.level` are variable/object names where lowercase words were separated with `.`.
 
 References:
-
-https://r4ds.had.co.nz/workflow-basics.html#whats-in-a-name
+- https://r4ds.had.co.nz/workflow-basics.html#whats-in-a-name
 Object names must start with a letter, and can only contain letters, numbers, _ and ..
-
-https://www.r-bloggers.com/dataframes-and-the-tidyverse/
-To specify a single variable within a data frame or tibble, use the dollar sign $.
+- https://www.r-bloggers.com/dataframes-and-the-tidyverse/
+To specify a single variable within a data frame or tibble, use the dollar sign $. R has another way of doing this, using column numbers, but using the dollar sign will make it much easier to understand your code if someone else needs to use it, or if you come back to look at it months after writing it.
 
 ----------
 
