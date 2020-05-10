@@ -62,7 +62,6 @@ My questions are as follows:
 ----------
 
 ----------
-
 [Control Statements: For Loop, If, Else - Introduction to R Programming - Part 10](https://www.youtube.com/watch?v=QEzWBLb9xa4&list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx&index=10)
 
 ```
@@ -89,13 +88,11 @@ https://dotinstall.com/lessons/basic_r
 R言語入門 (全13回) - プログラミングならドットインストール
 
 ----------
-
 https://dotinstall.com/lessons/basic_r/28106
 #06 ベクトルの演算をしてみよう | R言語入門 - プログラミングならドットインストール
 
 http://cse.naro.affrc.go.jp/takezawa/r-tips/r/14.html
 14. ベクトル計算
-
 ベクトルを集合と見立てて集合演算を行うことも出来る．まず，集合演算用の関数を紹介する．
 ```
 union(x, y)	和集合
@@ -104,7 +101,6 @@ setdiff(x, y)	差集合
 ```
 
 ----------
-
 https://dotinstall.com/lessons/basic_r/28107
 #07 因子ベクトルを使ってみよう | R言語入門 - プログラミングならドットインストール
 
@@ -112,14 +108,12 @@ http://www.okadajp.org/RWiki/?因子Tips大全
 
 https://sites.google.com/site/webtextofr/edit
 7. ベクトルデータの操作 - 統計ソフトRの使い方
-
 Rには大きく４つのタイプのデータがあります．それは，(1)　数値型，(2) 文字列型，(3) 因子型，(4) 論理値型です．
 因子型データは，例えば男性を”1”，女性を”2”として入力されたデータです．
 いわゆるカテゴリカルデータ（質的データ）は，Rでは因子型データとして扱います．
 
 http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html
 16. 種々のベクトル
-
 順序つき因子ベクトルと順序無し因子ベクトル
 関数 factor() を用いることで，カテゴリーを要素としたベクトルを作成することが出来る．関数 levels() でグループ化されているかを確認することが出来，関数 str() でオブジェクトの要約値を表示することが出来る．
 結果を見ると，要素の順序が勝手に入れ替わっていることが分かる．明示的に順序を指定する場合は，引数 levels に順序を指定すれば良い．
@@ -131,15 +125,14 @@ https://sites.google.com/site/leihcrev/r/ordered-and-unordered-factors
 順序付き因子を適用したデータは、尺度水準が順序尺度であることを示す。順序無し因子を適用すれば名義尺度にあたる。因子を付加していない数値ベクトルは、間隔尺度以上の高水準の尺度ということになる。順序付き因子と順序無し因子は、モデルへの当てはめなどで異なった振舞いを示す。
 
 ----------
-
 https://dotinstall.com/lessons/basic_r/28108
 #08 行列を扱ってみよう | R言語入門 - プログラミングならドットインストール
 
+----------
 https://dotinstall.com/lessons/basic_r/28109
 #09 行列を編集してみよう | R言語入門 - プログラミングならドットインストール
 
 ----------
-
 https://dotinstall.com/lessons/basic_r/28110
 #10 リストを扱ってみよう | R言語入門 - プログラミングならドットインストール
 
@@ -147,12 +140,10 @@ http://www.okadajp.org/RWiki/?リストTips大全
 
 http://takenaka-akio.org/doc/r_auto/list.html
 リストにオブジェクトをしまう
-
 ベクトルは、同じ型のデータをまとめて並べたデータ構造です。 これに対し、リストはどのような型のデータでもしまえるデータ構造です。 ベクトルでもリスト自身でもデータフレームでも統計解析関数が返す複雑なオブジェクトでも、なんでも格納できます。 自動化した処理の結果をいくつもまとめておいて、最後にまとめて処理したいなどという場合にも便利でしょう。 なお、データフレームもリストの一種です。
 
 http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html
 23. リスト
-
 R にはデータの種類としてベクトルや行列，配列などが用意されている（ 1 や 'a' も長さ 1 のベクトル）が，リストはこれら異なる構造のデータを集めて 1 個のオブジェクトにしたものである．異なった型のベクトルを 1 個のリストにまとめてもよいし，リストの要素としてリストを用いても構わない．
 
 ----------
