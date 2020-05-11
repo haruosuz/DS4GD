@@ -22,7 +22,6 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-05-05 No. 1 - イントロダクション [Introduction](#introduction)
   - [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1) 課題No.1 「Introduction to R」
 - 2020-05-12 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
-  - [R言語 CRANパッケージ一覧 | トライフィールズ](https://www.trifields.jp/statistical-analysis-r-cran-packages-341)
   - [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2) 課題No.2 「Installing R packages」
 - 2020-05-19 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
   - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-genome-list)
