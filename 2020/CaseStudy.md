@@ -85,11 +85,8 @@ To specify a single variable within a data frame or tibble, use the dollar sign 
 
 ----------
 
-https://dotinstall.com/lessons/basic_r
-R言語入門 (全13回) - プログラミングならドットインストール
-
 https://akiyoko.hatenablog.jp/entry/2014/11/07/042801
-Windows で R（統計解析ツール）を使う - akiyoko blog
+Windows で R（統計解析ツール）を使う - 
 R の使い方を手っ取り早く理解するためにまず、ドットインストールの「R言語入門」（全13回）の動画をひと通り全部見てみました。
 動画時間は全部で 35分ほど。
 手を動かすのも合わせて、一時間ほどでチェックし終えることができました。
