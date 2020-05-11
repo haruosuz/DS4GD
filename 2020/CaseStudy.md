@@ -44,7 +44,7 @@ Watch the following videos and write your comments or questions.
 ```
 I watched the videos Part 2 to Part 11 of "Introduction to R Programming".
 My questions are as follows:
-1. What is difference between Data Frames and Lists in R?
+1. What is the difference between Data Frames and Lists in R?
 2. What is the difference between factor and character vectors?
 ```
 
@@ -182,6 +182,7 @@ install.packages("seqinr")
 install.packages("zoo")
 install.packages("ape")
 install.packages("phangorn")
+install.packages("tidyverse")
 ```
 
 Bioconductorパッケージのインストール:  
@@ -206,6 +207,7 @@ packageVersion("seqinr")
 packageVersion("zoo")
 packageVersion("ape")
 packageVersion("phangorn")
+packageVersion("tidyverse")
 
 packageVersion("Biostrings")
 packageVersion("msa")
@@ -219,6 +221,8 @@ library(seqinr)
 library(zoo)
 library(ape)
 library(phangorn)
+library(tidyverse)
+
 suppressMessages(library(Biostrings))
 library(msa)
 library(DECIPHER)
@@ -246,6 +250,9 @@ sessionInfo()
 [1] ‘5.3’
 > packageVersion("phangorn")
 [1] ‘2.5.5’
+> packageVersion("tidyverse")
+[1] ‘1.3.0’
+> 
 > packageVersion("Biostrings")
 [1] ‘2.56.0’
 > packageVersion("msa")
