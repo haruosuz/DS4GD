@@ -88,6 +88,12 @@ To specify a single variable within a data frame or tibble, use the dollar sign 
 https://dotinstall.com/lessons/basic_r
 R言語入門 (全13回) - プログラミングならドットインストール
 
+https://akiyoko.hatenablog.jp/entry/2014/11/07/042801
+Windows で R（統計解析ツール）を使う - akiyoko blog
+R の使い方を手っ取り早く理解するためにまず、ドットインストールの「R言語入門」（全13回）の動画をひと通り全部見てみました。
+動画時間は全部で 35分ほど。
+手を動かすのも合わせて、一時間ほどでチェックし終えることができました。
+
 ----------
 https://dotinstall.com/lessons/basic_r/28106
 #06 ベクトルの演算をしてみよう | R言語入門 - プログラミングならドットインストール
@@ -166,6 +172,23 @@ http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html
 39. データフレーム事始
 
 データフレームとは data.frame クラスを持つリストのことであり，数値ベクトルや文字ベクトル，因子ベクトル（文字型ベクトル）などの異なる型のデータをまとめて1 つの変数として持っている．外見は行列と同じ 2 次元配列であるが，データフレームの各行・列はラベルを必ず持ち，ラベルによる操作が可能である点が普通の行列と異なる．しかも各列の要素の型はバラバラでも構わないので，ベクトルやリストで持っているデータをデータフレームに変換することで統計解析がやりやすくなる．
+
+----------
+
+https://dotinstall.com/lessons/basic_r/28113
+#13 グラフを描いてみよう | R言語入門 - プログラミングならドットインストール
+
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/67.html
+67. 相関係数と無相関検定
+```
+ cor(x, y, method="spearman")          # 単なる相関係数
+ cor.test(x, y, method="pearson")      # 無相関かどうかの検定
+```
+
+https://keita43a.hatenablog.com/entry/2018/04/10/034230
+【R】データにNAがある時の相関係数 - Untitled Note
+
+----------
 
 ----------
 
