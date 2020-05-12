@@ -39,6 +39,7 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 
 Watch the following videos and write your comments or questions.
 - [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
+  - [my_datasciencedojo_r.R](https://raw.githubusercontent.com/haruosuz/r4bioinfo/master/scripts/my_datasciencedojo_r.R)
 
 [Example answer]
 ```
@@ -50,6 +51,7 @@ My questions are as follows:
 
 以下の動画レッスンを見て、疑問点を報告する。
 - [R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
+  - [my_dotinstall_basic_r.R](https://raw.githubusercontent.com/haruosuz/r4bioinfo/master/scripts/my_dotinstall_basic_r.R)
 
 
 [回答例]
@@ -59,8 +61,6 @@ My questions are as follows:
 1. 行列とデータフレームとリストの違いが理解できなかった。
 2. 文字型ベクトルと因子型ベクトルの違いは？
 ```
-
-----------
 
 ----------
 [Control Statements: For Loop, If, Else - Introduction to R Programming - Part 10](https://www.youtube.com/watch?v=QEzWBLb9xa4&list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx&index=10)
@@ -84,7 +84,6 @@ Object names must start with a letter, and can only contain letters, numbers, _ 
 To specify a single variable within a data frame or tibble, use the dollar sign $. R has another way of doing this, using column numbers, but using the dollar sign will make it much easier to understand your code if someone else needs to use it, or if you come back to look at it months after writing it.
 
 ----------
-
 https://akiyoko.hatenablog.jp/entry/2014/11/07/042801
 Windows で R（統計解析ツール）を使う - 
 R の使い方を手っ取り早く理解するためにまず、ドットインストールの「R言語入門」（全13回）の動画をひと通り全部見てみました。
@@ -130,14 +129,6 @@ https://sites.google.com/site/leihcrev/r/ordered-and-unordered-factors
 順序付き因子を適用したデータは、尺度水準が順序尺度であることを示す。順序無し因子を適用すれば名義尺度にあたる。因子を付加していない数値ベクトルは、間隔尺度以上の高水準の尺度ということになる。順序付き因子と順序無し因子は、モデルへの当てはめなどで異なった振舞いを示す。
 
 ----------
-https://dotinstall.com/lessons/basic_r/28108
-#08 行列を扱ってみよう | R言語入門 - プログラミングならドットインストール
-
-----------
-https://dotinstall.com/lessons/basic_r/28109
-#09 行列を編集してみよう | R言語入門 - プログラミングならドットインストール
-
-----------
 https://dotinstall.com/lessons/basic_r/28110
 #10 リストを扱ってみよう | R言語入門 - プログラミングならドットインストール
 
@@ -161,17 +152,14 @@ x[[1]]	x の第 1 成分を取り出す（中身はリスト中の要素）
 上記のように，[[ と ]] の間に要素の番号を指定することによって，リストの要素を取り出すことが出来る．[ と ] の間に要素の番号を指定することでもリストの要素を取り出すことは出来るが，この場合はベクトルとしてアクセスを行っていることになる．よって，要素を取り出したいのではなくてリストの一部分を抽出する場合は，ベクトルの場合と同様，[ と ] を使えばよい．ただし返り値はリストとなる．
 
 ----------
-
 https://dotinstall.com/lessons/basic_r/28111
 #11 データフレームを扱ってみよう | R言語入門 - プログラミングならドットインストール
 
 http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html
 39. データフレーム事始
-
 データフレームとは data.frame クラスを持つリストのことであり，数値ベクトルや文字ベクトル，因子ベクトル（文字型ベクトル）などの異なる型のデータをまとめて1 つの変数として持っている．外見は行列と同じ 2 次元配列であるが，データフレームの各行・列はラベルを必ず持ち，ラベルによる操作が可能である点が普通の行列と異なる．しかも各列の要素の型はバラバラでも構わないので，ベクトルやリストで持っているデータをデータフレームに変換することで統計解析がやりやすくなる．
 
 ----------
-
 https://dotinstall.com/lessons/basic_r/28113
 #13 グラフを描いてみよう | R言語入門 - プログラミングならドットインストール
 
@@ -181,11 +169,6 @@ http://cse.naro.affrc.go.jp/takezawa/r-tips/r/67.html
  cor(x, y, method="spearman")          # 単なる相関係数
  cor.test(x, y, method="pearson")      # 無相関かどうかの検定
 ```
-
-https://keita43a.hatenablog.com/entry/2018/04/10/034230
-【R】データにNAがある時の相関係数 - Untitled Note
-
-----------
 
 ----------
 
