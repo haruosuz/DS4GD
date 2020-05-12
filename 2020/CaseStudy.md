@@ -39,7 +39,7 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 
 Watch the following videos and write your comments or questions.
 - [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
-  - [my_datasciencedojo_r.R](https://raw.githubusercontent.com/haruosuz/r4bioinfo/master/scripts/my_datasciencedojo_r.R)
+  - [my_datasciencedojo_r.R](https://github.com/haruosuz/r4bioinfo/blob/master/scripts/my_datasciencedojo_r.R)
 
 [Example answer]
 ```
@@ -51,7 +51,7 @@ My questions are as follows:
 
 以下の動画レッスンを見て、疑問点を報告する。
 - [R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
-  - [my_dotinstall_basic_r.R](https://raw.githubusercontent.com/haruosuz/r4bioinfo/master/scripts/my_dotinstall_basic_r.R)
+  - [my_dotinstall_basic_r.R](https://github.com/haruosuz/r4bioinfo/blob/master/scripts/my_dotinstall_basic_r.R)
 
 
 [回答例]
