@@ -292,15 +292,6 @@ Running under: macOS Mojave 10.14.6
 
 ![http://schaechter.asmblog.org/schaechter/2009/07/an-iconoclastic-endosymbiont.html](http://schaechter.asmblog.org/.a/6a00d8341c5e1453ef0115723c61fc970b-300wi)
 
-- ゲノムサイズ
-  - [伊庭 斉志 "進化論的計算手法の研究スタイル"](https://www.ieice.org/ess/ESS/newsletter/N15/ga.html)
-いろいろな生物のゲノムサイズを比べてみると興味深い事実に 気づく。ここでゲノムサイズとは、DNAの文字数(塩基対の数)のことである。 ファージ類は数千ないし数万の文字しか持たないのに対して、ヒトは30億と いう膨大な文字数を持っている。 その間に数百万塩基対の大腸菌、数千万塩基対の酵母、数億塩基対のショウジ ョウバエなどがある。 ただし生物の複雑さと文字数には完全な相関があるわけではない。 例えば、マウスはヒトとほとんど同じ文字数を持っているのに、サ ンショウウオはヒトよりはるかに多い文字数を持っている。 一倍体ゲノムあたりのDNA量は生物の種ごとに決まっており、C値 (C-value)と呼ばれている。
-https://en.wikipedia.org/wiki/C-value
-  - [Ge SX. BMC Genomics. 2017 Feb 23;18(1):200. "Exploratory bioinformatics investigation reveals importance of "junk" DNA in early embryo development."](https://www.ncbi.nlm.nih.gov/pubmed/28231763)
-    - [C Value paradox: The genome sizes of eukaryotes vary greatly but do not correlate with the "complexity". Is there a link between genome size and generation time? Slowly-reproducing organisms need lots of transposable elements (TEs) for quicker adaptation.](https://twitter.com/StevenXGe/status/1082353979563130880)
-
-![](https://pbs.twimg.com/media/DwVIzIjUUAEd8Hd?format=jpg&name=360x360)
-
 ----------
 
 ----------
