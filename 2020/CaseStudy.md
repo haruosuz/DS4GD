@@ -302,6 +302,7 @@ NCBIからDNA配列を取得する:
 library(seqinr)
 ACCESSION <- "NC_001477" # Dengue virus 1
 #ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+#ACCESSION <- "NC_001318" # Borreliella burgdorferi B31 chromosome
 filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
 #filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
 seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
@@ -331,8 +332,8 @@ Q3. How many of each of the four nucleotides A, C, T and G, and any other symbol
 
     table(seq1)
 
-DDBJ [配列の記載に用いる略号](http://www.ddbj.nig.ac.jp/sub/code-j.html)  
 DDBJ [Codes Used in Sequence Description](https://www.ddbj.nig.ac.jp/ddbj/code-e.html)
+[配列の記載に用いる略号](http://www.ddbj.nig.ac.jp/sub/code-j.html)
 
 Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucleotides are included, (ii) non-A/C/T/G nucleotides are discarded?
 
