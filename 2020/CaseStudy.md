@@ -314,7 +314,8 @@ Please record what you typed to download DNA sequence data, to make your analysi
 ## assignment 3
 **課題No.3 「DNA Sequence Statistics (1)」**
 
-[Exercises on DNA Sequence Statistics (1)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises)
+[Exercises](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter1.html#exercises) |
+[Answers to the exercises on DNA Sequence Statistics (1)](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-1)
 
 Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 
@@ -342,11 +343,13 @@ Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucl
 
 Q5. How many of each of the four nucleotides A, C, T and G are there in the complement of the genome sequence?
 
-![http://revertra.webcrow.jp/DNA/index.php](http://revertra.webcrow.jp/DNA/dnaseq.png)
-
 	#help.search("complement")
 	#help("comp")
     table(comp(seq1))
+
+<img alt="" src="https://i.ytimg.com/vi/9qyi6xgOjEk/maxresdefault.jpg" width=10%>
+
+- Mar 14, 2018 [Practice writing the complementary strand of DNA and mRNA during transcription - YouTube](https://www.youtube.com/watch?v=9qyi6xgOjEk)
 
 Q6. How many occurrences of the DNA words CC, CG and GC occur in the genome sequence?
 
