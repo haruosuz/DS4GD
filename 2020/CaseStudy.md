@@ -319,6 +319,7 @@ Please record what you typed to download DNA sequence data, to make your analysi
 [Answers to the exercises on DNA Sequence Statistics (1)](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-1)
 
 Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
+You can submit your assignment as a PDF/HTML document, created from R script, R Markdown, Jupyter Notebook, etc..
 
 Q1. What are the last twenty nucleotides of the genome sequence?
 
