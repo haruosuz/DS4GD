@@ -25,6 +25,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
   - [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2) 課題No.2 「Installing R packages」
 - 2020-05-19 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
   - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-genome-list)
+  - [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - 2020-05-26 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - 2020-06-02 No. 5 - [Guest Speaker](#guest-speaker)
 - 2020-06-09 No. 6 - [Guest Speaker](#guest-speaker)
