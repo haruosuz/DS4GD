@@ -347,7 +347,7 @@ Q5. How many of each of the four nucleotides A, C, T and G are there in the comp
 	#help("comp")
     table(comp(seq1))
 
-<img alt="" src="https://i.ytimg.com/vi/9qyi6xgOjEk/maxresdefault.jpg" width=10%>
+<img alt="" src="https://i.ytimg.com/vi/9qyi6xgOjEk/maxresdefault.jpg" width=25%>
 
 - Mar 14, 2018 [Practice writing the complementary strand of DNA and mRNA during transcription - YouTube](https://www.youtube.com/watch?v=9qyi6xgOjEk)
 
