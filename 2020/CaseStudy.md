@@ -12,6 +12,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages」
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
+- [Compile Report](##compile-report)
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [assignment 5](#assignment-5) 課題No.5 「Guest Speaker (1)」
 - [assignment 6](#assignment-6) 課題No.6 「Guest Speaker (2)」
@@ -374,10 +375,6 @@ https://rmarkdown.rstudio.com/articles_report_from_r_script.html
 Compiling Reports from R Scripts
 
 If you are using RStudio then you can also create a report using the Compile Report command (Ctrl+Shift+K).
-
-2018-12-01
-https://www.aliesdataspace.com/2018/12/using-r-studio-s-compile-report/
-Using RStudio’s “Compile Report" Command
 
 Jan 17, 2017
 https://www.youtube.com/watch?v=4xwaH9CR2TY
