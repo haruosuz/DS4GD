@@ -10,7 +10,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages」
-- [Genome signature](#genome-signature)
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
@@ -278,24 +277,6 @@ Running under: macOS Mojave 10.14.6
 
 ----------
 
-## Genome signature
-
-- ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-  - [西田洋巳 (2012) ゲノム塩基配列の偏りと生物機能](http://www.iu.a.u-tokyo.ac.jp/~hnishida/tokuron4.htm)
-    - ゲノムDNAのサイズとGC含量の関係では、サイズが大きくなるとGC含量が高くなる傾向にあることが示されている
-    - 絶対寄生や共生にかかわる細菌のゲノムサイズは小さく、低GC含量であることも指摘された
-    - 外来性のDNA（プラスミドDNA、ファージDNAなど）のGC含量が宿主細胞のクロモソームDNAのGC含量よりも低い傾向にある
-  - 原核生物のゲノムサイズとGC含量との関係
-    - [Almpanis A et al.  Microb Genom. 2018 Apr;4(4). "Correlation between bacterial G+C content, genome size and the G+C content of associated plasmids and bacteriophages."](https://www.ncbi.nlm.nih.gov/pubmed/29633935)
-    - [Bohlin J et al. Environ Microbiol Rep. 2014 Jun;6(3):278-86. "Positive correlations between genomic %AT and genome size within strains of bacterial species."](https://www.ncbi.nlm.nih.gov/pubmed/24983532)
-    - [McCutcheon JP et al. PLoS Genet. 2009 Jul;5(7):e1000565. "Origin of an alternative genetic code in the extremely small and GC-rich genome of a bacterial symbiont."](https://www.ncbi.nlm.nih.gov/pubmed/19609354)
-
-![http://schaechter.asmblog.org/schaechter/2009/07/an-iconoclastic-endosymbiont.html](http://schaechter.asmblog.org/.a/6a00d8341c5e1453ef0115723c61fc970b-300wi)
-
-----------
-
-----------
-
 ## NCBI Genome List
 [NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
@@ -382,6 +363,33 @@ How can you check that the subsequence that you have looked at is 1000 nucleotid
 
     count(seq=head(seq1, 1000), wordsize=2)
     count(seq=tail(seq1, 1000), wordsize=2)
+
+----------
+
+----------
+
+## Compile Report
+
+https://rmarkdown.rstudio.com/articles_report_from_r_script.html
+Compiling Reports from R Scripts
+
+If you are using RStudio then you can also create a report using the Compile Report command (Ctrl+Shift+K).
+
+2018-12-01
+https://www.aliesdataspace.com/2018/12/using-r-studio-s-compile-report/
+Using RStudio’s “Compile Report" Command
+
+Jan 17, 2017
+https://www.youtube.com/watch?v=4xwaH9CR2TY
+How to Compile a Report in RStudio - YouTube
+
+2016年12月05日に更新
+https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
+3. Compile Report
+
+![](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
+
+----------
 
 ----------
 ## assignment 4
