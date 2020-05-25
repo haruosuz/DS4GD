@@ -9,7 +9,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ## Table of Contents
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
-- [Compile Report](##compile-report)
+- [Compile Report](#compile-report)
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages」
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
