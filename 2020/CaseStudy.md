@@ -9,10 +9,10 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ## Table of Contents
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
+- [Compile Report](##compile-report)
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages」
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
-- [Compile Report](##compile-report)
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [assignment 5](#assignment-5) 課題No.5 「Guest Speaker (1)」
 - [assignment 6](#assignment-6) 課題No.6 「Guest Speaker (2)」
@@ -134,12 +134,6 @@ https://dotinstall.com/lessons/basic_r/28110
 
 http://www.okadajp.org/RWiki/?リストTips大全
 
-http://takenaka-akio.org/doc/r_auto/list.html
-リストにオブジェクトをしまう
-ベクトルは、同じ型のデータをまとめて並べたデータ構造です。 これに対し、リストはどのような型のデータでもしまえるデータ構造です。 ベクトルでもリスト自身でもデータフレームでも統計解析関数が返す複雑なオブジェクトでも、なんでも格納できます。 自動化した処理の結果をいくつもまとめておいて、最後にまとめて処理したいなどという場合にも便利でしょう。 なお、データフレームもリストの一種です。
-リストの要素の指定
-リストの要素は、[　] や [[ ]] に要素の位置を与えて指定できます。 [　]を使った場合は「指定した要素を含むリスト」、 [[ ]]を使った場合は「要素そのもの」を指すことに注意が必要です。
-
 http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html
 23. リスト
 R にはデータの種類としてベクトルや行列，配列などが用意されている（ 1 や 'a' も長さ 1 のベクトル）が，リストはこれら異なる構造のデータを集めて 1 個のオブジェクトにしたものである．異なった型のベクトルを 1 個のリストにまとめてもよいし，リストの要素としてリストを用いても構わない．
@@ -151,9 +145,19 @@ x[[1]]	x の第 1 成分を取り出す（中身はリスト中の要素）
  リスト要素へのアクセス
 上記のように，[[ と ]] の間に要素の番号を指定することによって，リストの要素を取り出すことが出来る．[ と ] の間に要素の番号を指定することでもリストの要素を取り出すことは出来るが，この場合はベクトルとしてアクセスを行っていることになる．よって，要素を取り出したいのではなくてリストの一部分を抽出する場合は，ベクトルの場合と同様，[ と ] を使えばよい．ただし返り値はリストとなる．
 
+http://takenaka-akio.org/doc/r_auto/list.html
+リストにオブジェクトをしまう
+ベクトルは、同じ型のデータをまとめて並べたデータ構造です。 これに対し、リストはどのような型のデータでもしまえるデータ構造です。 ベクトルでもリスト自身でもデータフレームでも統計解析関数が返す複雑なオブジェクトでも、なんでも格納できます。 自動化した処理の結果をいくつもまとめておいて、最後にまとめて処理したいなどという場合にも便利でしょう。 なお、データフレームもリストの一種です。
+リストの要素の指定
+リストの要素は、[　] や [[ ]] に要素の位置を与えて指定できます。 [　]を使った場合は「指定した要素を含むリスト」、 [[ ]]を使った場合は「要素そのもの」を指すことに注意が必要です。
+[　] や [[ ]]、$ による要素の指定方法は、 データフレームの場合と同様ですね。 これはデータフレーム自体がリスト（の一種）なので当然です（ is.list(data.frame()) は TRUE を返す）。
+
 ----------
 https://dotinstall.com/lessons/basic_r/28111
 #11 データフレームを扱ってみよう | R言語入門 - プログラミングならドットインストール
+
+https://www.cyberer.net/2020/03/r-lists-and-data-frames.html#toc_headline_8
+「データフレーム」は関係データベースのテーブルのようなデータ構造だ。クラス data.frame を持つリストであるが、ただのリストに比べてコンポーネントになり得るオブジェクトにいくつかの制限が設けられている。
 
 http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html
 39. データフレーム事始
@@ -171,7 +175,25 @@ http://cse.naro.affrc.go.jp/takezawa/r-tips/r/67.html
 ```
 
 ----------
+----------
+## Compile Report
 
+https://rmarkdown.rstudio.com/articles_report_from_r_script.html
+Compiling Reports from R Scripts
+
+If you are using RStudio then you can also create a report using the Compile Report command (Ctrl+Shift+K).
+
+Jan 17, 2017
+https://www.youtube.com/watch?v=4xwaH9CR2TY
+How to Compile a Report in RStudio - YouTube
+
+2016年12月05日に更新
+https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
+3. Compile Report
+
+![](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
+
+----------
 ----------
 ## assignment 2
 **課題No.2 「Installing R packages」**
@@ -275,9 +297,7 @@ Running under: macOS Mojave 10.14.6
 ```
 
 ----------
-
 ----------
-
 ## NCBI Genome List
 [NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
@@ -366,48 +386,23 @@ How can you check that the subsequence that you have looked at is 1000 nucleotid
     count(seq=tail(seq1, 1000), wordsize=2)
 
 ----------
-
-----------
-
-## Compile Report
-
-https://rmarkdown.rstudio.com/articles_report_from_r_script.html
-Compiling Reports from R Scripts
-
-If you are using RStudio then you can also create a report using the Compile Report command (Ctrl+Shift+K).
-
-Jan 17, 2017
-https://www.youtube.com/watch?v=4xwaH9CR2TY
-How to Compile a Report in RStudio - YouTube
-
-2016年12月05日に更新
-https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
-3. Compile Report
-
-![](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
-
-----------
-
 ----------
 ## assignment 4
 **課題No.4 「DNA Sequence Statistics (2)」**
 
-[Exercises on DNA Sequence Statistics (2)](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises)
+[Exercises](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#exercises) |
+[Answers to the exercises on DNA Sequence Statistics (2)](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-2)
 
 Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-
-[53. グラフィックスパラメータ（弐）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/53.html)
-フォント・ファミリーを指定する
-
-    # setting font in plots
-    par(family="mono")
+You can submit your assignment as a PDF/HTML document, created from R script, R Markdown, Jupyter Notebook, etc..
 
 Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
 
 	# write a function to make a sliding window plot:
     slidingwindowplotGC <- function(windowsize, inputseq)
     {
-      require("zoo") # this function requires the 'zoo' R package # install.packages('zoo')
+      # this function requires the 'zoo' R package #install.packages("zoo")
+      require("zoo")
       x <- seq(from = 1, to = length(inputseq)-windowsize, by = windowsize)
       y <- rollapply(data = inputseq, width = windowsize, by = windowsize, FUN = GC)
       plot(x, y, type="l", xlab="Position (bp)", ylab="GC content")
@@ -460,6 +455,8 @@ Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 
     # rho > 1: over-represented
     # rho < 1: under-represented
+
+[Sliding windowでゲノムの局所的な塩基組成（GC content, GC skew）を解析する](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#dna-sequence-statistics-2)
 
 ----------
 ## assignment 5
