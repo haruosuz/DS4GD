@@ -20,7 +20,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 [【変更後】 2020年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/82bacea42ef958c454eb0044be552fc00dbb7952.pdf)
 
 - 2020-05-05 No. 1 - イントロダクション [Introduction](#introduction)
-  - [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1) 課題No.1 「Introduction to R」
+  - [R: The R Project for Statistical Computing](https://github.com/haruosuz/DS4GD/tree/master/2020#r-the-r-project-for-statistical-computing)
 - 2020-05-12 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
   - [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2) 課題No.2 「Installing R packages」
 - 2020-05-19 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
@@ -113,6 +113,11 @@ Conceptualization of SARS-CoV-2 deposition.
 - Jan 24, 2020 [R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners](https://www.youtube.com/watch?v=YBAWVNWiZlU)
 
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
+
+- [再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著](http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438)
+メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
+
+![](https://www.kyoritsu-pub.co.jp/app/img/item/9784320112438.jpg)
 
 ----------
 
