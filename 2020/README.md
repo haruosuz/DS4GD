@@ -84,7 +84,7 @@ Conceptualization of SARS-CoV-2 deposition.
 - ニューヨークの地下鉄で新型コロナウイルスは今のところ見つかっていない。
 ["NYC Scientists Swab the Subway in Search of SARS-CoV-2." Is it there? So far, nope! Environmental and ongoing clinical #COVID19 efforts discussed here:](https://twitter.com/mason_lab/status/1245394591819477003)
 
-<img src="https://pbs.twimg.com/card_img/1255452540919001088/dqUeHRiK?format=jpg&name=small" alt="https://www.wired.com/story/microbe-mappers-are-tracking-covid-19s-invisible-traces/" width=25%>
+<img src="https://media.wired.com/photos/5ea73fc731d06e000847a5ec/master/w_2560%2Cc_limit/Science_microbiome_covid19-1204320628.jpg" alt="https://www.wired.com/story/microbe-mappers-are-tracking-covid-19s-invisible-traces/" width=25%>
 
 #### Antibiotic resistance
 **[抗生物質耐性](https://ja.wikipedia.org/wiki/抗微生物薬耐性)**
