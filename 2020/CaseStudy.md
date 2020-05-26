@@ -399,7 +399,8 @@ How can you check that the subsequence that you have looked at is 1000 nucleotid
 Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 You can submit your assignment as a PDF/HTML document, created from R script, R Markdown, Jupyter Notebook, etc..
 
-Q1. Draw a sliding window plot of GC content in the genome, using a window size of 200 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
+Q1. Draw a sliding window plot of GC content in the genome sequence, using different window sizes; e.g. 200 and 2000 nucleotides. 
+Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
 
 	# write a function to make a sliding window plot:
     slidingwindowplotGC <- function(windowsize, inputseq)
@@ -414,12 +415,10 @@ Q1. Draw a sliding window plot of GC content in the genome, using a window size 
 	# make a sliding window plot with a window size of 200 nucleotides:
     slidingwindowplotGC(windowsize = 200, inputseq = seq1)
 
-Q2. Draw a sliding window plot of GC content in the genome sequence using a window size of 2000 nucleotides. Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
-
 	# make a sliding window plot of GC content using a window size of 2000 nucleotides:
     slidingwindowplotGC(windowsize = 2000, inputseq = seq1)
 
-Q3. Write a function to calculate the AT content of a DNA sequence (ie. the fraction of the nucleotides in the sequence that are As or Ts). What is the AT content of the genome?
+Q2. Write a function to calculate the AT content of a DNA sequence (ie. the fraction of the nucleotides in the sequence that are As or Ts). What is the AT content of the genome?
 
 	# Here is a function to calculate the AT content of a genome sequence:
     AT <- function(x){ library("seqinr"); 1 - GC(x) }
@@ -431,7 +430,7 @@ Q3. Write a function to calculate the AT content of a DNA sequence (ie. the frac
     GC(seq1)
     AT(seq1) + GC(seq1)
 
-Q4. Write a function to draw a sliding window plot of AT content.
+Q3. Write a function to draw a sliding window plot of AT content.
 
 	# write a function to make a sliding window plot:
     slidingwindowplotAT <- function(windowsize, inputseq)
@@ -446,12 +445,14 @@ Q4. Write a function to draw a sliding window plot of AT content.
 Use it to make a sliding window plot of AT content along the genome, using a windowsize of 2000 nucleotides. 
 
     par(mfrow=c(2,1))
+
 	# make a sliding window plot of AT content:
     slidingwindowplotAT(windowsize = 2000, inputseq = seq1)
+
 	# This is the mirror image of the plot of GC content (because AT equals 1 minus GC):
     slidingwindowplotGC(windowsize = 2000, inputseq = seq1)
 
-Q5. Is the 3-nucleotide word GAC over-represented or under-represented in the genome sequence?
+Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the genome sequence?
 
 	# calculate Rho for words of length 3 in the genome
 	rho(sequence = seq1, wordsize=3)
