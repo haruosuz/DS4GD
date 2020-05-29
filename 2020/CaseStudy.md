@@ -21,7 +21,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 9](#assignment-9) 課題No.9 「Pairwise Sequence Alignment」
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 - [assignment 11](#assignment-11) 課題No.11 「presentation slides」
-- [assignment 12](#assignment-12) 課題No.12
 
 ----------
 ## assignment 0
@@ -187,14 +186,18 @@ Jan 17, 2017
 https://www.youtube.com/watch?v=4xwaH9CR2TY
 How to Compile a Report in RStudio - YouTube
 
-[再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著](http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438) |
-[4.8 R スクリプトからレポート生成](https://www.kyoritsu-pub.co.jp/app/file/goods_contents/3028.pdf)
-
 2016年12月05日に更新
 https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
 3. Compile Report
 
 ![](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
+
+[再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著](http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438) |
+[4.8 R スクリプトからレポート生成](https://www.kyoritsu-pub.co.jp/app/file/goods_contents/3028.pdf)
+
+![](https://www.kyoritsu-pub.co.jp/app/img/item/9784320112438.jpg)
+
+メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
 
 ----------
 ----------
@@ -636,19 +639,4 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
 
 ----------
-
 ----------
-
-----------
-
-----------
-
-----------
-
-
-
-----------
-
-
-
-
