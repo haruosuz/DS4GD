@@ -112,11 +112,9 @@ Conceptualization of SARS-CoV-2 deposition.
 
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
-- [再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著](http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438)
-
-![](https://www.kyoritsu-pub.co.jp/app/img/item/9784320112438.jpg)
-
-メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
+- [RとRStudioのインストール方法の解説](http://yukiyanai.github.io/jp/resources/)
+  - [Linux (Ubuntu) 編 (PDF, 4.6MB)](http://yukiyanai.github.io/jp/resources/docs/install-R_ubuntu.pdf)
+  - [macOS 編 (PDF, 4.9MB)](http://yukiyanai.github.io/jp/resources/docs/install-R_macOS.pdf)
+  - [Windows 編 （PDF, 5.8MB）](http://yukiyanai.github.io/jp/resources/docs/install-R_windows.pdf)
 
 ----------
-
