@@ -46,6 +46,9 @@ DATA SCIENCE FOR GENOME DYNAMICS
 ## Guest speaker
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
+- 講師: 山本 楠 氏 Daniel Evans-Yamamoto
+- 講義資料 https://danyamamotoevans.github.io/blog/code/ds4gd
+
 ----------
 ## interim report
 **中間発表**
