@@ -53,7 +53,11 @@ DATA SCIENCE FOR GENOME DYNAMICS
 ## interim report
 **中間発表**
 
+発表時間：1人あたり最大5分（質疑応答を含む）。
+プロジェクトで解析するオブジェクト（DNA、タンパク質、その他のテキスト配列など）について説明する。
+
 5 minutes will be allocated for each presentation, including presentation and discussion.
+Briefly describe objects (DNA, protein, and other textual sequences, etc.) you will analyze in your project.
 
 ----------
 ## final report
