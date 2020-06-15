@@ -14,9 +14,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
-- [assignment 5](#assignment-5) 課題No.5 「Guest Speaker (1)」
-- [assignment 6](#assignment-6) 課題No.6 「Guest Speaker (2)」
-- [assignment 7](#assignment-7) 課題No.7 「Guest Speaker (3)」
 - [assignment 8](#assignment-8) 課題No.8 「dotplot」
 - [assignment 9](#assignment-9) 課題No.9 「Pairwise Sequence Alignment」
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
@@ -466,24 +463,6 @@ Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 [Sliding windowでゲノムの局所的な塩基組成（GC content, GC skew）を解析する](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#dna-sequence-statistics-2)
 
 ----------
-## assignment 5
-**課題No.5 「Guest Speaker (1)」**
-
-----------
-## assignment 6
-**課題No.6 「Guest Speaker (2)」**
-
-----------
-## assignment 7
-**課題No.7 「Guest Speaker (3)」**
-
-----------
-### Elongation Factor
-翻訳伸長因子
-[EF-Tu](https://ja.wikipedia.org/wiki/EF-Tu)
-[EF-G](https://ja.wikipedia.org/wiki/EF-G)
-
-[重複遺伝子EF-Tu/1aとEF-G/2に基づく超生物界の複合系統樹](https://www.brh.co.jp/research/formerlab/miyata/2005/post_000008.html)
 
 ----------
 ## assignment 8
@@ -502,23 +481,19 @@ seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]
 seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/A0PQ23.fasta")[[1]]
 length(seq1)
 getAnnot(seq1)
-
-# setting font in plots
-par(family="mono")
 ```
 
 Q2. Create a dotplot for two sequences.
 ```
+par(mfrow=c(2,2))
 dotPlot(seq1, seq2, wsize = 1, wstep = 1, nmatch = 1)
 dotPlot(seq1, seq2, wsize = 2, wstep = 2, nmatch = 2)
-dotPlot(seq1, seq2, wsize = 3, wstep = 3, nmatch = 3)
 ```
 
 Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
 ```
-dotPlot(seq1, seq1, wsize = 1, wstep = 1, nmatch = 1)
-
-dotPlot(seq2, seq2, wsize = 1, wstep = 1, nmatch = 1)
+dotPlot(seq1, seq1, wsize = 2, wstep = 2, nmatch = 2)
+dotPlot(seq2, seq2, wsize = 2, wstep = 2, nmatch = 2)
 ```
 
 https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#dotplot
