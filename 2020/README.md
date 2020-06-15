@@ -26,14 +26,13 @@ DATA SCIENCE FOR GENOME DYNAMICS
   - [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
   - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-genome-list)
 - 2020-05-26 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
-  - [scripts.zip](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
-  - [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - 2020-06-02 No. 5 - [Guest Speaker](#guest-speaker)
 - 2020-06-09 No. 6 - [Guest Speaker](#guest-speaker)
 - 2020-06-16 No. 7 - [Guest Speaker](#guest-speaker)
 - 2020-06-23 No. 8 - 中間発表 [interim report](#interim-report)
-  - タンパク質データベース Protein sequence database [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
-  - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
+  - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+    - タンパク質データベース Protein sequence database [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
+    - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
 - 2020-06-30 No. 9 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - 2つのDNA配列間のグローバル・アライメント [Pairwise global alignment of DNA sequences](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
 - 2020-07-07 No. 10 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
@@ -41,6 +40,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-07-21 No. 12 - 最終回
   - 最終発表 [final presentation](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-11)
 - 2020-07-28 レポート提出期限 Deadline for [final report](#final-report)
+- [scripts.zip](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
 
 ----------
 ## Guest speaker
@@ -54,10 +54,10 @@ DATA SCIENCE FOR GENOME DYNAMICS
 **中間発表**
 
 発表時間：1人あたり最大5分（質疑応答を含む）。
-プロジェクトで解析するオブジェクト（DNA、タンパク質、その他のテキスト配列など）について説明する。
+プレゼンテーションのスライド（PowerPoint/Keynote/PDF/HTML形式ファイル）を用いて、プロジェクトで解析するオブジェクト（DNA、タンパク質、その他のテキスト配列など）について説明する。
 
 5 minutes will be allocated for each presentation, including presentation and discussion.
-Briefly describe objects (DNA, protein, and other textual sequences, etc.) you will analyze in your project.
+Briefly describe objects (DNA, protein, and other textual sequences, etc.) you will analyze in your project, using your presentation slides (PowerPoint/Keynote/PDF/HTML document).
 
 ----------
 ## final report
