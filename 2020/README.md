@@ -56,7 +56,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 発表時間：1人あたり最大5分（質疑応答を含む）。
 プレゼンテーションのスライド（PowerPoint/Keynote/PDF/HTML形式ファイル）を用いて、プロジェクトで解析するオブジェクト（DNA、タンパク質、その他のテキスト配列など）について説明する。
 
-5 minutes will be allocated for each presentation, including presentation and discussion.
+Presentation time: 5 minutes will be allocated for each presentation (including Q&A).
 Briefly describe objects (DNA, protein, and other textual sequences, etc.) you will analyze in your project, using your presentation slides (PowerPoint/Keynote/PDF/HTML document).
 
 ----------
