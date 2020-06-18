@@ -14,6 +14,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
+- [BLAST](#blast) Basic Local Alignment Search Tool)
 - [assignment 8](#assignment-8) 課題No.8 「dotplot」
 - [assignment 9](#assignment-9) 課題No.9 「Pairwise Sequence Alignment」
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
@@ -300,7 +301,6 @@ Running under: macOS Mojave 10.14.6
 ```
 
 ----------
-----------
 ## NCBI Genome List
 [NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
 [国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
@@ -397,7 +397,6 @@ How can you check that the subsequence that you have looked at is 1000 nucleotid
 [Answers to the exercises on DNA Sequence Statistics (2)](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#dna-sequence-statistics-2)
 
 Download the DNA sequence of your genome of interest. Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
-You can submit your assignment as a PDF/HTML document, created from R script, R Markdown, Jupyter Notebook, etc..
 
 Q1. Draw a sliding window plot of GC content in the genome sequence, using different window sizes; e.g. 200 and 2000 nucleotides. 
 Do you see any regions of unusual DNA content in the genome (eg. a high peak or low trough)?
@@ -463,6 +462,22 @@ Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 [Sliding windowでゲノムの局所的な塩基組成（GC content, GC skew）を解析する](https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#dna-sequence-statistics-2)
 
 ----------
+## BLAST
+[BLAST (Basic Local Alignment Search Tool)](https://ja.wikipedia.org/wiki/BLAST)
+
+EMBL-EBI Train online
+
+[How to search UniProt](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-search-uniprot)
+
+![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/2760/images/UniProt_tutorial/searchbar3.png)
+
+['BLAST' sequence similarity searching](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simila)
+
+![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/2760/images/UniProt_tutorial/blast_1.png)
+
+[Blast results](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simi-0)
+
+![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/4057/documents/screen_shot_2014-10-30_at_13.51.04.png)
 
 ----------
 ## assignment 8
@@ -502,24 +517,25 @@ https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.
 ## assignment 9
 **課題No.9 「Pairwise Sequence Alignment」**
 
-[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises)
+[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises) |
+[Answers to the exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#sequence-alignment)
 
-Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+Answer the following questions. For each question, please record your answer, and what you typed into R to get this answer.
 
 Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
 
     library("seqinr")
     seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]
     seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/A0PQ23.fasta")[[1]]
-    seq1string <- toupper(c2s(seq1)) # convert the sequence to a string and to uppercase
-    seq2string <- toupper(c2s(seq2)) # convert the sequence to a string and to uppercase
+    s1 <- toupper(c2s(seq1)) # convert the sequence to a string and to uppercase
+    s2 <- toupper(c2s(seq2)) # convert the sequence to a string and to uppercase
 
 Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
 (set gapOpening = -9.5 and gapExtension = -0.5)
 
 	library("Biostrings") # load the Biostrings package
 	data(BLOSUM50) # load the BLOSUM50 scoring matrix
-    myglobalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+    myglobalAlign <- pairwiseAlignment(s1, s2, substitutionMatrix = "BLOSUM50",
                       gapOpening = -9.5, gapExtension = -0.5) # align the two sequences
 	myglobalAlign
 
@@ -530,13 +546,13 @@ Q3. Use the writePairwiseAlignments() function to view the optimal global alignm
 Q4. What global alignment score do you get for the two proteins, when you use the BLOSUM62 alignment matrix?
 
 	data(BLOSUM62) # load the BLOSUM62 scoring matrix
-    myglobalAlign2 <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM62",
+    myglobalAlign2 <- pairwiseAlignment(s1, s2, substitutionMatrix = "BLOSUM62",
                        gapOpening = -9.5, gapExtension = -0.5) # align the two sequences
 	myglobalAlign2
 
 Q5. What is the alignment score for the optimal local alignment between the two proteins?
 
-    mylocalAlign <- pairwiseAlignment(seq1string, seq2string, substitutionMatrix = "BLOSUM50",
+    mylocalAlign <- pairwiseAlignment(s1, s2, substitutionMatrix = "BLOSUM50",
                      gapOpening = -9.5, gapExtension = -0.5, type="local")
 	mylocalAlign
 
@@ -544,10 +560,10 @@ Q5. What is the alignment score for the optimal local alignment between the two 
 ## assignment 10
 **課題No.10 「Multiple Alignment and Phylogenetic Trees」**
 
-- [Exercises on Multiple Alignment and Phylogenetic Trees](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises)
-  - [Answers to the exercises on Multiple Alignment and Phylogenetic Trees](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#multiple-alignment-and-phylogenetic-trees)
+[Exercises on Multiple Alignment and Phylogenetic Trees](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises) |
+[Answers to the exercises on Multiple Alignment and Phylogenetic Trees](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#multiple-alignment-and-phylogenetic-trees)
 
-Answer the following questions, using the R package. For each question, please record your answer, and what you typed into R to get this answer.
+Answer the following questions. For each question, please record your answer, and what you typed into R to get this answer.
 
 Q1. Calculate the genetic distances between >3 protein sequences of interest. Which are the most closely related proteins, based on the genetic distances?
 ```
