@@ -465,6 +465,18 @@ Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 ## BLAST
 [BLAST (Basic Local Alignment Search Tool)](https://ja.wikipedia.org/wiki/BLAST)
 
+  - [How to use UniProt tools](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/exploring-uniprotkb-entry/how-use-uniprot-t)
+
+![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/resize/u98/fig36-750x119.png)
+
+    - ['BLAST' sequence similarity searching](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simila)
+
+![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/2760/images/UniProt_tutorial/blast_1.png)
+
+    - [Blast results](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simi-0)
+
+![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/4057/documents/screen_shot_2014-10-30_at_13.51.04.png)
+
 - https://www.uniprot.org/
 - https://www.uniprot.org/uniprot/Q9CD83
 - Select the 'Blast' tab -> 'Advanced'
@@ -474,15 +486,6 @@ E-Threshold: 0.0001
 Hits: 50
 ```
 - Click the 'Run Blast' button.
-
-
-['BLAST' sequence similarity searching](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simila)
-
-![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/2760/images/UniProt_tutorial/blast_1.png)
-
-[Blast results](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simi-0)
-
-![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/4057/documents/screen_shot_2014-10-30_at_13.51.04.png)
 
 ----------
 ## assignment 8
