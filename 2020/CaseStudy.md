@@ -465,7 +465,7 @@ Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 ## BLAST
 [BLAST (Basic Local Alignment Search Tool)](https://ja.wikipedia.org/wiki/BLAST)
 
-  - [How to use UniProt tools](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/exploring-uniprotkb-entry/how-use-uniprot-t)
+- [How to use UniProt tools](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/exploring-uniprotkb-entry/how-use-uniprot-t)
 
 ![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/resize/u98/fig36-750x119.png)
 
