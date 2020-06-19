@@ -14,7 +14,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
-- [BLAST](#blast) Basic Local Alignment Search Tool)
+- [BLAST](#blast)
 - [assignment 8](#assignment-8) 課題No.8 「dotplot」
 - [assignment 9](#assignment-9) 課題No.9 「Pairwise Sequence Alignment」
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
@@ -465,19 +465,30 @@ Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 ## BLAST
 [BLAST (Basic Local Alignment Search Tool)](https://ja.wikipedia.org/wiki/BLAST)
 
-EMBL-EBI Train online
+- https://www.uniprot.org/
+- https://www.uniprot.org/uniprot/Q9CD83
+- Select the 'Blast' -> 'Advanced'
+```
+Target database: UniProtKB/Swiss-Prot
+E-Threshold: 0.0001
+Hits: 50
+```
+- Click the 'Run Blast' button.
 
-[How to search UniProt](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-search-uniprot)
-
-![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/2760/images/UniProt_tutorial/searchbar3.png)
-
-['BLAST' sequence similarity searching](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simila)
+- ['BLAST' sequence similarity searching](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simila)
 
 ![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/2760/images/UniProt_tutorial/blast_1.png)
 
-[Blast results](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simi-0)
+- [Blast results](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simi-0)
 
 ![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/4057/documents/screen_shot_2014-10-30_at_13.51.04.png)
+
+```
+>sp|Q9CD83|PHBS_MYCLE Chorismate pyruvate-lyase OS=Mycobacterium leprae (strain TN) OX=272631 GN=ML0133 PE=3 SV=1
+>sp|P9WIC5|PHBS_MYCTU Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv2949c PE=1 SV=1
+>sp|P9WIC4|PHBS_MYCTO Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT3022 PE=3 SV=1
+>sp|Q7TXK6|PHBS_MYCBO Chorismate pyruvate-lyase OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=BQ2027_MB2973C PE=3 SV=1
+```
 
 ----------
 ## assignment 8
@@ -494,6 +505,8 @@ Q1. Download FASTA-format files of two protein sequences from UniProt.
 library(seqinr)
 seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]
 seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/A0PQ23.fasta")[[1]]
+#seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/P9WIC5.fasta")[[1]]
+#seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q7TXK6.fasta")[[1]]
 length(seq1)
 getAnnot(seq1)
 ```
