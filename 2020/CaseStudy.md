@@ -467,13 +467,19 @@ Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 
 - https://www.uniprot.org/
 - https://www.uniprot.org/uniprot/Q9CD83
-- Select the 'Blast' -> 'Advanced'
+- Select the 'Blast' tab (Advanced)
 ```
 Target database: UniProtKB/Swiss-Prot
 E-Threshold: 0.0001
 Hits: 50
 ```
 - Click the 'Run Blast' button.
+```
+>sp|Q9CD83|PHBS_MYCLE Chorismate pyruvate-lyase OS=Mycobacterium leprae (strain TN) OX=272631 GN=ML0133 PE=3 SV=1
+>sp|P9WIC5|PHBS_MYCTU Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv2949c PE=1 SV=1
+>sp|P9WIC4|PHBS_MYCTO Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT3022 PE=3 SV=1
+>sp|Q7TXK6|PHBS_MYCBO Chorismate pyruvate-lyase OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=BQ2027_MB2973C PE=3 SV=1
+```
 
 - ['BLAST' sequence similarity searching](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simila)
 
@@ -482,13 +488,6 @@ Hits: 50
 - [Blast results](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simi-0)
 
 ![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/4057/documents/screen_shot_2014-10-30_at_13.51.04.png)
-
-```
->sp|Q9CD83|PHBS_MYCLE Chorismate pyruvate-lyase OS=Mycobacterium leprae (strain TN) OX=272631 GN=ML0133 PE=3 SV=1
->sp|P9WIC5|PHBS_MYCTU Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv2949c PE=1 SV=1
->sp|P9WIC4|PHBS_MYCTO Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT3022 PE=3 SV=1
->sp|Q7TXK6|PHBS_MYCBO Chorismate pyruvate-lyase OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=BQ2027_MB2973C PE=3 SV=1
-```
 
 ----------
 ## assignment 8
