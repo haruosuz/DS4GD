@@ -495,8 +495,6 @@ Q1. Download FASTA-format files of two protein sequences from UniProt.
 library(seqinr)
 seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]
 seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/A0PQ23.fasta")[[1]]
-#seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/P9WIC5.fasta")[[1]]
-#seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q7TXK6.fasta")[[1]]
 length(seq1)
 getAnnot(seq1)
 ```
