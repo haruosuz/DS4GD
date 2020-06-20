@@ -502,14 +502,14 @@ getAnnot(seq1)
 Q2. Create a dotplot for two sequences.
 ```
 par(mfrow=c(2,2))
-dotPlot(seq1, seq2, wsize = 1, wstep = 1, nmatch = 1)
+dotPlot(seq1, seq2)
 dotPlot(seq1, seq2, wsize = 2, wstep = 2, nmatch = 2)
 ```
 
 Q3. Create a self-similarity dot-plot; i.e. Comparing the sequence against itself.
 ```
-dotPlot(seq1, seq1, wsize = 2, wstep = 2, nmatch = 2)
-dotPlot(seq2, seq2, wsize = 2, wstep = 2, nmatch = 2)
+dotPlot(seq1, seq1)
+dotPlot(seq2, seq2)
 ```
 
 https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#dotplot
