@@ -479,6 +479,12 @@ E-Threshold: 0.0001
 Hits: 50
 ```
 - Click the 'Run Blast' button.
+```
+>sp|Q9CD83|PHBS_MYCLE Chorismate pyruvate-lyase OS=Mycobacterium leprae (strain TN) OX=272631 GN=ML0133 PE=3 SV=1
+>sp|P9WIC5|PHBS_MYCTU Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv2949c PE=1 SV=1
+>sp|P9WIC4|PHBS_MYCTO Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT3022 PE=3 SV=1
+>sp|Q7TXK6|PHBS_MYCBO Chorismate pyruvate-lyase OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=BQ2027_MB2973C PE=3 SV=1
+```
 
 ----------
 ## assignment 8
@@ -493,10 +499,8 @@ Q1. Download FASTA-format files of two protein sequences from UniProt.
 
 ```
 library(seqinr)
-seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]
-seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/A0PQ23.fasta")[[1]]
-length(seq1)
-getAnnot(seq1)
+seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]; length(seq1); getAnnot(seq1)
+seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/A0PQ23.fasta")[[1]]; length(seq2); getAnnot(seq2)
 ```
 
 Q2. Create a dotplot for two sequences.
