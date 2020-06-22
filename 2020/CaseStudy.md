@@ -479,12 +479,6 @@ E-Threshold: 0.0001
 Hits: 50
 ```
 - Click the 'Run Blast' button.
-```
->sp|Q9CD83|PHBS_MYCLE Chorismate pyruvate-lyase OS=Mycobacterium leprae (strain TN) OX=272631 GN=ML0133 PE=3 SV=1
->sp|P9WIC5|PHBS_MYCTU Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=Rv2949c PE=1 SV=1
->sp|P9WIC4|PHBS_MYCTO Chorismate pyruvate-lyase OS=Mycobacterium tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=MT3022 PE=3 SV=1
->sp|Q7TXK6|PHBS_MYCBO Chorismate pyruvate-lyase OS=Mycobacterium bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=BQ2027_MB2973C PE=3 SV=1
-```
 
 ----------
 ## assignment 8
