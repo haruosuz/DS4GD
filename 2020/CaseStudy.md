@@ -490,7 +490,6 @@ Hits: 50
 Answer the following questions. For each question, please record your answer, and what you typed to get this answer.
 
 Q1. Download FASTA-format files of two protein sequences from UniProt.
-
 ```
 library(seqinr)
 seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]; length(seq1); getAnnot(seq1)
@@ -522,12 +521,13 @@ https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.
 Answer the following questions. For each question, please record your answer, and what you typed into R to get this answer.
 
 Q1. Download FASTA-format files of two protein sequences of interest from UniProt.
-
-    library("seqinr")
-    seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]
-    seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/A0PQ23.fasta")[[1]]
-    s1 <- toupper(c2s(seq1)) # convert the sequence to a string and to uppercase
-    s2 <- toupper(c2s(seq2)) # convert the sequence to a string and to uppercase
+```
+library(seqinr)
+seq1 <- read.fasta(file = "http://www.uniprot.org/uniprot/Q9CD83.fasta")[[1]]; length(seq1); getAnnot(seq1)
+seq2 <- read.fasta(file = "http://www.uniprot.org/uniprot/A0PQ23.fasta")[[1]]; length(seq2); getAnnot(seq2)
+s1 <- toupper(c2s(seq1)) # convert the sequence to a string and to uppercase
+s2 <- toupper(c2s(seq2)) # convert the sequence to a string and to uppercase
+```
 
 Q2. What is the alignment score for the optimal global alignment between the two proteins, when you use the BLOSUM50 scoring matrix?
 (set gapOpening = -9.5 and gapExtension = -0.5)
@@ -548,12 +548,14 @@ Q4. What global alignment score do you get for the two proteins, when you use th
     myglobalAlign2 <- pairwiseAlignment(s1, s2, substitutionMatrix = "BLOSUM62",
                        gapOpening = -9.5, gapExtension = -0.5) # align the two sequences
 	myglobalAlign2
+    writePairwiseAlignments(myglobalAlign2)
 
 Q5. What is the alignment score for the optimal local alignment between the two proteins?
 
     mylocalAlign <- pairwiseAlignment(s1, s2, substitutionMatrix = "BLOSUM50",
                      gapOpening = -9.5, gapExtension = -0.5, type="local")
 	mylocalAlign
+    writePairwiseAlignments(mylocalAlign)
 
 ----------
 ## assignment 10
