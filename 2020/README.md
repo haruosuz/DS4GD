@@ -20,7 +20,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 [【変更後】 2020年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/82bacea42ef958c454eb0044be552fc00dbb7952.pdf)
 
 - 2020-05-05 No. 1 - イントロダクション [Introduction](#introduction)
-  - [R: The R Project for Statistical Computing](https://github.com/haruosuz/DS4GD/tree/master/2020#r-the-r-project-for-statistical-computing)
+  - [RとRStudio](#r-rstudio)
 - 2020-05-12 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2020-05-19 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
   - [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
@@ -117,7 +117,7 @@ Conceptualization of SARS-CoV-2 deposition.
 
 ----------
 
-### [R: The R Project for Statistical Computing](https://www.r-project.org/)
+### R RStudio
 - Jan 24, 2020 [R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners](https://www.youtube.com/watch?v=YBAWVNWiZlU)
 - 2017-05-12 [RStudioでRを直感的に使おう MacOS版 2017 統合TV(togotv)｜生命科学系DB・ツール使い倒し系チャンネル](https://doi.org/10.7875/togotv.2017.043)
 - [RとRStudioのインストール方法の解説](http://yukiyanai.github.io/jp/resources/)
