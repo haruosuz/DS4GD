@@ -32,6 +32,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [Coding sequences](#coding-sequences) タンパク質コード配列
   - [codon usage](#codon-usage) コドン使用
   - [amino acid usage](#amino-acid-usage) アミノ酸使用
+- [Class Survey](#class-survey) 授業調査
+- [Advanced Biosciences](#advanced-biosciences) 先端生命科学
 
 ----------
 ## assignment 0
@@ -1151,13 +1153,13 @@ ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid 
 #ACCESSION <- "NC_015529" # https://www.ncbi.nlm.nih.gov/nuccore/NC_015529 Mammuthus columbi mitochondrion 
 
 ## nucleotide FASTA
-fna.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+fna.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text"), seqtype="DNA", strip.desc=TRUE)
 
 ## CDS nucleotide FASTA
-ffn.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+ffn.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype="DNA", strip.desc=TRUE)
 
 ## CDS protein FASTA
-faa.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
+faa.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype="AA", strip.desc=TRUE)
 
 # 配列の数をカウントする:  
 # get the number of elements
@@ -1349,7 +1351,7 @@ library("seqinr") # Loading seqinr package
 ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid pSN1216-29
 
 ## CDS nucleotide FASTA
-ffn.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+ffn.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype="DNA", strip.desc=TRUE)
 
 # get the number of elements
 length(ffn.seqs)
@@ -1424,19 +1426,6 @@ system("open .")
 ### codon usage
 **コドン使用**
 
-https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#codon-usage
-テスト用の配列データを作成する。
-
-https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#codon-usage
-DNA配列の長さが3の倍数（コドン）にならないCDS（例えば、偽遺伝子 pseudogene）を解析から除外する:
-
-https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#codon-usage
-Compute codon usage differences between gene classes for identifying Predicted Highly eXpressed (PHX) and Putative Alien (PA) genes.
-
-https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#codon-usage
-999 coding DNA sequences (CDSs) from E. coli
-CDSs from E. coli O157:H7 Sakai
-
 - [Sharp et al. (2010) "Forces that influence the evolution of codon bias."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/)
   - [Table 1.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2871821/table/RSTB20090305TB1/?report=objectonly)
 Codon usage in E. coli. Codon usage is compared between a set of 40 highly expressed genes (high; see Sharp et al. 2005) and the genome as a whole (all); the data are relative synonymous codon usage values (the ratio of the observed number to that expected if all codons for an amino acid were used equally). Nineteen codons occurring at significantly higher frequencies (see Henry & Sharp 2007) in the high dataset are shown in bold. The data are for E. coli strain K-12 MG1655 (accession number U00096).
@@ -1461,7 +1450,7 @@ library("seqinr") # Loading seqinr package
 ACCESSION <- "NC_000913" # Escherichia coli str. K-12 substr. MG1655
 
 ## CDS nucleotide FASTA
-ffn.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype = c("DNA"), strip.desc = TRUE)
+ffn.seqs <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype="DNA", strip.desc=TRUE)
 
 # get the number of elements
 length(ffn.seqs)
@@ -1502,73 +1491,79 @@ system("open .")
 ----------
 
 ### amino acid usage
-**[アミノ酸](https://ja.wikipedia.org/wiki/アミノ酸)使用**
 
-平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
-
-配列データをNCBIから取得する:  
-Retrieving sequence data from NCBI:  
-```
-library("seqinr") # Loading seqinr package
-
-# Accession Numbers of Sequence Data
-ACCESSION <- "AP018710" # https://www.ncbi.nlm.nih.gov/nuccore/AP018710 plasmid pSN1216-29
-
-## CDS protein FASTA
-faa <- read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_aa&retmode=text"), seqtype = c("AA"), strip.desc = TRUE)
-```
-
-[`getAnnot`](https://rdrr.io/rforge/seqinr/man/getAnnot.html)
-関数を用いて、配列のアノテーションを取得する:  
-
-    # get sequence annotations
-    myAnnot <- getAnnot(faa)
-
-[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
-
-4型分泌装置 [T4SS Secretion System (T4SS)](https://en.wikipedia.org/wiki/Secretion)と、機能が不明なタンパク質 "hypothetical protein" を抽出する:  
-
-    # grep(pattern, x) returns the positions of all elements in x that match pattern
-    # grepl returns a logical vector (match or not for each element of x)
-    pattern <- "T4SS|hypothetical.protein"
-    TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
-    #TF <- !grepl(pattern = "hypothetical.protein", x = myAnnot, ignore.case = TRUE)
-    sum(TF)
-    myAnnot[TF]
-
-[リスト](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html)の成分を取り出す:  
-
-    # extract the elements of the list object
-    faa[TF]
-
-`sapply()`関数は、リストの各要素に関数を適用する。  
-複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
-
-    # absolute frequencies
-    X <- sapply(faa[TF], function(x) AAstat(x, plot=FALSE)$Compo )
-    write.csv(t(X), file="table.aa_af.csv")
-
-    # relative frequencies
-    X <- sapply(faa[TF], function(x) summary(x)$composition )
-    write.csv(t(X), file="table.aa_rf.csv")
-
-    # open current working directory
-    system("open .")
-
-[26. names 属性と要素のラベル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/26.html)
-
-    # Exploring and Transforming Dataframes
-    dim(X)
-    colnames(X) <- sub(pattern=".+protein=(.+)\\] \\[(protein_id|pseudo)=.+", replacement="\\1", getAnnot(faa[TF]))
-
-クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
-
-    # Hierarchical cluster analysis
-    plot(hclust(dist(t(X))), hang=-1)
-
-ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
-
-    # Draw a Heat Map
-    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#amino-acid-usage
 
 ----------
+## Class Survey
+**授業調査**
+
+We are writing to inform you that the period for students to fill out the “Semester-End General Class Survey” for Spring semester classes has begun.
+
+■Schedule (2019 Fall semester)
+
+Survey period	                        Saturday, January 11, 10 a.m.～　 Tuesday, January 28, 11 p.m.
+
+Questions regarding classes can be accessed by clicking on【授業調査】(Class Survey) after logging on to SFC-SFS
+(https://vu.sfc.keio.ac.jp/sfc-sfs/).
+
+秋学期の授業について「学期終わりの全体調査」の学生作業期間を開始いたしましたので、お知らせします。
+
+■　実施予定（2019年度秋学期）
+
+　調査実施期間（学生作業期間）1月11日（土）10時～1月28日（火）23時
+
+担当授業に関する設問については、SFC-SFSホームページにログイン後、「授業調査」の
+リンクからご確認いただけます。
+https://vu.sfc.keio.ac.jp/sfc-sfs/
+
+----------
+## Advanced Biosciences
+**先端生命科学**
+
+“Advanced Biosciences” seminars (Tomita, Naito, Kuroda, Kanai, Soga, Arakawa, Suzuki and Tsujimoto) are operated along with “Systems Biology Project” for graduate students. All members, including faculty members, graduate students, and undergraduate students are involved to research projects. All undergraduate students must take Dr. Tomita’s “Introduction to Systems Biology” for first semester in order to join our “Advanced Biosciences” seminars.
+Please check our website for more details. 　http://bio.sfc.keio.ac.jp/
+
+While microorganisms have important roles in various environments (e.g. human body, natural and built environments), they can cause many infectious diseases, which are threats to public health. In this research group, we use bioinformatics and genomics to understand microbial diversity and its medicinal, agricultural and industrial applications.
+
+Our research focuses on reproducible bioinformatics, genome microbiology, and urban microbiomes. It has been estimated that, by 2050, 10 million people will die every year due to antimicrobial resistance (AMR) if no action is taken. Plasmids often carry multiple AMR genes and can be horizontally transferred between bacteria, contributing to the spread of AMR. To identify and track antimicrobial resistance (AMR) genes and mobile genetic elements (e.g. plasmids and viruses) in urban built environments, we have been collecting samples in mass-transit systems around the globe (Danko et al., 2019) and will collect samples before, during, and after the 2020 Summer Olympic Games (https://github.com/haruosuz/metasub/blob/master/README.md). We are using a combination of bioinformatics tools for identifying plasmids and AMR genes in microbiomes, predicting plasmid host range, and gaining insight into microbial lifestyles (Yano et al., 2018; Merino et al., 2019). 
+
+```
+(1) All undergraduate students must take Dr. Tomita’s “Introduction to Systems Biology” (Seminar B1) for first semester.
+(2) Details for course registration will be announced in seminar.
+(3) All students must have high motivation to lead future society via “Advanced Biosciences” project.
+(4) We welcome students who have not studied biology in high school.
+ <<There will be an interview for applicants. >>
+Deadline: January 20 (Mon), 2020
+Date of interview: January 25 (Sat) or 27 (Mon), 2020.
+```
+Please send an e-mail Prof. Tomita and Ms. Namba (mt@sfc.keio.ac.jp, cnamba@sfc.keio.ac.jp). Title “Application for Dr. Tomita’s seminar.”
+Details will be announced later.
+
+**References:**
+- Danko et al. (2019) "Global Genetic Cartography of Urban Metagenomes and Anti-Microbial Resistance" https://doi.org/10.1101/724526
+- Merino et al. (2019) "Comparative genomics of Bacteria commonly identified in the built environment." https://www.ncbi.nlm.nih.gov/pubmed/30691394
+- Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design." https://www.ncbi.nlm.nih.gov/pubmed/30619542
+- 都市の微生物、世界中で採集　綿棒使い、街の環境考える参考に：朝日新聞 2018年6月26日 https://www.asahi.com/articles/photo/AS20180626002878.html
+
+「先端生命科学系列」の8つの研究会（冨田・内藤・黒田・金井・曽我・荒川・鈴木・辻本）は　合同で運営しています。また大学院のプロジェクト科目（先端生命科学）とも合同に運営しているため、学部生、大学院生そして教員が一緒になって研究を進めます。先端生命科学系列研究会の新規履修希望者は全員まず「システム生物学入門（先端生命科学）：冨田勝担当」を履修してください。
+詳しい内容は研究会ホームページをご覧ください。http://bio.sfc.keio.ac.jp/
+
+微生物は、様々な環境（ヒトの体、自然環境、人工環境など）で重要な役割を果たしている一方、様々な感染症の原因として人類の健康を脅かしている存在です。本研究会では、バイオインフォマティクスとゲノム解析により、環境微生物の多様性を理解し、その医学・農学・工学分野への有効活用を目指しています。
+
+私たちは、再現可能なバイオインフォマティクス、ゲノム微生物学、および都市のマイクロバイオーム（微生物群集とその遺伝子の総体）に関する研究を進めています。このまま何の対策もとらなければ、2050年には薬剤耐性菌による感染症は全世界で年間1000万人の死亡者を出すとも予測されています。プラスミドは、薬剤耐性遺伝子を持ち、細菌間で水平移動することが可能で、薬剤耐性の拡散に寄与しています。都市の人工環境における薬剤耐性遺伝子と可動遺伝因子（プラスミドやウイルスなど）を同定し追跡するために、世界中の大量輸送システムで微生物サンプルを収集してきました (Danko et al., 2019)。また、2020年東京オリンピック開催前後に微生物サンプルを収集します (https://github.com/haruosuz/metasub/blob/master/README.md) 。バイオインフォマティクス・ツールを組み合わせることにより、マイクロバイオームにおけるプラスミドと薬剤耐性遺伝子を同定し、プラスミドの宿主域を予測し、微生物のライフスタイルに関する洞察を得ます (Yano et al., 2018; Merino et al., 2019)。
+```
+■履修条件：
+(1) 新規履修者は、学年にかかわらずシステム生物学入門（冨田研究会B1）を履修申告してください。
+(2) 継続履修者は、別途連絡しますのでその指示に従って履修申告してください。
+(3) 未来社会の先導者になるんだという高い志を持っている塾生に限ります。
+(4) 高校で生物を履修していなくても問題ありません。
+ 
+＜＜新規履修希望者は面接を行います。＞＞
+申込締切日：2020年1月20日（月）
+面接日：2020年1月25日（土）18:10または１月27日（月）18:10
+```
+宛先（mt@sfc.keio.ac.jp, cnamba@sfc.keio.ac.jp 冨田教授・秘書難波）に「研究会申込み」という件名でメールをください。面接場所と時間、用意すべきものなど詳細をメールでお送りします。面接希望日を明記してください。
+
+----------
+
