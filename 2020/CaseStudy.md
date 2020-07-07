@@ -652,7 +652,7 @@ plot.phylo(mytree, main = "Phylogenetic Tree")
 
 Integrate and modify your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it as a PDF/HTML document.
 
-これまでの課題（興味のあるDNA/タンパク質の配列解析の結果など）を統合・修正してレポートのドラフトを作成し、PDF/HTML形式ファイルで提出する。
+これまでの課題（興味あるDNA/タンパク質の配列を解析した結果など）を統合・修正してレポートのドラフトを作成し、PDF/HTML形式ファイルで提出する。
 
 ----------
 
