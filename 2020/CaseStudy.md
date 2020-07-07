@@ -615,6 +615,8 @@ mySequences <- readAAStringSet(file = "myseq.fasta")
 # Multiple Sequence Alignment using ClustalW
 library(msa)
 myAlignment <- msa(mySequences, "ClustalW")
+myAlignment
+#print(myAlignment, show="complete")
 
 # write an XStringSet object to a file
 writeXStringSet(unmasked(myAlignment), file = "myaln.fasta")
