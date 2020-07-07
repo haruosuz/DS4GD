@@ -43,7 +43,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
   - [scripts.zip](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
 - 2020-07-14 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md)
 - 2020-07-21 No. 12 - 最終回
-  - 最終発表 [final presentation](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-11)
+  - 最終発表 [final presentation](#final-presentation)
 - 2020-07-28 レポート提出期限 Deadline for [final report](#final-report)
 
 ----------
@@ -57,17 +57,27 @@ DATA SCIENCE FOR GENOME DYNAMICS
 ## interim report
 **中間発表**
 
+Presentation time: 5 minutes will be allocated for each presentation (including Q&A).
+Briefly describe objects (DNA, protein, and other textual sequences, etc.) you will analyze in your project, using your presentation slides (PowerPoint/Keynote/PDF/HTML document).
+
 発表時間：1人あたり最大5分（質疑応答を含む）。
 プレゼンテーションのスライド（PowerPoint/Keynote/PDF/HTML形式ファイル）を用いて、プロジェクトで解析するオブジェクト（DNA、タンパク質、その他のテキスト配列など）について説明する。
 
+----------
+## final presentation
+**最終発表**
+
 Presentation time: 5 minutes will be allocated for each presentation (including Q&A).
-Briefly describe objects (DNA, protein, and other textual sequences, etc.) you will analyze in your project, using your presentation slides (PowerPoint/Keynote/PDF/HTML document).
+Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global sequence alignment, and local sequence alignment), multiple sequence alignment, and phylogenetic trees, etc.
+
+発表時間：1人あたり最大5分（質疑応答を含む）。
+興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
 
 ----------
 ## final report
 **レポート**
 
-Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, etc.)
+Submit your final report as a PDF/HTML document.
 
 - [IMRAD](https://en.wikipedia.org/wiki/IMRAD) (Introduction, Methods, Results, and Discussion)
 
