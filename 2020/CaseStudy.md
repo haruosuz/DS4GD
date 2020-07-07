@@ -19,7 +19,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 8](#assignment-8) 課題No.8 「dotplot」
 - [assignment 9](#assignment-9) 課題No.9 「Pairwise Sequence Alignment」
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
-- [assignment 11](#assignment-11) 課題No.11 「presentation slides」
+- [assignment 11](#assignment-11) 課題No.11 「draft report」
 
 ----------
 ## assignment 0
@@ -646,17 +646,11 @@ plot.phylo(mytree, main = "Phylogenetic Tree")
 
 ----------
 ## assignment 11
-**課題No.11 「presentation slides」**
+**課題No.11 「draft report」**
 
-Submit your presentation slides for your final presentation Tuesday 2020-07-21.  
-**5** minutes will be allocated for each presentation, including presentation and discussion.
+Integrate and edit your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it as a PDF/HTML document.
 
-Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global sequence alignment, and local sequence alignment), multiple sequence alignment, and phylogenetic trees, etc.
-
-2020-07-21 (火) 最終発表のスライドを提出する。  
-発表時間：1人あたり最大**5**分
-
-興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
+これまでの課題（興味あるDNA/タンパク質の配列解析の結果）を統合・編集してレポートのドラフトを作成し、PDF/HTMLファイルで提出する。
 
 ----------
 
