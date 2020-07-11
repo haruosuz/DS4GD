@@ -199,6 +199,9 @@ https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
 
 メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
 
+- [Rstudioで楽々ドキュメント生成](https://kohske.github.io/R/rstudio/) Rスクリプトからノートブックの作成
+- [Rスクリプトからレポート生成](https://rpubs.com/kohske/595)
+
 ----------
 ----------
 ## Chunk options
@@ -227,7 +230,6 @@ https://rstudio.com/wp-content/uploads/2016/11/Rmarkdown-cheatsheet-2.0_ja.pdf
 めるかの設定 (デフォルト = TRUE)
 - message - message()関数で出力される文字を
 表示するかの設定 (デフォルト = TRUE)
-
 
 ----------
 ----------
