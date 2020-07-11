@@ -333,15 +333,13 @@ Running under: macOS Mojave 10.14.6
 ```
 
 ----------
-## NCBI Taxonomy
-[The Taxonomy Database is a curated classification and nomenclature for all of the organisms in the public sequence databases. This currently represents about 10% of the described species of life on the planet.](https://www.ncbi.nlm.nih.gov/taxonomy)  
+## [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) 
 [NCBI Entrezデータベースに少なくとも1件以上登録されている全ての生物種と上位分類名を収集したデータベース](https://integbio.jp/dbcatalog/record/nbdc00700)  
 
-- [taxonomy ID、学名、系統情報など相互変換する taxonkit - macでインフォマティクス](http://kazumaxneo.hatenablog.com/entry/2019/01/23/073000)
 - 統合ウェブサービスの概要と目的 http://togows.dbcls.jp/site/ja/index.html
-  - TogoWS RESTサービスを使い倒す 2011 https://doi.org/10.7875/togotv.2011.058
-  - TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
-    - http://togows.dbcls.jp/entry/nucleotide/J00231/taxonomy
+- TogoWS RESTサービスを使い倒す 2011 https://doi.org/10.7875/togotv.2011.058
+- TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
+  - http://togows.dbcls.jp/entry/nucleotide/J00231/taxonomy
 
 NCBIから分類群を取得する:  
 ```
