@@ -341,10 +341,10 @@ Running under: macOS Mojave 10.14.6
 - TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
   - http://togows.dbcls.jp/entry/nucleotide/J00231/taxonomy
 
-NCBIから分類群を取得する:  
+NCBIからTaxonomyを取得する:  
 ```
 # Make a vector containing NCBI accessions
-ACCESSIONs <- c("KM670336", "AP018710")
+ACCESSIONs <- c("NC_007322", "NC_007414", "AP018710")
 
 # create a function to retrieve NCBI taxonomy
 get_taxonomy <- function(ACCESSION) read.table(file=paste0("http://togows.dbcls.jp/entry/nucleotide/",ACCESSION,"/taxonomy"), sep=";")
