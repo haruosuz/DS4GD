@@ -522,13 +522,20 @@ Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 ## BLAST
 [BLAST (Basic Local Alignment Search Tool)](https://ja.wikipedia.org/wiki/BLAST)
 
+### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
+- [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
+  - [Checking the **Align two or more sequences** box will display two text boxes for entering queries.
+  - Enter the E. coli EbgC protein accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1) into the upper search box
+  - Enter the [Bacteroides EbgC protein](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides) protein accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1) into the lower search box
+  - click the **BLAST** button
+
+### [UniProt BLAST](https://www.uniprot.org/blast/)
 - [How to use UniProt tools](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/exploring-uniprotkb-entry/how-use-uniprot-t)
   - ['BLAST' sequence similarity searching](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/how-use-uniprot-tools/blast-sequence-simila)
 
 ![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/2760/images/UniProt_tutorial/blast_1.png)
 
-- https://www.uniprot.org/
-  - https://www.uniprot.org/uniprot/Q9CD83
+- https://www.uniprot.org/uniprot/Q9CD83
 - Select the 'Blast' tab -> 'Advanced'
 ```
 Target database: UniProtKB/Swiss-Prot
