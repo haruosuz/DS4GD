@@ -524,9 +524,11 @@ Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
 
 ### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
 - [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
-  - [Checking the **Align two or more sequences** box will display two text boxes for entering queries.
+
+[Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
+  1. Checking the **Align two or more sequences** box will display two text boxes for entering queries.
   - Enter the E. coli EbgC protein accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1) into the upper search box
-  - Enter the [Bacteroides EbgC protein](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides) protein accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1) into the lower search box
+  - Enter the [Bacteroides EbgC protein](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides) accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1) into the lower search box
   - click the **BLAST** button
 
 ### [UniProt BLAST](https://www.uniprot.org/blast/)
