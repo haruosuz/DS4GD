@@ -338,10 +338,11 @@ Running under: macOS Mojave 10.14.6
 ## [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) 
 [NCBI Entrezデータベースに少なくとも1件以上登録されている全ての生物種と上位分類名を収集したデータベース](https://integbio.jp/dbcatalog/record/nbdc00700)  
 
-- 統合ウェブサービスの概要と目的 http://togows.dbcls.jp/site/ja/index.html
+- NCBI Taxonomy Browserを使って、生物分類と配列情報を関連させて調べる 2017 https://doi.org/10.7875/togotv.2017.092
 - TogoWS RESTサービスを使い倒す 2011 https://doi.org/10.7875/togotv.2011.058
-- TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
-  - http://togows.dbcls.jp/entry/nucleotide/J00231/taxonomy
+  - 統合ウェブサービスの概要と目的 http://togows.dbcls.jp/site/ja/index.html
+  - TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
+    - http://togows.dbcls.jp/entry/nucleotide/J00231/taxonomy
 
 NCBIからTaxonomyを取得する:  
 ```
