@@ -12,6 +12,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 ## References
 **参考文献**
 - [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
+  - [scripts.zip](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
 
 ## Class Schedule & Materials
 **講義日程と資料**
@@ -39,9 +40,11 @@ DATA SCIENCE FOR GENOME DYNAMICS
     - グローバル・アライメント [Pairwise global alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
     - ローカル・アラインメント [Pairwise local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
 - 2020-07-07 No. 10 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-  - [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
+- 2020-07-14 No. 11 - [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-11) 課題No.11 「draft report」
   - [scripts.zip](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
-- 2020-07-14 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md)
+scripts/my_script2report.R
+  - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md)
+    - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
 - 2020-07-21 No. 12 - 最終回
   - 最終発表 [final presentation](#final-presentation)
 - 2020-07-28 レポート提出期限 Deadline for [final report](#final-report)
