@@ -23,6 +23,7 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 9](#assignment-9) 課題No.9 「Pairwise Sequence Alignment」
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
 - [assignment 11](#assignment-11) 課題No.11 「draft report」
+- [Class Survey](#class-survey) 授業調査
 
 ----------
 ## assignment 0
