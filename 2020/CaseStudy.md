@@ -17,6 +17,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
 - [BLAST](#blast)
+  - [NCBI BLAST](#ncbi-blast)
+  - [UniProt BLAST](#uniprot-blast)
 - [assignment 8](#assignment-8) 課題No.8 「dotplot」
 - [assignment 9](#assignment-9) 課題No.9 「Pairwise Sequence Alignment」
 - [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
@@ -531,7 +533,7 @@ Q4. Is the 3-nucleotide word GAC over-represented or under-represented in the ge
   - Enter the E. coli EbgC protein accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1) into the upper search box
   - Enter the [Bacteroides EbgC protein](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides) accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1) into the lower search box
   - Click the **BLAST** button
-  - The result shows an E value of 1.8 (above the limit of 1e–3 for homologs). Thus, despite having the same name, the Bacteroides EbgC sequences are not homologs of the E. coli EbgC sequence and do not belong on the tree.
+  - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the Bacteroides EbgC sequences are not homologs of the E. coli EbgC sequence and do not belong on the tree.
 
 Reference:
 Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
@@ -696,5 +698,26 @@ Integrate and modify your previous assignments (e.g. results of analyzing DNA/pr
 これまでの課題（興味あるDNA/タンパク質の配列を解析した結果など）を統合・修正してレポートのドラフトを作成し、PDF/HTML形式ファイルで提出する。
 
 ----------
+## Class Survey
+**授業調査**
 
+We are writing to inform you that the period for students to fill out the “Semester-End General Class Survey” for Spring semester classes has begun.
 
+■Schedule (2020 Spring semester)
+
+Survey Period 	               Thurseday, July 9, 10 a.m.～ Friday, July 26, 11 p.m.
+
+Questions regarding classes can be accessed by clicking on【授業調査】(Class Survey) after logging on to SFC-SFS
+(https://vu.sfc.keio.ac.jp//sfc-sfs/).
+
+春学期の授業について「学期終わりの全体調査」の学生作業期間を開始いたしましたので、お知らせします。
+
+■　実施期間（2020年度春学期）
+
+　調査実施期間（学生作業期間）7月 9日（木）10時～7月26日（日）23時
+
+授業に関する設問については、SFC-SFSにログイン後、「授業調査」の
+リンクからご確認いただけます。
+https://vu.sfc.keio.ac.jp//sfc-sfs/
+
+----------
