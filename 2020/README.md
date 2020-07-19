@@ -45,6 +45,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 scripts/my_script2report.R
   - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md)
     - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
+    - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
 - 2020-07-21 No. 12 - 最終回
   - 最終発表 [final presentation](#final-presentation)
 - 2020-07-28 レポート提出期限 Deadline for [final report](#final-report)
@@ -82,7 +83,18 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 
 Submit your final report as a PDF/HTML document.
 
-- [IMRAD](https://en.wikipedia.org/wiki/IMRAD) (Introduction, Methods, Results, and Discussion)
+- https://en.wikipedia.org/wiki/IMRAD
+(Introduction, Methods, Results, and Discussion) is a common organizational structure (a document format).
+- https://ja.wikipedia.org/wiki/IMRAD
+は、文章構成の型式の名称の1つである。
+  - Title（タイトル; T）
+  - Abstract（アブストラクト; A）
+  - Introduction（導入; I） :What are you studying and why?(何を研究したのか？、何故それを研究したのか)
+  - Methods（研究方法; M） :What did you do?（具体的には何をしたのか？）
+  - Results（実験結果; R） :What did you find?（何がわかったのか?）
+  - Discussion（考察; D） :What do your findings mean?(あなたが見つけたことは何を意味するのか？）
+  - Conclusion（まとめ; C） :What have you learned from the study?(この研究を通じて得られたものは？)
+  - References（参考文献一覧）
 
 ----------
 
@@ -133,6 +145,7 @@ Conceptualization of SARS-CoV-2 deposition.
 ### R RStudio
 - Jan 24, 2020 [R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners](https://www.youtube.com/watch?v=YBAWVNWiZlU)
 - 2017-05-12 [RStudioでRを直感的に使おう MacOS版 2017 統合TV(togotv)｜生命科学系DB・ツール使い倒し系チャンネル](https://doi.org/10.7875/togotv.2017.043)
+- (Rで)塩基配列解析 http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html
 - [RとRStudioのインストール方法の解説](http://yukiyanai.github.io/jp/resources/)
   - [Linux (Ubuntu) 編 (PDF, 4.6MB)](http://yukiyanai.github.io/jp/resources/docs/install-R_ubuntu.pdf)
   - [macOS 編 (PDF, 4.9MB)](http://yukiyanai.github.io/jp/resources/docs/install-R_macOS.pdf)
