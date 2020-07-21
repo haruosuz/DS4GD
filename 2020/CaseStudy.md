@@ -590,7 +590,7 @@ https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.
 ## assignment 9
 **課題No.9 「Pairwise Sequence Alignment」**
 
-[Exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises) |
+[Exercises](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#exercises) |
 [Answers to the exercises on Sequence Alignment](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#sequence-alignment)
 
 Answer the following questions. For each question, please record your answer, and what you typed into R to get this answer.
@@ -636,7 +636,7 @@ Q5. What is the alignment score for the optimal local alignment between the two 
 ## assignment 10
 **課題No.10 「Multiple Alignment and Phylogenetic Trees」**
 
-[Exercises on Multiple Alignment and Phylogenetic Trees](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises) |
+[Exercises](http://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter5.html#exercises) |
 [Answers to the exercises on Multiple Alignment and Phylogenetic Trees](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html#multiple-alignment-and-phylogenetic-trees)
 
 Answer the following questions. For each question, please record your answer, and what you typed into R to get this answer.
