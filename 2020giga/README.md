@@ -1,4 +1,4 @@
-# DS4GD
+# 2020giga
 
 DATA SCIENCE FOR GENOME DYNAMICS
 [Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2020_25381&ks=B3206&key=4e5c62fefb41a69d87cbb720a8a5be2e&lang=en)  
@@ -8,40 +8,33 @@ DATA SCIENCE FOR GENOME DYNAMICS
 ## References
 **参考文献**
 - [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
-  - [scripts.zip](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
 
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- 2020-10-06 No. 1 - イントロダクション [Introduction](#introduction)
+- 2020-10-06 No. 1 - 休講 | no class 
+- 2020-10-13 No. 2 - イントロダクション | [Introduction](#introduction)
   - [R/RStudio](#r-rstudio)
-- 2020-10-13 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
-- 2020-10-20 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
-  - [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-  - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-genome-list)
-- 2020-10-27 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
-- 2020-11-03 No. 5 - [Guest Speaker](#guest-speaker)
+- 2020-10-20 No. 3 - R言語入門 | [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
+- 2020-10-27 No. 4 - DNA配列解析(1) | [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
+- 2020-11-03 No. 5 - DNA配列解析(2) | [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2020-11-10 No. 6 - [Guest Speaker](#guest-speaker)
-- 2020-11-17 No. 7 - 中間発表 [interim report](#interim-report)
-- 2019-11-24 No. 8 - ペアワイズ配列アラインメント (1)[ Pairwise Sequence Alignment (1) ]
-  - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
-    - タンパク質データベース Protein sequence database [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
-    - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
+- 2020-11-10 No. 6 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+  - タンパク質データベース Protein sequence database [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
+  - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
   - [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)
-- 2019-12-01 No. 9 - ペアワイズ配列アラインメント (2)[ Pairwise Sequence Alignment (2) ]
-  - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
-    - グローバル・アライメント [Pairwise global alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
-    - ローカル・アラインメント [Pairwise local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
-- 2019-12-08 No. 10 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2020-12-15 No. 11 - [scripts.zip](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
-scripts/my_script2report.R
-  - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md)
-    - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
-    - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
+- 2020-11-17 No. 7 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+  - グローバル・アライメント [Pairwise global alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
+  - ローカル・アラインメント [Pairwise local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
+- 2020-11-24 No. 8 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+- 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
+- 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
+- 2020-12-15 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md)
+  - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
+  - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
-- 2020-01-29 レポート提出期限 Deadline for [final report](#final-report)
+- 2020-12-29 レポート提出期限 Deadline for [final report](#final-report)
   - 授業調査 Class Survey
   - 先端生命科学 Advanced Biosciences
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
