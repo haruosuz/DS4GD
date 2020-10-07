@@ -23,10 +23,10 @@ DATA SCIENCE FOR GENOME DYNAMICS
   - タンパク質データベース Protein sequence database [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
   - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
   - [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)
-- 2020-11-17 No. 7 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+- 2020-11-17 No. 7 - ペアワイズ配列アラインメント | [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - グローバル・アライメント [Pairwise global alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
   - ローカル・アラインメント [Pairwise local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
-- 2020-11-24 No. 8 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+- 2020-11-24 No. 8 - 多重配列アライメントと系統樹 | [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
 - 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
 - 2020-12-15 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md)
@@ -43,23 +43,6 @@ Office closed / Winter break（12/26～1/5）
 事務室閉室・冬季休校（12/26～1/5）
 
 ----------
-## Guest speaker
-**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
-
-- 講師: TBA
-- 講義資料 TBA
-
-----------
-## interim report
-**中間発表**
-
-Presentation time: 5 minutes will be allocated for each presentation (including Q&A).
-Briefly describe objects (DNA, protein, and other textual sequences, etc.) you will analyze in your project, using your presentation slides (PowerPoint/Keynote/PDF/HTML document).
-
-発表時間：1人あたり最大5分（質疑応答を含む）。
-プレゼンテーションのスライド（PowerPoint/Keynote/PDF/HTML形式ファイル）を用いて、プロジェクトで解析するオブジェクト（DNA、タンパク質、その他のテキスト配列など）について説明する。
-
-----------
 ## final presentation
 **最終発表**
 
@@ -68,23 +51,6 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 
 発表時間：1人あたり最大5分（質疑応答を含む）。
 興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
-
-----------
-## final report
-**レポート**
-
-Submit your final report as a PDF/HTML document.
-
-- https://en.wikipedia.org/wiki/IMRAD
-(Introduction, Methods, Results, and Discussion) is a common organizational structure (a document format).
-- https://ja.wikipedia.org/wiki/IMRAD
-は、文章構成の型式の名称の1つである。
-  - Title（タイトル; T）
-  - Introduction（導入; I） :What are you studying and why?(何を研究したのか？、何故それを研究したのか)
-  - Methods（研究方法; M） :What did you do?（具体的には何をしたのか？）
-  - Results（実験結果; R） :What did you find?（何がわかったのか?）
-  - Discussion（考察; D） :What do your findings mean?(あなたが見つけたことは何を意味するのか？）
-  - References（参考文献一覧）
 
 ----------
 
