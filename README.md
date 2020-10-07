@@ -1,12 +1,7 @@
-Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2020-04
-
-----------
-
-# DS4GD
 GENOME INFORMATICS / DATA SCIENCE FOR GENOME DYNAMICS[DS2]
 生命情報解析 / 生命動態のデータサイエンス[DS2]
 
+- [2020 Fall (GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2020giga)
 - [2020 Spring](https://github.com/haruosuz/DS4GD/tree/master/2020)
 - [2019 Fall (GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2019giga)
 - [2019 Spring](https://github.com/haruosuz/DS4GD/tree/master/2019)
