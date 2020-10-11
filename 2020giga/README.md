@@ -53,8 +53,8 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
 
 ----------
-
 ## Introduction
+
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
 
 ### [Bioinformatician](https://www.biostars.org/p/223069/)
@@ -64,13 +64,19 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 ### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
 
 ----------
-
 ### R RStudio
+- Oct 10, 2020 [R for Ecologists (lesson 1) Installing R and RStudio](https://www.youtube.com/watch?v=YKvkXKeGoa8)
 - Jan 24, 2020 [R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners](https://www.youtube.com/watch?v=YBAWVNWiZlU)
-- 2017-05-12 [RStudioでRを直感的に使おう MacOS版 2017 統合TV(togotv)｜生命科学系DB・ツール使い倒し系チャンネル](https://doi.org/10.7875/togotv.2017.043)
+- 2018-04-08 [統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜](https://doi.org/10.7875/togotv.2018.098)
+- 2017-05-12 [RStudioでRを直感的に使おう MacOS版 2017](https://doi.org/10.7875/togotv.2017.043)
 - [RとRStudioのインストール方法の解説](http://yukiyanai.github.io/jp/resources/)
+  - [Linux (Ubuntu) 編 (PDF, 4.6MB)](http://yukiyanai.github.io/jp/resources/docs/install-R_ubuntu.pdf)
+  - [macOS 編 (PDF, 4.9MB)](http://yukiyanai.github.io/jp/resources/docs/install-R_macOS.pdf)
+  - [Windows 編 （PDF, 5.8MB）](http://yukiyanai.github.io/jp/resources/docs/install-R_windows.pdf)
 
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
 ----------
+
+
 
