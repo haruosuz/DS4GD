@@ -8,7 +8,6 @@ https://sol.sfc.keio.ac.jp/
 
 ## Table of Contents
 - [assignment 0](#assignment-0) 選抜課題
-- [assignment 1](#assignment-1) 課題No.1 class cancelled
 - [assignment 2](#assignment-2) 課題No.2 「Introduction to R」
 - [Compile Report](#compile-report)
 - [Chunk options](#chunk-options)
@@ -17,14 +16,6 @@ https://sol.sfc.keio.ac.jp/
 - [BLAST](#blast)
   - [NCBI BLAST](#ncbi-blast)
   - [UniProt BLAST](#uniprot-blast)
-- [assignment 3](#assignment-3) 課題No.3 「Installing R packages」
-- [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (1)」
-- [assignment 5](#assignment-5) 課題No.5 「DNA Sequence Statistics (2)」
-- 
-- [assignment 8](#assignment-8) 課題No.8 「dotplot」
-- [assignment 9](#assignment-9) 課題No.9 「Pairwise Sequence Alignment」
-- [assignment 10](#assignment-10) 課題No.10 「Multiple Alignment and Phylogenetic Trees」
-- [assignment 11](#assignment-11) 課題No.11 「draft report」
 - [Class Survey](#class-survey) 授業調査
 
 ----------
@@ -36,11 +27,6 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 
 【課題内容】
 本授業で解析したい興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）を述べてください。課題のタイトルと参考文献も明記してください。
-
-----------
-## assignment 1
-
-class cancelled
 
 ----------
 ## assignment 2
