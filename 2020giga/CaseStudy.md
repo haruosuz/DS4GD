@@ -1,5 +1,5 @@
 **DATA SCIENCE FOR GENOME DYNAMICS (GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2020giga)**  
-https://sol.sfc.keio.ac.jp/
+[SFC Online Learning System (SOL)](https://sol.sfc.keio.ac.jp/)
 
 ----------
 
