@@ -28,8 +28,6 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
 - 2020-12-29 レポート提出期限 Deadline for [final report](#final-report)
-  - 授業調査 Class Survey
-  - 先端生命科学 Advanced Biosciences
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
