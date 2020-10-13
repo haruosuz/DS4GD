@@ -26,9 +26,10 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 ## assignment 2
 **課題No.2 「Introduction to R」**
 
+[Download R scripts](https://github.com/haruosuz/r4bioinfo/raw/master/scripts/my_basic_r.zip)
+
 Watch the following videos and write your comments or questions.
 - [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
-  - [my_datasciencedojo_r.R](https://github.com/haruosuz/r4bioinfo/blob/master/scripts/my_datasciencedojo_r.R)
 
 [Example answer]
 ```
