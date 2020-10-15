@@ -19,12 +19,12 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-10-27 No. 4 - DNA配列解析(1) | [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2020-11-03 No. 5 - DNA配列解析(2) | [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2020-11-10 No. 6 - ペアワイズ配列アラインメント | [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
-- 2020-11-17 No. 7 - 多重配列アライメントと系統樹 | [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2020-11-24 No. 8 - 中間発表 [interim report](#interim-report)
-- 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
-- 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
-- 2020-12-15 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md)
+- 2020-11-10 No. 6 - TBA
+- 2020-11-17 No. 7 - TBA
+- 2020-11-24 No. 8 - TBA
+- 2020-12-01 No. 9 - TBA
+- 2020-12-08 No. 10 - TBA
+- 2020-12-15 No. 11 - TBA
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
 - 2020-12-29 レポート提出期限 Deadline for [final report](#final-report)
