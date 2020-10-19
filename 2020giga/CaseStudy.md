@@ -1,4 +1,4 @@
-**DATA SCIENCE FOR GENOME DYNAMICS (GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2020giga)**  
+**[DATA SCIENCE FOR GENOME DYNAMICS (GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2020giga)**  
 [SFC Online Learning System (SOL)](https://sol.sfc.keio.ac.jp/)
 
 ----------
@@ -11,6 +11,7 @@
 - assignment 1 課題No.1 class cancelled
 - [assignment 2](#assignment-2) 課題No.2 「Introduction to R」
 - [Compile Report](#compile-report)
+- [assignment 3](#assignment-3) 課題No.3 「Installing R packages」
 
 ----------
 ## assignment 0
@@ -52,6 +53,42 @@ My questions are as follows:
 [Download R scripts](https://github.com/haruosuz/r4bioinfo/raw/master/scripts/my_basic_r.zip)
 
 ----------
+### R_vector
+
+2017.06.13
+https://stats.biopapyrus.jp/r/basic/vector.html
+ベクトル | R のベクトル操作と演算
+R のベクトルは、数学のベクトルとほぼ同じ概念である。数学では 1 つのベクトルに複数の要素を含めると同様に、R では 1 つのベクトルに複数の値を代入できる。
+
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html
+R-Tips
+ ベクトル篇
+
+----------
+### R_factor
+
+http://www.okadajp.org/RWiki/?因子Tips大全
+
+https://sites.google.com/site/webtextofr/edit
+7. ベクトルデータの操作 - 統計ソフトRの使い方
+Rには大きく４つのタイプのデータがあります．それは，(1)　数値型，(2) 文字列型，(3) 因子型，(4) 論理値型です．
+因子型データは，例えば男性を”1”，女性を”2”として入力されたデータです．
+いわゆるカテゴリカルデータ（質的データ）は，Rでは因子型データとして扱います．
+
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html
+16. 種々のベクトル
+文字型ベクトル
+順序つき因子ベクトルと順序無し因子ベクトル
+関数 factor() を用いることで，カテゴリーを要素としたベクトルを作成することが出来る．関数 levels() でグループ化されているかを確認することが出来，関数 str() でオブジェクトの要約値を表示することが出来る．
+結果を見ると，要素の順序が勝手に入れ替わっていることが分かる．明示的に順序を指定する場合は，引数 levels に順序を指定すれば良い．
+関数 factor() では因子間に大小関係は無かったが，関数 ordered() で順序付きの因子ベクトルが作成出来る．
+
+https://sites.google.com/site/leihcrev/r/ordered-and-unordered-factors
+入門本編 4章 順序付き因子と順序無し因子
+「因子 (factor)」とは、ベクトルの一種で、同じ要素数を持つ別のベクトルの要素のカテゴリ化を行うもの。「順序付き因子 (ordered factor)」と「順序無し因子 (unordered factor)」がある。主にモデル式で効果を発揮する。
+順序付き因子を適用したデータは、尺度水準が順序尺度であることを示す。順序無し因子を適用すれば名義尺度にあたる。因子を付加していない数値ベクトルは、間隔尺度以上の高水準の尺度ということになる。順序付き因子と順序無し因子は、モデルへの当てはめなどで異なった振舞いを示す。
+
+----------
 ## Compile Report
 
 https://rmarkdown.rstudio.com/articles_report_from_r_script.html
@@ -79,7 +116,6 @@ https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
 - [Rstudioで楽々ドキュメント生成](https://kohske.github.io/R/rstudio/) Rスクリプトからノートブックの作成
 - [Rスクリプトからレポート生成](https://rpubs.com/kohske/595)
 
-----------
 ----------
 ## assignment 3
 **課題No.3 「Installing R packages」**
@@ -184,5 +220,4 @@ Running under: macOS Mojave 10.14.6
 
 ----------
 ----------
-
 
