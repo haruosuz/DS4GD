@@ -55,7 +55,7 @@ My questions are as follows:
 ----------
 ### R_object
 
-[A brief introduction to R](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/installr.html#a-brief-introduction-to-r]
+[A brief introduction to R](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/installr.html#a-brief-introduction-to-r)
 All variables (scalars, vectors, matrices, etc.) created by R are called objects.
 
 [05. オブジェクトと代入（付値）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/05.html)
