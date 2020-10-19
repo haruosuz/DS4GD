@@ -53,6 +53,16 @@ My questions are as follows:
 [Download R scripts](https://github.com/haruosuz/r4bioinfo/raw/master/scripts/my_basic_r.zip)
 
 ----------
+### R_object
+
+https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/installr.html#a-brief-introduction-to-r
+All variables (scalars, vectors, matrices, etc.) created by R are called objects.
+
+http://cse.naro.affrc.go.jp/takezawa/r-tips/r/05.html
+05. オブジェクトと代入（付値）
+R が作ったり操作した実体はオブジェクト（object）と呼ばれる．変数，数の配列，文字列関数，データ，関数その他全てがそれにあたる．
+
+----------
 ### R_vector
 
 2017.06.13
