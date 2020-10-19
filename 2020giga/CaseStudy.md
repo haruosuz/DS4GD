@@ -55,48 +55,36 @@ My questions are as follows:
 ----------
 ### R_object
 
-https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/installr.html#a-brief-introduction-to-r
+[A brief introduction to R](https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/installr.html#a-brief-introduction-to-r]
 All variables (scalars, vectors, matrices, etc.) created by R are called objects.
 
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/05.html
-05. オブジェクトと代入（付値）
+[05. オブジェクトと代入（付値）](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/05.html)
 R が作ったり操作した実体はオブジェクト（object）と呼ばれる．変数，数の配列，文字列関数，データ，関数その他全てがそれにあたる．
 
 ----------
 ### R_vector
 
-2017.06.13
-https://stats.biopapyrus.jp/r/basic/vector.html
-ベクトル | R のベクトル操作と演算
-R のベクトルは、数学のベクトルとほぼ同じ概念である。数学では 1 つのベクトルに複数の要素を含めると同様に、R では 1 つのベクトルに複数の値を代入できる。
-
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html
-R-Tips
+[R-Tips](http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html)
  ベクトル篇
+
+[ベクトル | R のベクトル操作と演算](https://stats.biopapyrus.jp/r/basic/vector.html)
+R のベクトルは、数学のベクトルとほぼ同じ概念である。数学では 1 つのベクトルに複数の要素を含めると同様に、R では 1 つのベクトルに複数の値を代入できる。
 
 ----------
 ### R_factor
 
 http://www.okadajp.org/RWiki/?因子Tips大全
 
-https://sites.google.com/site/webtextofr/edit
-7. ベクトルデータの操作 - 統計ソフトRの使い方
+[7. ベクトルデータの操作 - 統計ソフトRの使い方](https://sites.google.com/site/webtextofr/edit)
 Rには大きく４つのタイプのデータがあります．それは，(1)　数値型，(2) 文字列型，(3) 因子型，(4) 論理値型です．
 因子型データは，例えば男性を”1”，女性を”2”として入力されたデータです．
 いわゆるカテゴリカルデータ（質的データ）は，Rでは因子型データとして扱います．
 
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html
-16. 種々のベクトル
-文字型ベクトル
-順序つき因子ベクトルと順序無し因子ベクトル
-関数 factor() を用いることで，カテゴリーを要素としたベクトルを作成することが出来る．関数 levels() でグループ化されているかを確認することが出来，関数 str() でオブジェクトの要約値を表示することが出来る．
-結果を見ると，要素の順序が勝手に入れ替わっていることが分かる．明示的に順序を指定する場合は，引数 levels に順序を指定すれば良い．
-関数 factor() では因子間に大小関係は無かったが，関数 ordered() で順序付きの因子ベクトルが作成出来る．
+[入門本編 4章 順序付き因子と順序無し因子](https://sites.google.com/site/leihcrev/r/ordered-and-unordered-factors)
+「因子 (factor)」とは、ベクトルの一種で、同じ要素数を持つ別のベクトルの要素のカテゴリ化を行うもの。
 
-https://sites.google.com/site/leihcrev/r/ordered-and-unordered-factors
-入門本編 4章 順序付き因子と順序無し因子
-「因子 (factor)」とは、ベクトルの一種で、同じ要素数を持つ別のベクトルの要素のカテゴリ化を行うもの。「順序付き因子 (ordered factor)」と「順序無し因子 (unordered factor)」がある。主にモデル式で効果を発揮する。
-順序付き因子を適用したデータは、尺度水準が順序尺度であることを示す。順序無し因子を適用すれば名義尺度にあたる。因子を付加していない数値ベクトルは、間隔尺度以上の高水準の尺度ということになる。順序付き因子と順序無し因子は、モデルへの当てはめなどで異なった振舞いを示す。
+[16. 種々のベクトル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html)
+順序つき因子ベクトルと順序無し因子ベクトル
 
 ----------
 ## Compile Report
