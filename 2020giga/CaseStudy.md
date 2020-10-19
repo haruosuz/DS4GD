@@ -64,6 +64,8 @@ R が作ったり操作した実体はオブジェクト（object）と呼ばれ
 ----------
 ### R_vector
 
+[20 Vectors | R for Data Science](https://r4ds.had.co.nz/vectors.html)
+
 [R-Tips](http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html)
  ベクトル篇
 
@@ -73,18 +75,12 @@ R のベクトルは、数学のベクトルとほぼ同じ概念である。数
 ----------
 ### R_factor
 
-http://www.okadajp.org/RWiki/?因子Tips大全
+[15 Factors | R for Data Science](https://r4ds.had.co.nz/factors.html)
 
 [7. ベクトルデータの操作 - 統計ソフトRの使い方](https://sites.google.com/site/webtextofr/edit)
 Rには大きく４つのタイプのデータがあります．それは，(1)　数値型，(2) 文字列型，(3) 因子型，(4) 論理値型です．
 因子型データは，例えば男性を”1”，女性を”2”として入力されたデータです．
 いわゆるカテゴリカルデータ（質的データ）は，Rでは因子型データとして扱います．
-
-[入門本編 4章 順序付き因子と順序無し因子](https://sites.google.com/site/leihcrev/r/ordered-and-unordered-factors)
-「因子 (factor)」とは、ベクトルの一種で、同じ要素数を持つ別のベクトルの要素のカテゴリ化を行うもの。
-
-[16. 種々のベクトル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html)
-順序つき因子ベクトルと順序無し因子ベクトル
 
 ----------
 ## Compile Report
