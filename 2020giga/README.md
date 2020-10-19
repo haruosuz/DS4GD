@@ -12,12 +12,12 @@ DATA SCIENCE FOR GENOME DYNAMICS
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- 2020-10-06 No. 1 - 休講 | no class 
-- 2020-10-13 No. 2 - イントロダクション | [Introduction](#introduction)
+- 2020-10-06 No. 1 - 休講 no class 
+- 2020-10-13 No. 2 - イントロダクション [Introduction](#introduction)
   - [R/RStudio](#r-rstudio)
-- 2020-10-20 No. 3 - R言語入門 | [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
-- 2020-10-27 No. 4 - DNA配列解析(1) | [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
-- 2020-11-03 No. 5 - DNA配列解析(2) | [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
+- 2020-10-20 No. 3 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
+- 2020-10-27 No. 4 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
+- 2020-11-03 No. 5 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2020-11-10 No. 6 - TBA
 - 2020-11-17 No. 7 - TBA
