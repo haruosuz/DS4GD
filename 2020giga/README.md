@@ -19,12 +19,12 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-10-27 No. 4 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
 - 2020-11-03 No. 5 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2020-11-10 No. 6 - TBA
-- 2020-11-17 No. 7 - TBA
-- 2020-11-24 No. 8 - TBA
-- 2020-12-01 No. 9 - TBA
-- 2020-12-08 No. 10 - TBA
-- 2020-12-15 No. 11 - TBA
+- 2020-11-10 No. 6 - ペアワイズ配列アラインメント | [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+- 2020-11-17 No. 7 - 多重配列アライメントと系統樹 | [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+- 2020-11-24 No. 8 - 中間発表 [interim report](#interim-report)
+- 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
+- 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
+- 2020-12-15 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md)
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 final presentation
 - 2020-12-29 レポート提出期限 Deadline for final report
@@ -32,6 +32,18 @@ DATA SCIENCE FOR GENOME DYNAMICS
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
 事務室閉室・冬季休校（12/26～1/5）
+
+----------
+## Guest speaker
+**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
+
+### 2020-12-01
+- Speaker: Dr. Kirill Kryukov キリル クリュコフ博士 ([National Institute of Genetics](http://www.saitou-naruya-laboratory.org/))
+- Title: "Fundamentals of Big Data Sequence Analysis"
+
+### 2020-12-08
+- Speaker: Dr. Mahoko Takahashi Ueda 上田真保子博士（東京医科歯科大学難治疾患研究所）
+- Title: "Evolution and detection of genes under selection"
 
 ----------
 ## Introduction
