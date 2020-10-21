@@ -66,9 +66,6 @@ R が作ったり操作した実体はオブジェクト（object）と呼ばれ
 
 [20 Vectors | R for Data Science](https://r4ds.had.co.nz/vectors.html)
 
-[R-Tips](http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html)
- ベクトル篇
-
 [ベクトル | R のベクトル操作と演算](https://stats.biopapyrus.jp/r/basic/vector.html)
 R のベクトルは、数学のベクトルとほぼ同じ概念である。数学では 1 つのベクトルに複数の要素を含めると同様に、R では 1 つのベクトルに複数の値を代入できる。
 
