@@ -38,7 +38,8 @@ Office closed / Winter break（12/26～1/5）
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
 ### 2020-12-01
-- Speaker: Dr. Kirill Kryukov キリル クリュコフ博士 ([National Institute of Genetics](http://www.saitou-naruya-laboratory.org/))
+- Speaker: Dr. Kirill Kryukov キリル クリュコフ博士 ([National Institute of Genetics](http://www.saitou-naruya-laboratory.org/member.html))
+[Kirr's homepage](http://kirill-kryukov.com/kirr/)
 - Title: "Fundamentals of Big Data Sequence Analysis"
 
 ### 2020-12-08
