@@ -12,6 +12,8 @@
 - [assignment 2](#assignment-2) 課題No.2 「Introduction to R」
 - [Compile Report](#compile-report)
 - [assignment 3](#assignment-3) 課題No.3 「Installing R packages」
+- [NCBI Genome List](#ncbi-genome-list)
+- [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (1)」
 
 ----------
 ## assignment 0
@@ -210,5 +212,51 @@ Running under: macOS Mojave 10.14.6
 ```
 
 ----------
+## NCBI Genome List
+[NCBI](https://integbio.jp/dbcatalog/record/nbdc00584)
+[国立生物工学情報センター](https://ja.wikipedia.org/wiki/国立生物工学情報センター)
+の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
+
+- NCBIのウェブサイトからゲノム配列データを取得する。
+  - ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
+例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の世界的流行（パンデミック）を引き起こしている[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。
+  - [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2)、検索ボックス下の「Overview (1); Viruses (92)」のうち、「Viruses」をクリックすると、SARS-CoV-2に属する株が表示される。
+  - [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、列**Organism Name**の"Severe acute respiratory syndrome coronavirus 2"をクリックして開く。
+  - [ここで](https://www.ncbi.nlm.nih.gov/genome/86693?genome_assembly_id=757732)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に[アクセッション番号](https://www.ddbj.nig.ac.jp/acc_def.html)が示されている。
+アクセッション番号は、"NC_045512.2" (RefSeq) と "MN908947.3" (INSDC) である。
+
+- Retrieving genome sequence data via the NCBI website
+  - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press "Search".
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), When you click on the Organism Name "Severe acute respiratory syndrome coronavirus 2", it will bring you to the record for this organism in the NCBI Genome database.
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/86693?genome_assembly_id=757732), you will see the "Summary", and "Replicon Info" of the Organism. 
+The NCBI [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the DNA sequences are "NC_045512.2" (RefSeq) and "MN908947.3" (INSDC), respectively.
+
+NCBIからDNA配列を取得する:  
+```
+# Retrieving a DNA sequence from NCBI
+library(seqinr)
+ACCESSION <- "NC_045512" # Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)
+#ACCESSION <- "NC_001477" # Dengue virus 1
+#ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
+#ACCESSION <- "NC_001318" # Borreliella burgdorferi B31 chromosome
+filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
+#filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
+seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
+seq1 <- seqs[[1]]
+```
+
+Please record what you typed to download DNA sequence data, to make your analysis reproducible.
+
 ----------
+## assignment 3
+**課題No.3 「DNA Sequence Statistics (1)」**
+
+Please download the R script (*my_assignment_chapter1_dna1.R*) from the following URL.
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+
+----------
+
+
+
 
