@@ -249,8 +249,8 @@ seq1 <- seqs[[1]]
 Please record what you typed to download DNA sequence data, to make your analysis reproducible.
 
 ----------
-## assignment 3
-**課題No.3 「DNA Sequence Statistics (1)」**
+## assignment 4
+**課題No.4 「DNA Sequence Statistics (1)」**
 
 Please download the R script (*my_assignment_chapter1_dna1.R*) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
