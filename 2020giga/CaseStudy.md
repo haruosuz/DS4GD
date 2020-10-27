@@ -115,67 +115,8 @@ https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
 
 [Installing R packages](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages)
 
-Rパッケージのインストール:  
-```
-# Installing the R packages:
-install.packages("seqinr")
-install.packages("zoo")
-install.packages("ape")
-install.packages("phangorn")
-install.packages("tidyverse")
-```
-
-Bioconductorパッケージのインストール:  
-```
-# Installing the Bioconductor packages:
-if (!requireNamespace("BiocManager", quietly = TRUE))
-  install.packages("BiocManager")
-
-BiocManager::install("Biostrings")
-BiocManager::install("msa")
-BiocManager::install("DECIPHER")
-```
-
-[Update all/some/none? [a/s/n]: と聞かれることもありますが基本はnでいいです。](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/R_install.pdf)
-[At any point (especially if you’ve used R/Bioconductor in the past), R may ask you if you want to update any old packages by asking Update all/some/none? [a/s/n]:. If you see this, type](http://bioconnector.github.io/bims8382/setup-r.html)
-`n`
-
-Rパッケージのバージョンを確認:  
-```
-# Print the versions of these packages:
-packageVersion("seqinr")
-packageVersion("zoo")
-packageVersion("ape")
-packageVersion("phangorn")
-packageVersion("tidyverse")
-
-packageVersion("Biostrings")
-packageVersion("msa")
-packageVersion("DECIPHER")
-```
-
-Rパッケージの呼び出し:  
-```
-# Load the packages into R:
-library(seqinr)
-library(zoo)
-library(ape)
-library(phangorn)
-library(tidyverse)
-
-suppressMessages(library(Biostrings))
-library(msa)
-library(DECIPHER)
-```
-
-Rのバージョンを確認:  
-```
-# Print the version of R running:
-R.version.string
-
-# Print version information about R, the OS and attached or loaded packages.
-sessionInfo()
-```
+Please download the R script (*my_setup_packages.R*) from the following URL.
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 回答例:  
 ```
@@ -237,11 +178,8 @@ NCBIからDNA配列を取得する:
 # Retrieving a DNA sequence from NCBI
 library(seqinr)
 ACCESSION <- "NC_045512" # Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)
-#ACCESSION <- "NC_001477" # Dengue virus 1
-#ACCESSION <- "NC_002677" # Mycobacterium leprae TN chromosome
-#ACCESSION <- "NC_001318" # Borreliella burgdorferi B31 chromosome
-filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
-#filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
+filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
+#filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
 seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
 seq1 <- seqs[[1]]
 ```
