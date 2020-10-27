@@ -16,10 +16,10 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-10-13 No. 2 - イントロダクション [Introduction](#introduction)
   - [R/RStudio](#r-rstudio)
 - 2020-10-20 No. 3 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
-- 2020-10-27 No. 4 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
-  - [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-4)
   - [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-  - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-genome-list)
+- 2020-10-27 No. 4 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
+  - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#ncbi-genome-list)
+  - [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-4)
 - 2020-11-03 No. 5 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2020-11-10 No. 6 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
@@ -70,5 +70,4 @@ Office closed / Winter break（12/26～1/5）
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
 ----------
-
 
