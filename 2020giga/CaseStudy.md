@@ -13,6 +13,7 @@
 - [assignment 3](#assignment-3) 課題No.3 「Installing R packages」
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (1)」
+- [assignment 5](#assignment-5) 課題No.5 「DNA Sequence Statistics (2)」
 
 ----------
 ## assignment 0
@@ -162,6 +163,13 @@ Please record what you typed to download DNA sequence data, to make your analysi
 **課題No.4 「DNA Sequence Statistics (1)」**
 
 Please download the R script (*my_assignment_chapter1_dna1.R*) from the following URL.
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+
+----------
+## assignment 5
+**課題No.5 「DNA Sequence Statistics (2)」**
+
+Please download the R script (*my_assignment_chapter2_dna2.R*) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
