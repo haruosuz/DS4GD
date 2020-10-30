@@ -10,7 +10,6 @@
 - [assignment 0](#assignment-0) 選抜課題
 - assignment 1 課題No.1 class cancelled
 - [assignment 2](#assignment-2) 課題No.2 「Introduction to R」
-- [Compile Report](#compile-report)
 - [assignment 3](#assignment-3) 課題No.3 「Installing R packages」
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (1)」
@@ -80,34 +79,6 @@ R のベクトルは、数学のベクトルとほぼ同じ概念である。数
 Rには大きく４つのタイプのデータがあります．それは，(1)　数値型，(2) 文字列型，(3) 因子型，(4) 論理値型です．
 因子型データは，例えば男性を”1”，女性を”2”として入力されたデータです．
 いわゆるカテゴリカルデータ（質的データ）は，Rでは因子型データとして扱います．
-
-----------
-## Compile Report
-
-https://rmarkdown.rstudio.com/articles_report_from_r_script.html
-Compiling Reports from R Scripts
-
-If you are using RStudio then you can also create a report using the Compile Report command (Ctrl+Shift+K).
-
-Jan 17, 2017
-https://www.youtube.com/watch?v=4xwaH9CR2TY
-How to Compile a Report in RStudio - YouTube
-
-2016年12月05日に更新
-https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
-3. Compile Report
-
-![](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
-
-[再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著](http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438) |
-[4.8 R スクリプトからレポート生成](https://www.kyoritsu-pub.co.jp/app/file/goods_contents/3028.pdf)
-
-![](https://www.kyoritsu-pub.co.jp/app/img/item/9784320112438.jpg)
-
-メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
-
-- [Rstudioで楽々ドキュメント生成](https://kohske.github.io/R/rstudio/) Rスクリプトからノートブックの作成
-- [Rスクリプトからレポート生成](https://rpubs.com/kohske/595)
 
 ----------
 ## assignment 3
