@@ -42,13 +42,15 @@ Office closed / Winter break（12/26～1/5）
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
 ### 2020-12-01
-- Speaker: Dr. Kirill Kryukov キリル クリュコフ博士 ([National Institute of Genetics](http://www.saitou-naruya-laboratory.org/member.html))
-[Kirr's homepage](http://kirill-kryukov.com/kirr/)
 - Title: "Fundamentals of Big Data Sequence Analysis"
+- Speaker: Dr. Kirill Kryukov ([National Institute of Genetics](http://www.saitou-naruya-laboratory.org/member.html))
+[Kirr's homepage](http://kirill-kryukov.com/kirr/)
+- 演者：キリル クリュコフ博士（国立遺伝学研究所）
 
 ### 2020-12-08
-- Speaker: Dr. Mahoko Takahashi Ueda 上田真保子博士（東京医科歯科大学難治疾患研究所）
 - Title: "Evolution and detection of genes under selection"
+- Speaker: Dr. Mahoko Takahashi Ueda (Medical Research Institute Tokyo Medical and Dental University)
+- 演者：上田真保子博士（東京医科歯科大学難治疾患研究所）
 
 ----------
 ## Introduction
