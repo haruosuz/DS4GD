@@ -192,8 +192,6 @@ https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
 [再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著](http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438) |
 [4.8 R スクリプトからレポート生成](https://www.kyoritsu-pub.co.jp/app/file/goods_contents/3028.pdf)
 
-![](https://www.kyoritsu-pub.co.jp/app/img/item/9784320112438.jpg)
-
 メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
 
 - [Rstudioで楽々ドキュメント生成](https://kohske.github.io/R/rstudio/) Rスクリプトからノートブックの作成
