@@ -176,6 +176,19 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 You can submit your assignment as a HTML document (*my_assignment_chapter2_dna2.html*), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
 
 ----------
+
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+
+----------
 ## BLAST
 [BLAST (Basic Local Alignment Search Tool)](https://ja.wikipedia.org/wiki/BLAST)
 
