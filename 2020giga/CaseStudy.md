@@ -186,7 +186,7 @@ You can submit your assignment as a HTML document (*my_assignment_chapter2_dna2.
 
 ![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/2760/images/UniProt_tutorial/blast_1.png)
 
-- https://www.uniprot.org/uniprot/Q9CD83
+[E - Envelope small membrane protein - Severe acute respiratory syndrome coronavirus 2 (2019-nCoV) - E gene & protein](https://www.uniprot.org/uniprot/P0DTC4)
 - Select the 'Blast' tab -> 'Advanced'
 ```
 Target database: UniProtKB/Swiss-Prot
