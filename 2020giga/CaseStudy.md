@@ -8,15 +8,16 @@
 
 ## Table of Contents
 - [assignment 0](#assignment-0) 選抜課題
-- assignment 1 課題No.1 class cancelled
-- [assignment 2](#assignment-2) 課題No.2 「Introduction to R」
-- [assignment 3](#assignment-3) 課題No.3 「Installing R packages」
+- assignment 1 課題1 class cancelled
+- [assignment 2](#assignment-2) 課題2 「Introduction to R」
+- [assignment 3](#assignment-3) 課題3 「Installing R packages」
 - [NCBI Genome List](#ncbi-genome-list)
-- [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (1)」
-- [assignment 5](#assignment-5) 課題No.5 「DNA Sequence Statistics (2)」
+- [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (1)」
+- [assignment 5](#assignment-5) 課題5 「DNA Sequence Statistics (2)」
 - [BLAST](#blast)
-  - [NCBI BLAST](#ncbi-blast)
   - [UniProt BLAST](#uniprot-blast)
+  - [NCBI BLAST](#ncbi-blast)
+- [assignment 6](#assignment-6) 課題6 「dotplot」
 
 ----------
 ## assignment 0
@@ -30,7 +31,7 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 
 ----------
 ## assignment 2
-**課題No.2 「Introduction to R」**
+**課題2 「Introduction to R」**
 
 Watch the following videos and write your comments or questions.
 - [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
@@ -86,7 +87,7 @@ Rには大きく４つのタイプのデータがあります．それは，(1)�
 
 ----------
 ## assignment 3
-**課題No.3 「Installing R packages」**
+**課題3 「Installing R packages」**
 
 [Installing R packages](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages)
 
@@ -161,14 +162,14 @@ Please record what you typed to download DNA sequence data, to make your analysi
 
 ----------
 ## assignment 4
-**課題No.4 「DNA Sequence Statistics (1)」**
+**課題4 「DNA Sequence Statistics (1)」**
 
 Please download the R script (*my_assignment_chapter1_dna1.R*) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 5
-**課題No.5 「DNA Sequence Statistics (2)」**
+**課題5 「DNA Sequence Statistics (2)」**
 
 Please download the R script (*my_assignment_chapter2_dna2.R*) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
@@ -176,33 +177,8 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 You can submit your assignment as a HTML document (*my_assignment_chapter2_dna2.html*), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
 
 ----------
-
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-----------
-
-----------
 ## BLAST
 [BLAST (Basic Local Alignment Search Tool)](https://ja.wikipedia.org/wiki/BLAST)
-
-### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
-- [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
-  - Checking the **Align two or more sequences** box will display two text boxes for entering queries.
-  - Enter the E. coli EbgC protein accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1) into the upper search box
-  - Enter the [Bacteroides EbgC protein](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides) accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1) into the lower search box
-  - Click the **BLAST** button
-  - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the Bacteroides EbgC sequences are not homologs of the E. coli EbgC sequence and do not belong on the tree.
-
-Reference:
-Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
-(p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
 
 ### [UniProt BLAST](https://www.uniprot.org/blast/)
 - [How to use UniProt tools](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/exploring-uniprotkb-entry/how-use-uniprot-t)
@@ -219,5 +195,34 @@ Hits: 50
 ```
 - Click the 'Run Blast' button.
 
+### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
+- [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
+  - Checking the **Align two or more sequences** box will display two text boxes for entering queries.
+  - Enter the E. coli EbgC protein accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1) into the upper search box
+  - Enter the [Bacteroides EbgC protein](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides) accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1) into the lower search box
+  - Click the **BLAST** button
+  - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the Bacteroides EbgC sequences are not homologs of the E. coli EbgC sequence and do not belong on the tree.
+
+Reference:
+Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
+(p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
+
 ----------
+## assignment 6
+**課題6 「dotplot」**
+
+Please download the R script (*my_assignment_chapter4_align_dotplot.R*) from the following URL.
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+
+----------
+
+----------
+----------
+----------
+----------
+----------
+
+----------
+
+
 
