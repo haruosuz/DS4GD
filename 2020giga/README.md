@@ -21,7 +21,6 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-10-27 No. 4 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
   - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#ncbi-genome-list)
 - 2020-11-03 No. 5 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
-  - [assignment-5](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-5)
   - *文化の日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
 - 2020-11-10 No. 6 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - タンパク質データベース Protein sequence database [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
