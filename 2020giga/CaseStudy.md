@@ -18,6 +18,7 @@
   - [UniProt BLAST](#uniprot-blast)
   - [NCBI BLAST](#ncbi-blast)
 - [assignment 6](#assignment-6) 課題6 「dotplot」
+- [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
 
 ----------
 ## assignment 0
@@ -212,6 +213,13 @@ Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https:
 **課題6 「dotplot」**
 
 Please download the R script (*my_assignment_chapter4_align_dotplot.R*) from the following URL.
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+
+----------
+## assignment 7
+** 課題7 「Pairwise Sequence Alignment」**
+
+Please download the R script (*my_assignment_chapter4_align_pairwise.R*) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
