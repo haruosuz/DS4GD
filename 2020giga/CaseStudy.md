@@ -217,7 +217,7 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 7
-** 課題7 「Pairwise Sequence Alignment」**
+**課題7 「Pairwise Sequence Alignment」**
 
 Please download the R script (*my_assignment_chapter4_align_pairwise.R*) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
