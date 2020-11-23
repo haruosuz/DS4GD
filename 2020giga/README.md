@@ -1,9 +1,7 @@
 # 2020giga
 
-DATA SCIENCE FOR GENOME DYNAMICS
-[Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2020_25381&ks=B3206&key=4e5c62fefb41a69d87cbb720a8a5be2e&lang=en)  
-生命動態のデータサイエンス[DS2]
-[シラバス](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2020_25381&ks=B3206&key=4e5c62fefb41a69d87cbb720a8a5be2e&lang=ja)  
+DATA SCIENCE FOR GENOME DYNAMICS  
+生命動態のデータサイエンス[DS2]  
 
 ## References
 **参考文献**
