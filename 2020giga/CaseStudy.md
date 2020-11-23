@@ -19,6 +19,7 @@
   - [NCBI BLAST](#ncbi-blast)
 - [assignment 6](#assignment-6) 課題6 「dotplot」
 - [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
+- [assignment 8](#assignment-8) 課題8 「Multiple Alignment and Phylogenetic trees」
 
 ----------
 ## assignment 0
@@ -220,6 +221,13 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 **課題7 「Pairwise Sequence Alignment」**
 
 Please download the R script (*my_assignment_chapter4_align_pairwise.R*) from the following URL.
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+
+----------
+## assignment 8
+**課題8 「Multiple Alignment and Phylogenetic trees」**
+
+Please download the R script (*my_assignment_chapter5_msa_tree.R*) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
