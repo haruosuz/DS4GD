@@ -49,7 +49,6 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2020-12-01
 - Title: "Fundamentals of Big Data Sequence Analysis"
 - Speaker: Dr. Kirill Kryukov ([National Institute of Genetics](http://www.saitou-naruya-laboratory.org/member.html))
-[Kirr's homepage](http://kirill-kryukov.com/kirr/)
 - 演者：キリル クリュコフ博士（国立遺伝学研究所）
 
 ### 2020-12-08
