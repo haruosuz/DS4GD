@@ -47,14 +47,14 @@ People outside of Keio University SFC will also attend the lectures.
 他機関所属の方も参加されます。  
 
 ### 2020-12-01
-- Speaker: Dr. Kirill Kryukov ([National Institute of Genetics](http://www.saitou-naruya-laboratory.org/member.html))
+- Speaker: Dr. Kirill Kryukov ([National Institute of Genetics](http://www.saitou-naruya-laboratory.org/member.html))  
 キリル クリュコフ博士（国立遺伝学研究所）
 - Title: "Fundamentals of Big Data Sequence Analysis"
 - [Slides](https://github.com/haruosuz/DS4GD/blob/master/2020giga/guest-speaker/2020-12-01/Slides.pdf)
 - [Unix commands](http://sayer.nig.ac.jp/kirill/practice-data/commands.txt)
 
 ### 2020-12-08
-- Speaker: Dr. Mahoko Takahashi Ueda (Medical Research Institute Tokyo Medical and Dental University)
+- Speaker: Dr. Mahoko Takahashi Ueda (Medical Research Institute Tokyo Medical and Dental University)  
 上田真保子博士（東京医科歯科大学難治疾患研究所）
 - Title: "Evolution and detection of genes under selection"
 
