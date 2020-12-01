@@ -43,13 +43,14 @@ Office closed / Winter break（12/26～1/5）
 ## Guest speaker
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
+People outside of Keio University SFC will also attend the lectures.  
 他機関所属の方も参加されます。  
-People outside of Keio University SFC will also attend the lectures.
 
 ### 2020-12-01
 - Title: "Fundamentals of Big Data Sequence Analysis"
 - Speaker: Dr. Kirill Kryukov ([National Institute of Genetics](http://www.saitou-naruya-laboratory.org/member.html))
 - 演者：キリル クリュコフ博士（国立遺伝学研究所）
+- http://sayer.nig.ac.jp/kirill/practice-data/commands.txt
 
 ### 2020-12-08
 - Title: "Evolution and detection of genes under selection"
