@@ -25,27 +25,26 @@
 ----------
 ## 2020-12-08
 
-http://www.okadajp.org/RWiki/?CRAN国内ミラーの使い方
-```
-options(repos="https://cran.ism.ac.jp/")
+Download the slides (*DS4GD_ueda_Dec08_2020.key*) and data (*EBOV.L.28nt.fas*) from the following URL.
+https://www.dropbox.com/sh/isus4f00hbqb8ns/AABP87sBvn6riKKCxqG-fp3Oa?dl=0
 
+```
 #First, install and load the following packages!!! 
 
+# Install the R packages:
+options(repos="https://cran.ism.ac.jp/")
 install.packages("seqinr")
-library(seqinr)
-
 install.packages("reshape")
-library(reshape)
-
 install.packages("ggplot2")
-library(ggplot2)
-
 install.packages("dplyr")
-library(dplyr)
-
 install.packages("pheatmap")
-library(pheatmap)
 
+# Load the packages into R:
+library(seqinr)
+library(reshape)
+library(ggplot2)
+library(dplyr)
+library(pheatmap)
 
 # First, read alignment from system file in seqinr
 s <- read.alignment(file = system.file("sequences/test.phylip", package = "seqinr"), format = "phylip")
@@ -123,20 +122,10 @@ Case study: Ebola virus
 
 <https://www.ncbi.nlm.nih.gov/genome/viruses/variation/>
 
-Download FASTA file (*EBOV.L.28nt.fas*) from the following URL.
-https://www.dropbox.com/sh/isus4f00hbqb8ns/AABP87sBvn6riKKCxqG-fp3Oa?dl=0
-
 ```
 # Set and Get Working Directory
 setwd("~/Downloads/doc")
 getwd()
-
-# libraries I need (no need to install...)
-library(seqinr)
-library(reshape)
-library(ggplot2)
-library(dplyr)
-library(pheatmap)
 
 # ----------
 # Ka/Ks ratio calculation using Ebola virus
