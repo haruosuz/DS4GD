@@ -25,8 +25,7 @@
 ----------
 ## 2020-12-08
 
-Download the slides (*DS4GD_ueda_Dec08_2020.key*) and data (*EBOV.L.28nt.fas*) from the following URL.
-https://www.dropbox.com/sh/isus4f00hbqb8ns/AABP87sBvn6riKKCxqG-fp3Oa?dl=0
+[Download the slides (*DS4GD_ueda_Dec08_2020.key*) and data (*EBOV.L.28nt.fas*)](https://www.dropbox.com/sh/isus4f00hbqb8ns/AABP87sBvn6riKKCxqG-fp3Oa?dl=0)
 
 ```
 #First, install and load the following packages!!! 
@@ -126,6 +125,7 @@ Case study: Ebola virus
 # Set and Get Working Directory
 setwd("~/Downloads/doc")
 getwd()
+list.files() # List the Files in a Directory/Folder
 
 # ----------
 # Ka/Ks ratio calculation using Ebola virus
