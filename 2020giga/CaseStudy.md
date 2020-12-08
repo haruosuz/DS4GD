@@ -32,10 +32,10 @@ options(repos="https://cran.ism.ac.jp/")
 #First, install and load the following packages!!! 
 
 install.packages("seqinr")
-library("seqinr")
+library(seqinr)
 
 install.packages("reshape")
-library (reshape)
+library(reshape)
 
 install.packages("ggplot2")
 library(ggplot2)
@@ -127,7 +127,16 @@ Download FASTA file (*EBOV.L.28nt.fas*) from the following URL.
 https://www.dropbox.com/sh/isus4f00hbqb8ns/AABP87sBvn6riKKCxqG-fp3Oa?dl=0
 
 ```
+# Set and Get Working Directory
 setwd("~/Downloads/doc")
+getwd()
+
+# libraries I need (no need to install...)
+library(seqinr)
+library(reshape)
+library(ggplot2)
+library(dplyr)
+library(pheatmap)
 
 # ----------
 # Ka/Ks ratio calculation using Ebola virus
@@ -143,14 +152,7 @@ result <- kaks(s)  #You can directly calculate ka/ks ratio using this
 kaks <- as.matrix(result$ka/result$ks)
 kaks[is.infinite(kaks)] <- NA
 pheatmap(kaks)
-
-
 ```
-
-
-
-
-
 
 ----------
 ## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
