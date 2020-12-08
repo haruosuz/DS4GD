@@ -20,6 +20,81 @@
 - [assignment 6](#assignment-6) 課題6 「dotplot」
 - [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題8 「Multiple Alignment and Phylogenetic trees」
+- [2020-12-08](#2020-12-08)
+
+----------
+## 2020-12-08
+
+http://www.okadajp.org/RWiki/?CRAN国内ミラーの使い方
+```
+options(repos="https://cran.ism.ac.jp/")
+
+#First, install and load the following packages!!! 
+
+install.packages("seqinr")
+library("seqinr")
+
+install.packages("reshape")
+library (reshape)
+
+install.packages("ggplot2")
+library(ggplot2)
+
+install.packages("dplyr")
+library(dplyr)
+
+install.packages("pheatmap")
+library(pheatmap)
+
+
+# First, read alignment from system file in seqinr
+s <- read.alignment(file = system.file("sequences/test.phylip", package = "seqinr"), format = "phylip")
+
+#Check alignment
+s
+s$seq[1]
+
+#Calculate Ka and Ks values using kaks function
+result <- kaks(s) 
+
+# ----------
+# 1-1. Try to plot ka/ks data
+# ----------
+
+# Calculate Ka/Ks ratio
+kaks <- as.matrix(result$ka/result$ks)
+
+# Make a plot
+pheatmap(kaks)
+
+# ----------
+# 1-2. Try to plot ka and ks for comparison
+# ----------
+
+#Make an own function to get lower triangle of the Ka/Ks matrix table
+get_lower <-function(k){
+  k[upper.tri(k+1)] <- NA
+  return(k+1)
+}
+
+# Extract values which are required for analysis
+ka <- get_lower(ka)
+ks <- get_lower(ks)
+
+
+
+```
+
+
+----------
+## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
+
+[Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+Rの起動
+
+```
+
+
 
 ----------
 ## assignment 0
