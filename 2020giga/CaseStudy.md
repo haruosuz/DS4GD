@@ -71,6 +71,10 @@ pheatmap(kaks)
 # 1-2. Try to plot ka and ks for comparison
 # ----------
 
+# Store each ka and ks data from results you made
+ka <- as.matrix(result$ka)
+ks <- as.matrix(result$ks)
+
 #Make an own function to get lower triangle of the Ka/Ks matrix table
 get_lower <-function(k){
   k[upper.tri(k+1)] <- NA
@@ -80,7 +84,6 @@ get_lower <-function(k){
 # Extract values which are required for analysis
 ka <- get_lower(ka)
 ks <- get_lower(ks)
-
 
 
 ```
