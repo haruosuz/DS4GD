@@ -51,14 +51,14 @@ People outside of Keio University SFC will also attend the lectures.
 キリル クリュコフ博士（国立遺伝学研究所）
 - Title: "Fundamentals of Big Data Sequence Analysis"
 - [Slides](https://github.com/haruosuz/DS4GD/blob/master/2020giga/guest-speaker/2020-12-01/Slides.pdf)
-- [Codes](http://sayer.nig.ac.jp/kirill/practice-data/commands.txt)
+- [Unix commands](http://sayer.nig.ac.jp/kirill/practice-data/commands.txt)
 
 ### 2020-12-08
 - Speaker: Dr. Mahoko Takahashi Ueda (Medical Research Institute Tokyo Medical and Dental University)  
 上田真保子博士（東京医科歯科大学難治疾患研究所）
 - Title: "Evolution and detection of genes under selection"
 - [Slides](https://www.dropbox.com/sh/isus4f00hbqb8ns/AABP87sBvn6riKKCxqG-fp3Oa?dl=0)
-- [Codes](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#2020-12-08)
+- [R code](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#2020-12-08)
 
 ----------
 ## Introduction
