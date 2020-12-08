@@ -23,9 +23,15 @@
 - [2020-12-08](#2020-12-08)
 
 ----------
-## 2020-12-08
+## [2020-12-08](https://github.com/haruosuz/DS4GD/blob/master/2020giga/README.md#2020-12-08)
+
+R code
 
 ```
+# ----------
+# 1.  Let’s calculate Ka/Ks ratio
+# ----------
+
 #First, install and load the following packages!!! 
 
 # Install the R packages:
@@ -117,6 +123,7 @@ geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color="blue")
 
 Case study: Ebola virus
 
+NCBI Virus Variation Resource
 <https://www.ncbi.nlm.nih.gov/genome/viruses/variation/>
 
 ```
@@ -140,18 +147,7 @@ kaks <- as.matrix(result$ka/result$ks)
 kaks[is.infinite(kaks)] <- NA
 pheatmap(kaks)
 
-
 ```
-
-----------
-## [2019-12-03](https://github.com/haruosuz/DS4GD/blob/master/2019giga/README.md#2019-12-03)
-
-[Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
-Rの起動
-
-```
-
-
 
 ----------
 ## assignment 0
