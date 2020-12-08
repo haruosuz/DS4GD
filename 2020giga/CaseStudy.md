@@ -123,12 +123,15 @@ Case study: Ebola virus
 
 <https://www.ncbi.nlm.nih.gov/genome/viruses/variation/>
 
+Download FASTA file (*EBOV.L.28nt.fas*) from the following URL.
+https://www.dropbox.com/sh/isus4f00hbqb8ns/AABP87sBvn6riKKCxqG-fp3Oa?dl=0
+
 ```
+setwd("~/Downloads/doc")
+
 # ----------
 # Ka/Ks ratio calculation using Ebola virus
 # ----------
-
-setwd("~/Downloads/doc")
 
 #Read alaignment of RNA polymerase L gene
 s <- read.alignment(file = "EBOV.L.28nt.fas", format = "fasta")
@@ -140,6 +143,7 @@ result <- kaks(s)  #You can directly calculate ka/ks ratio using this
 kaks <- as.matrix(result$ka/result$ks)
 kaks[is.infinite(kaks)] <- NA
 pheatmap(kaks)
+
 
 ```
 
