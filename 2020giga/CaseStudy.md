@@ -98,7 +98,6 @@ kam <- kam %>% replace(.==0, NA)
 ksm <- ksm %>% replace(.==0, NA)
 
 
-
 # Change col names for plotting…
 colnames (kam) <- c("Species1", "Species2", "Ka")
 colnames (ksm) <- c("Species1", "Species2", "Ks")
@@ -118,6 +117,31 @@ p + geom_abline(slope = 1,intercept = 0, color = "red") +
 geom_text(aes(5,5,label = 'slope 1', vjust = -1), color="red") +
 geom_abline(slope = 2, intercept = 0, color = "blue") + 
 geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color=“blue”)
+
+# ----------
+# Case study: Ebola virus
+# ----------
+
+# https://www.ncbi.nlm.nih.gov/genome/viruses/variation/
+
+# ----------
+# Ka/Ks ratio calculation using Ebola virus
+# ----------
+
+setwd("~/Downloads/doc")
+
+#Read alaignment of RNA polymerase L gene
+s <- read.alignment(file = "EBOV.L.28nt.fas", format = "fasta")
+
+#Calculate Ka and Ks values using kaks function
+result <- kaks(s)  #You can directly calculate ka/ks ratio using this 
+
+#Calculate Ka/Ks
+kaks <- as.matrix(result$ka/result$ks)
+kaks[is.infinite(kaks)] <- NA
+pheatmap(kaks)
+
+
 
 
 ```
