@@ -122,10 +122,10 @@ Case study: Ebola virus
 <https://www.ncbi.nlm.nih.gov/genome/viruses/variation/>
 
 ```
-# Set and Get Working Directory
-setwd("~/Downloads/doc")
-getwd()
-list.files() # List the Files in a Directory/Folder
+# Download File from the Internet
+url <- "https://raw.githubusercontent.com/haruosuz/DS4GD/master/2020giga/guest-speaker/2020-12-08/EBOV.L.28nt.fas"
+filename <- basename(url) # filename <- "EBOV.L.28nt.fas"
+if(!file.exists(filename)) download.file(url = url, destfile = filename)
 
 # ----------
 # Ka/Ks ratio calculation using Ebola virus
@@ -141,6 +141,8 @@ result <- kaks(s)  #You can directly calculate ka/ks ratio using this
 kaks <- as.matrix(result$ka/result$ks)
 kaks[is.infinite(kaks)] <- NA
 pheatmap(kaks)
+
+
 ```
 
 ----------
