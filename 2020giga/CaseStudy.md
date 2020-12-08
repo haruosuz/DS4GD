@@ -85,8 +85,46 @@ get_lower <-function(k){
 ka <- get_lower(ka)
 ks <- get_lower(ks)
 
+# ----------
+# How to interpret the result?
+# ----------
+
+# Reshape table ()
+kam <- melt(ka)
+ksm <- melt(ks)
+
+# For students who finished the above step, try this command to replace zero to ‘NA’.
+kam <- kam %>% replace(.==0, NA)
+ksm <- ksm %>% replace(.==0, NA)
+
+
+
+# Change col names for plotting…
+colnames (kam) <- c("Species1", "Species2", "Ka")
+colnames (ksm) <- c("Species1", "Species2", "Ks")
+
+# Merge kam and ksm using two redundant keys
+# Final dataset containing ka and ks values
+final <- merge (kam, ksm, by=c("Species1", "Species2"))
+
+# Plot ka and ks values using ggplot2 package
+p <- ggplot(final, aes(x=Ks, y=Ka, color=Species1, shape=Species2)) + geom_point(size=5) +  theme_bw() 
+
+#Check plot
+p
+
+#Make custum plot…if you are interested in
+p + geom_abline(slope = 1,intercept = 0, color = "red") + 
+geom_text(aes(5,5,label = 'slope 1', vjust = -1), color="red") +
+geom_abline(slope = 2, intercept = 0, color = "blue") + 
+geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color=“blue”)
+
 
 ```
+
+
+
+
 
 
 ----------
