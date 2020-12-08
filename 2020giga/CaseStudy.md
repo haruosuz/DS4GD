@@ -112,7 +112,7 @@ p
 p + geom_abline(slope = 1,intercept = 0, color = "red") + 
 geom_text(aes(5,5,label = 'slope 1', vjust = -1), color="red") +
 geom_abline(slope = 2, intercept = 0, color = "blue") + 
-geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color=“blue”)
+geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color="blue")
 ```
 
 Case study: Ebola virus
