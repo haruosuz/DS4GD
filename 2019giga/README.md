@@ -67,14 +67,14 @@ Submit your final report (PDF/HTML document from R Markdown, Jupyter Notebook, e
 - Speaker: Dr. Kirill Kryukov キリル クリュコフ博士 ([Biomedical Informatics Laboratory | Department of Molecular Life Science, Tokai University School of Medicine](http://mls.med.u-tokai.ac.jp/bmi/index-e.html))
 - Title: "Fundamentals of Big Data Sequence Analysis"
 - [Slides](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-11-26/Slides.pdf)
-- [Codes](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#2019-11-26)
+- [Code](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#2019-11-26)
 - [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-9) 課題No.9 「Guest Speaker (1)」
 
 ### 2019-12-03
 - Speaker: Dr. Mahoko Takahashi Ueda 上田真保子博士（東海大学医学部 [情報生物医学研究室](http://mls.med.u-tokai.ac.jp/bmi/index.html)）
 - Title: "Evolution and detection of genes under selection"
 - [Slides](https://github.com/haruosuz/DS4GD/blob/master/2019giga/guest-speaker/2019-12-03/DS4GD_ueda_Dec03_web.pdf)
-- [Codes](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#2019-12-03)
+- [Code](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#2019-12-03)
 - [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-10) 課題No.10 「Guest Speaker (2)」
 
 ----------
