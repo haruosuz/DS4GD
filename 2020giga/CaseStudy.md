@@ -117,13 +117,13 @@ p + geom_abline(slope = 1,intercept = 0, color = "red") +
 geom_text(aes(5,5,label = 'slope 1', vjust = -1), color="red") +
 geom_abline(slope = 2, intercept = 0, color = "blue") + 
 geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color=“blue”)
+```
 
-# ----------
-# Case study: Ebola virus
-# ----------
+Case study: Ebola virus
 
-# https://www.ncbi.nlm.nih.gov/genome/viruses/variation/
+<https://www.ncbi.nlm.nih.gov/genome/viruses/variation/>
 
+```
 # ----------
 # Ka/Ks ratio calculation using Ebola virus
 # ----------
@@ -140,9 +140,6 @@ result <- kaks(s)  #You can directly calculate ka/ks ratio using this
 kaks <- as.matrix(result$ka/result$ks)
 kaks[is.infinite(kaks)] <- NA
 pheatmap(kaks)
-
-
-
 
 ```
 
