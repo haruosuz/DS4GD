@@ -32,8 +32,8 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
 - 2020-12-15 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
 - 2020-12-22 No. 12 - 最終回 final class
-  - 最終発表 final presentation
-- 2020-12-29 レポート提出期限 Deadline for final report
+  - 最終発表 [final presentation](#final-presentation)
+- 2020-12-29 レポート提出期限 Deadline for [final report](#final-report)
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
@@ -59,6 +59,33 @@ People outside of Keio University SFC will also attend the lectures.
 - Title: "Evolution and detection of genes under selection"
 - [Slides](https://www.dropbox.com/sh/isus4f00hbqb8ns/AABP87sBvn6riKKCxqG-fp3Oa?dl=0)
 - [R code](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#2020-12-08)
+
+----------
+## final presentation
+**最終発表**
+
+Presentation time: 10 minutes will be allocated for each presentation (including Q&A).
+Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global sequence alignment, and local sequence alignment), multiple sequence alignment, and phylogenetic trees, etc.
+
+発表時間：1人あたり最大10分（質疑応答を含む）。
+興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
+
+----------
+## final report
+**レポート**
+
+Submit your final report as a PDF/HTML document.
+
+- https://en.wikipedia.org/wiki/IMRAD
+(Introduction, Methods, Results, and Discussion) is a common organizational structure (a document format).
+- https://ja.wikipedia.org/wiki/IMRAD
+は、文章構成の型式の名称の1つである。
+  - Title（タイトル; T）
+  - Introduction（導入; I） :What are you studying and why?(何を研究したのか？、何故それを研究したのか)
+  - Methods（研究方法; M） :What did you do?（具体的には何をしたのか？）
+  - Results（実験結果; R） :What did you find?（何がわかったのか?）
+  - Discussion（考察; D） :What do your findings mean?(あなたが見つけたことは何を意味するのか？）
+  - References（参考文献一覧）
 
 ----------
 ## Introduction
