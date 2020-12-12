@@ -21,133 +21,7 @@
 - [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題8 「Multiple Alignment and Phylogenetic trees」
 - [2020-12-08](#2020-12-08)
-
-----------
-## [2020-12-08](https://github.com/haruosuz/DS4GD/blob/master/2020giga/README.md#2020-12-08)
-
-R code
-
-```
-# ----------
-# 1.  Let’s calculate Ka/Ks ratio
-# ----------
-
-#First, install and load the following packages!!! 
-
-# Install the R packages:
-options(repos="https://cran.ism.ac.jp/")
-install.packages("seqinr")
-install.packages("reshape")
-install.packages("ggplot2")
-install.packages("dplyr")
-install.packages("pheatmap")
-
-# Load the packages into R:
-library(seqinr)
-library(reshape)
-library(ggplot2)
-library(dplyr)
-library(pheatmap)
-
-# First, read alignment from system file in seqinr
-s <- read.alignment(file = system.file("sequences/test.phylip", package = "seqinr"), format = "phylip")
-
-#Check alignment
-s
-s$seq[1]
-
-#Calculate Ka and Ks values using kaks function
-result <- kaks(s) 
-
-# ----------
-# 1-1. Try to plot ka/ks data
-# ----------
-
-# Calculate Ka/Ks ratio
-kaks <- as.matrix(result$ka/result$ks)
-
-# Make a plot
-pheatmap(kaks)
-
-# ----------
-# 1-2. Try to plot ka and ks for comparison
-# ----------
-
-# Store each ka and ks data from results you made
-ka <- as.matrix(result$ka)
-ks <- as.matrix(result$ks)
-
-#Make an own function to get lower triangle of the Ka/Ks matrix table
-get_lower <-function(k){
-  k[upper.tri(k+1)] <- NA
-  return(k+1)
-}
-
-# Extract values which are required for analysis
-ka <- get_lower(ka)
-ks <- get_lower(ks)
-
-# ----------
-# How to interpret the result?
-# ----------
-
-# Reshape table ()
-kam <- melt(ka)
-ksm <- melt(ks)
-
-# For students who finished the above step, try this command to replace zero to ‘NA’.
-kam <- kam %>% replace(.==0, NA)
-ksm <- ksm %>% replace(.==0, NA)
-
-
-# Change col names for plotting…
-colnames (kam) <- c("Species1", "Species2", "Ka")
-colnames (ksm) <- c("Species1", "Species2", "Ks")
-
-# Merge kam and ksm using two redundant keys
-# Final dataset containing ka and ks values
-final <- merge (kam, ksm, by=c("Species1", "Species2"))
-
-# Plot ka and ks values using ggplot2 package
-p <- ggplot(final, aes(x=Ks, y=Ka, color=Species1, shape=Species2)) + geom_point(size=5) +  theme_bw() 
-
-#Check plot
-p
-
-#Make custum plot…if you are interested in
-p + geom_abline(slope = 1,intercept = 0, color = "red") + 
-geom_text(aes(5,5,label = 'slope 1', vjust = -1), color="red") +
-geom_abline(slope = 2, intercept = 0, color = "blue") + 
-geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color="blue")
-```
-
-Case study: Ebola virus
-
-NCBI Virus Variation Resource
-<https://www.ncbi.nlm.nih.gov/genome/viruses/variation/>
-
-```
-# Download File from the Internet
-url <- "https://raw.githubusercontent.com/haruosuz/DS4GD/master/2020giga/guest-speaker/2020-12-08/EBOV.L.28nt.fas"
-filename <- basename(url) # filename <- "EBOV.L.28nt.fas"
-if(!file.exists(filename)) download.file(url = url, destfile = filename)
-
-# ----------
-# Ka/Ks ratio calculation using Ebola virus
-# ----------
-
-#Read alaignment of RNA polymerase L gene
-s <- read.alignment(file = "EBOV.L.28nt.fas", format = "fasta")
-
-#Calculate Ka and Ks values using kaks function
-result <- kaks(s)  #You can directly calculate ka/ks ratio using this 
-
-#Calculate Ka/Ks
-kaks <- as.matrix(result$ka/result$ks)
-kaks[is.infinite(kaks)] <- NA
-pheatmap(kaks)
-
-```
+- [assignment 9](#assignment-9) 課題9 「draft report」
 
 ----------
 ## assignment 0
@@ -359,14 +233,145 @@ Please download the R script (*my_assignment_chapter5_msa_tree.R*) from the foll
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
+## [2020-12-08](https://github.com/haruosuz/DS4GD/blob/master/2020giga/README.md#2020-12-08)
+
+R code
+
+```
+# ----------
+# 1.  Let’s calculate Ka/Ks ratio
+# ----------
+
+#First, install and load the following packages!!! 
+
+# Install the R packages:
+options(repos="https://cran.ism.ac.jp/")
+install.packages("seqinr")
+install.packages("reshape")
+install.packages("ggplot2")
+install.packages("dplyr")
+install.packages("pheatmap")
+
+# Load the packages into R:
+library(seqinr)
+library(reshape)
+library(ggplot2)
+library(dplyr)
+library(pheatmap)
+
+# First, read alignment from system file in seqinr
+s <- read.alignment(file = system.file("sequences/test.phylip", package = "seqinr"), format = "phylip")
+
+#Check alignment
+s
+s$seq[1]
+
+#Calculate Ka and Ks values using kaks function
+result <- kaks(s) 
+
+# ----------
+# 1-1. Try to plot ka/ks data
+# ----------
+
+# Calculate Ka/Ks ratio
+kaks <- as.matrix(result$ka/result$ks)
+
+# Make a plot
+pheatmap(kaks)
+
+# ----------
+# 1-2. Try to plot ka and ks for comparison
+# ----------
+
+# Store each ka and ks data from results you made
+ka <- as.matrix(result$ka)
+ks <- as.matrix(result$ks)
+
+#Make an own function to get lower triangle of the Ka/Ks matrix table
+get_lower <-function(k){
+  k[upper.tri(k+1)] <- NA
+  return(k+1)
+}
+
+# Extract values which are required for analysis
+ka <- get_lower(ka)
+ks <- get_lower(ks)
+
+# ----------
+# How to interpret the result?
+# ----------
+
+# Reshape table ()
+kam <- melt(ka)
+ksm <- melt(ks)
+
+# For students who finished the above step, try this command to replace zero to ‘NA’.
+kam <- kam %>% replace(.==0, NA)
+ksm <- ksm %>% replace(.==0, NA)
+
+
+# Change col names for plotting…
+colnames (kam) <- c("Species1", "Species2", "Ka")
+colnames (ksm) <- c("Species1", "Species2", "Ks")
+
+# Merge kam and ksm using two redundant keys
+# Final dataset containing ka and ks values
+final <- merge (kam, ksm, by=c("Species1", "Species2"))
+
+# Plot ka and ks values using ggplot2 package
+p <- ggplot(final, aes(x=Ks, y=Ka, color=Species1, shape=Species2)) + geom_point(size=5) +  theme_bw() 
+
+#Check plot
+p
+
+#Make custum plot…if you are interested in
+p + geom_abline(slope = 1,intercept = 0, color = "red") + 
+geom_text(aes(5,5,label = 'slope 1', vjust = -1), color="red") +
+geom_abline(slope = 2, intercept = 0, color = "blue") + 
+geom_text(aes(2.5,5,label = 'slope 2', vjust = -1), color="blue")
+```
+
+Case study: Ebola virus
+
+NCBI Virus Variation Resource
+<https://www.ncbi.nlm.nih.gov/genome/viruses/variation/>
+
+```
+# Download File from the Internet
+url <- "https://raw.githubusercontent.com/haruosuz/DS4GD/master/2020giga/guest-speaker/2020-12-08/EBOV.L.28nt.fas"
+filename <- basename(url) # filename <- "EBOV.L.28nt.fas"
+if(!file.exists(filename)) download.file(url = url, destfile = filename)
+
+# ----------
+# Ka/Ks ratio calculation using Ebola virus
+# ----------
+
+#Read alignment of RNA polymerase L gene
+s <- read.alignment(file = "EBOV.L.28nt.fas", format = "fasta")
+
+#Calculate Ka and Ks values using kaks function
+result <- kaks(s)  #You can directly calculate ka/ks ratio using this 
+
+#Calculate Ka/Ks
+kaks <- as.matrix(result$ka/result$ks)
+kaks[is.infinite(kaks)] <- NA
+pheatmap(kaks)
+
+```
 
 ----------
-----------
-----------
-----------
-----------
+## assignment 9
+**課題9 「draft report」**
+
+Integrate and modify your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it as a PDF/HTML document.
+
+これまでの課題（興味あるDNA/タンパク質の配列を解析した結果など）を統合・修正してレポートのドラフトを作成し、PDF/HTML形式ファイルで提出する。
 
 ----------
+
+
+
+
 
 
 
