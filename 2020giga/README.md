@@ -76,17 +76,6 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 
 Submit your final report as a PDF/HTML document.
 
-- https://en.wikipedia.org/wiki/IMRAD
-(Introduction, Methods, Results, and Discussion) is a common organizational structure (a document format).
-- https://ja.wikipedia.org/wiki/IMRAD
-は、文章構成の型式の名称の1つである。
-  - Title（タイトル; T）
-  - Introduction（導入; I） :What are you studying and why?(何を研究したのか？、何故それを研究したのか)
-  - Methods（研究方法; M） :What did you do?（具体的には何をしたのか？）
-  - Results（実験結果; R） :What did you find?（何がわかったのか?）
-  - Discussion（考察; D） :What do your findings mean?(あなたが見つけたことは何を意味するのか？）
-  - References（参考文献一覧）
-
 ----------
 ## Introduction
 
