@@ -31,6 +31,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
 - 2020-12-01 No. 9 - [Guest Speaker](#guest-speaker)
 - 2020-12-08 No. 10 - [Guest Speaker](#guest-speaker)
 - 2020-12-15 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
+  - [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-9)
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
 - 2020-12-29 レポート提出期限 Deadline for [final report](#final-report)
