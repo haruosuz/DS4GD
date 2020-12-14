@@ -367,6 +367,8 @@ Integrate and modify your previous assignments (e.g. results of analyzing DNA/pr
 
 これまでの課題（興味あるDNA/タンパク質の配列を解析した結果など）を統合・修正してレポートのドラフトを作成し、PDF/HTML形式ファイルで提出する。
 
+https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html
+
 ----------
 
 
