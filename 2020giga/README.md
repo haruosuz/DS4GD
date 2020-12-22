@@ -34,7 +34,7 @@ DATA SCIENCE FOR GENOME DYNAMICS
   - [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-9)
 - 2020-12-22 No. 12 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
-- 2020-12-29 レポート提出期限 Deadline for [final report](#final-report)
+- 2020-12-29 レポート提出期限 Deadline for [final report](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-10)
 - [Calendar for Fall Semester 2020](https://www.sfc.keio.ac.jp/en/2020/docs/2020授業カレンダー（秋学期）_en_200908.pdf)
 Office closed / Winter break（12/26～1/5）
 - [2020年度 秋学期授業カレンダー](https://www.sfc.keio.ac.jp/2020/doc/a5aad2815d3a06c2fbecaf77c540dd85f0f37fdc.pdf)
@@ -70,12 +70,6 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 
 発表時間：1人あたり最大10分（質疑応答を含む）。
 興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
-
-----------
-## final report
-**レポート**
-
-Submit your final report as a PDF/HTML document.
 
 ----------
 ## Introduction
