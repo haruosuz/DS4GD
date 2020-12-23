@@ -16,7 +16,6 @@
 - [assignment 5](#assignment-5) 課題5 「DNA Sequence Statistics (2)」
 - [BLAST](#blast)
   - [UniProt BLAST](#uniprot-blast)
-  - [NCBI BLAST](#ncbi-blast)
 - [assignment 6](#assignment-6) 課題6 「dotplot」
 - [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題8 「Multiple Alignment and Phylogenetic trees」
@@ -199,18 +198,6 @@ E-Threshold: 0.0001
 Hits: 50
 ```
 - Click the 'Run Blast' button.
-
-### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
-- [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
-  - Checking the **Align two or more sequences** box will display two text boxes for entering queries.
-  - Enter the E. coli EbgC protein accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1) into the upper search box
-  - Enter the [Bacteroides EbgC protein](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides) accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1) into the lower search box
-  - Click the **BLAST** button
-  - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the Bacteroides EbgC sequences are not homologs of the E. coli EbgC sequence and do not belong on the tree.
-
-Reference:
-Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
-(p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
 
 ----------
 ## assignment 6
