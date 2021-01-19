@@ -12,7 +12,6 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [Compile Report](#compile-report)
 - [Chunk options](#chunk-options)
 - [assignment 2](#assignment-2) 課題No.2 「Installing R packages」
-- [NCBI Taxonomy](#ncbi-taxonomy)
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題No.3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題No.4 「DNA Sequence Statistics (2)」
@@ -338,29 +337,6 @@ sessionInfo()
 R version 4.0.0 (2020-04-24)
 Platform: x86_64-apple-darwin17.0 (64-bit)
 Running under: macOS Mojave 10.14.6
-```
-
-----------
-## [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) 
-[NCBI Entrezデータベースに少なくとも1件以上登録されている全ての生物種と上位分類名を収集したデータベース](https://integbio.jp/dbcatalog/record/nbdc00700)  
-
-- NCBI Taxonomy Browserを使って、生物分類と配列情報を関連させて調べる 2017 https://doi.org/10.7875/togotv.2017.092
-- TogoWS RESTサービスを使い倒す 2011 https://doi.org/10.7875/togotv.2011.058
-  - 統合ウェブサービスの概要と目的 http://togows.dbcls.jp/site/ja/index.html
-  - TogoWS REST service http://togows.dbcls.jp/site/en/rest.html
-    - http://togows.dbcls.jp/entry/nucleotide/J00231/taxonomy
-
-NCBIからTaxonomyを取得する:  
-```
-# Make a vector containing NCBI accessions
-ACCESSIONs <- c("NC_007322", "NC_007414", "AP018710")
-
-# create a function to retrieve NCBI taxonomy
-get_taxonomy <- function(ACCESSION) read.table(file=paste0("http://togows.dbcls.jp/entry/nucleotide/",ACCESSION,"/taxonomy"), sep=";")
-
-# Retrieve NCBI taxonomy and store them in list variable "taxonomy"
-taxonomy <- sapply(ACCESSIONs, get_taxonomy)
-taxonomy
 ```
 
 ----------
