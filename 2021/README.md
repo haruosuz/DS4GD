@@ -1,7 +1,6 @@
 # 2021
 
-[2021年春学期](https://sol.sfc.keio.ac.jp/courses/2702)
-生命動態のデータサイエンス [DS2] / DATA SCIENCE FOR GENOME DYNAMICS [DS2]
+2021年春学期
 [生命動態のデータサイエンス [DS2] / DATA SCIENCE FOR GENOME DYNAMICS [DS2]](https://sol.sfc.keio.ac.jp/courses/2702)
 
 ## References
@@ -30,17 +29,18 @@
   - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#ncbi-genome-list)
 - 2020-05-04 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
   - *みどりの日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2020-05-11 No. 5 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+- 2020-05-11 No. 5 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
+- 2020-05-18 No. 6 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - タンパク質データベース Protein sequence database [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
   - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
   - [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#blast)
-- 2020-05-18 No. 6 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+- 2020-05-25 No. 7 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - グローバル・アライメント [Pairwise global alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
   - ローカル・アラインメント [Pairwise local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
-- 2020-05-25 No. 7 - 中間発表 [interim report](#interim-report)
+ - 中間発表 [interim report](#interim-report)
 - 2020-06-01 No. 8 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2020-06-08 No. 9 - [Guest Speaker](#guest-speaker)
-- 2020-06-15 No. 10 - [Guest Speaker](#guest-speaker)
+- 2020-06-08 No. 9 - MEGA Xを用いた系統解析 (1) [Using MEGA X for phylogenetic analysis (1)](#guest-speaker)
+- 2020-06-15 No. 10 - MEGA Xを用いた系統解析 (2) [Using MEGA X for phylogenetic analysis (2)](#guest-speaker)
 - 2020-06-22 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
   - [my_script2report.R](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
