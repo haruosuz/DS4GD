@@ -60,8 +60,12 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - [Building bioinformatics solutions : with Perl, R, and SQL](https://github.com/haruosuz/books/blob/master/bbs/README.md)
 - [Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p.](https://learninglink.oup.com/access/hall-5e)
 - [Nextstrain](https://nextstrain.org/) Real-time tracking of pathogen evolution
+  - [SARS-CoV-2 (COVID-19)](https://nextstrain.org/sars-cov-2)
+- [Rob DeSalle, Ian Tattersall - "A Natural History of Beer", 2019, 256p.](https://yalebooks.yale.edu/book/9780300233674/natural-history-beer) ; [ニキ　リンコ (訳), 三中　信宏 (訳), . ビールの自然誌, 勁草書房, 2020年1月, 288p.](https://www.keisoshobo.co.jp/book/b496478.html)
 - [Barbrook, A., Howe, C., Blake, N. et al. The phylogeny of The Canterbury Tales. Nature 394, 839 (1998).](https://doi.org/10.1038/29667)
-- [Patrick E. Savage, Charles Cronin, Daniel Müllensiefen, Quentin D. Atkinson. Quantitative evaluation of music copyright infringement. Proceedings of the Folk Music Analysis 2018 Workshop](http://fma2018.mus.auth.gr/files/papers/FMA2018_paper_4.pdf) | [音楽著作権侵害の客観的判断手法として"percent melodic identity" (PMI) 法を提案。DNAやタンパク質配列の比較に分子遺伝学で使用される配列アラインメントと配列一致率の計算を応用。](https://twitter.com/PatrickESavage/status/1112517784322236416)
+- [Patrick E. Savage, Charles Cronin, Daniel Müllensiefen, Quentin D. Atkinson. Quantitative evaluation of music copyright infringement. Proceedings of the Folk Music Analysis 2018 Workshop](http://fma2018.mus.auth.gr/files/papers/FMA2018_paper_4.pdf)
+音楽著作権侵害の客観的判断手法として"percent melodic identity" (PMI) 法を提案。DNAやタンパク質配列の比較に分子遺伝学で使用される配列アラインメントと配列一致率の計算を応用。 https://twitter.com/PatrickESavage/status/1112517784322236416
+- [David L. Kirchman - "Processes in Microbial Ecology", 2nd Edition, Oxford University Press, 2018, 336p.](https://global.oup.com/academic/product/processes-in-microbial-ecology-9780198789413) ; 永田 俊 訳. "微生物生態学　ゲノム解析からエコシステムまで", 京都大学学術出版会 (2016/9/12), 626p.](https://www.kyoto-up.or.jp/books/9784814000470.html)
 - [Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p.](https://github.com/haruosuz/books/tree/master/r4ds)
 - [Andrew Beckerman, Dylan Childs, and Owen Petchey - Getting Started with R: An Introduction for Biologists, 2nd Edition, Oxford University Press, 2017, 240p. ; 富永大介 (翻訳). Rをはじめよう生命科学のためのRStudio入門, 羊土社, 2019年03月12日, 254p.](https://github.com/haruosuz/books/tree/master/r4all)
 - [Emmanuel Paradis - Analysis of Phylogenetics and Evolution with R (Use R!), Springer; 2nd ed., 2011/11/5, 404p.](https://github.com/haruosuz/books/tree/master/aper)
@@ -69,12 +73,17 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 
 ----------
 ### R RStudio
-- Oct 10, 2020 [R for Ecologists (lesson 1) Installing R and RStudio](https://www.youtube.com/watch?v=YKvkXKeGoa8)
-- Jan 24, 2020 [R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners](https://www.youtube.com/watch?v=YBAWVNWiZlU)
-- 2018-04-08 [統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜](https://doi.org/10.7875/togotv.2018.098)
-- 2017-05-12 [RStudioでRを直感的に使おう MacOS版 2017](https://doi.org/10.7875/togotv.2017.043)
+
+- 2018-04-08 "統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜" https://doi.org/10.7875/togotv.2018.098
+- 2017-05-12 "RStudioでRを直感的に使おう MacOS版 2017" https://doi.org/10.7875/togotv.2017.043
+- 2020/01/25 "R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners" https://youtu.be/YBAWVNWiZlU
+- 2020/10/11 "R for Ecologists (lesson 1) Installing R and RStudio" https://youtu.be/YKvkXKeGoa8
+- 2020/10/14 "R for Ecologists (Lesson 2) Start using R and RStudio!" https://youtu.be/dPLbyWXEG_E
 
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
 ----------
+
+
+
 
