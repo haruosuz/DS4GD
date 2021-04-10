@@ -7,11 +7,6 @@
 **参考文献**
 - [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
 - [Sheri Sanders - Introduction to R for Biologists, Version 2, 2019, 96p.](https://ncgas.org/training/r_textbook_full.pdf)
-- Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. [https://r4ds.had.co.nz/] ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p. https://www.oreilly.co.jp/books/9784873118147/
-- Andrew Beckerman, Dylan Childs, and Owen Petchey - Getting Started with R: An Introduction for Biologists, 2nd Edition, Oxford University Press, 2017, 240p. http://r4all.org/books/ ; 富永大介 (翻訳). Rをはじめよう生命科学のためのRStudio入門, 羊土社, 2019年03月12日, 254p. https://www.yodosha.co.jp/yodobook/book/9784758120951/
-- Emmanuel Paradis - Analysis of Phylogenetics and Evolution with R (Use R!), Springer; 2nd ed., 2011/11/5, 404p. https://link.springer.com/book/10.1007%2F978-1-4614-1743-9
-- Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p. https://www.redshelf.com/book/806872
-- 藤博幸（編）. よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p. https://www.kspub.co.jp/book/detail/5138212.html
 
 ----------
 
@@ -20,34 +15,34 @@
 
 - [Calendar for Spring Semester 2021](https://www.sfc.keio.ac.jp/en/docs/0baa4ad6c126b7b898e927b0e22d84a54b15b53d.pdf)
 - [2021年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/1dbd15e1a5013ec7df1f658328033f5a78f0f0b7.pdf)
-- 2020-04-13 No. 1 - イントロダクション [Introduction](#introduction)
+- 2021-04-13 No. 1 - イントロダクション [Introduction](#introduction)
   - [R/RStudio](#r-rstudio)
-- 2020-04-20 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
+- 2021-04-20 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
   - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-- 2020-04-27 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
+- 2021-04-27 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
   - [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#ncbi-genome-list)
-- 2020-05-04 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
+- 2021-05-04 No. 4 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
   - *みどりの日【国民の休日】[National holiday](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)*
-- 2020-05-11 No. 5 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
-- 2020-05-18 No. 6 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+- 2021-05-11 No. 5 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
+- 2021-05-18 No. 6 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - タンパク質データベース Protein sequence database [UniProt](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#uniprot)
   - ドットプロット [dotplot](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot)
   - [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#blast)
-- 2020-05-25 No. 7 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
+- 2021-05-25 No. 7 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
   - グローバル・アライメント [Pairwise global alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
   - ローカル・アラインメント [Pairwise local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
  - 中間発表 [interim report](#interim-report)
-- 2020-06-01 No. 8 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2020-06-08 No. 9 - MEGA Xを用いた系統解析 (1) [Using MEGA X for phylogenetic analysis (1)](#guest-speaker)
-- 2020-06-15 No. 10 - MEGA Xを用いた系統解析 (2) [Using MEGA X for phylogenetic analysis (2)](#guest-speaker)
-- 2020-06-22 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
+- 2021-06-01 No. 8 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+- 2021-06-08 No. 9 - MEGA Xを用いた系統解析 (1) [Using MEGA X for phylogenetic analysis (1)](#guest-speaker)
+- 2021-06-15 No. 10 - MEGA Xを用いた系統解析 (2) [Using MEGA X for phylogenetic analysis (2)](#guest-speaker)
+- 2021-06-22 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
   - [my_script2report.R](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
-- 2020-06-29 No. 12 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
-- 2020-07-06 No. 13 - 最終回
+- 2021-06-29 No. 12 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
+- 2021-07-06 No. 13 - 最終回
   - 最終発表 [final presentation](#final-presentation)
-- 2020-07-13 - レポート提出期限 Deadline for [final report](#final-report)
+- 2021-07-13 - レポート提出期限 Deadline for [final report](#final-report)
 
 ----------
 ## final presentation
@@ -62,13 +57,15 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 ----------
 ## Introduction
 
-### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
-
-### [Bioinformatician](https://www.biostars.org/p/223069/)
-
-### [Bioinformatics research](https://github.com/haruosuz/books/blob/master/bbs/README.md#13-principal-applications-of-bioinformatics)
-
-### [Bioinformatics resources](https://github.com/haruosuz/books/tree/master/bbs#15-publicly-available-bioinformatics-resources)
+- [Building bioinformatics solutions : with Perl, R, and SQL](https://github.com/haruosuz/books/blob/master/bbs/README.md)
+- [Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p.](https://learninglink.oup.com/access/hall-5e)
+- [Nextstrain](https://nextstrain.org/) Real-time tracking of pathogen evolution
+- [Barbrook, A., Howe, C., Blake, N. et al. The phylogeny of The Canterbury Tales. Nature 394, 839 (1998).](https://doi.org/10.1038/29667)
+- [Patrick E. Savage, Charles Cronin, Daniel Müllensiefen, Quentin D. Atkinson. Quantitative evaluation of music copyright infringement. Proceedings of the Folk Music Analysis 2018 Workshop](http://fma2018.mus.auth.gr/files/papers/FMA2018_paper_4.pdf) | [音楽著作権侵害の客観的判断手法として"percent melodic identity" (PMI) 法を提案。DNAやタンパク質配列の比較に分子遺伝学で使用される配列アラインメントと配列一致率の計算を応用。](https://twitter.com/PatrickESavage/status/1112517784322236416)
+- [Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p.](https://github.com/haruosuz/books/tree/master/r4ds)
+- [Andrew Beckerman, Dylan Childs, and Owen Petchey - Getting Started with R: An Introduction for Biologists, 2nd Edition, Oxford University Press, 2017, 240p. ; 富永大介 (翻訳). Rをはじめよう生命科学のためのRStudio入門, 羊土社, 2019年03月12日, 254p.](https://github.com/haruosuz/books/tree/master/r4all)
+- [Emmanuel Paradis - Analysis of Phylogenetics and Evolution with R (Use R!), Springer; 2nd ed., 2011/11/5, 404p.](https://github.com/haruosuz/books/tree/master/aper)
+- 藤博幸（編）. よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p. https://www.kspub.co.jp/book/detail/5138212.html
 
 ----------
 ### R RStudio
