@@ -149,14 +149,14 @@ Please record what you typed to download DNA sequence data, to make your analysi
 Please download the R script (*my_assignment_chapter1_dna1.R*) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
+You can submit your assignment as a HTML document (*my_assignment_chapter1_dna1.html*), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
+
 ----------
 ## assignment 4
 **課題4 「DNA Sequence Statistics (2)」**
 
 Please download the R script (*my_assignment_chapter2_dna2.R*) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
-
-You can submit your assignment as a HTML document (*my_assignment_chapter2_dna2.html*), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
 
 ----------
 ## assignment 5
@@ -180,7 +180,7 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
     - [Spike glycoprotein](https://www.uniprot.org/uniprot/P0DTC2)
     - [Envelope small membrane protein](https://www.uniprot.org/uniprot/P0DTC4)
     - [ORF3b protein](https://www.uniprot.org/uniprot/P0DTF1)
-- Select the 'Blast' tab -> 'Advanced'
+- Select the 'Blast' tab -> 'Default' or 'Advanced'
 ```
 Target database: UniProtKB/Swiss-Prot
 E-Threshold: 0.0001
