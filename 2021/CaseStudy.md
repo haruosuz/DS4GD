@@ -175,7 +175,11 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ![](https://www.ebi.ac.uk/training/online/sites/ebi.ac.uk.training.online/files/user/2760/images/UniProt_tutorial/blast_1.png)
 
-[E - Envelope small membrane protein - Severe acute respiratory syndrome coronavirus 2 (2019-nCoV) - E gene & protein](https://www.uniprot.org/uniprot/P0DTC4)
+- [Severe acute respiratory syndrome coronavirus 2 (2019-nCoV) (SARS-CoV-2)](https://www.uniprot.org/taxonomy/2697049)
+  - [Reviewed (16)](https://www.uniprot.org/uniprot/?query=reviewed:yes%20taxonomy:2697049) Swiss-Prot
+    - [Spike glycoprotein](https://www.uniprot.org/uniprot/P0DTC2)
+    - [Envelope small membrane protein](https://www.uniprot.org/uniprot/P0DTC4)
+    - [ORF3b protein](https://www.uniprot.org/uniprot/P0DTF1)
 - Select the 'Blast' tab -> 'Advanced'
 ```
 Target database: UniProtKB/Swiss-Prot
