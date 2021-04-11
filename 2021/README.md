@@ -8,8 +8,7 @@
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- [Calendar for Spring Semester 2021](https://www.sfc.keio.ac.jp/en/docs/0baa4ad6c126b7b898e927b0e22d84a54b15b53d.pdf)
-- [2021年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/1dbd15e1a5013ec7df1f658328033f5a78f0f0b7.pdf)
+- [2021年度 春学期授業カレンダー](https://www.sfc.keio.ac.jp/doc/1dbd15e1a5013ec7df1f658328033f5a78f0f0b7.pdf) | [Calendar for Spring Semester 2021](https://www.sfc.keio.ac.jp/en/docs/0baa4ad6c126b7b898e927b0e22d84a54b15b53d.pdf)
 - 2021-04-13 No. 1 - イントロダクション Introduction
   - [References](#references)
   - [R/RStudio](#r-rstudio)
@@ -34,8 +33,10 @@
   - [2 First Steps in R for Phylogeneticists](https://link.springer.com/chapter/10.1007/978-1-4614-1743-9_2)
   - [3 Phylogenetic Data in R](https://link.springer.com/chapter/10.1007/978-1-4614-1743-9_3) | 3.4.7 Molecular Sequences
 - 2021-06-22 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
-  - コドン使用 [codon usage](https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#codon-usage)
+  - コドン使用 [Codon usage](https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#codon-usage)
   - 生物分類群 [NCBI Taxonomy](https://github.com/haruosuz/bioinfo/blob/master/2021/CaseStudy.md#ncbi-taxonomy)
+  - クラスター分析 [Cluster Analysis (UPGMA)](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
+  - ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 - 2021-06-29 No. 12 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md)
   - [my_script2report.R](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
@@ -61,10 +62,10 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - [Sheri Sanders - Introduction to R for Biologists, Version 2, 2019, 96p.](https://ncgas.org/training/r_textbook_full.pdf)
 - [Building bioinformatics solutions : with Perl, R, and SQL](https://github.com/haruosuz/books/blob/master/bbs/README.md)
 - [Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p.](https://learninglink.oup.com/access/hall-5e)
-- [Nextstrain](https://nextstrain.org/) Real-time tracking of pathogen evolution | [SARS-CoV-2 (COVID-19)](https://nextstrain.org/sars-cov-2)
+- [Nextstrain / Genomic epidemiology of novel coronavirus - Global subsampling](https://nextstrain.org/ncov/global)
 - [Rob DeSalle, Ian Tattersall - "A Natural History of Beer", 2019, 256p.](https://yalebooks.yale.edu/book/9780300233674/natural-history-beer) ; [ニキ　リンコ (訳), 三中　信宏 (訳), . ビールの自然誌, 勁草書房, 2020年1月, 288p.](https://www.keisoshobo.co.jp/book/b496478.html)
 - [Patrick E. Savage, Charles Cronin, Daniel Müllensiefen, Quentin D. Atkinson. Quantitative evaluation of music copyright infringement. Proceedings of the Folk Music Analysis 2018 Workshop](http://fma2018.mus.auth.gr/files/papers/FMA2018_paper_4.pdf) | [音楽著作権侵害の客観的判断手法として"percent melodic identity" (PMI) 法を提案。DNAやタンパク質配列の比較に分子遺伝学で使用される配列アラインメントと配列一致率の計算を応用。](https://twitter.com/PatrickESavage/status/1112517784322236416)
-- [Barbrook, A., Howe, C., Blake, N. et al. The phylogeny of The Canterbury Tales. Nature 394, 839 (1998).](https://doi.org/10.1038/29667)
+- [Barbrook, A., Howe, C., Blake, N. et al. The phylogeny of The Canterbury Tales. Nature 394, 839 (1998).](https://doi.org/10.1038/29667) | [『カンタベリー物語』の系譜](http://cse.naro.affrc.go.jp/minaka/cladist/SystematicThinking2014.pdf)
 - [David L. Kirchman - "Processes in Microbial Ecology", 2nd Edition, Oxford University Press, 2018, 336p.](https://global.oup.com/academic/product/processes-in-microbial-ecology-9780198789413) ; [永田 俊 訳. "微生物生態学　ゲノム解析からエコシステムまで", 京都大学学術出版会 (2016/9/12), 626p.](https://www.kyoto-up.or.jp/books/9784814000470.html)
 - [Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p.](https://github.com/haruosuz/books/tree/master/r4ds)
 - [Andrew Beckerman, Dylan Childs, and Owen Petchey - Getting Started with R: An Introduction for Biologists, 2nd Edition, Oxford University Press, 2017, 240p. ; 富永大介 (翻訳). Rをはじめよう生命科学のためのRStudio入門, 羊土社, 2019年03月12日, 254p.](https://github.com/haruosuz/books/tree/master/r4all)
