@@ -14,6 +14,7 @@
 - 2021-04-13 No. 1 - イントロダクション Introduction
   - [References](#references)
   - [R/RStudio](#r-rstudio)
+  - [scripts.zip](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
 - 2021-04-20 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2021-04-27 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
@@ -30,13 +31,11 @@
 - 2021-05-25 No. 7 - 中間発表 [interim report](#interim-report)
 - 2021-06-01 No. 8 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2021-06-08 No. 9 - MEGA Xを用いた系統解析 Using MEGA X for phylogenetic analysis
-  - [Phylogenetic Trees Made Easy: A How-To Manual | Chapter 2 Tutorial: Estimate a Tree](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
 - 2021-06-15 No. 10  - [Analysis of Phylogenetics and Evolution with R](https://github.com/haruosuz/books/tree/master/aper)
   - [2 First Steps in R for Phylogeneticists](https://link.springer.com/chapter/10.1007/978-1-4614-1743-9_2)
   - [3 Phylogenetic Data in R](https://link.springer.com/chapter/10.1007/978-1-4614-1743-9_3) | 3.4.7 Molecular Sequences
 - 2021-06-22 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
 - 2021-06-29 No. 12 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
-  - [my_script2report.R](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
 - 2021-07-06 No. 13 - 最終回
   - 最終発表 [final presentation](#final-presentation)
@@ -59,7 +58,7 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - [Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p.](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
 - [Conrad Bessant, Darren Oakley, Ian Shadforth - "Building bioinformatics solutions : with Perl, R, and SQL", Oxford University Press; 2nd edition, 2014/4/1, 368p.](https://github.com/haruosuz/books/blob/master/bbs/README.md)
 - [Emmanuel Paradis - Analysis of Phylogenetics and Evolution with R (Use R!), Springer; 2nd ed., 2011/11/5, 404p.](https://github.com/haruosuz/books/tree/master/aper)
-- [Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p.](https://learninglink.oup.com/access/hall-5e)
+- [Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p.](https://learninglink.oup.com/access/hall-5e) | [Table of Contents](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
 - 
 - [Nextstrain / Genomic epidemiology of novel coronavirus - Global subsampling](https://nextstrain.org/ncov/global)
 - [Rob DeSalle, Ian Tattersall - "A Natural History of Beer", 2019, 256p.](https://yalebooks.yale.edu/book/9780300233674/natural-history-beer) ; [ニキ　リンコ (訳), 三中　信宏 (訳), . ビールの自然誌, 勁草書房, 2020年1月, 288p.](https://www.keisoshobo.co.jp/book/b496478.html)
@@ -67,6 +66,7 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - [Barbrook, A., Howe, C., Blake, N. et al. The phylogeny of The Canterbury Tales. Nature 394, 839 (1998).](https://doi.org/10.1038/29667) | [『カンタベリー物語』の系譜](http://cse.naro.affrc.go.jp/minaka/cladist/SystematicThinking2014.pdf)
 - 
 - [David L. Kirchman - "Processes in Microbial Ecology", 2nd Edition, Oxford University Press, 2018, 336p.](https://global.oup.com/academic/product/processes-in-microbial-ecology-9780198789413) ; [永田 俊 訳. "微生物生態学　ゲノム解析からエコシステムまで", 京都大学学術出版会 (2016/9/12), 626p.](https://www.kyoto-up.or.jp/books/9784814000470.html)
+- 
 - [Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p.](https://github.com/haruosuz/books/tree/master/r4ds)
 - [Andrew Beckerman, Dylan Childs, and Owen Petchey - Getting Started with R: An Introduction for Biologists, 2nd Edition, Oxford University Press, 2017, 240p. ; 富永大介 (翻訳). Rをはじめよう生命科学のためのRStudio入門, 羊土社, 2019年03月12日, 254p.](https://github.com/haruosuz/books/tree/master/r4all)
 
