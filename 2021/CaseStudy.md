@@ -18,9 +18,12 @@
   - [UniProt BLAST](#uniprot-blast)
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「Multiple Alignment and Phylogenetic trees」
-- [assignment 8](#assignment-8) 課題8
-- [assignment 9](#assignment-9) 課題9 「draft report」
-- [assignment 10](#assignment-10) 課題10 「final report」
+- [assignment 8](#assignment-8) 課題8 「TBA」
+- [assignment 9](#assignment-9) 課題9 「TBA」
+- [assignment 10](#assignment-10) 課題10 「TBA」
+- [assignment 11](#assignment-11) 課題11 「TBA」
+- [assignment 12](#assignment-12) 課題12 「draft report」
+- [assignment 13](#assignment-13) 課題13 「final report」
 
 ----------
 ## assignment 0
@@ -53,8 +56,8 @@ My questions are as follows:
 ```
 「Rプログラミングと統計 p.3 ~ p.10 を見た。
 疑問点は次の通りである。
-1. 行列とデータフレームとリストの違いは？
-2. NAとNaNの違いが理解できなかった。
+1. 行列とデータフレームとリストの違いが理解できなかった。
+2. ファクターと文字列データの違いは？
 ```
 
 ----------
@@ -136,6 +139,7 @@ ACCESSION <- "NC_045512" # Severe acute respiratory syndrome coronavirus 2 (SARS
 filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
 #filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
 
+# Retrieve the sequence and store it in list variable "seqs"
 seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
 seq1 <- seqs[[1]]
 ```
@@ -204,8 +208,7 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 8
-**課題8
-
+**課題8 「TBA」**
 
 ----------
 ## assignment 9
