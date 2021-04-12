@@ -45,10 +45,10 @@
 ## final presentation
 **最終発表**
 
-Presentation time: 10 minutes will be allocated for each presentation (including Q&A).
+Presentation time: 3 minutes will be allocated for each presentation (including Q&A).
 Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global sequence alignment, and local sequence alignment), multiple sequence alignment, and phylogenetic trees, etc.
 
-発表時間：1人あたり最大10分（質疑応答を含む）。
+発表時間：1人あたり最大3分（質疑応答を含む）。
 興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
 
 ----------
