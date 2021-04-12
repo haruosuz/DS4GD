@@ -14,7 +14,6 @@
 - 2021-04-13 No. 1 - イントロダクション Introduction
   - [References](#references)
   - [R/RStudio](#r-rstudio)
-  - [scripts.zip](https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip)
 - 2021-04-20 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2021-04-27 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
@@ -64,8 +63,6 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - [Rob DeSalle, Ian Tattersall - "A Natural History of Beer", 2019, 256p.](https://yalebooks.yale.edu/book/9780300233674/natural-history-beer) ; [ニキ　リンコ (訳), 三中　信宏 (訳), . ビールの自然誌, 勁草書房, 2020年1月, 288p.](https://www.keisoshobo.co.jp/book/b496478.html)
 - [Patrick E. Savage, Charles Cronin, Daniel Müllensiefen, Quentin D. Atkinson. Quantitative evaluation of music copyright infringement. Proceedings of the Folk Music Analysis 2018 Workshop](http://fma2018.mus.auth.gr/files/papers/FMA2018_paper_4.pdf) | [音楽著作権侵害の客観的判断手法として"percent melodic identity" (PMI) 法を提案。DNAやタンパク質配列の比較に分子遺伝学で使用される配列アラインメントと配列一致率の計算を応用。](https://twitter.com/PatrickESavage/status/1112517784322236416)
 - [Barbrook, A., Howe, C., Blake, N. et al. The phylogeny of The Canterbury Tales. Nature 394, 839 (1998).](https://doi.org/10.1038/29667) | [『カンタベリー物語』の系譜](http://cse.naro.affrc.go.jp/minaka/cladist/SystematicThinking2014.pdf)
-- 
-- [David L. Kirchman - "Processes in Microbial Ecology", 2nd Edition, Oxford University Press, 2018, 336p.](https://global.oup.com/academic/product/processes-in-microbial-ecology-9780198789413) ; [永田 俊 訳. "微生物生態学　ゲノム解析からエコシステムまで", 京都大学学術出版会 (2016/9/12), 626p.](https://www.kyoto-up.or.jp/books/9784814000470.html)
 - 
 - [Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p.](https://github.com/haruosuz/books/tree/master/r4ds)
 - [Andrew Beckerman, Dylan Childs, and Owen Petchey - Getting Started with R: An Introduction for Biologists, 2nd Edition, Oxford University Press, 2017, 240p. ; 富永大介 (翻訳). Rをはじめよう生命科学のためのRStudio入門, 羊土社, 2019年03月12日, 254p.](https://github.com/haruosuz/books/tree/master/r4all)
