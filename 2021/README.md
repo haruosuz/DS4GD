@@ -14,6 +14,7 @@
 - 2021-04-13 No. 1 - イントロダクション Introduction
   - [References](#references)
   - [R/RStudio](#r-rstudio)
+  - 課題1 [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#assignment-1)
 - 2021-04-20 No. 2 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - 2021-04-27 No. 3 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
