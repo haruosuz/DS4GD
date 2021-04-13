@@ -42,7 +42,7 @@ https://github.com/haruosuz/r4bioinfo/raw/master/scripts/my_basic_r.zip
 
 Watch the following videos and write your comments or questions.
 - [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
-  - **my_datasciencedojo_r.R**
+  - **my_basic_r/my_datasciencedojo_r.R**
 
 
 [Example answer]
@@ -55,7 +55,7 @@ My questions are as follows:
 
 以下の動画を見て、疑問点を報告する。
 - [Rプログラミングと統計](https://www.youtube.com/watch?v=jjkBsU4AChM&list=PLdNQOrt5fdN8P-vy1i6vep9OP4R1AZcEb)
-  - **my_darumalab.R**
+  - **my_basic_r/my_darumalab.R**
 
 
 [回答例]
