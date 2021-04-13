@@ -59,8 +59,8 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p. https://learninglink.oup.com/access/hall-5e | [Table of Contents](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
 - 
 - Nextstrain / Genomic epidemiology of novel coronavirus - Global subsampling https://nextstrain.org/ncov/global
-- Rob DeSalle, Ian Tattersall - "A Natural History of Beer", 2019, 256p. https://yalebooks.yale.edu/book/9780300233674/natural-history-beer ; ニキ　リンコ (訳), 三中　信宏 (訳), . ビールの自然誌, 勁草書房, 2020年1月, 288p.](https://www.keisoshobo.co.jp/book/b496478.html
-- [Patrick E. Savage, Charles Cronin, Daniel Müllensiefen, Quentin D. Atkinson. Quantitative evaluation of music copyright infringement. Proceedings of the Folk Music Analysis 2018 Workshop http://fma2018.mus.auth.gr/files/papers/FMA2018_paper_4.pdf | 音楽著作権侵害の客観的判断手法として"percent melodic identity" (PMI) 法を提案。DNAやタンパク質配列の比較に分子遺伝学で使用される配列アラインメントと配列一致率の計算を応用。 https://twitter.com/PatrickESavage/status/1112517784322236416
+- Rob DeSalle, Ian Tattersall - "A Natural History of Beer", 2019, 256p. https://yalebooks.yale.edu/book/9780300233674/natural-history-beer ; ニキ　リンコ (訳), 三中　信宏 (訳), . ビールの自然誌, 勁草書房, 2020年1月, 288p. https://www.keisoshobo.co.jp/book/b496478.html
+- Patrick E. Savage, Charles Cronin, Daniel Müllensiefen, Quentin D. Atkinson. Quantitative evaluation of music copyright infringement. Proceedings of the Folk Music Analysis 2018 Workshop http://fma2018.mus.auth.gr/files/papers/FMA2018_paper_4.pdf | 音楽著作権侵害の客観的判断手法として"percent melodic identity" (PMI) 法を提案。DNAやタンパク質配列の比較に分子遺伝学で使用される配列アラインメントと配列一致率の計算を応用。 https://twitter.com/PatrickESavage/status/1112517784322236416
 - Barbrook, A., Howe, C., Blake, N. et al. The phylogeny of The Canterbury Tales. Nature 394, 839 (1998). https://doi.org/10.1038/29667 | 『カンタベリー物語』の系譜 http://cse.naro.affrc.go.jp/minaka/cladist/SystematicThinking2014.pdf
 - 
 - Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p. https://github.com/haruosuz/books/tree/master/r4ds
