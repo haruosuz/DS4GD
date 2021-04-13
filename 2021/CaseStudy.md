@@ -37,7 +37,7 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 ## assignment 1
 **課題1 「Introduction to R」**
 
-Please download R scripts (**my_datasciencedojo_r.R** / **my_darumalab.R**) from the following URL.
+Please download R scripts (**my_datasciencedojo_r.R**, **my_darumalab.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/scripts/my_basic_r.zip
 
 Watch the following videos and write your comments or questions.
