@@ -1366,7 +1366,9 @@ BLASTの実行:
 - [Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
 - [西田洋巳 (2012) ゲノム塩基配列の偏りと生物機能](http://www.iu.a.u-tokyo.ac.jp/~hnishida/tokuron4.htm)
 - [ゲノムサインとその生物学的な意味の解明](http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明)
-- G-language Tutorials [Nucleotide composition analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#nucleotide_composition_analysis) | [塩基組成の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#塩基組成の解析)
+- [g-language documents](https://github.com/gaou/g-language/wiki/Documents)
+[Nucleotide composition analysis](https://github.com/gaou/g-language/wiki/restgenomeanalysisenglish#nucleotide-composition-analysis) | 
+[塩基組成の解析](https://github.com/gaou/g-language/wiki/restgenomeanalysisjapanese#塩基組成の解析)
 
 **原核生物のゲノムサイズとGC含量との関係**
 
