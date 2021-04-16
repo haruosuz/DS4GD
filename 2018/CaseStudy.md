@@ -999,7 +999,6 @@ Q4. Build a rooted phylogenetic tree of the four proteins based on a trimmed ali
 ## Codon usage
 **コドン使用**
 
-- g-language Tutorials [Codon usage analysis](http://www.g-language.org/wiki/restgenomeanalysisenglish#codon_usage_analysis) [コドン使用の解析](http://www.g-language.org/wiki/restgenomeanalysisjapanese#コドン使用の解析)
 - nig 遺伝学電子博物館 [遺伝暗号(コドン）使用の種による多様性](https://www.nig.ac.jp/museum/evolution/04.html)
 - niigata-u [コドン組成に基づくBLSOM解析](http://bioinfo.ie.niigata-u.ac.jp/?コドン組成に基づくBLSOM解析) | [遺伝子発現量予測](http://bioinfo.ie.niigata-u.ac.jp/?遺伝子発現量予測)
 - 葉緑体遺伝子のコドン使用 [Suzuki H, Morton BR. (2016) "Codon Adaptation of Plastid Genes."](http://www.ncbi.nlm.nih.gov/pubmed/27196606) psbA gene
@@ -1366,7 +1365,7 @@ BLASTの実行:
 - [Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
 - [西田洋巳 (2012) ゲノム塩基配列の偏りと生物機能](http://www.iu.a.u-tokyo.ac.jp/~hnishida/tokuron4.htm)
 - [ゲノムサインとその生物学的な意味の解明](http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明)
-- [g-language documents](https://github.com/gaou/g-language/wiki/Documents)
+- [g-language documents](https://github.com/gaou/g-language/wiki/Documents) | 
 [Nucleotide composition analysis](https://github.com/gaou/g-language/wiki/restgenomeanalysisenglish#nucleotide-composition-analysis) | 
 [塩基組成の解析](https://github.com/gaou/g-language/wiki/restgenomeanalysisjapanese#塩基組成の解析)
 
