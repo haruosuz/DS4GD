@@ -188,8 +188,6 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 - [Severe acute respiratory syndrome coronavirus 2 (2019-nCoV) (SARS-CoV-2)](https://www.uniprot.org/taxonomy/2697049)
   - [Reviewed (16)](https://www.uniprot.org/uniprot/?query=reviewed:yes%20taxonomy:2697049) Swiss-Prot
     - [Spike glycoprotein](https://www.uniprot.org/uniprot/P0DTC2)
-    - [Envelope small membrane protein](https://www.uniprot.org/uniprot/P0DTC4)
-    - [ORF3b protein](https://www.uniprot.org/uniprot/P0DTF1)
 - Select the 'Blast' tab -> 'Default' or 'Advanced'
 ```
 Target database: UniProtKB/Swiss-Prot
