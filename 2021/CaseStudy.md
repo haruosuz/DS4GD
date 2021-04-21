@@ -72,7 +72,7 @@ My questions are as follows:
 
 [Installing R packages](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages)
 
-Please download the R script (*my_setup_packages.R*) from the following URL.
+Please download the R script (**my_setup_packages.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 回答例:  
@@ -130,9 +130,9 @@ Running under: macOS Catalina 10.15.7
 - Retrieving genome sequence data via the NCBI website
   - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press "Search".
   - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), When you click on the Organism Name "Severe acute respiratory syndrome coronavirus 2", it will bring you to the record for this organism in the NCBI Genome database.
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/86693?genome_assembly_id=757732), you will see the "Replicon Info" of the Organism. 
-The NCBI [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the DNA sequences are "NC_045512.2" (RefSeq) and "MN908947.3" (INSDC), respectively.
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), When you click on the **Organism Name** "Severe acute respiratory syndrome coronavirus 2", it will bring you to the record for this organism in the NCBI Genome database.
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/86693?genome_assembly_id=757732), you will see the **Replicon Info** of the Organism. 
+The NCBI [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the DNA sequences are "NC_045512.2" (**RefSeq**) and "MN908947.3" (**INSDC**), respectively.
 
 NCBIからDNA配列を取得する:  
 ```
@@ -156,23 +156,16 @@ Please record what you typed to download DNA sequence data, to make your analysi
 ## assignment 3
 **課題3 「DNA Sequence Statistics (1)」**
 
-Please download the R script (*my_assignment_chapter1_dna1.R*) from the following URL.
+Please download the R script (**my_assignment_chapter1_dna1.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
-You can submit your assignment as a HTML document (*my_assignment_chapter1_dna1.html*), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
+You can submit your assignment as a HTML document (**my_assignment_chapter1_dna1.html**), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
 
 ----------
 ## assignment 4
 **課題4 「DNA Sequence Statistics (2)」**
 
-Please download the R script (*my_assignment_chapter2_dna2.R*) from the following URL.
-https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
-
-----------
-## assignment 5
-**課題5 「dotplot」**
-
-Please download the R script (*my_assignment_chapter4_align_dotplot.R*) from the following URL.
+Please download the R script (**my_assignment_chapter2_dna2.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
@@ -199,17 +192,24 @@ Hits: 50
 - Click the 'Run Blast' button.
 
 ----------
+## assignment 5
+**課題5 「dotplot」**
+
+Please download the R script (**my_assignment_chapter4_align_dotplot.R**) from the following URL.
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+
+----------
 ## assignment 6
 **課題6 「Pairwise Sequence Alignment」**
 
-Please download the R script (*my_assignment_chapter4_align_pairwise.R*) from the following URL.
+Please download the R script (**my_assignment_chapter4_align_pairwise.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 7
 **課題7 「Multiple Alignment and Phylogenetic trees」**
 
-Please download the R script (*my_assignment_chapter5_msa_tree.R*) from the following URL.
+Please download the R script (**my_assignment_chapter5_msa_tree.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
@@ -218,7 +218,19 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 9
-**課題9 「draft report」**
+**課題9 「TBA」**
+
+----------
+## assignment 10
+**課題10 「TBA」**
+
+----------
+## assignment 11
+**課題11 「TBA」**
+
+----------
+## assignment 12
+**課題12 「draft report」**
 
 Integrate and modify your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it as a PDF/HTML document.
 
@@ -227,10 +239,12 @@ Integrate and modify your previous assignments (e.g. results of analyzing DNA/pr
 https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html
 
 ----------
-## assignment 10
-**課題10 「final report」**
+## assignment 13
+**課題13 「final report」**
 
 Submit your final report as a PDF/HTML document.
 
 ----------
+
+
 
