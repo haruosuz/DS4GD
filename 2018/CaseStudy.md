@@ -1365,7 +1365,7 @@ BLASTの実行:
 - [g-language documents](https://github.com/gaou/g-language/wiki/Documents) | 
 [Nucleotide composition analysis](https://github.com/gaou/g-language/wiki/restgenomeanalysisenglish#nucleotide-composition-analysis) | 
 [塩基組成の解析](https://github.com/gaou/g-language/wiki/restgenomeanalysisjapanese#塩基組成の解析)
-- [ゲノムサインとその生物学的な意味の解明](http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明)
+- http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明
 
 **原核生物（細菌とアーキア）におけるゲノムサイズとGC含量との関係**
 
@@ -1375,7 +1375,7 @@ BLASTの実行:
 
 Figure 1 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
 
-![http://schaechter.asmblog.org/schaechter/2009/07/an-iconoclastic-endosymbiont.html](http://schaechter.asmblog.org/.a/6a00d8341c5e1453ef0115723c61fc970b-300wi)
+![http://schaechter.asmblog.org/schaechter/2009/07/an-iconoclastic-endosymbiont.html](https://schaechter.asmblog.org/.a/6a00d8341c5e1453ef0115723c61fc970b-800wi)
 
 **[好熱菌](https://ja.wikipedia.org/wiki/好熱菌)と常温菌のコドン使用の違い**
 
