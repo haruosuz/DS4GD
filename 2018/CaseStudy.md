@@ -1379,13 +1379,13 @@ Figure 1 [Relationship between genome size and GC content for sequenced Bacteria
 
 **[好熱菌](https://ja.wikipedia.org/wiki/好熱菌)と常温菌のコドン使用の違い**
 
-[Lynn et al. (2002) "Synonymous codon usage is subject to selection in thermophilic bacteria"](https://pubmed.ncbi.nlm.nih.gov/12364606/)
+- [Lynn et al. (2002) "Synonymous codon usage is subject to selection in thermophilic bacteria"](https://pubmed.ncbi.nlm.nih.gov/12364606/)
 
 <img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg" width=50%>
 
 **[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
 
-[Paul et al. (2008) "Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes"](https://pubmed.ncbi.nlm.nih.gov/18397532/)
+- [Paul et al. (2008) Genome Biol. "Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes"](https://pubmed.ncbi.nlm.nih.gov/18397532/)
 
 Figure 1 [Grouping of halophiles and non-halophiles according to their standardized amino acid usage.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/figure/F1/)
 
@@ -1393,7 +1393,7 @@ Figure 1 [Grouping of halophiles and non-halophiles according to their standardi
 
 **ウィルスの宿主への適応：コドン使用とアミノ酸使用の偏り**
 
-[Bahir et al. (2009) "Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences"](https://pubmed.ncbi.nlm.nih.gov/19888206/)
+- [Bahir et al. (2009) "Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences"](https://pubmed.ncbi.nlm.nih.gov/19888206/)
 
 Figure 3 [Amino acid distribution and codon usage in viruses infecting taxonomy-unified hosts. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f3/)
 
@@ -1405,7 +1405,7 @@ Figure 6 [Similarity in GC content and codon usage between pairs of viruses and 
 
 **プラスミドと宿主染色体のGC含量**
 
-[Yano et al. (2019) "Reconsidering plasmid maintenance factors for computational plasmid design"](https://www.sciencedirect.com/science/article/pii/S2001037018301685)
+- [Yano et al. (2019) "Reconsidering plasmid maintenance factors for computational plasmid design"](https://www.sciencedirect.com/science/article/pii/S2001037018301685)
 
 Fig. 5. [Plot of G + C contents of 209 plasmids and their host chromosomes.](https://www.sciencedirect.com/science/article/pii/S2001037018301685#f0025)
  The G + C contents of plasmids tend to be lower than (and are correlated with) those of the host chromosomes.
@@ -1414,7 +1414,7 @@ Fig. 5. [Plot of G + C contents of 209 plasmids and their host chromosomes.]
 
 **コドン使用に基づく高発現遺伝子予測**
 
-[Characterizations of Highly Expressed Genes of Four Fast-Growing Bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/)
+- [Karlin et al. (2001) J Bacteriol "Characterizations of Highly Expressed Genes of Four Fast-Growing Bacteria"](https://pubmed.ncbi.nlm.nih.gov/11489855/)
 
 FIG. 1 [Genes of ≥100 codons in the four fast-growing bacteria. Each gene is represented by a single point. Its position is determined by its bias relative to all genes B(g|C) and by its bias relative to the RP genes B(g|RP).](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/figure/F1/)
 
@@ -1422,7 +1422,7 @@ FIG. 1 [Genes of ≥100 codons in the four fast-growing bacteria. Each gene is r
 
 **GC含量、連続塩基組成、アミノ酸・コドン使用に基づく外来性遺伝子クラスターの検出**
 
-[Karlin S (2001) Trends Microbiol. "Detecting anomalous gene clusters and pathogenicity islands in diverse bacterial genomes."](https://www.ncbi.nlm.nih.gov/pubmed/11435108) | [pdf](https://eclass.uoa.gr/modules/document/file.php/D473/Βιβλιογραφία/DNA%20Composition/Karlin_2001.pdf)
+- [Karlin S (2001) Trends Microbiol. "Detecting anomalous gene clusters and pathogenicity islands in diverse bacterial genomes."](https://www.ncbi.nlm.nih.gov/pubmed/11435108) | [pdf](https://eclass.uoa.gr/modules/document/file.php/D473/Βιβλιογραφία/DNA%20Composition/Karlin_2001.pdf)
 
 Fig. 1. [The contrasts are displayed for 20 and 50 kb sliding window plots of G+C content, genomic signature profiles, codon usage biases and amino acid anomalies for eight different bacterial species.](https://www.sciencedirect.com/science/article/pii/S0966842X01020790#FIG1)
 
