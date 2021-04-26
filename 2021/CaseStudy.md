@@ -10,8 +10,8 @@
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題1 「Introduction to R」
 - [assignment 2](#assignment-2) 課題2 「Installing R packages」
-- [assignment 3](#assignment-3) 課題3 「DNA Sequence Statistics (1)」
 - [NCBI Genome List](#ncbi-genome-list)
+- [assignment 3](#assignment-3) 課題3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
 - [assignment 5](#assignment-5) 課題5 「dotplot」
 - [BLAST](#blast)
@@ -65,6 +65,62 @@ My questions are as follows:
 1. 行列とデータフレームとリストの違いが理解できなかった。
 2. ファクターと文字列データの違いは？
 ```
+
+----------
+### R_vector
+
+[16. 種々のベクトル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html)
+ 論理型ベクトル
+論理値を要素とするベクトルを論理型ベクトルと呼ぶ．正式名（TRUE，FALSE）でも略記名（T，F）でも指定できる．論理型ベクトルに対する論理演算子として，& (論理積) ， | (論理和) ，! (否定) ，xor (排他的論理和) があり，これらを用いると要素毎の演算を行なう．
+
+----------
+### R_matrix
+
+[20. 行列計算](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/20.html)
+ 行列の積は %*% 演算子によって求める点に注意．行列に対して * 演算子を用いると要素毎の積を計算してしまう．
+
+[行列 | R による行列の演算](https://stats.biopapyrus.jp/r/basic/matrix.html)
+行列の計算
+
+[Rでのデータの演算と操作](https://www.cis.doshisha.ac.jp/mjin/R/03.html)
+Rでは、コマンド％*％で行列の積演算を行う。
+
+----------
+### R_data.frame
+
+[バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+
+216 ■ 8 章 R 言語入門
+
+データフレームから単一の列にアクセスするとき、R のデフォルトの動作は、これを 1 つの列を持つ データフレームとしてではなく、ベクトルとして返す。次に実行されるコードがデータフレームを入力 として期待している場合は問題となる。この動作を無効にするには、ブラケット演算子を使って引数 drop を FALSE に設定する。
+
+[Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
+
+202 | Chapter 8: A Rapid Introduction to the R Language
+
+When accessing a single column from a dataframe, R’s default behavior is to return this as a vector—not a dataframe with one column. Sometimes this can cause prob‐ lems if downstream code expects to work with a dataframe. To disable this behavior, we set the argument drop to FALSE in the bracket operator:
+```
+> d[, "start", drop=FALSE]
+```
+
+----------
+### R_read.table
+
+2021-01-25
+[第23章 Rのエンコーディング問題 | Rで計量政治学入門](https://shohei-doi.github.io/quant_polisci/encoding-r.html)
+23.1 なぜ文字化けが起こるのか
+23.1.1 エンコーディング
+実用上、日本語で文字化けが起こる問題の大半は
+WindowsではShift-JISあるいはCP932で、
+LinuxやMacなどのUNIX系ではUTF-8で
+エンコーディングしていることに起因しています。
+
+2015-08-23
+[🔰文字化けこわい、こわくない？ - cucumber flesh](https://uribo.hatenablog.com/entry/2015/08/23/004222)
+日本語エンコーディング表形式のファイル
+WindowsとMac（UNIX）でエンコードが異なるので注意が必要。大抵の場合、ファイルの出処がWindowsならcp932（いわゆるSJIS）、MacならUTF8を引数fileEncodingで指定すれば大丈夫。
+
+----------
 
 ----------
 ## assignment 2
