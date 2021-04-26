@@ -1381,7 +1381,7 @@ Figure 1 [Relationship between genome size and GC content for sequenced Bacteria
 
 [Lynn et al. (2002) "Synonymous codon usage is subject to selection in thermophilic bacteria"](https://pubmed.ncbi.nlm.nih.gov/12364606/)
 
-<img alt="" src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg"" width=50%>
+<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg" width=50%>
 
 **[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
 
