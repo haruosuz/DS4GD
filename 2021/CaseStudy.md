@@ -37,6 +37,7 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 ## assignment 1
 **課題1 「Introduction to R」**
 
+次のURLからRスクリプトをダウンロードして下さい。
 Please download R scripts (**my_datasciencedojo_r.R**, **my_darumalab.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/scripts/my_basic_r.zip
 
@@ -68,7 +69,7 @@ My questions are as follows:
 
 ----------
 
-2020年度の課題「Introduction to R」の疑問点に関連する資料
+2020年度 課題「Introduction to R」の疑問点に関連する資料
 References related to comments/questions for assignment "Introduction to R" in 2020.
 - https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-2
 - https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1
@@ -99,7 +100,7 @@ R Language Basics | 191
 
 Factors and classes in R
 
-Another kind of vector you’ll encounter are factors. Factors store categorical vari‐ ables, such as a treatment group (e.g., “high,” “medium,” “low,” “control”), strand (for‐ ward or reverse), or chromosome (“chr1,” “chr2,” etc.).
+Another kind of vector you’ll encounter are factors. Factors store categorical variables, such as a treatment group (e.g., “high,” “medium,” “low,” “control”), strand (forward or reverse), or chromosome (“chr1,” “chr2,” etc.).
 
 ----------
 ### R_matrix
@@ -126,7 +127,7 @@ Rでは、コマンド％*％で行列の積演算を行う。
 
 202 | Chapter 8: A Rapid Introduction to the R Language
 
-When accessing a single column from a dataframe, R’s default behavior is to return this as a vector—not a dataframe with one column. Sometimes this can cause prob‐ lems if downstream code expects to work with a dataframe. To disable this behavior, we set the argument drop to FALSE in the bracket operator:
+When accessing a single column from a dataframe, R’s default behavior is to return this as a vector—not a dataframe with one column. Sometimes this can cause problems if downstream code expects to work with a dataframe. To disable this behavior, we set the argument drop to FALSE in the bracket operator:
 ```
 > d[, "start", drop=FALSE]
 ```
@@ -156,6 +157,7 @@ WindowsとMac（UNIX）でエンコードが異なるので注意が必要。大
 
 [Installing R packages](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages)
 
+次のURLからRスクリプトをダウンロードして下さい。
 Please download the R script (**my_setup_packages.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
@@ -247,10 +249,21 @@ Please record what you typed to download DNA sequence data, to make your analysi
 ## assignment 3
 **課題3 「DNA Sequence Statistics (1)」**
 
+次のURLからRスクリプトをダウンロードして下さい。
 Please download the R script (**my_assignment_chapter1_dna1.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 You can submit your assignment as a HTML document (**my_assignment_chapter1_dna1.html**), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
+
+
+
+
+
+https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-3
+
+
+
+
 
 ----------
 ## assignment 4
