@@ -37,8 +37,8 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 ## assignment 1
 **課題1 「Introduction to R」**
 
-次のURLからRスクリプトをダウンロードして下さい。
-Please download R scripts (**my_datasciencedojo_r.R**, **my_darumalab.R**) from the following URL.
+次のURLからRスクリプトをダウンロードして下さい。  
+Please download R scripts (**my_datasciencedojo_r.R**, **my_darumalab.R**) from the following URL.  
 https://github.com/haruosuz/r4bioinfo/raw/master/scripts/my_basic_r.zip
 
 Watch the following videos and write your comments or questions.
@@ -69,8 +69,9 @@ My questions are as follows:
 
 ----------
 
-2020年度 課題「Introduction to R」の疑問点に関連する資料
-References related to comments/questions for assignment "Introduction to R" in 2020.
+2020年度 課題「Introduction to R」の疑問点に関連する資料  
+References related to comments/questions for assignment "Introduction to R" in 2020.  
+
 - https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-2
 - https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1
 
@@ -157,8 +158,8 @@ WindowsとMac（UNIX）でエンコードが異なるので注意が必要。大
 
 [Installing R packages](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages)
 
-次のURLからRスクリプトをダウンロードして下さい。
-Please download the R script (**my_setup_packages.R**) from the following URL.
+次のURLからRスクリプトをダウンロードして下さい。  
+Please download the R script (**my_setup_packages.R**) from the following URL.  
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 回答例:  
@@ -249,8 +250,8 @@ Please record what you typed to download DNA sequence data, to make your analysi
 ## assignment 3
 **課題3 「DNA Sequence Statistics (1)」**
 
-次のURLからRスクリプトをダウンロードして下さい。
-Please download the R script (**my_assignment_chapter1_dna1.R**) from the following URL.
+次のURLからRスクリプトをダウンロードして下さい。  
+Please download the R script (**my_assignment_chapter1_dna1.R**) from the following URL.  
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 You can submit your assignment as a HTML document (**my_assignment_chapter1_dna1.html**), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
