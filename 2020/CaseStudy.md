@@ -64,7 +64,16 @@ My questions are as follows:
 ```
 
 ----------
-[Control Statements: For Loop, If, Else - Introduction to R Programming - Part 10](https://www.youtube.com/watch?v=QEzWBLb9xa4&list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx&index=10)
+
+https://akiyoko.hatenablog.jp/entry/2014/11/07/042801
+Windows で R（統計解析ツール）を使う - 
+R の使い方を手っ取り早く理解するためにまず、ドットインストールの「R言語入門」（全13回）の動画をひと通り全部見てみました。
+動画時間は全部で 35分ほど。
+手を動かすのも合わせて、一時間ほどでチェックし終えることができました。
+
+----------
+
+Data Science Dojo [Control Statements: For Loop, If, Else - Introduction to R Programming - Part 10 - YouTube](https://www.youtube.com/watch?v=QEzWBLb9xa4&list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx&index=11)
 
 ```
 > income$average.income
@@ -85,13 +94,8 @@ Object names must start with a letter, and can only contain letters, numbers, _ 
 To specify a single variable within a data frame or tibble, use the dollar sign $. R has another way of doing this, using column numbers, but using the dollar sign will make it much easier to understand your code if someone else needs to use it, or if you come back to look at it months after writing it.
 
 ----------
-https://akiyoko.hatenablog.jp/entry/2014/11/07/042801
-Windows で R（統計解析ツール）を使う - 
-R の使い方を手っ取り早く理解するためにまず、ドットインストールの「R言語入門」（全13回）の動画をひと通り全部見てみました。
-動画時間は全部で 35分ほど。
-手を動かすのも合わせて、一時間ほどでチェックし終えることができました。
+### R_vector
 
-----------
 https://dotinstall.com/lessons/basic_r/28106
 #06 ベクトルの演算をしてみよう | R言語入門 - プログラミングならドットインストール
 
@@ -105,6 +109,8 @@ setdiff(x, y)	差集合
 ```
 
 ----------
+### R_factor
+
 https://dotinstall.com/lessons/basic_r/28107
 #07 因子ベクトルを使ってみよう | R言語入門 - プログラミングならドットインストール
 
@@ -130,6 +136,8 @@ https://sites.google.com/site/leihcrev/r/ordered-and-unordered-factors
 順序付き因子を適用したデータは、尺度水準が順序尺度であることを示す。順序無し因子を適用すれば名義尺度にあたる。因子を付加していない数値ベクトルは、間隔尺度以上の高水準の尺度ということになる。順序付き因子と順序無し因子は、モデルへの当てはめなどで異なった振舞いを示す。
 
 ----------
+### R_list
+
 https://dotinstall.com/lessons/basic_r/28110
 #10 リストを扱ってみよう | R言語入門 - プログラミングならドットインストール
 
@@ -154,6 +162,8 @@ http://takenaka-akio.org/doc/r_auto/list.html
 [　] や [[ ]]、$ による要素の指定方法は、 データフレームの場合と同様ですね。 これはデータフレーム自体がリスト（の一種）なので当然です（ is.list(data.frame()) は TRUE を返す）。
 
 ----------
+### R_data.frame
+
 https://dotinstall.com/lessons/basic_r/28111
 #11 データフレームを扱ってみよう | R言語入門 - プログラミングならドットインストール
 
@@ -165,6 +175,8 @@ http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html
 データフレームとは data.frame クラスを持つリストのことであり，数値ベクトルや文字ベクトル，因子ベクトル（文字型ベクトル）などの異なる型のデータをまとめて1 つの変数として持っている．外見は行列と同じ 2 次元配列であるが，データフレームの各行・列はラベルを必ず持ち，ラベルによる操作が可能である点が普通の行列と異なる．しかも各列の要素の型はバラバラでも構わないので，ベクトルやリストで持っているデータをデータフレームに変換することで統計解析がやりやすくなる．
 
 ----------
+### R_plot
+
 https://dotinstall.com/lessons/basic_r/28113
 #13 グラフを描いてみよう | R言語入門 - プログラミングならドットインストール
 
@@ -176,6 +188,7 @@ http://cse.naro.affrc.go.jp/takezawa/r-tips/r/67.html
 ```
 
 ----------
+
 ----------
 ## Compile Report
 
