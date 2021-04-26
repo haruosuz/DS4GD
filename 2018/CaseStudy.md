@@ -1367,7 +1367,11 @@ BLASTの実行:
 [塩基組成の解析](https://github.com/gaou/g-language/wiki/restgenomeanalysisjapanese#塩基組成の解析)
 - [ゲノムサインとその生物学的な意味の解明](http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明)
 
-**細菌とアーキアにおけるゲノムサイズとGC含量との関係**
+**原核生物（細菌とアーキア）におけるゲノムサイズとGC含量との関係**
+
+- [Almpanis A et al.  Microb Genom. 2018 Apr;4(4). "Correlation between bacterial G+C content, genome size and the G+C content of associated plasmids and bacteriophages."](https://www.ncbi.nlm.nih.gov/pubmed/29633935)
+- [Bohlin J et al. Environ Microbiol Rep. 2014 Jun;6(3):278-86. "Positive correlations between genomic %AT and genome size within strains of bacterial species."](https://www.ncbi.nlm.nih.gov/pubmed/24983532)
+- [McCutcheon JP et al. PLoS Genet. 2009 Jul;5(7):e1000565. "Origin of an alternative genetic code in the extremely small and GC-rich genome of a bacterial symbiont."](https://www.ncbi.nlm.nih.gov/pubmed/19609354)
 
 Figure 1 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
 
@@ -1375,21 +1379,21 @@ Figure 1 [Relationship between genome size and GC content for sequenced Bacteria
 
 **[好熱菌](https://ja.wikipedia.org/wiki/好熱菌)と常温菌のコドン使用の違い**
 
-[Synonymous codon usage is subject to selection in thermophilic bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/)
+[Lynn et al. (2002) "Synonymous codon usage is subject to selection in thermophilic bacteria"](https://pubmed.ncbi.nlm.nih.gov/12364606/)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg)
 
 **[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
 
-[Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/)
+[Paul et al. (2008) "Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes"](https://pubmed.ncbi.nlm.nih.gov/18397532/)
 
 Figure 1 [Grouping of halophiles and non-halophiles according to their standardized amino acid usage.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/figure/F1/)
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/bin/gb-2008-9-4-r70-1.jpg)
 
-**ウィルスの宿主への適応：コドン使用とアミノ酸使用の解析**
+**ウィルスの宿主への適応：コドン使用とアミノ酸使用の偏り**
 
-[Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/)
+[Bahir et al. (2009) "Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences"](https://pubmed.ncbi.nlm.nih.gov/19888206/)
 
 Figure 3 [Amino acid distribution and codon usage in viruses infecting taxonomy-unified hosts. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f3/)
 
@@ -1401,7 +1405,9 @@ Figure 6 [Similarity in GC content and codon usage between pairs of viruses and 
 
 **プラスミドと宿主染色体のGC含量**
 
-Fig. 5. [Plot of G + C contents of 209 plasmids and their host chromosomes.](https://www.sciencedirect.com/science/article/pii/S2001037018301685)
+[Yano et al. (2019) "Reconsidering plasmid maintenance factors for computational plasmid design"](https://www.sciencedirect.com/science/article/pii/S2001037018301685)
+
+Fig. 5. [Plot of G + C contents of 209 plasmids and their host chromosomes.](https://www.sciencedirect.com/science/article/pii/S2001037018301685#f0025)
  The G + C contents of plasmids tend to be lower than (and are correlated with) those of the host chromosomes.
 
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S2001037018301685-gr5.jpg)
