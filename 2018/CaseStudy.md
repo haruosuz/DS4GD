@@ -1360,16 +1360,13 @@ BLASTの実行:
 ## Genome signature
 **ゲノムの特徴**
 
-**[微生物の生態とゲノムの特徴](http://meeting-jsme2018.com/symposium.html)**
-
 - [Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
-- [西田洋巳 (2012) ゲノム塩基配列の偏りと生物機能](http://www.iu.a.u-tokyo.ac.jp/~hnishida/tokuron4.htm)
 - [ゲノムサインとその生物学的な意味の解明](http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明)
 - [g-language documents](https://github.com/gaou/g-language/wiki/Documents) | 
 [Nucleotide composition analysis](https://github.com/gaou/g-language/wiki/restgenomeanalysisenglish#nucleotide-composition-analysis) | 
 [塩基組成の解析](https://github.com/gaou/g-language/wiki/restgenomeanalysisjapanese#塩基組成の解析)
 
-**原核生物のゲノムサイズとGC含量との関係**
+**細菌とアーキアにおけるゲノムサイズとGC含量との関係**
 
 Figure 1 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
 
@@ -1378,6 +1375,8 @@ Figure 1 [Relationship between genome size and GC content for sequenced Bacteria
 **[好熱菌](https://ja.wikipedia.org/wiki/好熱菌)と常温菌のコドン使用の違い**
 
 [Synonymous codon usage is subject to selection in thermophilic bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg)
 
 **[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
 
@@ -1399,6 +1398,13 @@ Figure 6 [Similarity in GC content and codon usage between pairs of viruses and 
 
 ![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f6.jpg)
 
+**プラスミドと宿主染色体のGC含量**
+
+Fig. 5. [Plot of G + C contents of 209 plasmids and their host chromosomes.](https://www.sciencedirect.com/science/article/pii/S2001037018301685)
+ The G + C contents of plasmids tend to be lower than (and are correlated with) those of the host chromosomes.
+
+![](https://ars.els-cdn.com/content/image/1-s2.0-S2001037018301685-gr5.jpg)
+
 **コドン使用に基づく高発現遺伝子予測**
 
 [Characterizations of Highly Expressed Genes of Four Fast-Growing Bacteria](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/)
@@ -1416,3 +1422,5 @@ Fig. 1. [The contrasts are displayed for 20 and 50 kb sliding window plots of G+
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr1.jpg)
 
 ----------
+
+
