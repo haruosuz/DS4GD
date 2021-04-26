@@ -68,6 +68,8 @@ My questions are as follows:
 
 ----------
 
+2020年度の課題「Introduction to R」の疑問点に関連する資料
+References related to comments/questions for assignment "Introduction to R" in 2020.
 - https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-2
 - https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1
 
