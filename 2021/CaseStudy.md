@@ -67,11 +67,37 @@ My questions are as follows:
 ```
 
 ----------
+
+- https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-2
+- https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1
+
+----------
 ### R_vector
 
 [16. 種々のベクトル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html)
- 論理型ベクトル
+ 論理型ベクトル | 
 論理値を要素とするベクトルを論理型ベクトルと呼ぶ．正式名（TRUE，FALSE）でも略記名（T，F）でも指定できる．論理型ベクトルに対する論理演算子として，& (論理積) ， | (論理和) ，! (否定) ，xor (排他的論理和) があり，これらを用いると要素毎の演算を行なう．
+
+----------
+### R_factor
+
+Data Science Dojo [Using Factors - Introduction to R Programming - Part 8 - YouTube](https://www.youtube.com/watch?v=a_N6Q0O5T3s&list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx&index=8)
+
+[バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+
+8.2 R 言語の基礎 ■ 205
+
+8.2.3.2 R の因子とクラス 
+
+他にも作業中に出会う可能性のあるベクトルに因子がある。因子はカテゴリーを表す変数を収めたベクトルである。たとえば処理群(「高」、「中」、「低」、「対照」など)、鎖(「正鎖」または「相補鎖」)、あるいは染色体(「chr1」、「chr2」など)である。
+
+[Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
+
+R Language Basics | 191
+
+Factors and classes in R
+
+Another kind of vector you’ll encounter are factors. Factors store categorical vari‐ ables, such as a treatment group (e.g., “high,” “medium,” “low,” “control”), strand (for‐ ward or reverse), or chromosome (“chr1,” “chr2,” etc.).
 
 ----------
 ### R_matrix
@@ -108,8 +134,8 @@ When accessing a single column from a dataframe, R’s default behavior is to re
 
 2021-01-25
 [第23章 Rのエンコーディング問題 | Rで計量政治学入門](https://shohei-doi.github.io/quant_polisci/encoding-r.html)
-23.1 なぜ文字化けが起こるのか
-23.1.1 エンコーディング
+23.1 なぜ文字化けが起こるのか | 
+23.1.1 エンコーディング | 
 実用上、日本語で文字化けが起こる問題の大半は
 WindowsではShift-JISあるいはCP932で、
 LinuxやMacなどのUNIX系ではUTF-8で
@@ -117,7 +143,7 @@ LinuxやMacなどのUNIX系ではUTF-8で
 
 2015-08-23
 [🔰文字化けこわい、こわくない？ - cucumber flesh](https://uribo.hatenablog.com/entry/2015/08/23/004222)
-日本語エンコーディング表形式のファイル
+日本語エンコーディング表形式のファイル | 
 WindowsとMac（UNIX）でエンコードが異なるので注意が必要。大抵の場合、ファイルの出処がWindowsならcp932（いわゆるSJIS）、MacならUTF8を引数fileEncodingで指定すれば大丈夫。
 
 ----------
