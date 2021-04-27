@@ -163,7 +163,7 @@ http://takenaka-akio.org/doc/r_auto/list.html
 https://dotinstall.com/lessons/basic_r/28111
 #11 データフレームを扱ってみよう | R言語入門 - プログラミングならドットインストール
 
-https://www.cyberer.net/2020/03/r-lists-and-data-frames.html#toc_headline_8
+[CYBERer.NET: R - 入門本編 6章 リストとデータフレーム](https://www.cyberer.net/2020/03/r-lists-and-data-frames.html#toc_headline_8)
 「データフレーム」は関係データベースのテーブルのようなデータ構造だ。クラス data.frame を持つリストであるが、ただのリストに比べてコンポーネントになり得るオブジェクトにいくつかの制限が設けられている。
 
 R-Tips [39. データフレーム事始](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)
