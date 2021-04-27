@@ -80,7 +80,8 @@ References related to comments/questions for assignment "Introduction to R".
 ### R_vector
 
 [16. 種々のベクトル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html)
- 論理型ベクトル | 
+ 論理型ベクトル
+|
 論理値を要素とするベクトルを論理型ベクトルと呼ぶ．正式名（TRUE，FALSE）でも略記名（T，F）でも指定できる．論理型ベクトルに対する論理演算子として，& (論理積) ， | (論理和) ，! (否定) ，xor (排他的論理和) があり，これらを用いると要素毎の演算を行なう．
 
 ----------
@@ -140,8 +141,10 @@ When accessing a single column from a dataframe, R’s default behavior is to re
 
 2021-01-25
 [第23章 Rのエンコーディング問題 | Rで計量政治学入門](https://shohei-doi.github.io/quant_polisci/encoding-r.html)
-23.1 なぜ文字化けが起こるのか | 
-23.1.1 エンコーディング | 
+23.1 なぜ文字化けが起こるのか
+|
+23.1.1 エンコーディング
+|
 実用上、日本語で文字化けが起こる問題の大半は
 WindowsではShift-JISあるいはCP932で、
 LinuxやMacなどのUNIX系ではUTF-8で
@@ -149,11 +152,12 @@ LinuxやMacなどのUNIX系ではUTF-8で
 
 2015-08-23
 [文字化けこわい、こわくない？ - cucumber flesh](https://uribo.hatenablog.com/entry/2015/08/23/004222)
-日本語エンコーディング表形式のファイル | 
+日本語エンコーディング表形式のファイル
+|
 WindowsとMac（UNIX）でエンコードが異なるので注意が必要。大抵の場合、ファイルの出処がWindowsならcp932（いわゆるSJIS）、MacならUTF8を引数fileEncodingで指定すれば大丈夫。
 
 ----------
-### MEGA
+### R/MEGA
 
 8th Aug, 2017
 https://www.researchgate.net/post/Does-anybody-have-a-pipeline-created-or-experience-of-taking-Phylogenetic-trees-from-MEGA-to-Rggtree
@@ -161,7 +165,11 @@ Does anybody have a pipeline created or experience of taking Phylogenetic trees 
 
 https://support.bioconductor.org/p/41863/
 Packages reproducing phylogenetic tree from output of MEGA
-
+|
+You can save the tree from MEGA in newick format.
+APE is an R package that reads newick format and has a lot of options
+to
+plot phylogenetic trees.
 
 
 ----------
