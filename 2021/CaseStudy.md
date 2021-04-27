@@ -79,7 +79,7 @@ References related to comments/questions for assignment "Introduction to R".
 ----------
 ### R_vector
 
-[16. 種々のベクトル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html)
+R-Tips [16. 種々のベクトル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html)
  論理型ベクトル
 |
 論理値を要素とするベクトルを論理型ベクトルと呼ぶ．正式名（TRUE，FALSE）でも略記名（T，F）でも指定できる．論理型ベクトルに対する論理演算子として，& (論理積) ， | (論理和) ，! (否定) ，xor (排他的論理和) があり，これらを用いると要素毎の演算を行なう．
@@ -117,9 +117,6 @@ R-Tips [20. 行列計算](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/20.html)
 ----------
 ### R_data.frame
 
-R-Tips [39. データフレーム事始](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)
-データフレームとは data.frame クラスを持つリストのことであり，数値ベクトルや文字ベクトル，因子ベクトル（文字型ベクトル）などの異なる型のデータをまとめて1 つの変数として持っている．外見は行列と同じ 2 次元配列であるが，
-
 [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
 216 ■ 8 章 R 言語入門
 
@@ -149,6 +146,8 @@ When accessing a single column from a dataframe, R’s default behavior is to re
 WindowsではShift-JISあるいはCP932で、
 LinuxやMacなどのUNIX系ではUTF-8で
 エンコーディングしていることに起因しています。
+
+2018-01-25 [RでCSVファイルの入出力（CP932文字コード指定など） | kitamix](https://kitamix.net/archives/save-cdv-file-in-r/1096)
 
 2015-08-23
 [文字化けこわい、こわくない？ - cucumber flesh](https://uribo.hatenablog.com/entry/2015/08/23/004222)
