@@ -69,8 +69,8 @@ My questions are as follows:
 
 ----------
 
-2020年度 課題「Introduction to R」の疑問点に関連する資料  
-References related to comments/questions for assignment "Introduction to R" in 2020.  
+課題「Introduction to R」の疑問点に関連する資料  
+References related to comments/questions for assignment "Introduction to R".  
 
 - https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-2
 - https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1
@@ -208,10 +208,15 @@ Running under: macOS Catalina 10.15.7
 
 <img src="https://www.ddbj.nig.ac.jp/assets/images/center/insdc_shoukai.gif" alt="https://www.ddbj.nig.ac.jp/about/insdc.html" width=25%>
 
-[INSDC; International Nucleotide Sequence Database Collaboration](https://www.ddbj.nig.ac.jp/insdc-e.html)
+INSDC [International Nucleotide Sequence Database Collaboration](https://www.ddbj.nig.ac.jp/insdc-e.html)
 [塩基配列データベース構築の国際協調](https://www.ddbj.nig.ac.jp/insdc.html)
 
-[What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+- Retrieving genome sequence data via the NCBI website
+  - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press "Search".
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), When you click on the **Organism Name** "Severe acute respiratory syndrome coronavirus 2", it will bring you to the record for this organism in the NCBI Genome database.
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/86693?genome_assembly_id=757732), you will see the **Replicon Info** of the Organism. 
+The NCBI [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the DNA sequences are "NC_045512" (**RefSeq**) and "MN908947" (**INSDC**), respectively.
 
 - NCBIのウェブサイトからゲノム配列データを取得する。
   - ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。
@@ -220,13 +225,6 @@ Running under: macOS Catalina 10.15.7
   - [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、列**Organism Name**の"Severe acute respiratory syndrome coronavirus 2"をクリックして開く。
   - [ここで](https://www.ncbi.nlm.nih.gov/genome/86693?genome_assembly_id=757732)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に[アクセッション番号](https://www.ddbj.nig.ac.jp/acc_def.html)が示されている。
 アクセッション番号は、"NC_045512" (**RefSeq**) と "MN908947" (**INSDC**) である。
-
-- Retrieving genome sequence data via the NCBI website
-  - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press "Search".
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), When you click on the **Organism Name** "Severe acute respiratory syndrome coronavirus 2", it will bring you to the record for this organism in the NCBI Genome database.
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/86693?genome_assembly_id=757732), you will see the **Replicon Info** of the Organism. 
-The NCBI [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the DNA sequences are "NC_045512" (**RefSeq**) and "MN908947" (**INSDC**), respectively.
 
 NCBIからDNA配列を取得する:  
 ```
@@ -242,9 +240,25 @@ filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db
 # Retrieve the sequence and store it in list variable "seqs"
 seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
 seq1 <- seqs[[1]]
+
+# Get sequence annotations
+getAnnot(seq1)
 ```
 
 Please record what you typed to download DNA sequence data, to make your analysis reproducible.
+
+- [RefSeq Frequently Asked Questions (FAQ) - RefSeq Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK50679/)
+  - [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+  - [What causes the version number of a RefSeq record to change?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_causes_the_version_number)
+A version number change (e.g., NM_111111.1 -> NM_111111.2) occurs to a RefSeq record when there is any update to the sequence of that record. Sequence updates include the alteration, addition, or removal of nucleotides or amino acids from a record. Please note that other alterations such as updates to annotation or associated publications will not trigger a version number change. 
+  - [What updates to RefSeq records need a simple version number change and which require a new accession number?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_updates_to_refseq_records)
+- VERSION
+[DDBJ flat file format](https://www.ddbj.nig.ac.jp/ddbj/flat-file-e.html#VERSION)
+This line consists of an accession number and a version number, like “AB123456.1”, in which the digit(s) after the period is a version number.
+The data open to public for the first time is version number as “1”. The reason for adding VERSION is that since a released sequence sometimes revised by the submitter, the accession number alone cannot specify the sequence in question causing the user a trouble. The number is increased by one every time when a revised sequence is made public. And accession number will NOT be changed generally.
+[DDBJ 公開形式 Flat file](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html#VERSION)
+アクセッション番号とバージョン番号で構成されています。
+はじめて公開されたデータは、バージョン番号は “1” が記載されています。当該エントリの配列が訂正・更新された場合には、バージョン番号が更新されます。通常、配列が訂正・更新された場合にアクセッション番号が変更されることはありません。
 
 ----------
 ## assignment 3
