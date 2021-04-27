@@ -56,6 +56,7 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 ## References
 **参考文献**
 
+- 藤博幸（編）. よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p. https://www.kspub.co.jp/book/detail/5138212.html
 - Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
 - Conrad Bessant, Darren Oakley, Ian Shadforth - "Building bioinformatics solutions : with Perl, R, and SQL", Oxford University Press; 2nd edition, 2014/4/1, 368p. https://github.com/haruosuz/books/blob/master/bbs/README.md
 - Emmanuel Paradis - Analysis of Phylogenetics and Evolution with R (Use R!), Springer; 2nd ed., 2011/11/5, 404p. https://github.com/haruosuz/books/tree/master/aper
