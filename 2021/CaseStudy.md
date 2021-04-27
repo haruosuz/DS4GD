@@ -113,6 +113,11 @@ R-Tips [20. 行列計算](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/20.html)
 行列の計算
 
 [Rでのデータの演算と操作](https://www.cis.doshisha.ac.jp/mjin/R/03.html)
+3．行列の演算
+(2)行列の乗算
+　行列の乗算には、算術演算のように対応する行列の要素の間に乗算を行う演算と線形代数で定義されている積演算がある。
+Rでは、コマンド％*％で行列の積演算を行う。
+(3)単位行列と逆行列
 
 ----------
 ### R_data.frame
