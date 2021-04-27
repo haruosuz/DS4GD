@@ -88,45 +88,46 @@ References related to comments/questions for assignment "Introduction to R".
 
 Data Science Dojo [Using Factors - Introduction to R Programming - Part 8 - YouTube](https://www.youtube.com/watch?v=a_N6Q0O5T3s&list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx&index=8)
 
-[バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
-
-8.2 R 言語の基礎 ■ 205
-
-8.2.3.2 R の因子とクラス 
-
-他にも作業中に出会う可能性のあるベクトルに因子がある。因子はカテゴリーを表す変数を収めたベクトルである。たとえば処理群(「高」、「中」、「低」、「対照」など)、鎖(「正鎖」または「相補鎖」)、あるいは染色体(「chr1」、「chr2」など)である。
-
 [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
-
 R Language Basics | 191
 
 Factors and classes in R
 
 Another kind of vector you’ll encounter are factors. Factors store categorical variables, such as a treatment group (e.g., “high,” “medium,” “low,” “control”), strand (forward or reverse), or chromosome (“chr1,” “chr2,” etc.).
 
+[バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+8.2 R 言語の基礎 ■ 205
+
+8.2.3.2 R の因子とクラス 
+
+他にも作業中に出会う可能性のあるベクトルに因子がある。因子はカテゴリーを表す変数を収めたベクトルである。たとえば処理群(「高」、「中」、「低」、「対照」など)、鎖(「正鎖」または「相補鎖」)、あるいは染色体(「chr1」、「chr2」など)である。
+
 ----------
 ### R_matrix
 
-[20. 行列計算](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/20.html)
+R-Tips [20. 行列計算](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/20.html)
  行列の積は %*% 演算子によって求める点に注意．行列に対して * 演算子を用いると要素毎の積を計算してしまう．
 
 [行列 | R による行列の演算](https://stats.biopapyrus.jp/r/basic/matrix.html)
 行列の計算
 
 [Rでのデータの演算と操作](https://www.cis.doshisha.ac.jp/mjin/R/03.html)
-Rでは、コマンド％*％で行列の積演算を行う。
 
 ----------
 ### R_data.frame
 
-[バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+R-Tips [39. データフレーム事始](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)
+データフレームとは data.frame クラスを持つリストのことであり，数値ベクトルや文字ベクトル，因子ベクトル（文字型ベクトル）などの異なる型のデータをまとめて1 つの変数として持っている．外見は行列と同じ 2 次元配列であるが，
 
+[バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
 216 ■ 8 章 R 言語入門
 
 データフレームから単一の列にアクセスするとき、R のデフォルトの動作は、これを 1 つの列を持つ データフレームとしてではなく、ベクトルとして返す。次に実行されるコードがデータフレームを入力 として期待している場合は問題となる。この動作を無効にするには、ブラケット演算子を使って引数 drop を FALSE に設定する。
+```
+> d[, "start", drop=FALSE]
+```
 
 [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
-
 202 | Chapter 8: A Rapid Introduction to the R Language
 
 When accessing a single column from a dataframe, R’s default behavior is to return this as a vector—not a dataframe with one column. Sometimes this can cause problems if downstream code expects to work with a dataframe. To disable this behavior, we set the argument drop to FALSE in the bracket operator:
@@ -147,9 +148,21 @@ LinuxやMacなどのUNIX系ではUTF-8で
 エンコーディングしていることに起因しています。
 
 2015-08-23
-[🔰文字化けこわい、こわくない？ - cucumber flesh](https://uribo.hatenablog.com/entry/2015/08/23/004222)
+[文字化けこわい、こわくない？ - cucumber flesh](https://uribo.hatenablog.com/entry/2015/08/23/004222)
 日本語エンコーディング表形式のファイル | 
 WindowsとMac（UNIX）でエンコードが異なるので注意が必要。大抵の場合、ファイルの出処がWindowsならcp932（いわゆるSJIS）、MacならUTF8を引数fileEncodingで指定すれば大丈夫。
+
+----------
+### MEGA
+
+8th Aug, 2017
+https://www.researchgate.net/post/Does-anybody-have-a-pipeline-created-or-experience-of-taking-Phylogenetic-trees-from-MEGA-to-Rggtree
+Does anybody have a pipeline created or experience of taking Phylogenetic trees from MEGA to R(ggtree)?
+
+https://support.bioconductor.org/p/41863/
+Packages reproducing phylogenetic tree from output of MEGA
+
+
 
 ----------
 
