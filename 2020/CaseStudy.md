@@ -99,8 +99,7 @@ To specify a single variable within a data frame or tibble, use the dollar sign 
 https://dotinstall.com/lessons/basic_r/28106
 #06 ベクトルの演算をしてみよう | R言語入門 - プログラミングならドットインストール
 
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/14.html
-14. ベクトル計算
+R-Tips [14. ベクトル計算](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/14.html)
 ベクトルを集合と見立てて集合演算を行うことも出来る．
 ```
 union(x, y)	和集合
@@ -116,16 +115,16 @@ https://dotinstall.com/lessons/basic_r/28107
 
 http://www.okadajp.org/RWiki/?因子Tips大全
 
-https://sites.google.com/site/webtextofr/edit
-7. ベクトルデータの操作 - 統計ソフトRの使い方
+[7. ベクトルデータの操作 - 統計ソフトRの使い方](https://sites.google.com/site/webtextofr/edit)
+データのタイプ（型）
+|
 Rには大きく４つのタイプのデータがあります．それは，(1)　数値型，(2) 文字列型，(3) 因子型，(4) 論理値型です．
 因子型データは，例えば男性を”1”，女性を”2”として入力されたデータです．
 いわゆるカテゴリカルデータ（質的データ）は，Rでは因子型データとして扱います．
 
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html
-16. 種々のベクトル
-文字型ベクトル
+R-Tips [16. 種々のベクトル](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/16.html)
 順序つき因子ベクトルと順序無し因子ベクトル
+|
 関数 factor() を用いることで，カテゴリーを要素としたベクトルを作成することが出来る．関数 levels() でグループ化されているかを確認することが出来，関数 str() でオブジェクトの要約値を表示することが出来る．
 結果を見ると，要素の順序が勝手に入れ替わっていることが分かる．明示的に順序を指定する場合は，引数 levels に順序を指定すれば良い．
 関数 factor() では因子間に大小関係は無かったが，関数 ordered() で順序付きの因子ベクトルが作成出来る．
@@ -143,8 +142,7 @@ https://dotinstall.com/lessons/basic_r/28110
 
 http://www.okadajp.org/RWiki/?リストTips大全
 
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html
-23. リスト
+R-Tips [23. リスト](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/23.html)
 R にはデータの種類としてベクトルや行列，配列などが用意されている（ 1 や 'a' も長さ 1 のベクトル）が，リストはこれら異なる構造のデータを集めて 1 個のオブジェクトにしたものである．異なった型のベクトルを 1 個のリストにまとめてもよいし，リストの要素としてリストを用いても構わない．
 ```
 コマンド	機能
@@ -170,8 +168,7 @@ https://dotinstall.com/lessons/basic_r/28111
 https://www.cyberer.net/2020/03/r-lists-and-data-frames.html#toc_headline_8
 「データフレーム」は関係データベースのテーブルのようなデータ構造だ。クラス data.frame を持つリストであるが、ただのリストに比べてコンポーネントになり得るオブジェクトにいくつかの制限が設けられている。
 
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html
-39. データフレーム事始
+R-Tips [39. データフレーム事始](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html)
 データフレームとは data.frame クラスを持つリストのことであり，数値ベクトルや文字ベクトル，因子ベクトル（文字型ベクトル）などの異なる型のデータをまとめて1 つの変数として持っている．外見は行列と同じ 2 次元配列であるが，データフレームの各行・列はラベルを必ず持ち，ラベルによる操作が可能である点が普通の行列と異なる．しかも各列の要素の型はバラバラでも構わないので，ベクトルやリストで持っているデータをデータフレームに変換することで統計解析がやりやすくなる．
 
 ----------
@@ -180,8 +177,7 @@ http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html
 https://dotinstall.com/lessons/basic_r/28113
 #13 グラフを描いてみよう | R言語入門 - プログラミングならドットインストール
 
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/67.html
-67. 相関係数と無相関検定
+R-Tips [67. 相関係数と無相関検定](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/67.html)
 ```
  cor(x, y, method="spearman")          # 単なる相関係数
  cor.test(x, y, method="pearson")      # 無相関かどうかの検定
@@ -410,8 +406,8 @@ Q3. How many of each of the four nucleotides A, C, T and G, and any other symbol
 
     table(seq1)
 
-DDBJ [Codes Used in Sequence Description](https://www.ddbj.nig.ac.jp/ddbj/code-e.html)
-[配列の記載に用いる略号](http://www.ddbj.nig.ac.jp/sub/code-j.html)
+[Codes Used in Sequence Description](https://www.ddbj.nig.ac.jp/ddbj/code-e.html)
+[配列の記載に用いる略号](https://www.ddbj.nig.ac.jp/ddbj/code.html)
 
 Q4. What is the GC content of the genome sequence, when (i) all non-A/C/T/G nucleotides are included, (ii) non-A/C/T/G nucleotides are discarded?
 
