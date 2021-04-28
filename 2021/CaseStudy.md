@@ -122,6 +122,11 @@ Rでは、コマンド％*％で行列の積演算を行う。
 ----------
 ### R_data.frame
 
+[R Language Definition](https://cran.r-project.org/doc/manuals/R-lang.html#Data-frame-objects)
+2.3.2 Data frame objects
+Data frames are the R structures which most closely mimic the SAS or SPSS data set, i.e. a “cases by variables” matrix of data.
+A data frame is a list of vectors, factors, and/or matrices all having the same length (number of rows in the case of matrices). 
+
 [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
 216 ■ 8 章 R 言語入門
 
@@ -136,6 +141,41 @@ Rでは、コマンド％*％で行列の積演算を行う。
 When accessing a single column from a dataframe, R’s default behavior is to return this as a vector—not a dataframe with one column. Sometimes this can cause problems if downstream code expects to work with a dataframe. To disable this behavior, we set the argument drop to FALSE in the bracket operator:
 ```
 > d[, "start", drop=FALSE]
+```
+
+----------
+### R_typeof
+
+[R Language Definition](https://cran.r-project.org/doc/manuals/R-lang.html#Objects)
+2 Objects
+|
+R objects are often coerced to different types during computations. There are also many functions available to perform explicit coercion.
+
+[Data Types and Structures – Programming with R](https://swcarpentry.github.io/r-novice-inflammation/13-supp-data-structures/)
+
+[バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+8.2 R 言語の基礎 ■ 205
+|
+R における型の強制変換
+|
+ベクトルのすべての要素は均一のデータ型でなければならないため、R は同じ型を持つよ うに要素の型変換を強制する。
+
+[Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/)
+R Language Basics | 191
+|
+Type Coercion in R
+|
+Because all elements in a vector must have homogeneous data type, R will silently coerce elements so that they have the same type.
+
+[R の強制型変換と NA の取り扱い - 株式会社ホクソエムのブログ](https://blog.hoxo-m.com/entry/2017/04/24/000000)
+強制型変換
+R のベクトルは、1つだけしか型を持つことができません。1
+したがって、異なる型の要素を結合してベクトルを作成しようとすると、型を統一するために、型の自動変換が行われます。これが強制型変換です。
+強制型変換にはルールがあります。結合しようとする要素の型の中で、最も柔軟性の高い型に変換されます。
+型の柔軟性は次の通りです。
+```
+logical < integer < double < complex < character
+(論理値型 < 整数型 < 倍精度小数点型 < 複素数型 < 文字列型)
 ```
 
 ----------
