@@ -161,6 +161,23 @@ LinuxやMacなどのUNIX系ではUTF-8で
 WindowsとMac（UNIX）でエンコードが異なるので注意が必要。大抵の場合、ファイルの出処がWindowsならcp932（いわゆるSJIS）、MacならUTF8を引数fileEncodingで指定すれば大丈夫。
 
 ----------
+### R_assignOps
+
+[R: Assignment Operators](https://stat.ethz.ch/R-manual/R-devel/library/base/html/assignOps.html)
+The operators <- and = assign into the environment in which they are evaluated. The operator <- can be used anywhere, whereas the operator = is only allowed at the top level (e.g., in the complete expression typed at the command prompt) or as one of the subexpressions in a braced list of expressions.
+
+[What are the differences between "=" and "<-" assignment operators in R? - Stack Overflow](https://stackoverflow.com/questions/1741820/what-are-the-differences-between-and-assignment-operators-in-r)
+
+2018年12月24日 [Rにおける代入演算子"<-"と"="の違い - Qiita](https://qiita.com/tonhosshi/items/426edd9bbed802bd8c33)
+
+R-Tips [28. 演算子](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/28.html)
+```
+<<-	永続代入
+<-，->	代入
+=	代入
+```
+
+----------
 ### R/MEGA
 
 8th Aug, 2017
