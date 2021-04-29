@@ -124,6 +124,7 @@ Rでは、コマンド％*％で行列の積演算を行う。
 
 [R Language Definition](https://cran.r-project.org/doc/manuals/R-lang.html#Data-frame-objects)
 2.3.2 Data frame objects
+|
 Data frames are the R structures which most closely mimic the SAS or SPSS data set, i.e. a “cases by variables” matrix of data.
 A data frame is a list of vectors, factors, and/or matrices all having the same length (number of rows in the case of matrices). 
 
@@ -355,8 +356,6 @@ Please download the R script (**my_assignment_chapter1_dna1.R**) from the follow
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 You can submit your assignment as a HTML document (**my_assignment_chapter1_dna1.html**), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
-
-https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-3
 
 ----------
 ## assignment 4
