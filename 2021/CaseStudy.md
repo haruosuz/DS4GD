@@ -77,28 +77,20 @@ References related to comments/questions for assignment "Introduction to R".
 - https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1
 
 
-
+奥村 晴彦
+Last modified: 2019-04-22 14:21:33
 https://oku.edu.mie-u.ac.jp/~okumura/stat/first.html
 Rの初歩
 |
 終了のしかた
 |
 終了するには，［閉じる］ボタンをクリックします。または，Rのコンソールに
-`
-> q()
-`
+`> q()`
 と打ち込むのが伝統的な方法です。q はquit（終わる）の頭文字です。すると，標準的な設定では，
-```
-作業スペースを保存しますか？
-```
+`作業スペースを保存しますか？`
 または
-```
-Save workspace image? [y/n/c]:
-```
+`Save workspace image? [y/n/c]:`
 と聞いてきますので，作業スペース（現在の状態）を保存して終了するなら y（はい），保存しないで終了するなら n（いいえ），終了をキャンセルする（終了しない）なら c（キャンセル）と答えます。通常は n（いいえ）と答えます。y（はい）と答えた場合，作業スペースの内容がRの作業ディレクトリ（working directory）の .RData というファイルに保存され，次回の起動時に自動的に読み込まれます。大量のデータを扱った場合，.RData は非常に大きくなります。
-
-奥村 晴彦
-Last modified: 2019-04-22 14:21:33
 
 ----------
 ### R_vector
