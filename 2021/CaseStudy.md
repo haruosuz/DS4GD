@@ -351,7 +351,7 @@ Please record what you typed to download DNA sequence data, to make your analysi
 ## assignment 3
 **課題3 「DNA Sequence Statistics (1)」**
 
-次のURLからRスクリプトをダウンロードして下さい。  
+次のURLからRスクリプト（**my_assignment_chapter1_dna1.R**）をダウンロードして下さい。  
 Please download the R script (**my_assignment_chapter1_dna1.R**) from the following URL.  
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
