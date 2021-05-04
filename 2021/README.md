@@ -35,13 +35,19 @@
    - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
 - 2021-06-01 No. 8 - MEGA X を用いた系統解析 [Using MEGA X for phylogenetic analysis]
 - 2021-06-08 No. 9 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2021-06-15 No. 10 - [DECIPHER](https://github.com/haruosuz/r4bioinfo/tree/master/R_DECIPHER)
-- 2021-06-22 No. 11 - [Analysis of Phylogenetics and Evolution with R](https://github.com/haruosuz/books/tree/master/aper)
+- 2021-06-15 No. 10
+  - [Analysis of Phylogenetics and Evolution with R](https://github.com/haruosuz/books/tree/master/aper)
+  - [DECIPHER](https://github.com/haruosuz/r4bioinfo/tree/master/R_DECIPHER)
+  - モチーフ解析 [motif analysis](https://github.com/haruosuz/r4bioinfo/tree/master/R_motif)
+  - コドン使用 [codon usage](https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#codon-usage)
+- 2021-06-22 No. 11 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
 - 2021-06-29 No. 12 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
 - 2021-07-06 No. 13 - 最終回
   - 最終発表 [final presentation](#final-presentation)
 - 2021-07-13 - レポート提出期限 Deadline for [final report](#final-report)
+
+
 
 ----------
 ## final presentation
