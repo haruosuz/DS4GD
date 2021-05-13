@@ -33,8 +33,8 @@
   - グローバル・アライメント [Global alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
   - ローカル・アラインメント [Local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
 - 2021-05-25 No. 7 - 中間発表 [interim report](#interim-report)
-  - クラスター分析 [Cluster Analysis (UPGMA)](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
-- 2021-06-01 No. 8 - **TBA**
+  - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
+- 2021-06-01 No. 8 - 階層的クラスタリング [Hierarchical Clustering (UPGMA)](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2021-06-05 (Saturday) - 補講 Supplementary Class
 - 2021-06-08 No. 9 - **TBA**
 - 2021-06-12 (Saturday) - 補講 Supplementary Class
@@ -70,6 +70,8 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 ## References
 **参考文献**
 
+- Ziheng Yang - Computational Molecular Evolution (Oxford Series in Ecology and Evolution), Oxford University Press (2006/12/7), 374p. https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma99159251504031 ; 藤 博幸　加藤 和貴　大安 裕美　訳. 分子系統学への統計的アプローチ ―計算分子進化学―, 共立出版 https://www.kyoritsu-pub.co.jp/bookdetail/9784320056770
+- CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
 - 藤博幸（編）. よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p. https://www.kspub.co.jp/book/detail/5138212.html
 - Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
 - Conrad Bessant, Darren Oakley, Ian Shadforth - "Building bioinformatics solutions : with Perl, R, and SQL", Oxford University Press; 2nd edition, 2014/4/1, 368p. https://github.com/haruosuz/books/blob/master/bbs/README.md
@@ -83,6 +85,7 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - 
 - Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p. https://github.com/haruosuz/books/tree/master/r4ds
 - Andrew Beckerman, Dylan Childs, and Owen Petchey - Getting Started with R: An Introduction for Biologists, 2nd Edition, Oxford University Press, 2017, 240p. ; 富永大介 (翻訳). Rをはじめよう生命科学のためのRStudio入門, 羊土社, 2019年03月12日, 254p. https://github.com/haruosuz/books/tree/master/r4all
+
 
 ----------
 ### R RStudio
