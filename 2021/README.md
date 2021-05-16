@@ -30,15 +30,15 @@
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#assignment-5)
 - 2021-05-18 No. 6 - ペアワイズ配列アラインメント [Pairwise Sequence Alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment)
-  - グローバル・アライメント [Global alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
-  - ローカル・アラインメント [Local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
+  - 大域アライメント [Global alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-dna-sequences-using-the-needleman-wunsch-algorithm)
+  - 局所アラインメント [Local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
 - 2021-05-25 No. 7 - 中間発表 [interim report](#interim-report)
   - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
 - 2021-06-01 No. 8 - 階層的クラスタリング [Hierarchical Clustering (UPGMA)](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2021-06-05 (Saturday) - 補講 Supplementary Class
-- 2021-06-08 No. 9 - **TBA**
+- 2021-06-08 No. 9 - 多重配列アラインメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2021-06-12 (Saturday) - 補講 Supplementary Class
-- 2021-06-15 No. 10 - 多重配列アライメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+- 2021-06-15 No. 10 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
 - 2021-06-19 (Saturday) - 補講 Supplementary Class
 - 2021-06-22 No. 11 - **休講 no class**
 - 2021-06-26 (Saturday) - 補講 Supplementary Class
@@ -64,7 +64,7 @@ Presentation time: 3 minutes will be allocated for each presentation (including 
 Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global sequence alignment, and local sequence alignment), multiple sequence alignment, and phylogenetic trees, etc.
 
 発表時間：1人あたり最大3分（質疑応答を含む）。
-興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、グローバル配列アライメント、ローカル配列アライメント）、多重配列アライメント、系統樹などが含まれる。
+興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、大域アライメント、局所アライメント）、多重配列アラインメント、系統樹などが含まれる。
 
 ----------
 ## References
