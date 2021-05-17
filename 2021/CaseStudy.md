@@ -421,6 +421,8 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 Download MEGA X from https://www.megasoftware.net/
 
+| OS |  | Version |
+|:---------|:---------|:---------|
 | Windows / macOS / Linux | Graphical (GUI) | MEGA X (64-bit) |
 
 ----------
