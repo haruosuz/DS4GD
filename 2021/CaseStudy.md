@@ -14,14 +14,14 @@
 - [NCBI Genome List](#ncbi-genome-list)
 - [assignment 3](#assignment-3) 課題3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
-- [assignment 5](#assignment-5) 課題5 「dotplot」
 - [BLAST](#blast)
   - [UniProt BLAST](#uniprot-blast)
+- [assignment 5](#assignment-5) 課題5 「dotplot」
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
-- [assignment 7](#assignment-7) 課題7 「Multiple Alignment and Phylogenetic trees」
+- [assignment 7](#assignment-7) 課題7 「Download MEGA」
 - [assignment 8](#assignment-8) 課題8 「TBA」
 - [assignment 9](#assignment-9) 課題9 「TBA」
-- [assignment 10](#assignment-10) 課題10 「TBA」
+- [assignment 10](#assignment-10) 課題10 「Multiple Alignment and Phylogenetic trees」
 - [assignment 11](#assignment-11) 課題11 「TBA」
 - [assignment 12](#assignment-12) 課題12 「draft report」
 - [assignment 13](#assignment-13) 課題13 「final report」
@@ -76,6 +76,8 @@ References related to comments/questions for assignment "Introduction to R".
 - https://github.com/haruosuz/DS4GD/blob/master/2020giga/CaseStudy.md#assignment-2
 - https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1
 
+----------
+### R_quit
 
 奥村 晴彦
 Last modified: 2019-04-22 14:21:33
@@ -249,9 +251,6 @@ APE is an R package that reads newick format and has a lot of options
 to
 plot phylogenetic trees.
 
-
-----------
-
 ----------
 ## assignment 2
 **課題2 「Installing R packages」**
@@ -346,7 +345,7 @@ NCBIからDNA配列を取得する:
 # Retrieving a DNA sequence from NCBI
 library(seqinr)
 
-ACCESSION <- "NC_045512" # Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)
+ACCESSION <- "NC_045512" # SARS-CoV-2
 #ACCESSION <- "NC_001477" # Dengue virus 1
 
 filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
@@ -377,12 +376,10 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 Please download the R script (**my_assignment_chapter2_dna2.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
-PDF/HTML形式ファイルで提出して下さい。  
-Please submit your assignment as a PDF or HTML document (**my_assignment_chapter1_dna1.html**), created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
-
 ----------
 ## BLAST
-[BLAST (Basic Local Alignment Search Tool)](https://ja.wikipedia.org/wiki/BLAST)
+
+https://github.com/haruosuz/books/tree/master/blast
 
 ### [UniProt BLAST](https://www.uniprot.org/blast/)
 - [How to use UniProt tools](https://www.ebi.ac.uk/training/online/course/uniprot-exploring-protein-sequence-and-functional/exploring-uniprotkb-entry/how-use-uniprot-t)
@@ -408,6 +405,9 @@ Hits: 50
 Please download the R script (**my_assignment_chapter4_align_dotplot.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
+PDF/HTML形式ファイルで提出して下さい。  
+Please submit your assignment as a PDF or HTML document, created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
+
 ----------
 ## assignment 6
 **課題6 「Pairwise Sequence Alignment」**
@@ -417,10 +417,11 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 7
-**課題7 「Multiple Alignment and Phylogenetic trees」**
+**課題7 「Download MEGA」**
 
-Please download the R script (**my_assignment_chapter5_msa_tree.R**) from the following URL.
-https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+Download MEGA X from https://www.megasoftware.net/
+
+| Windows / macOS / Linux | Graphical (GUI) | MEGA X (64-bit) |
 
 ----------
 ## assignment 8
@@ -432,7 +433,10 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 10
-**課題10 「TBA」**
+**課題10 「Multiple Alignment and Phylogenetic trees」**
+
+Please download the R script (**my_assignment_chapter5_msa_tree.R**) from the following URL.
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 11
