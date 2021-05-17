@@ -35,13 +35,10 @@
 - 2021-05-25 No. 7 - 中間発表 [interim report](#interim-report)
   - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
 - 2021-06-01 No. 8 - 階層的クラスタリング [Hierarchical Clustering (UPGMA)](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
-- 2021-06-05 (Saturday) - 補講 Supplementary Class
+- 2021-06-05 (Saturday) - 補講 Supplementary Class [MEGA: Molecular Evolutionary Genetics Analysis](https://www.megasoftware.net/)
 - 2021-06-08 No. 9 - 多重配列アラインメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
-- 2021-06-12 (Saturday) - 補講 Supplementary Class
 - 2021-06-15 No. 10 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
-- 2021-06-19 (Saturday) - 補講 Supplementary Class
 - 2021-06-22 No. 11 - **休講 no class**
-- 2021-06-26 (Saturday) - 補講 Supplementary Class
 - 2021-06-29 No. 12 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
 - 2021-07-06 No. 13 - 最終回
@@ -72,6 +69,7 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 
 - Ziheng Yang - Computational Molecular Evolution (Oxford Series in Ecology and Evolution), Oxford University Press (2006/12/7), 374p. https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma99159251504031 ; 藤 博幸　加藤 和貴　大安 裕美　訳. 分子系統学への統計的アプローチ ―計算分子進化学―, 共立出版 https://www.kyoritsu-pub.co.jp/bookdetail/9784320056770
 - CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
+  - [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
 - 藤博幸（編）. よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p. https://www.kspub.co.jp/book/detail/5138212.html
 - Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
 - Conrad Bessant, Darren Oakley, Ian Shadforth - "Building bioinformatics solutions : with Perl, R, and SQL", Oxford University Press; 2nd edition, 2014/4/1, 368p. https://github.com/haruosuz/books/blob/master/bbs/README.md
