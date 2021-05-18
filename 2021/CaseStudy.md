@@ -18,13 +18,20 @@
   - [UniProt BLAST](#uniprot-blast)
 - [assignment 5](#assignment-5) 課題5 「dotplot」
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
-- [assignment 7](#assignment-7) 課題7 「Download MEGA」
-- [assignment 8](#assignment-8) 課題8 「TBA」
+- [assignment 7](#assignment-7) 課題7 「TBA」
+- [assignment 8](#assignment-8) 課題8 「Multiple Alignment and Phylogenetic trees」
 - [assignment 9](#assignment-9) 課題9 「TBA」
-- [assignment 10](#assignment-10) 課題10 「Multiple Alignment and Phylogenetic trees」
-- [assignment 11](#assignment-11) 課題11 「TBA」
-- [assignment 12](#assignment-12) 課題12 「draft report」
-- [assignment 13](#assignment-13) 課題13 「final report」
+- [assignment 10](#assignment-10) 課題10 「draft report」
+- [assignment 11](#assignment-11) 課題11 「final report」
+
+----------
+## MEGA
+
+Download MEGA X from https://www.megasoftware.net/
+
+| OS              |                 | Version         |
+|:----------------|:----------------|:----------------|
+| Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
 
 ----------
 ## assignment 0
@@ -417,17 +424,14 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 7
-**課題7 「Download MEGA」**
-
-Download MEGA X from https://www.megasoftware.net/
-
-| OS |  | Version |
-|:---------|:---------|:---------|
-| Windows / macOS / Linux | Graphical (GUI) | MEGA X (64-bit) |
+**課題7 「TBA」**
 
 ----------
 ## assignment 8
-**課題8 「TBA」**
+**課題8 「Multiple Alignment and Phylogenetic trees」**
+
+Please download the R script (**my_assignment_chapter5_msa_tree.R**) from the following URL.
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
 ----------
 ## assignment 9
@@ -435,18 +439,7 @@ Download MEGA X from https://www.megasoftware.net/
 
 ----------
 ## assignment 10
-**課題10 「Multiple Alignment and Phylogenetic trees」**
-
-Please download the R script (**my_assignment_chapter5_msa_tree.R**) from the following URL.
-https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
-
-----------
-## assignment 11
-**課題11 「TBA」**
-
-----------
-## assignment 12
-**課題12 「draft report」**
+**課題10 「draft report」**
 
 Integrate and modify your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it as a PDF/HTML document.
 
@@ -455,12 +448,10 @@ Integrate and modify your previous assignments (e.g. results of analyzing DNA/pr
 https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html
 
 ----------
-## assignment 13
-**課題13 「final report」**
+## assignment 11
+**課題11 「final report」**
 
 Submit your final report as a PDF/HTML document.
 
 ----------
-
-
 
