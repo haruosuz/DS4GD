@@ -380,6 +380,7 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 ## assignment 4
 **課題4 「DNA Sequence Statistics (2)」**
 
+次のURLからRスクリプトをダウンロードして下さい。  
 Please download the R script (**my_assignment_chapter2_dna2.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
@@ -409,6 +410,7 @@ Hits: 50
 ## assignment 5
 **課題5 「dotplot」**
 
+次のURLからRスクリプトをダウンロードして下さい。  
 Please download the R script (**my_assignment_chapter4_align_dotplot.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
@@ -416,6 +418,7 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 ## assignment 6
 **課題6 「Pairwise Sequence Alignment」**
 
+次のURLからRスクリプトをダウンロードして下さい。  
 Please download the R script (**my_assignment_chapter4_align_pairwise.R**) from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 
