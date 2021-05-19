@@ -265,8 +265,9 @@ plot phylogenetic trees.
 [Installing R packages](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#installing-r-packages)
 
 次のURLからRスクリプトをダウンロードして下さい。  
-Please download the R script (**my_setup_packages.R**) from the following URL.  
+Please download the R script from the following URL.  
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+**my_setup_packages.R**
 
 回答例:  
 ```
@@ -382,8 +383,9 @@ https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 **課題4 「DNA Sequence Statistics (2)」**
 
 次のURLからRスクリプトをダウンロードして下さい。  
-Please download the R script (**my_assignment_chapter2_dna2.R**) from the following URL.
+Please download the R script from the following URL.  
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+**my_assignment_chapter2_dna2.R**
 
 ----------
 ## BLAST
@@ -412,16 +414,18 @@ Hits: 50
 **課題5 「dotplot」**
 
 次のURLからRスクリプトをダウンロードして下さい。  
-Please download the R script (**my_assignment_chapter4_align_dotplot.R**) from the following URL.
+Please download the R script from the following URL.  
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+**my_assignment_chapter4_align_dotplot.R**
 
 ----------
 ## assignment 6
 **課題6 「Pairwise Sequence Alignment」**
 
 次のURLからRスクリプトをダウンロードして下さい。  
-Please download the R script (**my_assignment_chapter4_align_pairwise.R**) from the following URL.
+Please download the R script from the following URL.  
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+**my_assignment_chapter4_align_pairwise.R**
 
 PDF/HTML形式ファイルで提出して下さい。  
 Please submit your assignment as a PDF or HTML document, created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
