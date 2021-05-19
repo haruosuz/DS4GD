@@ -375,7 +375,7 @@ Please record what you typed to download DNA sequence data, to make your analysi
 次のURLからRスクリプトをダウンロードして下さい。  
 Please download the R script from the following URL.  
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
-- **my_assignment_chapter1_dna1.R**
+**my_assignment_chapter1_dna1.R**
 
 ----------
 ## assignment 4
