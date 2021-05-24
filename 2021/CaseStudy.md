@@ -9,6 +9,7 @@
 ## Table of Contents
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題1 「Introduction to R」
+- [MEGA](#mega)
 - [assignment 2](#assignment-2) 課題2 「Installing R packages」
 - [INSDC](#insdc)
 - [NCBI Genome List](#ncbi-genome-list)
@@ -23,15 +24,6 @@
 - [assignment 9](#assignment-9) 課題9 「TBA」
 - [assignment 10](#assignment-10) 課題10 「draft report」
 - [assignment 11](#assignment-11) 課題11 「final report」
-
-----------
-## MEGA
-
-Download MEGA X from https://www.megasoftware.net/
-
-| OS              |                 | Version         |
-|:----------------|:----------------|:----------------|
-| Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
 
 ----------
 ## assignment 0
@@ -257,6 +249,15 @@ You can save the tree from MEGA in newick format.
 APE is an R package that reads newick format and has a lot of options
 to
 plot phylogenetic trees.
+
+----------
+## MEGA
+
+Download MEGA X from https://www.megasoftware.net/
+
+| OS              |                 | Version         |
+|:----------------|:----------------|:----------------|
+| Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
 
 ----------
 ## assignment 2
