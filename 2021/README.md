@@ -34,8 +34,8 @@
   - 局所アラインメント [Local alignment](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-local-alignment-of-protein-sequences-using-the-smith-waterman-algorithm)
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#assignment-6)
 - 2021-05-25 No. 7 - 中間発表 [interim report](#interim-report)
-  - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
-- 2021-06-01 No. 8 - 階層的クラスタリング [Hierarchical Clustering (UPGMA)](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
+  - [MEGA](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#mega)
+- 2021-06-01 No. 8 - 階層的クラスタリング [Hierarchical Clustering](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2021-06-05 (Saturday) - 補講 Supplementary Class [MEGA: Molecular Evolutionary Genetics Analysis](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mega)
 - 2021-06-08 No. 9 - 多重配列アラインメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2021-06-15 No. 10 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
@@ -58,10 +58,10 @@ One minute will be allocated for each presentation. Please report objects (DNA, 
 ## final presentation
 **最終発表**
 
-Presentation time: 3 minutes will be allocated for each presentation (including Q&A).
-Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global sequence alignment, and local sequence alignment), multiple sequence alignment, and phylogenetic trees, etc.
+Presentation time: 5 minutes will be allocated for each presentation (including Q&A).
+Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global alignment, and local alignment), multiple sequence alignment, and phylogenetic trees, etc.
 
-発表時間：1人あたり最大3分（質疑応答を含む）。
+発表時間：1人あたり最大5分（質疑応答を含む）。
 興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、大域アライメント、局所アライメント）、多重配列アラインメント、系統樹などが含まれる。
 
 ----------
