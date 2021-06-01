@@ -261,8 +261,7 @@ Download MEGA X from https://www.megasoftware.net/
 
 ### PTME5
 
-- [Phylogenetic Trees Made Easy, Fifth Edition](https://learninglink.oup.com/access/hall-5e)
-  - [Phylogenetic Trees Made Easy, Fifth Edition Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
+[Phylogenetic Trees Made Easy, Fifth Edition Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
 
 | All Resources |
 |:--------------|
