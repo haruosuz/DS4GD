@@ -259,6 +259,17 @@ Download MEGA X from https://www.megasoftware.net/
 |:----------------|:----------------|:----------------|
 | Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
 
+### PTME5
+
+- [Phylogenetic Trees Made Easy, Fifth Edition](https://learninglink.oup.com/access/hall-5e)
+  - [Phylogenetic Trees Made Easy, Fifth Edition Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
+
+| All Resources |
+|:--------------|
+| PTME5e Companion Files (Linux) |
+| PTME5e Companion Files (Mac) |
+| PTME5e Companion Files (Win) |
+
 ----------
 ## assignment 2
 **課題2 「Installing R packages」**
