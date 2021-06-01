@@ -36,6 +36,7 @@
 - 2021-05-25 No. 7 - 中間発表 [interim report](#interim-report)
   - [MEGA](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#mega)
 - 2021-06-01 No. 8 - 階層的クラスタリング [Hierarchical Clustering](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
+  - [PTME5](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
 - 2021-06-05 (Saturday) - 補講 Supplementary Class [MEGA: Molecular Evolutionary Genetics Analysis](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mega)
 - 2021-06-08 No. 9 - 多重配列アラインメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2021-06-15 No. 10 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
