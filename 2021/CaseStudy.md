@@ -262,16 +262,11 @@ Download MEGA X
 |:----------------|:----------------|:----------------|
 | Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
 
-Site Links
-[Videos](https://www.megasoftware.net/videos)
-Instructional Videos
-
 Documentation
 [Online Manual](https://www.megasoftware.net/web_help)
 First Time User
 
 [walkthrough tutorial](https://www.megasoftware.net/web_help_10/Introduction.htm)
-
 Introduction
 
 - [Mega Basics](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/MEGA_Basics.htm)
@@ -283,7 +278,8 @@ Introduction
   - Estimating Evolutionary Distances Using Pairwise Distance | Example 3.1: "Drosophila_Adh.meg" file
 - [Building Trees from Sequence Data](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Building_Trees_From_Sequence_Data.htm)
   - Building a Neighbor-Joining (NJ) Tree | Example 4.1: "Crab_rRNA.meg" file
-- [Testing Tree Reliability](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Testing_Tree_Reliability.htm)
+  - Printing the NJ Tree (For Windows users) | Example 4.2a:   
+  - Printing the NJ Tree (For Mac users) | Example 4.2b:
 
 ### PTME5
 
@@ -291,9 +287,28 @@ Introduction
 
 | All Resources |
 |:--------------|
-| PTME5e Companion Files (Linux) |
 | PTME5e Companion Files (Mac) |
 | PTME5e Companion Files (Win) |
+
+[Table of Contents](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
+
+Chapter 2 Tutorial: Estimate a Tree                11 (22)
+  Why Create Phylogenetic Trees?                   11 (1)
+  About this Tutorial                              12 (1)
+    Macintosh and Linux users                      12 (1)
+    A word about screen shots                      12 (1)
+  Search for Sequences Related to Your Sequence    13 (5)
+  Decide Which Related Sequences to Include on     18 (4)
+  Your Tree
+    Establishing homology                          19 (1)
+    To include or not to include, that is the      20 (2)
+    question
+  Download the Sequences                           22 (5)
+  Align the Sequences                              27 (1)
+  Make a Neighbor Joining Tree                     28 (4)
+  Summary                                          32 (1)
+
+
 
 ----------
 ## assignment 2
