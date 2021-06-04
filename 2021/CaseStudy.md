@@ -282,8 +282,9 @@ Introduction
   - Printing the NJ Tree (For Mac users) | Example 4.2b:
 
 ### PTME5
+[Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://leeswijzer.hatenadiary.com/entry/2018/10/18/081146)
 
-[Phylogenetic Trees Made Easy, Fifth Edition Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
+[Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
 
 | All Resources |
 |:--------------|
@@ -292,23 +293,12 @@ Introduction
 
 [Table of Contents](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
 
-Chapter 2 Tutorial: Estimate a Tree                11 (22)
-  Why Create Phylogenetic Trees?                   11 (1)
-  About this Tutorial                              12 (1)
-    Macintosh and Linux users                      12 (1)
-    A word about screen shots                      12 (1)
-  Search for Sequences Related to Your Sequence    13 (5)
-  Decide Which Related Sequences to Include on     18 (4)
-  Your Tree
-    Establishing homology                          19 (1)
-    To include or not to include, that is the      20 (2)
-    question
-  Download the Sequences                           22 (5)
-  Align the Sequences                              27 (1)
-  Make a Neighbor Joining Tree                     28 (4)
-  Summary                                          32 (1)
+Chapter 2 Tutorial: Estimate a Tree
 
-
+- Tutorial.mas
+- TutorialAligned.mas
+- TutorialAligned.meg
+- Tutorial.mts
 
 ----------
 ## assignment 2
