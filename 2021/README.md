@@ -71,7 +71,7 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 **参考文献**
 
 - Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
-- 
+- Andrew Rambaut - "How to read a phylogenetic tree", 2018-07-30 https://artic.network/how-to-read-a-tree.html
 - CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
   - [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
 - [藤博幸（編） - よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/fb8nrm/alma9926311090804034) https://www.kspub.co.jp/book/detail/5138212.html
