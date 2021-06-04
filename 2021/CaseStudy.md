@@ -293,7 +293,10 @@ Introduction
 
 [Table of Contents](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
 
-Chapter 2 Tutorial: Estimate a Tree
+- Chapter 2 Tutorial: Estimate a Tree
+- Chapter 4 Aligning the Sequences
+  - Aligning Sequences with MUSCLE: "Chapter 03/ebgC.mas" file. Always align coding sequences by codons.
+  - Check Average Identity to Estimate Reliability of the Alignment: "Chapter 04/ebgC_pep.meg" file. 
 
 ----------
 ## assignment 2
