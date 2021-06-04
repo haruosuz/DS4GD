@@ -295,11 +295,6 @@ Introduction
 
 Chapter 2 Tutorial: Estimate a Tree
 
-- Tutorial.mas
-- TutorialAligned.mas
-- TutorialAligned.meg
-- Tutorial.mts
-
 ----------
 ## assignment 2
 **課題2 「Installing R packages」**
