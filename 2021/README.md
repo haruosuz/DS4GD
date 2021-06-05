@@ -39,6 +39,7 @@
   - [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
   - [MEGA: Molecular Evolutionary Genetics Analysis](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#mega)
 - 2021-06-08 No. 9 - 多重配列アラインメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+  - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#assignment-7)
 - 2021-06-15 No. 10 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
 - 2021-06-22 No. 11 - **休講 no class**
 - 2021-06-29 No. 12 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
