@@ -281,6 +281,13 @@ Introduction
   - Printing the NJ Tree (For Windows users) | Example 4.2a:   
   - Printing the NJ Tree (For Mac users) | Example 4.2b:
 
+Site Links
+[Videos](https://www.megasoftware.net/videos)
+Instructional Videos
+
+- [Choosing and Acquiring Sequences Part 1](https://youtu.be/raaOgtvMJWw) Choosing and Acquiring the Sequences for a Phylogenetic Tree
+- [Choosing and Acquiring Sequences Part 2](https://youtu.be/cVdmH7nNboE) Aligning Coding Sequences
+
 ### PTME5
 [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://leeswijzer.hatenadiary.com/entry/2018/10/18/081146)
 
@@ -290,8 +297,6 @@ Introduction
 |:--------------|
 | PTME5e Companion Files (Mac) |
 | PTME5e Companion Files (Win) |
-
-[Table of Contents](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
 
 ----------
 ## assignment 2
