@@ -37,7 +37,6 @@
 - 2021-06-01 No. 8 - 階層的クラスタリング [Hierarchical Clustering](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
 - 2021-06-05 (土) 3限 (13:00〜14:30) - 補講 Supplementary Class 
   - [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-  - [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - [MEGA: Molecular Evolutionary Genetics Analysis](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#mega)
 - 2021-06-08 No. 9 - 多重配列アラインメントと系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 - 2021-06-15 No. 10 - [Case Study](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md)
