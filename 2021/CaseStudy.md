@@ -274,22 +274,37 @@ Introduction
 - [Aligning Sequences](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Aligning_Sequences.htm)
   - Opening an Alignment | Example 2.1: "hsp20.fas" file
   - Aligning Sequences by ClustalW | Example 2.2: "hsp20.fas" file
+  - Aligning Sequences Using Muscle | Example 2.3: "Chloroplast_Martin.meg" file
+  - Obtaining Sequence Data from the Internet (GenBank)
 - [Estimating Evolutionary Distances](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Estimating_Evolutionary_Distances.htm)
   - Estimating Evolutionary Distances Using Pairwise Distance | Example 3.1: "Drosophila_Adh.meg" file
+  - Compute the Proportion of Amino Acid Differences | Example 3.3: "Drosophila_Adh.meg" file
 - [Building Trees from Sequence Data](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Building_Trees_From_Sequence_Data.htm)
   - Building a Neighbor-Joining (NJ) Tree | Example 4.1: "Crab_rRNA.meg" file
   - Printing the NJ Tree (For Windows users) | Example 4.2a:   
   - Printing the NJ Tree (For Mac users) | Example 4.2b:
+- [Testing Tree Reliability](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Testing_Tree_Reliability.htm)
+  - Bootstrap Testing for a Neighbor-Joining Tree | Example 5.1: "Chloroplast_Martin.meg" file
 
 Site Links
 [Videos](https://www.megasoftware.net/videos)
 Instructional Videos
 
-- [Choosing and Acquiring Sequences Part 1](https://youtu.be/raaOgtvMJWw) Choosing and Acquiring the Sequences for a Phylogenetic Tree
-- [Choosing and Acquiring Sequences Part 2](https://youtu.be/cVdmH7nNboE) Aligning Coding Sequences
+- Author: Barry Hall
+  - [Choosing and Acquiring Sequences Part 1](https://youtu.be/raaOgtvMJWw) Choosing and Acquiring the Sequences for a Phylogenetic Tree
+  - [Choosing and Acquiring Sequences Part 2](https://youtu.be/cVdmH7nNboE) Aligning Coding Sequences
+  - [Reconstructing Ancestral Sequences](https://youtu.be/djju9WFMvn0)
 
 ### PTME5
-[Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://leeswijzer.hatenadiary.com/entry/2018/10/18/081146)
+Barry Hall [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://leeswijzer.hatenadiary.com/entry/2018/10/18/081146)
+
+- Chapter 2 Tutorial: Estimate a Tree 11
+- Chapter 3 Acquiring the Sequences 33
+- Chapter 4 Aligning the Sequences 53
+- Chapter 5 Major Methods for Estimating Phylogenetic Trees 71
+- Chapter 6 Neighbor Joining Trees 77
+- Chapter 7 Drawing Phylogenetic Tress 101
+- Chapter 16 Reconstructing Ancestral Sequences 245
 
 [Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
 
