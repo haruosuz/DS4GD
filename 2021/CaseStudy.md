@@ -19,11 +19,10 @@
   - [UniProt BLAST](#uniprot-blast)
 - [assignment 5](#assignment-5) 課題5 「dotplot」
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
-- [assignment 7](#assignment-7) 課題7 「TBA」
-- [assignment 8](#assignment-8) 課題8 「Multiple Alignment and Phylogenetic trees」
-- [assignment 9](#assignment-9) 課題9 「TBA」
-- [assignment 10](#assignment-10) 課題10 「draft report」
-- [assignment 11](#assignment-11) 課題11 「final report」
+- [assignment 7](#assignment-7) 課題7 「Multiple Alignment and Phylogenetic trees」
+- [assignment 8](#assignment-8) 課題8 「TBA」
+- [assignment 9](#assignment-9) 課題9 「draft report」
+- [assignment 10](#assignment-10) 課題10 「final report」
 
 ----------
 ## assignment 0
@@ -482,27 +481,25 @@ Please download the R script from the following URL.
 https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
 **my_assignment_chapter4_align_pairwise.R**
 
+----------
+## assignment 7
+**課題7 「Multiple Alignment and Phylogenetic trees」**
+
+次のURLからRスクリプトをダウンロードして下さい。  
+Please download the R script from the following URL.  
+https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+**my_assignment_chapter5_msa_tree.R**
+
 PDF/HTML形式ファイルで提出して下さい。  
 Please submit your assignment as a PDF or HTML document, created using the [Compile Report](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report) command.
 
 ----------
-## assignment 7
-**課題7 「TBA」**
-
-----------
 ## assignment 8
-**課題8 「Multiple Alignment and Phylogenetic trees」**
-
-Please download the R script (**my_assignment_chapter5_msa_tree.R**) from the following URL.
-https://github.com/haruosuz/r4bioinfo/raw/master/R_Avril_Coghlan/scripts.zip
+**課題8 「TBA」**
 
 ----------
 ## assignment 9
-**課題9 「TBA」**
-
-----------
-## assignment 10
-**課題10 「draft report」**
+**課題9 「draft report」**
 
 Integrate and modify your previous assignments (e.g. results of analyzing DNA/protein sequences of interest) in order to produce a draft report, and submit it as a PDF/HTML document.
 
@@ -511,10 +508,12 @@ Integrate and modify your previous assignments (e.g. results of analyzing DNA/pr
 https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter_answers.html
 
 ----------
-## assignment 11
-**課題11 「final report」**
+## assignment 10
+**課題10 「final report」**
 
 Submit your final report as a PDF/HTML document.
 
 ----------
+
+
 
