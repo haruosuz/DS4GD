@@ -297,10 +297,8 @@ Instructional Videos
 ### PTME5
 Barry Hall [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://leeswijzer.hatenadiary.com/entry/2018/10/18/081146)
 
-- Chapter 2 Tutorial: Estimate a Tree 11
 - Chapter 3 Acquiring the Sequences 33
 - Chapter 4 Aligning the Sequences 53
-- Chapter 5 Major Methods for Estimating Phylogenetic Trees 71
 - Chapter 6 Neighbor Joining Trees 77
 - Chapter 7 Drawing Phylogenetic Tress 101
 - Chapter 16 Reconstructing Ancestral Sequences 245
