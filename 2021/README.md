@@ -77,6 +77,8 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
   - [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
 - 
+- [森元 良太 (著), 田中 泉吏 (著) - 生物学の哲学入門, 勁草書房, 2016.8, 228p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926301943704034) http://www.keisoshobo.co.jp/book/b239975.html
+- 
 - [藤博幸（編） - よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/fb8nrm/alma9926311090804034) https://www.kspub.co.jp/book/detail/5138212.html
 - [日本バイオインフォマティクス学会 (編集) - バイオインフォマティクス入門, 慶應義塾大学出版会 (August 22, 2015), 176 pages.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926302124104034) https://www.keio-up.co.jp/np/isbn/9784766422511/
 - 
@@ -90,9 +92,12 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - Patrick E. Savage, Charles Cronin, Daniel Müllensiefen, Quentin D. Atkinson. Quantitative evaluation of music copyright infringement. Proceedings of the Folk Music Analysis 2018 Workshop http://fma2018.mus.auth.gr/files/papers/FMA2018_paper_4.pdf | 音楽著作権侵害の客観的判断手法として"percent melodic identity" (PMI) 法を提案。DNAやタンパク質配列の比較に分子遺伝学で使用される配列アラインメントと配列一致率の計算を応用。 https://twitter.com/PatrickESavage/status/1112517784322236416
 - Barbrook, A., Howe, C., Blake, N. et al. The phylogeny of The Canterbury Tales. Nature 394, 839 (1998). https://doi.org/10.1038/29667 | 『カンタベリー物語』の系譜 http://cse.naro.affrc.go.jp/minaka/cladist/SystematicThinking2014.pdf
 - 
-- Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p. https://github.com/haruosuz/books/tree/master/r4ds
+- [高橋康介著 - 再現可能性のすゝめ : RStudioによるデータ解析とレポート作成, 	Wonderful R 3巻, 共立出版, 2018.5, 184p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926327704004034) https://www.kyoritsu-pub.co.jp/bookdetail/9784320112438
+| 4.8　Rスクリプトからレポート生成
+| 付録A　マークダウン記法
+| 付録B　チャンクオプション
 - Andrew Beckerman, Dylan Childs, and Owen Petchey - Getting Started with R: An Introduction for Biologists, 2nd Edition, Oxford University Press, 2017, 240p. ; 富永大介 (翻訳). Rをはじめよう生命科学のためのRStudio入門, 羊土社, 2019年03月12日, 254p. https://github.com/haruosuz/books/tree/master/r4all
-
+- Hadley Wickham, Garrett Grolemund - R for Data Science, 2016, 520p. ; 黒川 利明 (訳), 大橋 真也 (技術監修). Rではじめるデータサイエンス, O'Reilly Japan, 2017年10月, 480p. https://github.com/haruosuz/books/tree/master/r4ds
 
 ----------
 ### R RStudio
