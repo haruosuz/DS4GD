@@ -35,8 +35,7 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#assignment-6)
 - 2021-05-25 No. 7 - 中間発表 [interim report](#interim-report)
 - 2021-06-01 No. 8 - 階層的クラスタリング [Hierarchical Clustering](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md)
-- 2021-06-05 (土) 3限 (13:00〜14:30) - 補講 Supplementary Class 
-  - [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
+- 2021-06-05 (土) 3限 (13:00〜14:30) - 補講 Supplementary Class
   - [MEGA: Molecular Evolutionary Genetics Analysis](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#mega)
 - 2021-06-08 No. 9 - 多重整列と系統樹 [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#assignment-9)
@@ -47,7 +46,7 @@
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
 - 2021-07-06 No. 13 - 最終回
   - 最終発表 [final presentation](#final-presentation)
-- 2021-07-13 - レポート提出期限 Deadline for [final report](#final-report)
+- 2021-07-13 - レポート提出期限 Deadline for final report [assignment 13](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#assignment-13)
 
 ----------
 ## interim report
