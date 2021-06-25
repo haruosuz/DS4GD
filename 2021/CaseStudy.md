@@ -440,8 +440,9 @@ Select, combine, and revise the previous assignments (e.g., results of analyzing
 ## assignment 13
 **課題13 「final report」**
 
-最終レポートをPDF/HTML形式ファイルで提出する。
 Submit your final report as a PDF/HTML document.
+
+最終レポートをPDF/HTML形式ファイルで提出する。
 
 ----------
 ## MEGA
