@@ -9,6 +9,7 @@
 ## Table of Contents
 - [assignment 0](#assignment-0) 選抜課題
 - [assignment 1](#assignment-1) 課題1 「Introduction to R」
+- [MEGA](#mega)
 - [assignment 2](#assignment-2) 課題2 「Installing R packages」
 - [INSDC](#insdc)
 - [NCBI Genome List](#ncbi-genome-list)
@@ -21,7 +22,6 @@
 - [assignment 9](#assignment-9) 課題9 「Multiple Alignment and Phylogenetic trees」
 - [assignment 10](#assignment-10) 課題10 「draft report」
 - [assignment 13](#assignment-13) 課題13 「final report」
-- [MEGA](#mega)
 
 ----------
 ## assignment 0
@@ -248,6 +248,67 @@ to
 plot phylogenetic trees.
 
 ----------
+## MEGA
+MEGA: Molecular Evolutionary Genetics Analysis software
+
+https://www.megasoftware.net/
+
+Download MEGA X
+
+| OS              |                 | Version         |
+|:----------------|:----------------|:----------------|
+| Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
+
+Documentation
+[Online Manual](https://www.megasoftware.net/web_help)
+First Time User
+
+[walkthrough tutorial](https://www.megasoftware.net/web_help_10/Introduction.htm)
+Introduction
+
+- [Mega Basics](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/MEGA_Basics.htm)
+  - Opening (activating) a Data File for Analysis | Example 1.2: "Drosophila_Adh.meg" file
+- [Aligning Sequences](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Aligning_Sequences.htm)
+  - Opening an Alignment | Example 2.1: "hsp20.fas" file
+  - Aligning Sequences by ClustalW | Example 2.2: "hsp20.fas" file
+  - Aligning Sequences Using Muscle | Example 2.3: "Chloroplast_Martin.meg" file
+  - Obtaining Sequence Data from the Internet (GenBank)
+- [Estimating Evolutionary Distances](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Estimating_Evolutionary_Distances.htm)
+  - Estimating Evolutionary Distances Using Pairwise Distance | Example 3.1: "Drosophila_Adh.meg" file
+  - Compute the Proportion of Amino Acid Differences | Example 3.3: "Drosophila_Adh.meg" file
+- [Building Trees from Sequence Data](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Building_Trees_From_Sequence_Data.htm)
+  - Building a Neighbor-Joining (NJ) Tree | Example 4.1: "Crab_rRNA.meg" file
+  - Printing the NJ Tree (For Windows users) | Example 4.2a:   
+  - Printing the NJ Tree (For Mac users) | Example 4.2b:
+- [Testing Tree Reliability](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Testing_Tree_Reliability.htm)
+  - Bootstrap Testing for a Neighbor-Joining Tree | Example 5.1: "Chloroplast_Martin.meg" file
+
+Site Links
+[Videos](https://www.megasoftware.net/videos)
+Instructional Videos
+
+- Author: Barry Hall
+  - [Choosing and Acquiring Sequences Part 1](https://youtu.be/raaOgtvMJWw) Choosing and Acquiring the Sequences for a Phylogenetic Tree
+  - [Choosing and Acquiring Sequences Part 2](https://youtu.be/cVdmH7nNboE) Aligning Coding Sequences
+  - [Reconstructing Ancestral Sequences](https://youtu.be/djju9WFMvn0)
+
+### PTME5
+Barry Hall [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://leeswijzer.hatenadiary.com/entry/2018/10/18/081146)
+
+- Chapter 3 Acquiring the Sequences 33
+- Chapter 4 Aligning the Sequences 53
+- Chapter 6 Neighbor Joining Trees 77
+- Chapter 7 Drawing Phylogenetic Tress 101
+- Chapter 16 Reconstructing Ancestral Sequences 245
+
+[Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
+
+| All Resources |
+|:--------------|
+| PTME5e Companion Files (Mac) |
+| PTME5e Companion Files (Win) |
+
+----------
 ## assignment 2
 **課題2 「Installing R packages」**
 
@@ -443,67 +504,6 @@ Select, combine, and revise the previous assignments (e.g., results of analyzing
 Submit your final report as a PDF/HTML document.
 
 最終レポートをPDF/HTML形式ファイルで提出する。
-
-----------
-## MEGA
-MEGA: Molecular Evolutionary Genetics Analysis software
-
-https://www.megasoftware.net/
-
-Download MEGA X
-
-| OS              |                 | Version         |
-|:----------------|:----------------|:----------------|
-| Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
-
-Documentation
-[Online Manual](https://www.megasoftware.net/web_help)
-First Time User
-
-[walkthrough tutorial](https://www.megasoftware.net/web_help_10/Introduction.htm)
-Introduction
-
-- [Mega Basics](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/MEGA_Basics.htm)
-  - Opening (activating) a Data File for Analysis | Example 1.2: "Drosophila_Adh.meg" file
-- [Aligning Sequences](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Aligning_Sequences.htm)
-  - Opening an Alignment | Example 2.1: "hsp20.fas" file
-  - Aligning Sequences by ClustalW | Example 2.2: "hsp20.fas" file
-  - Aligning Sequences Using Muscle | Example 2.3: "Chloroplast_Martin.meg" file
-  - Obtaining Sequence Data from the Internet (GenBank)
-- [Estimating Evolutionary Distances](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Estimating_Evolutionary_Distances.htm)
-  - Estimating Evolutionary Distances Using Pairwise Distance | Example 3.1: "Drosophila_Adh.meg" file
-  - Compute the Proportion of Amino Acid Differences | Example 3.3: "Drosophila_Adh.meg" file
-- [Building Trees from Sequence Data](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Building_Trees_From_Sequence_Data.htm)
-  - Building a Neighbor-Joining (NJ) Tree | Example 4.1: "Crab_rRNA.meg" file
-  - Printing the NJ Tree (For Windows users) | Example 4.2a:   
-  - Printing the NJ Tree (For Mac users) | Example 4.2b:
-- [Testing Tree Reliability](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Testing_Tree_Reliability.htm)
-  - Bootstrap Testing for a Neighbor-Joining Tree | Example 5.1: "Chloroplast_Martin.meg" file
-
-Site Links
-[Videos](https://www.megasoftware.net/videos)
-Instructional Videos
-
-- Author: Barry Hall
-  - [Choosing and Acquiring Sequences Part 1](https://youtu.be/raaOgtvMJWw) Choosing and Acquiring the Sequences for a Phylogenetic Tree
-  - [Choosing and Acquiring Sequences Part 2](https://youtu.be/cVdmH7nNboE) Aligning Coding Sequences
-  - [Reconstructing Ancestral Sequences](https://youtu.be/djju9WFMvn0)
-
-### PTME5
-Barry Hall [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://leeswijzer.hatenadiary.com/entry/2018/10/18/081146)
-
-- Chapter 3 Acquiring the Sequences 33
-- Chapter 4 Aligning the Sequences 53
-- Chapter 6 Neighbor Joining Trees 77
-- Chapter 7 Drawing Phylogenetic Tress 101
-- Chapter 16 Reconstructing Ancestral Sequences 245
-
-[Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
-
-| All Resources |
-|:--------------|
-| PTME5e Companion Files (Mac) |
-| PTME5e Companion Files (Win) |
 
 ----------
 
