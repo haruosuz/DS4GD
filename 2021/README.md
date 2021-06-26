@@ -60,38 +60,41 @@ One minute will be allocated for each presentation. Please report objects (DNA, 
 ## final presentation
 **最終発表**
 
-Presentation time: 3 minutes will be allocated for each presentation (including Q&A).
+Presentation time: 5 minutes will be allocated for each presentation (including Q&A).
 Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global alignment, and local alignment), multiple sequence alignment, and phylogenetic trees, etc.
 
-発表時間：1人あたり最大3分（質疑応答を含む）。
+発表時間：1人あたり最大5分（質疑応答を含む）。
 興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、大域アラインメント、局所アラインメント）、多重整列、系統樹などが含まれる。
 
 ----------
 ## References
 **参考文献**
 
-- Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
-- 
-- Andrew Rambaut - "How to read a phylogenetic tree", 2018-07-30 https://artic.network/how-to-read-a-tree.html
-- Dave Hone - "How to read a phylogenetic tree" https://archosaurmusings.wordpress.com/2008/12/18/how-to-read-a-phylogenetic-tree/
-- CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
-  - [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-- 
-- [森元 良太 (著), 田中 泉吏 (著) - 生物学の哲学入門, 勁草書房, 2016.8, 228p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926301943704034) http://www.keisoshobo.co.jp/book/b239975.html
-- 
-- [藤博幸（編） - よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/fb8nrm/alma9926311090804034) https://www.kspub.co.jp/book/detail/5138212.html
-- [日本バイオインフォマティクス学会 (編集) - バイオインフォマティクス入門, 慶應義塾大学出版会 (August 22, 2015), 176 pages.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926302124104034) https://www.keio-up.co.jp/np/isbn/9784766422511/
-- 
-- Conrad Bessant, Darren Oakley, Ian Shadforth - "Building bioinformatics solutions : with Perl, R, and SQL", Oxford University Press; 2nd edition, 2014/4/1, 368p. https://github.com/haruosuz/books/blob/master/bbs/README.md
-- Emmanuel Paradis - Analysis of Phylogenetics and Evolution with R (Use R!), Springer; 2nd ed., 2011/11/5, 404p. https://github.com/haruosuz/books/tree/master/aper
-- Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p. https://learninglink.oup.com/access/hall-5e | [Table of Contents](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
-- [Ziheng Yang - Computational Molecular Evolution (Oxford Series in Ecology and Evolution), Oxford University Press (2006/12/7), 374p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma99159251504031) http://abacus.gene.ucl.ac.uk/CME/ | [Table of Contents](http://abacus.gene.ucl.ac.uk/CME/TableOfContents.pdf); 藤 博幸　加藤 和貴　大安 裕美　訳. 分子系統学への統計的アプローチ ―計算分子進化学―, 共立出版 https://www.kyoritsu-pub.co.jp/bookdetail/9784320056770
-- 
 - Nextstrain / Genomic epidemiology of novel coronavirus - Global subsampling https://nextstrain.org/ncov/global
 - [Rob DeSalle, Ian Tattersall - "A Natural History of Beer", 2019, 256p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma99393943804031) https://yalebooks.yale.edu/book/9780300233674/natural-history-beer ; [ニキ　リンコ (訳), 三中　信宏 (訳), . ビールの自然誌, 勁草書房, 2020年1月, 288p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926373648604034) https://www.keisoshobo.co.jp/book/b496478.html
 - Patrick E. Savage, Charles Cronin, Daniel Müllensiefen, Quentin D. Atkinson. Quantitative evaluation of music copyright infringement. Proceedings of the Folk Music Analysis 2018 Workshop http://fma2018.mus.auth.gr/files/papers/FMA2018_paper_4.pdf | 音楽著作権侵害の客観的判断手法として"percent melodic identity" (PMI) 法を提案。DNAやタンパク質配列の比較に分子遺伝学で使用される配列アラインメントと配列一致率の計算を応用。 https://twitter.com/PatrickESavage/status/1112517784322236416
 - Barbrook, A., Howe, C., Blake, N. et al. The phylogeny of The Canterbury Tales. Nature 394, 839 (1998). https://doi.org/10.1038/29667 | 『カンタベリー物語』の系譜 http://cse.naro.affrc.go.jp/minaka/cladist/SystematicThinking2014.pdf
 - 
+- [森元 良太 (著), 田中 泉吏 (著) - 生物学の哲学入門, 勁草書房, 2016.8, 228p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926301943704034) http://www.keisoshobo.co.jp/book/b239975.html
+- CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
+  - [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
+
+#### References_bioinformatics
+- [藤博幸（編） - よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/fb8nrm/alma9926311090804034) https://www.kspub.co.jp/book/detail/5138212.html
+- [日本バイオインフォマティクス学会 (編集) - バイオインフォマティクス入門, 慶應義塾大学出版会 (August 22, 2015), 176 pages.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926302124104034) https://www.keio-up.co.jp/np/isbn/9784766422511/
+- Conrad Bessant, Darren Oakley, Ian Shadforth - "Building bioinformatics solutions : with Perl, R, and SQL", Oxford University Press; 2nd edition, 2014/4/1, 368p. https://github.com/haruosuz/books/blob/master/bbs/README.md
+- Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
+
+#### References_systematics
+- 三中信宏（Version 3-October-2018）分類学と系統学を学ぶためのブックガイド https://leeswijzer.hatenadiary.com/entry/2018/10/06/060345
+- Andrew Rambaut - "How to read a phylogenetic tree", 2018-07-30 https://artic.network/how-to-read-a-tree.html
+- Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p. https://learninglink.oup.com/access/hall-5e | [Table of Contents](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
+- Emmanuel Paradis - Analysis of Phylogenetics and Evolution with R (Use R!), Springer; 2nd ed., 2011/11/5, 404p. https://github.com/haruosuz/books/tree/master/aper
+- Dave Hone - "How to read a phylogenetic tree" https://archosaurmusings.wordpress.com/2008/12/18/how-to-read-a-phylogenetic-tree/
+- [藤田敏彦 著 - 動物の系統分類と進化, 裳華房, 2010.4, 206p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926306374204034) https://www.shokabo.co.jp/mybooks/ISBN978-4-7853-5842-6.htm
+- [Ziheng Yang - Computational Molecular Evolution (Oxford Series in Ecology and Evolution), Oxford University Press (2006/12/7), 374p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma99159251504031) http://abacus.gene.ucl.ac.uk/CME/ | [Table of Contents](http://abacus.gene.ucl.ac.uk/CME/TableOfContents.pdf); 藤 博幸　加藤 和貴　大安 裕美　訳. 分子系統学への統計的アプローチ ―計算分子進化学―, 共立出版, 2009.3, 360p. https://www.kyoritsu-pub.co.jp/bookdetail/9784320056770
+
+#### References_R
 - [高橋康介著 - 再現可能性のすゝめ : RStudioによるデータ解析とレポート作成, 	Wonderful R 3巻, 共立出版, 2018.5, 184p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926327704004034) https://www.kyoritsu-pub.co.jp/bookdetail/9784320112438
 | 4.8　Rスクリプトからレポート生成
 | 付録A　マークダウン記法
