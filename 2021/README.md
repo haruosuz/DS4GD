@@ -80,6 +80,7 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
   - [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
 
 #### References_bioinformatics
+
 - [藤博幸（編） - よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/fb8nrm/alma9926311090804034) https://www.kspub.co.jp/book/detail/5138212.html
 - [日本バイオインフォマティクス学会 (編集) - バイオインフォマティクス入門, 慶應義塾大学出版会 (August 22, 2015), 176 pages.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926302124104034) https://www.keio-up.co.jp/np/isbn/9784766422511/
 - Conrad Bessant, Darren Oakley, Ian Shadforth - "Building bioinformatics solutions : with Perl, R, and SQL", Oxford University Press; 2nd edition, 2014/4/1, 368p. https://github.com/haruosuz/books/blob/master/bbs/README.md
@@ -87,12 +88,16 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 
 #### References_systematics
 - 三中信宏（Version 3-October-2018）分類学と系統学を学ぶためのブックガイド https://leeswijzer.hatenadiary.com/entry/2018/10/06/060345
-- Andrew Rambaut - "How to read a phylogenetic tree", 2018-07-30 https://artic.network/how-to-read-a-tree.html
 - Barry G. Hall - Phylogenetic Trees Made Easy: A How-To Manual, 5th ed, Sinauer, 2017/12/15, 310p. https://learninglink.oup.com/access/hall-5e | [Table of Contents](https://www.kinokuniya.co.jp/f/dsg-02-9781605357102)
 - Emmanuel Paradis - Analysis of Phylogenetics and Evolution with R (Use R!), Springer; 2nd ed., 2011/11/5, 404p. https://github.com/haruosuz/books/tree/master/aper
-- Dave Hone - "How to read a phylogenetic tree" https://archosaurmusings.wordpress.com/2008/12/18/how-to-read-a-phylogenetic-tree/
 - [藤田敏彦 著 - 動物の系統分類と進化, 裳華房, 2010.4, 206p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926306374204034) https://www.shokabo.co.jp/mybooks/ISBN978-4-7853-5842-6.htm
 - [Ziheng Yang - Computational Molecular Evolution (Oxford Series in Ecology and Evolution), Oxford University Press (2006/12/7), 374p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma99159251504031) http://abacus.gene.ucl.ac.uk/CME/ | [Table of Contents](http://abacus.gene.ucl.ac.uk/CME/TableOfContents.pdf); 藤 博幸　加藤 和貴　大安 裕美　訳. 分子系統学への統計的アプローチ ―計算分子進化学―, 共立出版, 2009.3, 360p. https://www.kyoritsu-pub.co.jp/bookdetail/9784320056770
+- 
+- [系統推定の基本用語](http://nesseiken.info/Chiba_lab/index.php?cmd=read&page=授業%2FH24%2F進化生物学I%2F系統樹に関する基本用語)
+- Andrew Rambaut - "How to read a phylogenetic tree", 2018-07-30 https://artic.network/how-to-read-a-tree.html
+- Dave Hone - "How to read a phylogenetic tree" https://archosaurmusings.wordpress.com/2008/12/18/how-to-read-a-phylogenetic-tree/
+- 2015-01-05 [PhyloBotanist: How to root a phylogenetic tree: outgroup, midpoint and other methods](http://phylobotanist.blogspot.com/2015/01/how-to-root-phylogenetic-tree-outgroup.html)
+- 2012-06-07 [The Cabbages of Doom: How to root a phylogenetic tree](http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html)
 
 #### References_R
 - [高橋康介著 - 再現可能性のすゝめ : RStudioによるデータ解析とレポート作成, 	Wonderful R 3巻, 共立出版, 2018.5, 184p.](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926327704004034) https://www.kyoritsu-pub.co.jp/bookdetail/9784320112438
