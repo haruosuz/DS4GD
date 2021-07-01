@@ -46,6 +46,7 @@
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
 - 2021-07-06 No. 13 - 最終回
   - 最終発表 [final presentation](#final-presentation)
+  - [assignment 13](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#assignment-13)
 - 2021-07-13 - レポート提出期限 Deadline for final report [assignment 13](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#assignment-13)
 
 ----------
