@@ -297,8 +297,6 @@ Barry Hall [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https:/
 
 - Chapter 3 Acquiring the Sequences 33
 - Chapter 4 Aligning the Sequences 53
-- Chapter 6 Neighbor Joining Trees 77
-- Chapter 7 Drawing Phylogenetic Tress 101
 - Chapter 16 Reconstructing Ancestral Sequences 245
 
 [Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
@@ -504,6 +502,17 @@ Select, combine, and revise the previous assignments (e.g., results of analyzing
 Submit your final report as a PDF/HTML document.
 
 最終レポートをPDF/HTML形式ファイルで提出する。
+
+- https://en.wikipedia.org/wiki/IMRAD
+(Introduction, Methods, Results, and Discussion) is a common organizational structure (a document format).
+- https://ja.wikipedia.org/wiki/IMRAD
+は、文章構成の型式の名称の1つである。
+  - Title（タイトル; T）
+  - Introduction（導入; I） :What are you studying and why?(何を研究したのか？、何故それを研究したのか)
+  - Methods（研究方法; M） :What did you do?（具体的には何をしたのか？）
+  - Results（実験結果; R） :What did you find?（何がわかったのか?）
+  - Discussion（考察; D） :What do your findings mean?(あなたが見つけたことは何を意味するのか？）
+  - References（参考文献一覧）
 
 ----------
 
