@@ -34,6 +34,7 @@
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-5)
 - 2022-11-08 No. 6 - ペアワイズ配列アラインメント | Pairwise Sequence Alignment | 大域・局所アラインメント Global/Local alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_chapter4_align.R
+  - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-6)
 - 2022-11-15 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_ds4gd_tree.R
