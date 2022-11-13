@@ -66,7 +66,8 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2022-12-06
 - Speaker: Dr. Kirill Kryukov (National Institute of Genetics)  
 キリル クリュコフ博士（国立遺伝学研究所）
-- Title: TBA
+- Title: Fundamentals of Big Data Sequence Analysis
+
 
 ### 2022-12-13
 - Speaker: Dr. Mahoko Takahashi Ueda (Medical Research Institute Tokyo Medical and Dental University)  
