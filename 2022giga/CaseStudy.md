@@ -116,7 +116,15 @@ Running under: macOS Monterey 12.5.1
 ## assignment 4
 **課題4 「DNA Sequence Statistics (2)」**
 
+次のURLからRスクリプトをダウンロードする。  
+Download the R script from the following URL.  
+https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip
 **my_assignment_chapter2_dna2.R**
+
+RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
+Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command. Submit the report as your assignment.  
+
+[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
 ----------
 ## assignment 5
@@ -128,15 +136,7 @@ Running under: macOS Monterey 12.5.1
 ## assignment 6
 **課題6 「Pairwise Sequence Alignment」**
 
-次のURLからRスクリプトをダウンロードする。  
-Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip
 **my_assignment_chapter4_align_pairwise.R**
-
-RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
-Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command. Submit the report as your assignment.  
-
-[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
 ----------
 ## assignment 7

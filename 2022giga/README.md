@@ -28,15 +28,14 @@
 - 2022-10-25 No. 4 - DNA配列解析(2) | DNA Sequence Statistics (2)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_chapter2_dna2.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-4)
-- 2022-11-01 No. 5 - ペアワイズ配列アラインメント | Pairwise Sequence Alignment | UniProt | ドットプロット Dotplot
+- 2022-11-01 No. 5 - ペアワイズ配列アラインメント | Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-5)
-- 2022-11-08 No. 6 - ペアワイズ配列アラインメント | Pairwise Sequence Alignment | 大域・局所アラインメント Global/Local alignment
+- 2022-11-08 No. 6 - ペアワイズ配列アラインメント | Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-6)
 - 2022-11-15 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-  - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_ds4gd_tree.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/18～11/24）
@@ -66,8 +65,7 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2022-12-06
 - Speaker: Dr. Kirill Kryukov (National Institute of Genetics)  
 キリル クリュコフ博士（国立遺伝学研究所）
-- Title: Fundamentals of Big Data Sequence Analysis
-
+- Title: TBA
 
 ### 2022-12-13
 - Speaker: Dr. Mahoko Takahashi Ueda (Medical Research Institute Tokyo Medical and Dental University)  
