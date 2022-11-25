@@ -36,11 +36,12 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-6)
 - 2022-11-15 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-  - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_ds4gd_tree.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/18～11/24）
 - 2022-11-29 No. 8 - 中間発表 [Interim report](#interim-report)
+  - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-8)
+  - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
 - 2022-12-06 No. 9 - [Guest Speaker](#guest-speaker)
 - 2022-12-13 No. 10 - [Guest Speaker](#guest-speaker)
 - 2022-12-20 No. 11 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
