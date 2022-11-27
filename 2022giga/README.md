@@ -58,6 +58,14 @@
 - 試験 Exam (1/26～2/2)
 
 ----------
+## interim report
+**中間発表**
+
+Presentation time is 1 minute. Report an object of interest (DNA, protein, other textual sequences, etc.).
+
+発表時間は1分。興味のある対象（DNA、タンパク質、その他のテキスト配列など）を報告する。
+
+----------
 ## Guest speaker
 **[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
 
