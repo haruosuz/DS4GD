@@ -15,7 +15,7 @@
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
 - [assignment 8](#assignment-8) 課題8 「Interim report」
-- [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
+- [assignment 11](#assignment-11) 課題11 「Multiple Alignment and Phylogenetic trees」
 - [final assignment](#final-assignment) 最終課題 「Final report」
 
 ----------
@@ -181,8 +181,8 @@ Open an R script in RStudio. Create report in PDF or HTML format using the **Com
 [**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
 ----------
-## assignment 12
-**課題12 「Multiple Alignment and Phylogenetic trees」**
+## assignment 11
+**課題11 「Multiple Alignment and Phylogenetic trees」**
 
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
@@ -202,5 +202,4 @@ Open an R script in RStudio. Create report in PDF or HTML format using the **Com
 Submit a final report in [SOL](https://sol.sfc.keio.ac.jp/).  
 
 ----------
-
 
