@@ -41,20 +41,19 @@
 - 三田祭期間 Mita Festival（11/18～11/24）
 - 2022-11-29 No. 8 - 中間発表 [Interim report](#interim-report)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-8)
+- 2022-12-06 No. 9 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
-- 2022-12-06 No. 9 - [Guest Speaker](#guest-speaker)
 - 2022-12-13 No. 10 - [Guest Speaker](#guest-speaker)
-- 2022-12-20 No. 11 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
-  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-11)
-- 2022-12-27 No. 12 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
+- 2022-12-20 No. 11 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_chapter5_msa_tree.R
-  - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-12)
+  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-11)
+- 2022-12-27 No. 12 - [Guest Speaker](#guest-speaker)
 - 事務室閉室 Office closed (12/28～1/5)
 - 2023-01-17 No. 13 塩基置換のモデル Models of Nucleotide Substitution | The Newick tree format
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_ds4gd_2022.R
 - 2023-01-24 No. 14 No. 14 - 最終回 final class
   - 最終発表 [Final presentation](#final-presentation)
-  - 課題14 [assignment 14](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-14)
+  - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2022/CaseStudy.md#final-assignment)
 - 試験 Exam (1/26～2/2)
 
 ----------
@@ -72,16 +71,16 @@ Presentation time is 1 minute. Report an object of interest (DNA, protein, other
 People outside of Keio University SFC will also attend the lectures.  
 他機関所属の方も参加されます。  
 
-### 2022-12-06
-- Speaker: Dr. Kirill Kryukov (National Institute of Genetics)  
-キリル クリュコフ博士（国立遺伝学研究所）
-- Title: Fundamentals of Big Data Sequence Analysis
-
 
 ### 2022-12-13
 - Speaker: Dr. Mahoko Takahashi Ueda (Medical Research Institute Tokyo Medical and Dental University)  
 上田真保子博士（東京医科歯科大学難治疾患研究所）
-- Title: TBA
+- Title: The basics of gene expression analysis in R
+
+### 2022-12-27
+- Speaker: Dr. Kirill Kryukov (National Institute of Genetics)  
+キリル クリュコフ博士（国立遺伝学研究所）
+- Title: Fundamentals of Big Data Sequence Analysis
 
 ----------
 ## Final presentation
