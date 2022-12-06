@@ -42,7 +42,7 @@
 - 2022-11-29 No. 8 - 中間発表 [Interim report](#interim-report)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-8)
 - 2022-12-06 No. 9 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
-  - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
+  - [Download SeaView](https://doua.prabi.fr/software/seaview) 
 - 2022-12-13 No. 10 - [Guest Speaker](#guest-speaker) | The basics of gene expression analysis in R
 - 2022-12-20 No. 11 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_chapter5_msa_tree.R
@@ -51,6 +51,7 @@
 - 事務室閉室 Office closed (12/28～1/5)
 - 2023-01-17 No. 13 塩基置換のモデル Models of Nucleotide Substitution | The Newick tree format
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_ds4gd_2022.R
+  - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
 - 2023-01-24 No. 14 No. 14 - 最終回 final class
   - 最終発表 [Final presentation](#final-presentation)
   - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2022/CaseStudy.md#final-assignment)
