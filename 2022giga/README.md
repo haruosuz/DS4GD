@@ -28,7 +28,7 @@
 - 2022-10-25 No. 4 - DNA配列解析(2) | DNA Sequence Statistics (2)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_chapter2_dna2.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-4)
-- 2022-11-01 No. 5 - ペアワイズ配列アラインメント | Pairwise Sequence Alignment | UniProt | ドットプロット Dotplot
+- 2022-11-01 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-5)
@@ -49,7 +49,7 @@
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-11)
 - 2022-12-27 No. 12 - [Guest Speaker](#guest-speaker)
 - 事務室閉室 Office closed (12/28～1/5)
-- 2023-01-17 No. 13 塩基置換のモデル Models of Nucleotide Substitution | The Newick tree format
+- 2023-01-17 No. 13 - TBA
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_ds4gd_2022.R
   - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
 - 2023-01-24 No. 14 - 最終回 final class
