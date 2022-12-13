@@ -77,6 +77,7 @@ People outside of Keio University SFC will also attend the lectures.
 - Speaker: Dr. Mahoko Takahashi Ueda (Medical Research Institute Tokyo Medical and Dental University)  
 上田真保子博士（東京医科歯科大学難治疾患研究所）
 - Title: The basics of gene expression analysis in R
+- [Dropbox](https://www.dropbox.com/scl/fo/iwzwiqf6ryjxwtinqextt/h?dl=0&rlkey=bylq0jcn5dxj4etc5oavcbfem)
 
 ### 2022-12-27
 - Speaker: Dr. Kirill Kryukov (National Institute of Genetics)  
