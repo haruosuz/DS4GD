@@ -63,8 +63,8 @@ BLAST (Basic Local Alignment Search Tool)
 
 ### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
 
-#### Blast 2 sequences
-[aligning two protein or nucleotide sequences](https://academic.oup.com/femsle/article/174/2/247/502616)
+#### blastp
+[Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
 
 - Query the NCBI Protein database by searching on the words [**ebgC Bacteroides**](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides).
 - Test the homology between
@@ -77,24 +77,22 @@ using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PA
   - Click on **+ Algorithm parameters**, change **Expect threshold** from 0.05 to 10, and then click the **BLAST** button.
   - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the *Bacteroides* EbgC sequences are not homologs of the *Escherichia coli* EbgC sequence.
 
-Reference:
-Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
+##### Reference
+- Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
 (p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
+- [Blast 2 sequences: aligning two protein or nucleotide sequences](https://academic.oup.com/femsle/article/174/2/247/502616)
 
 #### tblastn
 [tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
 
-- *Enter Query Sequence* into the form field:
+- **Enter Query Sequence** into the form field:
 ```
 ADF36658
 ```
-- Click on *Algorithm parameters*, and select/change values as follows:
-```
-Max target sequences	5000
-
-Expect threshold	1e-20
-```
-- Click on *BLAST* button to execute.
+- Click on **Algorithm parameters**, and select/change values as follows:
+  - Max target sequences: 5000
+  - Expect threshold: 1e-20
+- Click on **BLAST** button to execute.
 
 ----------
 ----------
