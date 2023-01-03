@@ -62,6 +62,10 @@ BLAST (Basic Local Alignment Search Tool)
 - Click the 'Run Blast' button.
 
 ### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
+
+#### Blast 2 sequences
+[aligning two protein or nucleotide sequences](https://academic.oup.com/femsle/article/174/2/247/502616)
+
 - Query the NCBI Protein database by searching on the words [**ebgC Bacteroides**](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides).
 - Test the homology between
 *Escherichia coli* EbgC protein (accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1))
@@ -76,6 +80,21 @@ using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PA
 Reference:
 Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
 (p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
+
+#### tblastn
+[tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
+
+- *Enter Query Sequence* into the form field:
+```
+ADF36658
+```
+- Click on *Algorithm parameters*, and select/change values as follows:
+```
+Max target sequences	5000
+
+Expect threshold	1e-20
+```
+- Click on *BLAST* button to execute.
 
 ----------
 ----------
