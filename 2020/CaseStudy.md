@@ -10,6 +10,8 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 - [BLAST](#blast)
   - [UniProt BLAST](#uniprot-blast)
   - [NCBI BLAST](#ncbi-blast)
+    - [blastp](#blastp)
+    - [tblastn](#tblastn)
 - [Chunk options](#chunk-options)
 - [Compile Report](#compile-report)
 - [assignment 0](#assignment-0) 選抜課題
@@ -47,19 +49,20 @@ https://vu.sfc.keio.ac.jp/sfc-sfs/
 ## BLAST
 BLAST (Basic Local Alignment Search Tool)
 
-### [UniProt BLAST](https://www.uniprot.org/blast/)
+### UniProt BLAST
+https://www.uniprot.org/blast/
 
 ![https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/wp-content/uploads/sites/100/2022/07/Screenshot-2022-07-22-at-14.33.12.png)
 
 [BLAST sequence similarity searching](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/blast-sequence-similarity-searching/)
 
-- Select the ‘Blast’ tab of the toolbar at the top of the page.
-- Enter either a protein or nucleotide sequence or a UniProt identifier into the form field.
+- Select the **BLAST** tab of the toolbar at the top of the page.
+- Enter either *UniProt IDs* or *Protein or nucleotide sequence(s) in FASTA format.
 - [Optional settings](https://www.uniprot.org/help/sequence-searches)
   - Target database: UniProtKB Swiss-Prot
   - E-Threshold: 0.0001
   - Hits: 50
-- Click the 'Run Blast' button.
+- Click the **Run BLAST** button.
 
 ### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
 
@@ -77,7 +80,7 @@ using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PA
   - Click on **+ Algorithm parameters**, change **Expect threshold** from 0.05 to 10, and then click the **BLAST** button.
   - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the *Bacteroides* EbgC sequences are not homologs of the *Escherichia coli* EbgC sequence.
 
-##### Reference
+##### References
 - Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
 (p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
 - [Blast 2 sequences: aligning two protein or nucleotide sequences](https://academic.oup.com/femsle/article/174/2/247/502616)
@@ -87,12 +90,36 @@ using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PA
 
 - **Enter Query Sequence** into the form field:
 ```
-ADF36658
+>tr|A0PQ23|A0PQ23_MYCUA Chorismate pyruvate-lyase OS=Mycobacterium ulcerans (strain Agy99) OX=362242 GN=MUL_2003 PE=4 SV=1
+MLAVLPEKREMTECHLSDEEIRKLNRDLRILIATNGTLTRILNVLANDEIVVEIVKQQIQ
+DAAPEMDGCDHSSIGRVLRRDIVLKGRRSGIPFVAAESFIAIDLLPPEIVASLLETHRPI
+GEVMAASCIETFKEEAKVWAGESPAWLELDRRRNLPPKVVGRQYRVIAEGRPVIIITEYF
+LRSVFEDNSREEPIRHQRSVGTSARSGRSICT
 ```
 - Click on **Algorithm parameters**, and select/change values as follows:
   - Max target sequences: 5000
   - Expect threshold: 1e-20
 - Click on **BLAST** button to execute.
+
+### Query Sequences
+
+https://rest.uniprot.org/uniprotkb/Q9CD83.fasta
+```
+>sp|Q9CD83|PHBS_MYCLE Chorismate pyruvate-lyase OS=Mycobacterium leprae (strain TN) OX=272631 GN=ML0133 PE=3 SV=1
+MTNRTLSREEIRKLDRDLRILVATNGTLTRVLNVVANEEIVVDIINQQLLDVAPKIPELE
+NLKIGRILQRDILLKGQKSGILFVAAESLIVIDLLPTAITTYLTKTHHPIGEIMAASRIE
+TYKEDAQVWIGDLPCWLADYGYWDLPKRAVGRRYRIIAGGQPVIITTEYFLRSVFQDTPR
+EELDRCQYSNDIDTRSGDRFVLHGRVFKNL
+```
+
+https://rest.uniprot.org/uniprotkb/A0PQ23.fasta
+```
+>tr|A0PQ23|A0PQ23_MYCUA Chorismate pyruvate-lyase OS=Mycobacterium ulcerans (strain Agy99) OX=362242 GN=MUL_2003 PE=4 SV=1
+MLAVLPEKREMTECHLSDEEIRKLNRDLRILIATNGTLTRILNVLANDEIVVEIVKQQIQ
+DAAPEMDGCDHSSIGRVLRRDIVLKGRRSGIPFVAAESFIAIDLLPPEIVASLLETHRPI
+GEVMAASCIETFKEEAKVWAGESPAWLELDRRRNLPPKVVGRQYRVIAEGRPVIIITEYF
+LRSVFEDNSREEPIRHQRSVGTSARSGRSICT
+```
 
 ----------
 ----------
