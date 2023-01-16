@@ -49,8 +49,12 @@
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2022giga/CaseStudy.md#assignment-11)
 - 2022-12-27 No. 12 - [Guest Speaker](#guest-speaker)
 - 事務室閉室 Office closed (12/28～1/5)
-- 2023-01-17 No. 13 - TBA
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_ds4gd_2022.R
+- 2023-01-10 福沢先生誕生記念日 Anniversary of Yukichi Fukuzawa's Birthday
+- 2023-01-17 No. 13 - 塩基置換のモデル Models of Nucleotide Substitution | The Newick tree format
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip)
+my_ds4gd_2022.R
+my_script2report.R
+  - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
   - [NCBI BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
 - 2023-01-24 No. 14 - 最終回 final class
   - 最終発表 [Final presentation](#final-presentation)
