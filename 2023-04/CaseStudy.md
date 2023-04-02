@@ -22,9 +22,23 @@
 ## assignment 0
 **選抜課題**
 
-本授業で解析したい興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）を述べてください。課題のタイトルと参考文献も明記してください。
+この授業で解析したい配列（DNA、RNA、タンパク質など）を教えてください。
 
-Please describe objects (DNA, protein, and other textual sequences, etc.) you're interested in. Please also state your project title and references.
+[回答例]
+- リボソームタンパク質 https://ja.wikipedia.org/wiki/リボソームタンパク質SA
+- 細菌の翻訳伸長因子 elongation factor https://ja.wikipedia.org/wiki/EF-G https://ja.wikipedia.org/wiki/EF-Tu 
+- スパイクタンパク質 https://ja.wikipedia.org/wiki/スパイクタンパク質
+- 一本鎖DNA結合タンパク質 https://ja.wikipedia.org/wiki/一本鎖DNA結合タンパク質
+- フォークヘッドボックスタンパク質 / FOXタンパク質 https://ja.wikipedia.org/wiki/フォークヘッドボックスタンパク質
+
+Please describe sequences of interest (DNA, RNA, protein, etc.) that you would like to analyze in this class.
+
+[Example answer]
+- Ribosomal protein https://en.wikipedia.org/wiki/Ribosomal_protein
+- Elongation factor https://en.wikipedia.org/wiki/Elongation_factor
+- Coronavirus spike protein https://en.wikipedia.org/wiki/Coronavirus_spike_protein
+- Single-strand DNA-binding protein https://en.wikipedia.org/wiki/Single-strand_DNA-binding_protein
+- FOX (forkhead box) proteins https://en.wikipedia.org/wiki/FOX_proteins
 
 ----------
 ## assignment 1
