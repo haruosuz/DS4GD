@@ -95,12 +95,15 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 ----------
 ## R RStudio
 - [RStudio Cloud](https://github.com/haruosuz/r4bioinfo/blob/master/references/RStudioCloud.md)
-  - 2021-03-18 "RStudio Cloud を使ってウェブブラウザ上でR(Studio)を利用する" https://doi.org/10.7875/togotv.2021.022
-- 2020-01-25 "R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners" https://youtu.be/YBAWVNWiZlU
-- 2020-10-11 "R for Ecologists (lesson 1) Installing R and RStudio" https://youtu.be/YKvkXKeGoa8
-- 2018-04-08 "統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜" https://doi.org/10.7875/togotv.2018.098
-- 2017-05-12 "RStudioでRを直感的に使おう MacOS版 2017" https://doi.org/10.7875/togotv.2017.043
-- 2014-02-21 "RStudioでRを直感的に使おう" https://doi.org/10.7875/togotv.2014.008
+  - 2021-03-18 | 04:00 | 作者: hiuchi | "RStudio Cloud を使ってウェブブラウザ上でR(Studio)を利用する" https://doi.org/10.7875/togotv.2021.022
+- 2021/02/16 | 5:23 | R Programming - DDS | "How to download and install R and RStudio" https://youtu.be/TFGYlKvQEQ4
+- 2020-01-25 | 5:17 | Pydemy | "R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners" https://youtu.be/YBAWVNWiZlU
+- 2020-10-14 | 19:44 | R for Ecology | "R for Ecologists (Lesson 2) Start using R and RStudio!" https://youtu.be/dPLbyWXEG_E
+- 2020-10-11 |  6:00 | R for Ecology | "R for Ecologists (lesson 1) Installing R and RStudio" https://youtu.be/YKvkXKeGoa8
+- 2019/08/27 [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
+- 2018-04-08 | 05:18 | 作者: hiuchi | "統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜" https://doi.org/10.7875/togotv.2018.098
+- 2017-05-12 | 07:42 | 作者: Motofumi Saito| "RStudioでRを直感的に使おう MacOS版 2017" https://doi.org/10.7875/togotv.2017.043
+- 2014-02-21 | 11:06 | 作者: TogoTV | "RStudioでRを直感的に使おう" https://doi.org/10.7875/togotv.2014.008
 
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
