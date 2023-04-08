@@ -44,11 +44,13 @@ Please describe sequences of interest (DNA, RNA, protein, etc.) that you would l
 ## assignment 1
 **課題1 「Introduction to R」**
 
+
 **my_datasciencedojo_r.R**
+
+https://github.com/haruosuz/DS4GD/blob/master/2023-04/README.md#r-rstudio
 
 Watch the videos about R, and write your comments or questions.  
 Rに関する動画を見て、コメントや疑問点を書く。  
-- 2019/08/27 [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
 
 [Example answer]  
 ```
