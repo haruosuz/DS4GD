@@ -41,11 +41,15 @@ Please describe sequences of interest (DNA, RNA, protein, etc.) that you would l
 - FOX (forkhead box) proteins https://en.wikipedia.org/wiki/FOX_proteins
 
 ----------
+
+次のURLからRスクリプトをダウンロードする。  
+Download the R script from the following URL.  
+https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
+**my_datasciencedojo_r.R**
+
+----------
 ## assignment 1
 **課題1 「Introduction to R」**
-
-
-**my_datasciencedojo_r.R**
 
 https://github.com/haruosuz/DS4GD/blob/master/2023-04/README.md#r-rstudio
 
