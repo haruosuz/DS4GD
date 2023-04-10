@@ -53,6 +53,8 @@ https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
 
 https://github.com/haruosuz/DS4GD/blob/master/2023-04/README.md#r-rstudio
 
+- 2019/08/27 [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
+
 Watch the videos about R, and write your comments or questions.  
 Rに関する動画を見て、コメントや疑問点を書く。  
 
