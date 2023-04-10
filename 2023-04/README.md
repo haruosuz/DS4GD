@@ -22,17 +22,17 @@
 - 2023-04-18 No. 2 - R言語入門 | Introduction to R
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter_installr.R
   - 課題2 [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-2)
-- 2023-04-25 No. 3 - DNA配列解析(1) | DNA Sequence Statistics (1)
+- 2023-04-25 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter1_dna1.R
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-3)
-- 2023-05-02 No. 4 - DNA配列解析(2) | DNA Sequence Statistics (2)
+- 2023-05-02 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter2_dna2.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-4)
 - 2023-05-09 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-5)
-- 2023-05-16 No. 6 - ペアワイズ配列アラインメント | Pairwise Sequence Alignment | 大域・局所アラインメント Global/Local alignment
+- 2023-05-16 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-6)
 - 2023-05-23 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
@@ -96,10 +96,10 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 ## R RStudio
 - 2021/02/16 | 5:23 | R Programming - DDS | "How to download and install R and RStudio" https://youtu.be/TFGYlKvQEQ4
 - 2020-01-25 | 5:17 | Pydemy | "R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners" https://youtu.be/YBAWVNWiZlU
-- 2020-10-11 |  6:00 | R for Ecology | "R for Ecologists (lesson 1) Installing R and RStudio" https://youtu.be/YKvkXKeGoa8
-- 2018-04-08 | 05:18 | 作者: hiuchi | "統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜" https://doi.org/10.7875/togotv.2018.098
-- 2017-05-12 | 07:42 | 作者: Motofumi Saito| "RStudioでRを直感的に使おう MacOS版 2017" https://doi.org/10.7875/togotv.2017.043
-- 2014-02-21 | 11:06 | 作者: TogoTV | "RStudioでRを直感的に使おう" https://doi.org/10.7875/togotv.2014.008
+- 2020-10-11 | 6:00 | R for Ecology | "R for Ecologists (lesson 1) Installing R and RStudio" https://youtu.be/YKvkXKeGoa8
+- 2018-04-08 | 5:18 | "統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜" https://doi.org/10.7875/togotv.2018.098
+- 2017-05-12 | 7:42 | "RStudioでRを直感的に使おう MacOS版 2017" https://doi.org/10.7875/togotv.2017.043
+- 2014-02-21 | 11:06 | "RStudioでRを直感的に使おう" https://doi.org/10.7875/togotv.2014.008
 
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
