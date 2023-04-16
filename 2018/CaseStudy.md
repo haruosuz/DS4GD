@@ -1379,9 +1379,7 @@ Figure 1 [Relationship between genome size and GC content for sequenced Bacteria
 
 **[好熱菌](https://ja.wikipedia.org/wiki/好熱菌)と常温菌のコドン使用の違い**
 
-- [Lynn et al. (2002) "Synonymous codon usage is subject to selection in thermophilic bacteria"](https://pubmed.ncbi.nlm.nih.gov/12364606/)
-
-<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg" width=50%>
+https://github.com/haruosuz/codon/blob/master/README.md#temperature
 
 **[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
 
@@ -1391,7 +1389,7 @@ Figure 1 [Grouping of halophiles and non-halophiles according to their standardi
 
 <img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/bin/gb-2008-9-4-r70-1.jpg" width=50%>
 
-**ウィルスの宿主への適応：コドン使用とアミノ酸使用の偏り**
+**ウイルスの宿主への適応：コドン使用とアミノ酸使用の偏り**
 
 - [Bahir et al. (2009) "Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences"](https://pubmed.ncbi.nlm.nih.gov/19888206/)
 
@@ -1429,5 +1427,17 @@ Fig. 1. [The contrasts are displayed for 20 and 50 kb sliding window plots of G+
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr1.jpg)
 
 ----------
+
+
+https://github.com/haruosuz/codon/blob/master/README.md#temperature
+
+
+----------
+
+
+
+
+
+
 
 
