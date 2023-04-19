@@ -98,33 +98,35 @@ References related to comments/questions for assignment "Introduction to R".
 > packageVersion("tidyverse")
 [1] ‘1.3.2’
 > packageVersion("seqinr")
-[1] ‘4.2.16’
+[1] ‘4.2.30’
 > packageVersion("zoo")
 [1] ‘1.8.11’
 > packageVersion("ape")
-[1] ‘5.6.2’
+[1] ‘5.7.1’
 > packageVersion("phangorn")
-[1] ‘2.10.0’
+[1] ‘2.11.1’
 > packageVersion("phytools")
-[1] ‘1.2.0’
+[1] ‘1.5.1’
+> packageVersion("geiger")
+[1] ‘2.0.11’
 > packageVersion("ggseqlogo")
 [1] ‘0.1’
 > packageVersion("microseq")
 [1] ‘2.1.5’
 
 > packageVersion("Biostrings")
-[1] ‘2.62.0’
+[1] ‘2.66.0’
 > packageVersion("msa")
-[1] ‘1.26.0’
+[1] ‘1.30.1’
 > packageVersion("DECIPHER")
-[1] ‘2.22.0’
+[1] ‘2.26.0’
+
 
 > # Print version information about R, the OS and attached or loaded packages.
 > sessionInfo()
-R version 4.1.3 (2022-03-10)
+R version 4.2.3 (2023-03-15)
 Platform: x86_64-apple-darwin17.0 (64-bit)
 Running under: macOS Monterey 12.5.1
-
 ```
 
 
