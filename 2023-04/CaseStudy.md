@@ -73,6 +73,22 @@ My questions are as follows:
 2. ファクターと文字列データの違いは？
 ```
 
+
+
+
+[回答例]
+>
+次の動画の Part 2 から Part 11 を見た。
+[Introduction to R Programming - Data Science Dojo]
+
+疑問点は次の通りである。
+1. 行列とデータフレームとリストの違いが理解できなかった。
+2. ファクターと文字列データの違いは？
+
+
+
+
+
 ----------
 ## assignment 2
 **課題2 「Installing R packages」**
