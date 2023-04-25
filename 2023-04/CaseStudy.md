@@ -41,17 +41,12 @@ Please describe sequences of interest (DNA, RNA, protein, etc.) that you would l
 - FOX (forkhead box) proteins https://en.wikipedia.org/wiki/FOX_proteins
 
 ----------
-
-次のURLからRスクリプトをダウンロードする。  
-Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
-**my_datasciencedojo_r.R**
-
-----------
 ## assignment 1
 **課題1 「Introduction to R」**
 
 https://github.com/haruosuz/DS4GD/blob/master/2023-04/README.md#r-rstudio
+
+**my_datasciencedojo_r.R**
 
 - 2019/08/27 [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
 
@@ -77,13 +72,6 @@ My questions are as follows:
 1. 行列とデータフレームとリストの違いが理解できなかった。
 2. ファクターと文字列データの違いは？
 ```
-
-----------
-
-課題「Introduction to R」のコメント/疑問点に関連する資料  
-References related to comments/questions for assignment "Introduction to R".  
-
-- https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1
 
 ----------
 ## assignment 2
