@@ -77,8 +77,7 @@ My questions are as follows:
 
 
 [回答例]
->
-次の動画の Part 2 から Part 11 を見た。
+> 次の動画の Part 2 から Part 11 を見た。
 [Introduction to R Programming - Data Science Dojo]
 
 疑問点は次の通りである。
