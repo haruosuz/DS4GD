@@ -127,6 +127,14 @@ Download the R script from the following URL.
 https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
 **my_assignment_chapter1_dna1.R**
 
+
+
+
+RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
+Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command. Submit the report as your assignment.  
+
+[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
+
 ----------
 ## assignment 4
 **課題4 「DNA Sequence Statistics (2)」**
@@ -152,13 +160,7 @@ https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
 [BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast) を用いて、系統樹に含める複数（4つ以上）の相同配列を同定する。  
 Use [BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast) to identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 
-
 **my_ds4gd_tree.R**
-
-RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
-Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command. Submit the report as your assignment.  
-
-[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
 Edit the following R code (`database` `ACCESSIONs`):
 ```
