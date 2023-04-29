@@ -171,8 +171,8 @@ clicking the Compile Report button
 
 ![http://www.dry-lab.org/blog/2020/easy-report-from-r-script.html](http://www.dry-lab.org/images/cmb2/R_compile_report.png)
 
-2016年12月05日に更新
-https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
+2016年12月05日
+https://qiita.com/wakuteka/items/86b0ea5ef8428229babd#3-compile-report
 3. Compile Report
 
 ![https://qiita.com/wakuteka/items/86b0ea5ef8428229babd](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
