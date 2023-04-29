@@ -127,13 +127,20 @@ Download the R script from the following URL.
 https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
 **my_assignment_chapter1_dna1.R**
 
+RStudioでRスクリプトを開く。  
+Open an R script in RStudio.  
 
+[6 Workflow: scripts | R for Data Science](https://r4ds.had.co.nz/workflow-scripts.html)
 
-
-RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
-Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command. Submit the report as your assignment.  
+**Compile Report**コマンドでHTML形式のレポートを作成する。  
+Create report in format using the **Compile Report** command.  
 
 [**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
+
+.htmlファイルを課題としてSOLにて提出する。  
+Submit the .html file as your assignment in SOL.  
+
+[SOL](https://sol.sfc.keio.ac.jp/)  
 
 ----------
 ## assignment 4
