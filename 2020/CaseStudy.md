@@ -159,6 +159,10 @@ Compiling Reports from R Scripts
 |
 If you are using RStudio then you can also create a report using the Compile Report command (Ctrl+Shift+K).
 
+Jan 17, 2017
+https://www.youtube.com/watch?v=4xwaH9CR2TY
+How to Compile a Report in RStudio - YouTube
+
 13 April 2020
 http://www.dry-lab.org/blog/2020/easy-report-from-r-script.html
 An easy way to transform your R script into a nice report – Blog of Andrés Aravena
@@ -167,10 +171,11 @@ clicking the Compile Report button
 
 ![http://www.dry-lab.org/blog/2020/easy-report-from-r-script.html](http://www.dry-lab.org/images/cmb2/R_compile_report.png)
 
-Jan 17, 2017
-https://www.youtube.com/watch?v=4xwaH9CR2TY
-How to Compile a Report in RStudio - YouTube
+2016年12月05日に更新
+https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
+3. Compile Report
 
+![https://qiita.com/wakuteka/items/86b0ea5ef8428229babd](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
 
 2018/05/11
 https://www.kyoritsu-pub.co.jp/book/b10003938.html
@@ -181,19 +186,14 @@ https://www.kyoritsu-pub.co.jp/book/b10003938.html
 
 ![https://www.kyoritsu-pub.co.jp/book/b10003938.html](https://hondana-image.s3.amazonaws.com/book/image/10003938/normal_300fa3ec-db93-4420-a5ce-042046371dc0.jpg)
 
-メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。[Maruzen eBook Library](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926579997904034)
+メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
+[Maruzen eBook Library](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926579997904034)
 
 https://kohske.github.io/R/rstudio/
 Rstudioで楽々ドキュメント生成 | Rスクリプトからノートブックの作成
 
 https://rpubs.com/kohske/595
 Rスクリプトからレポート生成
-
-2016年12月05日に更新
-https://qiita.com/wakuteka/items/86b0ea5ef8428229babd
-3. Compile Report
-
-![https://qiita.com/wakuteka/items/86b0ea5ef8428229babd](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
 
 ----------
 ----------
