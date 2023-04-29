@@ -183,13 +183,19 @@ https://www.yondemill.jp/contents/53229?view=1
 ![https://www.kyoritsu-pub.co.jp/book/b10003938.html](https://hondana-image.s3.amazonaws.com/book/image/10003938/normal_300fa3ec-db93-4420-a5ce-042046371dc0.jpg)
 
 メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
-[https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926579997904034](
-再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成―（Wonderful R 3）
+[再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成―（Wonderful R 3）
 東京: 共立出版, 2018.5.
 2018.5
 Wonderful R / 市川太祐 [ほか] 編
 
-Maruzen eBook Library)
+Maruzen eBook Library
+](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926579997904034)
+
+
+
+
+
+
 
 https://kohske.github.io/R/rstudio/
 Rstudioで楽々ドキュメント生成 | Rスクリプトからノートブックの作成
