@@ -130,15 +130,11 @@ https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
 [RStudioでRスクリプトを開く。  
 Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
 
-**Compile Report**コマンドでHTML形式のレポートを作成する。  
-Create report in format using the **Compile Report** command.  
+[**Compile Report**コマンドでHTML形式のレポートを作成する。  
+Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
-[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
-
-.htmlファイルを課題としてSOLにて提出する。  
-Submit the .html file as your assignment in SOL.  
-
-[SOL](https://sol.sfc.keio.ac.jp/)  
+[.htmlファイルを課題としてSOLにて提出する。  
+Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)  
 
 ----------
 ## assignment 4
