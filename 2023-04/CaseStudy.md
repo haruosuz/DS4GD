@@ -122,10 +122,16 @@ Running under: macOS Monterey 12.5.1
 ## assignment 3
 **課題3 「DNA Sequence Statistics (1)」**
 
+**my_assignment_chapter1_dna1.R**
+
+----------
+## assignment 4
+**課題4 「DNA Sequence Statistics (2)」**
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
-**my_assignment_chapter1_dna1.R**
+**my_assignment_chapter2_dna2.R**
 
 [RStudioでRスクリプトを開く。  
 Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
@@ -135,12 +141,6 @@ Create report in format using the **Compile Report** command.  ](https://github.
 
 [.htmlファイルを課題としてSOLにて提出する。  
 Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)  
-
-----------
-## assignment 4
-**課題4 「DNA Sequence Statistics (2)」**
-
-**my_assignment_chapter2_dna2.R**
 
 ----------
 ## assignment 5
