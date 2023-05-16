@@ -66,13 +66,6 @@ Presentation time is 1 minute. Report an object of interest (DNA, protein, other
 発表時間は1分。興味のある対象（DNA、タンパク質、その他のテキスト配列など）を報告する。
 
 ----------
-## Guest speaker
-**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
-
-People outside of Keio University SFC will also attend the lectures.  
-他機関所属の方も参加されます。  
-
-----------
 ## Final presentation
 **口頭発表**
 
