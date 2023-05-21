@@ -1369,6 +1369,7 @@ BLASTの実行:
 
 **原核生物（細菌とアーキア）におけるゲノムサイズとGC含量との関係**
 
+- [Martinez-Gutierrez et al. PLoS Genet. 2022 May 23;18(5):e1010220. "Genome size distributions in bacteria and archaea are strongly linked to evolutionary history at broad phylogenetic scales"](https://pubmed.ncbi.nlm.nih.gov/35605022/)
 - [Almpanis A et al.  Microb Genom. 2018 Apr;4(4). "Correlation between bacterial G+C content, genome size and the G+C content of associated plasmids and bacteriophages."](https://www.ncbi.nlm.nih.gov/pubmed/29633935)
 - [Bohlin J et al. Environ Microbiol Rep. 2014 Jun;6(3):278-86. "Positive correlations between genomic %AT and genome size within strains of bacterial species."](https://www.ncbi.nlm.nih.gov/pubmed/24983532)
 - [McCutcheon JP et al. PLoS Genet. 2009 Jul;5(7):e1000565. "Origin of an alternative genetic code in the extremely small and GC-rich genome of a bacterial symbiont."](https://www.ncbi.nlm.nih.gov/pubmed/19609354)
@@ -1427,7 +1428,6 @@ Fig. 1. [The contrasts are displayed for 20 and 50 kb sliding window plots of G+
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr1.jpg)
 
 ----------
-
 
 https://github.com/haruosuz/codon/blob/master/README.md#temperature
 
