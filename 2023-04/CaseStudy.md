@@ -140,10 +140,33 @@ Running under: macOS Monterey 12.5.1
 ## assignment 6
 **課題6 「Pairwise Sequence Alignment」**
 
+**my_assignment_chapter4_align_pairwise.R**
+
+----------
+## assignment 7
+**課題7 「Choosing and Acquiring Sequences」**
+
+[BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)  
+BLASTを用いて、系統樹に含める複数（4つ以上）の相同配列を同定する。  
+BLAST is used to identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
+
+ダウンロードしたFASTAファイルの名前を*myAA.fasta*に変更する。  
+Rename the downloaded FASTA file to *myAA.fasta*.  
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
-**my_assignment_chapter4_align_pairwise.R**
+**my_ds4gd_tree.R**
+```
+file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
+```
+
+Running the script **my_ds4gd_tree.R** will generate the following output files.
+- myAA.fasta: unaligned sequences
+- myAlign.fasta: aligned sequences
+- myAlignTrim.fasta: trimmed aligned sequences
+- myTree.tre: phylogenetic tree
+- myTable.tsv: sequence information (length and annotations)
 
 [RStudioでRスクリプトを開く。  
 Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
@@ -153,32 +176,6 @@ Create report in format using the **Compile Report** command.  ](https://github.
 
 [.htmlファイルを課題としてSOLにて提出する。  
 Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)  
-
-----------
-## assignment 7
-**課題7 「Choosing and Acquiring Sequences」**
-
-[BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast) を用いて、系統樹に含める複数（4つ以上）の相同配列を同定する。  
-Use [BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast) to identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
-
-**my_ds4gd_tree.R**
-
-Edit the following R code (`database` `ACCESSIONs`):
-```
-database <- "ncbi_protein"
-  ACCESSIONs <- c("NP_001393", "WP_011012522", "WP_001040724", "NP_001952", "WP_011013157", "NP_387993")
-```
-or
-```
-database <- "uniprot"
-  ACCESSIONs <- c("P68104", "Q8U152", "P33166", "P13639", "P61877", "P80868")
-```
-
-Running the script **my_ds4gd_tree.R** will generate the following output files.
-- myAA.fasta: unaligned sequences
-- myAlign.fasta: aligned sequences
-- myAlignTrim.fasta: trimmed aligned sequences
-- myTree.tre: phylogenetic tree
 
 ----------
 ## assignment 8
