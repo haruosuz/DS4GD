@@ -159,7 +159,6 @@ file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
 ```
 
 Running the script **my_ds4gd_tree.R** will generate the following output files:
-- myAA.fasta: Unaligned sequences.
 - myAlign.fasta: Aligned sequences.
 - myAlignTrim.fasta: Trimmed aligned sequences.
 - myTree.tre: Phylogenetic tree.
