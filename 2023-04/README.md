@@ -38,11 +38,11 @@
 - 2023-05-23 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_ds4gd_tree.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-7)
-- 2023-05-30 No. 8 - 中間発表 [Interim report](#interim-report)
+- 2023-05-30 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
+  - 中間発表 [midterm presentation](#midterm-presentation)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-8)
-- 2023-06-06 No. 9 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
-  - [Download SeaView](https://doua.prabi.fr/software/seaview) 
-- 2023-06-13 No. 10 - [Guest Speaker](#guest-speaker)
+- 2023-06-06 No. 9 - TBA
+- 2023-06-13 No. 10 - TBA
 - 2023-06-20 No. 11 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-11)
@@ -58,7 +58,7 @@ my_script2report.R
 - 試験 Exam (7/24～7/29)
 
 ----------
-## interim report
+## midterm presentation
 **中間発表**
 
 Presentation time is 1 minute. Report an object of interest (DNA, protein, other textual sequences, etc.).
