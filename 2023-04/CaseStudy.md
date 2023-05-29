@@ -14,7 +14,7 @@
 - [assignment 5](#assignment-5) 課題5 「Dotplot」
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
-- [assignment 8](#assignment-8) 課題8 「Interim report」
+- [assignment 8](#assignment-8) 課題8 「midterm report」
 - [assignment 11](#assignment-11) 課題11 「Multiple Alignment and Phylogenetic trees」
 - [final assignment](#final-assignment) 最終課題 「Final report」
 
@@ -150,9 +150,6 @@ Running under: macOS Monterey 12.5.1
 BLASTを用いて、系統樹に含める複数（4つ以上）の相同配列を同定する。  
 BLAST is used to identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 
-次のURLからRスクリプトをダウンロードする。  
-Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
 **my_ds4gd_tree.R**
 ```
 file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
@@ -164,6 +161,18 @@ Running the script **my_ds4gd_tree.R** will generate the following output files:
 - myTree.tre: Phylogenetic tree.
 - myTable.tsv: Sequence information, including length and annotations.
 
+----------
+## assignment 8
+**課題8 「midterm report」**
+
+これまでの課題を選択・結合・編集して中間報告書を作成する。  
+Select, combine, and edit the previous assignments to create a midterm report.  
+
+次のURLからRスクリプトをダウンロードする。  
+Download the R script from the following URL.  
+https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
+**my_ds4gd_midterm_report.R**
+
 [RStudioでRスクリプトを開く。  
 Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
 
@@ -172,15 +181,6 @@ Create report in format using the **Compile Report** command.  ](https://github.
 
 [.htmlファイルを課題としてSOLにて提出する。  
 Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)  
-
-----------
-## assignment 8
-**課題8 「Interim report」**
-
-これまでの課題を選択・結合・編集して中間報告書を作成する。  
-Select, combine, and edit the previous assignments to create an interim report.  
-
-**my_interim_report.R**
 
 ----------
 ## assignment 11
