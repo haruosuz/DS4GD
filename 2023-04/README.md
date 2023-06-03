@@ -41,19 +41,21 @@
 - 2023-05-30 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - 中間発表 [midterm presentation](#midterm-presentation)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-8)
-- 2023-06-06 No. 9 - TBA
-- 2023-06-13 No. 10 - TBA
-- 2023-06-20 No. 11 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
-  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-11)
-- 2023-06-27 No. 12 - [Guest Speaker](#guest-speaker)
-- 2023-07-04 No. 13 - The Newick tree format
+- 2023-06-06 No. 9 - Model | Newick tree format
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip)
-my_ds4gd_2022.R
+my_ds4gd_model.R
+my_ds4gd_newick.R
+- 2023-06-13 No. 10 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
+- 2023-06-20 No. 11 - TBA
+  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-11)
+- 2023-06-27 No. 12 - TBA
+- 2023-07-04 No. 13 - TBA
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip)
 my_script2report.R
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
 - 2023-07-11 No. 14 - 最終回 final class
-  - 最終発表 [Final presentation](#final-presentation)
+  - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2022/CaseStudy.md#final-assignment)
 - 試験 Exam (7/24～7/29)
 
@@ -66,7 +68,7 @@ Presentation time is 1 minute. Report an object of interest (DNA, protein, other
 発表時間は1分。興味のある対象（DNA、タンパク質、その他のテキスト配列など）を報告する。
 
 ----------
-## Final presentation
+## final presentation
 **口頭発表**
 
 発表時間：1人あたり最大5分（質疑応答を含む）。
