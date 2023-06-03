@@ -16,7 +16,7 @@
 - [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
 - [assignment 8](#assignment-8) 課題8 「midterm report」
 - [assignment 11](#assignment-11) 課題11 「Multiple Alignment and Phylogenetic trees」
-- [final assignment](#final-assignment) 最終課題 「Final report」
+- [final assignment](#final-assignment) 最終課題 「final report」
 
 ----------
 ## assignment 0
@@ -182,6 +182,9 @@ Create report in format using the **Compile Report** command.  ](https://github.
 [.htmlファイルを課題としてSOLにて提出する。  
 Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)  
 
+編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
+Please save and backup your edited files in a separate directory.  
+
 ----------
 ## assignment 11
 **課題11 「Multiple Alignment and Phylogenetic trees」**
@@ -195,7 +198,7 @@ Open an R script in RStudio. Create report in PDF or HTML format using the **Com
 
 ----------
 ## final assignment
-**最終課題 「Final report」**
+**最終課題 「final report」**
 
 [SOL](https://sol.sfc.keio.ac.jp/) にて最終レポートを提出する。  
 Submit a final report in [SOL](https://sol.sfc.keio.ac.jp/).  
