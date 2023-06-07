@@ -41,23 +41,22 @@
 - 2023-05-30 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - 中間発表 [midterm presentation](#midterm-presentation)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-8)
-- 2023-06-06 No. 9 - Model | Newick tree format
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip)
-my_ds4gd_model.R
-my_ds4gd_newick.R
-- 2023-06-13 No. 10 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
+- 6/2 6/3 金 土 Fri. Sat. - 補講/試験 Makeup Class Day/Exam
+- 2023-06-06 No. 9 - [よくわかるバイオインフォマティクス入門](https://www.kspub.co.jp/book/detail/5138212.html) 1章　配列解析 | 2章　分子進化 | 6章　ゲノム解析
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_sliding_window_gcskew.R | my_ds4gd_model.R  
+- 2023-06-13 No. 10 - Newick tree format
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_ds4gd_newick.R
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_script2report.R
+  - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
+- 2023-06-20 No. 11 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
-- 2023-06-20 No. 11 - TBA
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-11)
 - 2023-06-27 No. 12 - TBA
 - 2023-07-04 No. 13 - TBA
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip)
-my_script2report.R
-  - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
 - 2023-07-11 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2022/CaseStudy.md#final-assignment)
-- 試験 Exam (7/24～7/29)
+- 7/24 - 7/29 (7/31) 試験 Exam
 
 ----------
 ## midterm presentation
@@ -81,11 +80,12 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 ## References
 **参考文献**
 
-- Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
-  - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 - CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
   - 26章 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
 - Andrew Rambaut - "How to read a phylogenetic tree", 2018-07-30 https://artic.network/how-to-read-a-tree.html
+- 藤博幸（編） - よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p. https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/fb8nrm/alma9926580096704034
+- Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
+  - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 
 ----------
 ## R RStudio
