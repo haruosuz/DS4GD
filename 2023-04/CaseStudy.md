@@ -172,11 +172,12 @@ Select, combine, and edit the previous assignments to create a midterm report.
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
 
-圧縮ファイル **scripts_ds4gd.zip** を解凍・展開する。  
-Please unzip/extract the compressed file **scripts_ds4gd.zip**.  
-
-ディレクトリ **scripts_ds4gd/** 内で作業する。 
-Work within the directory **scripts_ds4gd/**.  
+圧縮ファイルを解凍し、ディレクトリに移動する。  
+unzip the compressed file and change to the directory.  
+```
+unzip scripts_ds4gd.zip
+cd scripts_ds4gd/
+```
 
 **my_ds4gd_midterm_report.R**
 
