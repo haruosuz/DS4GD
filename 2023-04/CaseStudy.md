@@ -191,11 +191,6 @@ Please save and backup your edited files in a separate directory.
 
 **my_assignment_chapter5_msa_tree.R**
 
-RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
-Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command. Submit the report as your assignment.  
-
-[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
-
 ----------
 ## final assignment
 **最終課題 「final report」**
@@ -204,4 +199,7 @@ Open an R script in RStudio. Create report in PDF or HTML format using the **Com
 Submit a final report in [SOL](https://sol.sfc.keio.ac.jp/).  
 
 ----------
+
+
+
 
