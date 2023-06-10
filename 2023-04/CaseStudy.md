@@ -171,10 +171,20 @@ Select, combine, and edit the previous assignments to create a midterm report.
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
+
+圧縮ファイル **scripts_ds4gd.zip** を解凍・展開する。  
+Please unzip/extract the compressed file **scripts_ds4gd.zip**.  
+
+ディレクトリ **scripts_ds4gd/** 内で作業する。 
+Work within the directory **scripts_ds4gd/**.  
+
 **my_ds4gd_midterm_report.R**
 
 [RStudioでRスクリプトを開く。  
 Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
+
+Rスクリプトを編集し、変更を加えた後、保存する。  
+Edit the R script, make any necessary changes, and then save it.  
 
 [**Compile Report**コマンドでHTML形式のレポートを作成する。  
 Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
