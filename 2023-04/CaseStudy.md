@@ -184,9 +184,6 @@ cd scripts_ds4gd/
 [RStudioでRスクリプトを開く。  
 Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
 
-Rスクリプトを編集し、変更を加えた後、保存する。  
-Edit the R script, make any necessary changes, and then save it.  
-
 [**Compile Report**コマンドでHTML形式のレポートを作成する。  
 Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
