@@ -49,12 +49,12 @@
 - 2023-06-20 No. 11 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-11)
-- 2023-06-27 No. 12 - TBA
+- 2023-06-27 No. 12 - [How to root a phylogenetic tree](http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html)
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_script2report.R | my_ds4gd_report_2023-06-27.R namespace
 - 2023-07-04 No. 13 - TBA
 - 2023-07-11 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2022/CaseStudy.md#final-assignment)
-- 7/24 - 7/29 (7/31) 試験 Exam
 
 ----------
 ## midterm presentation
@@ -86,8 +86,6 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 - 
 - Andrew Rambaut - "How to read a phylogenetic tree", 2018-07-30 https://artic.network/how-to-read-a-tree.html
 - 2012-06-07 The Cabbages of Doom: How to root a phylogenetic tree http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html
-- Dave Hone - "How to read a phylogenetic tree" https://archosaurmusings.wordpress.com/2008/12/18/how-to-read-a-phylogenetic-tree/
-- 2015-01-05 [PhyloBotanist: How to root a phylogenetic tree: outgroup, midpoint and other methods](http://phylobotanist.blogspot.com/2015/01/how-to-root-phylogenetic-tree-outgroup.html)
 
 ----------
 ## R RStudio
