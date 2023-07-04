@@ -209,5 +209,3 @@ Submit a final report in [SOL](https://sol.sfc.keio.ac.jp/).
 ----------
 
 
-
-
