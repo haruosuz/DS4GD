@@ -51,7 +51,7 @@
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-11)
 - 2023-06-27 No. 12 - 系統樹に根をつける方法 [How to root a phylogenetic tree](http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_script2report.R | my_ds4gd_report_2023-06-27.R namespace
-- 2023-07-04 No. 13 - [よくわかるバイオインフォマティクス入門](https://www.kspub.co.jp/book/detail/5138212.html) 配列の相同性
+- 2023-07-04 No. 13 - [よくわかるバイオインフォマティクス入門](https://www.kspub.co.jp/book/detail/5138212.html) 配列の相同性 | オーソ口ガスおよびパラ口ガスな遺伝子の関係
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
 - 2023-07-11 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
