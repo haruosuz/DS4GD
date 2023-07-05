@@ -43,7 +43,7 @@
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2023-04/CaseStudy.md#assignment-8)
 - 6/2 6/3 金 土 Fri. Sat. - 補講/試験 Makeup Class Day/Exam
 - 2023-06-06 No. 9 - [よくわかるバイオインフォマティクス入門](https://www.kspub.co.jp/book/detail/5138212.html) 1章　配列解析 | 2章　分子進化 | 6章　ゲノム解析
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_sliding_window_gcskew.R | my_ds4gd_model.R  
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_ds4gd_model.R | my_sliding_window_gcskew.R  
 - 2023-06-13 No. 10 - Newick tree format
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip) my_ds4gd_newick.R
 - 2023-06-20 No. 11 - 多重整列と系統樹 | Multiple Alignment and Phylogenetic trees
