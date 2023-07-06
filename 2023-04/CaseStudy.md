@@ -150,15 +150,24 @@ Running under: macOS Monterey 12.5.1
 BLASTを用いて、系統樹に含める複数（4つ以上）の相同配列を同定する。  
 BLAST is used to identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 
+「BLAST results | UniProt」ページの右上にある画像（Basket）をクリックする。  
+Click on the image (Basket) located at the top right of the "BLAST results | UniProt" page.  
+
+「My Basket」の下にある「Download」をクリックする。"Compressed"の下で「No」を選択する。  
+Click on "Download" below "My Basket". Select "No" under "Compressed".  
+
+ウェブブラウザとしてGoogle Chromeを使用する。他のウェブブラウザ（例：Safariなど）を使用すると、異なる動作が生じる可能性がある。  
+Use the web browser Google Chrome. Using other web browsers (such as Safari) may result in different behavior.  
+
 **my_ds4gd_tree.R**
 ```
 file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
 ```
 
-Running the script **my_ds4gd_tree.R** will generate the following output files:
+The R script will generate the following output files:
 - myAlign.fasta: Aligned sequences.
 - myAlignTrim.fasta: Trimmed aligned sequences.
-- myTree.tre: Phylogenetic tree.
+- myTree.tre: Phylogenetic tree in Newick format.
 - myTable.tsv: Sequence information, including length and annotations.
 
 ----------
