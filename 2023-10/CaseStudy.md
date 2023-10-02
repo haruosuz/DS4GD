@@ -44,22 +44,6 @@ Please describe sequences of interest (DNA, RNA, protein, etc.) that you would l
 ## assignment 1
 **課題1 「Introduction to R」**
 
-次のURLからRスクリプトをダウンロードする。  
-Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
-
-圧縮ファイルを解凍し、ディレクトリに移動する。  
-unzip the compressed file and change to the directory.  
-```
-unzip scripts_ds4gd.zip
-cd scripts_ds4gd/
-```
-
-[RStudioでRスクリプトを開く。  
-Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
-
-**my_datasciencedojo_r.R**
-
 - 2019/08/27 [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
 
 Watch the videos about R, and write your comments or questions.  
@@ -85,6 +69,31 @@ My questions are as follows:
 - 行列とデータフレームとリストの違いが理解できなかった。
 - ファクターと文字列データの違いは？
 ```
+
+次のURLからRスクリプトをダウンロードする。  
+Download the R script from the following URL.  
+https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
+
+圧縮ファイルを解凍し、ディレクトリに移動する。  
+unzip the compressed file and change to the directory.  
+```
+unzip scripts_ds4gd.zip
+cd scripts_ds4gd/
+```
+
+[RStudioでRスクリプトを開く。  
+Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
+
+**my_datasciencedojo_r.R**
+
+[**Compile Report**コマンドでHTML形式のレポートを作成する。  
+Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
+
+[.htmlファイルを課題としてSOLにて提出する。  
+Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)  
+
+編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
+Please save and backup your edited files in a separate directory.  
 
 ----------
 ## assignment 2
@@ -136,16 +145,6 @@ Running under: macOS Monterey 12.5.1
 **課題3 「DNA Sequence Statistics (1)」**
 
 **my_assignment_chapter1_dna1.R**
-
-[**Compile Report**コマンドでHTML形式のレポートを作成する。  
-Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
-
-[.htmlファイルを課題としてSOLにて提出する。  
-Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)  
-
-編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
-Please save and backup your edited files in a separate directory.  
-
 
 ----------
 ## assignment 4
