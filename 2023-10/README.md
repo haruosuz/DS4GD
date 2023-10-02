@@ -42,14 +42,14 @@
 - 2023-12-05 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - 中間発表 [midterm presentation](#midterm-presentation)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-8)
-- 2023-12-12 No. 9
-- 2023-12-19 No. 10
+- 2023-12-12 No. 9 - TBD
+- 2023-12-19 No. 10 - TBD
 - 2023-12-26 No. 11 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-11)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
-- 2024-01-09 No. 12 - To Be Determined
-- 2024-01-16 No. 13 - To Be Determined
+- 2024-01-09 No. 12 - TBD
+- 2024-01-16 No. 13 - TBD
 - 2024-01-23 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#final-assignment)
@@ -66,35 +66,25 @@ Presentation time is 1 minute. Report an object of interest (DNA, protein, other
 ## final presentation
 **口頭発表**
 
-発表時間：1人あたり最大5分（質疑応答を含む）。
-興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、大域アラインメント、局所アラインメント）、多重整列、系統樹などが含まれる。
-
 Presentation time: 5 minutes will be allocated for each presentation (including Q&A).
 Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, DNA words, and local variation in base composition), pairwise sequence alignment (dotplot, global alignment, and local alignment), multiple sequence alignment, and phylogenetic trees, etc.
+
+発表時間：1人あたり最大5分（質疑応答を含む）。
+興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成、塩基組成の局所変動）、ペアワイズ配列アラインメント（ドットプロット、大域アラインメント、局所アラインメント）、多重整列、系統樹などが含まれる。
 
 ----------
 ## References
 **参考文献**
 
-- CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
-  - 26章 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-- 藤博幸（編） - よくわかるバイオインフォマティクス入門, 講談社サイエンティフィク, 2018, 199p. https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/fb8nrm/alma9926580096704034
 - Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
   - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
-- 
-- Andrew Rambaut - "How to read a phylogenetic tree", 2018-07-30 https://artic.network/how-to-read-a-tree.html
-- 2012-06-07 The Cabbages of Doom: How to root a phylogenetic tree http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html
 
 ----------
 ## R RStudio
 - [RStudio Cloud](https://github.com/haruosuz/r4bioinfo/blob/master/references/RStudioCloud.md)
-  - 2021-03-18 | 04:00 | "RStudio Cloud を使ってウェブブラウザ上でR(Studio)を利用する" https://doi.org/10.7875/togotv.2021.022
 - 2021/02/16 | 5:23 | R Programming - DDS | "How to download and install R and RStudio" https://youtu.be/TFGYlKvQEQ4
 - 2020-01-25 | 5:17 | Pydemy | "R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners" https://youtu.be/YBAWVNWiZlU
 - 2020-10-11 | 6:00 | R for Ecology | "R for Ecologists (lesson 1) Installing R and RStudio" https://youtu.be/YKvkXKeGoa8
-- 2018-04-08 | 5:18 | "統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜" https://doi.org/10.7875/togotv.2018.098
-- 2017-05-12 | 7:42 | "RStudioでRを直感的に使おう MacOS版 2017" https://doi.org/10.7875/togotv.2017.043
-- 2014-02-21 | 11:06 | "RStudioでRを直感的に使おう" https://doi.org/10.7875/togotv.2014.008
 
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
