@@ -72,7 +72,7 @@ My questions are as follows:
 
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
+https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip
 
 圧縮ファイルを解凍し、ディレクトリに移動する。  
 unzip the compressed file and change to the directory.  
@@ -106,36 +106,30 @@ Please save and backup your edited files in a separate directory.
 ```
 > # Print the versions of these packages:
 > packageVersion("tidyverse")
-[1] ‘1.3.2’
+[1] ‘2.0.0’
 > packageVersion("seqinr")
 [1] ‘4.2.30’
 > packageVersion("zoo")
-[1] ‘1.8.11’
+[1] ‘1.8.12’
 > packageVersion("ape")
 [1] ‘5.7.1’
 > packageVersion("phangorn")
 [1] ‘2.11.1’
-> packageVersion("phytools")
-[1] ‘1.5.1’
-> packageVersion("geiger")
-[1] ‘2.0.11’
 > packageVersion("ggseqlogo")
 [1] ‘0.1’
 > packageVersion("microseq")
-[1] ‘2.1.5’
-
+[1] ‘2.1.6’
 > packageVersion("Biostrings")
-[1] ‘2.66.0’
+[1] ‘2.68.1’
 > packageVersion("msa")
-[1] ‘1.30.1’
+[1] ‘1.32.0’
 > packageVersion("DECIPHER")
-[1] ‘2.26.0’
-
+[1] ‘2.28.0’
 
 > # Print version information about R, the OS and attached or loaded packages.
 > sessionInfo()
-R version 4.2.3 (2023-03-15)
-Platform: x86_64-apple-darwin17.0 (64-bit)
+R version 4.3.1 (2023-06-16)
+Platform: x86_64-apple-darwin20 (64-bit)
 Running under: macOS Monterey 12.5.1
 ```
 
