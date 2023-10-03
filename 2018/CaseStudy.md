@@ -1367,7 +1367,8 @@ BLASTの実行:
 [塩基組成の解析](https://github.com/gaou/g-language/wiki/restgenomeanalysisjapanese#塩基組成の解析)
 - http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明
 
-**原核生物（細菌とアーキア）におけるゲノムサイズとGC含量との関係**
+**原核生物（細菌とアーキア）におけるゲノムサイズとGC含量**  
+**Genome Size and GC Content in Prokaryotes (Bacteria and Archaea)**  
 
 - [Martinez-Gutierrez et al. PLoS Genet. 2022 May 23;18(5):e1010220. "Genome size distributions in bacteria and archaea are strongly linked to evolutionary history at broad phylogenetic scales"](https://pubmed.ncbi.nlm.nih.gov/35605022/)
 - [Westoby et al. Ecol Evol. 2021 Mar 16;11(9):3956-3976. "Cell size, genome size, and maximum growth rate are near-independent dimensions of ecological variation across bacteria and archaea"](https://pubmed.ncbi.nlm.nih.gov/33976787/)
@@ -1377,9 +1378,10 @@ BLASTの実行:
 
 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
 
-![https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg)
+<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg" width=50%>
 
-**[好熱菌](https://ja.wikipedia.org/wiki/好熱菌)と常温菌のコドン使用の違い**
+**至適増殖温度とアミノ酸・コドン使用**  
+**Optimal Growth Temperature and Amino Acid and Codon Usage**  
 
 - [Zeldovich et al. PLoS Comput Biol. 2007 Jan 12;3(1):e5. "Protein and DNA sequence determinants of thermophilic adaptation"](https://pubmed.ncbi.nlm.nih.gov/17222055/)
 
@@ -1393,7 +1395,8 @@ Variation in codon usage within and between genomes.
 
 <img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg" width=50%>
 
-**[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
+**好塩菌と非好塩菌のアミノ酸使用**  
+**Amino Acid Usage in Halophiles Halophiles and Non-Halophiles**  
 
 - [Paul et al. (2008) Genome Biol. "Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes"](https://pubmed.ncbi.nlm.nih.gov/18397532/)
 
@@ -1401,7 +1404,8 @@ Figure 1 [Grouping of halophiles and non-halophiles according to their standardi
 
 <img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/bin/gb-2008-9-4-r70-1.jpg" width=50%>
 
-**ウイルスの宿主への適応：コドン使用とアミノ酸使用の偏り**
+**ウイルスと宿主のアミノ酸・コドン使用**  
+**Amino Acid and Codon Usage in Viruses and Hosts**  
 
 - [Bahir et al. (2009) "Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences"](https://pubmed.ncbi.nlm.nih.gov/19888206/)
 
@@ -1413,7 +1417,8 @@ Figure 6 [Similarity in GC content and codon usage between pairs of viruses and 
 
 <img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f6.jpg" width=50%>
 
-**プラスミドと宿主染色体のGC含量**
+**プラスミドと宿主染色体のGC含量**  
+**GC Content of Plasmids and Host Chromosomes**  
 
 - [Yano et al. (2019) "Reconsidering plasmid maintenance factors for computational plasmid design"](https://www.sciencedirect.com/science/article/pii/S2001037018301685)
 
@@ -1422,7 +1427,8 @@ Fig. 5. [Plot of G + C contents of 209 plasmids and their host chromosomes.]
 
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S2001037018301685-gr5.jpg)
 
-**コドン使用に基づく高発現遺伝子予測**
+**コドン使用に基づく高発現遺伝子の予測**  
+**Predicting Highly Expressed Genes Based on Codon Usage**  
 
 - [Karlin et al. (2001) J Bacteriol "Characterizations of Highly Expressed Genes of Four Fast-Growing Bacteria"](https://pubmed.ncbi.nlm.nih.gov/11489855/)
 
@@ -1430,7 +1436,8 @@ FIG. 1 [Genes of ≥100 codons in the four fast-growing bacteria. Each gene is r
 
 <img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/bin/jb1710100001.jpg" width=50%>
 
-**GC含量、連続塩基組成、アミノ酸・コドン使用に基づく外来性遺伝子クラスターの検出**
+**GC含量、連続塩基組成、アミノ酸・コドン使用に基づく外来性遺伝子クラスターの検出**  
+**Detecting Exogenous Gene Clusters Based on GC Content, Oligonucleotide Composition, and Amino Acid and Codon Usage**  
 
 - [Karlin S (2001) Trends Microbiol. "Detecting anomalous gene clusters and pathogenicity islands in diverse bacterial genomes."](https://www.ncbi.nlm.nih.gov/pubmed/11435108) | [pdf](https://eclass.uoa.gr/modules/document/file.php/D473/Βιβλιογραφία/DNA%20Composition/Karlin_2001.pdf)
 
@@ -1445,9 +1452,6 @@ https://github.com/haruosuz/codon/blob/master/README.md#temperature
 https://github.com/haruosuz/mgsa/blob/master/references/mgsa.tools.md#growth-rate
 
 ----------
-
-
-
 
 
 
