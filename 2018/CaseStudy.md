@@ -1391,7 +1391,7 @@ Correlation between the Sum F of Fractions of Ile, Val, Tyr, Trp, Arg, Glu, and 
 
 Variation in codon usage within and between genomes. 
 
-![https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/figure/gkf546f2/](https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=140546_gkf546f2.jpg)
+![https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/figure/gkf546f2/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg)
 
 **[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
 
