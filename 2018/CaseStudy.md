@@ -1367,8 +1367,8 @@ BLASTの実行:
 [塩基組成の解析](https://github.com/gaou/g-language/wiki/restgenomeanalysisjapanese#塩基組成の解析)
 - http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明
 
-**原核生物（細菌とアーキア）におけるゲノムサイズとGC含量**  
-**Genome Size and GC Content in Prokaryotes (Bacteria and Archaea)**  
+**細菌とアーキアにおけるゲノムサイズとGC含量**  
+**Genome Size and GC Content in Bacteria and Archaea**  
 
 - [Martinez-Gutierrez et al. PLoS Genet. 2022 May 23;18(5):e1010220. "Genome size distributions in bacteria and archaea are strongly linked to evolutionary history at broad phylogenetic scales"](https://pubmed.ncbi.nlm.nih.gov/35605022/)
 - [Westoby et al. Ecol Evol. 2021 Mar 16;11(9):3956-3976. "Cell size, genome size, and maximum growth rate are near-independent dimensions of ecological variation across bacteria and archaea"](https://pubmed.ncbi.nlm.nih.gov/33976787/)
