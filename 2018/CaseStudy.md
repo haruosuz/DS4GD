@@ -1375,13 +1375,23 @@ BLASTの実行:
 - [Bohlin J et al. Environ Microbiol Rep. 2014 Jun;6(3):278-86. "Positive correlations between genomic %AT and genome size within strains of bacterial species."](https://www.ncbi.nlm.nih.gov/pubmed/24983532)
 - [McCutcheon JP et al. PLoS Genet. 2009 Jul;5(7):e1000565. "Origin of an alternative genetic code in the extremely small and GC-rich genome of a bacterial symbiont."](https://www.ncbi.nlm.nih.gov/pubmed/19609354)
 
-Figure 1 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
+[Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
 
 ![https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg)
 
 **[好熱菌](https://ja.wikipedia.org/wiki/好熱菌)と常温菌のコドン使用の違い**
 
-https://github.com/haruosuz/codon/blob/master/README.md#temperature
+[Zeldovich et al. PLoS Comput Biol. 2007 Jan 12;3(1):e5. "Protein and DNA sequence determinants of thermophilic adaptation"](https://pubmed.ncbi.nlm.nih.gov/17222055/)
+
+Correlation between the Sum F of Fractions of Ile, Val, Tyr, Trp, Arg, Glu, and Leu (IVYWREL) Amino Acids in 86 Proteomes and the OGT of Organisms T opt
+
+![https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1769408/figure/pcbi-0030005-g001/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1769408/bin/pcbi.0030005.g001.jpg)
+
+[Lynn et al. Nucleic Acids Res. 2002 Oct 1;30(19):4272-7. "Synonymous codon usage is subject to selection in thermophilic bacteria"](https://pubmed.ncbi.nlm.nih.gov/12364606/)
+
+Variation in codon usage within and between genomes. 
+
+![https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/figure/gkf546f2/](https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=140546_gkf546f2.jpg)
 
 **[好塩菌](https://ja.wikipedia.org/wiki/好塩菌)と非好塩菌のアミノ酸使用の違い**
 
