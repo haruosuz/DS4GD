@@ -499,6 +499,15 @@ index
 
 http://www.okadajp.org/RWiki/?リストTips大全
 
+https://r4ds.had.co.nz/vectors.html#vector-basics
+There are two types of vectors:
+
+1. Atomic vectors, of which there are six types: logical, integer, double, character, complex, and raw. Integer and double vectors are collectively known as numeric vectors.
+
+2. Lists, which are sometimes called recursive vectors because lists can contain other lists.
+
+The chief difference between atomic vectors and lists is that atomic vectors are homogeneous, while lists can be heterogeneous.
+
 https://jennybc.github.io/purrr-tutorial/bk00_vectors-and-lists.html
 A list is actually still a vector in R, but it’s not an atomic vector.
 
