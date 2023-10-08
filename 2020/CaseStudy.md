@@ -343,11 +343,15 @@ https://cran.r-project.org/doc/manuals/R-lang.html#Data-frame-objects
 Data frames are the R structures which most closely mimic the SAS or SPSS data set, i.e. a “cases by variables” matrix of data.
 A data frame is a list of vectors, factors, and/or matrices all having the same length (number of rows in the case of matrices). 
 
-2020/03/21
-https://www.cyberer.net/2020/03/r-lists-and-data-frames.html#toc_headline_8
-CYBERer.NET: R - 入門本編 6章 リストとデータフレーム
+https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma99218100004031
+Bioinformatics data skills
 |
-「データフレーム」は関係データベースのテーブルのようなデータ構造だ。クラス data.frame を持つリストであるが、ただのリストに比べてコンポーネントになり得るオブジェクトにいくつかの制限が設けられている。
+202 | Chapter 8: A Rapid Introduction to the R Language
+|
+When accessing a single column from a dataframe, R’s default behavior is to return this as a vector—not a dataframe with one column. Sometimes this can cause problems if downstream code expects to work with a dataframe. To disable this behavior, we set the argument drop to FALSE in the bracket operator:
+```
+> d[, "start", drop=FALSE]
+```
 
 https://www.oreilly.co.jp/books/9784873118635/
 バイオインフォマティクスデータスキル
@@ -359,20 +363,11 @@ https://www.oreilly.co.jp/books/9784873118635/
 > d[, "start", drop=FALSE]
 ```
 
-https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma99218100004031
-Bioinformatics data skills
+2020/03/21
+https://www.cyberer.net/2020/03/r-lists-and-data-frames.html#toc_headline_8
+CYBERer.NET: R - 入門本編 6章 リストとデータフレーム
 |
-202 | Chapter 8: A Rapid Introduction to the R Language
-|
-When accessing a single column from a dataframe, R’s default behavior is to return this as a vector—not a dataframe with one column. Sometimes this can cause problems if downstream code expects to work with a dataframe. To disable this behavior, we set the argument drop to FALSE in the bracket operator:
-```
-> d[, "start", drop=FALSE]
-```
-
-http://cse.naro.affrc.go.jp/takezawa/r-tips/r/39.html
-39. データフレーム事始
-|
-データフレームとは data.frame クラスを持つリストのことであり，数値ベクトルや文字ベクトル，因子ベクトル（文字型ベクトル）などの異なる型のデータをまとめて1 つの変数として持っている．外見は行列と同じ 2 次元配列であるが，データフレームの各行・列はラベルを必ず持ち，ラベルによる操作が可能である点が普通の行列と異なる．しかも各列の要素の型はバラバラでも構わないので，ベクトルやリストで持っているデータをデータフレームに変換することで統計解析がやりやすくなる．
+「データフレーム」は関係データベースのテーブルのようなデータ構造だ。クラス data.frame を持つリストであるが、ただのリストに比べてコンポーネントになり得るオブジェクトにいくつかの制限が設けられている。
 
 ----------
 ### R_factor
