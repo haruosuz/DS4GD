@@ -833,6 +833,37 @@ Data Science Dojo [Working with Vectors - Introduction to R Programming - Part 7
 https://r4ds.had.co.nz/vectors.html
 20 Vectors | R for Data Science
 
+https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma99218100004031
+Bioinformatics data skills
+|
+R Language Basics | 189
+|
+Vector types
+|
+R’s vectors must contain elements of the same type.
+Numeric
+Integer
+Character
+Logical
+|
+Table 8-3. R’s vector types
+
+https://www.oreilly.co.jp/books/9784873118635/
+バイオインフォマティクスデータスキル
+|
+8.2 R 言語の基礎 ■ 203
+|
+8.2.3.1 ベクトル型
+|
+R のベクトルは同じ型の要素だけが含まれていなければならない。
+|
+実数型(Numeric)
+整数型(Integer)
+文字型(Character)
+論理型(Logical)
+|
+表 8-3 R のベクトル型
+
 2017.06.13
 https://stats.biopapyrus.jp/r/basic/vector.html
 ベクトル | R のベクトル操作と演算
