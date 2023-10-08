@@ -541,6 +541,17 @@ x[[1]]	x の第 1 成分を取り出す（中身はリスト中の要素）
 ----------
 ### R_matrix
 
+2023-08-24
+https://homerhanumat.github.io/r-notes/index.html
+Welcome | Beginning Computer Science with R
+https://homerhanumat.github.io/r-notes/matrix-indexing.html
+7.2 Matrix Indexing
+|
+We use the sub-setting operator `[` to pick out parts of a matrix. For example, in order to get the element in the second row and third column of `numbersMat`, ask for:
+```
+numbersMat[2,3]
+```
+
 R-Tips [20. 行列計算](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/20.html)
  行列の積は %*% 演算子によって求める点に注意．行列に対して * 演算子を用いると要素毎の積を計算してしまう．
 
