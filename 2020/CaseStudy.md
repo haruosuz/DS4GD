@@ -542,8 +542,6 @@ x[[1]]	x の第 1 成分を取り出す（中身はリスト中の要素）
 ### R_matrix
 
 2023-08-24
-https://homerhanumat.github.io/r-notes/index.html
-Welcome | Beginning Computer Science with R
 https://homerhanumat.github.io/r-notes/matrix-indexing.html
 7.2 Matrix Indexing
 |
@@ -552,18 +550,16 @@ We use the sub-setting operator `[` to pick out parts of a matrix. For example, 
 numbersMat[2,3]
 ```
 
-R-Tips [20. 行列計算](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/20.html)
- 行列の積は %*% 演算子によって求める点に注意．行列に対して * 演算子を用いると要素毎の積を計算してしまう．
-
-[行列 | R による行列の演算](https://stats.biopapyrus.jp/r/basic/matrix.html)
-行列の計算
-
-[Rでのデータの演算と操作](https://www.cis.doshisha.ac.jp/mjin/R/03.html)
-3．行列の演算
-(2)行列の乗算
-　行列の乗算には、算術演算のように対応する行列の要素の間に乗算を行う演算と線形代数で定義されている積演算がある。
-Rでは、コマンド％*％で行列の積演算を行う。
-(3)単位行列と逆行列
+2019.06.15
+https://stats.biopapyrus.jp/r/basic/matrix.html
+行列 | R による行列の演算
+|
+行列から要素を取り出すとき、角括弧を利用して、行数と列数を指定して行う。
+```
+x <- matrix(c(1:16), nrow = 4, ncol = 4)
+x
+x[3, 2]
+```
 
 ----------
 ### R_object
