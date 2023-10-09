@@ -44,6 +44,8 @@ Please describe sequences of interest (DNA, RNA, protein, etc.) that you would l
 ## assignment 1
 **課題1 「Introduction to R」**
 
+**my_datasciencedojo_r.R**
+
 - 2019/08/27 [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
 
 Watch the videos about R, and write your comments or questions.  
@@ -74,6 +76,12 @@ Rに関する動画を見て、コメントや疑問点を書く。
 #' 
 ```
 
+----------
+## assignment 2
+**課題2 「Installing R packages」**
+
+**my_setup_packages.R**
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip
@@ -85,10 +93,8 @@ unzip scripts_ds4gd.zip
 cd scripts_ds4gd/
 ```
 
-[RStudioでRスクリプトを開く。  
-Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
-
-**my_datasciencedojo_r.R**
+[RStudioでRスクリプトを開き、編集し、保存する。  
+Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
 
 [**Compile Report**コマンドでHTML形式のレポートを作成する。  
 Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
@@ -98,12 +104,6 @@ Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory.  
-
-----------
-## assignment 2
-**課題2 「Installing R packages」**
-
-**my_setup_packages.R**
 
 [回答例]  
 [Example answer]  
