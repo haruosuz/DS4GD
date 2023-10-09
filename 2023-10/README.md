@@ -15,12 +15,12 @@
 - 
 - 2023-10-03 No. 1 - イントロダクション Introduction
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-  - ゲノムリスト [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ncbi-genome-list)
   - [References](#references)
   - [R RStudio](#r-rstudio)
   - 課題1 [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-1)
 - 2023-10-10 No. 2 - R言語入門 Introduction to R
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter_installr.R
+  - ゲノムリスト [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ncbi-genome-list)
   - 課題2 [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-2)
 - 2023-10-17 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter1_dna1.R
