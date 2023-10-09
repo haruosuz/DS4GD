@@ -80,8 +80,6 @@ Rに関する動画を見て、コメントや疑問点を書く。
 ## assignment 2
 **課題2 「Installing R packages」**
 
-**my_setup_packages.R**
-
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip
@@ -92,6 +90,8 @@ unzip the compressed file and change to the directory.
 unzip scripts_ds4gd.zip
 cd scripts_ds4gd/
 ```
+
+**my_setup_packages.R**
 
 [RStudioでRスクリプトを開き、編集し、保存する。  
 Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
@@ -104,38 +104,6 @@ Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory.  
-
-[回答例]  
-[Example answer]  
-```
-> # Print the versions of these packages:
-> packageVersion("tidyverse")
-[1] ‘2.0.0’
-> packageVersion("seqinr")
-[1] ‘4.2.30’
-> packageVersion("zoo")
-[1] ‘1.8.12’
-> packageVersion("ape")
-[1] ‘5.7.1’
-> packageVersion("phangorn")
-[1] ‘2.11.1’
-> packageVersion("ggseqlogo")
-[1] ‘0.1’
-> packageVersion("microseq")
-[1] ‘2.1.6’
-> packageVersion("Biostrings")
-[1] ‘2.68.1’
-> packageVersion("msa")
-[1] ‘1.32.0’
-> packageVersion("DECIPHER")
-[1] ‘2.28.0’
-
-> # Print version information about R, the OS and attached or loaded packages.
-> sessionInfo()
-R version 4.3.1 (2023-06-16)
-Platform: x86_64-apple-darwin20 (64-bit)
-Running under: macOS Monterey 12.5.1
-```
 
 
 ----------
