@@ -227,11 +227,8 @@ NCBIのウェブサイトからゲノム配列データを取得する。
 ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。  
   - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.  
 [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2)、検索ボックス下の「Overview (1); Viruses (92)」のうち、「Viruses」をクリックすると、SARS-CoV-2に属する株が表示される。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), When you click on the **Organism Name** "Severe acute respiratory syndrome coronavirus 2", it will bring you to the record for this organism in the NCBI Genome database.  
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、列**Organism Name**の"Severe acute respiratory syndrome coronavirus 2"をクリックして開く。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/86693?genome_assembly_id=757732), you will see the **Replicon Info** of the Organism. 
-The NCBI [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the DNA sequences are "NC_045512" (**RefSeq**) and "MN908947" (**INSDC**), respectively.  
-[ここで](https://www.ncbi.nlm.nih.gov/genome/86693?genome_assembly_id=757732)、**Replicon Info**下のテーブルの列**RefSeq**と列**INSDC**に[アクセッション番号](https://www.ddbj.nig.ac.jp/acc_def.html)が示されている。アクセッション番号は、"NC_045512" (**RefSeq**) と "MN908947" (**INSDC**) である。  
+- [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), you will find "Severe acute respiratory syndrome coronavirus 2" in the **Organism Name** column. In the **Replicons** column, "NC_045512.2/MN908947.3" indicates the NCBI [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the RefSeq and INSDC databases, respectively.
+- [このページ](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)において、**Organism Name**列には "Severe acute respiratory syndrome coronavirus 2" が記載されている。**Replicons**列には "NC_045512.2/MN908947.3" があり、それぞれRefSeqとINSDCの[アクセッション番号](https://www.ddbj.nig.ac.jp/acc_def-e.html)を示す。
 
 NCBIからDNA配列を取得する:  
 ```
