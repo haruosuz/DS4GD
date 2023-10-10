@@ -247,16 +247,16 @@ NCBIのウェブサイトからゲノム配列データを取得する。
 ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。  
   - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.  
 [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2)、検索ボックス下の「Overview (1); Viruses (92)」のうち、「Viruses」をクリックすると、SARS-CoV-2に属する株が表示される。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), you will find "Severe acute respiratory syndrome coronavirus 2" in the **Organism Name** column. In the **Replicons** column, "NC_045512.2/MN908947.3" indicates the [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the RefSeq and INSDC sequences, respectively.  
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、**Organism Name**列には "Severe acute respiratory syndrome coronavirus 2" が記載されている。**Replicons**列の "NC_045512.2/MN908947.3" は、それぞれRefSeqとINSDCの配列の[アクセッション番号](https://www.ddbj.nig.ac.jp/acc_def-e.html)を示す。
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), you will find "Severe acute respiratory syndrome coronavirus 2" in the **Organism Name** column. In the **Replicons** column, "NC_045512.2/MN908947.3" indicates the [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the RefSeq and GenBank (a member of the INSDC) databases, respectively.  
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、**Organism Name**列には "Severe acute respiratory syndrome coronavirus 2" が記載されている。**Replicons**列の "NC_045512.2/MN908947.3" は、RefSeq/GenBankデータベースの配列の[アクセッション番号](https://www.ddbj.nig.ac.jp/acc_def-e.html)を示す。
 
-NCBIからDNA配列を取得する:  
+NCBI（RefSeq/GenBank）データベースからDNA配列を取得:  
 ```
-# Retrieving a DNA sequence from NCBI
+# Retrieving a DNA sequence from the NCBI (RefSeq/GenBank) database
 library(seqinr)
 
-ACCESSION <- "NC_045512" # SARS-CoV-2
-#ACCESSION <- "NC_001477" # Dengue virus 1
+ACCESSION <- "NC_045512" # RefSeq
+ACCESSION <- "MN908947" # GenBank
 
 filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
 #filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
