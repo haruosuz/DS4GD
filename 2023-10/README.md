@@ -35,9 +35,9 @@
 - 2023-11-07 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-6)
-- 2023-11-14 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_ds4gd_tree.R
-  - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-7)
+- 2023-11-14 No. 7 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
+  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-11)
 - 三田祭期間 Mita Festival（11/21～11/27）
 - 2023-12-05 No. 8 - TBD
 - 2023-12-12 No. 9 - TBD
