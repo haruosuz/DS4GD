@@ -248,7 +248,7 @@ NCBIのウェブサイトからゲノム配列データを取得する。
   - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.  
 [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2)、検索ボックス下の「Overview (1); Viruses (92)」のうち、「Viruses」をクリックすると、SARS-CoV-2に属する株が表示される。  
   - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), you will find "Severe acute respiratory syndrome coronavirus 2" in the **Organism Name** column. In the **Replicons** column, "NC_045512.2/MN908947.3" indicates the [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the RefSeq and GenBank (a member of the INSDC) databases, respectively.  
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、**Organism Name**列には "Severe acute respiratory syndrome coronavirus 2" が記載されている。**Replicons**列の "NC_045512.2/MN908947.3" は、RefSeq/GenBankデータベースの配列の[アクセッション番号](https://www.ddbj.nig.ac.jp/acc_def-e.html)を示す。
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、**Organism Name**列には "Severe acute respiratory syndrome coronavirus 2" が記載されている。**Replicons**列の "NC_045512.2/MN908947.3" は、RefSeq/GenBankデータベースの配列の[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)を示す。
 
 NCBI（RefSeq/GenBank）データベースからDNA配列を取得:  
 ```
