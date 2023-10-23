@@ -12,10 +12,9 @@
 [Class Calendar](https://www.sfc.keio.ac.jp/en/faculty/calendars/class_calendar.html)
   - [2023年度 SFC授業カレンダー（2022.12.27更新）](https://www.sfc.keio.ac.jp/doc/2023_classcalendars_jp.pdf) | 
 [SFC Calendars for 2023（Update December 27, 2022）](https://www.sfc.keio.ac.jp/en/docs/2023_classcalendars_en.pdf)
-- 
+- [References](#references)
 - 2023-10-03 No. 1 - イントロダクション Introduction
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
-  - [References](#references)
   - [R RStudio](#r-rstudio)
   - 課題1 [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-1)
 - 2023-10-10 No. 2 - R言語入門 Introduction to R
@@ -73,7 +72,6 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 **参考文献**
 
 - Avril Coghlan - A Little Book of R For Bioinformatics, 2011, 73p. https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
-  - 顧みられない熱帯病 [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
 
 ----------
 ## R RStudio
@@ -85,4 +83,3 @@ Report your main findings on analyses of objects (DNA, protein, and other textua
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
 ----------
-
