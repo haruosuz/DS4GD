@@ -34,16 +34,20 @@
 - 2023-11-07 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-6)
-- 2023-11-14 No. 7 - TBD
+- 2023-11-14 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_ds4gd_tree.R
+  - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/21～11/27）
-- 2023-12-05 No. 8 - TBD
-- 2023-12-12 No. 9 - TBD
+- 2023-12-05 No. 8  - 中間発表 [midterm presentation](#midterm-presentation)
+  - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-8)
+- 2023-12-12 No. 9 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
+  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2023-12-26 No. 11 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-11)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
-- 2024-01-09 No. 12 - TBD
+- 2024-01-09 No. 12 - [Guest Speaker](#guest-speaker)
 - 2024-01-16 No. 13 - TBD
 - 2024-01-23 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
@@ -56,6 +60,24 @@
 Presentation time is 1 minute. Report an object of interest (DNA, protein, other textual sequences, etc.).
 
 発表時間は1分。興味のある対象（DNA、タンパク質、その他のテキスト配列など）を報告する。
+
+----------
+## Guest speaker
+**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
+
+People outside of Keio University SFC will also attend the lectures.  
+他機関所属の方も参加されます。  
+
+
+### 2023-12-19
+- Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
+鈴木 留美子 博士（国立遺伝学研究所）
+- Title: How to analyze bacterial population
+
+### 2024-01-09
+- Speaker: Dr. Motomu Matsui (The University of Tokyo)  
+松井 求 博士（東京大学）
+- Title: Reconstructing Phylogenetic Reconstruction
 
 ----------
 ## final presentation
