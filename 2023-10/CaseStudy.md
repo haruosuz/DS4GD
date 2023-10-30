@@ -93,6 +93,12 @@ Rに関する動画を見て、コメントや疑問点を書く。
 ## assignment 4
 **課題4 「DNA Sequence Statistics (2)」**
 
+**my_assignment_chapter2_dna2.R**
+
+----------
+## assignment 5
+**課題5 「Dotplot」**
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip
@@ -104,7 +110,7 @@ unzip scripts_ds4gd.zip
 cd scripts_ds4gd/
 ```
 
-**my_assignment_chapter2_dna2.R**
+**my_assignment_chapter4_align_dotplot.R**
 
 [RStudioでRスクリプトを開き、編集し、保存する。  
 Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
@@ -119,12 +125,6 @@ Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)
 Please save and backup your edited files in a separate directory. 
 
 ----------
-## assignment 5
-**課題5 「Dotplot」**
-
-**my_assignment_chapter4_align_dotplot.R**
-
-----------
 ## assignment 6
 **課題6 「Pairwise Sequence Alignment」**
 
@@ -134,15 +134,10 @@ Please save and backup your edited files in a separate directory.
 ## assignment 7
 **課題7 「Choosing and Acquiring Sequences」**
 
-- [BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)  
-  - Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
+[BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)  
+
+Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 系統樹に含める複数（4つ以上）の相同配列を同定する。  
-  - Use the web browser Google Chrome. Using other web browsers (such as Safari) may result in different behavior.  
-ウェブブラウザとしてGoogle Chromeを使用する。他のウェブブラウザ（例：Safariなど）を使用すると、異なる動作が生じる可能性がある。  
-  - Click on the image (Basket) located at the top right of the "BLAST results | UniProt" page.  
-「BLAST results | UniProt」ページの右上にある画像（Basket）をクリックする。  
-  - Click on "Download" below "My Basket". Select "No" under "Compressed".  
-「My Basket」の下にある「Download」をクリックする。"Compressed"の下で「No」を選択する。  
 
 **my_ds4gd_tree.R**
 ```
