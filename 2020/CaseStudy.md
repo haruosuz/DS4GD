@@ -58,12 +58,23 @@ https://www.uniprot.org/blast/
 [BLAST sequence similarity searching](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/blast-sequence-similarity-searching/)
 
 - Select the **BLAST** tab of the toolbar at the top of the page.
-- Enter either *UniProt IDs* or *Protein or nucleotide sequence(s) in FASTA format.
+ページの上部にあるツールバーの**BLAST**タブを選択する。
+- Enter either *UniProt IDs* or *protein or nucleotide sequence(s) in FASTA format*.
+*UniProt IDs* または *FASTA形式のタンパク質または核酸配列* を入力する。
 - [Optional settings](https://www.uniprot.org/help/sequence-searches)
   - Target database: UniProtKB Swiss-Prot
   - E-Threshold: 0.0001
   - Hits: 50
 - Click the **Run BLAST** button.
+**Run BLAST**ボタンをクリックする。
+- 
+- Click on the image (Basket) located at the top right of the "BLAST results | UniProt" page.  
+「BLAST results | UniProt」ページの右上にある画像（Basket）をクリックする。  
+- Click on "Download" below "My Basket". Select "No" under "Compressed".  
+「My Basket」の下にある「Download」をクリックする。"Compressed"の下で「No」を選択する。  
+
+Use the web browser Google Chrome. Using other web browsers (such as Safari) may result in different behavior.  
+ウェブブラウザとしてGoogle Chromeを使用する。他のウェブブラウザ（例：Safariなど）を使用すると、異なる動作が生じる可能性がある。  
 
 ### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
 
