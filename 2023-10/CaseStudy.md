@@ -134,10 +134,8 @@ Please save and backup your edited files in a separate directory.
 ## assignment 7
 **課題7 「Choosing and Acquiring Sequences」**
 
-[BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)  
-
-Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
-系統樹に含める複数（4つ以上）の相同配列を同定する。  
+Using [BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast) to obtain multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
+[BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast) を使用して、系統樹に含める複数（4つ以上）の相同配列を取得する。  
 
 **my_ds4gd_tree.R**
 ```
