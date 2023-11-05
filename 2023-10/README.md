@@ -31,11 +31,8 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-5)
-- 2023-11-07 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
+- 2023-11-14 No. 7 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter4_align.R
-  - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-6)
-- 2023-11-14 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_ds4gd_tree.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/21～11/27）
 - 2023-12-05 No. 8  - 中間発表 [midterm presentation](#midterm-presentation)
