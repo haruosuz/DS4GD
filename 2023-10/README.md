@@ -31,6 +31,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-5)
+- 2023-11-07 No. 6 - [タンパク質コード配列](https://www.ddbj.nig.ac.jp/ddbj/cds.html) [Protein Coding Sequence](https://www.ddbj.nig.ac.jp/ddbj/cds-e.html) (CDS)
 - 2023-11-07 No. 6 - タンパク質コード配列 Protein Coding Sequence
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_eutils_uco.R
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
