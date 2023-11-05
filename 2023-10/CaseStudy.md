@@ -12,8 +12,7 @@
 - [assignment 3](#assignment-3) 課題3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
 - [assignment 5](#assignment-5) 課題5 「Dotplot」
-- [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
-- [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
+- [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題8 「midterm report」
 - [assignment 11](#assignment-11) 課題11 「Multiple Alignment and Phylogenetic trees」
 - [final assignment](#final-assignment) 最終課題 「final report」
@@ -125,28 +124,10 @@ Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)
 Please save and backup your edited files in a separate directory. 
 
 ----------
-## assignment 6
-**課題6 「Pairwise Sequence Alignment」**
+## assignment 7
+**課題7 「Pairwise Sequence Alignment」**
 
 **my_assignment_chapter4_align_pairwise.R**
-
-----------
-## assignment 7
-**課題7 「Choosing and Acquiring Sequences」**
-
-Using [BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast) to obtain multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
-[BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast) を使用して、系統樹に含める複数（4つ以上）の相同配列を取得する。  
-
-**my_ds4gd_tree.R**
-```
-file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
-```
-
-The R script will generate the following output files:
-- myAlign.fasta: Aligned sequences.
-- myAlignTrim.fasta: Trimmed aligned sequences.
-- myTree.tre: Phylogenetic tree in Newick format.
-- myTable.tsv: Sequence information, including length and annotations.
 
 ----------
 ## assignment 8
