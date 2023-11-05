@@ -31,17 +31,16 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-5)
-- 2023-11-07 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
+- 2023-11-07 No. 6 - タンパク質コード配列 Protein Coding Sequence (CDS) 
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_eutils_uco.R
+  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
+- 2023-11-14 No. 7 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter4_align.R
-  - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-6)
-- 2023-11-14 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_ds4gd_tree.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/21～11/27）
 - 2023-12-05 No. 8  - 中間発表 [midterm presentation](#midterm-presentation)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-8)
 - 2023-12-12 No. 9 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
-  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2023-12-26 No. 11 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
