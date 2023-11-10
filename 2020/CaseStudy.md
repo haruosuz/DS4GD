@@ -188,6 +188,16 @@ https://qiita.com/wakuteka/items/86b0ea5ef8428229babd#3-compile-report
 
 ![https://qiita.com/wakuteka/items/86b0ea5ef8428229babd](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
 
+https://rpubs.com/kohske/595
+Rスクリプトからレポート生成
+
+https://kohske.github.io/R/rstudio/
+Rstudioで楽々ドキュメント生成 | Rスクリプトからノートブックの作成
+
+編集画面の[Compile Notebook]というボタンをクリックします。
+
+![https://kohske.github.io/R/rstudio/](https://kohske.github.io/R/rstudio/pics/notebook_compile.png)
+
 2018/05/11
 https://www.kyoritsu-pub.co.jp/book/b10003938.html
 再現可能性のすゝめ
@@ -199,12 +209,6 @@ https://www.kyoritsu-pub.co.jp/book/b10003938.html
 
 メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
 [Maruzen eBook Library](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926579997904034)
-
-https://kohske.github.io/R/rstudio/
-Rstudioで楽々ドキュメント生成 | Rスクリプトからノートブックの作成
-
-https://rpubs.com/kohske/595
-Rスクリプトからレポート生成
 
 ----------
 ----------
