@@ -67,7 +67,7 @@ https://www.uniprot.org/blast/
   - Hits: 50
 - Click the **Run BLAST** button.  
 **Run BLAST**ボタンをクリックする。
-- 
+- [Tool results](https://www.uniprot.org/tool-dashboard)
 - Click on the image (Basket) located at the top right of the "BLAST results | UniProt" page.  
 「BLAST results | UniProt」ページの右上にある画像（Basket）をクリックする。  
 - Click on "Download" below "My Basket". Select "No" under "Compressed".  
