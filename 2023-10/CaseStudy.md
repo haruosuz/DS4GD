@@ -159,10 +159,10 @@ The R script will generate the following output files:
 ## assignment 8
 **課題8 「midterm report」**
 
-これまでの課題を選択・結合・編集して中間報告書を作成する。  
+これまでの課題を選択・結合・編集して中間レポートを作成する。  
 Select, combine, and edit the previous assignments to create a midterm report.  
 
-**my_ds4gd_midterm_report.R**
+**my_ds4gd_report.R**
 
 ----------
 ## assignment 11
@@ -177,5 +177,8 @@ Select, combine, and edit the previous assignments to create a midterm report.
 これまでの課題を選択・結合・編集して最終レポートを作成する。  
 Select, combine, and edit the previous assignments to create a final report.  
 
+**my_ds4gd_report.R**
+
 ----------
+
 
