@@ -134,15 +134,9 @@ Please save and backup your edited files in a separate directory.
 ## assignment 7
 **課題7 「Choosing and Acquiring Sequences」**
 
-- [BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)  
-  - Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
+[BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)  
+Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 系統樹に含める複数（4つ以上）の相同配列を同定する。  
-  - Use the web browser Google Chrome. Using other web browsers (such as Safari) may result in different behavior.  
-ウェブブラウザとしてGoogle Chromeを使用する。他のウェブブラウザ（例：Safariなど）を使用すると、異なる動作が生じる可能性がある。  
-  - Click on the image (Basket) located at the top right of the "BLAST results | UniProt" page.  
-「BLAST results | UniProt」ページの右上にある画像（Basket）をクリックする。  
-  - Click on "Download" below "My Basket". Select "No" under "Compressed".  
-「My Basket」の下にある「Download」をクリックする。"Compressed"の下で「No」を選択する。  
 
 **my_ds4gd_tree.R**
 ```
@@ -150,10 +144,12 @@ file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
 ```
 
 The R script will generate the following output files:
-- myAlign.fasta: Aligned sequences.
-- myAlignTrim.fasta: Trimmed aligned sequences.
-- myTree.tre: Phylogenetic tree in Newick format.
-- myTable.tsv: Sequence information, including length and annotations.
+- `myAA_filtered.fasta`: Sequences filtered based on length criteria.
+- `myAlign.fasta`: Aligned sequences.
+- `myAlignTrim.fasta`: Aligned sequences trimmed (gaps removed).
+- `myTree.pdf`: Phylogenetic tree in PDF format.
+- `myTree.tre`: Phylogenetic tree in Newick format.
+- `myTable.tsv`: Sequence information, including length and annotations.
 
 ----------
 ## assignment 8
