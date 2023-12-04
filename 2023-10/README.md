@@ -38,10 +38,9 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_ds4gd_tree.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/21～11/27）
-- 2023-12-05 No. 8  - 中間発表 [midterm presentation](#midterm-presentation)
+- 2023-12-05 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-8)
-- 2023-12-12 No. 9 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
-  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
+- 2023-12-12 No. 9  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
 - 2023-12-26 No. 11 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
@@ -52,14 +51,6 @@
 - 2024-01-23 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#final-assignment)
-
-----------
-## midterm presentation
-**中間発表**
-
-Presentation time is 1 minute. Report an object of interest (DNA, protein, other textual sequences, etc.).
-
-発表時間は1分。興味のある対象（DNA、タンパク質、その他のテキスト配列など）を報告する。
 
 ----------
 ## Guest speaker
