@@ -15,7 +15,7 @@
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
 - [assignment 8](#assignment-8) 課題8 「midterm report」
-- [assignment 11](#assignment-11) 課題11 「Multiple Alignment and Phylogenetic trees」
+- [assignment 9](#assignment-9) 課題9 「Multiple Alignment and Phylogenetic trees」
 - [final assignment](#final-assignment) 最終課題 「final report」
 
 ----------
@@ -161,8 +161,8 @@ Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)
 Please save and backup your edited files in a separate directory. 
 
 ----------
-## assignment 11
-**課題11 「Multiple Alignment and Phylogenetic trees」**
+## assignment 9
+**課題9 「Multiple Alignment and Phylogenetic trees」**
 
 **my_assignment_chapter5_msa_tree.R**
 
