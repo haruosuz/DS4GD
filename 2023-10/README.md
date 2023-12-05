@@ -39,12 +39,13 @@
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（11/21～11/27）
 - 2023-12-05 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
+  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-8)
-- 2023-12-12 No. 9  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast)
-- 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
-- 2023-12-26 No. 11 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
+- 2023-12-12 No. 9 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
-  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-11)
+  - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-9)
+- 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
+- 2023-12-26 No. 11 - TBD
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
 - 2024-01-09 No. 12 - [Guest Speaker](#guest-speaker)
 - 2024-01-16 No. 13 - TBD
