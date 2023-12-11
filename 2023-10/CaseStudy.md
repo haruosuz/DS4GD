@@ -135,11 +135,17 @@ The R script will generate the following output files:
 これまでの課題を選択・結合・編集して中間レポートを作成する。  
 Select, combine, and edit the previous assignments to create a midterm report.  
 
+**my_ds4gd_report.R**
+
+----------
+## assignment 9
+**課題9 「Multiple Alignment and Phylogenetic trees」**
+
+**my_assignment_chapter5_msa_tree.R**
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip
-
-**my_ds4gd_report.R**
 
 圧縮ファイルを解凍し、ディレクトリに移動する。  
 unzip the compressed file and change to the directory.  
@@ -159,12 +165,6 @@ Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
-
-----------
-## assignment 9
-**課題9 「Multiple Alignment and Phylogenetic trees」**
-
-**my_assignment_chapter5_msa_tree.R**
 
 ----------
 ## final assignment
