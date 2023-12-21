@@ -65,16 +65,7 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2023-12-19
 - Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
 鈴木 留美子 博士（国立遺伝学研究所）
-- Title: How to analyze bacterial population
-- Links
-  - MLST sequence data
-http://sayer.nig.ac.jp/rusuzuki/keio/Asia-Okinawa_newname.fas
-  - Okinawa group data
-http://sayer.nig.ac.jp/rusuzuki/keio/group_Okinawa.txt
-  - Color data
-http://sayer.nig.ac.jp/rusuzuki/keio/dotcolors.csv
-  - Distance matrix
-http://sayer.nig.ac.jp/rusuzuki/keio/Distance_matrix.csv
+- Title: [How to analyze bacterial population](https://github.com/haruosuz/DS4GD/tree/master/2023-10/guest-speaker/2023-12-19)
 
 ### 2024-01-09
 - Speaker: Dr. Motomu Matsui (The University of Tokyo)  
