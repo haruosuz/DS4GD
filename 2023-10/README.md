@@ -46,7 +46,8 @@
   - 系統樹に根をつける方法 [How to root a phylogenetic tree](http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html)
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-9)
 - 2023-12-19 No. 10 - [Guest Speaker](#guest-speaker)
-- 2023-12-26 No. 11 - TBD
+- 2023-12-26 No. 11 - Newick tree format | Model
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_ds4gd_newick.R | my_ds4gd_model.R
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
 - 2024-01-09 No. 12 - [Guest Speaker](#guest-speaker)
 - 2024-01-16 No. 13 - TBD
