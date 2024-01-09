@@ -50,6 +50,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip) my_ds4gd_newick.R | my_ds4gd_model.R
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
 - 2024-01-09 No. 12 - [Guest Speaker](#guest-speaker)
+  - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-12)
 - 2024-01-16 No. 13 - TBD
 - 2024-01-23 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
