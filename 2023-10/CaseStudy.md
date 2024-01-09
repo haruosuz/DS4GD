@@ -16,6 +16,7 @@
 - [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
 - [assignment 8](#assignment-8) 課題8 「midterm report」
 - [assignment 9](#assignment-9) 課題9 「Multiple Alignment and Phylogenetic trees」
+- [assignment 12](#assignment-12) 課題12 「guest-speaker」
 - [final assignment](#final-assignment) 最終課題 「final report」
 
 ----------
@@ -165,6 +166,13 @@ Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
+
+----------
+## assignment 12
+**課題12 「guest-speaker」**
+
+"Please write and submit any comments, questions, or anything else related to today's special lecture.  
+本日の特別講演に関するコメント、質問など記載して提出する.  
 
 ----------
 ## final assignment
