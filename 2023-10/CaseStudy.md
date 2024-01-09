@@ -171,7 +171,7 @@ Please save and backup your edited files in a separate directory.
 ## assignment 12
 **課題12 「guest-speaker」**
 
-"Please write and submit any comments, questions, or anything else related to today's special lecture.  
+Please write and submit any comments, questions, or anything else related to today's special lecture.  
 本日の特別講演に関するコメント、質問など記載して提出する.  
 
 ----------
