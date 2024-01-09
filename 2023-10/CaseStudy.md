@@ -144,6 +144,22 @@ Select, combine, and edit the previous assignments to create a midterm report.
 
 **my_assignment_chapter5_msa_tree.R**
 
+----------
+## assignment 12
+**課題12 「guest-speaker」**
+
+本日の特別講演に関するコメント、質問など記載して提出する.  
+Please write and submit any comments, questions, or anything else related to today's special lecture.  
+
+----------
+## final assignment
+**最終課題 「final report」**
+
+これまでの課題を選択・結合・編集して最終レポートを作成する。  
+Select, combine, and edit the previous assignments to create a final report.  
+
+**my_ds4gd_report.R**
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip
@@ -166,22 +182,6 @@ Submit the .html file as your assignment in SOL.  ](https://sol.sfc.keio.ac.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
-
-----------
-## assignment 12
-**課題12 「guest-speaker」**
-
-Please write and submit any comments, questions, or anything else related to today's special lecture.  
-本日の特別講演に関するコメント、質問など記載して提出する.  
-
-----------
-## final assignment
-**最終課題 「final report」**
-
-これまでの課題を選択・結合・編集して最終レポートを作成する。  
-Select, combine, and edit the previous assignments to create a final report.  
-
-**my_ds4gd_report.R**
 
 ----------
 
