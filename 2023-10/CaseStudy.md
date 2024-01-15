@@ -158,8 +158,6 @@ Please write and submit any comments, questions, or anything else related to tod
 これまでの課題を選択・結合・編集して最終レポートを作成する。  
 Select, combine, and edit the previous assignments to create a final report.  
 
-**my_ds4gd_report.R**
-
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2023-10/scripts_ds4gd.zip
