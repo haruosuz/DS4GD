@@ -134,6 +134,9 @@ LRSVFEDNSREEPIRHQRSVGTSARSGRSICT
 ```
 
 ----------
+
+![https://rmarkdown.rstudio.com/lesson-3.html](https://d33wubrfki0l68.cloudfront.net/4b052d1dc45c9fb6f95caaca375636f792713192/c4043/lesson-images/code-1-options.png)
+
 ----------
 ## Chunk options
 
