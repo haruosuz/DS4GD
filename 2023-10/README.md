@@ -51,7 +51,7 @@
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）
 - 2024-01-09 No. 12 - [Guest Speaker](#guest-speaker)
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2023-10/CaseStudy.md#assignment-12)
-- 2024-01-16 No. 13 - Text formatting with Markdown](https://r4ds.had.co.nz/r-markdown.html#text-formatting-with-markdown)
+- 2024-01-16 No. 13 - [Text formatting with Markdown](https://r4ds.had.co.nz/r-markdown.html#text-formatting-with-markdown)
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2022giga/scripts_ds4gd.zip) my_script2report/my_script2report.R
 - 2024-01-23 No. 14 - 最終回 final class
