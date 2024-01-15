@@ -164,7 +164,7 @@ Instructional Videos
 
 ### PTME5
 Barry G. Hall (2017) Phylogenetic Trees Made Easy: A How-To Manual (5th edition)
-- 慶應義塾大学メディアセンター [Keio University](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma990025818970204034)
+- 慶應義塾大学 Keio University https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma990025818970204034
 - [Table of Contents](https://global.oup.com/ushe/product/phylogenetic-trees-made-easy-9781605357102?cc=jp&lang=en&#fragment-4)
 - [Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
 Click a link **PTME5e Companion Files** to download the package appropriate to your OS (Linux, Mac, Win).
