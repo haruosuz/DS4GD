@@ -1,7 +1,8 @@
 # 2024-04
 
-[生命動態のデータサイエンス / DATA SCIENCE FOR GENOME DYNAMICS [DS2]](https://lms.keio.jp/courses/91203) |
-[シラバス](https://syllabus.sfc.keio.ac.jp/courses/2024_41550)
+生命動態のデータサイエンス / DATA SCIENCE FOR GENOME DYNAMICS [DS2]  
+[K-LMS](https://lms.keio.jp/courses/91203)  
+シラバス [Syllabus](https://syllabus.sfc.keio.ac.jp/courses/2024_46034?locale=en)  
 
 ----------
 
@@ -9,8 +10,8 @@
 **講義日程と資料**
 
 - [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | 
-  - [2024年度 SFC授業カレンダー（2023.12.11更新）](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf) | 
 Class Calendar
+  - [2024年度 SFC授業カレンダー（2023.12.11更新）](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf) | 
 https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf 
 - [References](#references)
 - 2024-04-09 No. 1 - イントロダクション Introduction
