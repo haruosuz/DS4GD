@@ -2,7 +2,7 @@
 
 生命動態のデータサイエンス / DATA SCIENCE FOR GENOME DYNAMICS [DS2]  
 [K-LMS](https://lms.keio.jp/courses/91203)  
-シラバス [Syllabus](https://syllabus.sfc.keio.ac.jp/courses/2024_46034?locale=en)  
+シラバス [Syllabus](https://syllabus.sfc.keio.ac.jp/courses/2024_41550)
 
 ----------
 
