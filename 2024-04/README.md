@@ -19,6 +19,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter_installr.R
   - 課題2 [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-2)
   - [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/)
+  - [よくわかるバイオインフォマティクス入門](https://www.kspub.co.jp/book/detail/5138212.html) 1章　配列解析
 - 2024-04-23 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter1_dna1.R
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-3)
@@ -70,6 +71,11 @@ People outside of Keio University SFC will also attend the lectures.
   - 26章 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
 - 2018-07-30 Andrew Rambaut - "How to read a phylogenetic tree" https://artic.network/how-to-read-a-tree.html
 - 2012-06-07 Richard Edwards - "How to root a phylogenetic tree" http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html
+- 2018-11-19 藤博幸（編） - よくわかるバイオインフォマティクス入門 https://www.kspub.co.jp/book/detail/5138212.html
+
+1章　配列解析
+2章　分子進化
+6章　ゲノム解析
 
 ----------
 ## R RStudio
