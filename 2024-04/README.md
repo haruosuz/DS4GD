@@ -9,18 +9,16 @@
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | 
-Class Calendar
-  - [2024年度 SFC授業カレンダー（2023.12.11更新）](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf) | 
-https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf 
+- [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | Class Calendar
+  - [2024年度 SFC授業カレンダー（2023.12.11更新）](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf) | https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf
 - [References](#references)
 - 2024-04-09 No. 1 - イントロダクション Introduction
   - [R RStudio](#r-rstudio)
   - 課題1 [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-1)
 - 2024-04-16 No. 2 - R言語入門 Introduction to R
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter_installr.R
-  - ゲノムリスト [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ncbi-genome-list)
   - 課題2 [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-2)
+  - [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/)
 - 2024-04-23 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter1_dna1.R
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-3)
@@ -78,8 +76,6 @@ People outside of Keio University SFC will also attend the lectures.
 
 - [Posit Cloud (formerly RStudio Cloud)](https://github.com/haruosuz/r4bioinfo/blob/master/references/RStudioCloud.md)
   - 2021-03-18 | 04:00 | "RStudio Cloud を使ってウェブブラウザ上でR(Studio)を利用する" https://doi.org/10.7875/togotv.2021.022
-- 2021/08/19 | データサイエンス研究所 | R言語の基礎 https://www.youtube.com/playlist?list=PL7BUpEjz_maSLWb2QAfx-DHgw2uE7j_Wh
-  - 2021/09/01 | 6:57 | データサイエンス研究所【R言語の基礎#1】RとRstudioの基本 https://www.youtube.com/watch?v=LCsrRcQ9rNg)
 - 2023/02/01 | Equitable Equations | Learn R in 39 minutes | https://www.youtube.com/watch?v=yZ0bV2Afkjc
 - 2021/02/16 | 5:23 | R Programming - DDS | "How to download and install R and RStudio" https://youtu.be/TFGYlKvQEQ4
 - 2020-01-25 | 5:17 | Pydemy | "R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners" https://youtu.be/YBAWVNWiZlU
