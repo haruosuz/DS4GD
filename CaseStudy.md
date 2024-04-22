@@ -106,26 +106,33 @@ Taxon | Severe acute respiratory syndrome coronavirus 2
 ### seqinr
 
 Retrieving genome sequence data from the NCBI database using SeqinR  
-RパッケージSeqinRを用いて、NCBIデータベースからゲノム配列データを取得する  
+SeqinRパッケージを用いて、NCBIデータベースからゲノム配列データを取得する  
 
 ```
 # Load the seqinr package
 # seqinrパッケージを読み込む
 library(seqinr)
 
-# Store the accession number of the sequence to be retrieved from the database in the variable "ACCESSION"
-# データベースから取得する配列のアクセッション番号を変数"ACCESSION"に格納する
+# Store the accession number of the sequence data to be retrieved from the database in the variable "ACCESSION"
+# データベースから取得する配列データのアクセッション番号を変数"ACCESSION"に格納する
 ACCESSION <- "NC_045512" # RefSeq
 ACCESSION <- "MN908947" # GenBank
 
-# Create the filename (URL) to be provided as an argument to the `seqinr::read.fasta()` function
-# `seqinr::read.fasta()`関数の引数として与えるファイル名（URL）を作成する
+# Create URL to access the sequence data
+# 配列データにアクセスするためのURLを作成する
 filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
 #filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
 
-# Retrieve the sequence and store it in the list variable "seqs"
-# 配列を取得し、"seqs"というリスト変数に格納する
+# Print the variable content
+# 変数の中身を表示する
+filename
+
+# Retrieve the sequence data using the `seqinr::read.fasta()` function, and store it in the list variable "seqs"
+# SeqinRパッケージの`read.fasta()`関数を用いて、配列データを取得し、"seqs"というリスト変数に格納する
 seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
+
+# Extract the 1st element from the list:
+# リスト内の1番目の要素を取り出す。  
 seq1 <- seqs[[1]]
 
 # Get sequence annotations
