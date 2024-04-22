@@ -78,10 +78,10 @@ Rに関する動画を見て、コメントや疑問点を書く。
 
 ----------
 
-課題「Introduction to R」のコメント/疑問点に関連する資料  
-References related to comments/questions for assignment "Introduction to R".  
+課題「Introduction to R」に対するコメントや疑問点に関連する資料  
+References related to comments or questions for assignment "Introduction to R".  
 
-- https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-1
+https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 ----------
 ## assignment 2
