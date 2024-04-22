@@ -91,8 +91,7 @@ NCBIのウェブサイトからゲノム配列データを取得する。
 [このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/)で、 **Chromosomes** の下に、GenBankとRefSeqデータベースの[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)が示されている（ここでは、"MN908947.3" と "NC_045512.2"）。  
 
 [Genome assembly ASM985889v3](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/)
-
-| Taxon | Severe acute respiratory syndrome coronavirus 2 |
+Taxon | Severe acute respiratory syndrome coronavirus 2
 
 | GenBank    | RefSeq     | Size (bp) | GC content (%) |
 |:-----------|:------------|:-------|:---|
