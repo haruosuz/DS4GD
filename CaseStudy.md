@@ -8,7 +8,7 @@ https://github.com/haruosuz/DS4GD/
 ## Table of Contents
 [](#)
 - [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
-[R_DSD_10](#r_dsd_10)
+  - [R_DSD_10](#r_dsd_10)
 [R_assignOps](#r_assignOps)
 [R_built-in](#r_built-in)
 [R_data.frame](#r_dataframe)
@@ -26,6 +26,7 @@ https://github.com/haruosuz/DS4GD/
 [R_typeof](#r_typeof)
 [R_vector](#r_vector)
 [](#)
+- [INSDC](#insdc)
 - [NCBI Genome List](#ncbi-genome-list)
 - [BLAST](#blast)
   - [UniProt BLAST](#uniprot-blast)
@@ -33,38 +34,13 @@ https://github.com/haruosuz/DS4GD/
     - [blastp](#blastp)
     - [tblastn](#tblastn)
   - [Query Sequences](#query-sequences)
+- [MEGA](#mega)
 - [Chunk options](#chunk-options)
 - [Compile Report](#compile-report)
 [](#)
 
 ----------
 ## assignment 1
-**課題No.1 「Introduction to R」**
-
-Watch the following videos and write your comments or questions.
-- [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
-  - [my_datasciencedojo_r.R](https://github.com/haruosuz/r4bioinfo/blob/master/scripts/my_datasciencedojo_r.R)
-
-[Example answer]
-```
-I watched the videos Part 2 to Part 11 of "Introduction to R Programming".
-My questions are as follows:
-1. What is the difference between Data Frames and Lists in R?
-2. What is the difference between factor and character vectors?
-```
-
-以下の動画レッスンを見て、疑問点を報告する。
-- [R言語入門 (全13回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_r)
-  - [my_dotinstall_basic_r.R](https://github.com/haruosuz/r4bioinfo/blob/master/scripts/my_dotinstall_basic_r.R)
-
-
-[回答例]
-```
-「R言語入門 (全13回)」の動画レッスン番号 #03 ~ #13 を見た。
-疑問点は次の通りである。
-1. 行列とデータフレームとリストの違いが理解できなかった。
-2. 文字型ベクトルと因子型ベクトルの違いは？
-```
 
 ----------
 
@@ -703,6 +679,65 @@ setdiff(x, y)	差集合
 
 
 
+----------
+## INSDC
+
+[International Nucleotide Sequence Database Collaboration](https://www.ddbj.nig.ac.jp/insdc-e.html)
+[塩基配列データベース構築の国際協調](https://www.ddbj.nig.ac.jp/insdc.html)
+
+<img src="https://www.ddbj.nig.ac.jp/assets/images/center/insdc_shoukai.gif" alt="https://www.ddbj.nig.ac.jp/about/insdc.html" width=25%>
+
+- [RefSeq Frequently Asked Questions (FAQ) - RefSeq Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK50679/)
+  - [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+  - [What causes the version number of a RefSeq record to change?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_causes_the_version_number)
+  - [What updates to RefSeq records need a simple version number change and which require a new accession number?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_updates_to_refseq_records)
+- VERSION
+  - [DDBJ flat file format](https://www.ddbj.nig.ac.jp/ddbj/flat-file-e.html#VERSION)
+This line consists of an accession number and a version number, like “AB123456.1”, in which the digit(s) after the period is a version number.
+The data open to public for the first time is version number as “1”. The reason for adding VERSION is that since a released sequence sometimes revised by the submitter, the accession number alone cannot specify the sequence in question causing the user a trouble. The number is increased by one every time when a revised sequence is made public. And accession number will NOT be changed generally.
+  - [DDBJ 公開形式 Flat file](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html#VERSION)
+アクセッション番号とバージョン番号で構成されています。
+はじめて公開されたデータは、バージョン番号は “1” が記載されています。当該エントリの配列が訂正・更新された場合には、バージョン番号が更新されます。通常、配列が訂正・更新された場合にアクセッション番号が変更されることはありません。
+
+----------
+## NCBI Genome List
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
+
+- Retrieving genome sequence data via the NCBI website  
+NCBIのウェブサイトからゲノム配列データを取得する。  
+  - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press "Search".  
+ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.  
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2)、検索ボックス下の「Overview (1); Viruses (92)」のうち、「Viruses」をクリックすると、SARS-CoV-2に属する株が表示される。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), you will find "Severe acute respiratory syndrome coronavirus 2" in the **Organism Name** column. In the **Replicons** column, "NC_045512.2/MN908947.3" indicates the [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the RefSeq and GenBank (a member of the INSDC) databases, respectively.  
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、**Organism Name**列には "Severe acute respiratory syndrome coronavirus 2" が記載されている。**Replicons**列の "NC_045512.2/MN908947.3" は、RefSeq/GenBankデータベースの配列の[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)を示す。
+
+NCBI（RefSeq/GenBank）データベースからDNA配列を取得:  
+```
+# Retrieving a DNA sequence from the NCBI (RefSeq/GenBank) database
+library(seqinr)
+
+ACCESSION <- "NC_045512" # RefSeq
+ACCESSION <- "MN908947" # GenBank
+
+filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
+#filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
+
+# Retrieve the sequence and store it in list variable "seqs"
+seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
+seq1 <- seqs[[1]]
+
+# Get sequence annotations
+getAnnot(seq1)
+```
+
+Please record what you typed to download DNA sequence data, to make your analysis reproducible.
+
+
+----------
+## 
+
+
 
 
 ----------
@@ -793,11 +828,75 @@ LRSVFEDNSREEPIRHQRSVGTSARSGRSICT
 ```
 
 ----------
+## MEGA
+MEGA: Molecular Evolutionary Genetics Analysis software
 
-![https://rmarkdown.rstudio.com/lesson-3.html](https://d33wubrfki0l68.cloudfront.net/4b052d1dc45c9fb6f95caaca375636f792713192/c4043/lesson-images/code-1-options.png)
+https://www.megasoftware.net/
+
+Download MEGA X
+
+| OS              |                 | Version         |
+|:----------------|:----------------|:----------------|
+| Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
+
+Documentation
+[Online Manual](https://www.megasoftware.net/web_help)
+First Time User
+
+[walkthrough tutorial](https://www.megasoftware.net/web_help_10/Introduction.htm)
+Introduction
+
+- [Mega Basics](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/MEGA_Basics.htm)
+  - Opening (activating) a Data File for Analysis | Example 1.2: "Drosophila_Adh.meg" file
+- [Aligning Sequences](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Aligning_Sequences.htm)
+  - Opening an Alignment | Example 2.1: "hsp20.fas" file
+  - Aligning Sequences by ClustalW | Example 2.2: "hsp20.fas" file
+  - Aligning Sequences Using Muscle | Example 2.3: "Chloroplast_Martin.meg" file
+  - Obtaining Sequence Data from the Internet (GenBank)
+- [Estimating Evolutionary Distances](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Estimating_Evolutionary_Distances.htm)
+  - Estimating Evolutionary Distances Using Pairwise Distance | Example 3.1: "Drosophila_Adh.meg" file
+  - Compute the Proportion of Amino Acid Differences | Example 3.3: "Drosophila_Adh.meg" file
+- [Building Trees from Sequence Data](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Building_Trees_From_Sequence_Data.htm)
+  - Building a Neighbor-Joining (NJ) Tree | Example 4.1: "Crab_rRNA.meg" file
+  - Printing the NJ Tree (For Windows users) | Example 4.2a:   
+  - Printing the NJ Tree (For Mac users) | Example 4.2b:
+- [Testing Tree Reliability](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Testing_Tree_Reliability.htm)
+  - Bootstrap Testing for a Neighbor-Joining Tree | Example 5.1: "Chloroplast_Martin.meg" file
+
+Site Links
+[Videos](https://www.megasoftware.net/videos)
+Instructional Videos
+
+- Author: Barry Hall
+  - [Choosing and Acquiring Sequences Part 1](https://youtu.be/raaOgtvMJWw) Choosing and Acquiring the Sequences for a Phylogenetic Tree
+  - [Choosing and Acquiring Sequences Part 2](https://youtu.be/cVdmH7nNboE) Aligning Coding Sequences
+  - [Reconstructing Ancestral Sequences](https://youtu.be/djju9WFMvn0)
+
+### PTME5
+Barry G. Hall (2017) Phylogenetic Trees Made Easy: A How-To Manual (5th edition)
+- 慶應義塾大学 Keio University https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma990025818970204034
+- [Table of Contents](https://global.oup.com/ushe/product/phylogenetic-trees-made-easy-9781605357102?cc=jp&lang=en&#fragment-4)
+- [Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
+Click a link **PTME5e Companion Files** to download the package appropriate to your OS (Linux, Mac, Win).
+
+### R/MEGA
+
+8th Aug, 2017
+https://www.researchgate.net/post/Does-anybody-have-a-pipeline-created-or-experience-of-taking-Phylogenetic-trees-from-MEGA-to-Rggtree
+Does anybody have a pipeline created or experience of taking Phylogenetic trees from MEGA to R(ggtree)?
+
+https://support.bioconductor.org/p/41863/
+Packages reproducing phylogenetic tree from output of MEGA
+|
+You can save the tree from MEGA in newick format.
+APE is an R package that reads newick format and has a lot of options
+to
+plot phylogenetic trees.
 
 ----------
 ## Chunk options
+
+![https://rmarkdown.rstudio.com/lesson-3.html](https://d33wubrfki0l68.cloudfront.net/4b052d1dc45c9fb6f95caaca375636f792713192/c4043/lesson-images/code-1-options.png)
 
 https://rmarkdown.rstudio.com/lesson-3.html
 Chunk Options
