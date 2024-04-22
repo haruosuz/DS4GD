@@ -49,7 +49,6 @@
 - 2024-06-25 No. 12 - Newick tree format | Model
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_ds4gd_newick.R | my_ds4gd_model.R
 - 2024-07-02 No. 13 - Text formatting with Markdown
-  - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#chunk-options)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_script2report/my_script2report.R
 - 2024-07-09 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
@@ -68,10 +67,6 @@ People outside of Keio University SFC will also attend the lectures.
 **参考文献**
 
 - 2011-06-10 Avril Coghlan - "A Little Book of R For Bioinformatics" https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
-- CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
-  - 26章 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-- 2018-07-30 Andrew Rambaut - "How to read a phylogenetic tree" https://artic.network/how-to-read-a-tree.html
-- 2012-06-07 Richard Edwards - "How to root a phylogenetic tree" http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html
 - 2018-11-19 藤博幸（編） - よくわかるバイオインフォマティクス入門 https://www.kspub.co.jp/book/detail/5138212.html | 1章　配列解析 | 2章　分子進化 | 6章　ゲノム解析
 
 ----------
