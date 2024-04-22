@@ -61,7 +61,7 @@ The data open to public for the first time is version number as “1”. The rea
 はじめて公開されたデータは、バージョン番号は “1” が記載されています。当該エントリの配列が訂正・更新された場合には、バージョン番号が更新されます。通常、配列が訂正・更新された場合にアクセッション番号が変更されることはありません。
 
 ----------
-## NCBI Genome List
+### NCBI Genome List
 [NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
 
 - Retrieving genome sequence data via the NCBI website  
@@ -74,12 +74,12 @@ NCBIのウェブサイトからゲノム配列データを取得する。
 [ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、**Organism Name**列には "Severe acute respiratory syndrome coronavirus 2" が記載されている。**Replicons**列の "NC_045512.2/MN908947.3" は、RefSeq/GenBankデータベースの配列の[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)を示す。
 
 ----------
-## NCBI Datasets
+### NCBI Datasets
 A one-stop shop for finding, browsing, and downloading genomic data
 
 https://www.ncbi.nlm.nih.gov/datasets/
 
-- Retrieving genome sequence data from the NCBI website.
+- Retrieving genome sequence data from the NCBI website.  
 NCBIのウェブサイトからゲノム配列データを取得する。  
   - [On this page](https://www.ncbi.nlm.nih.gov/datasets/), Click on the **Genome** tab.  
 [このページ](https://www.ncbi.nlm.nih.gov/datasets/)で、 **Genome** タブをクリックする。
@@ -103,10 +103,12 @@ Taxon | Severe acute respiratory syndrome coronavirus 2
 - 2024.03.28 [NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する | TogoTV](https://doi.org/10.7875/togotv.2024.029) 11:46
 
 ----------
+### seqinr
 
-NCBI（RefSeq/GenBank）データベースからDNA配列を取得:  
+Retrieving genome sequence data from the NCBI database using SeqinR  
+RパッケージSeqinRを用いて、NCBIデータベースからゲノム配列データを取得する  
+
 ```
-# Retrieving a DNA sequence from the NCBI (RefSeq/GenBank) database
 library(seqinr)
 
 ACCESSION <- "NC_045512" # RefSeq
@@ -122,8 +124,6 @@ seq1 <- seqs[[1]]
 # Get sequence annotations
 getAnnot(seq1)
 ```
-
-Please record what you typed to download DNA sequence data, to make your analysis reproducible.
 
 ----------
 ## BLAST
