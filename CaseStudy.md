@@ -87,8 +87,16 @@ NCBIのウェブサイトからゲノム配列データを取得する。
 [このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/)で、検索ボックス [ Selected taxa ] に生物名を入力してEnterキーを押す。例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。  
   - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=2697049), under **Assembly**, you will see genome sequences; of which, click reference genome (here, "ASM985889v3") indicated by check mark.  
 [このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=2697049)で、 **Assembly** の下にゲノム配列が表示される。このうち、チェックマークが付いた参照ゲノム (ここでは、"ASM985889v3") をクリックする。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/), under "Chromosomes", you will see [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the GenBank (a member of the INSDC) and RefSeq databases (here, "MN908947.3" and "NC_045512.2", respectively).  
-[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/)で、"Chromosomes"の下に、GenBankとRefSeqデータベースの[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)が示されている（ここでは、"MN908947.3" と "NC_045512.2"）。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/), under **Chromosomes**, you will see [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the GenBank (a member of the INSDC) and RefSeq databases (here, "MN908947.3" and "NC_045512.2", respectively).  
+[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/)で、 **Chromosomes** の下に、GenBankとRefSeqデータベースの[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)が示されている（ここでは、"MN908947.3" と "NC_045512.2"）。  
+
+[Genome assembly ASM985889v3](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/)
+
+| Taxon | Severe acute respiratory syndrome coronavirus 2 |
+
+| GenBank    | RefSeq     | Size (bp) | GC content (%) |
+|:-----------|:------------|:-------|:---|
+| MN908947.3 | NC_045512.2 | 29,903 | 38 |
 
 **References**
 - Apr 5, 2024 [小野 浩雅 ONO, Hiromasa on X: "NCBI Datasets はゲノムデータに関するデータベースです。ゲノムデータの検索、閲覧、取得をワンストップで行うことができます。また、ゲノムデータに付随するアノテーション情報へのアクセスも容易で、配列データを用いて直接BLAST検索することもできます。"](https://twitter.com/h_ono/status/1776147714742317376)
