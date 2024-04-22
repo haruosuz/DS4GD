@@ -99,7 +99,6 @@ Taxon | Severe acute respiratory syndrome coronavirus 2
 
 **References**
 - Apr 5, 2024 [小野 浩雅 ONO, Hiromasa on X: "NCBI Datasets はゲノムデータに関するデータベースです。ゲノムデータの検索、閲覧、取得をワンストップで行うことができます。また、ゲノムデータに付随するアノテーション情報へのアクセスも容易で、配列データを用いて直接BLAST検索することもできます。"](https://twitter.com/h_ono/status/1776147714742317376)
-- [TogoTV on X: "NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する https://t.co/eO2lccLPAv"](https://twitter.com/togotv/status/1776147309597999581)
 - 2024.03.28 [NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する | TogoTV](https://doi.org/10.7875/togotv.2024.029) 11:46
 
 ----------
@@ -125,6 +124,7 @@ filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db
 
 # Print the variable content
 # 変数の中身を表示する
+ACCESSION
 filename
 
 # Retrieve the sequence data using the `seqinr::read.fasta()` function, and store it in the list variable "seqs"
