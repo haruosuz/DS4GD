@@ -27,7 +27,8 @@ https://github.com/haruosuz/DS4GD/
 [R_vector](#r_vector)
 [](#)
 - [INSDC](#insdc)
-- [NCBI Genome List](#ncbi-genome-list)
+  - [NCBI Genome List](#ncbi-genome-list)
+  - [NCBI Datasets]()
 - [BLAST](#blast)
   - [UniProt BLAST](#uniprot-blast)
   - [NCBI BLAST](#ncbi-blast)
@@ -676,10 +677,6 @@ setdiff(x, y)	差集合
 ```
 
 ----------
-
-
-
-----------
 ## INSDC
 
 [International Nucleotide Sequence Database Collaboration](https://www.ddbj.nig.ac.jp/insdc-e.html)
@@ -733,12 +730,27 @@ getAnnot(seq1)
 
 Please record what you typed to download DNA sequence data, to make your analysis reproducible.
 
-
 ----------
-## 
+## NCBI Datasets
+A one-stop shop for finding, browsing, and downloading genomic data
 
+https://www.ncbi.nlm.nih.gov/datasets/
 
+- Retrieving genome sequence data from the NCBI website.
+NCBIのウェブサイトからゲノム配列データを取得する。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/), Click on the Genome tab.  
+[このページ](https://www.ncbi.nlm.nih.gov/datasets/)で Genome タブをクリックする。
+  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/), you will see a search box [Selected taxa], and you can type "Enter one or more taxonomic names" of the sequence that you are looking for in this search box, and then press Enter to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press Enter.  
+[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/)で、検索ボックス [Selected taxa] に生物名を入力してEnterキーを押す。例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=2697049), under "Assembly", you will see genome sequences; of which, click reference genome ("ASM985889v3") indicated by check mark.
+[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=2697049)で、「Assembly」の下にゲノム配列が表示される。このうち、チェックマークが付いた参照ゲノム ("ASM985889v3") をクリックする。
+  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/), under "Chromosomes", you will see [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the GenBank (a member of the INSDC) and RefSeq databases (here, "MN908947.3" and "NC_045512.2", respectively).  
+[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/)で、"Chromosomes"の下に、GenBankデータベースおよびRefSeqデータベースの[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)が示されている（ここでは、"MN908947.3" および "NC_045512.2"）。
 
+**References**
+- Apr 5, 2024 [小野 浩雅 ONO, Hiromasa on X: "NCBI Datasets はゲノムデータに関するデータベースです。ゲノムデータの検索、閲覧、取得をワンストップで行うことができます。また、ゲノムデータに付随するアノテーション情報へのアクセスも容易で、配列データを用いて直接BLAST検索することもできます。"](https://twitter.com/h_ono/status/1776147714742317376)
+- [TogoTV on X: "NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する https://t.co/eO2lccLPAv"](https://twitter.com/togotv/status/1776147309597999581)
+- 2024.03.28 [NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する | TogoTV](https://doi.org/10.7875/togotv.2024.029) 11:46
 
 ----------
 ## BLAST
