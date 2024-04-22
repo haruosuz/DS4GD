@@ -111,7 +111,7 @@ cd scripts_ds4gd/
 Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
 
 [**Compile Report**コマンドでHTML形式のレポートを作成する。  
-Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
+Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#compile-report)
 
 [.htmlファイルを課題として K-LMS にて提出する。  
 Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)  
