@@ -9,7 +9,7 @@ https://github.com/haruosuz/DS4GD/
 [](#)
 - [INSDC](#insdc)
   - [NCBI Genome List](#ncbi-genome-list)
-  - [NCBI Datasets](ncbi-datasets)
+  - [NCBI Datasets](#ncbi-datasets)
 - [BLAST](#blast)
   - [UniProt BLAST](#uniprot-blast)
   - [NCBI BLAST](#ncbi-blast)
