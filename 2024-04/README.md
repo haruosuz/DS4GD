@@ -20,10 +20,10 @@
   - 課題2 [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-2)
   - [よくわかるバイオインフォマティクス入門](https://www.kspub.co.jp/book/detail/5138212.html) 1章　配列解析
 - 2024-04-23 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter1_dna1.R
-  - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-3)
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter1_dna1.R | my_test1_dna.R
   - [よくわかるバイオインフォマティクス入門](https://www.kspub.co.jp/book/detail/5138212.html) 6章　ゲノム解析
-  - [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/)
+  - [NCBI Datasets](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-datasets)
+  - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-3)
 - 2024-04-30 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter2_dna2.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-4)
