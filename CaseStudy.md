@@ -7,7 +7,20 @@ https://github.com/haruosuz/DS4GD/
 
 ## Table of Contents
 [](#)
-- [assignment 1](#assignment-1) 課題No.1 「Introduction to R」
+- [INSDC](#insdc)
+  - [NCBI Genome List](#ncbi-genome-list)
+  - [NCBI Datasets](ncbi-datasets)
+- [BLAST](#blast)
+  - [UniProt BLAST](#uniprot-blast)
+  - [NCBI BLAST](#ncbi-blast)
+    - [blastp](#blastp)
+    - [tblastn](#tblastn)
+  - [Query Sequences](#query-sequences)
+- [MEGA](#mega)
+- [Chunk options](#chunk-options)
+- [Compile Report](#compile-report)
+[](#)
+- [assignment 1](#assignment-1)
   - [R_DSD_10](#r_dsd_10)
 [R_assignOps](#r_assignOps)
 [R_built-in](#r_built-in)
@@ -26,19 +39,316 @@ https://github.com/haruosuz/DS4GD/
 [R_typeof](#r_typeof)
 [R_vector](#r_vector)
 [](#)
-- [INSDC](#insdc)
-  - [NCBI Genome List](#ncbi-genome-list)
-  - [NCBI Datasets]()
-- [BLAST](#blast)
-  - [UniProt BLAST](#uniprot-blast)
-  - [NCBI BLAST](#ncbi-blast)
-    - [blastp](#blastp)
-    - [tblastn](#tblastn)
-  - [Query Sequences](#query-sequences)
-- [MEGA](#mega)
-- [Chunk options](#chunk-options)
-- [Compile Report](#compile-report)
-[](#)
+
+----------
+## INSDC
+
+[International Nucleotide Sequence Database Collaboration](https://www.ddbj.nig.ac.jp/insdc-e.html)
+[塩基配列データベース構築の国際協調](https://www.ddbj.nig.ac.jp/insdc.html)
+
+<img src="https://www.ddbj.nig.ac.jp/assets/images/center/insdc_shoukai.gif" alt="https://www.ddbj.nig.ac.jp/about/insdc.html" width=25%>
+
+- [RefSeq Frequently Asked Questions (FAQ) - RefSeq Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK50679/)
+  - [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+  - [What causes the version number of a RefSeq record to change?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_causes_the_version_number)
+  - [What updates to RefSeq records need a simple version number change and which require a new accession number?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_updates_to_refseq_records)
+- VERSION
+  - [DDBJ flat file format](https://www.ddbj.nig.ac.jp/ddbj/flat-file-e.html#VERSION)
+This line consists of an accession number and a version number, like “AB123456.1”, in which the digit(s) after the period is a version number.
+The data open to public for the first time is version number as “1”. The reason for adding VERSION is that since a released sequence sometimes revised by the submitter, the accession number alone cannot specify the sequence in question causing the user a trouble. The number is increased by one every time when a revised sequence is made public. And accession number will NOT be changed generally.
+  - [DDBJ 公開形式 Flat file](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html#VERSION)
+アクセッション番号とバージョン番号で構成されています。
+はじめて公開されたデータは、バージョン番号は “1” が記載されています。当該エントリの配列が訂正・更新された場合には、バージョン番号が更新されます。通常、配列が訂正・更新された場合にアクセッション番号が変更されることはありません。
+
+----------
+## NCBI Genome List
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
+
+- Retrieving genome sequence data via the NCBI website  
+NCBIのウェブサイトからゲノム配列データを取得する。  
+  - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press "Search".  
+ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.  
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2)、検索ボックス下の「Overview (1); Viruses (92)」のうち、「Viruses」をクリックすると、SARS-CoV-2に属する株が表示される。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), you will find "Severe acute respiratory syndrome coronavirus 2" in the **Organism Name** column. In the **Replicons** column, "NC_045512.2/MN908947.3" indicates the [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the RefSeq and GenBank (a member of the INSDC) databases, respectively.  
+[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、**Organism Name**列には "Severe acute respiratory syndrome coronavirus 2" が記載されている。**Replicons**列の "NC_045512.2/MN908947.3" は、RefSeq/GenBankデータベースの配列の[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)を示す。
+
+----------
+## NCBI Datasets
+A one-stop shop for finding, browsing, and downloading genomic data
+
+https://www.ncbi.nlm.nih.gov/datasets/
+
+- Retrieving genome sequence data from the NCBI website.
+NCBIのウェブサイトからゲノム配列データを取得する。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/), Click on the **Genome** tab.  
+[このページ](https://www.ncbi.nlm.nih.gov/datasets/)で **Genome** タブをクリックする。
+  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/), you will see a search box [ Selected taxa ], and you can type "Enter one or more taxonomic names" of the sequence that you are looking for in this search box, and then press Enter to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press Enter.  
+[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/)で、検索ボックス [ Selected taxa ] に生物名を入力してEnterキーを押す。例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。  
+  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=2697049), under **Assembly**, you will see genome sequences; of which, click reference genome (here, "ASM985889v3") indicated by check mark.
+[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=2697049)で、 **Assembly** の下にゲノム配列が表示される。このうち、チェックマークが付いた参照ゲノム (ここでは、"ASM985889v3") をクリックする。
+  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/), under "Chromosomes", you will see [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the GenBank (a member of the INSDC) and RefSeq databases (here, "MN908947.3" and "NC_045512.2", respectively).  
+[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/)で、"Chromosomes"の下に、GenBankとRefSeqデータベースの[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)が示されている（ここでは、"MN908947.3" と "NC_045512.2"）。
+
+**References**
+- Apr 5, 2024 [小野 浩雅 ONO, Hiromasa on X: "NCBI Datasets はゲノムデータに関するデータベースです。ゲノムデータの検索、閲覧、取得をワンストップで行うことができます。また、ゲノムデータに付随するアノテーション情報へのアクセスも容易で、配列データを用いて直接BLAST検索することもできます。"](https://twitter.com/h_ono/status/1776147714742317376)
+- [TogoTV on X: "NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する https://t.co/eO2lccLPAv"](https://twitter.com/togotv/status/1776147309597999581)
+- 2024.03.28 [NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する | TogoTV](https://doi.org/10.7875/togotv.2024.029) 11:46
+
+----------
+
+NCBI（RefSeq/GenBank）データベースからDNA配列を取得:  
+```
+# Retrieving a DNA sequence from the NCBI (RefSeq/GenBank) database
+library(seqinr)
+
+ACCESSION <- "NC_045512" # RefSeq
+ACCESSION <- "MN908947" # GenBank
+
+filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
+#filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
+
+# Retrieve the sequence and store it in list variable "seqs"
+seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
+seq1 <- seqs[[1]]
+
+# Get sequence annotations
+getAnnot(seq1)
+```
+
+Please record what you typed to download DNA sequence data, to make your analysis reproducible.
+
+----------
+## BLAST
+BLAST (Basic Local Alignment Search Tool)
+
+### UniProt BLAST
+https://www.uniprot.org/blast/
+
+![https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/wp-content/uploads/sites/100/2022/07/Screenshot-2022-07-22-at-14.33.12.png)
+
+[BLAST sequence similarity searching](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/blast-sequence-similarity-searching/)
+
+- Select the **BLAST** tab of the toolbar at the top of the page.  
+ページの上部にあるツールバーの**BLAST**タブを選択する。
+- Enter either *UniProt IDs* or *protein or nucleotide sequence(s) in FASTA format*.  
+*UniProt IDs* または *FASTA形式のタンパク質または核酸配列* を入力する。
+- [Optional settings](https://www.uniprot.org/help/sequence-searches)
+  - Target database: UniProtKB Swiss-Prot
+  - E-Threshold: 0.0001
+  - Hits: 50
+- Click the **Run BLAST** button.  
+**Run BLAST**ボタンをクリックする。
+- [Tool results](https://www.uniprot.org/tool-dashboard)
+- Click on the image (Basket) located at the top right of the "BLAST results | UniProt" page.  
+「BLAST results | UniProt」ページの右上にある画像（Basket）をクリックする。  
+- Click on "Download" below "My Basket". Select "No" under "Compressed".  
+「My Basket」の下にある「Download」をクリックする。"Compressed"の下で「No」を選択する。  
+
+Use the web browser Google Chrome. Using other web browsers (such as Safari) may result in different behavior.  
+ウェブブラウザとしてGoogle Chromeを使用する。他のウェブブラウザ（例：Safariなど）を使用すると、異なる動作が生じる可能性がある。  
+
+### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
+
+#### blastp
+[Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
+
+- Query the NCBI Protein database by searching on the words [**ebgC Bacteroides**](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides).
+- Test the homology between
+*Escherichia coli* EbgC protein (accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1))
+and *Bacteroides* EbgC protein (accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1))
+using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome).
+  - Checking the **Align two or more sequences** box will display two text boxes for entering queries.
+  - Enter the accession number **NP_417548.1** into the upper search box.
+  - Enter the accession number **EFI39110.1** into the lower search box.
+  - Click on **+ Algorithm parameters**, change **Expect threshold** from 0.05 to 10, and then click the **BLAST** button.
+  - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the *Bacteroides* EbgC sequences are not homologs of the *Escherichia coli* EbgC sequence.
+
+##### References
+- Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
+(p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
+- [Blast 2 sequences: aligning two protein or nucleotide sequences](https://academic.oup.com/femsle/article/174/2/247/502616)
+
+#### tblastn
+[tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
+
+- **Enter Query Sequence** into the form field:
+```
+>tr|A0PQ23|A0PQ23_MYCUA Chorismate pyruvate-lyase OS=Mycobacterium ulcerans (strain Agy99) OX=362242 GN=MUL_2003 PE=4 SV=1
+MLAVLPEKREMTECHLSDEEIRKLNRDLRILIATNGTLTRILNVLANDEIVVEIVKQQIQ
+DAAPEMDGCDHSSIGRVLRRDIVLKGRRSGIPFVAAESFIAIDLLPPEIVASLLETHRPI
+GEVMAASCIETFKEEAKVWAGESPAWLELDRRRNLPPKVVGRQYRVIAEGRPVIIITEYF
+LRSVFEDNSREEPIRHQRSVGTSARSGRSICT
+```
+- Click on **Algorithm parameters**, and select/change values as follows:
+  - Max target sequences: 5000
+  - Expect threshold: 1e-20
+- Click on **BLAST** button to execute.
+
+### Query Sequences
+
+https://rest.uniprot.org/uniprotkb/Q9CD83.fasta
+```
+>sp|Q9CD83|PHBS_MYCLE Chorismate pyruvate-lyase OS=Mycobacterium leprae (strain TN) OX=272631 GN=ML0133 PE=3 SV=1
+MTNRTLSREEIRKLDRDLRILVATNGTLTRVLNVVANEEIVVDIINQQLLDVAPKIPELE
+NLKIGRILQRDILLKGQKSGILFVAAESLIVIDLLPTAITTYLTKTHHPIGEIMAASRIE
+TYKEDAQVWIGDLPCWLADYGYWDLPKRAVGRRYRIIAGGQPVIITTEYFLRSVFQDTPR
+EELDRCQYSNDIDTRSGDRFVLHGRVFKNL
+```
+
+https://rest.uniprot.org/uniprotkb/A0PQ23.fasta
+```
+>tr|A0PQ23|A0PQ23_MYCUA Chorismate pyruvate-lyase OS=Mycobacterium ulcerans (strain Agy99) OX=362242 GN=MUL_2003 PE=4 SV=1
+MLAVLPEKREMTECHLSDEEIRKLNRDLRILIATNGTLTRILNVLANDEIVVEIVKQQIQ
+DAAPEMDGCDHSSIGRVLRRDIVLKGRRSGIPFVAAESFIAIDLLPPEIVASLLETHRPI
+GEVMAASCIETFKEEAKVWAGESPAWLELDRRRNLPPKVVGRQYRVIAEGRPVIIITEYF
+LRSVFEDNSREEPIRHQRSVGTSARSGRSICT
+```
+
+----------
+## MEGA
+MEGA: Molecular Evolutionary Genetics Analysis software
+
+https://www.megasoftware.net/
+
+Download MEGA X
+
+| OS              |                 | Version         |
+|:----------------|:----------------|:----------------|
+| Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
+
+Documentation
+[Online Manual](https://www.megasoftware.net/web_help)
+First Time User
+
+[walkthrough tutorial](https://www.megasoftware.net/web_help_10/Introduction.htm)
+Introduction
+
+- [Mega Basics](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/MEGA_Basics.htm)
+  - Opening (activating) a Data File for Analysis | Example 1.2: "Drosophila_Adh.meg" file
+- [Aligning Sequences](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Aligning_Sequences.htm)
+  - Opening an Alignment | Example 2.1: "hsp20.fas" file
+  - Aligning Sequences by ClustalW | Example 2.2: "hsp20.fas" file
+  - Aligning Sequences Using Muscle | Example 2.3: "Chloroplast_Martin.meg" file
+  - Obtaining Sequence Data from the Internet (GenBank)
+- [Estimating Evolutionary Distances](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Estimating_Evolutionary_Distances.htm)
+  - Estimating Evolutionary Distances Using Pairwise Distance | Example 3.1: "Drosophila_Adh.meg" file
+  - Compute the Proportion of Amino Acid Differences | Example 3.3: "Drosophila_Adh.meg" file
+- [Building Trees from Sequence Data](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Building_Trees_From_Sequence_Data.htm)
+  - Building a Neighbor-Joining (NJ) Tree | Example 4.1: "Crab_rRNA.meg" file
+  - Printing the NJ Tree (For Windows users) | Example 4.2a:   
+  - Printing the NJ Tree (For Mac users) | Example 4.2b:
+- [Testing Tree Reliability](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Testing_Tree_Reliability.htm)
+  - Bootstrap Testing for a Neighbor-Joining Tree | Example 5.1: "Chloroplast_Martin.meg" file
+
+Site Links
+[Videos](https://www.megasoftware.net/videos)
+Instructional Videos
+
+- Author: Barry Hall
+  - [Choosing and Acquiring Sequences Part 1](https://youtu.be/raaOgtvMJWw) Choosing and Acquiring the Sequences for a Phylogenetic Tree
+  - [Choosing and Acquiring Sequences Part 2](https://youtu.be/cVdmH7nNboE) Aligning Coding Sequences
+  - [Reconstructing Ancestral Sequences](https://youtu.be/djju9WFMvn0)
+
+### PTME5
+Barry G. Hall (2017) Phylogenetic Trees Made Easy: A How-To Manual (5th edition)
+- 慶應義塾大学 Keio University https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma990025818970204034
+- [Table of Contents](https://global.oup.com/ushe/product/phylogenetic-trees-made-easy-9781605357102?cc=jp&lang=en&#fragment-4)
+- [Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
+Click a link **PTME5e Companion Files** to download the package appropriate to your OS (Linux, Mac, Win).
+
+### R/MEGA
+
+8th Aug, 2017
+https://www.researchgate.net/post/Does-anybody-have-a-pipeline-created-or-experience-of-taking-Phylogenetic-trees-from-MEGA-to-Rggtree
+Does anybody have a pipeline created or experience of taking Phylogenetic trees from MEGA to R(ggtree)?
+
+https://support.bioconductor.org/p/41863/
+Packages reproducing phylogenetic tree from output of MEGA
+|
+You can save the tree from MEGA in newick format.
+APE is an R package that reads newick format and has a lot of options
+to
+plot phylogenetic trees.
+
+----------
+## Chunk options
+
+![https://rmarkdown.rstudio.com/lesson-3.html](https://d33wubrfki0l68.cloudfront.net/4b052d1dc45c9fb6f95caaca375636f792713192/c4043/lesson-images/code-1-options.png)
+
+https://rmarkdown.rstudio.com/lesson-3.html
+Chunk Options
+- include = FALSE prevents code and results from appearing in the finished file. R Markdown still runs the code in the chunk, and the results can be used by other chunks.
+- echo = FALSE prevents code, but not the results from appearing in the finished file. This is a useful way to embed figures.
+- message = FALSE prevents messages that are generated by code from appearing in the finished file.
+
+https://r4ds.had.co.nz/
+R for Data Science
+- https://r4ds.had.co.nz/r-markdown.html
+  - https://r4ds.had.co.nz/r-markdown.html#code-chunks
+    - https://r4ds.had.co.nz/r-markdown.html#chunk-options
+
+2021/05/15
+https://rpubs.com/ktgrstsh/755893
+R Markdown 入門 (Tokyo.R #91)
+コードチャンク
+
+2017年2月17日
+https://kazutan.github.io/kazutanR/Rmd_intro.html
+R Markdown入門 | Rチャンク(chunk)の基本 | Rチャンク オプション
+- echo(コード部の表示・非表示)
+- eval(コード部の評価・非評価)
+- include(レポートに組み込むか否か)
+
+----------
+## Compile Report
+
+https://rmarkdown.rstudio.com/articles_report_from_r_script.html
+Compiling Reports from R Scripts
+|
+If you are using RStudio then you can also create a report using the Compile Report command (Ctrl+Shift+K).
+
+Jan 17, 2017
+https://www.youtube.com/watch?v=4xwaH9CR2TY
+How to Compile a Report in RStudio - YouTube
+
+13 April 2020
+http://www.dry-lab.org/blog/2020/easy-report-from-r-script.html
+An easy way to transform your R script into a nice report – Blog of Andrés Aravena
+|
+clicking the Compile Report button
+
+![http://www.dry-lab.org/blog/2020/easy-report-from-r-script.html](http://www.dry-lab.org/images/cmb2/R_compile_report.png)
+
+2016年12月05日
+https://qiita.com/wakuteka/items/86b0ea5ef8428229babd#3-compile-report
+3. Compile Report
+
+![https://qiita.com/wakuteka/items/86b0ea5ef8428229babd](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
+
+https://rpubs.com/kohske/595
+Rスクリプトからレポート生成
+
+https://kohske.github.io/R/rstudio/
+Rstudioで楽々ドキュメント生成 | Rスクリプトからノートブックの作成
+
+編集画面の[Compile Notebook]というボタンをクリックします。
+
+![https://kohske.github.io/R/rstudio/](https://kohske.github.io/R/rstudio/pics/notebook_compile.png)
+
+2018/05/11
+https://www.kyoritsu-pub.co.jp/book/b10003938.html
+再現可能性のすゝめ
+―RStudioによるデータ解析とレポート作成―
+[ためし読み](https://www.yondemill.jp/contents/53229?view=1)
+目次 | 4.8　Rスクリプトからレポート生成
+
+![https://www.kyoritsu-pub.co.jp/book/b10003938.html](https://hondana-image.s3.amazonaws.com/book/image/10003938/normal_300fa3ec-db93-4420-a5ce-042046371dc0.jpg)
+
+メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
+[Maruzen eBook Library](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926579997904034)
+
+----------
 
 ----------
 ## assignment 1
@@ -677,310 +987,6 @@ setdiff(x, y)	差集合
 ```
 
 ----------
-## INSDC
 
-[International Nucleotide Sequence Database Collaboration](https://www.ddbj.nig.ac.jp/insdc-e.html)
-[塩基配列データベース構築の国際協調](https://www.ddbj.nig.ac.jp/insdc.html)
 
-<img src="https://www.ddbj.nig.ac.jp/assets/images/center/insdc_shoukai.gif" alt="https://www.ddbj.nig.ac.jp/about/insdc.html" width=25%>
-
-- [RefSeq Frequently Asked Questions (FAQ) - RefSeq Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK50679/)
-  - [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
-  - [What causes the version number of a RefSeq record to change?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_causes_the_version_number)
-  - [What updates to RefSeq records need a simple version number change and which require a new accession number?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_updates_to_refseq_records)
-- VERSION
-  - [DDBJ flat file format](https://www.ddbj.nig.ac.jp/ddbj/flat-file-e.html#VERSION)
-This line consists of an accession number and a version number, like “AB123456.1”, in which the digit(s) after the period is a version number.
-The data open to public for the first time is version number as “1”. The reason for adding VERSION is that since a released sequence sometimes revised by the submitter, the accession number alone cannot specify the sequence in question causing the user a trouble. The number is increased by one every time when a revised sequence is made public. And accession number will NOT be changed generally.
-  - [DDBJ 公開形式 Flat file](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html#VERSION)
-アクセッション番号とバージョン番号で構成されています。
-はじめて公開されたデータは、バージョン番号は “1” が記載されています。当該エントリの配列が訂正・更新された場合には、バージョン番号が更新されます。通常、配列が訂正・更新された場合にアクセッション番号が変更されることはありません。
-
-----------
-## NCBI Genome List
-[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)の[ゲノムリスト](http://bonohu.jp/blog/genome-list.html)
-
-- Retrieving genome sequence data via the NCBI website  
-NCBIのウェブサイトからゲノム配列データを取得する。  
-  - At the top of the NCBI website (http://www.ncbi.nlm.nih.gov/genome/browse/), you will see a search box, and you can type the Organism name or Accession of the sequence that you are looking for in this search box, and then click on the "Search" button to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press "Search".  
-ゲノムブラウザ [Entrez Genome browser](http://www.ncbi.nlm.nih.gov/genome/browse/)上部の検索ボックスに [ 生物名 (Organism Name) または 識別子 (Accession) ] を入力して、「Search」ボタンを押す。例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2), you will see the number of hits to "SARS-CoV-2" in each of the NCBI databases: "Overview (1); Viruses (92)". When you click on "Viruses", it will show all the strains.  
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/overview/SARS-CoV-2)、検索ボックス下の「Overview (1); Viruses (92)」のうち、「Viruses」をクリックすると、SARS-CoV-2に属する株が表示される。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2), you will find "Severe acute respiratory syndrome coronavirus 2" in the **Organism Name** column. In the **Replicons** column, "NC_045512.2/MN908947.3" indicates the [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the RefSeq and GenBank (a member of the INSDC) databases, respectively.  
-[ここで](https://www.ncbi.nlm.nih.gov/genome/browse/#!/viruses/SARS-CoV-2)、**Organism Name**列には "Severe acute respiratory syndrome coronavirus 2" が記載されている。**Replicons**列の "NC_045512.2/MN908947.3" は、RefSeq/GenBankデータベースの配列の[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)を示す。
-
-NCBI（RefSeq/GenBank）データベースからDNA配列を取得:  
-```
-# Retrieving a DNA sequence from the NCBI (RefSeq/GenBank) database
-library(seqinr)
-
-ACCESSION <- "NC_045512" # RefSeq
-ACCESSION <- "MN908947" # GenBank
-
-filename <- paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta&retmode=text")
-#filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
-
-# Retrieve the sequence and store it in list variable "seqs"
-seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
-seq1 <- seqs[[1]]
-
-# Get sequence annotations
-getAnnot(seq1)
-```
-
-Please record what you typed to download DNA sequence data, to make your analysis reproducible.
-
-----------
-## NCBI Datasets
-A one-stop shop for finding, browsing, and downloading genomic data
-
-https://www.ncbi.nlm.nih.gov/datasets/
-
-- Retrieving genome sequence data from the NCBI website.
-NCBIのウェブサイトからゲノム配列データを取得する。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/), Click on the Genome tab.  
-[このページ](https://www.ncbi.nlm.nih.gov/datasets/)で Genome タブをクリックする。
-  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/), you will see a search box [Selected taxa], and you can type "Enter one or more taxonomic names" of the sequence that you are looking for in this search box, and then press Enter to search for it. For example, if you want to find the sequence for [Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2), the strain of coronavirus that causes coronavirus disease 2019 (COVID-19), you would type just Organism name "SARS-CoV-2" in the search box and press Enter.  
-[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/)で、検索ボックス [Selected taxa] に生物名を入力してEnterキーを押す。例えば、[新型コロナウイルス感染症 (COVID-19)](https://ja.wikipedia.org/wiki/新型コロナウイルス感染症_%282019年%29)の原因となる[SARSコロナウイルス2](https://ja.wikipedia.org/wiki/SARSコロナウイルス2) "SARS-CoV-2" を検索する。  
-  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=2697049), under "Assembly", you will see genome sequences; of which, click reference genome ("ASM985889v3") indicated by check mark.
-[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=2697049)で、「Assembly」の下にゲノム配列が表示される。このうち、チェックマークが付いた参照ゲノム ("ASM985889v3") をクリックする。
-  - [On this page](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/), under "Chromosomes", you will see [Accession Number](https://www.ddbj.nig.ac.jp/acc_def-e.html) for the GenBank (a member of the INSDC) and RefSeq databases (here, "MN908947.3" and "NC_045512.2", respectively).  
-[このページ](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_009858895.2/)で、"Chromosomes"の下に、GenBankデータベースおよびRefSeqデータベースの[アクセッション番号](https://www.ddbj.nig.ac.jp/documents/accessions.html)が示されている（ここでは、"MN908947.3" および "NC_045512.2"）。
-
-**References**
-- Apr 5, 2024 [小野 浩雅 ONO, Hiromasa on X: "NCBI Datasets はゲノムデータに関するデータベースです。ゲノムデータの検索、閲覧、取得をワンストップで行うことができます。また、ゲノムデータに付随するアノテーション情報へのアクセスも容易で、配列データを用いて直接BLAST検索することもできます。"](https://twitter.com/h_ono/status/1776147714742317376)
-- [TogoTV on X: "NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する https://t.co/eO2lccLPAv"](https://twitter.com/togotv/status/1776147309597999581)
-- 2024.03.28 [NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する | TogoTV](https://doi.org/10.7875/togotv.2024.029) 11:46
-
-----------
-## BLAST
-BLAST (Basic Local Alignment Search Tool)
-
-### UniProt BLAST
-https://www.uniprot.org/blast/
-
-![https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/wp-content/uploads/sites/100/2022/07/Screenshot-2022-07-22-at-14.33.12.png)
-
-[BLAST sequence similarity searching](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/blast-sequence-similarity-searching/)
-
-- Select the **BLAST** tab of the toolbar at the top of the page.  
-ページの上部にあるツールバーの**BLAST**タブを選択する。
-- Enter either *UniProt IDs* or *protein or nucleotide sequence(s) in FASTA format*.  
-*UniProt IDs* または *FASTA形式のタンパク質または核酸配列* を入力する。
-- [Optional settings](https://www.uniprot.org/help/sequence-searches)
-  - Target database: UniProtKB Swiss-Prot
-  - E-Threshold: 0.0001
-  - Hits: 50
-- Click the **Run BLAST** button.  
-**Run BLAST**ボタンをクリックする。
-- [Tool results](https://www.uniprot.org/tool-dashboard)
-- Click on the image (Basket) located at the top right of the "BLAST results | UniProt" page.  
-「BLAST results | UniProt」ページの右上にある画像（Basket）をクリックする。  
-- Click on "Download" below "My Basket". Select "No" under "Compressed".  
-「My Basket」の下にある「Download」をクリックする。"Compressed"の下で「No」を選択する。  
-
-Use the web browser Google Chrome. Using other web browsers (such as Safari) may result in different behavior.  
-ウェブブラウザとしてGoogle Chromeを使用する。他のウェブブラウザ（例：Safariなど）を使用すると、異なる動作が生じる可能性がある。  
-
-### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
-
-#### blastp
-[Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
-
-- Query the NCBI Protein database by searching on the words [**ebgC Bacteroides**](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides).
-- Test the homology between
-*Escherichia coli* EbgC protein (accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1))
-and *Bacteroides* EbgC protein (accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1))
-using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome).
-  - Checking the **Align two or more sequences** box will display two text boxes for entering queries.
-  - Enter the accession number **NP_417548.1** into the upper search box.
-  - Enter the accession number **EFI39110.1** into the lower search box.
-  - Click on **+ Algorithm parameters**, change **Expect threshold** from 0.05 to 10, and then click the **BLAST** button.
-  - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the *Bacteroides* EbgC sequences are not homologs of the *Escherichia coli* EbgC sequence.
-
-##### References
-- Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
-(p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
-- [Blast 2 sequences: aligning two protein or nucleotide sequences](https://academic.oup.com/femsle/article/174/2/247/502616)
-
-#### tblastn
-[tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
-
-- **Enter Query Sequence** into the form field:
-```
->tr|A0PQ23|A0PQ23_MYCUA Chorismate pyruvate-lyase OS=Mycobacterium ulcerans (strain Agy99) OX=362242 GN=MUL_2003 PE=4 SV=1
-MLAVLPEKREMTECHLSDEEIRKLNRDLRILIATNGTLTRILNVLANDEIVVEIVKQQIQ
-DAAPEMDGCDHSSIGRVLRRDIVLKGRRSGIPFVAAESFIAIDLLPPEIVASLLETHRPI
-GEVMAASCIETFKEEAKVWAGESPAWLELDRRRNLPPKVVGRQYRVIAEGRPVIIITEYF
-LRSVFEDNSREEPIRHQRSVGTSARSGRSICT
-```
-- Click on **Algorithm parameters**, and select/change values as follows:
-  - Max target sequences: 5000
-  - Expect threshold: 1e-20
-- Click on **BLAST** button to execute.
-
-### Query Sequences
-
-https://rest.uniprot.org/uniprotkb/Q9CD83.fasta
-```
->sp|Q9CD83|PHBS_MYCLE Chorismate pyruvate-lyase OS=Mycobacterium leprae (strain TN) OX=272631 GN=ML0133 PE=3 SV=1
-MTNRTLSREEIRKLDRDLRILVATNGTLTRVLNVVANEEIVVDIINQQLLDVAPKIPELE
-NLKIGRILQRDILLKGQKSGILFVAAESLIVIDLLPTAITTYLTKTHHPIGEIMAASRIE
-TYKEDAQVWIGDLPCWLADYGYWDLPKRAVGRRYRIIAGGQPVIITTEYFLRSVFQDTPR
-EELDRCQYSNDIDTRSGDRFVLHGRVFKNL
-```
-
-https://rest.uniprot.org/uniprotkb/A0PQ23.fasta
-```
->tr|A0PQ23|A0PQ23_MYCUA Chorismate pyruvate-lyase OS=Mycobacterium ulcerans (strain Agy99) OX=362242 GN=MUL_2003 PE=4 SV=1
-MLAVLPEKREMTECHLSDEEIRKLNRDLRILIATNGTLTRILNVLANDEIVVEIVKQQIQ
-DAAPEMDGCDHSSIGRVLRRDIVLKGRRSGIPFVAAESFIAIDLLPPEIVASLLETHRPI
-GEVMAASCIETFKEEAKVWAGESPAWLELDRRRNLPPKVVGRQYRVIAEGRPVIIITEYF
-LRSVFEDNSREEPIRHQRSVGTSARSGRSICT
-```
-
-----------
-## MEGA
-MEGA: Molecular Evolutionary Genetics Analysis software
-
-https://www.megasoftware.net/
-
-Download MEGA X
-
-| OS              |                 | Version         |
-|:----------------|:----------------|:----------------|
-| Windows / macOS | Graphical (GUI) | MEGA X (64-bit) |
-
-Documentation
-[Online Manual](https://www.megasoftware.net/web_help)
-First Time User
-
-[walkthrough tutorial](https://www.megasoftware.net/web_help_10/Introduction.htm)
-Introduction
-
-- [Mega Basics](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/MEGA_Basics.htm)
-  - Opening (activating) a Data File for Analysis | Example 1.2: "Drosophila_Adh.meg" file
-- [Aligning Sequences](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Aligning_Sequences.htm)
-  - Opening an Alignment | Example 2.1: "hsp20.fas" file
-  - Aligning Sequences by ClustalW | Example 2.2: "hsp20.fas" file
-  - Aligning Sequences Using Muscle | Example 2.3: "Chloroplast_Martin.meg" file
-  - Obtaining Sequence Data from the Internet (GenBank)
-- [Estimating Evolutionary Distances](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Estimating_Evolutionary_Distances.htm)
-  - Estimating Evolutionary Distances Using Pairwise Distance | Example 3.1: "Drosophila_Adh.meg" file
-  - Compute the Proportion of Amino Acid Differences | Example 3.3: "Drosophila_Adh.meg" file
-- [Building Trees from Sequence Data](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Building_Trees_From_Sequence_Data.htm)
-  - Building a Neighbor-Joining (NJ) Tree | Example 4.1: "Crab_rRNA.meg" file
-  - Printing the NJ Tree (For Windows users) | Example 4.2a:   
-  - Printing the NJ Tree (For Mac users) | Example 4.2b:
-- [Testing Tree Reliability](https://www.megasoftware.net/web_help_10/Part_I_Getting_Started/A_Walk_Through_MEGA/Testing_Tree_Reliability.htm)
-  - Bootstrap Testing for a Neighbor-Joining Tree | Example 5.1: "Chloroplast_Martin.meg" file
-
-Site Links
-[Videos](https://www.megasoftware.net/videos)
-Instructional Videos
-
-- Author: Barry Hall
-  - [Choosing and Acquiring Sequences Part 1](https://youtu.be/raaOgtvMJWw) Choosing and Acquiring the Sequences for a Phylogenetic Tree
-  - [Choosing and Acquiring Sequences Part 2](https://youtu.be/cVdmH7nNboE) Aligning Coding Sequences
-  - [Reconstructing Ancestral Sequences](https://youtu.be/djju9WFMvn0)
-
-### PTME5
-Barry G. Hall (2017) Phylogenetic Trees Made Easy: A How-To Manual (5th edition)
-- 慶應義塾大学 Keio University https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma990025818970204034
-- [Table of Contents](https://global.oup.com/ushe/product/phylogenetic-trees-made-easy-9781605357102?cc=jp&lang=en&#fragment-4)
-- [Student Resources](https://learninglink.oup.com/access/hall-5e-student-resources)
-Click a link **PTME5e Companion Files** to download the package appropriate to your OS (Linux, Mac, Win).
-
-### R/MEGA
-
-8th Aug, 2017
-https://www.researchgate.net/post/Does-anybody-have-a-pipeline-created-or-experience-of-taking-Phylogenetic-trees-from-MEGA-to-Rggtree
-Does anybody have a pipeline created or experience of taking Phylogenetic trees from MEGA to R(ggtree)?
-
-https://support.bioconductor.org/p/41863/
-Packages reproducing phylogenetic tree from output of MEGA
-|
-You can save the tree from MEGA in newick format.
-APE is an R package that reads newick format and has a lot of options
-to
-plot phylogenetic trees.
-
-----------
-## Chunk options
-
-![https://rmarkdown.rstudio.com/lesson-3.html](https://d33wubrfki0l68.cloudfront.net/4b052d1dc45c9fb6f95caaca375636f792713192/c4043/lesson-images/code-1-options.png)
-
-https://rmarkdown.rstudio.com/lesson-3.html
-Chunk Options
-- include = FALSE prevents code and results from appearing in the finished file. R Markdown still runs the code in the chunk, and the results can be used by other chunks.
-- echo = FALSE prevents code, but not the results from appearing in the finished file. This is a useful way to embed figures.
-- message = FALSE prevents messages that are generated by code from appearing in the finished file.
-
-https://r4ds.had.co.nz/
-R for Data Science
-- https://r4ds.had.co.nz/r-markdown.html
-  - https://r4ds.had.co.nz/r-markdown.html#code-chunks
-    - https://r4ds.had.co.nz/r-markdown.html#chunk-options
-
-2021/05/15
-https://rpubs.com/ktgrstsh/755893
-R Markdown 入門 (Tokyo.R #91)
-コードチャンク
-
-2017年2月17日
-https://kazutan.github.io/kazutanR/Rmd_intro.html
-R Markdown入門 | Rチャンク(chunk)の基本 | Rチャンク オプション
-- echo(コード部の表示・非表示)
-- eval(コード部の評価・非評価)
-- include(レポートに組み込むか否か)
-
-----------
-## Compile Report
-
-https://rmarkdown.rstudio.com/articles_report_from_r_script.html
-Compiling Reports from R Scripts
-|
-If you are using RStudio then you can also create a report using the Compile Report command (Ctrl+Shift+K).
-
-Jan 17, 2017
-https://www.youtube.com/watch?v=4xwaH9CR2TY
-How to Compile a Report in RStudio - YouTube
-
-13 April 2020
-http://www.dry-lab.org/blog/2020/easy-report-from-r-script.html
-An easy way to transform your R script into a nice report – Blog of Andrés Aravena
-|
-clicking the Compile Report button
-
-![http://www.dry-lab.org/blog/2020/easy-report-from-r-script.html](http://www.dry-lab.org/images/cmb2/R_compile_report.png)
-
-2016年12月05日
-https://qiita.com/wakuteka/items/86b0ea5ef8428229babd#3-compile-report
-3. Compile Report
-
-![https://qiita.com/wakuteka/items/86b0ea5ef8428229babd](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.amazonaws.com%2F0%2F12353%2Fdc0b5da6-c3fe-08b0-e0b4-0a8186f6f453.png?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&w=1400&fit=max&s=8ff668aa377d1baa3b329e36cf09ff30)
-
-https://rpubs.com/kohske/595
-Rスクリプトからレポート生成
-
-https://kohske.github.io/R/rstudio/
-Rstudioで楽々ドキュメント生成 | Rスクリプトからノートブックの作成
-
-編集画面の[Compile Notebook]というボタンをクリックします。
-
-![https://kohske.github.io/R/rstudio/](https://kohske.github.io/R/rstudio/pics/notebook_compile.png)
-
-2018/05/11
-https://www.kyoritsu-pub.co.jp/book/b10003938.html
-再現可能性のすゝめ
-―RStudioによるデータ解析とレポート作成―
-[ためし読み](https://www.yondemill.jp/contents/53229?view=1)
-目次 | 4.8　Rスクリプトからレポート生成
-
-![https://www.kyoritsu-pub.co.jp/book/b10003938.html](https://hondana-image.s3.amazonaws.com/book/image/10003938/normal_300fa3ec-db93-4420-a5ce-042046371dc0.jpg)
-
-メディアセンター (https://www.lib.keio.ac.jp/sfc/) よりご利用いただけます。オンライン閲覧の場合、閲覧後は毎回右上の「閲覧終了」ボタンをクリックして、ほかの方に利用をお譲りください。
-[Maruzen eBook Library](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/188bto4/alma9926579997904034)
-
-----------
 
