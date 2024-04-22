@@ -33,6 +33,37 @@ Please describe objects (DNA, protein, and other textual sequences, etc.) you're
 ## assignment 1
 **課題1 「Introduction to R」**
 
+次のURLからRスクリプトをダウンロードして下さい。  
+Please download R scripts (**my_datasciencedojo_r.R**, **my_darumalab.R**) from the following URL.  
+https://github.com/haruosuz/r4bioinfo/raw/master/scripts/my_basic_r.zip
+
+Watch the following videos and write your comments or questions.
+- [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
+  - **my_basic_r/my_datasciencedojo_r.R**
+
+[Example answer]
+```
+I watched the videos Part 2 to Part 11 of "Introduction to R Programming".
+My questions are as follows:
+1. What is the difference between Data Frames and Lists in R?
+2. What is the difference between factor and character vectors?
+```
+
+以下の動画を見て、疑問点を報告する。
+- [Rプログラミングと統計](https://tomoecon.github.io/R_for_graduate_thesis/Rbasics.html)
+  - **my_basic_r/my_darumalab.R**
+
+
+[回答例]
+```
+「Rプログラミングと統計 p.3 ~ p.10 を見た。
+疑問点は次の通りである。
+1. 行列とデータフレームとリストの違いが理解できなかった。
+2. ファクターと文字列データの違いは？
+```
+
+----------
+
 課題「Introduction to R」に対するコメントや疑問点に関連する資料  
 References related to comments or questions for assignment "Introduction to R".  
 
