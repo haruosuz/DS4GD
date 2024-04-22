@@ -89,6 +89,13 @@ References related to comments/questions for assignment "Introduction to R".
 
 **my_setup_packages.R**
 
+
+----------
+## assignment 3
+**課題3 「DNA Sequence Statistics (1)」**
+
+**my_assignment_chapter1_dna1.R**
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
@@ -111,13 +118,6 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
-
-
-----------
-## assignment 3
-**課題3 「DNA Sequence Statistics (1)」**
-
-**my_assignment_chapter1_dna1.R**
 
 ----------
 ## assignment 4
