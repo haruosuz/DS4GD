@@ -2,6 +2,10 @@ https://github.com/haruosuz/DS4GD/
 
 ----------
 
+2024-04-23
+
+----------
+
 # Case Study
 **ケーススタディ**
 
@@ -39,12 +43,6 @@ https://github.com/haruosuz/DS4GD/
 [R_typeof](#r_typeof)
 [R_vector](#r_vector)
 [](#)
-
-----------
-
-2024-04-23
-
-
 
 ----------
 ## INSDC
