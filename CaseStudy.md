@@ -2,13 +2,7 @@ https://github.com/haruosuz/DS4GD/
 
 ----------
 
-MacBook_Pro_13-inch_2019_US
-
-MacBook_Pro_14-inch_2021
-
 2024-04-24
-
-2024-04-23
 
 ----------
 
