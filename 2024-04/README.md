@@ -23,10 +23,11 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter1_dna1.R | my_test1_dna.R
   - [NCBI Datasets](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-datasets)
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-3)
-  - よくわかるバイオインフォマティクス入門 | 6章　ゲノム解析
+  - よくわかるバイオインフォマティクス入門 | 6章　ゲノム解析 | ゲノムの特徴 | ゲノムサイズ | GC含量 (GC content)
 - 2024-04-30 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter2_dna2.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-4)
+  - よくわかるバイオインフォマティクス入門 | 6章　ゲノム解析 | スライデイングウインドウ (sliding window)
 - 2024-05-07 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
