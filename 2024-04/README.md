@@ -32,7 +32,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-5)
-  - よくわかるバイオインフォマティクス入門 | 2章　分子進化
+  - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 配列データベースと配列検索 | 6章　ゲノム解析 | ドットプロット (dotplot)
 - 2024-05-14 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-6)
@@ -70,6 +70,7 @@ People outside of Keio University SFC will also attend the lectures.
 
 - 2011-06-10 Avril Coghlan - "A Little Book of R For Bioinformatics" https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
 - 2018-11-19 藤博幸（編） - よくわかるバイオインフォマティクス入門 https://www.kspub.co.jp/book/detail/5138212.html | 1章　配列解析 | 2章　分子進化 | 6章　ゲノム解析
+- 2021-12-25 慶應義塾大学出版会 | バイオインフォマティクス入門 第２版 | 日本バイオインフォマティクス学会 https://www.keio-up.co.jp/np/isbn/9784766427912/
 
 ----------
 ## R RStudio
