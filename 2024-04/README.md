@@ -32,27 +32,25 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-5)
-  - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 配列データベースと配列検索 | 6章　ゲノム解析 | ドットプロット (dotplot)
+  - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 変異と置換および分子進化 | 6章　ゲノム解析 | ドットプロット (dotplot)
 - 2024-05-14 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter4_align.R
+  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-6)
 - 2024-05-21 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_ds4gd_tree.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-7)
 - 2024-05-28 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
-  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-8)
-- 2024-06-04 No. 9 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
+- 2024-06-04 補講/試験 Makeup Class Day/Exam
+- 2024-06-11 No. 9 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
-  - 系統樹に根をつける方法 [How to root a phylogenetic tree](http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html)
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-9)
-- 2024-06-11 No. 10 - [Guest Speaker](#guest-speaker)
-- 2024-06-18 No. 11 - [Guest Speaker](#guest-speaker)
-- 2024-06-25 No. 12 - Newick tree format | Model
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_ds4gd_newick.R | my_ds4gd_model.R
-- 2024-07-02 No. 13 - Text formatting with Markdown
+- 2024-06-18 No. 10 - TBA
+- 2024-06-25 No. 11 - [Guest Speaker](#guest-speaker)
+- 2024-07-02 No. 12 - TBA
+- 2024-07-09 No. 13 - Text formatting with Markdown
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_script2report/my_script2report.R
-- 2024-07-09 No. 14 - 最終回 final class
+- 2024-07-16 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#final-assignment)
 
