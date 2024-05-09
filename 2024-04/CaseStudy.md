@@ -141,11 +141,11 @@ Please save and backup your edited files in a separate directory.
 ## assignment 7
 **課題7 「Choosing and Acquiring Sequences」**
 
-[BLAST](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#blast)  
+[BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)  
 Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 系統樹に含める複数（4つ以上）の相同配列を同定する。  
 
-**my_ds4gd_tree.R**
+**my_tree_aa/my_tree_aa.R**
 ```
 file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
 ```
