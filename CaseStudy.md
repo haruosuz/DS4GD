@@ -1,12 +1,5 @@
 https://github.com/haruosuz/DS4GD/
 
-
-----------
-
-2024-04-24
-
-MacBook_Pro_14-inch_2021
-
 ----------
 
 # Case Study
