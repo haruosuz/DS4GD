@@ -13,6 +13,7 @@ https://github.com/haruosuz/DS4GD/
 - [BLAST](#blast)
   - [UniProt BLAST](#uniprot-blast)
   - [NCBI BLAST](#ncbi-blast)
+    - [BLAST_2_SEQUENCES]()
     - [blastp](#blastp)
     - [tblastn](#tblastn)
   - [Query Sequences](#query-sequences)
@@ -39,6 +40,9 @@ https://github.com/haruosuz/DS4GD/
 [R_typeof](#r_typeof)
 [R_vector](#r_vector)
 [](#)
+
+
+- https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
 
 ----------
 ## INSDC
@@ -144,6 +148,9 @@ getAnnot(seq1)
 ## BLAST
 BLAST (Basic Local Alignment Search Tool)
 
+Use the web browser Google Chrome. Using other web browsers (such as Safari) may result in different behavior.  
+ウェブブラウザとしてGoogle Chromeを使用する。他のウェブブラウザ（例：Safariなど）を使用すると、異なる動作が生じる可能性がある。  
+
 ### UniProt BLAST
 https://www.uniprot.org/blast/
 
@@ -157,7 +164,7 @@ https://www.uniprot.org/blast/
 *UniProt IDs* または *FASTA形式のタンパク質または核酸配列* を入力する。
 - [Optional settings](https://www.uniprot.org/help/sequence-searches)
   - Target database: UniProtKB Swiss-Prot
-  - E-Threshold: 0.0001
+  - E-Threshold: 0.00001
   - Hits: 50
 - Click the **Run BLAST** button.  
 **Run BLAST**ボタンをクリックする。
@@ -167,14 +174,14 @@ https://www.uniprot.org/blast/
 - Click on "Download" below "My Basket". Select "No" under "Compressed".  
 「My Basket」の下にある「Download」をクリックする。"Compressed"の下で「No」を選択する。  
 
-Use the web browser Google Chrome. Using other web browsers (such as Safari) may result in different behavior.  
-ウェブブラウザとしてGoogle Chromeを使用する。他のウェブブラウザ（例：Safariなど）を使用すると、異なる動作が生じる可能性がある。  
-
 ### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
 
-#### blastp
-[Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
+#### BLAST_2_SEQUENCES
+Blast 2 sequences: aligning two protein or nucleotide sequences
 
+- [FEMS Microbiol Lett. 1999 "BLAST 2 Sequences, a new tool for comparing protein and nucleotide sequences"](https://pubmed.ncbi.nlm.nih.gov/10339815/)
+- Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
+(p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
 - Query the NCBI Protein database by searching on the words [**ebgC Bacteroides**](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides).
 - Test the homology between
 *Escherichia coli* EbgC protein (accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1))
@@ -186,10 +193,37 @@ using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PA
   - Click on **+ Algorithm parameters**, change **Expect threshold** from 0.05 to 10, and then click the **BLAST** button.
   - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the *Bacteroides* EbgC sequences are not homologs of the *Escherichia coli* EbgC sequence.
 
-##### References
-- Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
-(p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
-- [Blast 2 sequences: aligning two protein or nucleotide sequences](https://academic.oup.com/femsle/article/174/2/247/502616)
+#### blastp
+[Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
+
+Here are the steps for running BLASTP:
+
+- Click on the protein accession number (e.g., `/protein_id="NP_059433.1"`) from the genome GenBank page.
+```
+https://www.ncbi.nlm.nih.gov/nuccore/NC_001477
+LOCUS       NC_001477              10735 bp ss-RNA     linear   VRL 03-MAY-2019
+DEFINITION  Dengue virus 1, complete genome.
+
+     CDS             95..10273
+                     /gene="POLY"
+                     /product="polyprotein"
+                     /protein_id="NP_059433.1"
+```
+- [On this page](https://www.ncbi.nlm.nih.gov/protein/NP_059433.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=NP_059433.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
+- Select the Database "Non-redundant protein sequences (nr)".
+- Click on "Algorithm parameters" and set the parameters as follows:
+   - General Parameters
+     - Max target sequences: 5000
+     - Expect threshold: 1e-20
+   - Scoring Parameters
+     - Matrix: BLOSUM62
+     - Gap Costs: Existence: 11 Extension: 1
+- Click the "BLAST" button to execute.
+- On this page *BLAST ® » blastp suite » results*, click "Download All", and select 
+```
+Hit Table(text)
+Hit Table(csv)
+```
 
 #### tblastn
 [tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
