@@ -44,10 +44,11 @@
 - 2024-06-04 補講/試験 Makeup Class Day/Exam
 - 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-9)
-- 2024-06-18 No. 10
- - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
+- 2024-06-18 No. 10 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
+  - 課題10 [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-10)
 - 2024-06-25 No. 11 - [Guest Speaker](#guest-speaker)
+  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-11)
 - 2024-07-02 No. 12 - TBA
 - 2024-07-09 No. 13 - Text formatting with Markdown
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_script2report/my_script2report.R
