@@ -42,10 +42,11 @@
 - 2024-05-28 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-8)
 - 2024-06-04 補講/試験 Makeup Class Day/Exam
-- 2024-06-11 No. 9 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
+- 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-9)
-- 2024-06-18 No. 10 - TBA
+- 2024-06-18 No. 10
+ - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
 - 2024-06-25 No. 11 - [Guest Speaker](#guest-speaker)
 - 2024-07-02 No. 12 - TBA
 - 2024-07-09 No. 13 - Text formatting with Markdown
@@ -56,11 +57,21 @@
 
 ----------
 ## Guest speaker
-**[特別講演](https://www.sfc.keio.ac.jp/faculty/class/special_lecture.html)**
+**特別講演**
 
 People outside of Keio University SFC will also attend the lectures.  
 他機関所属の方も参加されます。  
 
+
+### 2024-06-11
+- Speaker: Dr. Motomu Matsui (The University of Tokyo)  
+松井 求 博士（東京大学）
+- Title: 
+
+### 2024-06-25
+- Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
+鈴木 留美子 博士（国立遺伝学研究所）
+- Title: 
 
 ----------
 ## References
