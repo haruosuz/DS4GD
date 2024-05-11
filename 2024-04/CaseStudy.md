@@ -15,7 +15,9 @@
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
 - [assignment 8](#assignment-8) 課題8 「midterm report」
-- [assignment 9](#assignment-9) 課題9 「Multiple Alignment and Phylogenetic trees」
+- [assignment 9](#assignment-9) 課題9 「guest-speaker」
+- [assignment 10](#assignment-10) 課題10 「Multiple Alignment and Phylogenetic trees」
+- [assignment 11](#assignment-11) 課題11 「guest-speaker」
 - [final assignment](#final-assignment) 最終課題 「final report」
 
 ----------
@@ -169,9 +171,23 @@ Select, combine, and edit the previous assignments to create a midterm report.
 
 ----------
 ## assignment 9
-**課題9 「Multiple Alignment and Phylogenetic trees」**
+**課題9 「guest-speaker」**
+
+本日の特別講演に関するコメントや質問など記載して提出する。  
+Please write and submit any comments, questions, or anything else related to today's special lecture.  
+
+----------
+## assignment 10
+**課題10 「Multiple Alignment and Phylogenetic trees」**
 
 **my_assignment_chapter5_msa_tree.R**
+
+----------
+## assignment 11
+**課題11 「guest-speaker」**
+
+本日の特別講演に関するコメントや質問など記載して提出する。  
+Please write and submit any comments, questions, or anything else related to today's special lecture.  
 
 ----------
 ## final assignment
@@ -181,5 +197,4 @@ Select, combine, and edit the previous assignments to create a midterm report.
 Select, combine, and edit the previous assignments to create a final report.  
 
 ----------
-
 
