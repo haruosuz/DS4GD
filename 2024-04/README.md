@@ -21,8 +21,8 @@
   - よくわかるバイオインフォマティクス入門 | 1章　配列解析
 - 2024-04-23 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter1_dna1.R | my_test1_dna.R
-  - [NCBI Datasets](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-datasets)
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-3)
+  - [NCBI Datasets](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-datasets)
   - よくわかるバイオインフォマティクス入門 | 6章　ゲノム解析 | ゲノムの特徴 | ゲノムサイズ | GC含量 (GC content)
 - 2024-04-30 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter2_dna2.R
@@ -30,13 +30,15 @@
   - よくわかるバイオインフォマティクス入門 | 6章　ゲノム解析 | スライデイングウインドウ (sliding window)
 - 2024-05-07 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter4_align.R
-  - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-5)
+  - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
   - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 変異と置換および分子進化 | 6章　ゲノム解析 | ドットプロット (dotplot)
 - 2024-05-14 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter4_align.R
-  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-6)
+  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
+  - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 配列データベースと配列検索 | 配列アラインメント | ペアワイズアラインメント
+  - Web連携テキスト バイオインフォマティクス | 第3章 生物配列解析 https://www.iu.a.u-tokyo.ac.jp/textbook/chapter3.html
 - 2024-05-21 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-7)
 - 2024-05-28 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
@@ -55,6 +57,7 @@
 - 2024-07-16 No. 14 - 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#final-assignment)
+- 2024-07-18 2024-07-20 補講
 
 ----------
 ## Guest speaker
@@ -67,7 +70,7 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2024-06-11
 - Speaker: Dr. Motomu Matsui (The University of Tokyo)  
 松井 求 博士（東京大学）
-- Title: 
+- Title: 系統解析の過去・現在・未来
 
 ### 2024-06-25
 - Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
@@ -81,6 +84,7 @@ People outside of Keio University SFC will also attend the lectures.
 - 2011-06-10 Avril Coghlan - "A Little Book of R For Bioinformatics" https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
 - 2018-11-19 藤博幸（編） - よくわかるバイオインフォマティクス入門 https://www.kspub.co.jp/book/detail/5138212.html | 1章　配列解析 | 2章　分子進化 | 6章　ゲノム解析
 - 2021-12-25 慶應義塾大学出版会 | バイオインフォマティクス入門 第２版 | 日本バイオインフォマティクス学会 https://www.keio-up.co.jp/np/isbn/9784766427912/
+- 2022-10-19 培風館 | Web連携テキスト　バイオインフォマティクス 　 基礎から応用 https://www.iu.a.u-tokyo.ac.jp/textbook/
 
 ----------
 ## R RStudio
