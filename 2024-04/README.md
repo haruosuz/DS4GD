@@ -73,7 +73,7 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2024-06-25
 - Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
 鈴木 留美子 博士（国立遺伝学研究所）
-- Title: 
+- Title: 細菌集団の分析方法
 
 ----------
 ## References
@@ -83,6 +83,10 @@ People outside of Keio University SFC will also attend the lectures.
 - 2018-11-19 藤博幸（編） - よくわかるバイオインフォマティクス入門 https://www.kspub.co.jp/book/detail/5138212.html | 1章　配列解析 | 2章　分子進化 | 6章　ゲノム解析
 - 2021-12-25 慶應義塾大学出版会 | バイオインフォマティクス入門 第２版 | 日本バイオインフォマティクス学会 https://www.keio-up.co.jp/np/isbn/9784766427912/
 - 2022-10-19 培風館 | Web連携テキスト　バイオインフォマティクス 　 基礎から応用 https://www.iu.a.u-tokyo.ac.jp/textbook/
+- CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
+  - 26章 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
+- 2018-07-30 Andrew Rambaut - "How to read a phylogenetic tree" https://artic.network/how-to-read-a-tree.html
+- 2012-06-07 Richard Edwards - "How to root a phylogenetic tree" http://cabbagesofdoom.blogspot.com/2012/06/how-to-root-phylogenetic-tree.html
 
 ----------
 ## R RStudio
