@@ -6,7 +6,6 @@ https://github.com/haruosuz/DS4GD/
 **ケーススタディ**
 
 ## Table of Contents
-[](#)
 - [INSDC](#insdc)
   - [NCBI Genome List](#ncbi-genome-list)
   - [NCBI Datasets](#ncbi-datasets)
@@ -20,7 +19,6 @@ https://github.com/haruosuz/DS4GD/
 - [MEGA](#mega)
 - [Chunk options](#chunk-options)
 - [Compile Report](#compile-report)
-[](#)
 - [assignment 1](#assignment-1)
   - [R_DSD_10](#r_dsd_10)
 [R_assignOps](#r_assignOps)
@@ -39,10 +37,9 @@ https://github.com/haruosuz/DS4GD/
 [R_read.table](#r_readtable)
 [R_typeof](#r_typeof)
 [R_vector](#r_vector)
-[](#)
-
-
+- [](#)
 - https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
+- [](#)
 
 ----------
 ## INSDC
