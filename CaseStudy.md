@@ -38,8 +38,8 @@ https://github.com/haruosuz/DS4GD/
 [R_typeof](#r_typeof)
 [R_vector](#r_vector)
 - [](#)
-- https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
-- [](#)
+
+https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
 
 ----------
 ## INSDC
