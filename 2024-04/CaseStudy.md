@@ -116,6 +116,34 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 **my_assignment_chapter4_align_pairwise.R**
 
+----------
+## assignment 7
+**課題7 「Choosing and Acquiring Sequences」**
+
+[BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)  
+Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
+系統樹に含める複数（4つ以上）の相同配列を同定する。  
+
+Copy the downloaded file ("uniprotkb_2024_05_21.fasta") and give it a different name ("myAA.fasta").  
+ダウンロードしたファイル（"uniprotkb_2024_05_21.fasta"）をコピーして別の名前（"myAA.fasta"）を付ける。  
+```
+cp uniprotkb_2024_05_21.fasta myAA.fasta
+```
+
+**my_tree_aa/my_tree_aa.R**
+```
+file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
+```
+
+The R script will generate the following output files:
+- `myAA_filtered.fasta`: Sequences filtered based on length criteria.
+- `myAlign.fasta`: Aligned sequences.
+- `myAlignTrim.fasta`: Aligned sequences trimmed (gaps removed).
+- `myTree.pdf`: Phylogenetic tree in PDF format.
+- `myTree.tre`: Phylogenetic tree in Newick format.
+- `myTable.tsv`: Sequence information, including length and annotations.
+
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
@@ -138,28 +166,6 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
-
-----------
-## assignment 7
-**課題7 「Choosing and Acquiring Sequences」**
-
-[BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)  
-Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
-系統樹に含める複数（4つ以上）の相同配列を同定する。  
-
-**my_tree_aa/my_tree_aa.R**
-```
-file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
-```
-
-The R script will generate the following output files:
-- `myAA_filtered.fasta`: Sequences filtered based on length criteria.
-- `myAlign.fasta`: Aligned sequences.
-- `myAlignTrim.fasta`: Aligned sequences trimmed (gaps removed).
-- `myTree.pdf`: Phylogenetic tree in PDF format.
-- `myTree.tre`: Phylogenetic tree in Newick format.
-- `myTable.tsv`: Sequence information, including length and annotations.
-
 
 ----------
 ## assignment 8
