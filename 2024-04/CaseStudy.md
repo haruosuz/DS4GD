@@ -124,9 +124,11 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 系統樹に含める複数（4つ以上）の相同配列を同定する。  
 
-Copy the downloaded file ("uniprotkb_2024_05_21.fasta") and give it a different name ("myAA.fasta").  
-ダウンロードしたファイル（"uniprotkb_2024_05_21.fasta"）をコピーして別の名前（"myAA.fasta"）を付ける。  
+Copy the downloaded file ("uniprotkb_YYYY_MM_DD.fasta") and give it a different name ("myAA.fasta").  
+ダウンロードしたファイル（"uniprotkb_YYYY_MM_DD.fasta"）をコピーして別の名前（"myAA.fasta"）を付ける。  
 ```
+cp uniprotkb_YYYY_MM_DD.fasta myAA.fasta
+
 cp uniprotkb_2024_05_21.fasta myAA.fasta
 ```
 
@@ -143,6 +145,14 @@ The R script will generate the following output files:
 - `myTree.tre`: Phylogenetic tree in Newick format.
 - `myTable.tsv`: Sequence information, including length and annotations.
 
+----------
+## assignment 8
+**課題8 「midterm report」**
+
+これまでの課題を選択・結合・編集して中間レポートを作成する。  
+Select, combine, and edit the previous assignments to create a midterm report.  
+
+**my_ds4gd_report.R**
 
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
@@ -166,15 +176,6 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
-
-----------
-## assignment 8
-**課題8 「midterm report」**
-
-これまでの課題を選択・結合・編集して中間レポートを作成する。  
-Select, combine, and edit the previous assignments to create a midterm report.  
-
-**my_ds4gd_report.R**
 
 ----------
 ## assignment 9
