@@ -39,9 +39,8 @@
   - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 配列データベースと配列検索 | 配列アラインメント | ペアワイズアラインメント
 - 2024-05-21 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-7)
-- 2024-05-28 No. 8 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
+- 2024-05-28 No. 8 - 分子系統解析 | 有根系統樹と無根系統樹 | 外群 (outgroup)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-8)
-  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - よくわかるバイオインフォマティクス入門 | 2章　分子進化 | 分子系統樹
 - 2024-06-04 補講/試験 Makeup Class Day/Exam
 - 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
@@ -58,6 +57,7 @@
   - 最終発表 [final presentation](#final-presentation)
   - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#final-assignment)
 - 2024-07-18 2024-07-20 補講
+  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
 
 ----------
 ## Guest speaker
