@@ -42,7 +42,9 @@
 - 2024-05-28 No. 8 - 分子系統解析 | 有根系統樹と無根系統樹 | 外群 (outgroup)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-8)
   - よくわかるバイオインフォマティクス入門 | 2章　分子進化 | 分子系統樹
-- 2024-06-04 補講/試験 Makeup Class Day/Exam
+- 2024-06-04 休講 no class |  
+[補講/試験](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
+[Makeup Class Day/Exam](https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf)
 - 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-9)
 - 2024-06-18 No. 10 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
