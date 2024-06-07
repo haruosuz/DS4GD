@@ -72,12 +72,16 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2024-06-11
 - Speaker: Dr. Motomu Matsui (The University of Tokyo)  
 松井 求 博士（東京大学）
-- Title: 系統解析の過去・現在・未来
+- Title: [系統解析の過去・現在・未来](https://drive.google.com/file/d/1MbHO7VPEqi93eczxWqElsvyWHnjgOODO/view?usp=drive_link)
 
 ### 2024-06-25
 - Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
 鈴木 留美子 博士（国立遺伝学研究所）
 - Title: 細菌集団の分析方法
+
+'MEGA 11'をダウンロードしてください。
+Please download 'MEGA 11'.
+https://www.megasoftware.net/
 
 ----------
 ## References
