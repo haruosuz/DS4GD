@@ -15,9 +15,9 @@
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
 - [assignment 8](#assignment-8) 課題8 「midterm report」
-- [assignment 9](#assignment-9) 課題9 「guest-speaker」
+- [assignment 9](#assignment-9) 課題9 「Guest speaker 2024-06-11」
 - [assignment 10](#assignment-10) 課題10 「Multiple Alignment and Phylogenetic trees」
-- [assignment 11](#assignment-11) 課題11 「guest-speaker」
+- [assignment 11](#assignment-11) 課題11 「Guest speaker 2024-06-25」
 - [final assignment](#final-assignment) 最終課題 「final report」
 
 ----------
@@ -154,6 +154,21 @@ Select, combine, and edit the previous assignments to create a midterm report.
 
 **my_ds4gd_report.R**
 
+----------
+## assignment 9
+**課題9 「Guest speaker 2024-06-11」**
+
+https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#2024-06-11
+
+本日の特別講演に関するコメントや質問など記載して提出する。  
+Please write and submit any comments, questions, or anything else related to today's special lecture.  
+
+----------
+## assignment 10
+**課題10 「Multiple Alignment and Phylogenetic trees」**
+
+**my_assignment_chapter5_msa_tree.R**
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
@@ -178,21 +193,10 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 Please save and backup your edited files in a separate directory. 
 
 ----------
-## assignment 9
-**課題9 「guest-speaker」**
-
-本日の特別講演に関するコメントや質問など記載して提出する。  
-Please write and submit any comments, questions, or anything else related to today's special lecture.  
-
-----------
-## assignment 10
-**課題10 「Multiple Alignment and Phylogenetic trees」**
-
-**my_assignment_chapter5_msa_tree.R**
-
-----------
 ## assignment 11
-**課題11 「guest-speaker」**
+**課題11 「Guest speaker 2024-06-25」**
+
+https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#2024-06-25
 
 本日の特別講演に関するコメントや質問など記載して提出する。  
 Please write and submit any comments, questions, or anything else related to today's special lecture.  
