@@ -48,7 +48,7 @@
 - 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-9)
 - 2024-06-18 No. 10 - TBA
-- 2024-06-21 (金) 6限 [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd)
+- 2024-06-21 (金) 6限 [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd) 参加は任意です。
 - 2024-06-25 No. 11 - [Guest Speaker](#guest-speaker)
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-11)
 - 2024-07-02 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
