@@ -16,8 +16,8 @@
 - [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
 - [assignment 8](#assignment-8) 課題8 「midterm report」
 - [assignment 9](#assignment-9) 課題9 「Guest speaker 2024-06-11」
-- [assignment 10](#assignment-10) 課題10 「Multiple Alignment and Phylogenetic trees」
 - [assignment 11](#assignment-11) 課題11 「Guest speaker 2024-06-25」
+- [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [final assignment](#final-assignment) 最終課題 「final report」
 
 ----------
@@ -158,14 +158,19 @@ Select, combine, and edit the previous assignments to create a midterm report.
 ## assignment 9
 **課題9 「Guest speaker 2024-06-11」**
 
-https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#2024-06-11
+本日の特別講演に関するコメントや質問など記載して提出する。  
+Please write and submit any comments, questions, or anything else related to today's special lecture.  
+
+----------
+## assignment 11
+**課題11 「Guest speaker 2024-06-25」**
 
 本日の特別講演に関するコメントや質問など記載して提出する。  
 Please write and submit any comments, questions, or anything else related to today's special lecture.  
 
 ----------
-## assignment 10
-**課題10 「Multiple Alignment and Phylogenetic trees」**
+## assignment 12
+**課題12 「Multiple Alignment and Phylogenetic trees」**
 
 **my_assignment_chapter5_msa_tree.R**
 
@@ -191,15 +196,6 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
-
-----------
-## assignment 11
-**課題11 「Guest speaker 2024-06-25」**
-
-https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#2024-06-25
-
-本日の特別講演に関するコメントや質問など記載して提出する。  
-Please write and submit any comments, questions, or anything else related to today's special lecture.  
 
 ----------
 ## final assignment
