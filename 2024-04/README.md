@@ -48,6 +48,7 @@
 - 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-9)
 - 2024-06-18 No. 10 - TBA
+  - 課題10 [assignment 10](https://github.com/haruosuz/introBI/blob/main/2024-04/CaseStudy.md#assignment-10)
 - 2024-06-21 (金) 6限 [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd) 参加は任意です。
 - 2024-06-25 No. 11 - [Guest Speaker](#guest-speaker)
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-11)
