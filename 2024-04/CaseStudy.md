@@ -16,6 +16,7 @@
 - [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
 - [assignment 8](#assignment-8) 課題8 「midterm report」
 - [assignment 9](#assignment-9) 課題9 「Guest speaker 2024-06-11」
+- [assignment 10](#assignment-10) 課題10 「2024-06-18」
 - [assignment 11](#assignment-11) 課題11 「Guest speaker 2024-06-25」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [final assignment](#final-assignment) 最終課題 「final report」
@@ -160,6 +161,12 @@ Select, combine, and edit the previous assignments to create a midterm report.
 
 本日の特別講演に関するコメントや質問など記載して提出する。  
 Please write and submit any comments, questions, or anything else related to today's special lecture.  
+
+----------
+## assignment 10
+**課題10 「2024-06-18」**
+
+授業に関連することについて、自由に記述してください。例えば、配列解析（配列アラインメント、系統樹の推定など）は、あなたの研究分野でどのように役立てられますか？あなたは、身の回りの目に見えないオブジェクト（微生物など）を調べるために、いつ、どこからサンプルを採取しますか？
 
 ----------
 ## assignment 11
