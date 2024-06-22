@@ -85,6 +85,19 @@ People outside of Keio University SFC will also attend the lectures.
 Please download 'MEGA 11'.
 https://www.megasoftware.net/
 
+MLST配列
+http://sayer.nig.ac.jp/rusuzuki/keio/Asia-Okinawa_newname.fas
+ファイル名を「Asia-Okinawa.fas」として保存
+
+距離行列データ
+http://sayer.nig.ac.jp/rusuzuki/keio/Distance_matrix.csv
+
+距離行列データ完成形
+http://sayer.nig.ac.jp/rusuzuki/keio/Distance_matrix_comp.csv
+
+PCAプロット用カラーデータ
+http://sayer.nig.ac.jp/rusuzuki/keio/dotcolors.csv
+
 ----------
 ## References
 **参考文献**
