@@ -45,12 +45,12 @@
 - 2024-06-04 休講 no class |
 [補講/試験](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
 [Makeup Class Day/Exam](https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf)
-- 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker)
+- 2024-06-11 No. 9 - [Guest Speaker](#guest-speaker) 松井 求 博士（東京大学）系統解析の過去・現在・未来
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-9)
-- 2024-06-18 No. 10 - TBA
+- 2024-06-18 No. 10 - 都市のマイクロバイオーム Urban Microbiome
   - 課題10 [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-10)
 - 2024-06-21 (金) 6限 [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd) 参加は任意です。
-- 2024-06-25 No. 11 - [Guest Speaker](#guest-speaker)
+- 2024-06-25 No. 11 - [Guest Speaker](#guest-speaker) 鈴木 留美子 博士（国立遺伝学研究所）細菌集団の分析方法
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-11)
 - 2024-07-02 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
