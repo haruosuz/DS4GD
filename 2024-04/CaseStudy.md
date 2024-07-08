@@ -19,7 +19,7 @@
 - [assignment 10](#assignment-10) 課題10 「2024-06-18」
 - [assignment 11](#assignment-11) 課題11 「Guest speaker 2024-06-25」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
-- [final assignment](#final-assignment) 最終課題 「final report」
+- [assignment final](#assignment-final) 最終課題 「final report」
 
 ----------
 ## assignment 0
@@ -181,6 +181,13 @@ Please write and submit any comments, questions, or anything else related to tod
 
 **my_assignment_chapter5_msa_tree.R**
 
+----------
+## assignment final
+**最終課題 「final report」**
+
+これまでの課題を選択・結合・編集して最終レポートを作成する。  
+Select, combine, and edit the previous assignments to create a final report.  
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
@@ -203,13 +210,6 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
-
-----------
-## final assignment
-**最終課題 「final report」**
-
-これまでの課題を選択・結合・編集して最終レポートを作成する。  
-Select, combine, and edit the previous assignments to create a final report.  
 
 ----------
 
