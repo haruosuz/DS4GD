@@ -39,6 +39,7 @@
   - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 配列データベースと配列検索 | 配列アラインメント | ペアワイズアラインメント
 - 2024-05-21 No. 7 - 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-7)
+- 2024-05-25（土曜日）13:00～ 補講
 - 2024-05-28 No. 8 - 分子系統解析 | 有根系統樹と無根系統樹 | 外群 (outgroup)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-8)
   - よくわかるバイオインフォマティクス入門 | 2章　分子進化 | 分子系統樹
@@ -58,8 +59,7 @@
 - 2024-07-09 No. 13 - Text formatting with Markdown
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_script2report/my_script2report.R
 - 2024-07-16 No. 14 - 最終回 final class
-  - 最終発表 [final presentation](#final-presentation)
-  - 最終課題 [final assignment](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#final-assignment)
+  - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-final)
 - 2024-07-18 2024-07-20 補講
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
 
@@ -123,3 +123,4 @@ http://sayer.nig.ac.jp/rusuzuki/keio/dotcolors.csv
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
 ----------
+
