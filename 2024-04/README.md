@@ -58,6 +58,7 @@
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-12)
 - 2024-07-09 No. 13 - Text formatting with Markdown
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_script2report/my_script2report.R
+  - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#chunk-options)
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
 - 2024-07-16 No. 14 - 最終回 final class
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-final)
