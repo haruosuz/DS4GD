@@ -12,7 +12,7 @@ https://github.com/haruosuz/DS4GD/
 - [BLAST](#blast)
   - [UniProt BLAST](#uniprot-blast)
   - [NCBI BLAST](#ncbi-blast)
-    - [BLAST_2_SEQUENCES]()
+    - [BLAST_2_SEQUENCES](#blast_2_sequences)
     - [blastp](#blastp)
     - [tblastn](#tblastn)
   - [Query Sequences](#query-sequences)
@@ -225,20 +225,24 @@ Hit Table(csv)
 #### tblastn
 [tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
 
-- **Enter Query Sequence** into the form field:
+- Click on the protein accession number (e.g., `/protein_id="ADF36634.1"`) from the GenBank page of [Neisseria gonorrhoeae strain 5289 plasmid pEP5289, complete sequence](https://www.ncbi.nlm.nih.gov/nuccore/GU479466).
 ```
->tr|A0PQ23|A0PQ23_MYCUA Chorismate pyruvate-lyase OS=Mycobacterium ulcerans (strain Agy99) OX=362242 GN=MUL_2003 PE=4 SV=1
-MLAVLPEKREMTECHLSDEEIRKLNRDLRILIATNGTLTRILNVLANDEIVVEIVKQQIQ
-DAAPEMDGCDHSSIGRVLRRDIVLKGRRSGIPFVAAESFIAIDLLPPEIVASLLETHRPI
-GEVMAASCIETFKEEAKVWAGESPAWLELDRRRNLPPKVVGRQYRVIAEGRPVIIITEYF
-LRSVFEDNSREEPIRHQRSVGTSARSGRSICT
+     CDS             complement(6730..8664)
+                     /note="tetracyclin resistance protein"
+                     /product="TetM"
+                     /protein_id="ADF36634.1"
 ```
+- [On this page](https://www.ncbi.nlm.nih.gov/protein/ADF36634.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=ADF36634.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
+- Click on the [tblastn](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&BLAST_SPEC=&LINK_LOC=blasttab&LAST_PAGE=blastp&QUERY=ADF36634.1).
+- You can also **Enter Query Sequence** into the form field.
 - Click on **Algorithm parameters**, and select/change values as follows:
   - Max target sequences: 5000
   - Expect threshold: 1e-20
 - Click on **BLAST** button to execute.
 
 ### Query Sequences
+
+Here are examples of protein sequences as queries for a BLAST search:
 
 https://rest.uniprot.org/uniprotkb/Q9CD83.fasta
 ```
