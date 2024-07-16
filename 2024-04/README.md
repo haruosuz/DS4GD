@@ -50,7 +50,7 @@
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-9)
 - 2024-06-18 No. 10 - 都市のマイクロバイオーム Urban Microbiome
   - 課題10 [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-10)
-- 2024-06-21 (金) 6限 [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd) 参加は任意です。
+- 2024-06-21 (金) 6限 [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd)
 - 2024-06-25 No. 11 - [Guest Speaker](#guest-speaker) 鈴木 留美子 博士（国立遺伝学研究所）細菌集団の分析方法
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-11)
 - 2024-07-02 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
@@ -60,6 +60,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip) my_script2report/my_script2report.R
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#chunk-options)
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
+  - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 相同 (homologous) | 2章　分子進化 | オーソロガスおよびパラロガスな遺伝子の関係
 - 2024-07-16 No. 14 - 最終回 final class
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-final)
 - 2024-07-18 2024-07-20 補講
