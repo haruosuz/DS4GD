@@ -187,7 +187,7 @@ using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PA
   - Checking the **Align two or more sequences** box will display two text boxes for entering queries.
   - Enter the accession number **NP_417548.1** into the upper search box.
   - Enter the accession number **EFI39110.1** into the lower search box.
-  - Click on **+ Algorithm parameters**, change **Expect threshold** from 0.05 to 10, and then click the **BLAST** button.
+  - Click on **+ Algorithm parameters**, change **Expect threshold** from 0.05 to 100, and then click the **BLAST** button.
   - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the *Bacteroides* EbgC sequences are not homologs of the *Escherichia coli* EbgC sequence.
 
 #### blastp
