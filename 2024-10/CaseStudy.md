@@ -48,7 +48,7 @@ I would like to use one of the following sequence data:
 ## assignment 1
 **課題1 「Introduction to R」**
 
-**my_datasciencedojo_r.R**
+
 
 - 2019/08/27 [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
 
@@ -79,6 +79,31 @@ Rに関する動画を見て、コメントや疑問点を書く。
 #' - ファクターと文字列データの違いは？  
 #' 
 ```
+
+**my_datasciencedojo_r.R**
+
+次のURLからRスクリプトをダウンロードする。  
+Download the R script from the following URL.  
+https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
+
+圧縮ファイルを解凍し、ディレクトリに移動する。  
+unzip the compressed file and change to the directory.  
+```
+unzip scripts_ds4gd.zip
+cd scripts_ds4gd/
+```
+
+[RStudioでRスクリプトを開き、編集し、保存する。  
+Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
+
+[**Compile Report**コマンドでHTML形式のレポートを作成する。  
+Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#compile-report)
+
+[.htmlファイルを課題として K-LMS にて提出する。  
+Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)  
+
+編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
+Please save and backup your edited files in a separate directory. 
 
 ----------
 
@@ -168,29 +193,6 @@ Select, combine, and edit the previous assignments to create a midterm report.
 
 これまでの課題を選択・結合・編集して最終レポートを作成する。  
 Select, combine, and edit the previous assignments to create a final report.  
-
-次のURLからRスクリプトをダウンロードする。  
-Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
-
-圧縮ファイルを解凍し、ディレクトリに移動する。  
-unzip the compressed file and change to the directory.  
-```
-unzip scripts_ds4gd.zip
-cd scripts_ds4gd/
-```
-
-[RStudioでRスクリプトを開き、編集し、保存する。  
-Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
-
-[**Compile Report**コマンドでHTML形式のレポートを作成する。  
-Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#compile-report)
-
-[.htmlファイルを課題として K-LMS にて提出する。  
-Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)  
-
-編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
-Please save and backup your edited files in a separate directory. 
 
 ----------
 
