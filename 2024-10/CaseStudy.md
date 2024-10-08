@@ -48,7 +48,7 @@ I would like to use one of the following sequence data:
 ## assignment 1
 **課題1 「Introduction to R」**
 
-
+**my_datasciencedojo_r.R**
 
 - 2019/08/27 [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
 
@@ -80,12 +80,6 @@ Rに関する動画を見て、コメントや疑問点を書く。
 #' 
 ```
 
-次のURLからRスクリプトをダウンロードする。  
-Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
-
-**my_datasciencedojo_r.R**
-
 ----------
 
 課題「Introduction to R」に対するコメントや疑問点に関連する資料  
@@ -101,7 +95,7 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
+https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip
 
 圧縮ファイルを解凍し、ディレクトリに移動する。  
 unzip the compressed file and change to the directory.  
