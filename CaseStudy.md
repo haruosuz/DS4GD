@@ -100,6 +100,7 @@ Taxon | Severe acute respiratory syndrome coronavirus 2
 | MN908947.3 | NC_045512.2 | 29,903 | 38 |
 
 **References**
+- 2022/07/21 [Easy Access to Data with NLM's NCBI Datasets! - YouTube](https://www.youtube.com/watch?v=L4vn1426Pu8)
 - Apr 5, 2024 [小野 浩雅 ONO, Hiromasa on X: "NCBI Datasets はゲノムデータに関するデータベースです。ゲノムデータの検索、閲覧、取得をワンストップで行うことができます。また、ゲノムデータに付随するアノテーション情報へのアクセスも容易で、配列データを用いて直接BLAST検索することもできます。"](https://twitter.com/h_ono/status/1776147714742317376)
 - 2024.03.28 [NCBI Datasetsを使ってゲノムデータを検索、閲覧、取得する | TogoTV](https://doi.org/10.7875/togotv.2024.029) 11:46
 
