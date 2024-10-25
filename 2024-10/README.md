@@ -17,27 +17,27 @@
   - 課題1 [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-1)
 - 2024-10-08 No. 2 - R言語入門 Introduction to R
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter_installr.R
-  - 課題2 [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-2) my_setup_packages.R
+  - 課題2 [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-2)
 - 2024-10-15 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter1_dna1.R | my_test1_dna.R
-  - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-3) my_assignment_chapter1_dna1.R
+  - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-3)
   - [NCBI Datasets](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-datasets)
 - 2024-10-22 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter2_dna2.R | my_test2_kmer.R
-  - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-4) my_assignment_chapter2_dna2.R
+  - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-4)
 - 2024-10-29 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter4_align.R | my_test3_dotplot.R
-  - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-5) my_assignment_chapter4_align_dotplot.R
+  - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-5)
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
 - 2024-11-05 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter4_align.R
-  - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-6) my_assignment_chapter4_align_pairwise.R
-- 2024-11-12 No. 7 - TBA - Newick tree format | Model
+  - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-6)
+- 2024-11-12 No. 7 - Newick tree format | Model
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_newick.R | my_ds4gd_model.R
-  - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-7) my_tree_aa.R
+  - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-7)
 - 三田祭期間 Mita Festival（2024-11-19 ～ 2024-11-25）
 - 2024-12-03 No. 8 - TBA
-  - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-8) my_ds4gd_report.R
+  - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-8)
 - 2024-12-10 No. 9 - TBA
 - 2024-12-17 No. 10 - TBA
 - 2024-12-24 No. 11 - TBA
