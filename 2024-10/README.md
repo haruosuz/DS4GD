@@ -32,13 +32,13 @@
 - 2024-11-05 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-6)
-- 2024-11-12 No. 7 - Newick tree format | Model
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_newick.R | my_ds4gd_model.R
-  - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-7)
+- 2024-11-12 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
+  - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-7) my_tree_aa.R
 - 三田祭期間 Mita Festival（2024-11-19 ～ 2024-11-25）
 - 2024-12-03 No. 8 - TBA
-  - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-8)
-- 2024-12-10 No. 9 - TBA
+  - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-8) my_ds4gd_report.R
+- 2024-12-10 No. 9 - 系統樹を表現するテキスト形式ファイル Newick tree format | モデル Model
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_newick.R | my_ds4gd_model.R
 - 2024-12-17 No. 10 - TBA
 - 2024-12-24 No. 11 - TBA
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
@@ -48,7 +48,6 @@
 - 2025-01-14 No. 13 - Text formatting with Markdown
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_script2report/my_script2report.R
   - [Chunk options](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#chunk-options)
-  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - 有根系統樹と無根系統樹 (Rooted and Unrooted Phylogenetic Trees) | 外群 (Outgroup)
 - 2025-01-21 No. 14 - 最終回 final class
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-final)
