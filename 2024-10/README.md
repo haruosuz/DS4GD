@@ -35,10 +35,11 @@
 - 2024-11-12 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-7) my_tree_aa.R
 - 三田祭期間 Mita Festival（2024-11-19 ～ 2024-11-25）
-- 2024-12-03 No. 8 - TBA
+- 2024-12-03 No. 8 - 多重置換 Multiple Substitutions | 進化距離 Evolutionary Distances
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_model.R
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-8) my_ds4gd_report.R
-- 2024-12-10 No. 9 - 系統樹を表現するテキスト形式ファイル Newick tree format | モデル Model
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_newick.R | my_ds4gd_model.R
+- 2024-12-10 No. 9 - 系統樹を表現するテキスト形式ファイル Newick tree format
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_newick.R
 - 2024-12-17 No. 10 - TBA
 - 2024-12-24 No. 11 - TBA
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
