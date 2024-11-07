@@ -13,8 +13,9 @@
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
 - [assignment 5](#assignment-5) 課題5 「Dotplot」
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
-- [assignment 7](#assignment-7) 課題7 「Choosing and Acquiring Sequences」
-- [assignment 8](#assignment-8) 課題8 「midterm report」
+- [assignment 7](#assignment-7) 課題7 「midterm report」
+- [assignment 8](#assignment-8) 課題8 「Guest speaker」
+- [assignment 9](#assignment-9) 課題9 「Choosing and Acquiring Sequences」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「final report」
 
@@ -143,7 +144,23 @@ Please save and backup your edited files in a separate directory.
 
 ----------
 ## assignment 7
-**課題7 「Choosing and Acquiring Sequences」**
+**課題7 「midterm report」**
+
+これまでの課題を選択・結合・編集して中間レポートを作成する。  
+Select, combine, and edit the previous assignments to create a midterm report.  
+
+**my_ds4gd_report.R**
+
+----------
+## assignment 8
+**課題8 「Guest speaker」**
+
+本日の特別講演に関するコメントや質問など記載して提出する。  
+Please write and submit any comments, questions, or anything else related to today's special lecture.  
+
+----------
+## assignment 9
+**課題9 「Choosing and Acquiring Sequences」**
 
 [BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)  
 Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
@@ -171,15 +188,6 @@ The R script will generate the following output files:
 - `myTable.tsv`: Sequence information, including length and annotations.
 
 ----------
-## assignment 8
-**課題8 「midterm report」**
-
-これまでの課題を選択・結合・編集して中間レポートを作成する。  
-Select, combine, and edit the previous assignments to create a midterm report.  
-
-**my_ds4gd_report.R**
-
-----------
 ## assignment 12
 **課題12 「Multiple Alignment and Phylogenetic trees」**
 
@@ -203,7 +211,4 @@ my_assignment_chapter5_msa_tree.R
 ```
 
 ----------
-
-
-
 
