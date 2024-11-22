@@ -9,8 +9,7 @@
 ## Class Schedule & Materials
 **講義日程と資料**
 
-- [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | Class Calendar
-  - [2024年度 SFC授業カレンダー（2024.8.5更新）](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf) | https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf
+- [2024年度授業カレンダー_Class calendar for the year AY 2024.pdf](https://keio.box.com/s/cbc8kqhls14qc5wba354gynmovqdpm8e)
 - [References](#references)
 - 2024-10-01 No. 1 - イントロダクション Introduction
   - [R RStudio](#r-rstudio)
@@ -34,11 +33,10 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-6)
 - 2024-11-12 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-7) my_ds4gd_report.R
-- [補講](https://www.sfc.keio.ac.jp/doc/2024_classcalendars_jp.pdf)
-[Makeup Class Day](https://www.sfc.keio.ac.jp/en/docs/2024_classcalendars_en.pdf)
-- 2024-11-19 No. 8 - 多重置換 Multiple Substitutions | 進化距離 Evolutionary Distances
+- 2024-11-19 補講 Makeup Class Day | No. 8 - 多重置換 Multiple Substitutions | 進化距離 Evolutionary Distances
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_model.R
 - 2024-11-19 ～ 2024-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
+- 2024-11-26 [SFC（総・環・政メ）は通常の授業なし No regular classes at SFC (PM,EI,MG)](https://keio.box.com/s/cbc8kqhls14qc5wba354gynmovqdpm8e)
 - 2024-12-03 No. 9 - [Guest Speaker](#guest-speaker)
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-9)
 - 2024-12-10 - 休講 no class
