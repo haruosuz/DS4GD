@@ -62,8 +62,8 @@ People outside of Keio University SFC will also attend the lectures.
 ### 2024-12-03
 - Speaker: Dr. Jun Inoue (The University of Tokyo)  
 井上 潤 博士（東京大学）
-https://fish-evol.org/
-- Title: 
+- Website: https://fish-evol.org/
+- Slides: [分子系統解析 Molecular Phylogenetic Analysis](https://yurai.aori.u-tokyo.ac.jp/slide_keio24/20241203_inoue_keiko.pdf)
 
 ----------
 ## References
