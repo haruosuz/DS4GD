@@ -37,7 +37,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_model.R
 - 2024-11-19 ～ 2024-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2024-11-26 [SFC（総・環・政メ）は通常の授業なし No regular classes at SFC (PM,EI,MG)](https://keio.box.com/s/cbc8kqhls14qc5wba354gynmovqdpm8e)
-- 2024-12-03 No. 9 - [Guest Speaker](#guest-speaker)
+- 2024-12-03 No. 9 - [Guest Speaker](#guest-speaker) [Online]
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-9)
 - 2024-12-10 - 休講 no class
 - 2024-12-17 No. 10 - TBA
