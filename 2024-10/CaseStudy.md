@@ -15,6 +15,7 @@
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「midterm report」
 - [assignment 9](#assignment-9) 課題9 「Guest speaker」
+- [assignment 11](#assignment-11) 課題11 「Choosing and Acquiring Sequences」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「final report」
 
@@ -144,8 +145,8 @@ my_assignment_chapter4_align_pairwise.R
 Please write and submit any comments, questions, or anything else related to today's special lecture.  
 
 ----------
-## assignment X
-**課題X 「Choosing and Acquiring Sequences」**
+## assignment 11
+**課題11 「Choosing and Acquiring Sequences」**
 
 [BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)  
 Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
