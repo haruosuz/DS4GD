@@ -42,7 +42,7 @@
 - 2024-12-10 - 休講 no class
 - 2024-12-17 No. 10 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_newick.R
-- 2024-12-24 No. 11 - Choosing and Acquiring Sequences
+- 2024-12-24 No. 11 - [Online] Choosing and Acquiring Sequences
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_tree_aa/my_tree_aa.R
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-11)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
