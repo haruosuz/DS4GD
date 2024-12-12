@@ -44,7 +44,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_newick.R
 - 2024-12-24 No. 11 - [Online] Choosing and Acquiring Sequences
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_tree_aa/my_tree_aa.R
-  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-11)
+  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-11)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
 - 2025-01-07 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
