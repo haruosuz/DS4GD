@@ -24,7 +24,8 @@
 - 2024-10-22 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter2_dna2.R | my_test2_kmer.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-4)
-- 2024-10-29 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
+- 2024-10-28 - 2024-10-31 日本微生物生態学会 [JSME @ Hiroshima](https://2024.jsme-conference.net/about/)
+- 2024-10-29 No. 5 - [Online] タンパク質配列データベース UniProt | ドットプロット Dotplot
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter4_align.R | my_test3_dotplot.R
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-5)
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
@@ -33,7 +34,7 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-6)
 - 2024-11-12 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-7) my_ds4gd_report.R
-- 2024-11-19 補講 Makeup Class Day | No. 8 - 多重置換 Multiple Substitutions | 進化距離 Evolutionary Distances
+- 2024-11-19 No. 8 - [Online] 補講 Makeup Class Day | 多重置換 Multiple Substitutions | 進化距離 Evolutionary Distances
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_model.R
 - 2024-11-19 ～ 2024-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2024-11-26 [SFC（総・環・政メ）は通常の授業なし No regular classes at SFC (PM,EI,MG)](https://keio.box.com/s/cbc8kqhls14qc5wba354gynmovqdpm8e)
