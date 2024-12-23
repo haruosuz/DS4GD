@@ -169,6 +169,8 @@ https://www.uniprot.org/blast/
 - Click the **Run BLAST** button.  
 **Run BLAST**ボタンをクリックする。
 - [Tool results](https://www.uniprot.org/tool-dashboard)
+- Check the box on the left side of the "Entry", click the "Add" button to execute "Add NN entries to the basket".
+「Entry」の左側をチェックし、「Add」ボタンをクリックして、ヒットした配列をバスケットに追加する。
 - Click on the image (Basket) located at the top right of the "BLAST results | UniProt" page.  
 「BLAST results | UniProt」ページの右上にある画像（Basket）をクリックする。  
 - Click on "Download" below "My Basket". Select "No" under "Compressed".  
