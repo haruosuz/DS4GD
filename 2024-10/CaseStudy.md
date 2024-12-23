@@ -157,7 +157,7 @@ Copy the downloaded file ("uniprotkb_YYYY_MM_DD.fasta") and give it a different 
 ```
 cp uniprotkb_YYYY_MM_DD.fasta myAA.fasta
 
-cp uniprotkb_2024_05_21.fasta myAA.fasta
+cp uniprotkb_2024_12_24.fasta myAA.fasta
 ```
 
 **my_tree_aa/my_tree_aa.R**
