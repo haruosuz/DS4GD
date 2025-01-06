@@ -125,6 +125,9 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 **my_ds4gd_report.R**
 
+これまでの課題を選択・結合・編集して、中間レポートを作成する。  
+Select, combine, and edit the previous assignments to create a midterm report.  
+
 ----------
 ## assignment 9
 **課題9 「Guest speaker」**
