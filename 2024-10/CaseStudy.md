@@ -125,18 +125,6 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 **my_ds4gd_report.R**
 
-これまでの課題を選択・結合・編集して、中間レポートを作成する。  
-Select, combine, and edit the previous assignments to create a midterm report.  
-
-レポートは、以下のスクリプトからコードをコピーし、それを自分のスクリプトに貼り付けて編集することで作成します。  
-The report will be created by copying the code from the script below, pasting it into your script, and editing it.  
-```
-my_assignment_chapter1_dna1.R
-my_assignment_chapter2_dna2.R
-my_assignment_chapter4_align_dotplot.R
-my_assignment_chapter4_align_pairwise.R
-```
-
 ----------
 ## assignment 9
 **課題9 「Guest speaker」**
@@ -211,8 +199,8 @@ Please save and backup your edited files in a separate directory.
 これまでの課題を選択・結合・編集して、最終レポートを作成する。  
 Select, combine, and edit the previous assignments to create a final report.  
 
-例えば、最終レポートは、以下のスクリプトを使用して作成できます。  
-For example, the final report can be created using the scripts below.  
+例えば、以下のスクリプトを使用して、レポートを作成できます。  
+For example, the report can be created using the scripts below.  
 ```
 my_assignment_chapter1_dna1.R
 my_assignment_chapter2_dna2.R
