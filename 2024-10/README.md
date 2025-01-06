@@ -33,7 +33,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-6)
 - 2024-11-12 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
-  - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-7) my_ds4gd_report.R
+  - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-7)
 - 2024-11-19 No. 8 - [Online] 補講 Makeup Class Day | 多重置換 Multiple Substitutions | 進化距離 Evolutionary Distances
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_ds4gd_model.R
 - 2024-11-19 ～ 2024-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
@@ -47,7 +47,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_tree_aa/my_tree_aa.R
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-11)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
-- 2025-01-07 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
+- 2025-01-07 No. 12 - [Online] 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-12) my_assignment_chapter5_msa_tree.R
 - 2025-01-14 No. 13 - QA
