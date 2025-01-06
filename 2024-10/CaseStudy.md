@@ -123,7 +123,7 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 ## assignment 7
 **課題7 「midterm report」**
 
-これまでの課題を選択・結合・編集して中間レポートを作成する。  
+これまでの課題を選択・結合・編集して、中間レポートを作成する。  
 Select, combine, and edit the previous assignments to create a midterm report.  
 
 レポートは、以下のスクリプトからコードをコピーし、それを自分のスクリプトに貼り付けて編集することで作成します。  
