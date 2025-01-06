@@ -209,8 +209,8 @@ Please save and backup your edited files in a separate directory.
 これまでの課題を選択・結合・編集して最終レポートを作成する。  
 Select, combine, and edit the previous assignments to create a final report.  
 
-最終レポートは、以下のスクリプトからコードをコピーし、それを自分のスクリプトに貼り付けて編集することで作成します。  
-The final report will be created by copying the code from the script below, pasting it into your script, and editing it.  
+例えば、最終レポートは、以下のスクリプトを使用して作成できます。  
+For example, the final report can be created using the scripts below.  
 ```
 my_assignment_chapter1_dna1.R
 my_assignment_chapter2_dna2.R
@@ -220,8 +220,4 @@ my_assignment_chapter5_msa_tree.R
 ```
 
 ----------
-
-
-
-
 
