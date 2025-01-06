@@ -123,6 +123,8 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 ## assignment 7
 **課題7 「midterm report」**
 
+**my_ds4gd_report.R**
+
 これまでの課題を選択・結合・編集して、中間レポートを作成する。  
 Select, combine, and edit the previous assignments to create a midterm report.  
 
@@ -134,8 +136,6 @@ my_assignment_chapter2_dna2.R
 my_assignment_chapter4_align_dotplot.R
 my_assignment_chapter4_align_pairwise.R
 ```
-
-**my_ds4gd_report.R**
 
 ----------
 ## assignment 9
@@ -205,6 +205,8 @@ Please save and backup your edited files in a separate directory.
 ----------
 ## assignment final
 **最終課題 「final report」**
+
+**my_ds4gd_report.R**
 
 これまでの課題を選択・結合・編集して、最終レポートを作成する。  
 Select, combine, and edit the previous assignments to create a final report.  
