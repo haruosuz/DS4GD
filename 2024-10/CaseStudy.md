@@ -206,7 +206,7 @@ Please save and backup your edited files in a separate directory.
 ## assignment final
 **最終課題 「final report」**
 
-これまでの課題を選択・結合・編集して最終レポートを作成する。  
+これまでの課題を選択・結合・編集して、最終レポートを作成する。  
 Select, combine, and edit the previous assignments to create a final report.  
 
 例えば、最終レポートは、以下のスクリプトを使用して作成できます。  
