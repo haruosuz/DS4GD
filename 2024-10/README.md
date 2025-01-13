@@ -54,7 +54,7 @@
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-final)
 - 2025-01-21 No. 14 - [Online] 最終回 final class
   - 最終発表 [final presentation](#final-presentation)
-- 2025-01-28 No. 15 - 参加は任意です。 Participation is voluntary. 都市の微生物 Urban Microbiome [MetaSUB](https://x.com/metasub) 
+- 2025-01-28 No. 15 - 参加は任意です。 Participation is voluntary. 都市の微生物 Urban Microbiome [MetaSUB](https://github.com/haruosuz/metasub/blob/master/README.md) 
 
 ----------
 ## final presentation
