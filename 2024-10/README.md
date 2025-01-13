@@ -49,10 +49,10 @@
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/4）
 - 2025-01-07 No. 12 - [Online] 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
-  - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-12) my_assignment_chapter5_msa_tree.R
-- 2025-01-14 No. 13 - QA
-- 2025-01-21 No. 14 - 最終回 final class
+  - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-12)
+- 2025-01-14 No. 13 - [Online] QA
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-final)
+- 2025-01-21 No. 14 - [Online] 最終回 final class
 - 2025-01-28 No. 15 - 参加は任意です。 Participation is voluntary. 都市の微生物 Urban Microbiome [MetaSUB](https://x.com/metasub) 
 
 ----------
