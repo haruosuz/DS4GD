@@ -60,9 +60,9 @@
 ## final presentation
 **口頭発表**
 
-Presentation time: 3 minutes will be allocated for each presentation (including Q&A). Share your final report (**my_ds4gd_report.html** file), and present your main findings from the analysis of DNA and protein sequences. Examples of analyses include DNA sequence statistics (length, GC content, and local variation in base composition), dot plots, pairwise sequence alignment, multiple sequence alignment, phylogenetic trees, etc.
+Presentation time: 3 minutes will be allocated for each presentation (including Q&A). Share your final report (**my_ds4gd_report.html** file), and present your main findings from the analysis of DNA/protein sequences. Examples of analyses include DNA sequence statistics (length, GC content, and local variation in base composition), dot plots, pairwise sequence alignment, multiple sequence alignment, phylogenetic trees, etc.
 
-発表時間：1人あたり最大3分（質疑応答を含む）。最終レポート（**my_ds4gd_report.html**ファイル）を共有し、DNAやタンパク質配列の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成の局所変動）、ドットプロット、ペアワイズ配列アラインメント、多重整列、系統樹などが含まれる。
+発表時間：1人あたり最大3分（質疑応答を含む）。最終レポート（**my_ds4gd_report.html**ファイル）を共有し、DNA/タンパク質配列の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成の局所変動）、ドットプロット、ペアワイズ配列アラインメント、多重整列、系統樹などが含まれる。
 
 ----------
 ## Guest speaker
