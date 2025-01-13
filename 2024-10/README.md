@@ -53,7 +53,16 @@
 - 2025-01-14 No. 13 - [Online] 相同性 Homology | 外群 Outgroup
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-final)
 - 2025-01-21 No. 14 - [Online] 最終回 final class
+  - 最終発表 [final presentation](#final-presentation)
 - 2025-01-28 No. 15 - 参加は任意です。 Participation is voluntary. 都市の微生物 Urban Microbiome [MetaSUB](https://x.com/metasub) 
+
+----------
+## final presentation
+**口頭発表**
+
+Presentation time: 3 minutes will be allocated for each presentation (including Q&A). Report your main findings on analyses of objects (DNA, protein, and other textual sequences, etc.) you're interested in. The analyses can include DNA sequence statistics (length, GC content, and local variation in base composition), dotplot, pairwise sequence alignment, multiple sequence alignment, and phylogenetic trees, etc.
+
+発表時間：1人あたり最大3分（質疑応答を含む）。興味あるオブジェクト（DNA、タンパク質、その他のテキスト配列など）の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成の局所変動）、ドットプロット、ペアワイズ配列アラインメント、多重整列、系統樹などが含まれる。
 
 ----------
 ## Guest speaker
