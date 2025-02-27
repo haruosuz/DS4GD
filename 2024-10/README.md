@@ -52,12 +52,8 @@
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-12)
 - 2025-01-14 No. 13 - [Online] 相同性 Homology | 外群 Outgroup
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2024-10/CaseStudy.md#assignment-final)
-- 2025-01-21 No. 14 - [Online] 最終回 final class
-  - 最終発表 [final presentation](#final-presentation)
+- 2025-01-21 No. 14 - [Online] 最終発表 [final presentation](#final-presentation)
 - 2025-01-28 No. 15 - 都市の微生物 Urban Microbiome [MetaSUB](https://github.com/haruosuz/metasub/blob/master/README.md) 
-
-参加は任意です。
-Participation is voluntary. 
 
 ----------
 ## final presentation
