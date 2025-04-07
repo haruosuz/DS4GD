@@ -1,8 +1,8 @@
 # 2024-10
 
 生命動態のデータサイエンス / DATA SCIENCE FOR GENOME DYNAMICS [DS2]  
-[K-LMS](https://lms.keio.jp/courses/102414)  
-[Syllabus](https://syllabus.sfc.keio.ac.jp/courses/2024_25381)
+[K-LMS](https://lms.keio.jp/courses/117323)  
+[Syllabus](https://syllabus.sfc.keio.ac.jp/courses/2025_41550)
 
 ----------
 
