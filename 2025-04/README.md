@@ -1,4 +1,4 @@
-# 2024-10
+# 2025-04
 
 生命動態のデータサイエンス / DATA SCIENCE FOR GENOME DYNAMICS [DS2]  
 [K-LMS](https://lms.keio.jp/courses/117323)  
@@ -70,6 +70,7 @@ People outside of Keio University SFC will also attend the lectures.
 ## References
 **参考文献**
 
+- 2018-11-19 藤博幸（編） - よくわかるバイオインフォマティクス入門 https://www.kspub.co.jp/book/detail/5138212.html | 1章　配列解析 | 2章　分子進化 | 6章　ゲノム解析
 - [2011-06-10 Avril Coghlan - "A Little Book of R For Bioinformatics"](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
 - [CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p.](https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283)
   - 26章 系統と生命の樹 [Phylogeny and the Tree of Life (pdf)](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
@@ -82,13 +83,15 @@ People outside of Keio University SFC will also attend the lectures.
 - [Posit Cloud (formerly RStudio Cloud)](https://github.com/haruosuz/r4bioinfo/blob/master/references/RStudioCloud.md)
   - 2023.12.12 | 52:32 | "Posit Cloud (旧：RStudio Cloud) を用いて生物配列データ解析に取り組む @ AJACSオンライン18" https://doi.org/10.7875/togotv.2023.087
   - 2021-03-18 | 04:00 | "RStudio Cloud を使ってウェブブラウザ上でR(Studio)を利用する" https://doi.org/10.7875/togotv.2021.022
-- 2023/02/01 | Equitable Equations | Learn R in 39 minutes | https://www.youtube.com/watch?v=yZ0bV2Afkjc
+- 2023/02/01 | Equitable Equations | Learn R in 39 minutes https://www.youtube.com/watch?v=yZ0bV2Afkjc
+- 2022/07/12 | 20:20 | 白黒パンダの統計教室 | 基礎から始める　R言語を使った統計解析　第１回『RとRstudioのインストールと初期設定』 https://www.youtube.com/watch?v=vdTte2Wsx1I
+- 2022/04/17 | 13:01 | 三木 健miki takeshi | RStudioで広がる統計解析：RStudioのインストール https://www.youtube.com/watch?v=GtR1qCB-tfc
 - 2021/02/16 | 5:23 | R Programming - DDS | "How to download and install R and RStudio" https://youtu.be/TFGYlKvQEQ4
 - 2020-01-25 | 5:17 | Pydemy | "R - Install R and R Studio on Windows, Mac, Linux (2020) - R Programming Tutorial for Beginners" https://youtu.be/YBAWVNWiZlU
 - 2020-10-11 | 6:00 | R for Ecology | "R for Ecologists (lesson 1) Installing R and RStudio" https://youtu.be/YKvkXKeGoa8
-- 2018-04-08 | 5:18 | "統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜" https://doi.org/10.7875/togotv.2018.098
-- 2017-05-12 | 7:42 | "RStudioでRを直感的に使おう MacOS版 2017" https://doi.org/10.7875/togotv.2017.043
-- 2014-02-21 | 11:06 | "RStudioでRを直感的に使おう" https://doi.org/10.7875/togotv.2014.008
+- 2018.04.08 | 5:18 | "統計解析ソフト「R」の使い方 〜Rの導入・パッケージの導入・作図・統計解析の基本編〜" https://doi.org/10.7875/togotv.2018.098
+- 2017.05.12 | 7:42 | "RStudioでRを直感的に使おう MacOS版 2017" https://doi.org/10.7875/togotv.2017.043
+- 2014.02.21 | 11:06 | "RStudioでRを直感的に使おう" https://doi.org/10.7875/togotv.2014.008
 
 <img src="https://d33wubrfki0l68.cloudfront.net/8a64bb047429d7ae0e2acae35c40e421e6439bf6/80e5d/diagrams/rstudio-editor.png" alt="https://r4ds.had.co.nz/workflow-scripts.html" width=50%>
 
