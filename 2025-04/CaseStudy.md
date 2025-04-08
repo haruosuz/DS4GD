@@ -49,10 +49,6 @@ I would like to use one of the following sequence data:
 ## assignment 1
 **課題1 「Introduction to R」**
 
-**my_datasciencedojo_r.R**
-
-- 2019/08/27 [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)
-
 Watch the videos about R, and write your comments or questions.  
 Rに関する動画を見て、コメントや疑問点を書く。  
 
@@ -60,7 +56,7 @@ Rに関する動画を見て、コメントや疑問点を書く。
 ```
 #' 
 #' I watched the videos Part 2 to Part 11 of  
-#' [Introduction to R Programming - Data Science Dojo].  
+#' [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx).  
 #' 
 #' My questions are as follows:  
 #' - What is the difference between Data Frames and Lists in R?  
@@ -73,7 +69,7 @@ Rに関する動画を見て、コメントや疑問点を書く。
 ```
 #' 
 #' 次の動画の Part 2 から Part 11 を見た。  
-#' [Introduction to R Programming - Data Science Dojo]  
+#' [Introduction to R Programming - Data Science Dojo](https://www.youtube.com/playlist?list=PL8eNk_zTBST8j2BU5HYFQogdCjtrHyQAx)  
 #' 
 #' 疑問点は次の通りである。  
 #' - 行列とデータフレームとリストの違いが理解できなかった。  
