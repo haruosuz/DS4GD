@@ -49,6 +49,12 @@ I would like to use one of the following sequence data:
 ## assignment 1
 **課題1 「Introduction to R」**
 
+[K-LMS にて提出する。
+Submit it via K-LMS.](https://lms.keio.jp/)  
+https://lms.keio.jp/courses/117323/assignments/1110476
+提出方法	テキスト入力ボックス
+期限	2025年4月13日
+
 Watch the videos about R, and write your comments or questions.  
 Rに関する動画を見て、コメントや疑問点を書く。  
 
