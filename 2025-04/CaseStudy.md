@@ -95,6 +95,29 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 **my_setup_packages.R**
 
+次のURLからRスクリプトをダウンロードする。  
+Download the R script from the following URL.  
+https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip
+
+圧縮ファイルを解凍し、ディレクトリに移動する。  
+unzip the compressed file and change to the directory.  
+```
+unzip scripts_ds4gd.zip
+cd scripts_ds4gd/
+```
+
+[RStudioでRスクリプトを開き、編集し、保存する。  
+Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
+
+[**Compile Report**コマンドでHTML形式のレポートを作成する。  
+Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#compile-report)
+
+[.htmlファイルを課題として K-LMS にて提出する。  
+Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)  
+
+編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
+Please save and backup your edited files in a separate directory. 
+
 
 ----------
 ## assignment 3
@@ -189,29 +212,6 @@ my_assignment_chapter4_align_dotplot.R
 my_assignment_chapter4_align_pairwise.R
 my_assignment_chapter5_msa_tree.R
 ```
-
-次のURLからRスクリプトをダウンロードする。  
-Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip
-
-圧縮ファイルを解凍し、ディレクトリに移動する。  
-unzip the compressed file and change to the directory.  
-```
-unzip scripts_ds4gd.zip
-cd scripts_ds4gd/
-```
-
-[RStudioでRスクリプトを開き、編集し、保存する。  
-Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
-
-[**Compile Report**コマンドでHTML形式のレポートを作成する。  
-Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#compile-report)
-
-[.htmlファイルを課題として K-LMS にて提出する。  
-Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)  
-
-編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
-Please save and backup your edited files in a separate directory. 
 
 ----------
 
