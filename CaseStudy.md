@@ -38,6 +38,7 @@ https://github.com/haruosuz/DS4GD/
 [R_read.table](#r_readtable)
 [R_typeof](#r_typeof)
 [R_vector](#r_vector)
+- [Genome signature](#genome-signature) ゲノムの特徴
 - [](#)
 
 https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
@@ -1050,5 +1051,101 @@ setdiff(x, y)	差集合
 
 ----------
 
+## Genome signature
+**ゲノムの特徴**
+
+- [Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
+- [Coutinho TJ et al. (2015) "Homology-independent metrics for comparative genomics."](https://www.ncbi.nlm.nih.gov/pubmed/26029354)
+- [g-language documents](https://github.com/gaou/g-language/wiki/Documents) | 
+[Nucleotide composition analysis](https://github.com/gaou/g-language/wiki/restgenomeanalysisenglish#nucleotide-composition-analysis) | 
+[塩基組成の解析](https://github.com/gaou/g-language/wiki/restgenomeanalysisjapanese#塩基組成の解析)
+- http://bioinfo.ie.niigata-u.ac.jp/?ゲノムサインとその生物学的な意味の解明
+
+**細菌とアーキアにおけるゲノムサイズとGC含量**  
+**Genome Size and GC Content in Bacteria and Archaea**  
+
+- [Martinez-Gutierrez et al. PLoS Genet. 2022 May 23;18(5):e1010220. "Genome size distributions in bacteria and archaea are strongly linked to evolutionary history at broad phylogenetic scales"](https://pubmed.ncbi.nlm.nih.gov/35605022/)
+- [Westoby et al. Ecol Evol. 2021 Mar 16;11(9):3956-3976. "Cell size, genome size, and maximum growth rate are near-independent dimensions of ecological variation across bacteria and archaea"](https://pubmed.ncbi.nlm.nih.gov/33976787/)
+- [Almpanis A et al.  Microb Genom. 2018 Apr;4(4). "Correlation between bacterial G+C content, genome size and the G+C content of associated plasmids and bacteriophages."](https://www.ncbi.nlm.nih.gov/pubmed/29633935)
+- [Bohlin J et al. Environ Microbiol Rep. 2014 Jun;6(3):278-86. "Positive correlations between genomic %AT and genome size within strains of bacterial species."](https://pubmed.ncbi.nlm.nih.gov/24983532/)
+  - [Wiley Online Library Open Access](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/uccs31/cdi_proquest_miscellaneous_1542648747)
+- [McCutcheon JP et al. PLoS Genet. 2009 Jul;5(7):e1000565. "Origin of an alternative genetic code in the extremely small and GC-rich genome of a bacterial symbiont."](https://www.ncbi.nlm.nih.gov/pubmed/19609354)
+
+[Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
+
+<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg" width=50%>
+
+**至適増殖温度とアミノ酸・コドン使用**  
+**Optimal Growth Temperature and Amino Acid and Codon Usage**  
+
+- [Zeldovich et al. PLoS Comput Biol. 2007 Jan 12;3(1):e5. "Protein and DNA sequence determinants of thermophilic adaptation"](https://pubmed.ncbi.nlm.nih.gov/17222055/)
+
+Correlation between the Sum F of Fractions of Ile, Val, Tyr, Trp, Arg, Glu, and Leu (IVYWREL) Amino Acids in 86 Proteomes and the OGT of Organisms T opt
+
+<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1769408/bin/pcbi.0030005.g001.jpg" width=50%>
+
+- [Lynn et al. Nucleic Acids Res. 2002 Oct 1;30(19):4272-7. "Synonymous codon usage is subject to selection in thermophilic bacteria"](https://pubmed.ncbi.nlm.nih.gov/12364606/)
+
+Variation in codon usage within and between genomes. 
+
+<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg" width=50%>
+
+**好塩菌と非好塩菌のアミノ酸使用**  
+**Amino Acid Usage in Halophiles Halophiles and Non-Halophiles**  
+
+- [Paul et al. (2008) Genome Biol. "Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes"](https://pubmed.ncbi.nlm.nih.gov/18397532/)
+
+Figure 1 [Grouping of halophiles and non-halophiles according to their standardized amino acid usage.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/figure/F1/)
+
+<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/bin/gb-2008-9-4-r70-1.jpg" width=50%>
+
+**ウイルスと宿主のアミノ酸・コドン使用**  
+**Amino Acid and Codon Usage in Viruses and Hosts**  
+
+- [Bahir et al. (2009) "Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences"](https://pubmed.ncbi.nlm.nih.gov/19888206/)
+
+Figure 3 [Amino acid distribution and codon usage in viruses infecting taxonomy-unified hosts. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f3/)
+
+<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f3.jpg" width=50%>
+
+Figure 6 [Similarity in GC content and codon usage between pairs of viruses and hosts.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f6/)
+
+<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f6.jpg" width=50%>
+
+**プラスミドと宿主染色体のGC含量**  
+**GC Content of Plasmids and Host Chromosomes**  
+
+- [Yano et al. (2019) "Reconsidering plasmid maintenance factors for computational plasmid design"](https://www.sciencedirect.com/science/article/pii/S2001037018301685)
+
+Fig. 5. [Plot of G + C contents of 209 plasmids and their host chromosomes.](https://www.sciencedirect.com/science/article/pii/S2001037018301685#f0025)
+ The G + C contents of plasmids tend to be lower than (and are correlated with) those of the host chromosomes.
+
+![](https://ars.els-cdn.com/content/image/1-s2.0-S2001037018301685-gr5.jpg)
+
+**コドン使用に基づく高発現遺伝子の予測**  
+**Predicting Highly Expressed Genes Based on Codon Usage**  
+
+- [Karlin et al. (2001) J Bacteriol "Characterizations of Highly Expressed Genes of Four Fast-Growing Bacteria"](https://pubmed.ncbi.nlm.nih.gov/11489855/)
+
+FIG. 1 [Genes of ≥100 codons in the four fast-growing bacteria. Each gene is represented by a single point. Its position is determined by its bias relative to all genes B(g|C) and by its bias relative to the RP genes B(g|RP).](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/figure/F1/)
+
+<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC95378/bin/jb1710100001.jpg" width=50%>
+
+**GC含量、連続塩基組成、アミノ酸・コドン使用に基づく外来性遺伝子クラスターの検出**  
+**Detecting Exogenous Gene Clusters Based on GC Content, Oligonucleotide Composition, and Amino Acid and Codon Usage**  
+
+- [Karlin S (2001) Trends Microbiol. "Detecting anomalous gene clusters and pathogenicity islands in diverse bacterial genomes."](https://www.ncbi.nlm.nih.gov/pubmed/11435108) | [pdf](https://eclass.uoa.gr/modules/document/file.php/D473/Βιβλιογραφία/DNA%20Composition/Karlin_2001.pdf)
+
+Fig. 1. [The contrasts are displayed for 20 and 50 kb sliding window plots of G+C content, genomic signature profiles, codon usage biases and amino acid anomalies for eight different bacterial species.](https://www.sciencedirect.com/science/article/pii/S0966842X01020790#FIG1)
+
+![](https://ars.els-cdn.com/content/image/1-s2.0-S0966842X01020790-gr1.jpg)
+
+----------
+
+https://github.com/haruosuz/codon/blob/master/README.md#temperature
+
+https://github.com/haruosuz/mgsa/blob/master/references/mgsa.tools.md#growth-rate
+
+----------
 
 
