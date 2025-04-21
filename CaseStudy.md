@@ -1073,44 +1073,44 @@ setdiff(x, y)	差集合
 
 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
 
-<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg" width=50%>
+<img alt="" src="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=2704378_pgen.1000565.g001.jpg" width=50%>
 
 **至適増殖温度とアミノ酸・コドン使用**  
 **Optimal Growth Temperature and Amino Acid and Codon Usage**  
 
-- [Zeldovich et al. PLoS Comput Biol. 2007 Jan 12;3(1):e5. "Protein and DNA sequence determinants of thermophilic adaptation"](https://pubmed.ncbi.nlm.nih.gov/17222055/)
+- [Zeldovich et al. PLoS Comput Biol. 2007 Jan 12;3(1):e5. "Protein and DNA sequence determinants of thermophilic adaptation"](https://pmc.ncbi.nlm.nih.gov/articles/PMC1769408/)
 
-Correlation between the Sum F of Fractions of Ile, Val, Tyr, Trp, Arg, Glu, and Leu (IVYWREL) Amino Acids in 86 Proteomes and the OGT of Organisms T opt
+[Correlation between the Sum F of Fractions of Ile, Val, Tyr, Trp, Arg, Glu, and Leu (IVYWREL) Amino Acids in 86 Proteomes and the OGT of Organisms T opt](https://pmc.ncbi.nlm.nih.gov/articles/PMC1769408/figure/pcbi-0030005-g001/)
 
-<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1769408/bin/pcbi.0030005.g001.jpg" width=50%>
+<img alt="" src="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=1782037_pcbi.0030005.g001.jpg" width=50%>
 
-- [Lynn et al. Nucleic Acids Res. 2002 Oct 1;30(19):4272-7. "Synonymous codon usage is subject to selection in thermophilic bacteria"](https://pubmed.ncbi.nlm.nih.gov/12364606/)
+- [Lynn et al. Nucleic Acids Res. 2002 Oct 1;30(19):4272-7. "Synonymous codon usage is subject to selection in thermophilic bacteria"](https://pmc.ncbi.nlm.nih.gov/articles/PMC140546/)
 
-Variation in codon usage within and between genomes. 
+[Variation in codon usage within and between genomes.](https://pmc.ncbi.nlm.nih.gov/articles/PMC140546/figure/gkf546f2/)
 
-<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC140546/bin/gkf546f2.jpg" width=50%>
+<img alt="" src="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=140546_gkf546f2.jpg" width=50%>
 
 **好塩菌と非好塩菌のアミノ酸使用**  
 **Amino Acid Usage in Halophiles Halophiles and Non-Halophiles**  
 
-- [Paul et al. (2008) Genome Biol. "Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes"](https://pubmed.ncbi.nlm.nih.gov/18397532/)
+- [Paul et al. (2008) Genome Biol. "Molecular signature of hypersaline adaptation: insights from genome and proteome composition of halophilic prokaryotes"](https://pmc.ncbi.nlm.nih.gov/articles/PMC2643941/)
 
 Figure 1 [Grouping of halophiles and non-halophiles according to their standardized amino acid usage.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/figure/F1/)
 
-<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643941/bin/gb-2008-9-4-r70-1.jpg" width=50%>
+<img alt="" src="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=2643941_gb-2008-9-4-r70-1.jpg" width=50%>
 
 **ウイルスと宿主のアミノ酸・コドン使用**  
 **Amino Acid and Codon Usage in Viruses and Hosts**  
 
-- [Bahir et al. (2009) "Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences"](https://pubmed.ncbi.nlm.nih.gov/19888206/)
+- [Bahir et al. (2009) "Viral adaptation to host: a proteome-based analysis of codon usage and amino acid preferences"](https://pmc.ncbi.nlm.nih.gov/articles/PMC2779085/)
 
 Figure 3 [Amino acid distribution and codon usage in viruses infecting taxonomy-unified hosts. ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f3/)
 
-<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f3.jpg" width=50%>
+<img alt="" src="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=2779085_msb200971-f3.jpg" width=50%>
 
 Figure 6 [Similarity in GC content and codon usage between pairs of viruses and hosts.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/figure/f6/)
 
-<img alt="" src="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2779085/bin/msb200971-f6.jpg" width=50%>
+<img alt="" src="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=2779085_msb200971-f6.jpg" width=50%>
 
 **プラスミドと宿主染色体のGC含量**  
 **GC Content of Plasmids and Host Chromosomes**  
