@@ -102,6 +102,12 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 **my_assignment_chapter1_dna1.R**
 
+----------
+## assignment 4
+**課題4 「DNA Sequence Statistics (2)」**
+
+**my_assignment_chapter2_dna2.R**
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip
@@ -124,12 +130,6 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
-
-----------
-## assignment 4
-**課題4 「DNA Sequence Statistics (2)」**
-
-**my_assignment_chapter2_dna2.R**
 
 ----------
 ## assignment 5
