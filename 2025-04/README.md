@@ -28,7 +28,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_chapter2_dna2.R | my_test1_dna.R | my_test2_kmer.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-4)
 - 2025-05-06 振替休日 Substitute holiday
-- 2025-05-13 No. 5 - [Online] タンパク質配列データベース UniProt | ドットプロット Dotplot
+- 2025-05-13 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_chapter4_align.R | my_test3_dotplot.R
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-5)
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
