@@ -46,7 +46,7 @@
 - 2025-06-17 No. 10 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_ds4gd_newick.R
 - 2025-06-20 (Fri) 6th period - [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd)
-- 2025-06-24 No. 11 - Choosing and Acquiring Sequences
+- 2025-06-24 No. 11 - 配列の選択と取得 Choosing and Acquiring Sequences
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_tree_aa/my_tree_aa.R
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-11)
 - 2025-07-01 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
