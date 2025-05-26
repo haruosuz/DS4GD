@@ -18,33 +18,34 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_chapter_installr.R
   - 課題2 [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-2)
 - 2025-04-22 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
-  - よくわかるバイオインフォマティクス入門 | 6章　ゲノム解析 | ゲノムの特徴 | ゲノムサイズ | GC含量 (GC content)
+  - よくわかるバイオインフォマティクス入門 | 6章　ゲノム解析 | 6.2.1 ゲノムの特徴 | ゲノムサイズ | GC含量 (GC content)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#genome-signature)
   - [NCBI Datasets](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-datasets)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_chapter1_dna1.R
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-3)
 - 2025-04-29 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
-  - よくわかるバイオインフォマティクス入門 | 6章　ゲノム解析 | スライデイングウインドウ (sliding window)
+  - よくわかるバイオインフォマティクス入門 | 6章　ゲノム解析 | 図6.2 スライデイングウインドウ (sliding window)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_chapter2_dna2.R | my_test1_dna.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-4)
 - 2025-05-06 振替休日 Substitute holiday
 - 2025-05-13 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
-  - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 変異と置換および分子進化
+  - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 1.1.2 変異と置換および分子進化
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_chapter4_align.R | my_test3_dotplot.R
   - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-5)
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
 - 2025-05-20 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
-  - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 配列データベースと配列検索 | 配列アラインメント | ペアワイズアラインメント
+  - よくわかるバイオインフォマティクス入門 | 1章　配列解析 | 1.2 配列データベースと配列検索 | 1.3 配列アラインメント
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-6)
 - 2025-05-27 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-7)
 - 2025-06-03 No. 8 - [Guest Speaker](#guest-speaker)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-8)
-- 2025-06-10 No. 9 - 中間発表 [midterm presentation](#midterm-presentation)
+- 2025-06-10 No. 9 - 多重置換 Multiple Substitutions | 進化距離 Evolutionary Distances
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_ds4gd_model.R
 - 2025-06-17 No. 10 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_ds4gd_newick.R
-- 2025-06-20 (Fri) 6th period - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
+- 2025-06-20 (Fri) 6th period - [Global City Sampling Day (gCSD)](https://github.com/haruosuz/metasub/blob/master/README.md#csd)
 - 2025-06-24 No. 11 - Choosing and Acquiring Sequences
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_tree_aa/my_tree_aa.R
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-11)
@@ -53,8 +54,7 @@
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-12)
 - 2025-07-08 No. 13 - 相同性 Homology | 外群 Outgroup
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-final)
-- 2025-07-15 No. 14 - 最終発表 [final presentation](#final-presentation)
-- 最終課題 [assignment final](https://github.com/haruosuz/introBI/blob/main/2025-04/CaseStudy.md#assignment-final)
+- 2025-07-15 No. 14 - 最終回 final class
 
 ----------
 ## Guest speaker
@@ -68,14 +68,6 @@ People outside of Keio University SFC will also attend the lectures.
 井上 潤 博士（東京大学）
 - Website: https://fish-evol.org/
 - Slides: 分子系統解析 Molecular Phylogenetic Analysis
-
-----------
-## final presentation
-**口頭発表**
-
-Presentation time: 3 minutes will be allocated for each presentation (including Q&A). Share your final report (**my_ds4gd_report.html** file), and present your main findings from the analysis of DNA/protein sequences. Examples of analyses include DNA sequence statistics (length, GC content, and local variation in base composition), dot plots, pairwise sequence alignment, multiple sequence alignment, phylogenetic trees, etc.
-
-発表時間：1人あたり最大3分（質疑応答を含む）。最終レポート（**my_ds4gd_report.html**ファイル）を共有し、DNA/タンパク質配列の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成の局所変動）、ドットプロット、ペアワイズ配列アラインメント、多重整列、系統樹などが含まれる。
 
 ----------
 ## References
