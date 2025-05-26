@@ -14,7 +14,7 @@
 - [assignment 5](#assignment-5) 課題5 「Dotplot」
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「midterm report」
-- [assignment 9](#assignment-9) 課題9 「Guest speaker」
+- [assignment 8](#assignment-8) 課題8 「Guest speaker」
 - [assignment 11](#assignment-11) 課題11 「Choosing and Acquiring Sequences」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「final report」
@@ -120,6 +120,15 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 **my_assignment_chapter4_align_pairwise.R**
 
+----------
+## assignment 7
+**課題7 「midterm report」**
+
+**my_ds4gd_report.R**
+
+これまでの課題を統合して、中間レポートを作成する。  
+Integrate the previous assignments to create a midterm report.  
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip
@@ -144,20 +153,11 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 Please save and backup your edited files in a separate directory. 
 
 ----------
-## assignment 7
-**課題7 「midterm report」**
+## assignment 8
+**課題8 「Guest speaker」**
 
-**my_ds4gd_report.R**
-
-これまでの課題を統合して、中間レポートを作成する。  
-Integrate the previous assignments to create a midterm report.  
-
-----------
-## assignment 9
-**課題9 「Guest speaker」**
-
-本日の特別講演に関するコメントや質問など記載して提出する。  
-Please write and submit any comments, questions, or anything else related to today's special lecture.  
+本日の特別講演で印象に残った点を挙げて、それがあなたの興味・関心とどのように関連しているかを書いてください。  
+Please mention the points from today's special lecture that left an impression on you, and describe how they relate to your interests and concerns.  
 
 ----------
 ## assignment 11
