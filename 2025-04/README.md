@@ -67,7 +67,7 @@ People outside of Keio University SFC will also attend the lectures.
 - Speaker: Dr. Jun Inoue (The University of Tokyo)  
 井上 潤 博士（東京大学）
 - Website: https://fish-evol.org/
-- Slides: 
+- Slides: https://yurai.aori.u-tokyo.ac.jp/slide_keio25/20250603_Inoue1.pdf
 
 ----------
 ## References
