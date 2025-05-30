@@ -60,9 +60,6 @@
 ## Guest speaker
 **特別講演**
 
-People outside of Keio University SFC will also attend the lectures.  
-他機関所属の方も参加されます。  
-
 ### 2025-06-03
 - Speaker: Dr. Jun Inoue (The University of Tokyo)  
 井上 潤 博士（東京大学）
