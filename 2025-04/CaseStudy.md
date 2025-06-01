@@ -129,6 +129,15 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 これまでの課題を統合して、中間レポートを作成する。  
 Integrate the previous assignments to create a midterm report.  
 
+レポートは、以下のスクリプトからコードをコピーし、それを自分のスクリプトに貼り付けて編集することで作成します。  
+The report will be created by copying the code from the script below, pasting it into your script, and editing it.  
+```
+my_assignment_chapter1_dna1.R
+my_assignment_chapter2_dna2.R
+my_assignment_chapter4_align_dotplot.R
+my_assignment_chapter4_align_pairwise.R
+```
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip
