@@ -165,8 +165,8 @@ Please save and backup your edited files in a separate directory.
 ## assignment 8
 **課題8 「Guest speaker」**
 
-本日の特別講演で印象に残った点を挙げてください。また、できればその内容があなたの興味・関心とどのように関係しているかも教えてください。  
-Please describe the points from today's special lecture that left an impression on you. If possible, please also explain how it relates to your own interests or concerns.  
+本日の特別講演で印象に残った点を挙げてください。また、その内容があなたの興味・関心とどのように関係しているかも教えてください。  
+Please describe the points from today's special lecture that left an impression on you. Also, explain how the content relates to your own interests or concerns.  
 
 ----------
 ## assignment 11
