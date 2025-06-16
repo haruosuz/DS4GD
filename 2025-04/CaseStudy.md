@@ -150,8 +150,8 @@ Please describe the points from today's special lecture that left an impression 
 ## assignment 10
 **課題10 「Evolution of Objects」**
 
-オブジェクトの進化を示す図の出典（例：URL）を示し、また、それがあなたの興味・関心とどのように関係しているかも教えてください。  
-Please share references (e.g., URLs) of diagrams showing the evolution of objects. Also, explain how they relate to your own interests or concerns.  
+オブジェクトの進化を示す図の出典（例：URL）を示し、それがあなたの興味・関心とどのように関係しているか教えてください。  
+Please share references (e.g., URLs) of diagrams showing the evolution of objects, and explain how they relate to your own interests or concerns.  
 
 例 Example  
 https://leeswijzer.hatenablog.com/
