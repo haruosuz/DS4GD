@@ -164,20 +164,23 @@ https://leeswijzer.hatenablog.com/
 Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 系統樹に含める複数（4つ以上）の相同配列を同定する。  
 
-Copy the downloaded file ("uniprotkb_YYYY_MM_DD.fasta") and give it a different name ("myAA.fasta").  
-ダウンロードしたファイル（"uniprotkb_YYYY_MM_DD.fasta"）をコピーして別の名前（"myAA.fasta"）を付ける。  
+Copy the downloaded file (e.g., `uniprotkb_2025_06_23.fasta`) and give it a different name (`myAA.fasta`).  
+ダウンロードしたファイル（例：`uniprotkb_2025_06_23.fasta`）をコピーして別の名前（`myAA.fasta`）を付ける。  
 ```
-cp uniprotkb_YYYY_MM_DD.fasta myAA.fasta
-
-cp uniprotkb_2024_12_24.fasta myAA.fasta
+cp uniprotkb_2025_06_23.fasta myAA.fasta
 ```
 
-**my_tree_aa/my_tree_aa.R**
+Change the author name and replace the FASTA file.  
+以下のスクリプトの著者名を変更し、FASTA ファイルを差し替えてください。  
+`scripts_ds4gd/my_tree_aa/my_tree_aa.R`
 ```
-file.fasta <- "myAA.fasta" # Replace this FASTA file with your own data.
+#' author: '@Haruo_Suzuki'
+```
+```
+file.fasta <- "myAA.fasta" # FASTA file of protein (amino acid) sequences
 ```
 
-The R script will generate the following output files:
+The R script will generate the following output files:  
 - `myAA_filtered.fasta`: Sequences filtered based on length criteria.
 - `myAlign.fasta`: Aligned sequences.
 - `myAlignTrim.fasta`: Aligned sequences trimmed (gaps removed).
