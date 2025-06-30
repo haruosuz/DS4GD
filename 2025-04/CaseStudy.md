@@ -188,6 +188,12 @@ The R script will generate the following output files:
 - `myTree.tre`: Phylogenetic tree in Newick format.
 - `myTable.tsv`: Sequence information, including length and annotations.
 
+----------
+## assignment 12
+**課題12 「Multiple Alignment and Phylogenetic trees」**
+
+**my_assignment_chapter5_msa_tree.R**
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip
@@ -210,12 +216,6 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory. 
-
-----------
-## assignment 12
-**課題12 「Multiple Alignment and Phylogenetic trees」**
-
-**my_assignment_chapter5_msa_tree.R**
 
 ----------
 ## assignment final
