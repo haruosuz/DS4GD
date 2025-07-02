@@ -53,7 +53,7 @@
 - 2025-07-01 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-12)
-- 2025-07-08 No. 13 - 相同性 Homology | 外群 Outgroup
+- 2025-07-08 No. 13 - 質疑応答 Q&A
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2025-04/CaseStudy.md#assignment-final)
 - 2025-07-15 No. 14 - 最終回 final class
 
