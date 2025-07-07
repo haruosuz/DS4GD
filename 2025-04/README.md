@@ -73,7 +73,7 @@
 
 - 2018-11-19 藤博幸（編） - よくわかるバイオインフォマティクス入門 https://www.kspub.co.jp/book/detail/5138212.html | 1章　配列解析 | 2章　分子進化 | 6章　ゲノム解析
 - [2011-06-10 Avril Coghlan - "A Little Book of R For Bioinformatics"](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
-- [CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p.](https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283)
+- [CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p.](https://www.maruzen-publishing.co.jp/book/b10112384.html)
   - 26章 系統と生命の樹 [Phylogeny and the Tree of Life (pdf)](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
 - [Ziheng Yang - Computational Molecular Evolution (Oxford Series in Ecology and Evolution), Oxford University Press (2006/12/7), 374p.](http://abacus.gene.ucl.ac.uk/CME/) | [Table of Contents](http://abacus.gene.ucl.ac.uk/CME/TableOfContents.pdf)
   - [藤 博幸　加藤 和貴　大安 裕美　訳. 分子系統学への統計的アプローチ ―計算分子進化学―, 共立出版, 2009.3, 360p.](https://www.kyoritsu-pub.co.jp/book/b10010733.html) | [詳細目次（pdf）](https://kyoritsu-pub.sakura.ne.jp/app/file/goods_contents/1152.pdf)
