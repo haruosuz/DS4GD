@@ -157,13 +157,13 @@ https://www.uniprot.org/blast/
 
 ![https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/wp-content/uploads/sites/100/2022/07/Screenshot-2022-07-22-at-14.33.12.png)
 
-[BLAST sequence similarity searching](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/blast-sequence-similarity-searching/)
+EMBL-EBI Training > On-demand training > online_tutorial > UniProt [BLAST sequence similarity searching](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools-clone/blast-sequence-similarity-searching/)
 
 - Select the **BLAST** tab of the toolbar at the top of the page.  
 ページの上部にあるツールバーの**BLAST**タブを選択する。
 - Enter either *UniProt IDs* or *protein or nucleotide sequence(s) in FASTA format*.  
 *UniProt IDs* または *FASTA形式のタンパク質または核酸配列* を入力する。
-- [Optional settings](https://www.uniprot.org/help/sequence-searches)
+- [Optional settings](https://www.uniprot.org/help/blast-submission)
   - Target database: UniProtKB Swiss-Prot
   - E-Threshold: 0.00001
   - Hits: 50
@@ -201,19 +201,15 @@ using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PA
 
 Here are the steps for running BLASTP:
 
-- Click on the protein accession number (e.g., `/protein_id="NP_059433.1"`) from the genome GenBank page.
+- Click on the protein accession number (e.g., `/protein_id="AGI42838.1"`) from the GenBank page of [Canine circovirus isolate UCD1-1698, complete genome](https://www.ncbi.nlm.nih.gov/nuccore/KC241982).
 ```
-https://www.ncbi.nlm.nih.gov/nuccore/NC_001477
-LOCUS       NC_001477              10735 bp ss-RNA     linear   VRL 03-MAY-2019
-DEFINITION  Dengue virus 1, complete genome.
-
-     CDS             95..10273
-                     /gene="POLY"
-                     /product="polyprotein"
-                     /protein_id="NP_059433.1"
+     CDS             1..912
+                     /note="Rep"
+                     /product="putative replication associated protein"
+                     /protein_id="AGI42838.1"
 ```
-- [On this page](https://www.ncbi.nlm.nih.gov/protein/NP_059433.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=NP_059433.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
-- Select the Database "Non-redundant protein sequences (nr)".
+- [On this page](https://www.ncbi.nlm.nih.gov/protein/AGI42838.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=AGI42838.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
+- Select the Database "UniProtKB/Swiss-Prot(swissprot)".
 - Click on "Algorithm parameters" and set the parameters as follows:
    - General Parameters
      - Max target sequences: 5000
@@ -222,11 +218,7 @@ DEFINITION  Dengue virus 1, complete genome.
      - Matrix: BLOSUM62
      - Gap Costs: Existence: 11 Extension: 1
 - Click the "BLAST" button to execute.
-- On this page *BLAST ® » blastp suite » results*, click "Download All", and select 
-```
-Hit Table(text)
-Hit Table(csv)
-```
+- On this page *BLAST ® » blastp suite » results*, click "Download All", and select "Hit Table(text)" or "Hit Table(csv)".
 
 #### tblastn
 [tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
