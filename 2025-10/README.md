@@ -24,18 +24,15 @@
 - 2025-10-28 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-4)
 - 2025-11-04 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
-  - 課題5 [assignment 5](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-5)
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
 - 2025-11-11 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-6)
 - 2025-11-18 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2025-12-02 No. 8 - [Guest Speaker](#guest-speaker)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-8)
 - 2025-12-09 No. 9 - 多重置換 Multiple Substitutions | 進化距離 Evolutionary Distances
-- 2025-12-16 No. 10 - 系統樹の見方 [How to read a phylogenetic tree](https://artic.network/how-to-read-a-tree.html)
-  - 課題10 [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-10)
+- 2025-12-16 No. 10 - 系統樹の見方 How to read a phylogenetic tree
 - 2025-12-23 No. 11 - 配列の選択と取得 Choosing and Acquiring Sequences
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-11)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/29～1/4）
