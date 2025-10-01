@@ -11,11 +11,9 @@
 - [assignment 2](#assignment-2) 課題2 「Installing R packages」
 - [assignment 3](#assignment-3) 課題3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
-- [assignment 5](#assignment-5) 課題5 「Dotplot」
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「midterm report」
 - [assignment 8](#assignment-8) 課題8 「Guest speaker」
-- [assignment 10](#assignment-10) 課題10 「Evolution of Objects」
 - [assignment 11](#assignment-11) 課題11 「Choosing and Acquiring Sequences」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「final report」
@@ -121,25 +119,19 @@ Please save and backup your edited files in a separate directory.
 ## assignment 3
 **課題3 「DNA Sequence Statistics (1)」**
 
-**my_assignment_chapter1_dna1.R**
+**my_assignment_1_dna1.R**
 
 ----------
 ## assignment 4
 **課題4 「DNA Sequence Statistics (2)」**
 
-**my_assignment_chapter2_dna2.R**
-
-----------
-## assignment 5
-**課題5 「Dotplot」**
-
-**my_assignment_chapter4_align_dotplot.R**
+**my_assignment_2_dna2.R**
 
 ----------
 ## assignment 6
 **課題6 「Pairwise Sequence Alignment」**
 
-**my_assignment_chapter4_align_pairwise.R**
+**my_assignment_4_align.R**
 
 ----------
 ## assignment 7
@@ -153,10 +145,9 @@ Integrate the previous assignments to create a midterm report.
 レポートは、以下のスクリプトからコードをコピーし、それを自分のスクリプトに貼り付けて編集することで作成します。  
 The report will be created by copying the code from the script below, pasting it into your script, and editing it.  
 ```
-my_assignment_chapter1_dna1.R
-my_assignment_chapter2_dna2.R
-my_assignment_chapter4_align_dotplot.R
-my_assignment_chapter4_align_pairwise.R
+my_assignment_1_dna1.R
+my_assignment_2_dna2.R
+my_assignment_4_align.R
 ```
 
 ----------
@@ -165,16 +156,6 @@ my_assignment_chapter4_align_pairwise.R
 
 本日の特別講演で印象に残った点を挙げてください。また、その内容があなたの興味・関心とどのように関係しているかも教えてください。  
 Please describe the points from today's special lecture that left an impression on you. Also, explain how the content relates to your own interests or concerns.  
-
-----------
-## assignment 10
-**課題10 「Evolution of Objects」**
-
-オブジェクトの進化を示す図の出典（例：URL）を示し、それがあなたの興味・関心とどのように関係しているか教えてください。  
-Please share references (e.g., URLs) of diagrams showing the evolution of objects, and explain how they relate to your own interests or concerns.  
-
-例 Example  
-https://leeswijzer.hatenablog.com/
 
 ----------
 ## assignment 11
@@ -212,7 +193,7 @@ The R script will generate the following output files:
 ## assignment 12
 **課題12 「Multiple Alignment and Phylogenetic trees」**
 
-**my_assignment_chapter5_msa_tree.R**
+**my_assignment_5_msa_tree.R**
 
 ----------
 ## assignment final
@@ -226,12 +207,13 @@ Integrate the previous assignments to create a final report.
 レポートは、以下のスクリプトからコードをコピーし、それを自分のスクリプトに貼り付けて編集することで作成します。  
 The report will be created by copying the code from the script below, pasting it into your script, and editing it.  
 ```
-my_assignment_chapter1_dna1.R
-my_assignment_chapter2_dna2.R
-my_assignment_chapter4_align_dotplot.R
-my_assignment_chapter4_align_pairwise.R
-my_assignment_chapter5_msa_tree.R
+my_assignment_1_dna1.R
+my_assignment_2_dna2.R
+my_assignment_4_align.R
+my_assignment_5_msa_tree.R
 ```
 
 ----------
+
+
 
