@@ -13,7 +13,6 @@
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
 - [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
 - [assignment 7](#assignment-7) 課題7 「midterm report」
-- [assignment 8](#assignment-8) 課題8 「Guest speaker」
 - [assignment 11](#assignment-11) 課題11 「Choosing and Acquiring Sequences」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「final report」
@@ -46,9 +45,8 @@ I would like to use one of the following sequence data:
 ## assignment 1
 **課題1 「Introduction to R」**
 
-[K-LMS にて提出する。
-Submit it via K-LMS.](https://lms.keio.jp/)  
-提出方法	テキスト入力ボックス  
+[Submit it via K-LMS.
+K-LMS にて提出する。](https://lms.keio.jp/)  
 
 Watch the videos about R, and write your comments or questions.  
 Rに関する動画を見て、コメントや疑問点を書く。  
@@ -149,13 +147,6 @@ my_assignment_1_dna1.R
 my_assignment_2_dna2.R
 my_assignment_4_align.R
 ```
-
-----------
-## assignment 8
-**課題8 「Guest speaker」**
-
-本日の特別講演で印象に残った点を挙げてください。また、その内容があなたの興味・関心とどのように関係しているかも教えてください。  
-Please describe the points from today's special lecture that left an impression on you. Also, explain how the content relates to your own interests or concerns.  
 
 ----------
 ## assignment 11
