@@ -45,7 +45,7 @@ I would like to use one of the following sequence data:
 ## assignment 1
 **課題1 「Introduction to R」**
 
-[Submit it via K-LMS.
+[Submit it via K-LMS.  
 K-LMS にて提出する。](https://lms.keio.jp/)  
 
 Watch the videos about R, and write your comments or questions.  
