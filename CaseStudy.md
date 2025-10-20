@@ -1046,8 +1046,9 @@ setdiff(x, y)	差集合
 ## Genome signature
 **ゲノムの特徴**
 
-- [Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
+- [Smith DR, Keeling PJ. Mitochondrial and plastid genome architecture: Reoccurring themes, but significant differences at the extremes. Proc Natl Acad Sci U S A. 2015 Aug 18;112(33):10177-84.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4547224/) | Nucleotide Composition. | Genome Size.
 - [Coutinho TJ et al. (2015) "Homology-independent metrics for comparative genomics."](https://www.ncbi.nlm.nih.gov/pubmed/26029354)
+- [Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
 - [g-language documents](https://github.com/gaou/g-language/wiki/Documents) | 
 [Nucleotide composition analysis](https://github.com/gaou/g-language/wiki/restgenomeanalysisenglish#nucleotide-composition-analysis) | 
 [塩基組成の解析](https://github.com/gaou/g-language/wiki/restgenomeanalysisjapanese#塩基組成の解析)
@@ -1066,8 +1067,6 @@ setdiff(x, y)	差集合
 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
 
 <img alt="" src="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=2704378_pgen.1000565.g001.jpg" width=50%>
-
-- [Smith DR, Keeling PJ. Mitochondrial and plastid genome architecture: Reoccurring themes, but significant differences at the extremes. Proc Natl Acad Sci U S A. 2015 Aug 18;112(33):10177-84.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4547224/) Nucleotide Composition.
 
 **至適増殖温度とアミノ酸・コドン使用**  
 **Optimal Growth Temperature and Amino Acid and Codon Usage**  
