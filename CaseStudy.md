@@ -1067,6 +1067,8 @@ setdiff(x, y)	差集合
 
 <img alt="" src="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=2704378_pgen.1000565.g001.jpg" width=50%>
 
+- [Smith DR, Keeling PJ. Mitochondrial and plastid genome architecture: Reoccurring themes, but significant differences at the extremes. Proc Natl Acad Sci U S A. 2015 Aug 18;112(33):10177-84.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4547224/) Nucleotide Composition.
+
 **至適増殖温度とアミノ酸・コドン使用**  
 **Optimal Growth Temperature and Amino Acid and Codon Usage**  
 
