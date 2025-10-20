@@ -18,8 +18,9 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter_installr.R
   - 課題2 [assignment 2](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-2) my_setup_packages.R
 - 2025-10-21 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
-  - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#genome-signature)
   - [NCBI Datasets](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-datasets)
+  - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#genome-signature)
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter1_dna1.R
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-3)
 - 2025-10-28 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-4)
