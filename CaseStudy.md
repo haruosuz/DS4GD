@@ -1042,11 +1042,26 @@ setdiff(x, y)	差集合
 ```
 
 ----------
+## GenomeBento
+
+- http://wiki.lifesciencedb.jp/mw/GenomeBentoProject
+- https://github.com/ktym/GenomeBento/
+
+![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
+
+----------
+## Evolution
+
+- [Endosymbiotic evolution and the tree of genomes](https://www.nature.com/scitable/content/endosymbiotic-evolution-and-the-tree-of-genomes-14665098/)
+- [Smith DR, Keeling PJ. Mitochondrial and plastid genome architecture: Reoccurring themes, but significant differences at the extremes. Proc Natl Acad Sci U S A. 2015 Aug 18;112(33):10177-84.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4547224/) | Nucleotide Composition. | Genome Size.
+
+![https://www.nature.com/scitable/content/endosymbiotic-evolution-and-the-tree-of-genomes-14665098/](https://www.nature.com/scitable/content/ne0000/ne0000/ne0000/ne0000/14665098/U1.cp2.3_nrg1271-i2.jpg)
+
+----------
 
 ## Genome signature
 **ゲノムの特徴**
 
-- [Smith DR, Keeling PJ. Mitochondrial and plastid genome architecture: Reoccurring themes, but significant differences at the extremes. Proc Natl Acad Sci U S A. 2015 Aug 18;112(33):10177-84.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4547224/) | Nucleotide Composition. | Genome Size.
 - [Coutinho TJ et al. (2015) "Homology-independent metrics for comparative genomics."](https://www.ncbi.nlm.nih.gov/pubmed/26029354)
 - [Dutta C, Paul S. (2012) "Microbial lifestyle and genome signatures."](https://www.ncbi.nlm.nih.gov/pubmed/23024607)
 - [g-language documents](https://github.com/gaou/g-language/wiki/Documents) | 
