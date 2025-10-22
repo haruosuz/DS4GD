@@ -30,12 +30,10 @@
   - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-6)
 - 2025-11-18 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
-- 2025-12-02 No. 8 - [Guest Speaker](#guest-speaker)
-  - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-8)
-- 2025-12-09 No. 9 - 多重置換 Multiple Substitutions | 進化距離 Evolutionary Distances
-- 2025-12-16 No. 10 - 系統樹の見方 How to read a phylogenetic tree
-- 2025-12-23 No. 11 - 配列の選択と取得 Choosing and Acquiring Sequences
-  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-11)
+- 2025-12-02 No. 8 - TBD
+- 2025-12-09 No. 9 - TBD
+- 2025-12-16 No. 10 - TBD
+- 2025-12-23 No. 11 - TBD
 - 湘南藤沢キャンパス一斉休業 Office closed（12/29～1/4）
 - 2026-01-06 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-12)
