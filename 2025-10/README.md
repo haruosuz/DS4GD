@@ -23,6 +23,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter1_dna1.R
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-3)
 - 2025-10-28 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter2_dna2.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-4)
 - 2025-11-04 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
@@ -31,8 +32,8 @@
 - 2025-11-18 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2025-12-02 No. 8 - TBD
-- 2025-12-09 No. 9 - TBD
-- 2025-12-16 No. 10 - TBD
+- 2025-12-09 No. 9 - [Online] [Guest Speaker](#guest-speaker)
+- 2025-12-16 No. 10 - [Online] [Guest Speaker](#guest-speaker)
 - 2025-12-23 No. 11 - TBD
 - 湘南藤沢キャンパス一斉休業 Office closed（12/29～1/4）
 - 2026-01-06 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
@@ -44,6 +45,10 @@
 ----------
 ## Guest speaker
 **特別講演**
+
+- Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
+鈴木 留美子 博士（国立遺伝学研究所）
+- Title: Inference of divergence times on bacterial phylogenetic trees									
 
 ----------
 ## References
