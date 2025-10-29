@@ -1078,14 +1078,12 @@ setdiff(x, y)	差集合
 - [Bohlin J et al. Environ Microbiol Rep. 2014 Jun;6(3):278-86. "Positive correlations between genomic %AT and genome size within strains of bacterial species."](https://pubmed.ncbi.nlm.nih.gov/24983532/)
   - [Wiley Online Library Open Access](https://search.lib.keio.ac.jp/permalink/81SOKEI_KEIO/uccs31/cdi_proquest_miscellaneous_1542648747)
 - [McCutcheon JP et al. PLoS Genet. 2009 Jul;5(7):e1000565. "Origin of an alternative genetic code in the extremely small and GC-rich genome of a bacterial symbiont."](https://www.ncbi.nlm.nih.gov/pubmed/19609354)
+- [Nakabachi A et al. Science. 2006 Oct 13;314(5797):267. "The 160-kilobase genome of the bacterial endosymbiont Carsonella."](https://pubmed.ncbi.nlm.nih.gov/17038615/)
+![](https://www.science.org/cms/10.1126/science.1134196/asset/63cc1e1c-b0ae-457c-ab79-0c368942ab7e/assets/graphic/314_267_f1.jpeg)
 
 [Relationship between genome size and GC content for sequenced Bacterial and Archaeal genomes.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/figure/pgen-1000565-g001/)
 
 <img alt="" src="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=2704378_pgen.1000565.g001.jpg" width=50%>
-
-- [Nakabachi A et al. Science. 2006 Oct 13;314(5797):267. "The 160-kilobase genome of the bacterial endosymbiont Carsonella."](https://pubmed.ncbi.nlm.nih.gov/17038615/))
-
-![](https://www.science.org/cms/10.1126/science.1134196/asset/63cc1e1c-b0ae-457c-ab79-0c368942ab7e/assets/graphic/314_267_f1.jpeg)
 
 **至適増殖温度とアミノ酸・コドン使用**  
 **Optimal Growth Temperature and Amino Acid and Codon Usage**  
