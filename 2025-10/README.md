@@ -20,16 +20,17 @@
 - 2025-10-21 No. 3 - DNA配列解析(1) DNA Sequence Statistics (1)
   - [NCBI Datasets](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-datasets)
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#genome-signature)
-  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter1_dna1.R
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter1_dna1.R | my_test1_dna.R
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-3)
-- 2025-10-28 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2)
+- 2025-10-28 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2) | A sliding window analysis of GC content
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter2_dna2.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-4)
-- 2025-11-04 No. 5 - タンパク質配列データベース UniProt | ドットプロット Dotplot
+- 2025-11-04 No. 5 - DNA配列解析(2) DNA Sequence Statistics (2) | Over-represented and under-represented DNA words
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter2_dna2.R | my_test2_kmer.R
+- 2025-11-11 No. 6 - タンパク質配列データベース UniProt | ドットプロット Dotplot
   - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
-- 2025-11-11 No. 6 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
-  - 課題6 [assignment 6](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-6)
-- 2025-11-18 No. 7 - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
+- 2025-11-18 No. 7 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
+  - 課題6 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-7)
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2025-12-02 No. 8 - TBD
 - 2025-12-09 No. 9 - [Online] [Guest Speaker](#guest-speaker)
