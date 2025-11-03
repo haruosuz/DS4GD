@@ -238,6 +238,22 @@ Here are the steps for running BLASTP:
   - Expect threshold: 1e-20
 - Click on **BLAST** button to execute.
 
+#### blastn
+[Nucleotide BLAST: search nucleotide databases using a nucleotide query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch)
+
+- Go to the GenBank page of "Dengue virus 1, complete genome"
+https://www.ncbi.nlm.nih.gov/nuccore/NC_001477
+```
+Dengue virus 1, complete genome
+NCBI Reference Sequence: NC_001477.1
+```
+- [On this page](https://www.ncbi.nlm.nih.gov/nuccore/NC_001477), click **[Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Nucleotides&PROGRAM=blastn&QUERY=NC_001477.1&DATABASE=nr&MEGABLAST=on&BLAST_PROGRAMS=megaBlast&LINK_LOC=nuccore&PAGE_TYPE=BlastSearch)**.
+- Alternatively, you can paste or enter the nucleotide sequence directly into the **"Enter Query Sequence"** field.
+- Click **“Algorithm parameters”** and set the parameters as follows:
+  - Max target sequences: 5000
+  - Expect threshold: 1e-20
+- Click the **BLAST** button to execute.
+
 ### Query Sequences
 
 Here are examples of protein sequences as queries for a BLAST search:
