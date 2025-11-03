@@ -11,8 +11,8 @@
 - [assignment 2](#assignment-2) 課題2 「Installing R packages」
 - [assignment 3](#assignment-3) 課題3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
-- [assignment 6](#assignment-6) 課題6 「Pairwise Sequence Alignment」
-- [assignment 7](#assignment-7) 課題7 「midterm report」
+- [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
+- [assignment 8](#assignment-8) 課題8 「midterm report」
 - [assignment 11](#assignment-11) 課題11 「Choosing and Acquiring Sequences」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「final report」
@@ -124,14 +124,14 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 Please save and backup your edited files in a separate directory.  
 
 ----------
-## assignment 6
-**課題6 「Pairwise Sequence Alignment」**
+## assignment 7
+**課題7 「Pairwise Sequence Alignment」**
 
 **my_assignment_4_align.R**
 
 ----------
-## assignment 7
-**課題7 「midterm report」**
+## assignment 8
+**課題8 「midterm report」**
 
 **my_ds4gd_report.R**
 
