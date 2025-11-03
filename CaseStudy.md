@@ -241,8 +241,7 @@ Here are the steps for running BLASTP:
 #### blastn
 [Nucleotide BLAST: search nucleotide databases using a nucleotide query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch)
 
-- Go to the GenBank page of "Dengue virus 1, complete genome"
-https://www.ncbi.nlm.nih.gov/nuccore/NC_001477
+- Query nucleotide sequence https://www.ncbi.nlm.nih.gov/nuccore/NC_001477
 ```
 Dengue virus 1, complete genome
 NCBI Reference Sequence: NC_001477.1
