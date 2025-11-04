@@ -201,8 +201,14 @@ using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PA
 
 Here are the steps for running BLASTP:
 
-- Click on the protein accession number (e.g., `/protein_id="AGI42838.1"`) from the GenBank page of [Canine circovirus isolate UCD1-1698, complete genome](https://www.ncbi.nlm.nih.gov/nuccore/KC241982).
+- Click on the protein accession number (e.g., `/protein_id="AGI42838.1"`) from the GenBank page: 
+https://www.ncbi.nlm.nih.gov/nuccore/KC241982
 ```
+Canine circovirus isolate UCD1-1698, complete genome
+GenBank: KC241982.1
+
+LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
+
      CDS             1..912
                      /note="Rep"
                      /product="putative replication associated protein"
@@ -223,8 +229,14 @@ Here are the steps for running BLASTP:
 #### tblastn
 [tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
 
-- Click on the protein accession number (e.g., `/protein_id="ADF36634.1"`) from the GenBank page of [Neisseria gonorrhoeae strain 5289 plasmid pEP5289, complete sequence](https://www.ncbi.nlm.nih.gov/nuccore/GU479466).
+- Click on the protein accession number (e.g., `/protein_id="ADF36634.1"`) from the GenBank page: 
+https://www.ncbi.nlm.nih.gov/nuccore/GU479466
 ```
+Neisseria gonorrhoeae strain 5289 plasmid pEP5289, complete sequence
+GenBank: GU479466.1
+
+LOCUS       GU479466               42004 bp    DNA     circular BCT 06-APR-2020
+
      CDS             complement(6730..8664)
                      /note="tetracyclin resistance protein"
                      /product="TetM"
