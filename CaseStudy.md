@@ -215,19 +215,18 @@ LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
                      /protein_id="AGI42838.1"
 ```
 - [On this page](https://www.ncbi.nlm.nih.gov/protein/AGI42838.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=AGI42838.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
-- Select the Database "UniProtKB/Swiss-Prot(swissprot)".
-- Click on "Algorithm parameters" and set the parameters as follows:
+- Under **Choose Search Set**, select the **Database** "UniProtKB/Swiss-Prot (swissprot)".
+- Click on **Algorithm parameters** and set the parameters as follows:
    - General Parameters
      - Max target sequences: 5000
      - Expect threshold: 1e-20
    - Scoring Parameters
      - Matrix: BLOSUM62
      - Gap Costs: Existence: 11 Extension: 1
-- Click the "BLAST" button to execute.
+- Click the **BLAST** button to execute.
 - On this page *BLAST ® » blastp suite » results*, 
-the results are shown in the table under **Sequences producing significant alignments** in the **Descriptions** tab.
-For example, the **Accession** column lists the accession numbers of the hit sequences.
-click "Download", and select "Hit Table(text)" or "Hit Table(csv)".
+  - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences　(`subject acc.ver`).
+  - Click **Download**, and select **Hit Table (text)** or **Hit Table (csv)**.
 
 #### tblastn
 [tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
