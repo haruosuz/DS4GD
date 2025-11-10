@@ -225,7 +225,7 @@ LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
      - Gap Costs: Existence: 11 Extension: 1
 - Click the **BLAST** button to execute.
 - On this page *BLAST ® » blastp suite » results*, 
-  - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences　(`subject acc.ver`).
+  - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences　(`subject acc.ver`), such as "Q805H4.1" and "Q8BB16.1".
   - Click **Download**, and select **Hit Table (text)** or **Hit Table (csv)**.
 
 #### tblastn
