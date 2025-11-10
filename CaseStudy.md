@@ -224,7 +224,10 @@ LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
      - Matrix: BLOSUM62
      - Gap Costs: Existence: 11 Extension: 1
 - Click the "BLAST" button to execute.
-- On this page *BLAST ® » blastp suite » results*, click "Download All", and select "Hit Table(text)" or "Hit Table(csv)".
+- On this page *BLAST ® » blastp suite » results*, 
+the results are shown in the table under **Sequences producing significant alignments** in the **Descriptions** tab.
+For example, the **Accession** column lists the accession numbers of the hit sequences.
+click "Download", and select "Hit Table(text)" or "Hit Table(csv)".
 
 #### tblastn
 [tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
