@@ -215,7 +215,7 @@ LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
                      /protein_id="AGI42838.1"
 ```
 - [On this page](https://www.ncbi.nlm.nih.gov/protein/AGI42838.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=AGI42838.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
-- Under **Choose Search Set**, select the **Database** "UniProtKB/Swiss-Prot (swissprot)".
+- Under **Choose Search Set**, select the **Database** "UniProtKB/Swiss-Prot(swissprot)".
 - Click on **Algorithm parameters** and set the parameters as follows:
    - General Parameters
      - Max target sequences: 5000
