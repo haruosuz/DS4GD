@@ -32,6 +32,7 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter4_align.R | my_test3_dotplot.R
   - 配列類似性検索 NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)
 - 2025-11-18 No. 7 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 [UniProt BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#uniprot-blast)
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-7)
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
