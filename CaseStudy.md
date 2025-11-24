@@ -1180,6 +1180,20 @@ Fig. 1. [The contrasts are displayed for 20 and 50 kb sliding window plots of G+
 
 ----------
 
+
+https://pubmed.ncbi.nlm.nih.gov/10430917/
+Comparative Study Proc Natl Acad Sci U S A
+. 1999 Aug 3;96(16):9184-9. doi: 10.1073/pnas.96.16.9184.
+Genome signature comparisons among prokaryote, plasmid, and mitochondrial DNA
+A Campbell 1, J Mrázek, S Karlin
+https://www.pnas.org/doi/10.1073/pnas.96.16.9184
+https://pmc.ncbi.nlm.nih.gov/articles/PMC17754/
+![https://pmc.ncbi.nlm.nih.gov/articles/PMC17754/figure/F1/](https://cdn.ncbi.nlm.nih.gov/pmc/blobs/3e9c/17754/d87c9bdb57e1/pq1692140001.jpg)
+
+
+----------
+
+
 https://github.com/haruosuz/codon/blob/master/README.md#temperature
 
 https://github.com/haruosuz/mgsa/blob/master/references/mgsa.tools.md#growth-rate
