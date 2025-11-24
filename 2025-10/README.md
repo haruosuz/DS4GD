@@ -33,10 +33,12 @@
   - 配列類似性検索 NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)
 - 2025-11-18 No. 7 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter4_align.R
-  - 配列類似性検索 [UniProt BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#uniprot-blast)
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-7)
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
-- 2025-12-02 No. 8 - TBD
+- 2025-12-02 No. 8 - 相同 Homolog
+  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
+  - 配列類似性検索 [UniProt BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#uniprot-blast)
+  - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-8)
 - 2025-12-09 No. 9 - [Online] [Guest Speaker](#guest-speaker)
 - 2025-12-16 No. 10 - [Online] [Guest Speaker](#guest-speaker)
 - 2025-12-23 No. 11 - TBD
@@ -62,7 +64,6 @@
 - [2011-06-10 Avril Coghlan - "A Little Book of R For Bioinformatics"](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
 - [CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p.](https://www.maruzen-publishing.co.jp/book/b10112384.html)
   - 26章 系統と生命の樹 [Phylogeny and the Tree of Life (pdf)](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
-- [Ziheng Yang - Computational Molecular Evolution (Oxford Series in Ecology and Evolution), Oxford University Press (2006/12/7), 374p.](http://abacus.gene.ucl.ac.uk/CME/) | [Table of Contents](http://abacus.gene.ucl.ac.uk/CME/TableOfContents.pdf)
 
 ----------
 ## R RStudio
