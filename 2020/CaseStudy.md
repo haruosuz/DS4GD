@@ -74,15 +74,6 @@ References related to comments or questions for assignment "Introduction to R".
 
 https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
-### R_assignOps
-### R_data.frame
-### R_factor
-### R_matrix
-### R_quit
-### R_read.table
-### R_typeof
-### R_vector
-
 ----------
 ## assignment 2
 **課題No.2 「Installing R packages」**
