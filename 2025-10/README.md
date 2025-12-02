@@ -11,7 +11,7 @@
 
 - [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | [Class Calendar](https://www.sfc.keio.ac.jp/en/contact/class_calendar.html)
   - [2025年度 SFC授業カレンダー（2024.11.26更新）](https://www.sfc.keio.ac.jp/doc/2025_classcalendars_jp.pdf) | [SFC Calendars for 2025（Update November 26, 2024）](https://www.sfc.keio.ac.jp/en/docs/2025_classcalendars_en.pdf)
-- 2025-10-07 No. 1 - イントロダクション Introduction
+- 2025-10-07 No. 1 - [Online] イントロダクション Introduction
   - [R RStudio](#r-rstudio)
   - 課題1 [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-1)
 - 2025-10-14 No. 2 - R言語入門 Introduction to R
@@ -35,13 +35,14 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-7)
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
-- 2025-12-02 No. 8 - 相同 Homolog
+- 2025-12-02 No. 8 - [Online] 相同 Homolog
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
   - 配列類似性検索 [UniProt BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#uniprot-blast)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-8)
 - 2025-12-09 No. 9 - [Online] [Guest Speaker](#guest-speaker)
 - 2025-12-16 No. 10 - [Online] [Guest Speaker](#guest-speaker)
 - 2025-12-23 No. 11 - TBD
+  - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-11)
 - 湘南藤沢キャンパス一斉休業 Office closed（12/29～1/4）
 - 2026-01-06 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-12)
