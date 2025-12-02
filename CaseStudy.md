@@ -166,7 +166,7 @@ EMBL-EBI Training > On-demand training > online_tutorial > UniProt [BLAST sequen
 - [Optional settings](https://www.uniprot.org/help/blast-submission)
   - Target database: UniProtKB Swiss-Prot
   - E-Threshold: 0.00001
-  - Hits: 50
+  - Hits: 250
 - Click the **Run BLAST** button.  
 **Run BLAST**ボタンをクリックする。
 - [Tool results](https://www.uniprot.org/tool-dashboard)
@@ -210,7 +210,7 @@ GenBank: KC241982.1
 LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
 
      CDS             1..912
-                     /note="Rep"
+
                      /product="putative replication associated protein"
                      /protein_id="AGI42838.1"
 ```
