@@ -12,10 +12,10 @@
 - [assignment 3](#assignment-3) 課題3 「DNA Sequence Statistics (1)」
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
 - [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
-- [assignment 8](#assignment-8) 課題8 「midterm report」
+- [assignment 8](#assignment-8) 課題8 「Midterm report」
 - [assignment 11](#assignment-11) 課題11 「Choosing and Acquiring Sequences」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
-- [assignment final](#assignment-final) 最終課題 「final report」
+- [assignment final](#assignment-final) 最終課題 「Final report」
 
 ----------
 ## assignment 0
@@ -108,7 +108,7 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 ----------
 ## assignment 8
-**課題8 「midterm report」**
+**課題8 「Midterm report」**
 
 **my_ds4gd_report.R**
 
@@ -186,7 +186,7 @@ The R script will generate the following output files:
 
 ----------
 ## assignment final
-**最終課題 「final report」**
+**最終課題 「Final report」**
 
 **my_ds4gd_report.R**
 
