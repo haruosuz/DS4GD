@@ -60,8 +60,11 @@
 - Files:  
 Download the files from the following URL:  
 https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip  
-Extract the ZIP file and use the files inside the following directory:  
+Extract the ZIP file and use the files in the following directory:  
+```
 scripts_ds4gd/2025-12-09/
+scripts_ds4gd/2025-12-09/Worksheet_20251209.xlsx 
+```
 
 ----------
 ## References
