@@ -166,7 +166,7 @@ EMBL-EBI Training > On-demand training > online_tutorial > UniProt [BLAST sequen
 - [Optional settings](https://www.uniprot.org/help/blast-submission)
   - Target database: UniProtKB Swiss-Prot
   - E-Threshold: 0.00001
-  - Hits: 250
+  - Hits: 50
 - Click the **Run BLAST** button.  
 **Run BLAST**ボタンをクリックする。
 - [Tool results](https://www.uniprot.org/tool-dashboard)
