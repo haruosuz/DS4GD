@@ -154,10 +154,10 @@ Please save and backup your edited files in a separate directory.
 Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 系統樹に含める複数（4つ以上）の相同配列を同定する。  
 
-Copy the downloaded file (e.g., `uniprotkb_2025_06_23.fasta`) and give it a different name (`myAA.fasta`).  
-ダウンロードしたファイル（例：`uniprotkb_2025_06_23.fasta`）をコピーして別の名前（`myAA.fasta`）を付ける。  
+Copy the downloaded file (e.g., `uniprotkb_2025_12_22.fasta`) and give it a different name (`myAA.fasta`).  
+ダウンロードしたファイル（例：`uniprotkb_2025_12_22.fasta`）をコピーして別の名前（`myAA.fasta`）を付ける。  
 ```
-cp uniprotkb_2025_06_23.fasta myAA.fasta
+cp uniprotkb_2025_12_22.fasta myAA.fasta
 ```
 
 Change the author name and replace the FASTA file.  
