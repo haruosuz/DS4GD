@@ -47,9 +47,18 @@
 - 湘南藤沢キャンパス一斉休業 Office closed（12/29～1/4）
 - 2026-01-06 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-12)
-- 2026-01-13 No. 13 - 質疑応答 Q&A
+- 2026-01-13 No. 13 - TBD
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-final)
 - 2026-01-20 No. 14 - 最終回 final class
+  - [Online] 最終発表 [Final presentation](#final-presentation)
+
+----------
+## Final presentation
+**口頭発表**
+
+Presentation time: 3 minutes will be allocated for each presentation (including Q&A). Share your final report (**my_ds4gd_report.html** file), and present your main findings from the analysis of DNA/protein sequences. Examples of analyses include DNA sequence statistics (length, GC content, and local variation in base composition), dot plots, pairwise sequence alignment, multiple sequence alignment, phylogenetic trees, etc.
+
+発表時間：1人あたり最大3分（質疑応答を含む）。最終レポート（**my_ds4gd_report.html**ファイル）を共有し、DNA/タンパク質配列の解析結果を報告する。解析の例として、配列の統計（長さ、GC含量、塩基組成の局所変動）、ドットプロット、ペアワイズ配列アラインメント、多重整列、系統樹などが含まれる。
 
 ----------
 ## Guest speaker
