@@ -161,6 +161,24 @@ The R script will generate the following output files:
 
 **my_assignment_5_msa_tree.R**
 
+----------
+## assignment final
+**最終課題 「Final report」**
+
+**my_ds4gd_report.R**
+
+これまでの課題を統合して、最終レポートを作成する。  
+Integrate the previous assignments to create a final report.  
+
+レポートは、以下のスクリプトからコードをコピーし、それを自分のスクリプトに貼り付けて編集することで作成します。  
+The report will be created by copying the code from the script below, pasting it into your script, and editing it.  
+```
+my_assignment_1_dna1.R
+my_assignment_2_dna2.R
+my_assignment_4_align.R
+my_assignment_5_msa_tree.R
+```
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip
@@ -185,24 +203,4 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 Please save and backup your edited files in a separate directory.  
 
 ----------
-## assignment final
-**最終課題 「Final report」**
-
-**my_ds4gd_report.R**
-
-これまでの課題を統合して、最終レポートを作成する。  
-Integrate the previous assignments to create a final report.  
-
-レポートは、以下のスクリプトからコードをコピーし、それを自分のスクリプトに貼り付けて編集することで作成します。  
-The report will be created by copying the code from the script below, pasting it into your script, and editing it.  
-```
-my_assignment_1_dna1.R
-my_assignment_2_dna2.R
-my_assignment_4_align.R
-my_assignment_5_msa_tree.R
-```
-
-----------
-
-
 
