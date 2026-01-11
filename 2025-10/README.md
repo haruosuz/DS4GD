@@ -58,9 +58,9 @@
 ## Final presentation
 **口頭発表**
 
-Presentation time: Maximum of 3 minutes per person (including Q&A). Share your final report (**my_ds4gd_report.html**) and report your sequence analysis findings. For example, describe the genome sequence analyzed, the protein-coding sequence (CDS) used as the query and the homologous sequences obtained in the BLAST search (ingroup and outgroup sequences used for the phylogenetic analysis), and clades and sister group relationships in the rooted phylogenetic tree.
+Presentation time: Maximum of 3 minutes per person. Share your final report (**my_ds4gd_report.html**) and report your sequence analysis findings. For example, describe the genome sequence analyzed, the protein-coding sequence (CDS) used as the query and the homologous sequences obtained in the BLAST search (ingroup and outgroup sequences used for the phylogenetic analysis), and clades and sister group relationships in the rooted phylogenetic tree.
 
-発表時間：1人あたり最大3分（質疑応答を含む）。最終レポート（**my_ds4gd_report.html**ファイル）を共有し、配列解析の結果を報告する。例えば、解析したゲノム配列、BLAST検索でクエリとしたタンパク質コード配列（CDS）と得られた相同配列（系統解析に使用した内群と外群）、有根系統樹におけるクレードや姉妹群の関係について説明する。
+発表時間：1人あたり最大3分。最終レポート（**my_ds4gd_report.html**ファイル）を共有し、配列解析の結果を報告する。例えば、解析したゲノム配列、BLAST検索でクエリとしたタンパク質コード配列（CDS）と得られた相同配列（系統解析に使用した内群と外群）、有根系統樹におけるクレードや姉妹群の関係について説明する。
 
 ----------
 ## Guest speaker
