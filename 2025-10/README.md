@@ -49,7 +49,7 @@
   - [The general structure of a phylogenetic tree](https://pmc.ncbi.nlm.nih.gov/articles/PMC11117635/#bioengineering-11-00480-f001)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_chapter5_msa_tree.R
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-12)
-- 2026-01-13 No. 13 - TBD
+- 2026-01-13 No. 13 - 最終レポート Final report
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2025-10/scripts_ds4gd.zip) my_ds4gd_report.R
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-final)
 - 2026-01-20 No. 14 - 最終回 final class
