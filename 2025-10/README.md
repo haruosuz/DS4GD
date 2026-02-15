@@ -36,7 +36,7 @@
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-7)
 - 2025-11-19 ～ 2025-11-25 三田祭（準備・片付） Mita Festival (Prep / clean up)
 - 2025-12-02 No. 8 - [Online] 相同 Homolog
-  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast)
+  - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast_2_sequences)
   - 配列類似性検索 [UniProt BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#uniprot-blast)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2025-10/CaseStudy.md#assignment-8)
 - 2025-12-09 No. 9 - [Online] [Guest Speaker](#guest-speaker)
