@@ -1,8 +1,8 @@
 # 2026-04
 
 生命動態のデータサイエンス / DATA SCIENCE FOR GENOME DYNAMICS [DS2]  
-[K-LMS]()  
-[Syllabus]()
+[K-LMS](https://lms.keio.jp/courses/140455)  
+[Syllabus](https://gslbs.keio.jp/syllabus/detail?ttblyr=2026&entno=29024&lang=jp)
 
 ----------
 
@@ -34,13 +34,13 @@
 - 2026-06-02 No. 7 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-7)
-- 2026-06-09 No. 8 - [Online] 相同 Homolog
+- 2026-06-09 No. 8 - 相同 Homolog
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast_2_sequences)
   - 配列類似性検索 [UniProt BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#uniprot-blast)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-8)
-- 2026-06-16 No. 9 - [Online] [Guest Speaker](#guest-speaker)
+- 2026-06-16 No. 9 - [Guest Speaker](#guest-speaker)
 - 2025-06-21 - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
-- 2026-06-23 No. 10 - [Online] [Guest Speaker](#guest-speaker)
+- 2026-06-23 No. 10 - [Guest Speaker](#guest-speaker)
 - 2026-06-30 No. 11 - 配列の選択と取得 Choosing and Acquiring Sequences
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip) my_tree_aa/my_tree_aa.R
   - 課題11 [assignment 11](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-11)
@@ -52,7 +52,11 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip) my_ds4gd_report.R
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-final)
 - 2026-07-21 No. 14 - 最終回 final class
-  - [Online] 最終発表 [Final presentation](#final-presentation)
+  - 最終発表 [Final presentation](#final-presentation)
+
+----------
+## Guest speaker
+**特別講演**
 
 ----------
 
@@ -62,10 +66,6 @@
 Presentation time: Maximum of 3 minutes per person. Share your final report (**my_ds4gd_report.html** file) and your sequence analysis findings. For example, describe the genome sequence analyzed, the protein-coding sequence (CDS) used as the query and the subject sequences obtained in the BLAST search (homologous sequences used for alignment and phylogenetic analysis), and the rooted phylogenetic tree (ingroup, outgroup, sister group).
 
 発表時間：1人あたり最大3分。最終レポート（**my_ds4gd_report.html**ファイル）を共有し、配列解析の結果を報告する。例えば、解析したゲノム配列、BLAST検索でクエリとしたタンパク質コード配列（CDS）と得られた類似配列（アラインメントや系統解析に用いた相同配列）、有根系統樹（内群、外群、姉妹群）について説明する。
-
-----------
-## Guest speaker
-**特別講演**
 
 ----------
 ## References
