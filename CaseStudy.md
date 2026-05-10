@@ -186,6 +186,14 @@ EMBL-EBI Training > On-demand training > online_tutorial > UniProt [BLAST sequen
 ```
 Dengue virus 1, complete genome
 NCBI Reference Sequence: NC_001477.1
+
+LOCUS       NC_001477              10735 bp ss-RNA     linear   VRL 03-MAY-2019
+
+ORIGIN      
+        1 agttgttagt ctacgtggac cgacaagaac agtttcgaat cggaagcttg cttaacgtag
+
+    10681 attccaggca cagaacgcca aaaaatggaa tggtgctgtt gaatcaacag gttct
+//
 ```
 - [On this page](https://www.ncbi.nlm.nih.gov/nuccore/NC_001477), click **[Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Nucleotides&PROGRAM=blastn&QUERY=NC_001477.1&DATABASE=nr&MEGABLAST=on&BLAST_PROGRAMS=megaBlast&LINK_LOC=nuccore&PAGE_TYPE=BlastSearch)**.
 - Alternatively, you can paste or enter the nucleotide sequence directly into the **"Enter Query Sequence"** field.
@@ -194,6 +202,9 @@ NCBI Reference Sequence: NC_001477.1
   - Max target sequences: 5000
   - Expect threshold: 1e-20
 - Click the **BLAST** button to execute.
+- On this page *BLAST ® » blastn suite » results*, 
+  - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences (`subject acc.ver`), such as "NC_001477.1".
+  - Click **Download**, and select **Hit Table (text)** or **Hit Table (csv)**.
 
 #### blastp
 [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
@@ -214,7 +225,7 @@ LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
                      /protein_id="AGI42838.1"
 ```
 - [On this page](https://www.ncbi.nlm.nih.gov/protein/AGI42838.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=AGI42838.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
-- Under **Choose Search Set**, select the **Database** "UniProtKB/Swiss-Prot(swissprot)".
+- Under **Choose Search Set**, choose a **Database** such as "ClusteredNR (nr_cluster_seq)" or "UniProtKB/Swiss-Prot(swissprot)".
 - Click on **Algorithm parameters** and set the parameters as follows:
    - General Parameters
      - Max target sequences: 5000
