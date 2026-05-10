@@ -179,22 +179,21 @@ EMBL-EBI Training > On-demand training > online_tutorial > UniProt [BLAST sequen
 
 ### [NCBI BLAST](https://blast.ncbi.nlm.nih.gov/)
 
-#### BLAST_2_SEQUENCES
-Blast 2 sequences: aligning two protein or nucleotide sequences
+#### blastn
+[Nucleotide BLAST: search nucleotide databases using a nucleotide query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch)
 
-- [FEMS Microbiol Lett. 1999 "BLAST 2 Sequences, a new tool for comparing protein and nucleotide sequences"](https://pubmed.ncbi.nlm.nih.gov/10339815/)
-- Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
-(p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
-- Query the NCBI Protein database by searching on the words [**ebgC Bacteroides**](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides).
-- Test the homology between
-*Escherichia coli* EbgC protein (accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1))
-and *Bacteroides* EbgC protein (accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1))
-using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome).
-  - Checking the **Align two or more sequences** box will display two text boxes for entering queries.
-  - Enter the accession number **NP_417548.1** into the upper search box.
-  - Enter the accession number **EFI39110.1** into the lower search box.
-  - Click on **+ Algorithm parameters**, change **Expect threshold** from 0.05 to 100, and then click the **BLAST** button.
-  - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the *Bacteroides* EbgC sequences are not homologs of the *Escherichia coli* EbgC sequence.
+- Query nucleotide sequence https://www.ncbi.nlm.nih.gov/nuccore/NC_001477
+```
+Dengue virus 1, complete genome
+NCBI Reference Sequence: NC_001477.1
+```
+- [On this page](https://www.ncbi.nlm.nih.gov/nuccore/NC_001477), click **[Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Nucleotides&PROGRAM=blastn&QUERY=NC_001477.1&DATABASE=nr&MEGABLAST=on&BLAST_PROGRAMS=megaBlast&LINK_LOC=nuccore&PAGE_TYPE=BlastSearch)**.
+- Alternatively, you can paste or enter the nucleotide sequence directly into the **"Enter Query Sequence"** field.
+- Under **Choose Search Set**, select "Standard databases (nr etc.)" and choose a database such as "Nucleotide collection (nr/nt)" or "Core nucleotide database (core_nt)".
+- Click **“Algorithm parameters”** and set the parameters as follows:
+  - Max target sequences: 5000
+  - Expect threshold: 1e-20
+- Click the **BLAST** button to execute.
 
 #### blastp
 [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
@@ -228,6 +227,23 @@ LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
   - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences (`subject acc.ver`), such as "Q805H4.1".
   - Click **Download**, and select **Hit Table (text)** or **Hit Table (csv)**.
 
+#### BLAST_2_SEQUENCES
+Blast 2 sequences: aligning two protein or nucleotide sequences
+
+- [FEMS Microbiol Lett. 1999 "BLAST 2 Sequences, a new tool for comparing protein and nucleotide sequences"](https://pubmed.ncbi.nlm.nih.gov/10339815/)
+- Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
+(p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
+- Query the NCBI Protein database by searching on the words [**ebgC Bacteroides**](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides).
+- Test the homology between
+*Escherichia coli* EbgC protein (accession number [NP_417548.1](https://www.ncbi.nlm.nih.gov/protein/NP_417548.1))
+and *Bacteroides* EbgC protein (accession number [EFI39110.1](https://www.ncbi.nlm.nih.gov/protein/EFI39110.1))
+using [Protein BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome).
+  - Checking the **Align two or more sequences** box will display two text boxes for entering queries.
+  - Enter the accession number **NP_417548.1** into the upper search box.
+  - Enter the accession number **EFI39110.1** into the lower search box.
+  - Click on **+ Algorithm parameters**, change **Expect threshold** from 0.05 to 100, and then click the **BLAST** button.
+  - The result shows an E value of 1.8 (above the limit of 1e-3 for homologs). Thus, despite having the same name, the *Bacteroides* EbgC sequences are not homologs of the *Escherichia coli* EbgC sequence.
+
 #### tblastn
 [tblastn: search translated nucleotide databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=tblastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
 
@@ -251,21 +267,6 @@ LOCUS       GU479466               42004 bp    DNA     circular BCT 06-APR-2020
   - Max target sequences: 5000
   - Expect threshold: 1e-20
 - Click on **BLAST** button to execute.
-
-#### blastn
-[Nucleotide BLAST: search nucleotide databases using a nucleotide query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch)
-
-- Query nucleotide sequence https://www.ncbi.nlm.nih.gov/nuccore/NC_001477
-```
-Dengue virus 1, complete genome
-NCBI Reference Sequence: NC_001477.1
-```
-- [On this page](https://www.ncbi.nlm.nih.gov/nuccore/NC_001477), click **[Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Nucleotides&PROGRAM=blastn&QUERY=NC_001477.1&DATABASE=nr&MEGABLAST=on&BLAST_PROGRAMS=megaBlast&LINK_LOC=nuccore&PAGE_TYPE=BlastSearch)**.
-- Alternatively, you can paste or enter the nucleotide sequence directly into the **"Enter Query Sequence"** field.
-- Click **“Algorithm parameters”** and set the parameters as follows:
-  - Max target sequences: 5000
-  - Expect threshold: 1e-20
-- Click the **BLAST** button to execute.
 
 ### Query Sequences
 
