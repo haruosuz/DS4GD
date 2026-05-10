@@ -38,7 +38,7 @@
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast_2_sequences)
   - 配列類似性検索 [UniProt BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#uniprot-blast)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-8)
-- 2026-06-16 No. 9 - [Guest Speaker](#guest-speaker)
+- 2026-06-16 No. 9 - TBD
 - 2025-06-21 - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
 - 2026-06-23 No. 10 - [Guest Speaker](#guest-speaker)
 - 2026-06-30 No. 11 - 配列の選択と取得 Choosing and Acquiring Sequences
@@ -52,14 +52,23 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip) my_ds4gd_report.R
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-final)
 - 2026-07-21 No. 14 - 最終回 final class
-  - 最終発表 [Final presentation](#final-presentation)
+- TBD 最終発表 [Final presentation](#final-presentation)
 
 ----------
 ## Guest speaker
 **特別講演**
 
-----------
+- Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
+鈴木 留美子 博士（国立遺伝学研究所）
+- Title: Inference of divergence times on bacterial phylogenetic trees									
+- Files:  
+Download the files from the following URL:  
+https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip  
+Extract the ZIP file and use the files in the following directory:  
+```
+```
 
+----------
 ## Final presentation
 **口頭発表**
 
