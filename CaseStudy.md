@@ -204,28 +204,28 @@ ORIGIN
 - Click the **BLAST** button to execute.
 - On this page *BLAST ® » blastn suite » results*, 
   - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences (`subject acc.ver`), such as "NC_001477.1".
-  - Click **Download**, and select **Hit Table (text)** or **Hit Table (csv)**.
+  - Click **Download**, and select a file format such as "Hit Table (text)" or "Hit Table (csv)".
 
 #### blastp
 [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome)
 
 Here are the steps for running BLASTP:
 
-- Click on the protein accession number (e.g., `/protein_id="AGI42838.1"`) from the GenBank page: 
-https://www.ncbi.nlm.nih.gov/nuccore/KC241982
+- Click on the protein_id from the GenBank page: 
+https://www.ncbi.nlm.nih.gov/nuccore/BN000925.1
 ```
-Canine circovirus isolate UCD1-1698, complete genome
-GenBank: KC241982.1
+TPA_exp: Birmingham IncP-alpha plasmid, complete sequence, isolate RK2
+GenBank: BN000925.1
 
-LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
+LOCUS       BN000925               60096 bp    DNA     circular BCT 23-OCT-2008
 
-     CDS             1..912
+     CDS             complement(16521..17378)
 
-                     /product="putative replication associated protein"
-                     /protein_id="AGI42838.1"
+                     /product="TrfA replication protein"
+                     /protein_id="CAJ85685.1"
 ```
-- [On this page](https://www.ncbi.nlm.nih.gov/protein/AGI42838.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=AGI42838.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
-- Under **Choose Search Set**, choose a **Database** such as "ClusteredNR (nr_cluster_seq)" or "UniProtKB/Swiss-Prot(swissprot)".
+- [On this page](https://www.ncbi.nlm.nih.gov/protein/CAJ85685.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=CAJ85685.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
+- Under **Choose Search Set**, choose a **Database** such as "ClusteredNR (nr_cluster_seq)" or "Non-redundant protein sequences (nr)".
 - Click on **Algorithm parameters** and set the parameters as follows:
    - General Parameters
      - Max target sequences: 50
@@ -235,8 +235,8 @@ LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
      - Gap Costs: Existence: 11 Extension: 1
 - Click the **BLAST** button to execute.
 - On this page *BLAST ® » blastp suite » results*, 
-  - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences (`subject acc.ver`), such as "Q805H4.1".
-  - Click **Download**, and select **Hit Table (text)** or **Hit Table (csv)**.
+  - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences (`subject acc.ver`), such as "WP_046797590.1".
+  - Click **Download**, and select a file format such as "FASTA", "Hit Table (text)" or "Hit Table (csv)".
 
 #### BLAST_2_SEQUENCES
 Blast 2 sequences: aligning two protein or nucleotide sequences
