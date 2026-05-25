@@ -238,6 +238,8 @@ LOCUS       BN000925               60096 bp    DNA     circular BCT 23-OCT-2008
   - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences (`subject acc.ver`), such as "WP_046797590.1".
   - Click **Download**, and select a file format such as "FASTA", "Hit Table (text)" or "Hit Table (csv)".
 
+["BLAST searches were conducted using the TrfA2 replication initiation protein (285 amino acids; GenBank: CAJ85685.1) derived from the IncP-1α plasmid RK2 (60,096 bp; GenBank: BN000925.1) as the query sequence. "](https://www.sciencedirect.com/science/article/pii/S0147619X25000149)
+
 #### BLAST_2_SEQUENCES
 Blast 2 sequences: aligning two protein or nucleotide sequences
 
