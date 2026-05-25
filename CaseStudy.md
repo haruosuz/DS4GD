@@ -228,8 +228,8 @@ LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
 - Under **Choose Search Set**, choose a **Database** such as "ClusteredNR (nr_cluster_seq)" or "UniProtKB/Swiss-Prot(swissprot)".
 - Click on **Algorithm parameters** and set the parameters as follows:
    - General Parameters
-     - Max target sequences: 5000
-     - Expect threshold: 1e-20
+     - Max target sequences: 50
+     - Expect threshold: 1e-05
    - Scoring Parameters
      - Matrix: BLOSUM62
      - Gap Costs: Existence: 11 Extension: 1
