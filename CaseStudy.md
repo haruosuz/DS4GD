@@ -225,7 +225,7 @@ LOCUS       BN000925               60096 bp    DNA     circular BCT 23-OCT-2008
                      /protein_id="CAJ85685.1"
 ```
 - [On this page](https://www.ncbi.nlm.nih.gov/protein/CAJ85685.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=CAJ85685.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
-- Under **Choose Search Set**, choose a **Database** such as "ClusteredNR (nr_cluster_seq)" or "Non-redundant protein sequences (nr)".
+- Under **Choose Search Set**, select a **Database** such as "ClusteredNR (nr_cluster_seq)", "UniProtKB/Swiss-Prot(swissprot)", or "Non-redundant protein sequences (nr)".
 - Click on **Algorithm parameters** and set the parameters as follows:
    - General Parameters
      - Max target sequences: 50
