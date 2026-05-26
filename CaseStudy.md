@@ -212,19 +212,19 @@ ORIGIN
 Here are the steps for running BLASTP:
 
 - Click on the protein_id from the GenBank page: 
-https://www.ncbi.nlm.nih.gov/nuccore/BN000925.1
+https://www.ncbi.nlm.nih.gov/nuccore/KC241982
 ```
-TPA_exp: Birmingham IncP-alpha plasmid, complete sequence, isolate RK2
-GenBank: BN000925.1
+Canine circovirus isolate UCD1-1698, complete genome
+GenBank: KC241982.1
 
-LOCUS       BN000925               60096 bp    DNA     circular BCT 23-OCT-2008
+LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
 
-     CDS             complement(16521..17378)
+     CDS             1..912
 
-                     /product="TrfA replication protein"
-                     /protein_id="CAJ85685.1"
+                     /product="putative replication associated protein"
+                     /protein_id="AGI42838.1"
 ```
-- [On this page](https://www.ncbi.nlm.nih.gov/protein/CAJ85685.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=CAJ85685.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
+- [On this page](https://www.ncbi.nlm.nih.gov/protein/AGI42838.1), select [Run BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins&PROGRAM=blastp&BLAST_PROGRAMS=blastp&QUERY=AGI42838.1&LINK_LOC=protein&PAGE_TYPE=BlastSearch).
 - Under **Choose Search Set**, select a **Database** such as "ClusteredNR (nr_cluster_seq)", "UniProtKB/Swiss-Prot(swissprot)", or "Non-redundant protein sequences (nr)".
 - Click on **Algorithm parameters** and set the parameters as follows:
    - General Parameters
@@ -237,8 +237,6 @@ LOCUS       BN000925               60096 bp    DNA     circular BCT 23-OCT-2008
 - On this page *BLAST ® » blastp suite » results*, 
   - The results are displayed in a table under **Sequences producing significant alignments** in the **Descriptions** tab. For example, the **Accession** column lists the accession and version numbers of the hit sequences (`subject acc.ver`), such as "WP_046797590.1".
   - Click **Download**, and select a file format such as "FASTA", "Hit Table (text)" or "Hit Table (csv)".
-
-["BLAST searches were conducted using the TrfA2 replication initiation protein (285 amino acids; GenBank: CAJ85685.1) derived from the IncP-1α plasmid RK2 (60,096 bp; GenBank: BN000925.1) as the query sequence. "](https://www.sciencedirect.com/science/article/pii/S0147619X25000149)
 
 #### BLAST_2_SEQUENCES
 Blast 2 sequences: aligning two protein or nucleotide sequences
