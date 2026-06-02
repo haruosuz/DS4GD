@@ -36,7 +36,6 @@
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-7)
 - 2026-06-09 No. 8 - 相同 Homolog
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast_2_sequences)
-  - 配列類似性検索 [UniProt BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#uniprot-blast)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-8)
 - 2026-06-16 No. 9 - TBD
 - 2025-06-21 - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
