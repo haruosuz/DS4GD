@@ -242,7 +242,7 @@ LOCUS       KC241982                2063 bp    DNA     circular VRL 04-APR-2013
 Blast 2 sequences: aligning two protein or nucleotide sequences
 
 - [FEMS Microbiol Lett. 1999 "BLAST 2 Sequences, a new tool for comparing protein and nucleotide sequences"](https://pubmed.ncbi.nlm.nih.gov/10339815/)
-- Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](https://github.com/haruosuz/DS4GD/blob/master/2021/CaseStudy.md#ptme5)
+- Barry Hall (2017) [Phylogenetic Trees Made Easy: A How-To Manual (5th edition)](#ptme5)
 (p.48) Other Ways to Find Sequences of Interest (Beware! The Risks Are High)
 - Query the NCBI Protein database by searching on the words [**ebgC Bacteroides**](https://www.ncbi.nlm.nih.gov/protein/?term=ebgC%20Bacteroides).
 - Test the homology between
