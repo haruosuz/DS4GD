@@ -13,7 +13,7 @@
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
 - [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題8 「Midterm report」
-- [assignment 11](#assignment-11) 課題11 「Choosing and Acquiring Sequences」
+- [assignment 9](#assignment-9) 課題9 「Choosing and Acquiring Sequences」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「Final report」
 
@@ -147,21 +147,21 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 Please save and backup your edited files in a separate directory.  
 
 ----------
-## assignment 11
-**課題11 「Choosing and Acquiring Sequences」**
+## assignment 9
+**課題9 「Choosing and Acquiring Sequences」**
 
-[BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)  
-Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
+NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)  
 系統樹に含める複数（4つ以上）の相同配列を同定する。  
+Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
 
-Copy the downloaded file (e.g., `uniprotkb_2025_12_22.fasta`) and give it a different name (`myAA.fasta`).  
-ダウンロードしたファイル（例：`uniprotkb_2025_12_22.fasta`）をコピーして別の名前（`myAA.fasta`）を付ける。  
+ダウンロードしたファイル（例：`seqdump.txt`）をコピーして別の名前（`myAA.fasta`）を付ける。  
+Copy the downloaded file (e.g., `seqdump.txt`) and give it a different name (`myAA.fasta`).  
 ```
-cp uniprotkb_2025_12_22.fasta myAA.fasta
+cp seqdump.txt myAA.fasta
 ```
 
-Change the author name and replace the FASTA file.  
 以下のスクリプトの著者名を変更し、FASTA ファイルを差し替えてください。  
+Change the author name and replace the FASTA file.  
 `scripts_ds4gd/my_tree_aa/my_tree_aa.R`
 ```
 #' author: '@Haruo_Suzuki'
