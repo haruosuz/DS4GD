@@ -181,7 +181,7 @@ The R script will generate the following output files.
 - `myTree.tre`: Phylogenetic tree in Newick format.
 - `myTable.tsv`: Sequence information, including length and annotations.
 
-
+#### R Script Usage and Assignment Submission
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip
