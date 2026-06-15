@@ -134,7 +134,7 @@ NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#b
 
 #### Query Sequence Acquisition
 問い合わせ配列の取得
-- On the protein page (https://www.ncbi.nlm.nih.gov/protein/AGI42838.1), click "Send to:" and configure the menu settings as follows:
+- On the protein page (e.g., https://www.ncbi.nlm.nih.gov/protein/AGI42838.1), click "Send to:" and configure the menu settings as follows:
   - Choose Destination: Select "File"
   - Format: Change from "GenPept" to "FASTA"
   - Click "Create File" to download the `sequence.fasta` file.
@@ -142,6 +142,7 @@ NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#b
 #### BLAST Search Execution
 BLAST検索の実行
 - Go to the NCBI BLASTp page (https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins).
+- Under **Enter Query Sequence**, Enter accession number (e.g., "AGI42838.1").
 - Under **Choose Search Set**, select a **Database** "ClusteredNR (nr_cluster_seq)".
 - Click on **Algorithm parameters** and set the parameters as follows:
    - General Parameters
