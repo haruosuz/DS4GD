@@ -13,7 +13,7 @@
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
 - [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題8 「Midterm report」
-- [assignment 9](#assignment-9) 課題9 「Choosing and Acquiring Sequences」
+- [assignment 9](#assignment-9) 課題9 「Phylogenetic Tree Inference」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「Final report」
 
@@ -125,7 +125,7 @@ my_assignment_4_align.R
 
 ----------
 ## assignment 9
-**課題9 「Choosing and Acquiring Sequences」**
+**課題9 「Phylogenetic Tree Inference」**
 
 系統樹に含める複数（4つ以上）の相同配列を同定する。  
 Identify multiple (>3) homologous sequences to be included in phylogenetic trees.  
