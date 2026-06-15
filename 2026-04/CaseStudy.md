@@ -130,7 +130,7 @@ my_assignment_4_align.R
 [非加重結合法](https://ja.wikipedia.org/wiki/非加重結合法)を用いた系統樹の推定に使用する複数（4つ以上）の相同配列を同定する。  
 Identify multiple (4 or more) homologous sequences to be used for phylogenetic tree inference using [UPGMA](https://en.wikipedia.org/wiki/UPGMA).  
 
-NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)  
+### NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)  
 
 #### Query Sequence Acquisition
 問い合わせ配列の取得
