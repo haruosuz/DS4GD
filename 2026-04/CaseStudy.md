@@ -127,10 +127,21 @@ my_assignment_4_align.R
 ## assignment 9
 **課題9 「Choosing and Acquiring Sequences」**
 
-NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)  
 系統樹に含める複数（4つ以上）の相同配列を同定する。  
 Identify multiple (>3) homologous sequences to be included in phylogenetic trees.  
 
+NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)  
+
+#### Query Sequence Acquisition
+問い合わせ配列の取得
+- On the protein page (https://www.ncbi.nlm.nih.gov/protein/AGI42838.1), click "Send to:" and configure the menu settings as follows:
+  - Choose Destination: Select "File"
+  - Format: Change from "GenPept" to "FASTA"
+  - Click "Create File" to download the `sequence.fasta` file.
+
+#### BLAST Search Execution
+BLAST検索の実行
+- Go to the NCBI BLASTp page (https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins).
 - Under **Choose Search Set**, select a **Database** "ClusteredNR (nr_cluster_seq)".
 - Click on **Algorithm parameters** and set the parameters as follows:
    - General Parameters
@@ -138,17 +149,20 @@ Identify multiple (>3) homologous sequences to be included in phylogenetic trees
      - Expect threshold: 1e-05
 - Click the **BLAST** button to execute.
 - On this page *BLAST ® » blastp suite » results*, 
-  - Click **Download** and select the file format "FASTA (cluster)" when using the "ClusteredNR (nr_cluster_seq)" database.
+  - Click **Download** and select the file format "FASTA (cluster)" when using the "ClusteredNR (nr_cluster_seq)" database to download the `seqdump.txt` file.
 
-ダウンロードしたファイル（`seqdump.txt`）をコピーして別の名前（`myAA.fasta`）を付ける。  
-Copy the downloaded file (`seqdump.txt`) and give it a different name (`myAA.fasta`).  
+#### FASTA File Preparation for the R Script
+ダウンロードしたファイルを結合し、結合後のファイル名を `myAA.fasta` とする。  
+Combine the downloaded files and name the merged file `myAA.fasta`.  
 ```
-cp seqdump.txt myAA.fasta
+cd ~/Downloads/scripts_ds4gd/my_tree_aa
+cat sequence.fasta seqdump.txt > myAA.fasta
 ```
 
-以下のスクリプトの著者名を変更し、FASTA ファイルを差し替える。  
-Change the author name and replace the FASTA file.  
-`scripts_ds4gd/my_tree_aa/my_tree_aa.R`
+以下のスクリプトを開き、著者名を変更して、FASTA ファイルを差し替える。  
+Open the following script, change the author name, and replace the FASTA file.  
+
+scripts_ds4gd/my_tree_aa/my_tree_aa.R
 ```
 #' author: '@Haruo_Suzuki'
 ```
@@ -156,7 +170,9 @@ Change the author name and replace the FASTA file.
 file.fasta <- "myAA.fasta" # FASTA file of protein (amino acid) sequences
 ```
 
-The R script will generate the following output files:  
+#### Output Files of the R Script
+Rスクリプトを実行すると、以下の出力ファイルが生成される。  
+The R script will generate the following output files.  
 - `myAA_filtered.fasta`: Sequences filtered based on length criteria.
 - `myAlign.fasta`: Aligned sequences.
 - `myAlignTrim.fasta`: Aligned sequences trimmed (gaps removed).
