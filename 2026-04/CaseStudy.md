@@ -13,7 +13,7 @@
 - [assignment 4](#assignment-4) 課題4 「DNA Sequence Statistics (2)」
 - [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題8 「Midterm report」
-- [assignment 9](#assignment-9) 課題9 「Phylogenetic Tree Inference」
+- [assignment 9](#assignment-9) 課題9 「Phylogenetic Tree Inference using UPGMA」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「Final report」
 
@@ -125,10 +125,10 @@ my_assignment_4_align.R
 
 ----------
 ## assignment 9
-**課題9 「Phylogenetic Tree Inference」**
+**課題9 「Phylogenetic Tree Inference using UPGMA」**
 
-系統樹に含める複数（4つ以上）の相同配列を同定する。  
-Identify multiple (>3) homologous sequences to be included in phylogenetic trees.  
+[非加重結合法](https://ja.wikipedia.org/wiki/非加重結合法)を用いた系統樹の推定に使用する複数（4つ以上）の相同配列を同定する。  
+Identify multiple (4 or more) homologous sequences to be used for phylogenetic tree inference using [UPGMA](https://en.wikipedia.org/wiki/UPGMA).  
 
 NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)  
 
