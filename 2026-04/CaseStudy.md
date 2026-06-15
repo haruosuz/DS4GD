@@ -170,7 +170,7 @@ scripts_ds4gd/my_tree_aa/my_tree_aa.R
 file.fasta <- "myAA.fasta" # FASTA file of protein (amino acid) sequences
 ```
 
-#### Output Files of the R Script
+#### Output Files
 Rスクリプトを実行すると、以下の出力ファイルが生成される。  
 The R script will generate the following output files.  
 - `myAA_filtered.fasta`: Sequences filtered based on length criteria.
