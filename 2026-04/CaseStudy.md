@@ -123,6 +123,48 @@ my_assignment_2_dna2.R
 my_assignment_4_align.R
 ```
 
+----------
+## assignment 9
+**課題9 「Choosing and Acquiring Sequences」**
+
+NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)  
+系統樹に含める複数（4つ以上）の相同配列を同定する。  
+Identify multiple (>3) homologous sequences to be included in phylogenetic trees.  
+
+- Under **Choose Search Set**, select a **Database** "ClusteredNR (nr_cluster_seq)".
+- Click on **Algorithm parameters** and set the parameters as follows:
+   - General Parameters
+     - Max target sequences: 50
+     - Expect threshold: 1e-05
+- Click the **BLAST** button to execute.
+- On this page *BLAST ® » blastp suite » results*, 
+  - Click **Download** and select the file format "FASTA (cluster)" when using the "ClusteredNR (nr_cluster_seq)" database.
+
+ダウンロードしたファイル（`seqdump.txt`）をコピーして別の名前（`myAA.fasta`）を付ける。  
+Copy the downloaded file (`seqdump.txt`) and give it a different name (`myAA.fasta`).  
+```
+cp seqdump.txt myAA.fasta
+```
+
+以下のスクリプトの著者名を変更し、FASTA ファイルを差し替える。  
+Change the author name and replace the FASTA file.  
+`scripts_ds4gd/my_tree_aa/my_tree_aa.R`
+```
+#' author: '@Haruo_Suzuki'
+```
+```
+file.fasta <- "myAA.fasta" # FASTA file of protein (amino acid) sequences
+```
+
+The R script will generate the following output files:  
+- `myAA_filtered.fasta`: Sequences filtered based on length criteria.
+- `myAlign.fasta`: Aligned sequences.
+- `myAlignTrim.fasta`: Aligned sequences trimmed (gaps removed).
+- `myTree.pdf`: Phylogenetic tree in PDF format.
+- `myTree.tre`: Phylogenetic tree in Newick format.
+- `myTable.tsv`: Sequence information, including length and annotations.
+
+
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip
@@ -145,38 +187,6 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory.  
-
-----------
-## assignment 9
-**課題9 「Choosing and Acquiring Sequences」**
-
-NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)  
-系統樹に含める複数（4つ以上）の相同配列を同定する。  
-Identify multiple (>3) homologous sequences that are to be included on phylogenetic trees.  
-
-ダウンロードしたファイル（例：`seqdump.txt`）をコピーして別の名前（`myAA.fasta`）を付ける。  
-Copy the downloaded file (e.g., `seqdump.txt`) and give it a different name (`myAA.fasta`).  
-```
-cp seqdump.txt myAA.fasta
-```
-
-以下のスクリプトの著者名を変更し、FASTA ファイルを差し替えてください。  
-Change the author name and replace the FASTA file.  
-`scripts_ds4gd/my_tree_aa/my_tree_aa.R`
-```
-#' author: '@Haruo_Suzuki'
-```
-```
-file.fasta <- "myAA.fasta" # FASTA file of protein (amino acid) sequences
-```
-
-The R script will generate the following output files:  
-- `myAA_filtered.fasta`: Sequences filtered based on length criteria.
-- `myAlign.fasta`: Aligned sequences.
-- `myAlignTrim.fasta`: Aligned sequences trimmed (gaps removed).
-- `myTree.pdf`: Phylogenetic tree in PDF format.
-- `myTree.tre`: Phylogenetic tree in Newick format.
-- `myTable.tsv`: Sequence information, including length and annotations.
 
 ----------
 ## assignment 12
