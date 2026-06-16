@@ -37,14 +37,14 @@
 - 2026-06-09 No. 8 - 相同 Homolog
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast_2_sequences)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-8)
-- 2026-06-16 No. 9 - 配列の選択と取得 Choosing and Acquiring Sequences
+- 2026-06-16 No. 9 - 系統樹の推定 Phylogenetic Tree Inference using UPGMA
+  - [The general structure of a phylogenetic tree](https://pmc.ncbi.nlm.nih.gov/articles/PMC11117635/#bioengineering-11-00480-f001)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip) my_tree_aa/my_tree_aa.R
   - 課題9 [assignment 9](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-9)
 - 2025-06-21 - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
 - 2026-06-23 No. 10 - [Guest Speaker](#guest-speaker)
 - 2026-06-30 No. 11 - TBD
 - 2026-07-07 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
-  - [The general structure of a phylogenetic tree](https://pmc.ncbi.nlm.nih.gov/articles/PMC11117635/#bioengineering-11-00480-f001)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-12)
 - 2026-07-14 No. 13 - 最終レポート Final report
