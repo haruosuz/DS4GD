@@ -57,15 +57,10 @@
 ## Guest speaker
 **特別講演**
 
+### 2025-06-03
 - Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
 鈴木 留美子 博士（国立遺伝学研究所）
-- Title: Inference of divergence times on bacterial phylogenetic trees									
-- Files:  
-Download the files from the following URL:  
-https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip  
-Extract the ZIP file and use the files in the following directory:  
-```
-```
+- Title: 細菌系統樹の分岐年代推定
 
 ----------
 ## Final presentation
