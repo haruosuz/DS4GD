@@ -57,7 +57,7 @@
 ## Guest speaker
 **特別講演**
 
-### 2025-06-03
+### 2026-06-23
 - Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
 鈴木 留美子 博士（国立遺伝学研究所）
 - Title: 細菌系統樹の分岐年代推定
