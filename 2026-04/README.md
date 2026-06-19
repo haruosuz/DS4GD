@@ -62,16 +62,9 @@
 鈴木 留美子 博士（国立遺伝学研究所）
 - Title: 細菌系統樹の分岐年代推定						
 - 講義用のワークシート:  
-次のURLからファイルをダウンロードする。  
-Download the files from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip  
-圧縮ファイルを解凍し、以下のディレクトリのファイルを使用する。  
-Extract the ZIP file and use the files in the following directory.  
-```
-scripts_ds4gd/2026-06-23/Worksheet_20260623.xlsx
-```
-- Bactdating資料
-https://sites.google.com/view/keiolecture-20241219	
+Download: https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip  
+Path: `scripts_ds4gd/2026-06-23/Worksheet_20260623.xlsx`
+- Bactdating資料 https://sites.google.com/view/keiolecture-20241219
 
 ----------
 ## Final presentation
