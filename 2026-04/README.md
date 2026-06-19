@@ -66,8 +66,7 @@ https://sites.google.com/view/keiolecture-20241219
 - Files:  
 次のURLからファイルをダウンロードする。  
 Download the files from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip
-
+https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip  
 圧縮ファイルを解凍し、以下のディレクトリのファイルを使用する。  
 Extract the ZIP file and use the files in the following directory.  
 ```
