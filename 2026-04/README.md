@@ -58,13 +58,12 @@
 **特別講演**
 
 ### 2026-06-23
-- Speaker: Dr. Rumiko Suzuki (National Institute of Genetics)  
-鈴木 留美子 博士（国立遺伝学研究所）
-- Title: 細菌系統樹の分岐年代推定						
-- 講義用のワークシート:  
+- 講師 / Speaker: 鈴木 留美子 博士（国立遺伝学研究所） / Dr. Rumiko Suzuki (National Institute of Genetics)  
+- 演題 / Title: 細菌系統樹の分岐年代推定 / Inference of divergence times on bacterial phylogenetic trees
+- ワークシート / Worksheet:  
 Download: https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip  
-Path: `scripts_ds4gd/2026-06-23/Worksheet_20260623.xlsx`
-- Bactdating資料 https://sites.google.com/view/keiolecture-20241219
+`scripts_ds4gd/2026-06-23/Worksheet_20260623.xlsx`
+- 資料 /  Website: https://sites.google.com/view/keiolecture-20241219
 
 ----------
 ## Final presentation
