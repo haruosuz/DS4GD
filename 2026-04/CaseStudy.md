@@ -14,6 +14,7 @@
 - [assignment 7](#assignment-7) 課題7 「Pairwise Sequence Alignment」
 - [assignment 8](#assignment-8) 課題8 「Midterm report」
 - [assignment 9](#assignment-9) 課題9 「Phylogenetic Tree Inference using UPGMA」
+- [assignment 10](#assignment-10) 課題10 「Guest speaker」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic trees」
 - [assignment final](#assignment-final) 最終課題 「Final report」
 
@@ -204,6 +205,13 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory.  
+
+----------
+## assignment 10
+**課題10 「Guest speaker」**
+
+本日の特別講演で印象に残った点を挙げてください。また、その内容があなたの興味・関心とどのように関係しているかも教えてください。  
+Please describe the points from today's special lecture that left an impression on you. Also, explain how the content relates to your own interests or concerns.  
 
 ----------
 ## assignment 12
