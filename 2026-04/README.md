@@ -44,7 +44,7 @@
 - 2025-06-21 - [Global City Sampling Day (gCSD)](http://metasub.org/projects/gcsd/)
 - 2026-06-23 No. 10 - 特別講演 [Guest Speaker](#guest-speaker)
   - 課題10 [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-10)
-- 2026-06-30 No. 11 - TBD
+- 2026-06-30 No. 11 - 外群 Outgroup
 - 2026-07-07 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip) my_chapter5_msa_tree.R
   - 課題12 [assignment 12](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-12)
