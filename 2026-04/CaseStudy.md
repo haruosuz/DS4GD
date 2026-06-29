@@ -182,6 +182,19 @@ The R script will generate the following output files.
 - `myTree.tre`: Phylogenetic tree in Newick format.
 - `myTable.tsv`: Sequence information, including length and annotations.
 
+----------
+## assignment 10
+**課題10 「Guest speaker」**
+
+本日の特別講演で印象に残った点を挙げてください。また、その内容があなたの興味・関心とどのように関係しているかも教えてください。  
+Please describe the points from today's special lecture that left an impression on you. Also, explain how the content relates to your own interests or concerns.  
+
+----------
+## assignment 12
+**課題12 「Multiple Alignment and Phylogenetic trees」**
+
+**my_assignment_5_msa_tree.R**
+
 #### R Script Usage and Assignment Submission
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
@@ -205,19 +218,6 @@ Submit the .html file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited files in a separate directory.  
-
-----------
-## assignment 10
-**課題10 「Guest speaker」**
-
-本日の特別講演で印象に残った点を挙げてください。また、その内容があなたの興味・関心とどのように関係しているかも教えてください。  
-Please describe the points from today's special lecture that left an impression on you. Also, explain how the content relates to your own interests or concerns.  
-
-----------
-## assignment 12
-**課題12 「Multiple Alignment and Phylogenetic trees」**
-
-**my_assignment_5_msa_tree.R**
 
 ----------
 ## assignment final
