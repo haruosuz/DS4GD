@@ -15,7 +15,7 @@
 - [assignment 8](#assignment-8) 課題8 「Midterm report」
 - [assignment 9](#assignment-9) 課題9 「Phylogenetic Tree Inference using UPGMA」
 - [assignment 10](#assignment-10) 課題10 「Guest speaker」
-- [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Neighbor-Joining (NJ) Trees」
+- [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic Trees」
 - [assignment final](#assignment-final) 最終課題 「Final report」
 
 ----------
@@ -191,7 +191,7 @@ Please describe the points from today's special lecture that left an impression 
 
 ----------
 ## assignment 12
-**課題12 「Multiple Alignment and Neighbor-Joining (NJ) Trees」**
+**課題12 「Multiple Alignment and Phylogenetic Trees」**
 
 **my_assignment_5_msa_tree.R**
 
