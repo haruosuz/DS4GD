@@ -51,8 +51,16 @@
 - 2026-07-14 No. 13 - 最終レポート Final report
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip) my_ds4gd_report.R
   - 最終課題 [assignment final](https://github.com/haruosuz/DS4GD/blob/master/2026-04/CaseStudy.md#assignment-final)
+  - 最終発表 [Final presentation](#final-presentation)
 - 2026-07-21 No. 14 - 最終回 final class
-- TBD 最終発表 [Final presentation](#final-presentation)
+
+----------
+## Final presentation
+**動画提出**
+
+Presentation time: Maximum of 3 minutes per person. Submit a video file (`.mp4`) explaining your final report (`my_ds4gd_report.html` file) and your sequence analysis findings. For example, describe the genome sequence analyzed, the protein-coding sequence (CDS) used as the query and the subject sequences obtained in the BLAST search (homologous sequences used for alignment and phylogenetic analysis), and the rooted phylogenetic tree (ingroup, outgroup, sister group).
+
+発表時間：1人あたり最大3分。最終レポート（`my_ds4gd_report.html`ファイル）の解説動画ファイル（`.mp4`）を提出し、配列解析の結果を報告する。例えば、解析したゲノム配列、BLAST検索でクエリとしたタンパク質コード配列（CDS）と得られた類似配列（アラインメントや系統解析に用いた相同配列）、有根系統樹（内群、外群、姉妹群）について説明する。
 
 ----------
 ## Guest speaker
@@ -65,14 +73,6 @@
 Download: https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip  
 `scripts_ds4gd/2026-06-23/Worksheet_20260623.xlsx`
 - 資料 /  Website: https://sites.google.com/view/keiolecture-20241219
-
-----------
-## Final presentation
-**口頭発表**
-
-Presentation time: Maximum of 3 minutes per person. Share your final report (**my_ds4gd_report.html** file) and your sequence analysis findings. For example, describe the genome sequence analyzed, the protein-coding sequence (CDS) used as the query and the subject sequences obtained in the BLAST search (homologous sequences used for alignment and phylogenetic analysis), and the rooted phylogenetic tree (ingroup, outgroup, sister group).
-
-発表時間：1人あたり最大3分。最終レポート（**my_ds4gd_report.html**ファイル）を共有し、配列解析の結果を報告する。例えば、解析したゲノム配列、BLAST検索でクエリとしたタンパク質コード配列（CDS）と得られた類似配列（アラインメントや系統解析に用いた相同配列）、有根系統樹（内群、外群、姉妹群）について説明する。
 
 ----------
 ## References
