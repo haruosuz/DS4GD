@@ -16,7 +16,7 @@
 - [assignment 9](#assignment-9) 課題9 「Phylogenetic Tree Inference using UPGMA」
 - [assignment 10](#assignment-10) 課題10 「Guest speaker」
 - [assignment 12](#assignment-12) 課題12 「Multiple Alignment and Phylogenetic Trees」
-- [assignment final](#assignment-final) 最終課題 「Final report」
+- [assignment final](#assignment-final) 最終課題 「final report & video presentation」
 
 ----------
 ## assignment 0
@@ -197,7 +197,7 @@ Please describe the points from today's special lecture that left an impression 
 
 ----------
 ## assignment final
-**最終課題 「Final report」**
+**最終課題 「final report & video presentation」**
 
 **my_ds4gd_report.R**
 
