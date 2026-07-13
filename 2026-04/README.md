@@ -56,7 +56,7 @@
 
 ----------
 ## Final presentation
-**動画提出**
+**最終発表**
 
 Presentation time: Maximum of 3 minutes per person. Submit a video file (`.mp4`) explaining your final report (`my_ds4gd_report.html` file) and your sequence analysis findings. For example, describe the genome sequence analyzed, the protein-coding sequence (CDS) used as the query and the subject sequences obtained in the BLAST search (homologous sequences used for alignment and phylogenetic analysis), and the rooted phylogenetic tree (ingroup, outgroup, sister group).
 
