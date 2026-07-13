@@ -237,8 +237,8 @@ Submit the `.html` file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 編集・作成したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited/created files in a separate directory.  
 
-また、最終発表として、レポート画面の解説動画ファイル（`.mp4`、最大3分）を K-LMS にて提出する。  
-In addition, submit a video file (`.mp4`, max 3 minutes) explaining your report as the final presentation via K-LMS.  
+また、最終発表として、レポートの解説動画（`.mp4`ファイル）を K-LMS にて提出する。  
+In addition, submit a video (`.mp4` file) explaining your report as the final presentation via K-LMS.  
 
 ----------
 
