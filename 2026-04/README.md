@@ -58,9 +58,9 @@
 ## Final presentation
 **最終発表**
 
-Presentation time: Maximum of 3 minutes per person. Submit a video (`.mp4` file) explaining your final report (`my_ds4gd_report.html` file) and your sequence analysis findings. For example, describe the genome sequence analyzed, the protein-coding sequence (CDS) used as the query and the subject sequences obtained in the BLAST search (homologous sequences used for alignment and phylogenetic analysis), and the rooted phylogenetic tree (ingroup, outgroup, sister group).
+Presentation time: Maximum of 3 minutes per person. Submit a video (`.mp4` file) that shares your screen to show the contents of your final report (`my_ds4gd_report.html` file) and explains your sequence analysis findings. Showing your face on camera is not required, but ensure that the report contents are visible on screen. For example, describe the genome sequence analyzed, the protein-coding sequence (CDS) used as the query and the subject sequences obtained in the BLAST search (homologous sequences used for alignment and phylogenetic analysis), and the rooted phylogenetic tree (ingroup, outgroup, sister group).
 
-発表時間：1人あたり最大3分。最終レポート（`my_ds4gd_report.html`ファイル）の解説動画（`.mp4`ファイル）を提出し、配列解析の結果を報告する。例えば、解析したゲノム配列、BLAST検索でクエリとしたタンパク質コード配列（CDS）と得られた類似配列（アラインメントや系統解析に用いた相同配列）、有根系統樹（内群、外群、姉妹群）について説明する。
+発表時間：1人あたり最大3分。最終レポート（`my_ds4gd_report.html` ファイル）の内容を画面共有し、配列解析の結果を報告する動画ファイル（`.mp4`）を提出する。自身の顔をカメラで映す必要はないが、作成した `.html` ファイルのレポート内容を画面に映して示すこととする。例えば、解析したゲノム配列、BLAST検索でクエリとしたタンパク質コード配列（CDS）と得られた類似配列（アラインメントや系統解析に用いた相同配列）、有根系統樹（内群、外群、姉妹群）について説明する。
 
 ----------
 ## Guest speaker
