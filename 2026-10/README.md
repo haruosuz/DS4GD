@@ -10,7 +10,7 @@
 **講義日程と資料**
 
 - [授業カレンダー](https://www.sfc.keio.ac.jp/contact/class_calendar.html) | [Class Calendar](https://www.sfc.keio.ac.jp/en/contact/class_calendar.html)
-  - [2026年度 SFC授業カレンダー（2026.9.10更新）](https://www.keio.ac.jp/files/bac19d34f81c2e377e21ffc9fb4e8679620adb59150334dc836e429f1208c4a6)
+  - [2026年度 SFC授業カレンダー（2026.9.10更新）](https://www.keio.ac.jp/files/bac19d34f81c2e377e21ffc9fb4e8679620adb59150334dc836e429f1208c4a6) | [SFC Calendars for 2026（Update September 10, 2026）](https://www.keio.ac.jp/files/8d4e8dd50c18496e1ce1439aa1581c95df0c536c87a33ef8c612dc38737d0421)
 - 2026-10-06 No. 1 - イントロダクション Introduction
   - [R RStudio](#r-rstudio)
   - 課題1 [assignment 1](https://github.com/haruosuz/DS4GD/blob/master/2026-10/CaseStudy.md#assignment-1)
