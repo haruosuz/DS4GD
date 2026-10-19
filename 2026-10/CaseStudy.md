@@ -98,7 +98,7 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 #### R Script Usage and Assignment Submission
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2026-04/scripts_ds4gd.zip
+https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip
 
 圧縮ファイルを解凍し、ディレクトリに移動する。  
 unzip the compressed file and change to the directory.  
