@@ -22,10 +22,10 @@
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#genome-signature)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_chapter1_dna1.R
   - 課題3 [assignment 3](https://github.com/haruosuz/DS4GD/blob/master/2026-10/CaseStudy.md#assignment-3)
-- 2026-10-27 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2) | A sliding window analysis of GC content
+- 2026-10-27 No. 4 - DNA配列解析(2) DNA Sequence Statistics (2) | A little more introduction to R
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_chapter2_dna2.R
   - 課題4 [assignment 4](https://github.com/haruosuz/DS4GD/blob/master/2026-10/CaseStudy.md#assignment-4)
-- 2026-11-03 No. 5 - DNA配列解析(2) DNA Sequence Statistics (2) | Over-represented and under-represented DNA words
+- 2026-11-03 No. 5 - DNA配列解析(2) DNA Sequence Statistics (2) |
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_chapter2_dna2.R | my_test1_dna.R | my_test2_kmer.R
   - 配列類似性検索 NCBI BLAST [blastn](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastn)
 - 2026-11-10 No. 6 - タンパク質配列データベース UniProt | ドットプロット Dotplot
