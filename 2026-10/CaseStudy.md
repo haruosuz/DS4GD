@@ -101,6 +101,12 @@ https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#assignment-1
 
 **my_assignment_2_dna2.R**
 
+----------
+## assignment 7
+**課題7 「Pairwise Sequence Alignment」**
+
+**my_assignment_4_align.R**
+
 #### R Script Usage and Assignment Submission
 次のURLからRスクリプトをダウンロードする。  
 Download the R script from the following URL.  
@@ -124,13 +130,6 @@ Submit the `.html` file as your assignment in K-LMS.  ](https://lms.keio.jp/)
 
 編集・作成したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
 Please save and backup your edited/created files in a separate directory.  
-
-
-----------
-## assignment 7
-**課題7 「Pairwise Sequence Alignment」**
-
-**my_assignment_4_align.R**
 
 ----------
 ## assignment 8
