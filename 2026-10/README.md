@@ -31,7 +31,7 @@
 - 2026-11-10 No. 6 - タンパク質配列データベース UniProt | ドットプロット Dotplot
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 配列類似性検索 NCBI BLAST [blastp](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blastp)
-- 2026-11-17 No. 7 - ペアワイズ配列アラインメント Pairwise Sequence Alignment
+- 2026-11-17 No. 7 - [Online] ペアワイズ配列アラインメント Pairwise Sequence Alignment
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2026-10/CaseStudy.md#assignment-7)
 - 2026-11-19 ～ 2026-11-25 三田祭（準備・片付含む） Mita Festival (Prep / clean up)
