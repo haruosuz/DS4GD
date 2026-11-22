@@ -37,9 +37,9 @@
 - 2026-11-19 ～ 2026-11-25 三田祭（準備・片付含む） Mita Festival (Prep / clean up)
 - 2026-12-01 No. 8 - 相同 Homolog
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast_2_sequences)
-  - 配列類似性検索 [UniProt BLAST](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#uniprot-blast)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2026-10/CaseStudy.md#assignment-8)
-- 2026-12-08 No. 9 - 特別講演 [Guest Speaker](#guest-speaker)
+- 2026-12-08 No. 9 - 中間発表 [Midterm presentation](#midterm-presentation)
+  - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_test1_dna.R | my_test2_kmer.R | my_test3_dotplot.R
 - 2026-12-15 No. 10 - 配列の選択と取得 Choosing and Acquiring Sequences
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_tree_aa/my_tree_aa.R
   - 課題10 [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2026-10/CaseStudy.md#assignment-10)
@@ -56,16 +56,20 @@
   - 最終発表 [Final presentation](#final-presentation)
 
 ----------
+## Midterm presentation
+**中間発表**
+
+Presentation time: Maximum of 3 minutes per person. Share your midterm report (`my_ds4gd_report.html` file) and explain your sequence analysis findings. For example, describe the genome sequence analyzed (length, GC content, and k-mer rho statistic) and the pairwise alignment of homologous protein sequences (query and subject sequences obtained via BLAST search, dotplot, and alignment statistics).
+
+発表時間：1人あたり最大3分。中間レポート（`my_ds4gd_report.html` ファイル）を画面共有し、配列解析の結果を報告する。例えば、解析したゲノム配列の特徴（配列長、GC含量、k-mer rho統計量）や、相同タンパク質配列のペアワイズアラインメント（BLAST検索で取得したクエリと類似配列、ドットプロット、アラインメントの統計量）について説明する。
+
+----------
 ## Final presentation
 **最終発表**
 
 Presentation time: Maximum of 3 minutes per person. Submit a video (`.mp4` file) that shares your screen to show the contents of your final report (`my_ds4gd_report.html` file) and explains your sequence analysis findings. Showing your face on camera is not required, but ensure that the report contents are visible on screen. For example, describe the genome sequence analyzed, the protein-coding sequence (CDS) used as the query and the subject sequences obtained in the BLAST search (homologous sequences used for alignment and phylogenetic analysis), and the rooted phylogenetic tree (ingroup, outgroup, sister group).
 
 発表時間：1人あたり最大3分。最終レポート（`my_ds4gd_report.html` ファイル）の内容を画面共有し、配列解析の結果を報告する動画ファイル（`.mp4`）を提出する。自身の顔をカメラで映す必要はないが、作成した `.html` ファイルのレポート内容を画面に映して示すこととする。例えば、解析したゲノム配列、BLAST検索でクエリとしたタンパク質コード配列（CDS）と得られた類似配列（アラインメントや系統解析に用いた相同配列）、有根系統樹（内群、外群、姉妹群）について説明する。
-
-----------
-## Guest speaker
-**特別講演**
 
 ----------
 ## References
