@@ -35,15 +35,15 @@
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_chapter4_align.R
   - 課題7 [assignment 7](https://github.com/haruosuz/DS4GD/blob/master/2026-10/CaseStudy.md#assignment-7)
 - 2026-11-19 ～ 2026-11-25 三田祭（準備・片付含む） Mita Festival (Prep / clean up)
-- 2026-12-01 No. 8 - 相同 Homolog
+- 2026-12-01 No. 8 - [Online] 相同 Homolog
   - 相同性のテスト [Test the homology](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast_2_sequences)
   - 課題8 [assignment 8](https://github.com/haruosuz/DS4GD/blob/master/2026-10/CaseStudy.md#assignment-8)
-- 2026-12-08 No. 9 - 中間発表 [Midterm presentation](#midterm-presentation)
+- 2026-12-08 No. 9 - [Online] 中間発表 [Midterm presentation](#midterm-presentation)
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_test1_dna.R | my_test2_kmer.R | my_test3_dotplot.R
 - 2026-12-15 No. 10 - 配列の選択と取得 Choosing and Acquiring Sequences
   - [scripts_ds4gd.zip](https://github.com/haruosuz/DS4GD/raw/master/2026-10/scripts_ds4gd.zip) my_tree_aa/my_tree_aa.R
   - 課題10 [assignment 10](https://github.com/haruosuz/DS4GD/blob/master/2026-10/CaseStudy.md#assignment-10)
-- 2026-12-22 No. 11 - 外群 Outgroup
+- 2026-12-22 No. 11 - [Online] 外群 Outgroup
 - 湘南藤沢キャンパス一斉休業 Office closed（12/28～1/5）※1月5日は授業
 - 2027-01-05 No. 12 - 多重整列と系統樹 Multiple Alignment and Phylogenetic trees
   - [The general structure of a phylogenetic tree](https://pmc.ncbi.nlm.nih.gov/articles/PMC11117635/#bioengineering-11-00480-f001)
